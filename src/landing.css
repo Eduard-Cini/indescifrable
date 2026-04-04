@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    background-color: #121212;
+    color:#e0e0e0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* El contenedor principal que centra todo en la pantalla */
+.landing-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.action-container {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: flex-start; 
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.header-section{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-title {
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  color: #26c4a4;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.hero-image-placeholder {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
+
+.setup-panel, .access-panel {
+  background-color: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+
+}
+
+.setup-panel{
+  flex:6;
+}
+
+.access-panel{
+  flex:4;
+}
+
+h2 {
+  margin-top: 0;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.625rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.3125rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+select, input, textarea {
+  background-color: #2a2a2a;
+  color: #fff;
+  border: 1px solid #444;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  font-family: inherit;
+}
+
+textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 6.25rem;
+  max-height: 8rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #00ffcc;
+  color: #000;
+  margin-top: 0.625rem;
+  border: none;
+  cursor: pointer;
+  /* La clave del efecto del tablero: una transición suave en todas las propiedades */
+  transition: all 0.3s ease; 
+}
+
+.btn-primary:hover {
+  background-color: #adffef; /* Mantenemos el fondo cyan */
+  /* Brillo exterior color cyan con opacidad del 60% */
+  box-shadow: 0 0 1.25rem rgba(0, 212, 170, 0.6); 
+  /* El ligero "salto" hacia el frente que tienen las casillas */
+  transform: scale(1.02); 
+}
+
+.btn-secondary {
+  background-color: #444;
+  color: #fff;
+  margin-top: 0.625rem;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+}
+
+.info-section details {
+  background-color: #1e1e1e;
+  margin-bottom: 0.625rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #333;
+}
+
+.info-section summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #00ffcc;
+}
+
+.info-section p, .info-section ul {
+  margin-top: 1rem;
+  line-height: 1.6;
+  color: #bbb;
+}
+
+/* Nuevo: Regla para las imágenes dentro de los desplegables de información */
+.info-section details img {
+  /* 1. Clave: Nunca más ancha que el panel */
+  max-width: 40%;
+  
+  /* 2. Mantiene la proporción original */
+  height: auto;
+  
+  /* 3. Estilo opcional: la convierte en bloque para centrarla */
+  display: block;
+  margin: 1rem auto; /* Centrada con margen arriba y abajo */
+  
+  /* 4. Estilo opcional: sutil borde de terminal */
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  /* Apila los paneles verticalmente */
+  .action-container {
+    flex-direction: column;
+    gap: 1.5rem; /* Reducimos un poco la separación en móvil */
+  }
+
+  /* Ajustamos el espacio interno de las cajas para no robar pantalla */
+  .setup-panel, .access-panel {
+    width: 100%;
+    flex: none; 
+    box-sizing: border-box; /* Asegura que el padding no desborde la pantalla */
+    padding: 1.5rem;
+  }
+
+  /* Si tu h1 de arriba era muy grande, aquí lo controlamos */
+  .game-title {
+    font-size: 2.2rem; 
+  }
+
+  /* Botones un poco más compactos pero con buen tamaño para el dedo */
+  button {
+    padding: 1rem; 
+  }
+
+  /* Reducimos el texto de los desplegables de información */
+  .info-section summary {
+    font-size: 1.1rem;
+  }
+}

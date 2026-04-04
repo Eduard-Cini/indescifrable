@@ -1,0 +1,365 @@
+/* --- CONTENEDORES PRINCIPALES --- */
+.preparacion-container, 
+.tablero-container {
+  background-color: #0a0a0a;
+  color: #c88e05; 
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1rem 2rem; 
+  border-radius: 0.5rem; 
+  max-width: 62.5rem; 
+  width: 90vw; 
+  margin: 1vh auto;
+  box-shadow: 0 0 1.25rem rgba(212, 151, 8, 0.1);
+  border: 1px solid #1f1f1f;
+}
+
+/* --- CABECERA Y ESTADÍSTICAS --- */
+.tablero-header {
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.header-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-principal h2 {
+  margin: 0;
+  color: #c88e05;
+  text-shadow: 0 0 0.5rem rgba(255, 179, 0, 0.4);
+  font-size: 1.8rem;
+}
+
+.header-stats {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stat-pill {
+  background: #1a1a1a;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  border: 1px solid #333;
+  color: #ccc;
+}
+
+.stat-pill.verde { color: #22c55e; border-color: #14532d; }
+.stat-pill.azul { color: #3b82f6; border-color: #1e3a8a; }
+
+/* --- CUADRÍCULA Y TARJETAS --- */
+.tablero-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 1rem;
+  background-color: #121212;
+  border: 1px solid #333333;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 4rem;
+}
+
+.tarjeta:hover {
+  border-color: #c88e05;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 1rem rgba(200, 142, 5, 0.2);
+  transform: scale(1.02);
+}
+
+.palabra-principal {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.traduccion {
+  opacity: 0;
+  color: #777777;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  transition: opacity 0.3s ease-in-out; 
+}
+
+.tarjeta:hover .traduccion {
+  opacity: 1;
+}
+
+/* --- COLORES REVELADOS --- */
+.tarjeta.revelada-verde {
+  background-color: #14532d;
+  border-color: #22c55e;
+  box-shadow: 0 0 1rem rgba(34, 197, 94, 0.3);
+}
+
+.tarjeta.revelada-azul {
+  background-color: #1e3a8a;
+  border-color: #3b82f6;
+  box-shadow: 0 0 1rem rgba(59, 130, 246, 0.3);
+}
+
+.tarjeta.revelada-rojo {
+  background-color: #7f1d1d;
+  border-color: #ef4444;
+  box-shadow: 0 0 1.25rem rgba(239, 68, 68, 0.6);
+}
+
+.tarjeta.revelada-beige {
+  background-color: #2d2a24; /* Tono hueso apagado */
+  border-color: #595245; /* Borde sutil */
+}
+
+.tarjeta.revelada-beige .palabra-principal {
+  color: #a1a1aa;
+}
+
+/* --- FOOTER Y CRONÓMETRO --- */
+.tablero-footer {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cronometro-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tiempo-display {
+  font-size: 2rem;
+  font-family: 'Courier New', monospace;
+  color: #ffffff;
+}
+
+.tiempo-display.critico {
+  color: #ef4444;
+  animation: pulse 1s infinite;
+}
+
+.btn-reloj {
+  background: transparent;
+  border: 1px solid #c88e05;
+  color: #c88e05;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.btn-reloj:hover {
+  background: #c88e05;
+  color: #000;
+}
+
+.alerta-final {
+  margin-top: 0.5rem;
+  color: #ef4444;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* --- PANTALLA PREPARACIÓN --- */
+.info-preparacion {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+}
+
+.btn-primary-tablero {
+  background-color: #c88e05;
+  color: #000000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.btn-primary-tablero:hover {
+  background-color: #ffffff;
+  box-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+}
+
+/* --- MODALES DE VICTORIA Y DERROTA --- */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  border-radius: 0.5rem;
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  border: 2px solid;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+}
+
+.modal-content.roja { border-color: #ef4444; color: #ef4444; }
+.modal-content.verde { border-color: #22c55e; color: #22c55e; }
+.modal-content.azul { border-color: #3b82f6; color: #3b82f6; }
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.modal-content p {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.modal-botones {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn-stat {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s;
+}
+
+.btn-stat.verde { background-color: #22c55e; color: #000; }
+.btn-stat.azul { background-color: #3b82f6; color: #fff; }
+.btn-stat:hover { opacity: 0.8; }
+
+/* --- RESPONSIVE DESIGN --- */
+
+/* Pantallas medianas (Tablets ~900px) */
+@media (max-width: 56.25rem) {
+  .header-principal {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .header-stats {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .tablero-grid {
+    gap: 0.75rem;
+  }
+  
+  .tarjeta {
+    padding: 1rem;
+  }
+  
+  .palabra-principal {
+    font-size: 0.95rem;
+  }
+}
+
+/* Pantallas intermedias (Tablets en vertical / Ventanas reducidas ~768px) */
+@media (max-width: 48rem) {
+  .tablero-container {
+    padding: 1rem;
+    width: 95vw;
+  }
+
+  .tablero-grid {
+    gap: 0.5rem; /* Reducimos el espacio entre tarjetas */
+  }
+
+  .tarjeta {
+    padding: 0.75rem 0.4rem; 
+    min-height: 4rem; 
+  }
+
+  .palabra-principal {
+    font-size: 0.8rem; /* Letra más chica para que no desborde */
+    word-break: break-word; /* Permite cortar palabras largas como "AEROPUERTO" */
+    text-align: center;
+  }
+
+  .traduccion {
+    font-size: 0.65rem;
+  }
+}
+
+/* Pantallas pequeñas (Móviles ~600px) */
+@media (max-width: 37.5rem) {
+  .preparacion-container,
+  .tablero-container {
+    padding: 1rem;
+    width: 95vw;
+    margin: 2vh auto;
+  }
+
+  .tablero-grid {
+    gap: 0.3rem;
+  }
+
+  .tarjeta {
+    padding: 0.5rem 0.2rem;
+    min-height: 3.5rem;
+  }
+
+  .palabra-principal {
+    font-size: 0.65rem;
+    word-break: break-word;
+  }
+
+  .traduccion {
+    font-size: 0.55rem;
+    margin-top: 0.25rem;
+  }
+
+  .cronometro-container {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .tiempo-display {
+    font-size: 1.5rem;
+  }
+}

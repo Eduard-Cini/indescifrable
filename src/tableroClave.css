@@ -1,0 +1,28 @@
+.clave-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 1rem;
+}
+
+.clave-header h2 {
+  margin: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.header-info-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+.btn-volver {
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
