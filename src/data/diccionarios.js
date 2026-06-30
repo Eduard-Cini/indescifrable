@@ -10,15 +10,15 @@ export const diccionarios = {
     "BRUJA", "CABALLERO", "CABALLO", "CABEZA", "CABLE", "CACTUS", "CADENA", "CAFÉ", "CAJA", "CAMA",
     "CÁMARA", "CAMPANA", "CAMPO", "CANADÁ", "CANAL", "CANGURO", "CANTANTE", "CAPITAL", "CARA", "CARACOL",
     "CARBÓN", "CARGA", "CARTA", "CASA", "CASINO", "CAZA", "CEMENTERIO", "CENTAURO", "CENTRO", "CERDO",
-    "CERVEZA", "CHEQUE", "CHINA", "CHOCOLATE", "CHUPETE", "CIEGO", "CIELO", "CIENTÍFICO", "CINTA", "CÍRCULO",
-    "CLAVO", "CLIENTE", "CLÍNICA", "COBRE", "COCHE", "COCODRILO", "CÓDIGO", "COLA", "COLUMNA", "COMETA",
+    "CERVEZA", "CHEQUE", "CHINA", "CHOCOLATE", "CHUPÓN", "CIEGO", "CIELO", "CIENTÍFICO", "CINTA", "CÍRCULO",
+    "CLAVO", "CLIENTE", "CLÍNICA", "COBRE", "AUTO", "COCODRILO", "CÓDIGO", "COLA", "COLUMNA", "COMETA",
     "COMPÁS", "COMPUTADORA", "CONCIERTO", "CONEJO", "CONTRABANDO", "COPAS", "CORAZÓN", "CORONA", "CORREO", "CORTE",
     "CRUZ", "CUADRO", "CUARTO", "CUBIERTA", "CUBO", "CUELLO", "CUERDA", "CUERNO", "CURA", "DADO",
     "DANZA", "DELFÍN", "DEDO", "DESIERTO", "DÍA", "DIAMANTE", "DIANA", "DIARIO", "DIENTE", "DINOSAURIO",
     "DISCO", "DOCTOR", "DRAGÓN", "DUENDE", "EGIPTO", "EMBAJADA", "ENANO", "ENFERMEDAD", "ENLACE", "ESCALA",
     "ESCORPIÓN", "ESPACIO", "ESPADA", "ESPAÑA", "ESPÍA", "ESPINA", "ESTACIÓN", "ESTADO", "ESTRELLA", "ESTUDIO",
     "EUROPA", "EXTRATERRESTRE", "FANTASMA", "FARO", "FASE", "FERIA", "FIESTA", "FIGURA", "FLAUTA", "FLECHA",
-    "FOCO", "FONDO", "FORMA", "FRANCIA", "FUEGO", "FUENTE", "FUERZA", "FURGONETA", "GAFAS", "GALAXIA",
+    "FOCO", "FONDO", "FORMA", "FRANCIA", "FUEGO", "FUENTE", "FUERZA", "CAMIONETA", "LENTES", "GALAXIA",
     "GALLO", "GANCHO", "GATO", "GENIO", "GIGANTE", "GOLFO", "GOMA", "GOTA", "GRACIA", "GRANADA",
     "GRECIA", "GRIS", "GRÚA", "GUANTE", "GUARDIA", "GUERRA", "GUSANO", "HELADO", "HELICÓPTERO", "HIELO",
     "HIERBA", "HIERRO", "HÍGADO", "HILO", "HOJA", "HOLLYWOOD", "HONGO", "HOSPITAL", "HOTEL", "HUECO",
@@ -214,7 +214,7 @@ export const diccionarios = {
     // Tecnología y Medios (51-75)
     "Noticia", "Periódico", "Revista", "Televisión", "Radio", "Internet", "Pantalla", "Teclado", "Ratón", "Red", "Datos", "Programa", "App", "Mensaje", "Imagen", "Video", "Cámara", "Electricidad", "Batería", "Máquina", "Herramienta", "Dispositivo", "Invención", "Desarrollo", "Sistema",
     // Salud y Cuerpo II (76-100)
-    "Accidente", "Lesión", "Herida", "Tirita", "Farmacia", "Receta", "Píldora", "Examen", "Operación", "Paciente", "Músculo", "Hueso", "Estómago", "Espalda", "Cuello", "Diente", "Piel", "Cabello", "Rostro", "Cerebro", "Aliento", "Voz", "Sueño", "Ensueño", "Energía",
+    "Accidente", "Lesión", "Herida", "Curita", "Farmacia", "Receta", "Píldora", "Examen", "Operación", "Paciente", "Músculo", "Hueso", "Estómago", "Espalda", "Cuello", "Diente", "Piel", "Cabello", "Rostro", "Cerebro", "Aliento", "Voz", "Sueño", "Ensueño", "Energía",
     // Sociedad y Cultura (101-125)
     "Sociedad", "Estado", "Gobierno", "Ley", "Derecho", "Política", "Guerra", "Paz", "Historia", "Arte", "Música", "Literatura", "Teatro", "Película", "Religión", "Creencia", "Dios", "Tradición", "Cultura", "Idioma", "Festival", "Fiesta", "Regalo", "Invitación", "Invitado",
     // Conceptos Abstractos (126-150)
