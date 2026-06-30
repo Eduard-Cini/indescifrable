@@ -1,41 +1,12 @@
 import { useState, useEffect } from 'react';
 import { diccionarios } from './data/diccionarios';
-import './tablero.css'; 
-
-// --- HERRAMIENTAS CRIPTOGRÁFICAS (Fuera del componente para mantener el orden) ---
-
-// 1. El Generador Pseudoaleatorio (LCG - Linear Congruential Generator)
-function crearGenerador(semilla) {
-  // Convierte el texto "X7B2" en un número base único usando sus valores ASCII
-  let hash = 0;
-  for (let i = 0; i < semilla.length; i++) {
-    hash = semilla.charCodeAt(i) + ((hash << 5) - hash);
-  }
-  
-  // Parámetros matemáticos estándar para LCG
-  let m = 0x80000000, a = 1103515245, c = 12345;
-  let state = hash ? hash : 1; // El estado inicial es nuestro hash
-  
-  // Retorna una función que, cada vez que se ejecuta, da el siguiente número de la secuencia (entre 0 y 1)
-  return function() {
-    state = (a * state + c) % m;
-    return state / (m - 1);
-  };
-}
-
-// 2. El Algoritmo Fisher-Yates para barajar usando nuestro generador en lugar de Math.random()
-function barajar(array, funcionRandom) {
-  let arr = [...array];
-  for (let i = arr.length - 1; i > 0; i--) {
-    // Elegimos un índice al azar usando nuestra función matemática predecible
-    const j = Math.floor(funcionRandom() * (i + 1));
-    // Intercambiamos los elementos
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-// --- TU COMPONENTE ---
+import {
+  componerSemilla,
+  generarSemillaAleatoria,
+  generarTablero,
+  obtenerListaPalabras,
+} from './engine/board';
+import './tablero.css';
 
 function Tablero({ datos, onVolver }) {
   const [juegoListo, setJuegoListo] = useState(false);
@@ -43,20 +14,19 @@ function Tablero({ datos, onVolver }) {
   const [equipoInicial, setEquipoInicial] = useState('');
   const [palabrasTablero, setPalabrasTablero] = useState([]);
   const [mapaColores, setMapaColores] = useState([]);
-  
+
   // Estados de juego
   const [puntosVerde, setPuntosVerde] = useState(0);
   const [puntosAzul, setPuntosAzul] = useState(0);
   const [rondasVerde, setRondasVerde] = useState(0);
   const [rondasAzul, setRondasAzul] = useState(0);
   const [reveladas, setReveladas] = useState({});
-  //Control de Victoria
+  // Control de victoria
   const [objetivos, setObjetivos] = useState({ verde: 8, azul: 8 });
   const [ganadorRonda, setGanadorRonda] = useState(null);
   const [modalRoja, setModalRoja] = useState(false);
-  const [numeroRonda, setNumeroRonda] = useState(1); // Este será nuestro "gatillo" para re-barajar
-  const [ganadorFinal, setGanadorFinal] = useState(null); // Para atrapar cuando alguien gane la partida completa
-  
+  const [ganadorFinal, setGanadorFinal] = useState(null);
+
   // Cronómetro
   const [tiempo, setTiempo] = useState(60);
   const [relojActivo, setRelojActivo] = useState(false);
@@ -71,68 +41,50 @@ function Tablero({ datos, onVolver }) {
     return () => clearInterval(intervalo);
   }, [relojActivo, tiempo]);
 
-useEffect(() => {
-    // Generador seguro de 4 caracteres exactos
-    const nuevaSemilla = Array.from({length: 4}, () => 
-      'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'[Math.floor(Math.random() * 36)]
-    ).join('');
-    
-    setSemilla(nuevaSemilla);
-    const rng = crearGenerador(nuevaSemilla);
+  const iniciarPartida = () => {
+    const semillaCorta = generarSemillaAleatoria(4);
+    const semillaCompleta = componerSemilla(datos.vocabulario, semillaCorta);
+    const lista = obtenerListaPalabras(datos.vocabulario, datos.palabras);
+    const tablero = generarTablero(semillaCorta, lista);
 
-    let listaCompleta = [];
-    if (datos.vocabulario === 'personalizado' && datos.palabras) {
-      listaCompleta = datos.palabras.split(/\s*,\s*/).map(p => p.toUpperCase());
-    } else {
-      listaCompleta = diccionarios[datos.vocabulario] || diccionarios['es_es'];
-    }
-
-    const empiezaVerde = rng() > 0.5;
-    setEquipoInicial(empiezaVerde ? 'Iluminatis (Verde)' : 'La MASA (Azul)');
-
-    // El equipo que inicia tiene que adivinar 9, el otro 8
+    setSemilla(semillaCompleta);
+    setEquipoInicial(tablero.equipoInicial);
     setObjetivos({
-      verde: empiezaVerde ? 9 : 8,
-      azul: empiezaVerde ? 8 : 9
+      verde: tablero.empiezaVerde ? 9 : 8,
+      azul: tablero.empiezaVerde ? 8 : 9,
     });
-
-    const indices = Array.from({ length: listaCompleta.length }, (_, i) => i);
-    const indicesRevueltos = barajar(indices, rng);
-    const seleccionadas = indicesRevueltos.slice(0, 25).map(i => ({
-      texto: listaCompleta[i],
-      indiceOriginal: i 
-    }));
-    setPalabrasTablero(seleccionadas);
-
-    const colores = [...Array(9).fill(empiezaVerde ? 'verde' : 'azul'), ...Array(8).fill(empiezaVerde ? 'azul' : 'verde'), ...Array(7).fill('beige'), 'rojo'];
-    setMapaColores(barajar(colores, rng));
-  }, [datos,numeroRonda]);
-
-    const manejarClic = (index) => {
-      // Bloquear clics si ya se reveló, si ya hay ganador, o si salió la roja
-      if (reveladas[index] || ganadorRonda || modalRoja) return;
-
-      const colorOculto = mapaColores[index];
-      setReveladas(prev => ({ ...prev, [index]: colorOculto }));
-
-      if (colorOculto === 'verde') {
-        const nuevosPuntos = puntosVerde + 1;
-        setPuntosVerde(nuevosPuntos);
-        if (nuevosPuntos === objetivos.verde) terminarRonda('verde');
-      } else if (colorOculto === 'azul') {
-        const nuevosPuntos = puntosAzul + 1;
-        setPuntosAzul(nuevosPuntos);
-        if (nuevosPuntos === objetivos.azul) terminarRonda('azul');
-      } else if (colorOculto === 'rojo') {
-        setRelojActivo(false); // Pausamos el reloj
-        setModalRoja(true); // Disparamos la alerta manual
-      }
+    setPalabrasTablero(tablero.palabrasTablero);
+    setMapaColores(tablero.mapaColores);
   };
-  //TERMINAR RONDA
+
+  useEffect(() => {
+    iniciarPartida();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const manejarClic = (index) => {
+    if (reveladas[index] || ganadorRonda || modalRoja) return;
+
+    const colorOculto = mapaColores[index];
+    setReveladas(prev => ({ ...prev, [index]: colorOculto }));
+
+    if (colorOculto === 'verde') {
+      const nuevosPuntos = puntosVerde + 1;
+      setPuntosVerde(nuevosPuntos);
+      if (nuevosPuntos === objetivos.verde) terminarRonda('verde');
+    } else if (colorOculto === 'azul') {
+      const nuevosPuntos = puntosAzul + 1;
+      setPuntosAzul(nuevosPuntos);
+      if (nuevosPuntos === objetivos.azul) terminarRonda('azul');
+    } else if (colorOculto === 'rojo') {
+      setRelojActivo(false);
+      setModalRoja(true);
+    }
+  };
+
   const terminarRonda = (ganador) => {
     setRelojActivo(false);
-    
-    // Calculamos las nuevas rondas antes de guardarlas en el estado
+
     let nuevasRondasVerde = rondasVerde;
     let nuevasRondasAzul = rondasAzul;
 
@@ -144,28 +96,24 @@ useEffect(() => {
       setRondasAzul(nuevasRondasAzul);
     }
 
-    // Evaluamos si alguien ya alcanzó el límite de rondas
     if (nuevasRondasVerde >= datos.rondas) {
       setGanadorFinal('verde');
     } else if (nuevasRondasAzul >= datos.rondas) {
       setGanadorFinal('azul');
     } else {
-      setGanadorRonda(ganador); // Solo mostramos el modal de ronda si el juego no ha terminado
+      setGanadorRonda(ganador);
     }
   };
 
-  //PREPARAR SIGUIENTE RONDA
   const prepararSiguienteRonda = () => {
-    setJuegoListo(false); // Nos devuelve a la pantalla inicial para generar nueva semilla
+    setJuegoListo(false);
     setGanadorRonda(null);
     setModalRoja(false);
     setReveladas({});
     setPuntosVerde(0);
     setPuntosAzul(0);
     setTiempo(60);
-    // Cambiamos 'datos' creando un clon falso para forzar al useEffect a correr de nuevo
-    // (Opcional: Si pasas una nueva prop desde el padre, ignora esto, pero esto asegura la recarga)
-    setNumeroRonda(prev => prev + 1);
+    iniciarPartida();
   };
 
   // --- RENDERIZADO ---
@@ -220,7 +168,6 @@ useEffect(() => {
 
       <footer className="tablero-footer">
         <div className="cronometro-container">
-          {/* El reloj solo parpadea (clase 'critico') si está entre 1 y 10 segundos */}
           <div className={`tiempo-display ${tiempo <= 10 && tiempo > 0 ? 'critico' : ''}`}>
             00:{tiempo.toString().padStart(2, '0')}
           </div>
@@ -233,7 +180,6 @@ useEffect(() => {
         {tiempo === 0 && <div className="alerta-final">¡TIEMPO AGOTADO!</div>}
       </footer>
 
-      {/* MODAL: TARJETA ASESINA */}
       {modalRoja && (
         <div className="modal-overlay">
           <div className="modal-content roja">
@@ -251,7 +197,6 @@ useEffect(() => {
         </div>
       )}
 
-      {/* MODAL: FIN DE RONDA NORMAL */}
       {ganadorRonda && (
         <div className="modal-overlay">
           <div className={`modal-content ${ganadorRonda}`}>
@@ -264,17 +209,16 @@ useEffect(() => {
         </div>
       )}
 
-      {/* MODAL: FIN DEL JUEGO (VICTORIA TOTAL) */}
       {ganadorFinal && (
         <div className="modal-overlay">
           <div className={`modal-content ${ganadorFinal}`}>
             <h3>¡TRANSMISIÓN COMPLETADA!</h3>
             <p>El ganador definitivo de la partida es:</p>
             <h2>{ganadorFinal === 'verde' ? 'ILUMINATIS' : 'LA MASA'}</h2>
-            <button 
-              className="btn-primary" 
+            <button
+              className="btn-primary"
               style={{ marginTop: '20px' }}
-              onClick={onVolver} // Manera rápida de reiniciar toda la App
+              onClick={onVolver}
             >
               Volver a la Configuración Inicial
             </button>
