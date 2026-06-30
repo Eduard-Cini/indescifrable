@@ -117,8 +117,33 @@
   font-size: 1.25rem;
   line-height: 1.9;
 }
-.lectura-frase { margin-bottom: 0.5rem; }
+.lectura-frase { margin-bottom: 0.5rem; position: relative; padding-left: 1.6rem; }
 .lectura-frase > p { margin: 0; }
+
+/* Marcador discreto en el margen: objetivo táctil para traducir una frase.
+   En escritorio se ilumina al pasar el cursor; en móvil queda visible para tocar. */
+.frase-toggle {
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #4a5a52;
+  opacity: 0.55;
+  font-size: 0.85rem;
+  line-height: 1;
+  border-radius: 4px;
+  transition: opacity 0.12s ease, color 0.12s ease, background 0.12s ease;
+}
+.lectura-frase:hover .frase-toggle { opacity: 1; }
+.frase-toggle:hover { background: #1d1d1d; color: #8fbf9f; }
+.frase-toggle.activo { color: #8fbf9f; opacity: 1; }
 
 .palabra {
   cursor: pointer;

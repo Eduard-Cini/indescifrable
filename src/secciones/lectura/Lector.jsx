@@ -29,6 +29,7 @@ function Lector() {
   const [bolsa, setBolsa] = useState([]);
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
   const [mostrarTraduccion, setMostrarTraduccion] = useState(false); // modo bilingüe global
+  const [traducidas, setTraducidas] = useState({}); // traducción revelada por frase (índice -> bool)
 
   useEffect(() => {
     setBolsa(cargarBolsa());
@@ -73,6 +74,9 @@ function Lector() {
     setSeleccion(null);
   };
 
+  const toggleFrase = (i) =>
+    setTraducidas((prev) => ({ ...prev, [i]: !prev[i] }));
+
   return (
     <div className="lectura-container">
       <header className="lectura-top">
@@ -98,32 +102,43 @@ function Lector() {
       </div>
 
       <article className={'lectura-texto' + (mostrarTraduccion ? ' bilingue' : '')}>
-        {frases.map((frase, i) => (
-          <div key={i} className="lectura-frase">
-            <p>
-              {tokenizar(frase).map((t, j) =>
-                t.tipo === 'palabra' ? (
-                  <span
-                    key={j}
-                    className={
-                      'palabra' +
-                      (tienePalabra(bolsa, clavePalabra(idioma, t.valor)) ? ' en-bolsa' : '')
-                    }
-                    onClick={() => seleccionarPalabra(t.valor)}
-                  >
-                    {t.valor}
-                  </span>
-                ) : (
-                  <span key={j}>{t.valor}</span>
-                )
+        {frases.map((frase, i) => {
+          const visible = (mostrarTraduccion || traducidas[i]) && !esEspanol;
+          return (
+            <div key={i} className="lectura-frase">
+              {!esEspanol && (
+                <button
+                  className={'frase-toggle' + (visible ? ' activo' : '')}
+                  onClick={() => toggleFrase(i)}
+                  aria-label="Traducir esta frase"
+                  title="Traducir esta frase"
+                >
+                  ⇄
+                </button>
               )}
-            </p>
+              <p>
+                {tokenizar(frase).map((t, j) =>
+                  t.tipo === 'palabra' ? (
+                    <span
+                      key={j}
+                      className={
+                        'palabra' +
+                        (tienePalabra(bolsa, clavePalabra(idioma, t.valor)) ? ' en-bolsa' : '')
+                      }
+                      onClick={() => seleccionarPalabra(t.valor)}
+                    >
+                      {t.valor}
+                    </span>
+                  ) : (
+                    <span key={j}>{t.valor}</span>
+                  )
+                )}
+              </p>
 
-            {mostrarTraduccion && !esEspanol && (
-              <p className="frase-traducida">{traduccionFrases[i]}</p>
-            )}
-          </div>
-        ))}
+              {visible && <p className="frase-traducida">{traduccionFrases[i]}</p>}
+            </div>
+          );
+        })}
       </article>
 
       {seleccion && (
