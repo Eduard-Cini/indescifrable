@@ -28,7 +28,6 @@ function Lector() {
 
   const [bolsa, setBolsa] = useState([]);
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
-  const [mostrarTraduccion, setMostrarTraduccion] = useState(false); // modo bilingüe global
   const [traducidas, setTraducidas] = useState({}); // traducción revelada por frase (índice -> bool)
 
   useEffect(() => {
@@ -85,25 +84,14 @@ function Lector() {
         <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsa.length}</Link>
       </header>
 
-      <div className="lectura-barra">
-        <span className="lectura-subtitulo">
-          Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
-          traducirla y guardarla.
-        </span>
-        {!esEspanol && (
-          <button
-            className={'btn-bilingue' + (mostrarTraduccion ? ' activo' : '')}
-            onClick={() => setMostrarTraduccion((v) => !v)}
-            aria-pressed={mostrarTraduccion}
-          >
-            {mostrarTraduccion ? '⇄ Ocultar traducción' : '⇄ Modo bilingüe'}
-          </button>
-        )}
-      </div>
+      <p className="lectura-subtitulo">
+        Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
+        traducirla y guardarla{!esEspanol && ', o el ⇄ del margen para traducir la frase'}.
+      </p>
 
-      <article className={'lectura-texto' + (mostrarTraduccion ? ' bilingue' : '')}>
+      <article className="lectura-texto">
         {frases.map((frase, i) => {
-          const visible = (mostrarTraduccion || traducidas[i]) && !esEspanol;
+          const visible = traducidas[i] && !esEspanol;
           return (
             <div key={i} className="lectura-frase">
               {!esEspanol && (

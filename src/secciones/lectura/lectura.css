@@ -36,33 +36,7 @@
 .lectura-subtitulo {
   color: #9a9a9a;
   font-size: 0.9rem;
-}
-
-.lectura-barra {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
   margin-bottom: 1.5rem;
-}
-.btn-bilingue {
-  flex-shrink: 0;
-  background: #1d1d1d;
-  border: 1px solid #2e2e2e;
-  color: #9ad;
-  border-radius: 999px;
-  padding: 0.4rem 0.9rem;
-  cursor: pointer;
-  font-family: 'Courier New', monospace;
-  font-size: 0.8rem;
-  transition: border-color 0.12s ease, color 0.12s ease, background 0.12s ease;
-}
-.btn-bilingue:hover { border-color: #4a7; color: #cfe6ff; }
-.btn-bilingue.activo {
-  background: rgba(74, 170, 119, 0.15);
-  border-color: #4a7;
-  color: #8fbf9f;
 }
 
 /* --- Filtros de la biblioteca --- */
@@ -157,7 +131,6 @@
   border-bottom: 2px solid #4a7;
 }
 
-.lectura-texto.bilingue .lectura-frase { margin-bottom: 1.1rem; }
 .frase-traducida {
   margin: 0.2rem 0 0;
   font-family: 'Courier New', monospace;
@@ -177,7 +150,8 @@
   background: #1d1d1d;
   border: 1px solid #3a3a3a;
   border-radius: 12px;
-  padding: 1rem 1.25rem;
+  /* banda superior para la × de cerrar, así nunca se solapa con el contenido */
+  padding: 1.6rem 1.1rem 1rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
@@ -185,14 +159,23 @@
 }
 .popup-cerrar {
   position: absolute;
-  top: 6px;
-  right: 10px;
+  top: 7px;
+  right: 9px;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
   border: none;
-  color: #888;
-  font-size: 1.2rem;
+  color: #e0726f;
+  font-size: 1rem;
+  line-height: 1;
   cursor: pointer;
+  border-radius: 50%;
+  transition: background 0.12s ease, color 0.12s ease;
 }
+.popup-cerrar:hover { background: #2a1414; color: #ff8a85; }
 .popup-cuerpo { flex: 1; }
 .popup-surface { font-size: 1.2rem; font-weight: bold; color: #f0f0f0; }
 .popup-lemma { color: #888; margin-left: 0.4rem; font-size: 0.9rem; }
