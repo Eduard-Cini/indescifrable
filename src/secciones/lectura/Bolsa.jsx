@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
 import { quitarPalabra } from '../../engine/bolsa';
-import { NOMBRE_IDIOMA } from '../../data/lecturas';
 import './lectura.css';
 
 function Bolsa() {
@@ -36,17 +35,23 @@ function Bolsa() {
         {bolsa.map((p) => (
           <li key={p.id} className="bolsa-item">
             <div className="bolsa-item-info">
-              <span className="bolsa-palabra">{p.surface}</span>
-              {p.lemma && p.lemma.toLowerCase() !== p.surface.toLowerCase() && (
-                <span className="bolsa-lemma">({p.lemma})</span>
-              )}
-              <span className="bolsa-meta">
-                {NOMBRE_IDIOMA[p.lang] ?? p.lang}
-                {p.traducciones?.es ? ` · ${p.traducciones.es}` : ''}
+              <span className="bolsa-palabra">
+                {p.surface}
+                {p.lemma && p.lemma.toLowerCase() !== p.surface.toLowerCase() && (
+                  <span className="bolsa-lemma"> ({p.lemma})</span>
+                )}
               </span>
+              {p.traducciones?.es && (
+                <span className="bolsa-meta">{p.traducciones.es}</span>
+              )}
             </div>
-            <button className="bolsa-quitar" onClick={() => quitar(p.id)}>
-              Quitar
+            <button
+              className="bolsa-quitar"
+              onClick={() => quitar(p.id)}
+              aria-label="Quitar palabra"
+              title="Quitar"
+            >
+              ✕
             </button>
           </li>
         ))}

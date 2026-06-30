@@ -193,12 +193,19 @@
 .bolsa-lemma { color: #888; font-size: 0.85rem; }
 .bolsa-meta { color: #8fbf9f; font-size: 0.8rem; }
 .bolsa-quitar {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: none;
-  border: 1px solid #5a3030;
-  color: #d88;
-  border-radius: 6px;
-  padding: 0.35rem 0.7rem;
+  border: none;
+  color: #777;
+  border-radius: 50%;
+  font-size: 0.85rem;
+  line-height: 1;
   cursor: pointer;
-  font-family: inherit;
+  transition: background 0.1s ease, color 0.1s ease;
 }
-.bolsa-quitar:hover { background: #2a1414; }
+.bolsa-quitar:hover { background: #2a1414; color: #d88; }
