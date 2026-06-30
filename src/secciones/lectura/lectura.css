@@ -36,7 +36,33 @@
 .lectura-subtitulo {
   color: #9a9a9a;
   font-size: 0.9rem;
+}
+
+.lectura-barra {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
   margin-bottom: 1.5rem;
+}
+.btn-bilingue {
+  flex-shrink: 0;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  color: #9ad;
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  transition: border-color 0.12s ease, color 0.12s ease, background 0.12s ease;
+}
+.btn-bilingue:hover { border-color: #4a7; color: #cfe6ff; }
+.btn-bilingue.activo {
+  background: rgba(74, 170, 119, 0.15);
+  border-color: #4a7;
+  color: #8fbf9f;
 }
 
 /* --- Filtros de la biblioteca --- */
@@ -106,23 +132,13 @@
   border-bottom: 2px solid #4a7;
 }
 
-.btn-traducir {
-  margin-top: 0.25rem;
-  background: none;
-  border: none;
-  color: #9ad;
-  cursor: pointer;
-  font-size: 0.8rem;
-  font-family: 'Courier New', monospace;
-  padding: 0;
-}
-.btn-traducir:hover { color: #cfe6ff; text-decoration: underline; }
+.lectura-texto.bilingue .lectura-frase { margin-bottom: 1.1rem; }
 .frase-traducida {
-  margin: 0.25rem 0 0;
+  margin: 0.2rem 0 0;
   font-family: 'Courier New', monospace;
-  font-size: 0.95rem;
-  color: #8fbf9f;
-  border-left: 2px solid #4a7;
+  font-size: 0.9rem;
+  color: #7f9f8c;
+  border-left: 2px solid #3a5a48;
   padding-left: 0.75rem;
 }
 
@@ -209,3 +225,24 @@
   transition: background 0.1s ease, color 0.1s ease;
 }
 .bolsa-quitar:hover { background: #2a1414; color: #d88; }
+
+.bolsa-confirm {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-shrink: 0;
+}
+.bolsa-confirm-txt { font-size: 0.8rem; color: #bbb; }
+.bolsa-confirm-si,
+.bolsa-confirm-no {
+  border: none;
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.8rem;
+}
+.bolsa-confirm-si { background: #5a3030; color: #f0c9c9; }
+.bolsa-confirm-si:hover { background: #743a3a; }
+.bolsa-confirm-no { background: #2a2a2a; color: #ccc; }
+.bolsa-confirm-no:hover { background: #383838; }

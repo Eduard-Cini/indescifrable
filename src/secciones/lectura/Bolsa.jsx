@@ -6,6 +6,7 @@ import './lectura.css';
 
 function Bolsa() {
   const [bolsa, setBolsa] = useState([]);
+  const [confirmando, setConfirmando] = useState(null);
 
   useEffect(() => {
     setBolsa(cargarBolsa());
@@ -15,6 +16,7 @@ function Bolsa() {
     const nueva = quitarPalabra(bolsa, id);
     setBolsa(nueva);
     guardarBolsa(nueva);
+    setConfirmando(null);
   };
 
   return (
@@ -45,14 +47,26 @@ function Bolsa() {
                 <span className="bolsa-meta">{p.traducciones.es}</span>
               )}
             </div>
-            <button
-              className="bolsa-quitar"
-              onClick={() => quitar(p.id)}
-              aria-label="Quitar palabra"
-              title="Quitar"
-            >
-              ✕
-            </button>
+            {confirmando === p.id ? (
+              <div className="bolsa-confirm">
+                <span className="bolsa-confirm-txt">¿Quitar?</span>
+                <button className="bolsa-confirm-si" onClick={() => quitar(p.id)}>
+                  Sí
+                </button>
+                <button className="bolsa-confirm-no" onClick={() => setConfirmando(null)}>
+                  No
+                </button>
+              </div>
+            ) : (
+              <button
+                className="bolsa-quitar"
+                onClick={() => setConfirmando(p.id)}
+                aria-label="Quitar palabra"
+                title="Quitar"
+              >
+                ✕
+              </button>
+            )}
           </li>
         ))}
       </ul>

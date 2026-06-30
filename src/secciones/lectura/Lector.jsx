@@ -28,7 +28,7 @@ function Lector() {
 
   const [bolsa, setBolsa] = useState([]);
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
-  const [traducidas, setTraducidas] = useState({}); // índice de frase -> bool
+  const [mostrarTraduccion, setMostrarTraduccion] = useState(false); // modo bilingüe global
 
   useEffect(() => {
     setBolsa(cargarBolsa());
@@ -73,9 +73,6 @@ function Lector() {
     setSeleccion(null);
   };
 
-  const toggleTraduccion = (i) =>
-    setTraducidas((prev) => ({ ...prev, [i]: !prev[i] }));
-
   return (
     <div className="lectura-container">
       <header className="lectura-top">
@@ -84,12 +81,23 @@ function Lector() {
         <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsa.length}</Link>
       </header>
 
-      <p className="lectura-subtitulo">
-        Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca cualquier palabra
-        para ver su traducción y guardarla en tu bolsa.
-      </p>
+      <div className="lectura-barra">
+        <span className="lectura-subtitulo">
+          Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
+          traducirla y guardarla.
+        </span>
+        {!esEspanol && (
+          <button
+            className={'btn-bilingue' + (mostrarTraduccion ? ' activo' : '')}
+            onClick={() => setMostrarTraduccion((v) => !v)}
+            aria-pressed={mostrarTraduccion}
+          >
+            {mostrarTraduccion ? '⇄ Ocultar traducción' : '⇄ Modo bilingüe'}
+          </button>
+        )}
+      </div>
 
-      <article className="lectura-texto">
+      <article className={'lectura-texto' + (mostrarTraduccion ? ' bilingue' : '')}>
         {frases.map((frase, i) => (
           <div key={i} className="lectura-frase">
             <p>
@@ -111,15 +119,8 @@ function Lector() {
               )}
             </p>
 
-            {!esEspanol && (
-              <>
-                <button className="btn-traducir" onClick={() => toggleTraduccion(i)}>
-                  {traducidas[i] ? 'Ocultar traducción' : 'Ver traducción'}
-                </button>
-                {traducidas[i] && (
-                  <p className="frase-traducida">{traduccionFrases[i]}</p>
-                )}
-              </>
+            {mostrarTraduccion && !esEspanol && (
+              <p className="frase-traducida">{traduccionFrases[i]}</p>
             )}
           </div>
         ))}
