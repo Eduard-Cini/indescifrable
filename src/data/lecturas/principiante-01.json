@@ -1,0 +1,29 @@
+{
+  "id": "mercado-01",
+  "nivel": "principiante",
+  "titulo": { "es": "El mercado", "en": "The market", "de": "Der Markt" },
+  "fuente": "Texto original de autoría propia (vocabulario controlado para nivel principiante).",
+  "cuerpo": {
+    "es": [
+      "María va al mercado por la mañana.",
+      "Compra manzanas, pan y queso.",
+      "El pan está caliente y huele muy bien.",
+      "María paga con una moneda y vuelve a casa.",
+      "En casa prepara el desayuno para su familia."
+    ],
+    "en": [
+      "María goes to the market in the morning.",
+      "She buys apples, bread and cheese.",
+      "The bread is warm and smells very good.",
+      "María pays with a coin and goes back home.",
+      "At home she prepares breakfast for her family."
+    ],
+    "de": [
+      "María geht am Morgen zum Markt.",
+      "Sie kauft Äpfel, Brot und Käse.",
+      "Das Brot ist warm und riecht sehr gut.",
+      "María bezahlt mit einer Münze und geht nach Hause.",
+      "Zu Hause bereitet sie das Frühstück für ihre Familie vor."
+    ]
+  }
+}

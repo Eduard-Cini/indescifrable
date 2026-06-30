@@ -1,0 +1,59 @@
+.home-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.home-header h1 {
+  font-size: 2.4rem;
+  margin: 0 0 0.5rem;
+  color: #f0f0f0;
+}
+.home-header p {
+  color: #9a9a9a;
+  margin: 0;
+}
+
+.home-secciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.seccion-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.seccion-card:hover {
+  transform: translateY(-3px);
+  border-color: #4a7;
+}
+.seccion-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.3rem;
+}
+.seccion-card p {
+  margin: 0;
+  color: #9a9a9a;
+  font-size: 0.9rem;
+}
+
+.seccion-card.juegos:hover { border-color: #6a8cff; }
+.seccion-card.proximamente {
+  opacity: 0.55;
+  cursor: default;
+}
+.seccion-card.proximamente:hover {
+  transform: none;
+  border-color: #2e2e2e;
+}

@@ -1,0 +1,204 @@
+.lectura-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 6rem;
+}
+
+.lectura-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #2e2e2e;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+.lectura-top h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  text-align: center;
+  flex: 1;
+}
+.lectura-link {
+  color: #9ad;
+  text-decoration: none;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+.lectura-link:hover { color: #cfe6ff; }
+.bolsa-badge {
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.lectura-subtitulo {
+  color: #9a9a9a;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Filtros de la biblioteca --- */
+.biblioteca-filtros {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.biblioteca-filtros label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.85rem;
+  color: #bbb;
+}
+.biblioteca-filtros select {
+  background: #1d1d1d;
+  color: #e0e0e0;
+  border: 1px solid #2e2e2e;
+  border-radius: 6px;
+  padding: 0.4rem 0.6rem;
+  font-family: inherit;
+}
+
+.biblioteca-lista {
+  display: grid;
+  gap: 0.75rem;
+}
+.biblioteca-vacia { color: #888; }
+.lectura-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  text-align: left;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.12s ease;
+}
+.lectura-card:hover { border-color: #4a7; }
+.lectura-card-titulo { font-size: 1.1rem; font-weight: bold; }
+.lectura-card-meta { font-size: 0.8rem; color: #888; }
+
+/* --- Texto de lectura --- */
+.lectura-texto {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.25rem;
+  line-height: 1.9;
+}
+.lectura-frase { margin-bottom: 0.5rem; }
+.lectura-frase > p { margin: 0; }
+
+.palabra {
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 0 1px;
+  transition: background 0.1s ease;
+}
+.palabra:hover { background: #34506b; }
+.palabra.en-bolsa {
+  background: rgba(74, 170, 119, 0.25);
+  border-bottom: 2px solid #4a7;
+}
+
+.btn-traducir {
+  margin-top: 0.25rem;
+  background: none;
+  border: none;
+  color: #9ad;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: 'Courier New', monospace;
+  padding: 0;
+}
+.btn-traducir:hover { color: #cfe6ff; text-decoration: underline; }
+.frase-traducida {
+  margin: 0.25rem 0 0;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: #8fbf9f;
+  border-left: 2px solid #4a7;
+  padding-left: 0.75rem;
+}
+
+/* --- Popup de palabra --- */
+.popup-palabra {
+  position: fixed;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(420px, 92vw);
+  background: #1d1d1d;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.popup-cerrar {
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.popup-cuerpo { flex: 1; }
+.popup-surface { font-size: 1.2rem; font-weight: bold; color: #f0f0f0; }
+.popup-lemma { color: #888; margin-left: 0.4rem; font-size: 0.9rem; }
+.popup-traduccion { margin: 0.35rem 0 0; color: #8fbf9f; font-size: 1.05rem; }
+.popup-traduccion.sin, .popup-traduccion.neutral { color: #888; font-size: 0.9rem; }
+
+.popup-agregar {
+  background: #4a7;
+  color: #08110b;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  font-family: inherit;
+}
+.popup-agregar:hover { background: #5cc78c; }
+.popup-agregar:disabled {
+  background: #2e2e2e;
+  color: #8fbf9f;
+  cursor: default;
+}
+
+/* --- Lista de la bolsa --- */
+.bolsa-lista { list-style: none; padding: 0; display: grid; gap: 0.6rem; }
+.bolsa-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+}
+.bolsa-item-info { display: flex; flex-direction: column; gap: 0.15rem; }
+.bolsa-palabra { font-weight: bold; font-size: 1.05rem; }
+.bolsa-lemma { color: #888; font-size: 0.85rem; }
+.bolsa-meta { color: #8fbf9f; font-size: 0.8rem; }
+.bolsa-quitar {
+  background: none;
+  border: 1px solid #5a3030;
+  color: #d88;
+  border-radius: 6px;
+  padding: 0.35rem 0.7rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.bolsa-quitar:hover { background: #2a1414; }

@@ -1,7 +1,23 @@
-/* Solo estilos globales de layout, si los necesitas 
+/* Solo estilos globales de layout, si los necesitas
 .app-container {
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
 }
 */
+
+.volver-plataforma {
+  position: fixed;
+  top: 10px;
+  left: 12px;
+  z-index: 50;
+  color: #9ad;
+  text-decoration: none;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.volver-plataforma:hover {
+  color: #cfe6ff;
+}
