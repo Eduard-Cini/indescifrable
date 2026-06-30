@@ -1,0 +1,44 @@
+{
+  "id": "viento-y-sol",
+  "nivel": "avanzado",
+  "titulo": { "es": "El viento del norte y el sol", "en": "The North Wind and the Sun", "de": "Der Nordwind und die Sonne" },
+  "fuente": "Adaptación trilingüe de la fábula de Esopo «El viento del norte y el sol» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
+  "cuerpo": {
+    "es": [
+      "El viento del norte y el sol discutían sobre cuál de los dos era más fuerte.",
+      "Como ninguno cedía, decidieron poner a prueba su poder con un viajero que caminaba por el camino.",
+      "Acordaron que vencería aquel que lograra quitarle el abrigo al hombre.",
+      "El viento del norte fue el primero en intentarlo y comenzó a soplar con toda su furia.",
+      "Sin embargo, cuanto más violento era el viento, con más fuerza se envolvía el viajero en su abrigo.",
+      "Agotado y vencido, el viento tuvo que rendirse y cederle el turno al sol.",
+      "Entonces el sol brilló con suavidad y fue calentando el aire poco a poco.",
+      "El viajero, sintiendo el agradable calor, se aflojó la ropa sin darse cuenta.",
+      "Finalmente, abrumado por el calor, se quitó el abrigo por su propia voluntad.",
+      "De este modo, el sol demostró que la dulzura logra más que la violencia."
+    ],
+    "en": [
+      "The North Wind and the Sun were arguing about which of the two was stronger.",
+      "Since neither would give in, they decided to test their power on a traveler who was walking along the road.",
+      "They agreed that the winner would be the one who managed to take off the man's coat.",
+      "The North Wind was the first to try, and he began to blow with all his fury.",
+      "However, the more violent the wind became, the more tightly the traveler wrapped himself in his coat.",
+      "Exhausted and defeated, the wind had to give up and yield his turn to the Sun.",
+      "Then the Sun shone gently and gradually warmed the air.",
+      "The traveler, feeling the pleasant warmth, loosened his clothing without realizing it.",
+      "At last, overwhelmed by the heat, he took off his coat of his own free will.",
+      "In this way, the Sun proved that gentleness achieves more than violence."
+    ],
+    "de": [
+      "Der Nordwind und die Sonne stritten darüber, wer von beiden der Stärkere sei.",
+      "Da keiner nachgeben wollte, beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der des Weges ging.",
+      "Sie vereinbarten, dass derjenige gewinnen sollte, dem es gelänge, dem Mann den Mantel auszuziehen.",
+      "Der Nordwind versuchte es zuerst und begann mit aller Wut zu blasen.",
+      "Doch je heftiger der Wind wurde, desto fester hüllte sich der Wanderer in seinen Mantel.",
+      "Erschöpft und besiegt musste der Wind aufgeben und der Sonne den Vortritt lassen.",
+      "Dann schien die Sonne sanft und erwärmte allmählich die Luft.",
+      "Der Wanderer, der die angenehme Wärme spürte, lockerte seine Kleidung, ohne es zu merken.",
+      "Schließlich, von der Hitze überwältigt, zog er den Mantel aus freien Stücken aus.",
+      "Auf diese Weise bewies die Sonne, dass Sanftheit mehr erreicht als Gewalt."
+    ]
+  }
+}

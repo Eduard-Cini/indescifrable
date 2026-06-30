@@ -1,0 +1,50 @@
+{
+  "id": "olla-magica",
+  "nivel": "avanzado",
+  "titulo": { "es": "El puré dulce", "en": "The sweet porridge", "de": "Der süße Brei" },
+  "fuente": "Adaptación de «Der süße Brei» de los Hermanos Grimm (Kinder- und Hausmärchen, 1812; dominio público). Original alemán e inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/2591",
+  "cuerpo": {
+    "es": [
+      "Había una vez una niña pobre y piadosa que vivía sola con su madre, y ya no tenían nada que comer.",
+      "Entonces la niña salió al bosque, y allí se encontró con una anciana que ya conocía su necesidad.",
+      "La mujer le regaló una ollita a la que solo había que decir «Cocina, ollita» para que cocinara un buen y dulce puré de mijo.",
+      "Y si se decía «Detente, ollita», dejaba de cocinar.",
+      "La niña llevó la olla a casa de su madre, y así terminaron su pobreza y su hambre.",
+      "Pero un día la niña había salido, y la madre dijo: «Cocina, ollita».",
+      "La olla coció un dulce puré, y la madre comió hasta saciarse; pero cuando quiso que se detuviera, había olvidado la palabra.",
+      "Así, la ollita siguió cociendo, y el puré subió por el borde y se desbordó por la cocina.",
+      "Pronto toda la cocina y toda la casa estuvieron llenas, después la calle y las casas vecinas.",
+      "Parecía querer saciar al mundo entero, y nadie sabía cómo remediar la desgracia.",
+      "Por fin la niña volvió a casa y solo dijo: «Detente, ollita», y al instante dejó de cocinar.",
+      "Pero quien quisiera regresar al pueblo, tenía que comerse un camino a través del dulce puré."
+    ],
+    "en": [
+      "Once upon a time there was a poor, pious girl who lived alone with her mother, and they had nothing left to eat.",
+      "So the child went out into the forest, and there she met an old woman who already knew her distress.",
+      "The woman gave her a little pot, to which one only had to say “Cook, little pot,” for it to cook good, sweet millet porridge.",
+      "And if one said “Stop, little pot,” it stopped cooking.",
+      "The girl brought the pot home to her mother, and now their poverty and hunger were over.",
+      "But one day the girl had gone out, and the mother said: “Cook, little pot.”",
+      "So it cooked sweet porridge, and she ate her fill; but when she wanted it to stop, she had forgotten the word.",
+      "So the little pot kept on cooking, and the porridge rose over the rim and flowed out into the kitchen.",
+      "Soon the whole kitchen and the whole house were full, then the street and the neighboring houses.",
+      "It seemed as if it wanted to feed the whole world, and no one knew how to remedy the trouble.",
+      "At last the girl came home and said only: “Stop, little pot,” and at once it stopped cooking.",
+      "But whoever wanted to return to the town had to eat his way through the sweet porridge."
+    ],
+    "de": [
+      "Es war einmal ein armes, frommes Mädchen, das mit seiner Mutter allein lebte, und sie hatten nichts mehr zu essen.",
+      "Da ging das Kind hinaus in den Wald, und dort begegnete ihm eine alte Frau, die seine Not bereits kannte.",
+      "Sie schenkte ihm ein Töpfchen, zu dem man nur „Töpfchen, koche“ sagen musste, damit es guten, süßen Hirsebrei kochte.",
+      "Sagte man „Töpfchen, steh“, so hörte es wieder auf zu kochen.",
+      "Das Mädchen brachte den Topf seiner Mutter nach Hause, und nun war ihre Armut und ihr Hunger zu Ende.",
+      "Eines Tages aber war das Mädchen ausgegangen, und die Mutter sprach: „Töpfchen, koche.“",
+      "Da kochte es süßen Brei, und sie aß sich satt; doch als sie wollte, dass es aufhörte, hatte sie das Wort vergessen.",
+      "So kochte das Töpfchen immer weiter, und der Brei stieg über den Rand und floss in die Küche hinaus.",
+      "Bald war die ganze Küche und das ganze Haus voll, dann die Straße und die benachbarten Häuser.",
+      "Es schien, als wollte es die ganze Welt satt machen, und niemand wusste, wie man der Not abhelfen sollte.",
+      "Endlich kam das Mädchen nach Hause und sprach nur: „Töpfchen, steh“, und sogleich hörte es auf zu kochen.",
+      "Wer aber wieder in die Stadt wollte, der musste sich durch den süßen Brei hindurchessen."
+    ]
+  }
+}

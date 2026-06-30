@@ -1,0 +1,47 @@
+{
+  "id": "liebre-y-tortuga",
+  "nivel": "intermedio",
+  "titulo": { "es": "La liebre y la tortuga", "en": "The hare and the tortoise", "de": "Der Hase und die Schildkröte" },
+  "fuente": "Adaptación trilingüe de la fábula de Esopo «La liebre y la tortuga» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
+  "cuerpo": {
+    "es": [
+      "Una liebre se burlaba de una tortuga por su lentitud.",
+      "Cansada de las burlas, la tortuga la retó a una carrera.",
+      "La liebre aceptó, segura de su victoria, y todos los animales se reunieron para mirar.",
+      "Al dar la señal, la liebre salió disparada y pronto desapareció a lo lejos.",
+      "La tortuga, en cambio, avanzaba paso a paso, sin detenerse nunca.",
+      "Convencida de que ganaría, la liebre decidió descansar bajo un árbol.",
+      "Se quedó dormida sin darse cuenta de que el tiempo pasaba.",
+      "Mientras tanto, la tortuga seguía caminando con paciencia.",
+      "Cuando la liebre despertó, vio que la tortuga estaba a punto de cruzar la meta.",
+      "Corrió con todas sus fuerzas, pero ya era demasiado tarde.",
+      "Así, la constancia de la tortuga venció a la rapidez de la liebre."
+    ],
+    "en": [
+      "A hare used to make fun of a tortoise for being so slow.",
+      "Tired of the mockery, the tortoise challenged her to a race.",
+      "The hare accepted, sure of her victory, and all the animals gathered to watch.",
+      "At the signal, the hare shot off and soon disappeared into the distance.",
+      "The tortoise, on the other hand, moved step by step, never stopping.",
+      "Convinced that she would win, the hare decided to rest under a tree.",
+      "She fell asleep without realizing that time was passing.",
+      "Meanwhile, the tortoise kept walking patiently.",
+      "When the hare woke up, she saw that the tortoise was about to cross the finish line.",
+      "She ran with all her strength, but it was already too late.",
+      "Thus, the tortoise's perseverance defeated the hare's speed."
+    ],
+    "de": [
+      "Ein Hase machte sich über eine Schildkröte lustig, weil sie so langsam war.",
+      "Müde des Spotts, forderte die Schildkröte ihn zu einem Wettrennen heraus.",
+      "Der Hase nahm an, seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
+      "Beim Startsignal schoss der Hase los und verschwand bald in der Ferne.",
+      "Die Schildkröte dagegen ging Schritt für Schritt voran und hielt niemals an.",
+      "Überzeugt, dass er gewinnen würde, beschloss der Hase, sich unter einem Baum auszuruhen.",
+      "Er schlief ein, ohne zu merken, dass die Zeit verging.",
+      "Währenddessen ging die Schildkröte geduldig weiter.",
+      "Als der Hase aufwachte, sah er, dass die Schildkröte kurz davor war, das Ziel zu überqueren.",
+      "Er rannte mit aller Kraft, aber es war schon zu spät.",
+      "So besiegte die Beharrlichkeit der Schildkröte die Schnelligkeit des Hasen."
+    ]
+  }
+}

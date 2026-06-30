@@ -1,0 +1,44 @@
+{
+  "id": "hormiga-y-cigarra",
+  "nivel": "intermedio",
+  "titulo": { "es": "La hormiga y la cigarra", "en": "The ant and the grasshopper", "de": "Die Ameise und die Grille" },
+  "fuente": "Adaptación trilingüe de la fábula de Esopo «La hormiga y la cigarra» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
+  "cuerpo": {
+    "es": [
+      "Durante todo el verano, la cigarra cantaba alegremente bajo el sol.",
+      "Mientras tanto, la hormiga trabajaba sin descanso, juntando granos para el invierno.",
+      "«¿Por qué trabajas tanto?», preguntó la cigarra. «Ven a cantar conmigo».",
+      "«Guardo comida para los días fríos», respondió la hormiga. «Deberías hacer lo mismo».",
+      "La cigarra se rió y siguió cantando sin preocuparse por el futuro.",
+      "Pasaron los meses y llegó el invierno con su viento helado.",
+      "Los campos quedaron cubiertos de nieve y ya no había nada que comer.",
+      "La cigarra, hambrienta y temblorosa, fue a pedir ayuda a la hormiga.",
+      "«Te di un consejo en verano, pero preferiste cantar», dijo la hormiga.",
+      "La cigarra entendió, demasiado tarde, el valor del trabajo y la previsión."
+    ],
+    "en": [
+      "All summer long, the grasshopper sang merrily under the sun.",
+      "Meanwhile, the ant worked without rest, gathering grains for the winter.",
+      "“Why do you work so much?” asked the grasshopper. “Come and sing with me.”",
+      "“I am storing food for the cold days,” answered the ant. “You should do the same.”",
+      "The grasshopper laughed and kept singing without worrying about the future.",
+      "The months passed and winter arrived with its icy wind.",
+      "The fields were covered with snow and there was nothing left to eat.",
+      "The grasshopper, hungry and trembling, went to ask the ant for help.",
+      "“I gave you advice in summer, but you preferred to sing,” said the ant.",
+      "The grasshopper understood, too late, the value of work and foresight."
+    ],
+    "de": [
+      "Den ganzen Sommer lang sang die Grille fröhlich in der Sonne.",
+      "Währenddessen arbeitete die Ameise ohne Pause und sammelte Körner für den Winter.",
+      "„Warum arbeitest du so viel?“, fragte die Grille. „Komm und sing mit mir.“",
+      "„Ich lege Vorräte für die kalten Tage an“, antwortete die Ameise. „Du solltest dasselbe tun.“",
+      "Die Grille lachte und sang weiter, ohne sich um die Zukunft zu sorgen.",
+      "Die Monate vergingen und der Winter kam mit seinem eisigen Wind.",
+      "Die Felder waren mit Schnee bedeckt, und es gab nichts mehr zu essen.",
+      "Hungrig und zitternd ging die Grille zur Ameise, um sie um Hilfe zu bitten.",
+      "„Ich habe dir im Sommer einen Rat gegeben, aber du wolltest lieber singen“, sagte die Ameise.",
+      "Zu spät verstand die Grille den Wert von Arbeit und Vorsorge."
+    ]
+  }
+}

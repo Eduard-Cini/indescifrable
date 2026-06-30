@@ -1,0 +1,38 @@
+{
+  "id": "fin-de-semana",
+  "nivel": "principiante",
+  "titulo": { "es": "El fin de semana de Tom", "en": "Tom's weekend", "de": "Toms Wochenende" },
+  "fuente": "Texto original de autoría propia (vocabulario controlado para nivel principiante).",
+  "cuerpo": {
+    "es": [
+      "Es sábado y Tom no va a la escuela.",
+      "Por la mañana juega con su perro en el jardín.",
+      "Después ayuda a su madre a preparar la comida.",
+      "Comen pollo con arroz y una ensalada verde.",
+      "Por la tarde, Tom y su padre van al parque.",
+      "Allí montan en bicicleta y comen un helado.",
+      "Cuando llueve, vuelven rápido a casa.",
+      "Por la noche, Tom ve una película y luego duerme."
+    ],
+    "en": [
+      "It is Saturday and Tom does not go to school.",
+      "In the morning he plays with his dog in the garden.",
+      "Then he helps his mother prepare the food.",
+      "They eat chicken with rice and a green salad.",
+      "In the afternoon, Tom and his father go to the park.",
+      "There they ride bikes and eat an ice cream.",
+      "When it rains, they quickly return home.",
+      "At night, Tom watches a movie and then sleeps."
+    ],
+    "de": [
+      "Es ist Samstag und Tom geht nicht zur Schule.",
+      "Am Morgen spielt er mit seinem Hund im Garten.",
+      "Dann hilft er seiner Mutter, das Essen vorzubereiten.",
+      "Sie essen Hähnchen mit Reis und einen grünen Salat.",
+      "Am Nachmittag gehen Tom und sein Vater in den Park.",
+      "Dort fahren sie Fahrrad und essen ein Eis.",
+      "Wenn es regnet, kommen sie schnell nach Hause.",
+      "Am Abend sieht Tom einen Film und schläft dann."
+    ]
+  }
+}
