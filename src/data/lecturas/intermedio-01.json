@@ -1,0 +1,38 @@
+{
+  "id": "leon-y-raton",
+  "nivel": "intermedio",
+  "titulo": { "es": "El león y el ratón", "en": "The lion and the mouse", "de": "Der Löwe und die Maus" },
+  "fuente": "Adaptación trilingüe de la fábula de Esopo «El león y el ratón» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
+  "cuerpo": {
+    "es": [
+      "Un león dormía tranquilo a la sombra de un árbol.",
+      "Un pequeño ratón pasó corriendo sobre su pata y lo despertó.",
+      "El león lo atrapó con su garra, furioso por la molestia.",
+      "El ratón le rogó: «Suéltame y algún día te lo pagaré».",
+      "El león se rió de la idea, pero lo dejó marchar.",
+      "Días después, unos cazadores atraparon al león con una red.",
+      "El ratón oyó sus rugidos y royó las cuerdas hasta liberarlo.",
+      "Así, el pequeño ratón salvó al poderoso león."
+    ],
+    "en": [
+      "A lion was sleeping peacefully in the shade of a tree.",
+      "A little mouse ran across his paw and woke him up.",
+      "The lion caught him with his claw, furious at the disturbance.",
+      "The mouse begged: “Let me go and one day I will repay you.”",
+      "The lion laughed at the idea, but let him go.",
+      "Days later, some hunters trapped the lion with a net.",
+      "The mouse heard his roars and gnawed the ropes until he freed him.",
+      "Thus, the little mouse saved the mighty lion."
+    ],
+    "de": [
+      "Ein Löwe schlief ruhig im Schatten eines Baumes.",
+      "Eine kleine Maus lief über seine Pfote und weckte ihn auf.",
+      "Der Löwe fing sie mit seiner Kralle, wütend über die Störung.",
+      "Die Maus flehte: „Lass mich frei, und eines Tages werde ich es dir vergelten.“",
+      "Der Löwe lachte über die Idee, ließ sie aber gehen.",
+      "Tage später fingen Jäger den Löwen mit einem Netz.",
+      "Die Maus hörte sein Gebrüll und nagte die Seile durch, bis sie ihn befreite.",
+      "So rettete die kleine Maus den mächtigen Löwen."
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "dia-de-ana",
+  "nivel": "principiante",
+  "titulo": { "es": "Un día de Ana", "en": "Ana's day", "de": "Anas Tag" },
+  "fuente": "Texto original de autoría propia (vocabulario controlado para nivel principiante).",
+  "cuerpo": {
+    "es": [
+      "Ana se levanta a las siete de la mañana.",
+      "Toma un café y come pan con queso.",
+      "Va a la escuela en bicicleta.",
+      "Por la tarde lee un libro en el parque.",
+      "Por la noche cena con su familia y se va a dormir."
+    ],
+    "en": [
+      "Ana gets up at seven in the morning.",
+      "She drinks a coffee and eats bread with cheese.",
+      "She goes to school by bicycle.",
+      "In the afternoon she reads a book in the park.",
+      "At night she has dinner with her family and goes to sleep."
+    ],
+    "de": [
+      "Ana steht um sieben Uhr morgens auf.",
+      "Sie trinkt einen Kaffee und isst Brot mit Käse.",
+      "Sie fährt mit dem Fahrrad zur Schule.",
+      "Am Nachmittag liest sie ein Buch im Park.",
+      "Am Abend isst sie mit ihrer Familie und geht schlafen."
+    ]
+  }
+}

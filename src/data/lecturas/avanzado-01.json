@@ -1,0 +1,38 @@
+{
+  "id": "sterntaler",
+  "nivel": "avanzado",
+  "titulo": { "es": "El dinero de las estrellas", "en": "The star money", "de": "Die Sterntaler" },
+  "fuente": "Adaptación de «Die Sterntaler» de los Hermanos Grimm (Kinder- und Hausmärchen, 1812; dominio público). Original alemán e inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/2591",
+  "cuerpo": {
+    "es": [
+      "Había una vez una niña cuyos padres habían muerto, y era tan pobre que ya no tenía un cuarto donde vivir.",
+      "No poseía más que la ropa que llevaba puesta y un trozo de pan que un alma compasiva le había regalado.",
+      "Sin embargo, era piadosa y buena, y así salió confiada al campo.",
+      "Por el camino se encontró con un hombre pobre que le dijo: «Ay, dame algo de comer, tengo mucha hambre».",
+      "La niña le entregó el trozo de pan entero y siguió su camino.",
+      "Después dio su gorro a un niño que temblaba de frío, y a otros su chaqueta y su vestido, hasta que al final no le quedaba nada.",
+      "Mientras estaba allí en la oscuridad, de pronto las estrellas cayeron del cielo y se convirtieron en relucientes monedas de plata.",
+      "Y aunque acababa de regalar su última prenda, ahora vestía una nueva del lino más fino; en ella recogió las monedas y fue rica el resto de su vida."
+    ],
+    "en": [
+      "Once upon a time there was a little girl whose parents had died, and she was so poor that she no longer had a room to live in.",
+      "She owned nothing but the clothes she wore and a piece of bread that a kind soul had given her.",
+      "Yet she was pious and good, and so she went out trustingly into the fields.",
+      "On the way she met a poor man who said to her: “Oh, give me something to eat, I am so hungry.”",
+      "The girl handed him the whole piece of bread and went on her way.",
+      "Then she gave her cap to a child shivering with cold, and to others her jacket and her dress, until at last she had nothing left.",
+      "As she stood there in the dark, suddenly the stars fell from the sky and turned into shining silver coins.",
+      "And although she had just given away her last garment, she now wore a new one of the finest linen; in it she gathered the coins and was rich for the rest of her life."
+    ],
+    "de": [
+      "Es war einmal ein kleines Mädchen, dessen Eltern gestorben waren, und es war so arm, dass es kein Zimmer mehr hatte, in dem es wohnen konnte.",
+      "Es besaß nichts mehr als die Kleider, die es am Leibe trug, und ein Stück Brot, das ihm eine mitleidige Seele geschenkt hatte.",
+      "Doch es war fromm und gut, und so ging es vertrauensvoll hinaus aufs Feld.",
+      "Unterwegs begegnete ihm ein armer Mann, der sprach: „Ach, gib mir etwas zu essen, ich bin so hungrig.“",
+      "Das Mädchen reichte ihm das ganze Stück Brot und ging weiter.",
+      "Dann gab es einem vor Kälte zitternden Kind seine Mütze, anderen seine Jacke und sein Kleid, bis ihm zuletzt nichts mehr blieb.",
+      "Als es so im Dunkeln stand, fielen auf einmal die Sterne vom Himmel und wurden zu lauter blanken Silbertalern.",
+      "Und obwohl es eben noch sein letztes Kleidungsstück weggegeben hatte, trug es nun ein neues aus feinstem Linnen; darin sammelte es die Taler und war reich für sein ganzes Leben."
+    ]
+  }
+}
