@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react';
 import { parsearSemilla } from './engine/board';
 import './landing.css';
 import hero from './assets/hero1.webp';
-import imageNash from './assets/Nash.jpg';
+import imageNash from './assets/Nash.webp';
 
 
 function Landing({ onIniciarPartida }) {
