@@ -9,6 +9,7 @@ import hormigaYCigarra from './intermedio-03.json';
 import sterntaler from './avanzado-01.json';
 import ollaMagica from './avanzado-02.json';
 import vientoYSol from './avanzado-03.json';
+import rotkaeppchen from './avanzado-04.json';
 
 export const NIVELES = ['principiante', 'intermedio', 'avanzado'];
 export const IDIOMAS = ['es', 'en', 'de'];
@@ -30,10 +31,27 @@ export const lecturas = [
   sterntaler,
   ollaMagica,
   vientoYSol,
+  rotkaeppchen,
 ];
+
+// Idiomas en los que existe una lectura (una lectura ya no tiene que ser
+// trilingüe: puede ser de+es, en+es, etc.). El español actúa además como
+// idioma de traducción, así que se asume siempre presente.
+export function idiomasDisponibles(lectura) {
+  return IDIOMAS.filter(
+    (i) => Array.isArray(lectura.cuerpo?.[i]) && lectura.cuerpo[i].length > 0
+  );
+}
 
 export function lecturasPorNivel(nivel) {
   return lecturas.filter((l) => l.nivel === nivel);
+}
+
+// Lecturas de un nivel disponibles en el idioma de estudio elegido.
+export function lecturasDisponibles(nivel, idioma) {
+  return lecturas.filter(
+    (l) => l.nivel === nivel && idiomasDisponibles(l).includes(idioma)
+  );
 }
 
 export function obtenerLectura(id) {

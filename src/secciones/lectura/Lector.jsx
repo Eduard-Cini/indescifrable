@@ -1,9 +1,15 @@
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { obtenerLectura, NOMBRE_IDIOMA } from '../../data/lecturas';
 import lexico from '../../data/lexico.json';
-import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
+import {
+  cargarBolsa,
+  guardarBolsa,
+  cargarProgreso,
+  guardarProgreso,
+} from '../../engine/almacenamiento';
 import { agregarPalabra, crearEntrada, clavePalabra, tienePalabra } from '../../engine/bolsa';
+import { marcarCompletada, estaCompletada } from '../../engine/progreso';
 import PopupPalabra from './PopupPalabra';
 import './lectura.css';
 
@@ -23,29 +29,49 @@ function tokenizar(frase) {
 }
 
 function Lector() {
-  const { idioma, id } = useParams();
+  const { idioma, nivel, id } = useParams();
+  const navigate = useNavigate();
   const lectura = obtenerLectura(id);
 
   const [bolsa, setBolsa] = useState([]);
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
   const [traducidas, setTraducidas] = useState({}); // traducción revelada por frase (índice -> bool)
+  const [completada, setCompletada] = useState(false);
 
   useEffect(() => {
     setBolsa(cargarBolsa());
-  }, []);
+    setCompletada(estaCompletada(cargarProgreso(), id));
+  }, [id]);
+
+  // Enlace de vuelta que conserva el idioma y nivel elegidos en la Biblioteca.
+  const volverBiblioteca = `/lectura?idioma=${idioma}&nivel=${nivel}`;
 
   if (!lectura) {
     return (
       <div className="lectura-container">
         <p>Lectura no encontrada.</p>
-        <Link to="/lectura" className="lectura-link">← Biblioteca</Link>
+        <Link to={volverBiblioteca} className="lectura-link">← Biblioteca</Link>
       </div>
     );
   }
 
-  const frases = lectura.cuerpo[idioma] ?? [];
+  const frases = lectura.cuerpo[idioma];
   const traduccionFrases = lectura.cuerpo.es ?? [];
   const esEspanol = idioma === 'es';
+
+  if (!frases) {
+    return (
+      <div className="lectura-container">
+        <p>Esta lectura no está disponible en {NOMBRE_IDIOMA[idioma] ?? idioma}.</p>
+        <Link to={volverBiblioteca} className="lectura-link">← Biblioteca</Link>
+      </div>
+    );
+  }
+
+  const finalizarLectura = () => {
+    guardarProgreso(marcarCompletada(cargarProgreso(), id));
+    navigate(volverBiblioteca);
+  };
 
   const seleccionarPalabra = (superficie) => {
     const id = clavePalabra(idioma, superficie);
@@ -79,7 +105,7 @@ function Lector() {
   return (
     <div className="lectura-container">
       <header className="lectura-top">
-        <Link to="/lectura" className="lectura-link">← Biblioteca</Link>
+        <Link to={volverBiblioteca} className="lectura-link">← Biblioteca</Link>
         <h1>{lectura.titulo[idioma]}</h1>
         <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsa.length}</Link>
       </header>
@@ -128,6 +154,12 @@ function Lector() {
           );
         })}
       </article>
+
+      <div className="lectura-fin">
+        <button className="btn-finalizar" onClick={finalizarLectura}>
+          {completada ? '✓ Leída — volver a la biblioteca' : 'Finalizar lectura'}
+        </button>
+      </div>
 
       {seleccion && (
         <PopupPalabra

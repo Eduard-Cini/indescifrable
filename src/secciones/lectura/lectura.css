@@ -82,8 +82,36 @@
   transition: border-color 0.12s ease;
 }
 .lectura-card:hover { border-color: #4a7; }
+.lectura-card.completada { border-color: #35563f; background: #182017; }
 .lectura-card-titulo { font-size: 1.1rem; font-weight: bold; }
 .lectura-card-meta { font-size: 0.8rem; color: #888; }
+.check-completada { color: #6bd196; margin-right: 0.4rem; }
+
+.biblioteca-progreso {
+  color: #8fbf9f;
+  font-size: 0.85rem;
+  margin: 0 0 1rem;
+}
+
+/* --- Botón de finalizar lectura --- */
+.lectura-fin {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.btn-finalizar {
+  background: #4a7;
+  color: #08110b;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 1.6rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+.btn-finalizar:hover { background: #5cc78c; }
 
 /* --- Texto de lectura --- */
 .lectura-texto {
