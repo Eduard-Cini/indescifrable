@@ -2,13 +2,17 @@
   "id": "verwandlung-05",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 5,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 5/10)",
-    "es": "La metamorfosis (Parte 5/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
+      "Sie fand ihn nicht gleich, aber als sie ihn unter dem Kanapee bemerkte -- Gott, er mußte doch irgendwo sein, er hatte doch nicht wegfliegen können -- erschrak sie so sehr, daß sie, ohne sich beherrschen zu können, die Tür von außen wieder zuschlug.",
       "Aber als bereue sie ihr Benehmen, öffnete sie die Tür sofort wieder und trat, als sei sie bei einem Schwerkranken oder gar bei einem Fremden, auf den Fußspitzen herein.",
       "Gregor hatte den Kopf bis knapp zum Rande des Kanapees vorgeschoben und beobachtete sie.",
       "Ob sie wohl bemerken würde, daß er die Milch stehen gelassen hatte, und zwar keineswegs aus Mangel an Hunger, und ob sie eine andere Speise hereinbringen würde, die ihm besser entsprach?",
@@ -27,8 +31,7 @@
       "Gregors Beinchen schwirrten, als es jetzt zum Essen ging.",
       "Seine Wunden mußten übrigens auch schon vollständig geheilt sein, er fühlte keine Behinderung mehr, er staunte darüber und dachte daran, wie er vor mehr als einem Monat sich mit dem Messer ganz wenig in den Finger geschnitten, und wie ihm diese Wunde noch vorgestern genug wehgetan hatte.",
       "»Sollte ich jetzt weniger Feingefühl haben?« dachte er und saugte schon gierig an dem Käse, zu dem es ihn vor allen anderen Speisen sofort und nachdrücklich gezogen hatte.",
-      "Rasch hintereinander und mit vor Befriedigung tränenden Augen",
-      "verzehrte er den Käse, das Gemüse und die Sauce;",
+      "Rasch hintereinander und mit vor Befriedigung tränenden Augen verzehrte er den Käse, das Gemüse und die Sauce;",
       "die frischen Speisen dagegen schmeckten ihm nicht, er konnte nicht einmal ihren Geruch vertragen und schleppte sogar die Sachen, die er essen wollte, ein Stückchen weiter weg.",
       "Er war schon längst mit allem fertig und lag nur noch faul auf der gleichen Stelle, als die Schwester zum Zeichen, daß er sich zurückziehen solle, langsam den Schlüssel umdrehte.",
       "Das schreckte ihn sofort auf, trotzdem er schon fast schlummerte, und er eilte wieder unter das Kanapee.",

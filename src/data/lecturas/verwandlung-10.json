@@ -2,16 +2,16 @@
   "id": "verwandlung-10",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 10,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 10/10)",
-    "es": "La metamorfosis (Parte 10/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
-      "So wie die Speisen hereinkamen, sind sie wieder hinausgekommen.«",
-      "Tatsächlich war Gregors Körper vollständig flach und trocken, man erkannte das eigentlich erst jetzt, da er nicht mehr von den Beinchen gehoben war und auch sonst nichts den Blick ablenkte.",
-      "»Komm, Grete, auf ein Weilchen zu uns herein,« sagte Frau Samsa mit einem wehmütigen Lächeln, und Grete ging, nicht ohne nach der Leiche zurückzusehen, hinter den Eltern in das Schlafzimmer.",
       "Die Bedienerin schloß die Tür und öffnete gänzlich das Fenster.",
       "Trotz des frühen Morgens war der frischen Luft schon etwas Lauigkeit beigemischt.",
       "Es war eben schon Ende März.",

@@ -38,7 +38,8 @@ CONFIG = {
     "frases_por_parte": 90,
 }
 
-MODELO = "de_core_news_sm"
+MODELO = "de_core_news_md"
+RUTA_BASE = Path(__file__).parent / "lexico.base.json"
 
 
 def extraer_contenido(ruta, inicio):
@@ -69,6 +70,30 @@ def normalizar(superficie):
     return re.sub(
         r"^[^\w]+|[^\w]+$", "", superficie.strip().lower(), flags=re.UNICODE
     )
+
+
+def traducir(dic, lema, superficie):
+    """Busca traducción por lema y, si falla, por la forma tal cual (cubre
+    errores de lematización), y por último por la cabeza del compuesto alemán."""
+    for cand in (lema.lower(), superficie.lower()):
+        t = dic.get(cand)
+        if t:
+            return t
+    return traducir_compuesto(dic, superficie)
+
+
+def traducir_compuesto(dic, palabra):
+    """Compuesto alemán: la cabeza es el último elemento. Prueba sufijos de
+    longitud decreciente que sean entrada del diccionario (mínimo 4 letras)."""
+    w = palabra.lower()
+    if len(w) < 8:
+        return None
+    for i in range(1, len(w) - 3):
+        sufijo = w[i:]
+        if len(sufijo) >= 4 and sufijo in dic:
+            # solo la primera acepción: los compuestos son aproximados
+            return dic[sufijo].split(" / ")[0] + " (en compuesto)"
+    return None
 
 
 def lemas_con_separables(doc):
@@ -104,7 +129,7 @@ def procesar():
             continue
         lema = lemas[t.i]
         entrada = {"lemma": lema}
-        trad = dic.get(lema.lower())
+        trad = traducir(dic, lema, t.text)
         if trad:
             entrada["es"] = trad
         lexico[clave] = entrada
@@ -123,12 +148,14 @@ def escribir_lecturas(frases):
     total = len(partes)
     idioma = CONFIG["idioma"]
     for idx, parte in enumerate(partes, start=1):
-        etiqueta = f" (Parte {idx}/{total})"
         lectura = {
             "id": f"{CONFIG['id_base']}-{idx:02d}",
             "nivel": CONFIG["nivel"],
             "autor": CONFIG["autor"],
-            "titulo": {k: v + etiqueta for k, v in CONFIG["titulo"].items()},
+            "libro": CONFIG["id_base"],
+            "parte": idx,
+            "partes": total,
+            "titulo": dict(CONFIG["titulo"]),
             "fuente": CONFIG["fuente"],
             "cuerpo": {idioma: parte},
         }
@@ -142,17 +169,17 @@ def escribir_lecturas(frases):
 
 
 def fusionar_lexico(nuevos):
-    existentes = {}
-    if RUTA_LEXICO.exists():
-        existentes = json.loads(RUTA_LEXICO.read_text(encoding="utf-8"))
-    # las entradas ya presentes (curadas a mano) tienen prioridad
+    # Reconstruye el léxico desde la base curada a mano (semilla estable), de
+    # modo que re-ejecutar el pipeline sea idempotente y no arrastre entradas
+    # obsoletas. Las entradas de la base tienen prioridad sobre las generadas.
+    base = json.loads(RUTA_BASE.read_text(encoding="utf-8")) if RUTA_BASE.exists() else {}
     fusion = dict(nuevos)
-    fusion.update(existentes)
+    fusion.update(base)
     fusion = dict(sorted(fusion.items()))
     RUTA_LEXICO.write_text(
         json.dumps(fusion, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
-    print(f"  léxico fusionado: {len(fusion)} entradas -> {RUTA_LEXICO}")
+    print(f"  léxico: {len(nuevos)} del libro + {len(base)} base = {len(fusion)} -> {RUTA_LEXICO.name}")
 
 
 if __name__ == "__main__":

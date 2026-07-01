@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { obtenerLectura, NOMBRE_IDIOMA } from '../../data/lecturas';
+import { obtenerLectura, NOMBRE_IDIOMA, partesDeLibro } from '../../data/lecturas';
 import lexico from '../../data/lexico.json';
 import {
   cargarBolsa,
@@ -75,9 +75,16 @@ function Lector() {
     Array.isArray(lectura.cuerpo.es) &&
     lectura.cuerpo.es.length === frases.length;
 
+  // Navegación entre partes cuando la lectura pertenece a un libro.
+  const esLibro = !!lectura.libro;
+  const hermanas = esLibro ? partesDeLibro(lectura.libro) : [];
+  const anterior = esLibro ? hermanas.find((p) => p.parte === lectura.parte - 1) : null;
+  const siguiente = esLibro ? hermanas.find((p) => p.parte === lectura.parte + 1) : null;
+  const rutaParte = (p) => `/lectura/${idioma}/${nivel}/${p.id}`;
+
   const finalizarLectura = () => {
     guardarProgreso(marcarCompletada(cargarProgreso(), id));
-    navigate(volverBiblioteca);
+    navigate(siguiente ? rutaParte(siguiente) : volverBiblioteca);
   };
 
   const seleccionarPalabra = (superficie) => {
@@ -118,6 +125,9 @@ function Lector() {
       </header>
 
       {lectura.autor && <p className="lectura-autor">{lectura.autor}</p>}
+      {esLibro && (
+        <p className="lectura-parte">Parte {lectura.parte} de {lectura.partes}</p>
+      )}
 
       <p className="lectura-subtitulo">
         Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
@@ -165,8 +175,29 @@ function Lector() {
       </article>
 
       <div className="lectura-fin">
+        {esLibro && (
+          <div className="parte-nav">
+            {anterior ? (
+              <Link to={rutaParte(anterior)} className="lectura-link">← Parte {anterior.parte}</Link>
+            ) : (
+              <span />
+            )}
+            <span className="parte-indicador">{lectura.parte} / {lectura.partes}</span>
+            {siguiente ? (
+              <Link to={rutaParte(siguiente)} className="lectura-link">Parte {siguiente.parte} →</Link>
+            ) : (
+              <span />
+            )}
+          </div>
+        )}
         <button className="btn-finalizar" onClick={finalizarLectura}>
-          {completada ? '✓ Leída — volver a la biblioteca' : 'Finalizar lectura'}
+          {completada
+            ? siguiente
+              ? 'Siguiente parte →'
+              : '✓ Leída — volver a la biblioteca'
+            : siguiente
+              ? 'Finalizar y continuar →'
+              : 'Finalizar lectura'}
         </button>
       </div>
 

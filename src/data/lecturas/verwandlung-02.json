@@ -2,14 +2,16 @@
   "id": "verwandlung-02",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 2,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 2/10)",
-    "es": "La metamorfosis (Parte 2/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
-      "In solchen Augenblicken richtete er die Augen möglichst scharf auf das Fenster, aber leider war aus dem Anblick des Morgennebels, der sogar die andere Seite der engen Straße verhüllte, wenig Zuversicht und Munterkeit zu holen.",
       "»Schon sieben Uhr,« sagte er sich beim neuerlichen Schlagen des Weckers, »schon sieben Uhr und noch immer ein solcher Nebel.«",
       "Und ein Weilchen lang lag er ruhig mit schwachem Atem, als erwarte er vielleicht von der völligen Stille die Wiederkehr der wirklichen und selbstverständlichen Verhältnisse.",
       "Dann aber sagte er sich: »Ehe es einviertel acht schlägt, muß ich unbedingt das Bett vollständig verlassen haben.",
@@ -43,9 +45,11 @@
       "Gregor suchte sich vorzustellen, ob nicht auch einmal dem Prokuristen etwas Ähnliches passieren könnte, wie heute ihm;",
       "die Möglichkeit dessen mußte man doch eigentlich zugeben.",
       "Aber wie zur rohen Antwort auf diese Frage machte jetzt der Prokurist im Nebenzimmer ein paar bestimmte Schritte und ließ seine Lackstiefel knarren.",
-      "Aus dem Nebenzimmer rechts flüsterte die Schwester, um Gregor zu verständigen: »Gregor, der Prokurist ist da.«",
+      "Aus dem Nebenzimmer rechts flüsterte die Schwester, um Gregor zu verständigen:",
+      "»Gregor, der Prokurist ist da.«",
       "»Ich weiß,« sagte Gregor vor sich hin; aber so laut, daß es die Schwester hätte hören können, wagte er die Stimme nicht zu erheben.",
-      "»Gregor,« sagte nun der Vater aus dem Nebenzimmer links, »der Herr Prokurist ist gekommen und erkundigt sich, warum du nicht mit dem Frühzug weggefahren bist.",
+      "»",
+      "Gregor,« sagte nun der Vater aus dem Nebenzimmer links, »der Herr Prokurist ist gekommen und erkundigt sich, warum du nicht mit dem Frühzug weggefahren bist.",
       "Wir wissen nicht, was wir ihm sagen sollen.",
       "Übrigens will er auch mit dir persönlich sprechen.",
       "Also bitte mach die Tür auf.",
@@ -64,11 +68,13 @@
       "Sie werden ihn gleich sehen, wenn Gregor aufmacht.",
       "Ich bin übrigens glücklich, daß Sie da sind, Herr Prokurist;",
       "wir allein hätten Gregor nicht dazu gebracht, die Tür zu öffnen;",
-      "er ist so hartnäckig; und bestimmt ist ihm nicht wohl, trotzdem er es am Morgen geleugnet hat.«",
+      "er ist so hartnäckig;",
+      "und bestimmt ist ihm nicht wohl, trotzdem er es am Morgen geleugnet hat.«",
       "»Ich komme gleich,« sagte Gregor langsam und bedächtig und rührte sich nicht, um kein Wort der Gespräche zu verlieren.",
       "»Anders, gnädige Frau, kann ich es mir auch nicht erklären,« sagte der Prokurist, »hoffentlich ist es nichts Ernstes.",
       "Wenn ich auch andererseits sagen muß, daß wir Geschäftsleute -- wie man will, leider oder glücklicherweise -- ein leichtes Unwohlsein sehr oft aus geschäftlichen Rücksichten einfach überwinden müssen.«",
-      "»Also kann der Herr Prokurist schon zu dir hinein?« fragte der ungeduldige Vater und klopfte wiederum an die Tür.",
+      "»Also kann der Herr Prokurist schon zu dir hinein?«",
+      "fragte der ungeduldige Vater und klopfte wiederum an die Tür.",
       "»Nein,« sagte Gregor.",
       "Im Nebenzimmer links trat eine peinliche Stille ein, im Nebenzimmer rechts begann die Schwester zu schluchzen.",
       "Warum ging denn die Schwester nicht zu den anderen?",
@@ -95,10 +101,7 @@
       "aber eine Jahreszeit, um keine Geschäfte zu machen, gibt es überhaupt nicht, Herr Samsa, darf es nicht geben.«",
       "»Aber Herr Prokurist,« rief Gregor außer sich und vergaß in der Aufregung alles andere, »ich mache ja sofort, augenblicklich auf.",
       "Ein leichtes Unwohlsein, ein Schwindelanfall, haben mich verhindert aufzustehen.",
-      "Ich liege noch jetzt im Bett.",
-      "Jetzt bin ich aber schon wieder ganz frisch.",
-      "Eben steige ich aus dem Bett.",
-      "Nur einen kleinen Augenblick Geduld!"
+      "Ich liege noch jetzt im Bett."
     ]
   }
 }

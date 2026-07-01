@@ -111,11 +111,33 @@
   margin: 0 0 1rem;
 }
 
+/* --- Libro: tarjeta agrupada, indicador y navegación por partes --- */
+.lectura-card.libro { border-color: #3a4a63; }
+.lectura-card.libro:hover { border-color: #6a8cff; }
+
+.lectura-parte {
+  margin: -0.25rem 0 0.75rem;
+  color: #9ad;
+  font-size: 0.85rem;
+}
+
+.parte-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(340px, 90%);
+  margin-bottom: 0.25rem;
+}
+.parte-indicador { color: #888; font-size: 0.8rem; }
+
 /* --- Botón de finalizar lectura --- */
 .lectura-fin {
   margin-top: 2.5rem;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
 }
 .btn-finalizar {
   background: #4a7;

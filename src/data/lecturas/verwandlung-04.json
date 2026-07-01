@@ -2,13 +2,17 @@
   "id": "verwandlung-04",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 4,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 4/10)",
-    "es": "La metamorfosis (Parte 4/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
+      "Sie aber, Herr Prokurist, Sie haben einen besseren Überblick über die Verhältnisse, als das sonstige Personal, ja sogar, ganz im Vertrauen gesagt, einen besseren Überblick, als der Herr Chef selbst, der in seiner Eigenschaft als Unternehmer sich in seinem Urteil leicht zuungunsten eines Angestellten beirren läßt.",
       "Sie wissen auch sehr wohl, daß der Reisende, der fast das ganze Jahr außerhalb des Geschäftes ist, so leicht ein Opfer von Klatschereien, Zufälligkeiten und grundlosen Beschwerden werden kann, gegen die sich zu wehren ihm ganz unmöglich ist, da er von ihnen meistens gar nichts erfährt und nur dann, wenn er erschöpft eine Reise beendet hat, zu Hause die schlimmen, auf ihre Ursachen hin nicht mehr zu durchschauenden Folgen am eigenen Leibe zu spüren bekommt.",
       "Herr Prokurist, gehen Sie nicht weg, ohne mir ein Wort gesagt zu haben, das mir zeigt, daß Sie mir wenigstens zu einem kleinen Teil recht geben!«",
       "Aber der Prokurist hatte sich schon bei den ersten Worten Gregors abgewendet, und nur über die zuckende Schulter hinweg sah er mit aufgeworfenen Lippen nach Gregor zurück.",
@@ -27,15 +31,15 @@
       "Und gewiß hätte der Prokurist, dieser Damenfreund, sich von ihr lenken lassen;",
       "sie hätte die Wohnungstür zugemacht und ihm im Vorzimmer den Schrecken ausgeredet.",
       "Aber die Schwester war eben nicht da, Gregor selbst mußte handeln.",
-      "Und ohne daran zu denken, daß er seine gegenwärtigen Fähigkeiten, sich zu bewegen, noch gar nicht kannte, ohne auch daran zu denken, daß seine Rede möglicher- ja wahrscheinlicherweise wieder nicht verstanden worden war, verließ er den Türflügel;",
-      "schob sich durch die Öffnung;",
+      "Und ohne daran zu denken, daß er seine gegenwärtigen Fähigkeiten, sich zu bewegen, noch gar nicht kannte, ohne auch daran zu denken, daß seine Rede möglicher- ja wahrscheinlicherweise wieder nicht verstanden worden war, verließ er den Türflügel; schob sich durch die Öffnung;",
       "wollte zum Prokuristen hingehen, der sich schon am Geländer des Vorplatzes lächerlicherweise mit beiden Händen festhielt;",
       "fiel aber sofort, nach einem Halt suchend, mit einem kleinen Schrei auf seine vielen Beinchen nieder.",
       "Kaum war das geschehen, fühlte er zum erstenmal an diesem Morgen ein körperliches Wohlbehagen;",
       "die Beinchen hatten festen Boden unter sich;",
-      "sie gehorchten vollkommen, wie er zu seiner Freude merkte;",
-      "strebten sogar darnach, ihn fortzutragen, wohin er wollte; und schon glaubte er, die endgültige Besserung alles Leidens stehe unmittelbar bevor.",
-      "Aber im gleichen Augenblick, als er da schaukelnd vor verhaltener Bewegung, gar nicht weit von seiner Mutter entfernt, ihr gerade gegenüber auf dem Boden lag, sprang diese, die doch so ganz in sich versunken schien, mit einemmale in die Höhe, die Arme weit ausgestreckt, die Finger gespreizt, rief: »Hilfe, um Gottes willen Hilfe!«, hielt den Kopf geneigt, als wolle sie Gregor besser sehen, lief aber, im Widerspruch dazu, sinnlos zurück; hatte vergessen, daß hinter ihr der gedeckte Tisch stand;",
+      "sie gehorchten vollkommen, wie er zu seiner Freude merkte; strebten sogar darnach, ihn fortzutragen, wohin er wollte;",
+      "und schon glaubte er, die endgültige Besserung alles Leidens stehe unmittelbar bevor.",
+      "Aber im gleichen Augenblick, als er da schaukelnd vor verhaltener Bewegung, gar nicht weit von seiner Mutter entfernt, ihr gerade gegenüber auf dem Boden lag, sprang diese, die doch so ganz in sich versunken schien, mit einemmale in die Höhe, die Arme weit ausgestreckt, die Finger gespreizt, rief: »Hilfe, um Gottes willen Hilfe!«, hielt den Kopf geneigt, als wolle sie Gregor besser sehen, lief aber, im Widerspruch dazu, sinnlos zurück;",
+      "hatte vergessen, daß hinter ihr der gedeckte Tisch stand;",
       "setzte sich, als sie bei ihm angekommen war, wie in Zerstreutheit, eilig auf ihn, und schien gar nicht zu merken, daß neben ihr aus der umgeworfenen großen Kanne der Kaffee in vollem Strome auf den Teppich sich ergoß.",
       "»Mutter, Mutter,« sagte Gregor leise und sah zu ihr hinauf.",
       "Der Prokurist war ihm für einen Augenblick ganz aus dem Sinn gekommen;",
@@ -97,8 +101,7 @@
       "er hatte also eine lange Zeit, um ungestört zu überlegen, wie er sein Leben jetzt neu ordnen sollte.",
       "Aber das hohe freie Zimmer, in dem er gezwungen war, flach auf dem Boden zu liegen, ängstigte ihn, ohne daß er die Ursache herausfinden konnte, denn es war ja sein seit fünf Jahren von ihm bewohntes Zimmer -- und mit einer halb unbewußten Wendung und nicht ohne eine leichte Scham eilte er unter das Kanapee, wo er sich, trotzdem sein Rücken ein wenig gedrückt wurde und trotzdem er den Kopf nicht mehr erheben konnte, gleich sehr behaglich fühlte und nur bedauerte, daß sein Körper zu breit war, um vollständig unter dem Kanapee untergebracht zu werden.",
       "Dort blieb er die ganze Nacht, die er zum Teil im Halbschlaf, aus dem ihn der Hunger immer wieder aufschreckte, verbrachte, zum Teil aber in Sorgen und undeutlichen Hoffnungen, die aber alle zu dem Schlusse führten, daß er sich vorläufig ruhig verhalten und durch Geduld und größte Rücksichtnahme der Familie die Unannehmlichkeiten erträglich machen müsse, die er ihr in seinem gegenwärtigen Zustand nun einmal zu verursachen gezwungen war.",
-      "Schon am frühen Morgen, es war fast noch Nacht, hatte Gregor Gelegenheit, die Kraft seiner eben gefaßten Entschlüsse zu prüfen, denn vom Vorzimmer her öffnete die Schwester, fast völlig angezogen, die Tür und sah mit Spannung herein.",
-      "Sie fand ihn nicht gleich, aber als sie ihn unter dem Kanapee bemerkte -- Gott, er mußte doch irgendwo sein, er hatte doch nicht wegfliegen können -- erschrak sie so sehr, daß sie, ohne sich beherrschen zu können, die Tür von außen wieder zuschlug."
+      "Schon am frühen Morgen, es war fast noch Nacht, hatte Gregor Gelegenheit, die Kraft seiner eben gefaßten Entschlüsse zu prüfen, denn vom Vorzimmer her öffnete die Schwester, fast völlig angezogen, die Tür und sah mit Spannung herein."
     ]
   }
 }

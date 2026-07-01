@@ -2,17 +2,16 @@
   "id": "verwandlung-08",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 8,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 8/10)",
-    "es": "La metamorfosis (Parte 8/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
-      "links dagegen die Schwester anschrie, sie werde niemals mehr Gregors Zimmer reinigen dürfen;",
-      "während die Mutter den Vater, der sich vor Erregung nicht mehr kannte, ins Schlafzimmer zu schleppen suchte;",
-      "die Schwester, von Schluchzen geschüttelt, mit ihren kleinen Fäusten den Tisch bearbeitete; und Gregor laut vor Wut darüber zischte, daß es keinem einfiel, die Tür zu schließen und ihm diesen Anblick und Lärm zu ersparen.",
-      "Aber selbst wenn die Schwester, erschöpft von ihrer Berufsarbeit, dessen überdrüssig geworden war, für Gregor, wie früher, zu sorgen, so hätte noch keineswegs die Mutter für sie eintreten müssen und Gregor hätte doch nicht vernachlässigt zu werden brauchen.",
       "Denn nun war die Bedienerin da.",
       "Diese alte Witwe, die in ihrem langen Leben mit Hilfe ihres starken Knochenbaues das Ärgste überstanden haben mochte, hatte keinen eigentlichen Abscheu vor Gregor.",
       "Ohne irgendwie neugierig zu sein, hatte sie zufällig einmal die Tür von Gregors Zimmer aufgemacht und war im Anblick Gregors, der, gänzlich überrascht, trotzdem ihn niemand jagte, hin- und herzulaufen begann, die Hände im Schoß gefaltet staunend stehen geblieben.",
@@ -98,7 +97,11 @@
       "Sie verlangten vom Vater Erklärungen, hoben ihrerseits die Arme, zupften unruhig an ihren Bärten und wichen nur langsam gegen ihr Zimmer zurück.",
       "Inzwischen hatte die Schwester die Verlorenheit, in die sie nach dem plötzlich abgebrochenen Spiel verfallen war, überwunden, hatte sich, nachdem sie eine Zeitlang in den lässig hängenden Händen Violine und Bogen gehalten und weiter, als spiele sie noch, in die Noten gesehen hatte, mit einem Male aufgerafft, hatte das Instrument auf den Schoß der Mutter gelegt, die in Atembeschwerden mit heftig arbeitenden Lungen noch auf ihrem Sessel saß, und war in das Nebenzimmer gelaufen, dem sich die Zimmerherren unter dem Drängen des Vaters schon schneller näherten.",
       "Man sah, wie unter den geübten Händen der Schwester die Decken und Polster in den Betten in die Höhe flogen und sich ordneten.",
-      "Noch ehe die Herren das Zimmer erreicht hatten, war sie mit dem Aufbetten fertig und schlüpfte heraus."
+      "Noch ehe die Herren das Zimmer erreicht hatten, war sie mit dem Aufbetten fertig und schlüpfte heraus.",
+      "Der Vater schien wieder von seinem Eigensinn derartig ergriffen, daß er jeden Respekt vergaß, den er seinen Mietern immerhin schuldete.",
+      "Er drängte nur und drängte, bis schon in der Tür des Zimmers der mittlere der Herren donnernd mit dem Fuß aufstampfte und dadurch den Vater zum Stehen brachte.",
+      "»Ich erkläre hiermit,« sagte er, hob die Hand und suchte mit den Blicken auch die Mutter und die Schwester, »daß ich mit Rücksicht auf die in dieser Wohnung und Familie herrschenden widerlichen Verhältnisse« -- hierbei spie er kurz entschlossen auf den Boden -- »mein Zimmer augenblicklich kündige.",
+      "Ich werde natürlich auch für die Tage, die ich hier gewohnt habe, nicht das Geringste bezahlen, dagegen werde ich es mir noch überlegen, ob ich nicht mit irgendwelchen -- glauben Sie mir -- sehr leicht zu begründenden Forderungen gegen Sie auftreten werde.«"
     ]
   }
 }

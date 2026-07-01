@@ -5,6 +5,7 @@ import {
   NOMBRE_IDIOMA,
   NOMBRE_NIVEL,
   lecturasDisponibles,
+  agruparPorLibro,
 } from '../../data/lecturas';
 import { cargarBolsa, cargarProgreso } from '../../engine/almacenamiento';
 import { contar } from '../../engine/bolsa';
@@ -26,9 +27,17 @@ function Biblioteca() {
   };
 
   const lecturas = lecturasDisponibles(nivel, idioma);
+  const entradas = agruparPorLibro(lecturas);
   const completadas = cargarProgreso();
   const totalBolsa = contar(cargarBolsa());
-  const hechas = contarCompletadas(completadas, lecturas.map((l) => l.id));
+
+  const entradaCompleta = (e) =>
+    e.tipo === 'libro'
+      ? e.partes.every((p) => estaCompletada(completadas, p.id))
+      : estaCompletada(completadas, e.lectura.id);
+  const hechas = entradas.filter(entradaCompleta).length;
+
+  const irALectura = (id) => navigate(`/lectura/${idioma}/${nivel}/${id}`);
 
   return (
     <div className="lectura-container">
@@ -58,36 +67,59 @@ function Biblioteca() {
         </label>
       </div>
 
-      {lecturas.length > 0 && (
+      {entradas.length > 0 && (
         <p className="biblioteca-progreso">
-          Completadas: {hechas} de {lecturas.length} en este nivel.
+          Completadas: {hechas} de {entradas.length} en este nivel.
         </p>
       )}
 
       <main className="biblioteca-lista">
-        {lecturas.length === 0 && (
+        {entradas.length === 0 && (
           <p className="biblioteca-vacia">
             No hay lecturas de nivel {NOMBRE_NIVEL[nivel].toLowerCase()} en {NOMBRE_IDIOMA[idioma]}.
           </p>
         )}
 
-        {lecturas.map((lectura) => {
-          const hecha = estaCompletada(completadas, lectura.id);
+        {entradas.map((e) => {
+          if (e.tipo === 'lectura') {
+            const l = e.lectura;
+            const hecha = estaCompletada(completadas, l.id);
+            return (
+              <button
+                key={l.id}
+                className={'lectura-card' + (hecha ? ' completada' : '')}
+                onClick={() => irALectura(l.id)}
+              >
+                <span className="lectura-card-titulo">
+                  {hecha && <span className="check-completada">✓</span>}
+                  {l.titulo[idioma]}
+                </span>
+                <span className="lectura-card-meta">
+                  {NOMBRE_IDIOMA[idioma]} · {NOMBRE_NIVEL[l.nivel]}
+                  {l.autor && ` · ${l.autor}`}
+                </span>
+              </button>
+            );
+          }
+
+          // entrada de tipo libro: colapsa sus partes
+          const leidas = contarCompletadas(completadas, e.partes.map((p) => p.id));
+          const total = e.partes.length;
+          const completo = leidas === total;
+          const continuar = e.partes.find((p) => !estaCompletada(completadas, p.id)) ?? e.partes[0];
           return (
             <button
-              key={lectura.id}
-              className={'lectura-card' + (hecha ? ' completada' : '')}
-              onClick={() =>
-                navigate(`/lectura/${idioma}/${nivel}/${lectura.id}`)
-              }
+              key={`libro-${e.id}`}
+              className={'lectura-card libro' + (completo ? ' completada' : '')}
+              onClick={() => irALectura(continuar.id)}
             >
               <span className="lectura-card-titulo">
-                {hecha && <span className="check-completada">✓</span>}
-                {lectura.titulo[idioma]}
+                {completo && <span className="check-completada">✓</span>}
+                📖 {e.titulo[idioma]}
               </span>
               <span className="lectura-card-meta">
-                {NOMBRE_IDIOMA[idioma]} · {NOMBRE_NIVEL[lectura.nivel]}
-                {lectura.autor && ` · ${lectura.autor}`}
+                {NOMBRE_IDIOMA[idioma]} · {NOMBRE_NIVEL[e.nivel]}
+                {e.autor && ` · ${e.autor}`} · {leidas}/{total} partes
               </span>
             </button>
           );

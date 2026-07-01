@@ -2,19 +2,19 @@
   "id": "verwandlung-09",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 9,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 9/10)",
-    "es": "La metamorfosis (Parte 9/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
-      "Der Vater schien wieder von seinem Eigensinn derartig ergriffen, daß er jeden Respekt vergaß, den er seinen Mietern immerhin schuldete.",
-      "Er drängte nur und drängte, bis schon in der Tür des Zimmers der mittlere der Herren donnernd mit dem Fuß aufstampfte und dadurch den Vater zum Stehen brachte.",
-      "»Ich erkläre hiermit,« sagte er, hob die Hand und suchte mit den Blicken auch die Mutter und die Schwester, »daß ich mit Rücksicht auf die in dieser Wohnung und Familie herrschenden widerlichen Verhältnisse« -- hierbei spie er kurz entschlossen auf den Boden -- »mein Zimmer augenblicklich kündige.",
-      "Ich werde natürlich auch für die Tage, die ich hier gewohnt habe, nicht das Geringste bezahlen, dagegen werde ich es mir noch überlegen, ob ich nicht mit irgendwelchen -- glauben Sie mir -- sehr leicht zu begründenden Forderungen gegen Sie auftreten werde.«",
       "Er schwieg und sah gerade vor sich hin, als erwarte er etwas.",
-      "Tatsächlich fielen sofort seine zwei Freunde mit den Worten ein: »Auch wir kündigen augenblicklich.«",
+      "Tatsächlich fielen sofort seine zwei Freunde mit den Worten ein:",
+      "»Auch wir kündigen augenblicklich.«",
       "Darauf faßte er die Türklinke und schloß mit einem Krach die Tür.",
       "Der Vater wankte mit tastenden Händen zu seinem Sessel und ließ sich hineinfallen;",
       "es sah aus, als strecke er sich zu seinem gewöhnlichen Abendschläfchen, aber das starke Nicken seines wie haltlosen Kopfes zeigte, daß er ganz und gar nicht schlief.",
@@ -39,8 +39,7 @@
       "»Wenn er uns verstünde,« sagte der Vater halb fragend;",
       "die Schwester schüttelte aus dem Weinen heraus heftig die Hand zum Zeichen, daß daran nicht zu denken sei.",
       "»Wenn er uns verstünde,« wiederholte der Vater und nahm durch Schließen der Augen die Überzeugung der Schwester von der Unmöglichkeit dessen in sich auf, »dann wäre vielleicht ein Übereinkommen mit ihm möglich.",
-      "Aber so --«",
-      "»Weg muß es,« rief die Schwester, »das ist das einzige Mittel, Vater.",
+      "Aber so --« »Weg muß es,« rief die Schwester, »das ist das einzige Mittel, Vater.",
       "Du mußt bloß den Gedanken loszuwerden suchen, daß es Gregor ist.",
       "Daß wir es so lange geglaubt haben, das ist ja unser eigentliches Unglück.",
       "Aber wie kann es denn Gregor sein?",
@@ -85,7 +84,8 @@
       "sie traute ihm allen möglichen Verstand zu.",
       "Weil sie zufällig den langen Besen in der Hand hielt, suchte sie mit ihm Gregor von der Tür aus zu kitzeln.",
       "Als sich auch da kein Erfolg zeigte, wurde sie ärgerlich und stieß ein wenig in Gregor hinein, und erst als sie ihn ohne jeden Widerstand von seinem Platze geschoben hatte, wurde sie aufmerksam.",
-      "Als sie bald den wahren Sachverhalt erkannte, machte sie große Augen, pfiff vor sich hin, hielt sich aber nicht lange auf, sondern riß die Tür des Schlafzimmers auf und rief mit lauter Stimme in das Dunkel hinein: »Sehen Sie nur mal an, es ist krepiert;",
+      "Als sie bald den wahren Sachverhalt erkannte, machte sie große Augen, pfiff vor sich hin, hielt sich aber nicht lange auf, sondern riß die Tür des Schlafzimmers auf und rief mit lauter Stimme in das Dunkel hinein:",
+      "»Sehen Sie nur mal an, es ist krepiert;",
       "da liegt es, ganz und gar krepiert!«",
       "Das Ehepaar Samsa saß im Ehebett aufrecht da und hatte zu tun, den Schrecken über die Bedienerin zu verwinden, ehe es dazu kam, ihre Meldung aufzufassen.",
       "Dann aber stiegen Herr und Frau Samsa, jeder auf seiner Seite, eiligst aus dem Bett, Herr Samsa warf die Decke über seine Schultern, Frau Samsa kam nur im Nachthemd hervor;",
@@ -98,7 +98,10 @@
       "»Nun,« sagte Herr Samsa, »jetzt können wir Gott danken.«",
       "Er bekreuzte sich, und die drei Frauen folgten seinem Beispiel.",
       "Grete, die kein Auge von der Leiche wendete, sagte: »Seht nur, wie mager er war.",
-      "Er hat ja auch schon so lange Zeit nichts gegessen."
+      "Er hat ja auch schon so lange Zeit nichts gegessen.",
+      "So wie die Speisen hereinkamen, sind sie wieder hinausgekommen.«",
+      "Tatsächlich war Gregors Körper vollständig flach und trocken, man erkannte das eigentlich erst jetzt, da er nicht mehr von den Beinchen gehoben war und auch sonst nichts den Blick ablenkte.",
+      "»Komm, Grete, auf ein Weilchen zu uns herein,« sagte Frau Samsa mit einem wehmütigen Lächeln, und Grete ging, nicht ohne nach der Leiche zurückzusehen, hinter den Eltern in das Schlafzimmer."
     ]
   }
 }

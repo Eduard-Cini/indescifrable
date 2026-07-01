@@ -2,16 +2,16 @@
   "id": "verwandlung-07",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 7,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 7/10)",
-    "es": "La metamorfosis (Parte 7/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
-      "Grete antwortete mit dumpfer Stimme, offenbar drückte sie ihr Gesicht an des Vaters Brust:",
-      "»Die Mutter war ohnmächtig, aber es geht ihr schon besser.",
-      "Gregor ist ausgebrochen.«",
       "»Ich habe es ja erwartet,« sagte der Vater, »ich habe es euch ja immer gesagt, aber ihr Frauen wollt nicht hören.«",
       "Gregor war es klar, daß der Vater Gretes allzukurze Mitteilung schlecht gedeutet hatte und annahm, daß Gregor sich irgendeine Gewalttat habe zuschulden kommen lassen.",
       "Deshalb mußte Gregor den Vater jetzt zu besänftigen suchen, denn ihn aufzuklären hatte er weder Zeit noch Möglichkeit.",
@@ -38,8 +38,7 @@
       "Allerdings mußte sich Gregor sagen, daß er sogar dieses Laufen nicht lange aushalten würde, denn während der Vater einen Schritt machte, mußte er eine Unzahl von Bewegungen ausführen.",
       "Atemnot begann sich schon bemerkbar zu machen, wie er ja auch in seiner früheren Zeit keine ganz vertrauenswürdige Lunge besessen hatte.",
       "Als er nun so dahintorkelte, um alle Kräfte für den Lauf zu sammeln, kaum die Augen offenhielt;",
-      "in seiner Stumpfheit an eine andere Rettung als durch Laufen gar nicht dachte;",
-      "und fast schon vergessen hatte, daß ihm die Wände freistanden, die hier allerdings mit sorgfältig geschnitzten Möbeln voll Zacken und Spitzen verstellt waren -- da flog knapp neben ihm, leicht geschleudert, irgend etwas nieder und rollte vor ihm her.",
+      "in seiner Stumpfheit an eine andere Rettung als durch Laufen gar nicht dachte; und fast schon vergessen hatte, daß ihm die Wände freistanden, die hier allerdings mit sorgfältig geschnitzten Möbeln voll Zacken und Spitzen verstellt waren -- da flog knapp neben ihm, leicht geschleudert, irgend etwas nieder und rollte vor ihm her.",
       "Es war ein Apfel;",
       "gleich flog ihm ein zweiter nach;",
       "Gregor blieb vor Schrecken stehen;",
@@ -98,7 +97,11 @@
       "Einmal hatte die Mutter Gregors Zimmer einer großen Reinigung unterzogen, die ihr nur nach Verbrauch einiger Kübel Wasser gelungen war -- die viele Feuchtigkeit kränkte allerdings Gregor auch und er lag breit, verbittert und unbeweglich auf dem Kanapee --, aber die Strafe blieb für die Mutter nicht aus.",
       "Denn kaum hatte am Abend die Schwester die Veränderung in Gregors Zimmer bemerkt, als sie, aufs höchste beleidigt, ins Wohnzimmer lief und, trotz der beschwörend erhobenen Hände der Mutter, in einen Weinkrampf ausbrach, dem die Eltern -- der Vater war natürlich aus seinem Sessel aufgeschreckt worden -- zuerst erstaunt und hilflos zusahen;",
       "bis auch sie sich zu rühren anfingen;",
-      "der Vater rechts der Mutter Vorwürfe machte, daß sie Gregors Zimmer nicht der Schwester zur Reinigung überließ;"
+      "der Vater rechts der Mutter Vorwürfe machte, daß sie Gregors Zimmer nicht der Schwester zur Reinigung überließ;",
+      "links dagegen die Schwester anschrie, sie werde niemals mehr Gregors Zimmer reinigen dürfen;",
+      "während die Mutter den Vater, der sich vor Erregung nicht mehr kannte, ins Schlafzimmer zu schleppen suchte;",
+      "die Schwester, von Schluchzen geschüttelt, mit ihren kleinen Fäusten den Tisch bearbeitete; und Gregor laut vor Wut darüber zischte, daß es keinem einfiel, die Tür zu schließen und ihm diesen Anblick und Lärm zu ersparen.",
+      "Aber selbst wenn die Schwester, erschöpft von ihrer Berufsarbeit, dessen überdrüssig geworden war, für Gregor, wie früher, zu sorgen, so hätte noch keineswegs die Mutter für sie eintreten müssen und Gregor hätte doch nicht vernachlässigt zu werden brauchen."
     ]
   }
 }

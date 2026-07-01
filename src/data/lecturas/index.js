@@ -44,3 +44,39 @@ export function lecturasDisponibles(nivel, idioma) {
 export function obtenerLectura(id) {
   return lecturas.find((l) => l.id === id);
 }
+
+// Partes de un libro, ordenadas por número de parte.
+export function partesDeLibro(libroId) {
+  return lecturas
+    .filter((l) => l.libro === libroId)
+    .sort((a, b) => a.parte - b.parte);
+}
+
+// Agrupa una lista de lecturas: las partes de un mismo libro colapsan en una
+// sola entrada { tipo: 'libro', ... }; el resto quedan como { tipo: 'lectura' }.
+export function agruparPorLibro(lista) {
+  const salida = [];
+  const indice = new Map();
+  for (const l of lista) {
+    if (l.libro) {
+      if (!indice.has(l.libro)) {
+        indice.set(l.libro, salida.length);
+        salida.push({
+          tipo: 'libro',
+          id: l.libro,
+          titulo: l.titulo,
+          autor: l.autor,
+          nivel: l.nivel,
+          partes: [],
+        });
+      }
+      salida[indice.get(l.libro)].partes.push(l);
+    } else {
+      salida.push({ tipo: 'lectura', lectura: l });
+    }
+  }
+  for (const e of salida) {
+    if (e.tipo === 'libro') e.partes.sort((a, b) => a.parte - b.parte);
+  }
+  return salida;
+}

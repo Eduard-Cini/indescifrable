@@ -2,16 +2,20 @@
   "id": "verwandlung-06",
   "nivel": "avanzado",
   "autor": "Franz Kafka",
+  "libro": "verwandlung",
+  "parte": 6,
+  "partes": 10,
   "titulo": {
-    "de": "Die Verwandlung (Parte 6/10)",
-    "es": "La metamorfosis (Parte 6/10)"
+    "de": "Die Verwandlung",
+    "es": "La metamorfosis"
   },
   "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
   "cuerpo": {
     "de": [
       "Die Mutter übrigens wollte verhältnismäßig bald Gregor besuchen, aber der Vater und die Schwester hielten sie zuerst mit Vernunftgründen zurück, denen Gregor sehr aufmerksam zuhörte, und die er vollständig billigte.",
       "Später aber mußte man sie mit Gewalt zurückhalten, und wenn sie dann rief: »Laßt mich doch zu Gregor, er ist ja mein unglücklicher Sohn!",
-      "Begreift ihr es denn nicht, daß ich zu ihm muß?«, dann dachte Gregor, daß es vielleicht doch gut wäre, wenn die Mutter hereinkäme, nicht jeden Tag natürlich, aber vielleicht einmal in der Woche;",
+      "Begreift ihr es denn nicht, daß ich zu ihm muß?",
+      "«, dann dachte Gregor, daß es vielleicht doch gut wäre, wenn die Mutter hereinkäme, nicht jeden Tag natürlich, aber vielleicht einmal in der Woche;",
       "sie verstand doch alles viel besser als die Schwester, die trotz all ihrem Mute doch nur ein Kind war und im letzten Grunde vielleicht nur aus kindlichem Leichtsinn eine so schwere Aufgabe übernommen hatte.",
       "Der Wunsch Gregors, die Mutter zu sehen, ging bald in Erfüllung.",
       "Während des Tages wollte Gregor schon aus Rücksicht auf seine Eltern sich nicht beim Fenster zeigen, kriechen konnte er aber auf den paar Quadratmetern des Fußbodens auch nicht viel, das ruhige Liegen ertrug er schon während der Nacht schwer, das Essen machte ihm bald nicht mehr das geringste Vergnügen, und so nahm er zur Zerstreuung die Gewohnheit an, kreuz und quer über Wände und Plafond zu kriechen.",
@@ -25,8 +29,7 @@
       "den Vater wagte sie nicht um Hilfe zu bitten;",
       "das Dienstmädchen hätte ihr ganz gewiß nicht geholfen, denn dieses etwa sechzehnjährige Mädchen harrte zwar tapfer seit Entlassung der früheren Köchin aus, hatte aber um die Vergünstigung gebeten, die Küche unaufhörlich versperrt halten zu dürfen und nur auf besonderen Anruf öffnen zu müssen;",
       "so blieb der Schwester also nichts übrig, als einmal in Abwesenheit des Vaters die Mutter zu holen.",
-      "Mit Ausrufen erregter Freude",
-      "kam die Mutter auch heran, verstummte aber an der Tür vor Gregors Zimmer.",
+      "Mit Ausrufen erregter Freude kam die Mutter auch heran, verstummte aber an der Tür vor Gregors Zimmer.",
       "Zuerst sah natürlich die Schwester nach, ob alles im Zimmer in Ordnung war;",
       "dann erst ließ sie die Mutter eintreten.",
       "Gregor hatte in größter Eile das Leintuch noch tiefer und mehr in Falten gezogen, das Ganze sah wirklich nur wie ein zufällig über das Kanapee geworfenes Leintuch aus.",
@@ -74,16 +77,13 @@
       "Nun, sie konnte es ja immerhin versuchen!",
       "Er saß auf seinem Bild und gab es nicht her.",
       "Lieber würde er Grete ins Gesicht springen.",
-      "Aber Gretes Worte hatten die Mutter erst recht beunruhigt, sie trat zur Seite, erblickte den riesigen braunen Fleck auf der geblümten Tapete, rief, ehe ihr eigentlich zum Bewußtsein kam, daß das Gregor war, was sie sah, mit schreiender, rauher Stimme:",
-      "»Ach Gott, ach Gott!«",
-      "und fiel mit ausgebreiteten Armen, als gebe sie alles auf, über das Kanapee hin und rührte sich nicht.",
+      "Aber Gretes Worte hatten die Mutter erst recht beunruhigt, sie trat zur Seite, erblickte den riesigen braunen Fleck auf der geblümten Tapete, rief, ehe ihr eigentlich zum Bewußtsein kam, daß das Gregor war, was sie sah, mit schreiender, rauher Stimme: »Ach Gott, ach Gott!« und fiel mit ausgebreiteten Armen, als gebe sie alles auf, über das Kanapee hin und rührte sich nicht.",
       "»Du, Gregor!« rief die Schwester mit erhobener Faust und eindringlichen Blicken.",
       "Es waren seit der Verwandlung die ersten Worte, die sie unmittelbar an ihn gerichtet hatte.",
       "Sie lief ins Nebenzimmer, um irgendeine Essenz zu holen, mit der sie die Mutter aus ihrer Ohnmacht wecken könnte;",
       "Gregor wollte auch helfen -- zur Rettung des Bildes war noch Zeit --;",
       "er klebte aber fest an dem Glas und mußte sich mit Gewalt losreißen;",
-      "er lief dann auch ins Nebenzimmer, als könne er der Schwester irgendeinen Rat geben, wie in früherer Zeit;",
-      "mußte aber dann untätig hinter ihr stehen;",
+      "er lief dann auch ins Nebenzimmer, als könne er der Schwester irgendeinen Rat geben, wie in früherer Zeit; mußte aber dann untätig hinter ihr stehen;",
       "während sie in verschiedenen Fläschchen kramte, erschreckte sie noch, als sie sich umdrehte;",
       "eine Flasche fiel auf den Boden und zerbrach;",
       "ein Splitter verletzte Gregor im Gesicht, irgendeine ätzende Medizin umfloß ihn;",
@@ -98,7 +98,10 @@
       "Das Mädchen war natürlich in ihrer Küche eingesperrt und Grete mußte daher öffnen gehen.",
       "Der Vater war gekommen.",
       "»Was ist geschehen?« waren seine ersten Worte;",
-      "Gretes Aussehen hatte ihm wohl alles verraten."
+      "Gretes Aussehen hatte ihm wohl alles verraten.",
+      "Grete antwortete mit dumpfer Stimme, offenbar drückte sie ihr Gesicht an des Vaters Brust:",
+      "»Die Mutter war ohnmächtig, aber es geht ihr schon besser.",
+      "Gregor ist ausgebrochen.«"
     ]
   }
 }
