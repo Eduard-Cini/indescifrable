@@ -408,6 +408,24 @@ callout("nota", "Fusión idempotente del léxico",
          "<b>nunca sobrescribe</b> una entrada ya traducida con una sin traducción (una misma "
          "forma puede recibir distinto lema según el contexto)."])
 
+h2("4.4 Ambigüedad y overrides por lectura")
+p("Un léxico global (clave <font face='Courier'>idioma:forma</font>) no puede desambiguar "
+  "formas que dependen del contexto: <i>nahm</i> es parte de <b>annehmen</b> (suponer) en una "
+  "fábula, pero es <b>nehmen</b> (tomar) en otra novela; <i>an</i> es partícula separable o "
+  "preposición según la frase. Es el <b>sub-problema de ambigüedad</b> que la tesis plantea "
+  "explícitamente (una misma forma admite varios análisis).")
+p("Solución adoptada: cada lectura puede llevar un pequeño mapa "
+  "<font face='Courier'>lexico</font> con overrides que el frontend <b>prioriza</b> sobre el "
+  "léxico global. Para los textos curados de principiante/intermedio se detectaron los verbos "
+  "separables (dependencia <font face='Courier'>svp</font>) inequívocos dentro de cada texto y "
+  "se fijó a mano el lema y la traducción correctos, verificados frase a frase.")
+callout("insight", "Por qué un léxico global no basta",
+        ["El límite es de fondo: la traducción por palabra correcta depende de la <b>posición "
+         "del token</b>, no solo de su forma. Los overrides por lectura resuelven los casos "
+         "curados; la solución general sería anotar el léxico <b>por token</b> en el pipeline "
+         "(algo que spaCy ya permite) y renderizar con esos tokens en vez de tokenizar en el "
+         "cliente. Es un refactor mayor, anotado como trabajo futuro."])
+
 # =========================================================================
 #  5. TRADUCCIÓN POR ORACIÓN
 # =========================================================================
