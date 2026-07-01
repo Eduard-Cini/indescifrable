@@ -14,8 +14,6 @@ from pathlib import Path
 
 import spacy
 
-from traductor import Traductor
-
 RAIZ = Path(__file__).resolve().parents[1]
 DIR_LECTURAS = RAIZ / "src" / "data" / "lecturas"
 RUTA_LEXICO = RAIZ / "src" / "data" / "lexico.json"
@@ -84,38 +82,19 @@ def lemas_con_separables(doc):
 
 
 def procesar():
-    print(f"Cargando spaCy ({MODELO}) y diccionarios FreeDict...")
+    print(f"Cargando spaCy ({MODELO})...")
     nlp = spacy.load(MODELO)
-    tr = Traductor()
-    print(f"  diccionarios: deu-spa={tr.tamanos()[0]} deu-eng={tr.tamanos()[1]} eng-spa={tr.tamanos()[2]}")
 
     contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
     nlp.max_length = max(nlp.max_length, len(contenido) + 100)
     doc = nlp(contenido)
-    lemas = lemas_con_separables(doc)
 
     frases = [s.text.strip() for s in doc.sents if s.text.strip()]
-
-    lexico = {}
-    for t in doc:
-        if not t.is_alpha:
-            continue
-        clave = f"de:{normalizar(t.text)}"
-        if clave == "de:" or clave in lexico:
-            continue
-        lema = lemas[t.i]
-        entrada = {"lemma": lema}
-        trad = tr.traducir(lema, t.text)
-        if trad:
-            entrada["es"] = trad
-        lexico[clave] = entrada
-
-    print(f"  frases: {len(frases)}  |  formas en léxico: {len(lexico)}")
-    con_trad = sum(1 for v in lexico.values() if "es" in v)
-    print(f"  con traducción: {con_trad} ({100*con_trad//max(1,len(lexico))}%)")
+    print(f"  frases: {len(frases)}")
 
     escribir_lecturas(frases)
-    fusionar_lexico(lexico)
+    print("  → ahora ejecuta construir_lexico.py para reconstruir el léxico "
+          "con TODAS las lecturas.")
 
 
 def escribir_lecturas(frases):
@@ -142,20 +121,6 @@ def escribir_lecturas(frases):
         )
     print(f"  escritas {total} lecturas en {DIR_LECTURAS}")
     return total
-
-
-def fusionar_lexico(nuevos):
-    # Reconstruye el léxico desde la base curada a mano (semilla estable), de
-    # modo que re-ejecutar el pipeline sea idempotente y no arrastre entradas
-    # obsoletas. Las entradas de la base tienen prioridad sobre las generadas.
-    base = json.loads(RUTA_BASE.read_text(encoding="utf-8")) if RUTA_BASE.exists() else {}
-    fusion = dict(nuevos)
-    fusion.update(base)
-    fusion = dict(sorted(fusion.items()))
-    RUTA_LEXICO.write_text(
-        json.dumps(fusion, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
-    print(f"  léxico: {len(nuevos)} del libro + {len(base)} base = {len(fusion)} -> {RUTA_LEXICO.name}")
 
 
 if __name__ == "__main__":

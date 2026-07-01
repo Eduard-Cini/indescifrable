@@ -11,7 +11,8 @@ compuesto; ver `traductor.py`). Cobertura ~92 %. No usa ninguna API en línea.
 ```bash
 cd pipeline
 python -m pip install -r requirements.txt
-python -m spacy download de_core_news_md
+python -m spacy download de_core_news_md   # alemán
+python -m spacy download en_core_web_sm     # inglés (léxico de textos en inglés)
 ```
 
 Los diccionarios FreeDict (TEI: `deu-spa`, `deu-eng`, `eng-spa`) van en
@@ -23,36 +24,54 @@ Los diccionarios FreeDict (TEI: `deu-spa`, `deu-eng`, `eng-spa`) van en
 
 ## Uso
 
+**1. Ingerir un libro** (limpieza → spaCy → lecturas troceadas):
+
 ```bash
-PYTHONUTF8=1 python procesar.py
+PYTHONUTF8=1 python procesar.py     # usa el libro configurado en CONFIG
 ```
 
-Descarga (si hace falta) el diccionario FreeDict deu-spa y el libro configurado
-en `CONFIG` (dentro de `procesar.py`), y escribe:
+**2. Reconstruir el léxico** desde TODAS las lecturas (alemán e inglés):
 
-- `../src/data/lecturas/<id>-NN.json` — el libro troceado en partes.
-- `../src/data/lexico.json` — fusiona las formas nuevas (clave `de:<forma>` →
-  `{ lemma, es }`). Las entradas curadas a mano tienen prioridad.
+```bash
+PYTHONUTF8=1 python construir_lexico.py
+```
 
-El catálogo del frontend (`src/data/lecturas/index.js`) carga todos los JSON
-automáticamente con `import.meta.glob`, así que no hay que registrar nada a mano.
+Escribe `../src/data/lexico.json` (`idioma:<forma>` → `{ lemma, es }`) partiendo
+de `lexico.base.json` (entradas curadas, con prioridad). Idempotente. Informa la
+cobertura por lectura. El catálogo del frontend carga los JSON con
+`import.meta.glob`, así que no hay que registrar nada a mano.
+
+**3. Traducción por oración de libros (LLM, opcional):** los libros solo traen
+el original. Para darles la traducción por frase con un LLM (p. ej. Gemini)
+conservando la alineación 1:1:
+
+```bash
+PYTHONUTF8=1 python exportar_frases.py verwandlung-01     # -> lista numerada + prompt
+# pegar en el LLM, guardar la respuesta en traducciones/verwandlung-01.es.txt
+PYTHONUTF8=1 python importar_traduccion.py verwandlung-01 traducciones/verwandlung-01.es.txt
+```
+
+`importar_traduccion.py` valida el conteo/numeración: si no cuadra 1:1, no
+escribe nada. El frontend activa el ⇄ por frase en cuanto existe `cuerpo.es`.
 
 ## Archivos
 
-- `procesar.py` — pipeline principal (limpieza → spaCy → JSON).
-- `traductor.py` — traducción por capas (deu-spa → cadena en inglés → compuesto).
+- `procesar.py` — ingesta de un libro (limpieza → spaCy → lecturas JSON).
+- `construir_lexico.py` — construye el léxico desde todas las lecturas (de + en).
+- `traductor.py` — traducción por capas (deu-spa → cadena en inglés → compuesto;
+  y eng-spa para inglés).
 - `leer_diccionario.py` — parser del TEI de FreeDict a `lema → traducción`.
 - `diagnostico.py` — informe de cobertura por categoría gramatical.
+- `exportar_frases.py` / `importar_traduccion.py` — traducción por oración vía LLM.
 - `lexico.base.json` — semilla curada a mano; el léxico se reconstruye desde ella.
-- `requirements.txt` — dependencias de Python.
-- `fuentes/`, `diccionarios/` — descargas (ignoradas por git).
+- `fuentes/`, `diccionarios/`, `traducciones/` — descargas/intermedios (ignorados).
 
 ## Notas de licencia / fuentes
 
 - Textos: Project Gutenberg (dominio público). Cada lectura guarda su `fuente`.
 - Diccionarios: [FreeDict](https://freedict.org) deu-spa, deu-eng, eng-spa
   (licencia libre; ver `diccionarios/<par>/COPYING` tras la descarga).
-- Modelos spaCy: `de_core_news_md` (MIT).
+- Modelos spaCy: `de_core_news_md`, `en_core_web_sm` (MIT).
 
 ## Verbos separables
 

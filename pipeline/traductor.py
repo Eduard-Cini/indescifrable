@@ -67,3 +67,11 @@ class Traductor:
             if t:
                 return t
         return self._compuesto(superficie)
+
+    def traducir_en(self, lema, superficie):
+        """Inglés -> español, directo por eng-spa (por lema y forma)."""
+        for cand in (lema.lower(), superficie.lower()):
+            t = self.en_es.get(cand)
+            if t:
+                return t
+        return None

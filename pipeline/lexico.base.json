@@ -1,61 +1,426 @@
 {
-  "de:geht": { "lemma": "gehen", "es": "va / ir" },
-  "de:morgen": { "lemma": "Morgen", "es": "mañana" },
-  "de:markt": { "lemma": "Markt", "es": "mercado" },
-  "de:zum": { "lemma": "zu", "es": "al / hacia el" },
-  "de:sie": { "lemma": "sie", "es": "ella / ellos" },
-  "de:kauft": { "lemma": "kaufen", "es": "compra" },
-  "de:äpfel": { "lemma": "Apfel", "es": "manzanas" },
-  "de:brot": { "lemma": "Brot", "es": "pan" },
-  "de:und": { "lemma": "und", "es": "y" },
-  "de:käse": { "lemma": "Käse", "es": "queso" },
-  "de:das": { "lemma": "das", "es": "el / la / eso" },
-  "de:ist": { "lemma": "sein", "es": "es / está" },
-  "de:warm": { "lemma": "warm", "es": "caliente" },
-  "de:riecht": { "lemma": "riechen", "es": "huele" },
-  "de:sehr": { "lemma": "sehr", "es": "muy" },
-  "de:gut": { "lemma": "gut", "es": "bien / bueno" },
-  "de:bezahlt": { "lemma": "bezahlen", "es": "paga" },
-  "de:mit": { "lemma": "mit", "es": "con" },
-  "de:einer": { "lemma": "ein", "es": "una" },
-  "de:münze": { "lemma": "Münze", "es": "moneda" },
-  "de:nach": { "lemma": "nach", "es": "a / hacia" },
-  "de:hause": { "lemma": "Haus", "es": "casa" },
-  "de:zu": { "lemma": "zu", "es": "a / en" },
-  "de:bereitet": { "lemma": "vorbereiten", "es": "preparar (verbo separable: bereitet … vor)" },
-  "de:frühstück": { "lemma": "Frühstück", "es": "desayuno" },
-  "de:für": { "lemma": "für", "es": "para" },
-  "de:ihre": { "lemma": "ihr", "es": "su / sus" },
-  "de:familie": { "lemma": "Familie", "es": "familia" },
-  "de:vor": { "lemma": "vorbereiten", "es": "preparar (partícula separable de bereitet … vor)" },
-
-  "en:goes": { "lemma": "go", "es": "va / ir" },
-  "en:to": { "lemma": "to", "es": "a / hacia" },
-  "en:the": { "lemma": "the", "es": "el / la" },
-  "en:market": { "lemma": "market", "es": "mercado" },
-  "en:in": { "lemma": "in", "es": "en" },
-  "en:morning": { "lemma": "morning", "es": "mañana" },
-  "en:she": { "lemma": "she", "es": "ella" },
-  "en:buys": { "lemma": "buy", "es": "compra" },
-  "en:apples": { "lemma": "apple", "es": "manzanas" },
-  "en:bread": { "lemma": "bread", "es": "pan" },
-  "en:and": { "lemma": "and", "es": "y" },
-  "en:cheese": { "lemma": "cheese", "es": "queso" },
-  "en:is": { "lemma": "be", "es": "es / está" },
-  "en:warm": { "lemma": "warm", "es": "caliente / tibio" },
-  "en:smells": { "lemma": "smell", "es": "huele" },
-  "en:very": { "lemma": "very", "es": "muy" },
-  "en:good": { "lemma": "good", "es": "bueno / bien" },
-  "en:pays": { "lemma": "pay", "es": "paga" },
-  "en:with": { "lemma": "with", "es": "con" },
-  "en:a": { "lemma": "a", "es": "un / una" },
-  "en:coin": { "lemma": "coin", "es": "moneda" },
-  "en:back": { "lemma": "back", "es": "de vuelta" },
-  "en:home": { "lemma": "home", "es": "casa" },
-  "en:at": { "lemma": "at", "es": "en / a" },
-  "en:prepares": { "lemma": "prepare", "es": "prepara" },
-  "en:breakfast": { "lemma": "breakfast", "es": "desayuno" },
-  "en:for": { "lemma": "for", "es": "para" },
-  "en:her": { "lemma": "her", "es": "su / sus" },
-  "en:family": { "lemma": "family", "es": "familia" }
+  "de:am": {
+    "lemma": "an",
+    "es": "en el / al"
+  },
+  "de:ana": {
+    "lemma": "Ana",
+    "es": "(nombre propio)"
+  },
+  "de:aß": {
+    "lemma": "essen",
+    "es": "comió"
+  },
+  "de:baumes": {
+    "lemma": "Baum",
+    "es": "árbol"
+  },
+  "de:befreite": {
+    "lemma": "befreien",
+    "es": "liberó"
+  },
+  "de:begann": {
+    "lemma": "beginnen",
+    "es": "comenzó / empezó"
+  },
+  "de:bereitet": {
+    "lemma": "vorbereiten",
+    "es": "preparar (verbo separable: bereitet … vor)"
+  },
+  "de:bezahlt": {
+    "lemma": "bezahlen",
+    "es": "paga"
+  },
+  "de:bring": {
+    "lemma": "bringen",
+    "es": "trae"
+  },
+  "de:brot": {
+    "lemma": "Brot",
+    "es": "pan"
+  },
+  "de:dachte": {
+    "lemma": "denken",
+    "es": "pensó"
+  },
+  "de:das": {
+    "lemma": "das",
+    "es": "el / la / eso"
+  },
+  "de:dir": {
+    "lemma": "du",
+    "es": "(a) ti / te"
+  },
+  "de:einer": {
+    "lemma": "ein",
+    "es": "una"
+  },
+  "de:erwischst": {
+    "lemma": "erwischen",
+    "es": "atrapas / pillas"
+  },
+  "de:familie": {
+    "lemma": "Familie",
+    "es": "familia"
+  },
+  "de:feinstem": {
+    "lemma": "fein",
+    "es": "más fino"
+  },
+  "de:floss": {
+    "lemma": "fließen",
+    "es": "fluyó"
+  },
+  "de:frühstück": {
+    "lemma": "Frühstück",
+    "es": "desayuno"
+  },
+  "de:für": {
+    "lemma": "für",
+    "es": "para"
+  },
+  "de:gab": {
+    "lemma": "geben",
+    "es": "dio"
+  },
+  "de:geh": {
+    "lemma": "gehen",
+    "es": "ve / anda"
+  },
+  "de:geht": {
+    "lemma": "gehen",
+    "es": "va / ir"
+  },
+  "de:gib": {
+    "lemma": "geben",
+    "es": "da"
+  },
+  "de:ging": {
+    "lemma": "gehen",
+    "es": "fue / iba"
+  },
+  "de:gut": {
+    "lemma": "gut",
+    "es": "bien / bueno"
+  },
+  "de:hause": {
+    "lemma": "Haus",
+    "es": "casa"
+  },
+  "de:ihre": {
+    "lemma": "ihr",
+    "es": "su / sus"
+  },
+  "de:isst": {
+    "lemma": "essen",
+    "es": "come"
+  },
+  "de:ist": {
+    "lemma": "sein",
+    "es": "es / está"
+  },
+  "de:kauft": {
+    "lemma": "kaufen",
+    "es": "compra"
+  },
+  "de:kochte": {
+    "lemma": "kochen",
+    "es": "cocía / cocinó"
+  },
+  "de:komm": {
+    "lemma": "kommen",
+    "es": "ven"
+  },
+  "de:kommst": {
+    "lemma": "kommen",
+    "es": "vienes"
+  },
+  "de:käppchen": {
+    "lemma": "Käppchen",
+    "es": "caperuza / gorrito"
+  },
+  "de:käse": {
+    "lemma": "Käse",
+    "es": "queso"
+  },
+  "de:lass": {
+    "lemma": "lassen",
+    "es": "deja"
+  },
+  "de:lebtag": {
+    "lemma": "Lebtag",
+    "es": "vida (en toda la vida)"
+  },
+  "de:liebhatte": {
+    "lemma": "liebhaben",
+    "es": "quería / amaba"
+  },
+  "de:listig": {
+    "lemma": "listig",
+    "es": "astuto / astuta"
+  },
+  "de:lockerte": {
+    "lemma": "lockern",
+    "es": "aflojó"
+  },
+  "de:markt": {
+    "lemma": "Markt",
+    "es": "mercado"
+  },
+  "de:maría": {
+    "lemma": "María",
+    "es": "(nombre propio)"
+  },
+  "de:mit": {
+    "lemma": "mit",
+    "es": "con"
+  },
+  "de:mitleidige": {
+    "lemma": "mitleidig",
+    "es": "compasiva"
+  },
+  "de:morgen": {
+    "lemma": "Morgen",
+    "es": "mañana"
+  },
+  "de:musst": {
+    "lemma": "müssen",
+    "es": "debes / tienes que"
+  },
+  "de:musste": {
+    "lemma": "müssen",
+    "es": "debía / tuvo que"
+  },
+  "de:münze": {
+    "lemma": "Münze",
+    "es": "moneda"
+  },
+  "de:nach": {
+    "lemma": "nach",
+    "es": "a / hacia"
+  },
+  "de:pflückst": {
+    "lemma": "pflücken",
+    "es": "recoges / cortas"
+  },
+  "de:riecht": {
+    "lemma": "riechen",
+    "es": "huele"
+  },
+  "de:schlief": {
+    "lemma": "schlafen",
+    "es": "dormía / durmió"
+  },
+  "de:sehr": {
+    "lemma": "sehr",
+    "es": "muy"
+  },
+  "de:sie": {
+    "lemma": "sie",
+    "es": "ella / ellos"
+  },
+  "de:sieh": {
+    "lemma": "sehen",
+    "es": "mira"
+  },
+  "de:sing": {
+    "lemma": "singen",
+    "es": "canta"
+  },
+  "de:steh": {
+    "lemma": "stehen",
+    "es": "detente / párate"
+  },
+  "de:stärkere": {
+    "lemma": "stark",
+    "es": "más fuerte"
+  },
+  "de:tom": {
+    "lemma": "Tom",
+    "es": "(nombre propio)"
+  },
+  "de:und": {
+    "lemma": "und",
+    "es": "y"
+  },
+  "de:verging": {
+    "lemma": "vergehen",
+    "es": "pasó / transcurrió"
+  },
+  "de:vor": {
+    "lemma": "vorbereiten",
+    "es": "preparar (partícula separable de bereitet … vor)"
+  },
+  "de:warm": {
+    "lemma": "warm",
+    "es": "caliente"
+  },
+  "de:weiter": {
+    "lemma": "weiter",
+    "es": "más / adelante"
+  },
+  "de:willst": {
+    "lemma": "wollen",
+    "es": "quieres"
+  },
+  "de:wunderte": {
+    "lemma": "wundern",
+    "es": "se asombró / se extrañó"
+  },
+  "de:wusste": {
+    "lemma": "wissen",
+    "es": "sabía"
+  },
+  "de:zu": {
+    "lemma": "zu",
+    "es": "a / en"
+  },
+  "de:zum": {
+    "lemma": "zu",
+    "es": "al / hacia el"
+  },
+  "de:äpfel": {
+    "lemma": "Apfel",
+    "es": "manzanas"
+  },
+  "en:a": {
+    "lemma": "a",
+    "es": "un / una"
+  },
+  "en:ana": {
+    "lemma": "Ana",
+    "es": "(nombre propio)"
+  },
+  "en:and": {
+    "lemma": "and",
+    "es": "y"
+  },
+  "en:apples": {
+    "lemma": "apple",
+    "es": "manzanas"
+  },
+  "en:at": {
+    "lemma": "at",
+    "es": "en / a"
+  },
+  "en:back": {
+    "lemma": "back",
+    "es": "de vuelta"
+  },
+  "en:bread": {
+    "lemma": "bread",
+    "es": "pan"
+  },
+  "en:breakfast": {
+    "lemma": "breakfast",
+    "es": "desayuno"
+  },
+  "en:buys": {
+    "lemma": "buy",
+    "es": "compra"
+  },
+  "en:cheese": {
+    "lemma": "cheese",
+    "es": "queso"
+  },
+  "en:coin": {
+    "lemma": "coin",
+    "es": "moneda"
+  },
+  "en:family": {
+    "lemma": "family",
+    "es": "familia"
+  },
+  "en:for": {
+    "lemma": "for",
+    "es": "para"
+  },
+  "en:goes": {
+    "lemma": "go",
+    "es": "va / ir"
+  },
+  "en:good": {
+    "lemma": "good",
+    "es": "bueno / bien"
+  },
+  "en:her": {
+    "lemma": "her",
+    "es": "su / sus"
+  },
+  "en:home": {
+    "lemma": "home",
+    "es": "casa"
+  },
+  "en:in": {
+    "lemma": "in",
+    "es": "en"
+  },
+  "en:is": {
+    "lemma": "be",
+    "es": "es / está"
+  },
+  "en:market": {
+    "lemma": "market",
+    "es": "mercado"
+  },
+  "en:maría": {
+    "lemma": "María",
+    "es": "(nombre propio)"
+  },
+  "en:merrily": {
+    "lemma": "merrily",
+    "es": "alegremente"
+  },
+  "en:morning": {
+    "lemma": "morning",
+    "es": "mañana"
+  },
+  "en:pays": {
+    "lemma": "pay",
+    "es": "paga"
+  },
+  "en:prepares": {
+    "lemma": "prepare",
+    "es": "prepara"
+  },
+  "en:repay": {
+    "lemma": "repay",
+    "es": "devolver / pagar"
+  },
+  "en:she": {
+    "lemma": "she",
+    "es": "ella"
+  },
+  "en:smells": {
+    "lemma": "smell",
+    "es": "huele"
+  },
+  "en:the": {
+    "lemma": "the",
+    "es": "el / la"
+  },
+  "en:to": {
+    "lemma": "to",
+    "es": "a / hacia"
+  },
+  "en:traveler": {
+    "lemma": "traveler",
+    "es": "viajero"
+  },
+  "en:trustingly": {
+    "lemma": "trustingly",
+    "es": "confiadamente"
+  },
+  "en:very": {
+    "lemma": "very",
+    "es": "muy"
+  },
+  "en:warm": {
+    "lemma": "warm",
+    "es": "caliente / tibio"
+  },
+  "en:with": {
+    "lemma": "with",
+    "es": "con"
+  }
 }
