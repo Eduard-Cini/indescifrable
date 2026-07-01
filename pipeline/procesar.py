@@ -6,10 +6,11 @@ FreeDict para la traducción por palabra (deu-spa directo + cadena
 deu-eng->eng-spa + cabeza de compuesto; ver traductor.py). Exporta al formato
 que consume el frontend: src/data/lecturas/<id>.json y src/data/lexico.json.
 
-Uso:  PYTHONUTF8=1 python procesar.py
+Uso:  PYTHONUTF8=1 python procesar.py <libro>   (p. ej. verwandlung, immensee)
 """
 import json
 import re
+import sys
 from pathlib import Path
 
 import spacy
@@ -17,25 +18,45 @@ import spacy
 RAIZ = Path(__file__).resolve().parents[1]
 DIR_LECTURAS = RAIZ / "src" / "data" / "lecturas"
 RUTA_LEXICO = RAIZ / "src" / "data" / "lexico.json"
+FUENTES = Path(__file__).parent / "fuentes"
 
-# --- Libro a procesar -------------------------------------------------------
-CONFIG = {
-    "id_base": "verwandlung",
-    "idioma": "de",
-    "nivel": "avanzado",
-    "autor": "Franz Kafka",
-    "titulo": {"de": "Die Verwandlung", "es": "La metamorfosis"},
-    "fuente": (
-        "«Die Verwandlung», Franz Kafka (1915; dominio público). "
-        "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. "
-        "Procesado con spaCy; traducción por palabra con diccionarios FreeDict "
-        "(deu-spa y cadena deu-eng→eng-spa, https://freedict.org)."
-    ),
-    "archivo": Path(__file__).parent / "fuentes" / "verwandlung.txt",
-    "inicio": "Als Gregor Samsa",
-    "frases_por_parte": 90,
+# --- Libros disponibles -----------------------------------------------------
+LIBROS = {
+    "verwandlung": {
+        "id_base": "verwandlung",
+        "idioma": "de",
+        "nivel": "avanzado",
+        "autor": "Franz Kafka",
+        "titulo": {"de": "Die Verwandlung", "es": "La metamorfosis"},
+        "fuente": (
+            "«Die Verwandlung», Franz Kafka (1915; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. "
+            "Procesado con spaCy; traducción por frase con Gemini; traducción "
+            "por palabra con diccionarios FreeDict (https://freedict.org)."
+        ),
+        "archivo": FUENTES / "verwandlung.txt",
+        "inicio": "Als Gregor Samsa",
+        "frases_por_parte": 90,
+    },
+    "immensee": {
+        "id_base": "immensee",
+        "idioma": "de",
+        "nivel": "avanzado",
+        "autor": "Theodor Storm",
+        "titulo": {"de": "Immensee", "es": "Immensee"},
+        "fuente": (
+            "«Immensee», Theodor Storm (1849; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/6651. "
+            "Procesado con spaCy; traducción por frase con MT offline "
+            "(opus-mt de-es, Helsinki-NLP); traducción por palabra con FreeDict."
+        ),
+        "archivo": FUENTES / "immensee.txt",
+        "inicio": "An einem Spätherbstnachmittage",
+        "frases_por_parte": 90,
+    },
 }
 
+CONFIG = None  # lo fija procesar(nombre)
 MODELO = "de_core_news_md"
 RUTA_BASE = Path(__file__).parent / "lexico.base.json"
 
@@ -52,15 +73,22 @@ def extraer_contenido(ruta, inicio):
     return txt
 
 
+def _es_titulo(linea):
+    """Marcador de capítulo: numeral romano o línea corta TODO EN MAYÚSCULAS
+    (p. ej. «DER ALTE», «DIE KINDER» en Immensee)."""
+    l = linea.strip()
+    if re.fullmatch(r"[IVXLC]+\.?", l):
+        return True
+    letras = [c for c in l if c.isalpha()]
+    return bool(letras) and l == l.upper() and len(l) <= 40
+
+
 def limpiar_texto(texto):
     """El texto de Gutenberg viene doble-espaciado (una línea en blanco entre
-    cada línea envuelta). Quitamos los marcadores de capítulo (numerales
-    romanos) y unimos todo en un flujo continuo para que spaCy segmente por
-    frases reales, no por saltos de línea."""
-    lineas = [
-        l for l in texto.splitlines()
-        if not re.fullmatch(r"\s*[IVXLC]+\.?\s*", l)
-    ]
+    cada línea envuelta). Quitamos los marcadores de capítulo y unimos todo en
+    un flujo continuo para que spaCy segmente por frases reales, no por saltos
+    de línea."""
+    lineas = [l for l in texto.splitlines() if not _es_titulo(l)]
     return re.sub(r"\s+", " ", " ".join(lineas)).strip()
 
 
@@ -81,8 +109,10 @@ def lemas_con_separables(doc):
     return lemas
 
 
-def procesar():
-    print(f"Cargando spaCy ({MODELO})...")
+def procesar(nombre):
+    global CONFIG
+    CONFIG = LIBROS[nombre]
+    print(f"Libro: {nombre}. Cargando spaCy ({MODELO})...")
     nlp = spacy.load(MODELO)
 
     contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
@@ -124,4 +154,7 @@ def escribir_lecturas(frases):
 
 
 if __name__ == "__main__":
-    procesar()
+    nombre = sys.argv[1] if len(sys.argv) > 1 else "verwandlung"
+    if nombre not in LIBROS:
+        raise SystemExit(f"Libro desconocido: {nombre}. Opciones: {list(LIBROS)}")
+    procesar(nombre)

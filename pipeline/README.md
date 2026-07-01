@@ -27,7 +27,8 @@ Los diccionarios FreeDict (TEI: `deu-spa`, `deu-eng`, `eng-spa`) van en
 **1. Ingerir un libro** (limpieza → spaCy → lecturas troceadas):
 
 ```bash
-PYTHONUTF8=1 python procesar.py     # usa el libro configurado en CONFIG
+python fuentes_descargar.py 6651 immensee   # descarga el texto de Gutenberg
+PYTHONUTF8=1 python procesar.py immensee     # libro de LIBROS (verwandlung, immensee)
 ```
 
 **2. Reconstruir el léxico** desde TODAS las lecturas (alemán e inglés):
@@ -54,10 +55,25 @@ PYTHONUTF8=1 python importar_traduccion.py verwandlung-01 traducciones/verwandlu
 `importar_traduccion.py` valida el conteo/numeración: si no cuadra 1:1, no
 escribe nada. El frontend activa el ⇄ por frase en cuanto existe `cuerpo.es`.
 
+**3-bis. Traducción por oración con MT offline (sin API):** alternativa
+automática al LLM, con opus-mt (Helsinki-NLP) de→es directo. Requiere:
+`pip install transformers torch sentencepiece sacremoses` (el modelo ~300 MB se
+descarga la primera vez). Alineación 1:1 automática:
+
+```bash
+PYTHONUTF8=1 python traducir_mt.py immensee   # traduce todas las partes -> cuerpo.es
+```
+
+Calidad menor que un LLM (p. ej. `bestäubt`→«polinizados» en vez de «polvoriento»),
+pero sin copia-pega. En el proyecto: *Die Verwandlung* usa Gemini, *Immensee* usa MT.
+
 ## Archivos
 
-- `procesar.py` — ingesta de un libro (limpieza → spaCy → lecturas JSON).
+- `procesar.py` — ingesta de un libro (limpieza → spaCy → lecturas JSON); los
+  libros disponibles están en el dict `LIBROS`.
+- `fuentes_descargar.py` — descarga un texto de Project Gutenberg a `fuentes/`.
 - `construir_lexico.py` — construye el léxico desde todas las lecturas (de + en).
+- `mt.py` / `traducir_mt.py` — traducción por frase con MT offline (opus-mt).
 - `traductor.py` — traducción por capas (deu-spa → cadena en inglés → compuesto;
   y eng-spa para inglés).
 - `leer_diccionario.py` — parser del TEI de FreeDict a `lema → traducción`.
