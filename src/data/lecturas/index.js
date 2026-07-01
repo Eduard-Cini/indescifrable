@@ -1,17 +1,10 @@
-// Catálogo de lecturas. Cada archivo JSON es una lectura (es/en/de, o un
-// subconjunto) con el mismo formato que emite el pipeline offline de Python.
-// Las fábulas y cuentos son nivel intermedio; el avanzado se reserva para
-// libros completos procesados con el pipeline (spaCy).
-import mercado01 from './principiante-01.json';
-import diaDeAna from './principiante-02.json';
-import finDeSemana from './principiante-03.json';
-import leonYRaton from './intermedio-01.json';
-import liebreYTortuga from './intermedio-02.json';
-import hormigaYCigarra from './intermedio-03.json';
-import sterntaler from './intermedio-04.json';
-import ollaMagica from './intermedio-05.json';
-import vientoYSol from './intermedio-06.json';
-import rotkaeppchen from './intermedio-07.json';
+// Catálogo de lecturas. Cada archivo JSON de esta carpeta es una lectura
+// (es/en/de o un subconjunto) con el mismo formato que emite el pipeline
+// offline de Python. Se cargan automáticamente con import.meta.glob, así que
+// añadir lecturas (a mano o desde el pipeline) no requiere tocar este archivo.
+// Fábulas y cuentos son intermedio; el avanzado son libros procesados con spaCy.
+
+const modulos = import.meta.glob('./*.json', { eager: true, import: 'default' });
 
 export const NIVELES = ['principiante', 'intermedio', 'avanzado'];
 export const IDIOMAS = ['es', 'en', 'de'];
@@ -23,22 +16,14 @@ export const NOMBRE_NIVEL = {
   avanzado: 'Avanzado',
 };
 
-export const lecturas = [
-  mercado01,
-  diaDeAna,
-  finDeSemana,
-  leonYRaton,
-  liebreYTortuga,
-  hormigaYCigarra,
-  sterntaler,
-  ollaMagica,
-  vientoYSol,
-  rotkaeppchen,
-];
+// Orden estable por nombre de archivo (principiante-01, intermedio-01, …).
+export const lecturas = Object.keys(modulos)
+  .sort()
+  .map((ruta) => modulos[ruta]);
 
 // Idiomas en los que existe una lectura (una lectura ya no tiene que ser
 // trilingüe: puede ser de+es, en+es, etc.). El español actúa además como
-// idioma de traducción, así que se asume siempre presente.
+// idioma de traducción, así que se asume siempre presente cuando lo hay.
 export function idiomasDisponibles(lectura) {
   return IDIOMAS.filter(
     (i) => Array.isArray(lectura.cuerpo?.[i]) && lectura.cuerpo[i].length > 0

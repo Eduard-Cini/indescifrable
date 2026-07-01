@@ -1,0 +1,2 @@
+spacy>=3.8,<4
+pip-system-certs; platform_system == "Windows"

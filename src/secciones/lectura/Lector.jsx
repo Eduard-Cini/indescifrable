@@ -68,6 +68,13 @@ function Lector() {
     );
   }
 
+  // La traducción por frase (marcador ⇄) requiere una versión española
+  // alineada. Los libros procesados por el pipeline son solo texto original.
+  const hayTraduccionFrase =
+    !esEspanol &&
+    Array.isArray(lectura.cuerpo.es) &&
+    lectura.cuerpo.es.length === frases.length;
+
   const finalizarLectura = () => {
     guardarProgreso(marcarCompletada(cargarProgreso(), id));
     navigate(volverBiblioteca);
@@ -114,15 +121,15 @@ function Lector() {
 
       <p className="lectura-subtitulo">
         Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
-        traducirla y guardarla{!esEspanol && ', o el ⇄ del margen para traducir la frase'}.
+        traducirla y guardarla{hayTraduccionFrase && ', o el ⇄ del margen para traducir la frase'}.
       </p>
 
       <article className="lectura-texto">
         {frases.map((frase, i) => {
-          const visible = traducidas[i] && !esEspanol;
+          const visible = traducidas[i] && hayTraduccionFrase;
           return (
             <div key={i} className="lectura-frase">
-              {!esEspanol && (
+              {hayTraduccionFrase && (
                 <button
                   className={'frase-toggle' + (visible ? ' activo' : '')}
                   onClick={() => toggleFrase(i)}
