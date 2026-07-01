@@ -9,7 +9,7 @@
     "de": "Die Verwandlung",
     "es": "La metamorfosis"
   },
-  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
+  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra con diccionarios FreeDict (deu-spa y cadena deu-eng→eng-spa, https://freedict.org).",
   "cuerpo": {
     "de": [
       "Sie aber, Herr Prokurist, Sie haben einen besseren Überblick über die Verhältnisse, als das sonstige Personal, ja sogar, ganz im Vertrauen gesagt, einen besseren Überblick, als der Herr Chef selbst, der in seiner Eigenschaft als Unternehmer sich in seinem Urteil leicht zuungunsten eines Angestellten beirren läßt.",

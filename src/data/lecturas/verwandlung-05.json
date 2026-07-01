@@ -9,7 +9,7 @@
     "de": "Die Verwandlung",
     "es": "La metamorfosis"
   },
-  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
+  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra con diccionarios FreeDict (deu-spa y cadena deu-eng→eng-spa, https://freedict.org).",
   "cuerpo": {
     "de": [
       "Sie fand ihn nicht gleich, aber als sie ihn unter dem Kanapee bemerkte -- Gott, er mußte doch irgendwo sein, er hatte doch nicht wegfliegen können -- erschrak sie so sehr, daß sie, ohne sich beherrschen zu können, die Tür von außen wieder zuschlug.",

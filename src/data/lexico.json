@@ -32,7 +32,8 @@
     "es": "de noche / por la noche"
   },
   "de:abendschläfchen": {
-    "lemma": "Abendschläfchen"
+    "lemma": "Abendschläfchen",
+    "es": "siesta (en compuesto)"
   },
   "de:aber": {
     "lemma": "aber",
@@ -43,10 +44,12 @@
     "es": "caja (en compuesto)"
   },
   "de:abgearbeiteten": {
-    "lemma": "abgearbeitet"
+    "lemma": "abgearbeitet",
+    "es": "apagado (vía inglés)"
   },
   "de:abgebrochenen": {
-    "lemma": "abgebrochen"
+    "lemma": "abgebrochen",
+    "es": "bruja (vía inglés)"
   },
   "de:abgenützten": {
     "lemma": "abgenützt"
@@ -65,7 +68,7 @@
   },
   "de:abgetragen": {
     "lemma": "abtragen",
-    "es": "llevar (en compuesto)"
+    "es": "ablación (vía inglés)"
   },
   "de:abgewendet": {
     "lemma": "abwenden",
@@ -112,7 +115,8 @@
     "es": "deliberado / intencionado / a propósito"
   },
   "de:abwechselnd": {
-    "lemma": "abwechselnd"
+    "lemma": "abwechselnd",
+    "es": "rotacional (vía inglés)"
   },
   "de:abwesenheit": {
     "lemma": "Abwesenheit",
@@ -132,7 +136,7 @@
   },
   "de:abzusperren": {
     "lemma": "abzusperren",
-    "es": "bloquear (en compuesto)"
+    "es": "mechón (en compuesto)"
   },
   "de:abzuwerfen": {
     "lemma": "abwerfen",
@@ -167,13 +171,15 @@
     "es": "prestar atención / respetar / vigilar"
   },
   "de:achtuhrzug": {
-    "lemma": "Achtuhrzug"
+    "lemma": "Achtuhrzug",
+    "es": "tren (en compuesto)"
   },
   "de:adjes": {
     "lemma": "Adjes"
   },
   "de:ah": {
-    "lemma": "Ah"
+    "lemma": "Ah",
+    "es": "oh (vía inglés)"
   },
   "de:ahnen": {
     "lemma": "ahnen",
@@ -204,7 +210,8 @@
     "es": "Allen"
   },
   "de:aller": {
-    "lemma": "aller"
+    "lemma": "aller",
+    "es": "todo (vía inglés)"
   },
   "de:allerdings": {
     "lemma": "allerdings",
@@ -224,7 +231,7 @@
   },
   "de:allmonatlich": {
     "lemma": "allmonatlich",
-    "es": "mensual (en compuesto)"
+    "es": "mes (vía inglés)"
   },
   "de:allmählich": {
     "lemma": "allmählich",
@@ -280,7 +287,8 @@
     "es": "encendido / prendido"
   },
   "de:anblick": {
-    "lemma": "Anblick"
+    "lemma": "Anblick",
+    "es": "vista (vía inglés)"
   },
   "de:andauernder": {
     "lemma": "andauernd",
@@ -352,7 +360,8 @@
     "lemma": "anfing"
   },
   "de:anfingen": {
-    "lemma": "anfingen"
+    "lemma": "anfingen",
+    "es": "gen (en compuesto)"
   },
   "de:angeboten": {
     "lemma": "anbieten",
@@ -383,17 +392,20 @@
     "es": "suponer / asumir / recibir"
   },
   "de:angerührten": {
-    "lemma": "angerührt"
+    "lemma": "angerührt",
+    "es": "mixto (vía inglés)"
   },
   "de:angesammelt": {
-    "lemma": "ansammeln"
+    "lemma": "ansammeln",
+    "es": "acumular (vía inglés)"
   },
   "de:angeschlagen": {
     "lemma": "angeschlagen",
-    "es": "batir (en compuesto)"
+    "es": "desconchado (vía inglés)"
   },
   "de:angesetzt": {
-    "lemma": "ansetzen"
+    "lemma": "ansetzen",
+    "es": "ponerse (vía inglés)"
   },
   "de:angestellten": {
     "lemma": "angestellter",
@@ -435,7 +447,8 @@
     "es": "llegada / arribada"
   },
   "de:anlauf": {
-    "lemma": "Anlauf"
+    "lemma": "Anlauf",
+    "es": "comenzamiento (vía inglés)"
   },
   "de:anna": {
     "lemma": "Anna",
@@ -471,7 +484,7 @@
   },
   "de:anschein": {
     "lemma": "Anschein",
-    "es": "brillo (en compuesto)"
+    "es": "comparecencia (vía inglés)"
   },
   "de:anschrie": {
     "lemma": "anschrie"
@@ -482,11 +495,11 @@
   },
   "de:ansprache": {
     "lemma": "Ansprache",
-    "es": "lengua (en compuesto)"
+    "es": "habla (vía inglés)"
   },
   "de:ansprachen": {
     "lemma": "Ansprache",
-    "es": "garganta (en compuesto)"
+    "es": "habla (vía inglés)"
   },
   "de:anspruch": {
     "lemma": "Anspruch",
@@ -522,7 +535,7 @@
   },
   "de:antwortende": {
     "lemma": "antwortend",
-    "es": "fin (en compuesto)"
+    "es": "Verbo (en compuesto)"
   },
   "de:antwortete": {
     "lemma": "antworten",
@@ -542,7 +555,7 @@
   },
   "de:anwachsen": {
     "lemma": "anwachsen",
-    "es": "crecer (en compuesto)"
+    "es": "acreción (vía inglés)"
   },
   "de:anwesenheit": {
     "lemma": "Anwesenheit",
@@ -562,7 +575,7 @@
   },
   "de:anzuziehen": {
     "lemma": "anzuziehen",
-    "es": "tirar (en compuesto)"
+    "es": "consultar (en compuesto)"
   },
   "de:apfel": {
     "lemma": "Apfel",
@@ -586,7 +599,7 @@
   },
   "de:arbeitenden": {
     "lemma": "arbeitend",
-    "es": "finalizar (en compuesto)"
+    "es": "bosquejado (vía inglés)"
   },
   "de:arbeitete": {
     "lemma": "arbeiten",
@@ -605,7 +618,7 @@
   },
   "de:arbeitsunterbrechung": {
     "lemma": "Arbeitsunterbrechung",
-    "es": "interrupción (en compuesto)"
+    "es": "despido (vía inglés)"
   },
   "de:arm": {
     "lemma": "Arm",
@@ -667,7 +680,8 @@
     "es": "abierto"
   },
   "de:aufatmend": {
-    "lemma": "aufatmend"
+    "lemma": "aufatmend",
+    "es": "de nuevo (vía inglés)"
   },
   "de:aufbetten": {
     "lemma": "Aufbette",
@@ -686,7 +700,8 @@
     "es": "estancia / residencia / parada"
   },
   "de:auferlegt": {
-    "lemma": "auferlegen"
+    "lemma": "auferlegen",
+    "es": "inflicción (vía inglés)"
   },
   "de:auffallend": {
     "lemma": "auffallend",
@@ -721,10 +736,11 @@
   },
   "de:aufgebraucht": {
     "lemma": "aufbrauchen",
-    "es": "segunda mano (en compuesto)"
+    "es": "hacia arriba (vía inglés)"
   },
   "de:aufgebundenen": {
-    "lemma": "aufgebunden"
+    "lemma": "aufgebunden",
+    "es": "hacia arriba (vía inglés)"
   },
   "de:aufgegeben": {
     "lemma": "aufgeben",
@@ -735,10 +751,12 @@
     "es": "fin (en compuesto)"
   },
   "de:aufgehorcht": {
-    "lemma": "aufgehorcht"
+    "lemma": "aufgehorcht",
+    "es": "atentamente (vía inglés)"
   },
   "de:aufgelauert": {
-    "lemma": "auflauern"
+    "lemma": "auflauern",
+    "es": "porque (vía inglés)"
   },
   "de:aufgelösten": {
     "lemma": "aufgelösten"
@@ -764,7 +782,7 @@
   },
   "de:aufgerissen": {
     "lemma": "aufgerissen",
-    "es": "astuto (en compuesto)"
+    "es": "abierto (vía inglés)"
   },
   "de:aufgeräumt": {
     "lemma": "aufräumen",
@@ -788,7 +806,8 @@
     "es": "poner / apostar / formar"
   },
   "de:aufgeworfenen": {
-    "lemma": "aufgeworfen"
+    "lemma": "aufgeworfen",
+    "es": "ón (vía inglés)"
   },
   "de:aufhalten": {
     "lemma": "aufhalten",
@@ -815,7 +834,8 @@
     "es": "atento / llamar la atención de alguien sobre algo/alguien"
   },
   "de:aufmunterung": {
-    "lemma": "Aufmunterung"
+    "lemma": "Aufmunterung",
+    "es": "aliento (vía inglés)"
   },
   "de:aufnahm": {
     "lemma": "aufnehmen",
@@ -860,10 +880,12 @@
     "lemma": "aufseufzend"
   },
   "de:aufsperrte": {
-    "lemma": "aufsperren"
+    "lemma": "aufsperren",
+    "es": "desatrancar (vía inglés)"
   },
   "de:aufstampfte": {
-    "lemma": "aufstampfen"
+    "lemma": "aufstampfen",
+    "es": "estampado (vía inglés)"
   },
   "de:aufstand": {
     "lemma": "Aufstand",
@@ -895,7 +917,7 @@
   },
   "de:aufzufassen": {
     "lemma": "auffassen",
-    "es": "agarrar (en compuesto)"
+    "es": "comprender (vía inglés)"
   },
   "de:aufzuhalten": {
     "lemma": "aufhalten",
@@ -915,7 +937,7 @@
   },
   "de:aufzurichten": {
     "lemma": "aufzurichten",
-    "es": "enderezar (en compuesto)"
+    "es": "afuera (en compuesto)"
   },
   "de:aufzuschauen": {
     "lemma": "aufzuschauen",
@@ -971,7 +993,7 @@
   },
   "de:ausblick": {
     "lemma": "Ausblick",
-    "es": "mirada (en compuesto)"
+    "es": "vista (vía inglés)"
   },
   "de:ausbrach": {
     "lemma": "ausbrechen",
@@ -983,7 +1005,7 @@
   },
   "de:ausbreitenden": {
     "lemma": "ausbreitend",
-    "es": "finalizar (en compuesto)"
+    "es": "afuera (vía inglés)"
   },
   "de:ausdruck": {
     "lemma": "Ausdruck",
@@ -1009,7 +1031,8 @@
     "es": "exponer / extender"
   },
   "de:ausgebreiteten": {
-    "lemma": "ausgebreitet"
+    "lemma": "ausgebreitet",
+    "es": "afuera (vía inglés)"
   },
   "de:ausgebrochen": {
     "lemma": "ausbrechen",
@@ -1017,14 +1040,15 @@
   },
   "de:ausgefragt": {
     "lemma": "ausgefragt",
-    "es": "solicitado (en compuesto)"
+    "es": "afuera (vía inglés)"
   },
   "de:ausgeht": {
     "lemma": "ausgehen",
     "es": "salir / salir a divertirse / acabar"
   },
   "de:ausgeleert": {
-    "lemma": "ausgeleeren"
+    "lemma": "ausgeleeren",
+    "es": "afuera (vía inglés)"
   },
   "de:ausgelöscht": {
     "lemma": "auslöschen",
@@ -1041,21 +1065,24 @@
     "es": "descansar"
   },
   "de:ausgerückt": {
-    "lemma": "ausgerückt"
+    "lemma": "ausgerückt",
+    "es": "afuera (vía inglés)"
   },
   "de:ausgeschlafen": {
     "lemma": "ausschlafen",
     "es": "dormir / dormir la mona"
   },
   "de:ausgeschnitten": {
-    "lemma": "ausgeschnitten"
+    "lemma": "ausgeschnitten",
+    "es": "escotado (vía inglés)"
   },
   "de:ausgestattete": {
     "lemma": "ausgestattet",
     "es": "equipado / provisto"
   },
   "de:ausgestreckt": {
-    "lemma": "ausstrecken"
+    "lemma": "ausstrecken",
+    "es": "afuera (vía inglés)"
   },
   "de:ausgestreckter": {
     "lemma": "ausgestreckt"
@@ -1184,10 +1211,12 @@
     "es": "pronto / en breve"
   },
   "de:ballen": {
-    "lemma": "Balle"
+    "lemma": "Balle",
+    "es": "cojón (vía inglés)"
   },
   "de:ballte": {
-    "lemma": "ballen"
+    "lemma": "ballen",
+    "es": "cojón (vía inglés)"
   },
   "de:band": {
     "lemma": "Band",
@@ -1198,10 +1227,12 @@
     "es": "banco / escaño / banca"
   },
   "de:bankbeamten": {
-    "lemma": "bankbeamter"
+    "lemma": "bankbeamter",
+    "es": "encargado (vía inglés)"
   },
   "de:bankinstitute": {
-    "lemma": "Bankinstitut"
+    "lemma": "Bankinstitut",
+    "es": "orilla (vía inglés)"
   },
   "de:bargeld": {
     "lemma": "Bargeld",
@@ -1228,7 +1259,8 @@
     "es": "tramitar / trabajar / tratar de persuadir"
   },
   "de:bedacht": {
-    "lemma": "bedacht"
+    "lemma": "bedacht",
+    "es": "deliberación (vía inglés)"
   },
   "de:bedarf": {
     "lemma": "Bedarf",
@@ -1239,7 +1271,8 @@
     "es": "compasión"
   },
   "de:bedeckt": {
-    "lemma": "bedeckt"
+    "lemma": "bedeckt",
+    "es": "cubierto (vía inglés)"
   },
   "de:bedenken": {
     "lemma": "Bedenken",
@@ -1258,7 +1291,8 @@
     "es": "atosigar"
   },
   "de:bedrücke": {
-    "lemma": "bedrücken"
+    "lemma": "bedrücken",
+    "es": "pellizco (vía inglés)"
   },
   "de:bedächtig": {
     "lemma": "bedächtig"
@@ -1320,7 +1354,8 @@
     "es": "satisfacer / contentar / masturbarse"
   },
   "de:befriedigung": {
-    "lemma": "Befriedigung"
+    "lemma": "Befriedigung",
+    "es": "satisfacción (vía inglés)"
   },
   "de:begann": {
     "lemma": "beginnen",
@@ -1351,10 +1386,12 @@
     "es": "acompañamiento"
   },
   "de:beglückten": {
-    "lemma": "beglückt"
+    "lemma": "beglückt",
+    "es": "feliz (vía inglés)"
   },
   "de:begnügen": {
-    "lemma": "begnügen"
+    "lemma": "begnügen",
+    "es": "gen (en compuesto)"
   },
   "de:begreift": {
     "lemma": "Begreift"
@@ -1368,7 +1405,7 @@
   },
   "de:begründenden": {
     "lemma": "begründend",
-    "es": "finalizar (en compuesto)"
+    "es": "porque (vía inglés)"
   },
   "de:behaglich": {
     "lemma": "behaglich",
@@ -1426,7 +1463,8 @@
     "es": "pierna / pata"
   },
   "de:beinchen": {
-    "lemma": "Beinchen"
+    "lemma": "Beinchen",
+    "es": "pasador (vía inglés)"
   },
   "de:beine": {
     "lemma": "Bein",
@@ -1496,7 +1534,8 @@
     "es": "dejar"
   },
   "de:bemerkbar": {
-    "lemma": "bemerkbar"
+    "lemma": "bemerkbar",
+    "es": "perceptible (vía inglés)"
   },
   "de:bemerken": {
     "lemma": "bemerken",
@@ -1531,7 +1570,8 @@
     "es": "conducta / comportamiento / actitud"
   },
   "de:benommen": {
-    "lemma": "benommen"
+    "lemma": "benommen",
+    "es": "atontado (vía inglés)"
   },
   "de:benützte": {
     "lemma": "benützen",
@@ -1595,7 +1635,7 @@
   },
   "de:berufskrankheit": {
     "lemma": "Berufskrankheit",
-    "es": "enfermedad (en compuesto)"
+    "es": "enfermedad profesional (vía inglés)"
   },
   "de:beruhigen": {
     "lemma": "beruhigen",
@@ -1610,7 +1650,8 @@
     "es": "calmar"
   },
   "de:berührten": {
-    "lemma": "berührt"
+    "lemma": "berührt",
+    "es": "amanerado (vía inglés)"
   },
   "de:berührung": {
     "lemma": "Berührung",
@@ -1621,7 +1662,7 @@
   },
   "de:beschauer": {
     "lemma": "Beschauer",
-    "es": "chubasco (en compuesto)"
+    "es": "inspector (vía inglés)"
   },
   "de:bescheidenen": {
     "lemma": "bescheiden",
@@ -1647,7 +1688,8 @@
     "es": "queja / molestias"
   },
   "de:beschwerlich": {
-    "lemma": "beschwerlich"
+    "lemma": "beschwerlich",
+    "es": "pesado (vía inglés)"
   },
   "de:beschwöre": {
     "lemma": "beschwören",
@@ -1665,7 +1707,8 @@
     "es": "ocupar / preocupar / ocuparse"
   },
   "de:beschämung": {
-    "lemma": "Beschämung"
+    "lemma": "Beschämung",
+    "es": "ahueve (vía inglés)"
   },
   "de:beseitigung": {
     "lemma": "Beseitigung",
@@ -1681,7 +1724,7 @@
   },
   "de:besessen": {
     "lemma": "besessen",
-    "es": "comida (en compuesto)"
+    "es": "obcecado (vía inglés)"
   },
   "de:besetzt": {
     "lemma": "besetzen",
@@ -1692,20 +1735,24 @@
     "es": "juicio / reflexión"
   },
   "de:besinnungslos": {
-    "lemma": "besinnungslos"
+    "lemma": "besinnungslos",
+    "es": "inconsciente (vía inglés)"
   },
   "de:besondere": {
     "lemma": "besonderer",
     "es": "especial / particular / peculiar"
   },
   "de:besonderem": {
-    "lemma": "besonderer"
+    "lemma": "besonderer",
+    "es": "particular (vía inglés)"
   },
   "de:besonderen": {
-    "lemma": "besonderer"
+    "lemma": "besonderer",
+    "es": "particular (vía inglés)"
   },
   "de:besonderer": {
-    "lemma": "besonderer"
+    "lemma": "besonderer",
+    "es": "particular (vía inglés)"
   },
   "de:besonderes": {
     "lemma": "besondere",
@@ -1732,7 +1779,8 @@
     "es": "conseguir / comprar / encargarse de"
   },
   "de:besorgung": {
-    "lemma": "Besorgung"
+    "lemma": "Besorgung",
+    "es": "recado (vía inglés)"
   },
   "de:besprachen": {
     "lemma": "besprachen",
@@ -1807,7 +1855,8 @@
     "es": "pasar / aprobar / consistir"
   },
   "de:bestürzt": {
-    "lemma": "bestürzt"
+    "lemma": "bestürzt",
+    "es": "compungido (vía inglés)"
   },
   "de:besuch": {
     "lemma": "Besuch",
@@ -1913,11 +1962,12 @@
     "es": "mover / moverse / dar vueltas"
   },
   "de:beweglich": {
-    "lemma": "beweglich"
+    "lemma": "beweglich",
+    "es": "yo (en compuesto)"
   },
   "de:beweglichkeit": {
     "lemma": "Beweglichkeit",
-    "es": "idad (en compuesto)"
+    "es": "movilidad (vía inglés)"
   },
   "de:bewegte": {
     "lemma": "bewegen",
@@ -1947,11 +1997,12 @@
     "lemma": "beworben"
   },
   "de:bewußt": {
-    "lemma": "bewußt"
+    "lemma": "bewußt",
+    "es": "conscientemente (vía inglés)"
   },
   "de:bewußtsein": {
     "lemma": "Bewußtsein",
-    "es": "ser (en compuesto)"
+    "es": "conciencia (vía inglés)"
   },
   "de:bezahlen": {
     "lemma": "bezahlen",
@@ -2001,7 +2052,8 @@
     "es": "hasta ahora"
   },
   "de:bisherige": {
-    "lemma": "bisherig"
+    "lemma": "bisherig",
+    "es": "heredado (vía inglés)"
   },
   "de:bissen": {
     "lemma": "Bisse",
@@ -2036,10 +2088,12 @@
     "es": "quedar / quedarse / permanecer"
   },
   "de:bleich": {
-    "lemma": "bleich"
+    "lemma": "bleich",
+    "es": "sauce cabruno (vía inglés)"
   },
   "de:bleiches": {
-    "lemma": "bleich"
+    "lemma": "bleich",
+    "es": "sauce cabruno (vía inglés)"
   },
   "de:blick": {
     "lemma": "Blick",
@@ -2062,7 +2116,8 @@
     "es": "quedar / quedarse / permanecer"
   },
   "de:bliesen": {
-    "lemma": "bliesen"
+    "lemma": "bliesen",
+    "es": "sen (en compuesto)"
   },
   "de:bloß": {
     "lemma": "bloß",
@@ -2073,17 +2128,20 @@
     "es": "desnudo / puro / descubierto"
   },
   "de:blutend": {
-    "lemma": "blutend"
+    "lemma": "blutend",
+    "es": "sangrado (vía inglés)"
   },
   "de:blähte": {
-    "lemma": "blähen"
+    "lemma": "blähen",
+    "es": "excelente (vía inglés)"
   },
   "de:blätter": {
     "lemma": "Blatt",
     "es": "hoja / folio / gaceta"
   },
   "de:blödsinnig": {
-    "lemma": "blödsinnig"
+    "lemma": "blödsinnig",
+    "es": "inane (vía inglés)"
   },
   "de:boden": {
     "lemma": "Boden",
@@ -2094,7 +2152,8 @@
     "es": "arco / curva / hoja"
   },
   "de:bogenförmigen": {
-    "lemma": "bogenförmig"
+    "lemma": "bogenförmig",
+    "es": "curvo (vía inglés)"
   },
   "de:bombardieren": {
     "lemma": "bombardieren",
@@ -2157,7 +2216,7 @@
   },
   "de:brennende": {
     "lemma": "brennend",
-    "es": "fin (en compuesto)"
+    "es": "ardiente (vía inglés)"
   },
   "de:briefe": {
     "lemma": "Brief",
@@ -2192,7 +2251,8 @@
     "es": "pecho / tórax / seno"
   },
   "de:buschigen": {
-    "lemma": "buschig"
+    "lemma": "buschig",
+    "es": "poblado (vía inglés)"
   },
   "de:butter": {
     "lemma": "Butter",
@@ -2324,7 +2384,8 @@
     "es": "representar"
   },
   "de:daran": {
-    "lemma": "daran"
+    "lemma": "daran",
+    "es": "tecnología de la información (vía inglés)"
   },
   "de:daranzusetzen": {
     "lemma": "daranzusetzen",
@@ -2351,7 +2412,8 @@
     "es": "dentro"
   },
   "de:darnach": {
-    "lemma": "darnach"
+    "lemma": "darnach",
+    "es": "hacia (en compuesto)"
   },
   "de:darstellte": {
     "lemma": "darstellen",
@@ -2377,7 +2439,8 @@
     "lemma": "dasaß"
   },
   "de:dastand": {
-    "lemma": "dastinden"
+    "lemma": "dastinden",
+    "es": "estado (en compuesto)"
   },
   "de:dauern": {
     "lemma": "dauern",
@@ -2404,7 +2467,8 @@
     "es": "entre ellos"
   },
   "de:daß": {
-    "lemma": "daß"
+    "lemma": "daß",
+    "es": "tan (vía inglés)"
   },
   "de:decke": {
     "lemma": "Decke",
@@ -2419,7 +2483,8 @@
     "es": "espada"
   },
   "de:dehnte": {
-    "lemma": "dehnen"
+    "lemma": "dehnen",
+    "es": "estiramiento (vía inglés)"
   },
   "de:dem": {
     "lemma": "der",
@@ -2499,7 +2564,7 @@
   },
   "de:deutlichkeit": {
     "lemma": "Deutlichkeit",
-    "es": "idad (en compuesto)"
+    "es": "claridad (vía inglés)"
   },
   "de:dich": {
     "lemma": "dich",
@@ -2514,7 +2579,8 @@
     "es": "servir / prestar servicio"
   },
   "de:diener": {
-    "lemma": "Diener"
+    "lemma": "Diener",
+    "es": "criada (vía inglés)"
   },
   "de:dienermütze": {
     "lemma": "Dienermütze",
@@ -2538,11 +2604,11 @@
   },
   "de:dienstmädchen": {
     "lemma": "Dienstmädchen",
-    "es": "niña (en compuesto)"
+    "es": "mujer (vía inglés)"
   },
   "de:dienstzeit": {
     "lemma": "Dienstzeit",
-    "es": "tiempo (en compuesto)"
+    "es": "servicio (vía inglés)"
   },
   "de:dies": {
     "lemma": "dieser",
@@ -2588,18 +2654,20 @@
     "es": "dirección / jefatura"
   },
   "de:dirigierte": {
-    "lemma": "dirigieren"
+    "lemma": "dirigieren",
+    "es": "conducción (vía inglés)"
   },
   "de:doch": {
     "lemma": "doch",
     "es": "sí"
   },
   "de:donnernd": {
-    "lemma": "donnernd"
+    "lemma": "donnernd",
+    "es": "ruido (vía inglés)"
   },
   "de:donnerwetter": {
     "lemma": "Donnerwetter",
-    "es": "apostante (en compuesto)"
+    "es": "tormenta (vía inglés)"
   },
   "de:doppelkinn": {
     "lemma": "Doppelkinn",
@@ -2623,7 +2691,7 @@
   },
   "de:drehbewegung": {
     "lemma": "Drehbewegung",
-    "es": "movimiento (en compuesto)"
+    "es": "movimiento (vía inglés)"
   },
   "de:drehen": {
     "lemma": "drehen",
@@ -2634,7 +2702,8 @@
     "es": "volver / voltear / dar media vuelta"
   },
   "de:drehte": {
-    "lemma": "zudrehen"
+    "lemma": "zudrehen",
+    "es": "golpecito (vía inglés)"
   },
   "de:drehung": {
     "lemma": "Drehung",
@@ -2705,7 +2774,8 @@
     "es": "oscuro / oscura"
   },
   "de:dunkeln": {
-    "lemma": "Dunkeln"
+    "lemma": "Dunkeln",
+    "es": "oscuro (vía inglés)"
   },
   "de:dunkelsten": {
     "lemma": "dunkelst"
@@ -2723,7 +2793,7 @@
   },
   "de:durchbrechenden": {
     "lemma": "durchbrechend",
-    "es": "finalizar (en compuesto)"
+    "es": "mediante (vía inglés)"
   },
   "de:durchdenken": {
     "lemma": "durchdenken",
@@ -2731,10 +2801,11 @@
   },
   "de:durchgang": {
     "lemma": "Durchgang",
-    "es": "pandilla (en compuesto)"
+    "es": "pasillo (vía inglés)"
   },
   "de:durchquerung": {
-    "lemma": "Durchquerung"
+    "lemma": "Durchquerung",
+    "es": "cruce (vía inglés)"
   },
   "de:durchs": {
     "lemma": "durch",
@@ -2742,7 +2813,7 @@
   },
   "de:durchschauenden": {
     "lemma": "durchschauend",
-    "es": "finalizar (en compuesto)"
+    "es": "-ar (vía inglés)"
   },
   "de:durchschaute": {
     "lemma": "durchschauen",
@@ -2753,7 +2824,7 @@
   },
   "de:durchzukommen": {
     "lemma": "durchkommen",
-    "es": "acercarse (en compuesto)"
+    "es": "paso (vía inglés)"
   },
   "de:durfte": {
     "lemma": "dürfen",
@@ -2848,7 +2919,8 @@
     "es": "prisa / apuro"
   },
   "de:eilends": {
-    "lemma": "eilends"
+    "lemma": "eilends",
+    "es": "apremiado (vía inglés)"
   },
   "de:eilig": {
     "lemma": "eilig",
@@ -2894,7 +2966,8 @@
     "es": "penetrar / entrar / invadir"
   },
   "de:eindringlichen": {
-    "lemma": "eindringlich"
+    "lemma": "eindringlich",
+    "es": "urgente (vía inglés)"
   },
   "de:eine": {
     "lemma": "ein",
@@ -2905,10 +2978,12 @@
     "es": "un"
   },
   "de:einemmal": {
-    "lemma": "einemmal"
+    "lemma": "einemmal",
+    "es": "marca (en compuesto)"
   },
   "de:einemmale": {
-    "lemma": "Einemmale"
+    "lemma": "Einemmale",
+    "es": "macho (en compuesto)"
   },
   "de:einen": {
     "lemma": "ein",
@@ -2931,10 +3006,12 @@
     "es": "invadir / recordar"
   },
   "de:einförmigen": {
-    "lemma": "einförmig"
+    "lemma": "einförmig",
+    "es": "monótono (vía inglés)"
   },
   "de:eingegrabenen": {
-    "lemma": "eingegraben"
+    "lemma": "eingegraben",
+    "es": "embebido (vía inglés)"
   },
   "de:eingemietet": {
     "lemma": "eingemieten"
@@ -2948,7 +3025,7 @@
   },
   "de:eingeschlafen": {
     "lemma": "eingeschlafen",
-    "es": "dormir (en compuesto)"
+    "es": "dormido (vía inglés)"
   },
   "de:eingeschränkt": {
     "lemma": "einschränken",
@@ -2986,10 +3063,12 @@
     "lemma": "einiger"
   },
   "de:einigemale": {
-    "lemma": "einigemaler"
+    "lemma": "einigemaler",
+    "es": "macho (en compuesto)"
   },
   "de:einiger": {
-    "lemma": "einiger"
+    "lemma": "einiger",
+    "es": "Níger (en compuesto)"
   },
   "de:einknicken": {
     "lemma": "einknicken",
@@ -3007,7 +3086,8 @@
     "es": "una vez"
   },
   "de:einnahmen": {
-    "lemma": "einnahmen"
+    "lemma": "einnahmen",
+    "es": "toma (vía inglés)"
   },
   "de:einnehmen": {
     "lemma": "einnehmen",
@@ -3023,7 +3103,7 @@
   },
   "de:einschaltung": {
     "lemma": "Einschaltung",
-    "es": "circuito (en compuesto)"
+    "es": "activación (vía inglés)"
   },
   "de:einschlief": {
     "lemma": "einschlaufen"
@@ -3080,11 +3160,12 @@
     "es": "único / solo / singular"
   },
   "de:einzug": {
-    "lemma": "Einzug"
+    "lemma": "Einzug",
+    "es": "entrante (vía inglés)"
   },
   "de:einzuhalten": {
     "lemma": "einhalten",
-    "es": "tener (en compuesto)"
+    "es": "observación (vía inglés)"
   },
   "de:einzuholen": {
     "lemma": "einholen",
@@ -3106,7 +3187,8 @@
     "es": "adherir (en compuesto)"
   },
   "de:elastischer": {
-    "lemma": "elastisch"
+    "lemma": "elastisch",
+    "es": "elástico (vía inglés)"
   },
   "de:elektrischen": {
     "lemma": "elektrisch",
@@ -3136,7 +3218,8 @@
     "es": "sensibilidad / sensibilità"
   },
   "de:empfindlichste": {
-    "lemma": "empfindlich"
+    "lemma": "empfindlich",
+    "es": "susceptible (vía inglés)"
   },
   "de:empfindung": {
     "lemma": "Empfindung",
@@ -3202,7 +3285,8 @@
     "es": "remover / alejar"
   },
   "de:entfernt": {
-    "lemma": "entfernt"
+    "lemma": "entfernt",
+    "es": "apagado (vía inglés)"
   },
   "de:entfernte": {
     "lemma": "entfernen",
@@ -3213,7 +3297,8 @@
     "es": "remover / alejar"
   },
   "de:entfernung": {
-    "lemma": "Entfernung"
+    "lemma": "Entfernung",
+    "es": "eliminación (vía inglés)"
   },
   "de:entgegen": {
     "lemma": "entgegen",
@@ -3221,20 +3306,22 @@
   },
   "de:entgegeneilenden": {
     "lemma": "entgegeneilend",
-    "es": "finalizar (en compuesto)"
+    "es": "adecuado (vía inglés)"
   },
   "de:entgegenfauchen": {
-    "lemma": "entgegenfauchen"
+    "lemma": "entgegenfauchen",
+    "es": "asador (en compuesto)"
   },
   "de:entgegenhob": {
     "lemma": "entgegenhob"
   },
   "de:entkleidet": {
-    "lemma": "entkleidet"
+    "lemma": "entkleidet",
+    "es": "ropa (en compuesto)"
   },
   "de:entladenden": {
     "lemma": "entladend",
-    "es": "finalizar (en compuesto)"
+    "es": "descarga (vía inglés)"
   },
   "de:entlang": {
     "lemma": "entlang",
@@ -3249,7 +3336,8 @@
     "es": "despido / licenciamiento / alta"
   },
   "de:entnahme": {
-    "lemma": "Entnahme"
+    "lemma": "Entnahme",
+    "es": "de baril (vía inglés)"
   },
   "de:entscheiden": {
     "lemma": "entscheiden",
@@ -3260,7 +3348,8 @@
     "es": "decisivo / crucial / determinante"
   },
   "de:entscheidendes": {
-    "lemma": "Entscheidendes"
+    "lemma": "Entscheidendes",
+    "es": "afilado (en compuesto)"
   },
   "de:entschieden": {
     "lemma": "entscheiden",
@@ -3286,7 +3375,8 @@
     "es": "decisión"
   },
   "de:entschluß": {
-    "lemma": "Entschluß"
+    "lemma": "Entschluß",
+    "es": "último (en compuesto)"
   },
   "de:entschlüsse": {
     "lemma": "Entschlüß"
@@ -3300,7 +3390,8 @@
     "es": "disculpar / perdonar / justificar"
   },
   "de:entschuldigungsbriefe": {
-    "lemma": "Entschuldigungsbrief"
+    "lemma": "Entschuldigungsbrief",
+    "es": "hendidura (en compuesto)"
   },
   "de:entsetzen": {
     "lemma": "entsetzen",
@@ -3327,17 +3418,20 @@
     "es": "desarrollar / revelar"
   },
   "de:entzündete": {
-    "lemma": "entzündet"
+    "lemma": "entzündet",
+    "es": "alumbrado (vía inglés)"
   },
   "de:er": {
     "lemma": "er",
     "es": "él"
   },
   "de:erbittert": {
-    "lemma": "erbitteren"
+    "lemma": "erbitteren",
+    "es": "amargo (vía inglés)"
   },
   "de:erblickte": {
-    "lemma": "erblicken"
+    "lemma": "erblicken",
+    "es": "sierra (vía inglés)"
   },
   "de:erbot": {
     "lemma": "erbot"
@@ -3364,10 +3458,11 @@
   },
   "de:erfolglosen": {
     "lemma": "erfolglos",
-    "es": "arder (en compuesto)"
+    "es": "éxito (vía inglés)"
   },
   "de:erfolgten": {
-    "lemma": "erfolgt"
+    "lemma": "erfolgt",
+    "es": "asiento (vía inglés)"
   },
   "de:erfreuliche": {
     "lemma": "Erfreuliche"
@@ -3393,7 +3488,8 @@
     "es": "colmar / llenar / realizar"
   },
   "de:erfüllung": {
-    "lemma": "Erfüllung"
+    "lemma": "Erfüllung",
+    "es": "satisfacción (vía inglés)"
   },
   "de:ergeben": {
     "lemma": "ergeben",
@@ -3540,7 +3636,8 @@
     "es": "exhortar"
   },
   "de:ermahnungen": {
-    "lemma": "Ermahnung"
+    "lemma": "Ermahnung",
+    "es": "admonición (vía inglés)"
   },
   "de:ermattung": {
     "lemma": "Ermattung"
@@ -3554,7 +3651,8 @@
     "es": "seriedad / rigor / severidad"
   },
   "de:ernsten": {
-    "lemma": "ern"
+    "lemma": "ern",
+    "es": "hall (vía inglés)"
   },
   "de:ernstes": {
     "lemma": "Ernstes"
@@ -3622,7 +3720,7 @@
   },
   "de:erschrocken": {
     "lemma": "erschrocken",
-    "es": "rueca (en compuesto)"
+    "es": "atemorizado (vía inglés)"
   },
   "de:erschöpft": {
     "lemma": "erschöpfen",
@@ -3644,7 +3742,8 @@
     "es": "primero / en primer lugar / apenas"
   },
   "de:erstarrte": {
-    "lemma": "erstarrn"
+    "lemma": "erstarrn",
+    "es": "rígido (vía inglés)"
   },
   "de:erstattet": {
     "lemma": "erstatten",
@@ -3655,34 +3754,40 @@
     "es": "sorpresa / asombro"
   },
   "de:erstaunt": {
-    "lemma": "erstaunt"
+    "lemma": "erstaunt",
+    "es": "asombrado (vía inglés)"
   },
   "de:erstaunten": {
     "lemma": "erstaunt",
-    "es": "abajo (en compuesto)"
+    "es": "asombrado (vía inglés)"
   },
   "de:erste": {
     "lemma": "erster",
     "es": "primero"
   },
   "de:ersten": {
-    "lemma": "erster"
+    "lemma": "erster",
+    "es": "primer (vía inglés)"
   },
   "de:erstenmal": {
-    "lemma": "erstenmal"
+    "lemma": "erstenmal",
+    "es": "marca (en compuesto)"
   },
   "de:erstens": {
-    "lemma": "erstens"
+    "lemma": "erstens",
+    "es": "primeramente (vía inglés)"
   },
   "de:ersticke": {
-    "lemma": "ersticker"
+    "lemma": "ersticker",
+    "es": "í (en compuesto)"
   },
   "de:erstickungsanfällen": {
     "lemma": "Erstickungsanfäll",
     "es": "tala (en compuesto)"
   },
   "de:ertappt": {
-    "lemma": "ertappen"
+    "lemma": "ertappen",
+    "es": "acto (vía inglés)"
   },
   "de:ertragen": {
     "lemma": "ertragen",
@@ -3693,7 +3798,8 @@
     "es": "soportar"
   },
   "de:ertrugen": {
-    "lemma": "ertrugen"
+    "lemma": "ertrugen",
+    "es": "gen (en compuesto)"
   },
   "de:erträglich": {
     "lemma": "erträglich",
@@ -3753,7 +3859,8 @@
     "lemma": "erzeugt"
   },
   "de:erzielten": {
-    "lemma": "erzielt"
+    "lemma": "erzielt",
+    "es": "cumplido (vía inglés)"
   },
   "de:erzählen": {
     "lemma": "erzählen",
@@ -3764,7 +3871,8 @@
     "es": "contar / narrar / relatar"
   },
   "de:es": {
-    "lemma": "es"
+    "lemma": "es",
+    "es": "e (vía inglés)"
   },
   "de:essen": {
     "lemma": "Essen",
@@ -3787,7 +3895,8 @@
     "es": "algo"
   },
   "de:euch": {
-    "lemma": "euch"
+    "lemma": "euch",
+    "es": "mismos (vía inglés)"
   },
   "de:ewige": {
     "lemma": "ewig",
@@ -3873,7 +3982,8 @@
     "es": "podrido / perezoso / flojo"
   },
   "de:faulen": {
-    "lemma": "faulen"
+    "lemma": "faulen",
+    "es": "confundir (vía inglés)"
   },
   "de:faust": {
     "lemma": "Faust",
@@ -3908,7 +4018,8 @@
     "es": "enemigo / adversario"
   },
   "de:feindseligem": {
-    "lemma": "feindselig"
+    "lemma": "feindselig",
+    "es": "antagónico (vía inglés)"
   },
   "de:feine": {
     "lemma": "fein",
@@ -3916,7 +4027,7 @@
   },
   "de:feingefühl": {
     "lemma": "Feingefühl",
-    "es": "sensación (en compuesto)"
+    "es": "discreción (vía inglés)"
   },
   "de:feinheiten": {
     "lemma": "Feinheit",
@@ -3932,11 +4043,11 @@
   },
   "de:fensterbrüstung": {
     "lemma": "Fensterbrüstung",
-    "es": "armadura (en compuesto)"
+    "es": "muro (en compuesto)"
   },
   "de:fensterflügel": {
     "lemma": "Fensterflügel",
-    "es": "ala (en compuesto)"
+    "es": "guillotina (vía inglés)"
   },
   "de:fenstern": {
     "lemma": "Fenster",
@@ -3982,10 +4093,12 @@
     "es": "estonio (en compuesto)"
   },
   "de:festgenagelt": {
-    "lemma": "festgenagelt"
+    "lemma": "festgenagelt",
+    "es": "ón (vía inglés)"
   },
   "de:festgeriegelt": {
-    "lemma": "festgeriegeln"
+    "lemma": "festgeriegeln",
+    "es": "estéril (en compuesto)"
   },
   "de:festgeriegelten": {
     "lemma": "festgeriegelt",
@@ -4042,7 +4155,8 @@
     "es": "encontrar / hallar / aparecer"
   },
   "de:fing": {
-    "lemma": "anfing"
+    "lemma": "anfing",
+    "es": "atrapado (vía inglés)"
   },
   "de:finger": {
     "lemma": "Finger",
@@ -4061,7 +4175,8 @@
     "es": "empresa / firma"
   },
   "de:fixe": {
-    "lemma": "fix"
+    "lemma": "fix",
+    "es": "definido (vía inglés)"
   },
   "de:flach": {
     "lemma": "flach",
@@ -4095,7 +4210,7 @@
   },
   "de:fleischergeselle": {
     "lemma": "Fleischergeselle",
-    "es": "oficial (en compuesto)"
+    "es": "ayudante (vía inglés)"
   },
   "de:fleißiger": {
     "lemma": "fleißig",
@@ -4113,7 +4228,8 @@
     "lemma": "hineinfliegen"
   },
   "de:flogen": {
-    "lemma": "auffliegen"
+    "lemma": "auffliegen",
+    "es": "afuera (vía inglés)"
   },
   "de:floß": {
     "lemma": "fließen",
@@ -4180,7 +4296,8 @@
     "es": "trasladar / desplazarse / trasladarse"
   },
   "de:fortgegangen": {
-    "lemma": "fortgangen"
+    "lemma": "fortgangen",
+    "es": "ausente (vía inglés)"
   },
   "de:fortgehe": {
     "lemma": "fortgehen",
@@ -4274,7 +4391,8 @@
     "es": "alegría / gozo"
   },
   "de:freudiger": {
-    "lemma": "freudig"
+    "lemma": "freudig",
+    "es": "alegre (vía inglés)"
   },
   "de:freunde": {
     "lemma": "Freund",
@@ -4309,7 +4427,8 @@
     "es": "contento / alegre / feliz"
   },
   "de:front": {
-    "lemma": "Front"
+    "lemma": "Front",
+    "es": "frente (vía inglés)"
   },
   "de:fräulein": {
     "lemma": "Fräulein",
@@ -4360,7 +4479,8 @@
     "es": "temprano"
   },
   "de:frühzug": {
-    "lemma": "Frühzug"
+    "lemma": "Frühzug",
+    "es": "cola (vía inglés)"
   },
   "de:fuhr": {
     "lemma": "zurückfahren"
@@ -4405,10 +4525,12 @@
     "es": "comenzar / empezar"
   },
   "de:fäusten": {
-    "lemma": "Fäuste"
+    "lemma": "Fäuste",
+    "es": "puñetazo (vía inglés)"
   },
   "de:förmlich": {
-    "lemma": "förmlich"
+    "lemma": "förmlich",
+    "es": "formal (vía inglés)"
   },
   "de:fühlen": {
     "lemma": "fühlen",
@@ -4451,10 +4573,12 @@
     "es": "cinco"
   },
   "de:fünfjährigen": {
-    "lemma": "fünfjährig"
+    "lemma": "fünfjährig",
+    "es": "gastado (vía inglés)"
   },
   "de:fünfuhrzug": {
-    "lemma": "Fünfuhrzug"
+    "lemma": "Fünfuhrzug",
+    "es": "tren (en compuesto)"
   },
   "de:für": {
     "lemma": "für",
@@ -4477,7 +4601,8 @@
     "es": "temer / tener miedo"
   },
   "de:füße": {
-    "lemma": "Füße"
+    "lemma": "Füße",
+    "es": "sí mismo (vía inglés)"
   },
   "de:füßen": {
     "lemma": "Fuß",
@@ -4560,7 +4685,8 @@
     "es": "quedar / quedarse / permanecer"
   },
   "de:geblümten": {
-    "lemma": "geblümt"
+    "lemma": "geblümt",
+    "es": "cortina (vía inglés)"
   },
   "de:gebot": {
     "lemma": "Gebot",
@@ -4666,7 +4792,7 @@
   },
   "de:gegeneinander": {
     "lemma": "gegeneinander",
-    "es": "mutuamente (en compuesto)"
+    "es": "otro (vía inglés)"
   },
   "de:gegensatz": {
     "lemma": "Gegensatz",
@@ -4681,10 +4807,12 @@
     "es": "contrario / opuesto"
   },
   "de:gegenteiligen": {
-    "lemma": "gegenteilig"
+    "lemma": "gegenteilig",
+    "es": "contrario (vía inglés)"
   },
   "de:gegenteiliges": {
-    "lemma": "Gegenteilig"
+    "lemma": "Gegenteilig",
+    "es": "contrario (vía inglés)"
   },
   "de:gegenwart": {
     "lemma": "Gegenwart",
@@ -4715,7 +4843,8 @@
     "es": "creer / confiar"
   },
   "de:gegossen": {
-    "lemma": "gegossen"
+    "lemma": "gegossen",
+    "es": "lanzamiento (vía inglés)"
   },
   "de:gegönnt": {
     "lemma": "gönnen",
@@ -4773,17 +4902,20 @@
     "es": "oír / escuchar / obedecer"
   },
   "de:gehörte": {
-    "lemma": "gehört"
+    "lemma": "gehört",
+    "es": "afuera (vía inglés)"
   },
   "de:gekannt": {
     "lemma": "kennen",
     "es": "saber / conocer"
   },
   "de:gekleidet": {
-    "lemma": "kleiden"
+    "lemma": "kleiden",
+    "es": "vestir (vía inglés)"
   },
   "de:gekleideten": {
-    "lemma": "gekleidet"
+    "lemma": "gekleidet",
+    "es": "bañar (vía inglés)"
   },
   "de:gekommen": {
     "lemma": "kommen",
@@ -4840,7 +4972,8 @@
     "es": "yacer / tender / estar"
   },
   "de:gelegene": {
-    "lemma": "gelegen"
+    "lemma": "gelegen",
+    "es": "situado (vía inglés)"
   },
   "de:gelegenheit": {
     "lemma": "Gelegenheit",
@@ -4890,7 +5023,8 @@
     "es": "común / compartido / conjunto"
   },
   "de:gemeinschaftlich": {
-    "lemma": "gemeinschaftlich"
+    "lemma": "gemeinschaftlich",
+    "es": "común (vía inglés)"
   },
   "de:gemeint": {
     "lemma": "meinen",
@@ -4950,7 +5084,8 @@
     "lemma": "genährt"
   },
   "de:genüge": {
-    "lemma": "Genüge"
+    "lemma": "Genüge",
+    "es": "satisfacción (vía inglés)"
   },
   "de:genügend": {
     "lemma": "genügend",
@@ -4979,7 +5114,8 @@
     "es": "todo recto"
   },
   "de:geradewegs": {
-    "lemma": "geradewegs"
+    "lemma": "geradewegs",
+    "es": "recto (vía inglés)"
   },
   "de:geradezu": {
     "lemma": "geradezu",
@@ -5033,10 +5169,12 @@
     "es": "decir"
   },
   "de:gesalzenes": {
-    "lemma": "gesalzen"
+    "lemma": "gesalzen",
+    "es": "salado (vía inglés)"
   },
   "de:gesammelter": {
-    "lemma": "gesammelt"
+    "lemma": "gesammelt",
+    "es": "colectivo (vía inglés)"
   },
   "de:geschafft": {
     "lemma": "schaffen",
@@ -5092,13 +5230,16 @@
     "es": "saber / tener gusto / probar"
   },
   "de:geschnitten": {
-    "lemma": "geschnitten"
+    "lemma": "geschnitten",
+    "es": "corto (vía inglés)"
   },
   "de:geschnitzt": {
-    "lemma": "schnitzen"
+    "lemma": "schnitzen",
+    "es": "tallado (vía inglés)"
   },
   "de:geschnitzten": {
-    "lemma": "geschnitzt"
+    "lemma": "geschnitzt",
+    "es": "esculpido (vía inglés)"
   },
   "de:geschoben": {
     "lemma": "schieben",
@@ -5125,13 +5266,16 @@
     "es": "negocio / ganancia / tienda"
   },
   "de:geschäftliche": {
-    "lemma": "geschäftlich"
+    "lemma": "geschäftlich",
+    "es": "negocio (vía inglés)"
   },
   "de:geschäftlichen": {
-    "lemma": "geschäftlich"
+    "lemma": "geschäftlich",
+    "es": "negocio (vía inglés)"
   },
   "de:geschäftsdiener": {
-    "lemma": "Geschäftsdiener"
+    "lemma": "Geschäftsdiener",
+    "es": "criada (en compuesto)"
   },
   "de:geschäftsleute": {
     "lemma": "Geschäftsleute",
@@ -5173,7 +5317,8 @@
     "es": "tenso"
   },
   "de:gespreizt": {
-    "lemma": "spreizen"
+    "lemma": "spreizen",
+    "es": "acartonado (vía inglés)"
   },
   "de:gesprochen": {
     "lemma": "sprechen",
@@ -5255,7 +5400,7 @@
   },
   "de:getraute": {
     "lemma": "getraute",
-    "es": "rombo (en compuesto)"
+    "es": "coraje (en compuesto)"
   },
   "de:getroffen": {
     "lemma": "treffen",
@@ -5263,7 +5408,7 @@
   },
   "de:getrunken": {
     "lemma": "Getrunk",
-    "es": "presagiar un desastre (en compuesto)"
+    "es": "borracho (en compuesto)"
   },
   "de:gewagt": {
     "lemma": "wagen",
@@ -5274,7 +5419,8 @@
     "es": "violencia / poder"
   },
   "de:gewalttat": {
-    "lemma": "Gewalttat"
+    "lemma": "Gewalttat",
+    "es": "violencia (vía inglés)"
   },
   "de:gewartet": {
     "lemma": "warten",
@@ -5298,7 +5444,7 @@
   },
   "de:gewissensbissen": {
     "lemma": "Gewissensbisse",
-    "es": "bocado (en compuesto)"
+    "es": "conciencia (vía inglés)"
   },
   "de:gewissermaßen": {
     "lemma": "gewissermaßen",
@@ -5320,7 +5466,8 @@
     "es": "ganar / extraer / sacar"
   },
   "de:gewonnene": {
-    "lemma": "gewonnen"
+    "lemma": "gewonnen",
+    "es": "preparado (vía inglés)"
   },
   "de:geworden": {
     "lemma": "werden",
@@ -5455,7 +5602,7 @@
   },
   "de:gleichmäßig": {
     "lemma": "gleichmäßig",
-    "es": "moderado (en compuesto)"
+    "es": "equilibrado (vía inglés)"
   },
   "de:gleichzeitig": {
     "lemma": "gleichzeitig",
@@ -5511,7 +5658,8 @@
     "es": "gris"
   },
   "de:grauschwarzen": {
-    "lemma": "grauschwarz"
+    "lemma": "grauschwarz",
+    "es": "zen (en compuesto)"
   },
   "de:gregor": {
     "lemma": "Gregor",
@@ -5565,7 +5713,7 @@
   },
   "de:grußwort": {
     "lemma": "Grußwort",
-    "es": "palabra (en compuesto)"
+    "es": "bienvenido (vía inglés)"
   },
   "de:größer": {
     "lemma": "groß",
@@ -5595,7 +5743,8 @@
     "es": "a fondo / fundamentado / concienzudo"
   },
   "de:gulden": {
-    "lemma": "Gulden"
+    "lemma": "Gulden",
+    "es": "florín (vía inglés)"
   },
   "de:gut": {
     "lemma": "gut",
@@ -5610,7 +5759,8 @@
     "es": "bienes / bienes inmuebles / finca"
   },
   "de:gutes": {
-    "lemma": "gute"
+    "lemma": "gute",
+    "es": "Guido (vía inglés)"
   },
   "de:gäbe": {
     "lemma": "geben",
@@ -5621,7 +5771,8 @@
     "es": "total"
   },
   "de:gänzlichen": {
-    "lemma": "gänzlicher"
+    "lemma": "gänzlicher",
+    "es": "liquen (en compuesto)"
   },
   "de:gänzlicher": {
     "lemma": "gänzlich",
@@ -5665,11 +5816,11 @@
   },
   "de:halblauten": {
     "lemma": "halblaut",
-    "es": "decir (en compuesto)"
+    "es": "bajo (vía inglés)"
   },
   "de:halbschlaf": {
     "lemma": "Halbschlaf",
-    "es": "sueño (en compuesto)"
+    "es": "dormitar (vía inglés)"
   },
   "de:halbverfaultes": {
     "lemma": "halbverfault"
@@ -5710,7 +5861,8 @@
     "es": "mano"
   },
   "de:handbewegungen": {
-    "lemma": "Handbewegung"
+    "lemma": "Handbewegung",
+    "es": "gen (en compuesto)"
   },
   "de:handeln": {
     "lemma": "handeln",
@@ -5726,7 +5878,7 @@
   },
   "de:haremsfrauen": {
     "lemma": "Haremsfraue",
-    "es": "cardar (en compuesto)"
+    "es": "Femenil (en compuesto)"
   },
   "de:harrte": {
     "lemma": "ausharrn"
@@ -5748,10 +5900,12 @@
     "es": "prisa / apuro / tropelía"
   },
   "de:hastig": {
-    "lemma": "hastig"
+    "lemma": "hastig",
+    "es": "abrupto (vía inglés)"
   },
   "de:hastigen": {
-    "lemma": "hastig"
+    "lemma": "hastig",
+    "es": "abrupto (vía inglés)"
   },
   "de:hat": {
     "lemma": "haben",
@@ -5803,7 +5957,7 @@
   },
   "de:heidengeld": {
     "lemma": "Heidengeld",
-    "es": "dinero (en compuesto)"
+    "es": "fortuna (vía inglés)"
   },
   "de:heiklen": {
     "lemma": "heikcl"
@@ -5850,7 +6004,8 @@
     "es": "aquí / acá"
   },
   "de:herab": {
-    "lemma": "herab"
+    "lemma": "herab",
+    "es": "deprimido (vía inglés)"
   },
   "de:heran": {
     "lemma": "heranhaben",
@@ -5858,7 +6013,7 @@
   },
   "de:herantreten": {
     "lemma": "herantreten",
-    "es": "emprender (en compuesto)"
+    "es": "hacia arriba (vía inglés)"
   },
   "de:heraufstieg": {
     "lemma": "heraufstieg",
@@ -5870,7 +6025,7 @@
   },
   "de:herausarbeiten": {
     "lemma": "herausarbeiten",
-    "es": "elaborar (en compuesto)"
+    "es": "identificación (vía inglés)"
   },
   "de:herausfinden": {
     "lemma": "herausfinden",
@@ -5896,10 +6051,11 @@
   },
   "de:hereinbringen": {
     "lemma": "hereinbringen",
-    "es": "rendir (en compuesto)"
+    "es": "de moda (vía inglés)"
   },
   "de:hereingestellt": {
-    "lemma": "hereinstellen"
+    "lemma": "hereinstellen",
+    "es": "siempre y cuando (en compuesto)"
   },
   "de:hereinkamen": {
     "lemma": "hereinkamen",
@@ -5922,7 +6078,7 @@
   },
   "de:hereinzubringen": {
     "lemma": "hereinzubringen",
-    "es": "traer (en compuesto)"
+    "es": "gastar (en compuesto)"
   },
   "de:hereinzukommen": {
     "lemma": "hereinzukommen",
@@ -5930,7 +6086,7 @@
   },
   "de:hergehen": {
     "lemma": "Hergeh",
-    "es": "marcha (en compuesto)"
+    "es": "montar (en compuesto)"
   },
   "de:herr": {
     "lemma": "Herr",
@@ -5958,11 +6114,11 @@
   },
   "de:herumdrehen": {
     "lemma": "herumdrehen",
-    "es": "volver (en compuesto)"
+    "es": "gran cantidad (vía inglés)"
   },
   "de:herumkriechen": {
     "lemma": "Herumkriechen",
-    "es": "arrastrarse (en compuesto)"
+    "es": "por acá (vía inglés)"
   },
   "de:herumschauen": {
     "lemma": "Herumschaue",
@@ -5980,17 +6136,20 @@
     "lemma": "hervoreilen"
   },
   "de:hervorgequollenen": {
-    "lemma": "hervorgequollen"
+    "lemma": "hervorgequollen",
+    "es": "afuera (vía inglés)"
   },
   "de:hervorgezogen": {
-    "lemma": "hervorgezogen"
+    "lemma": "hervorgezogen",
+    "es": "a principios de (en compuesto)"
   },
   "de:hervorkamen": {
     "lemma": "hervorkamen",
     "es": "amén (en compuesto)"
   },
   "de:hervorragte": {
-    "lemma": "hervorragen"
+    "lemma": "hervorragen",
+    "es": "sobresalir (vía inglés)"
   },
   "de:hervorstieß": {
     "lemma": "Hervorstieß"
@@ -6000,7 +6159,8 @@
     "es": "corazón"
   },
   "de:herzens": {
-    "lemma": "Herzen"
+    "lemma": "Herzen",
+    "es": "corazones (vía inglés)"
   },
   "de:herzlich": {
     "lemma": "herzlich",
@@ -6050,14 +6210,16 @@
     "es": "ayuda / socorro"
   },
   "de:hilflos": {
-    "lemma": "hilflos"
+    "lemma": "hilflos",
+    "es": "abandonado (vía inglés)"
   },
   "de:himmel": {
     "lemma": "Himmel",
     "es": "cielo / firmamento / Cielo"
   },
   "de:himmlischer": {
-    "lemma": "Himmlischer"
+    "lemma": "Himmlischer",
+    "es": "celestial (vía inglés)"
   },
   "de:hin": {
     "lemma": "hin"
@@ -6080,14 +6242,15 @@
   },
   "de:hinausgekommen": {
     "lemma": "hinauskommen",
-    "es": "venir (en compuesto)"
+    "es": "-ar (vía inglés)"
   },
   "de:hinausgelehnt": {
-    "lemma": "hinausgelehnen"
+    "lemma": "hinausgelehnen",
+    "es": "afuera (vía inglés)"
   },
   "de:hinausgetragen": {
     "lemma": "hinausgetragen",
-    "es": "llevar (en compuesto)"
+    "es": "afuera (vía inglés)"
   },
   "de:hinauskommen": {
     "lemma": "hinauskommen",
@@ -6098,7 +6261,8 @@
     "es": "crear (en compuesto)"
   },
   "de:hinaustrug": {
-    "lemma": "Hinaustrug"
+    "lemma": "Hinaustrug",
+    "es": "estafa (en compuesto)"
   },
   "de:hinauszukehren": {
     "lemma": "hinauskehren",
@@ -6165,7 +6329,8 @@
     "es": "pedalear (en compuesto)"
   },
   "de:hingewendet": {
-    "lemma": "hingewenden"
+    "lemma": "hingewenden",
+    "es": "acabado (en compuesto)"
   },
   "de:hinken": {
     "lemma": "hinken",
@@ -6188,7 +6353,7 @@
   },
   "de:hintereinander": {
     "lemma": "hintereinander",
-    "es": "mutuamente (en compuesto)"
+    "es": "recto (vía inglés)"
   },
   "de:hinterkopf": {
     "lemma": "Hinterkopf",
@@ -6206,7 +6371,8 @@
     "es": "cazar (en compuesto)"
   },
   "de:hinunterstiegen": {
-    "lemma": "hinunterstiegen"
+    "lemma": "hinunterstiegen",
+    "es": "gen (en compuesto)"
   },
   "de:hinunterzuschlucken": {
     "lemma": "hinunterzuschlucken",
@@ -6285,7 +6451,8 @@
     "es": "tapa (en compuesto)"
   },
   "de:holztür": {
-    "lemma": "Holztür"
+    "lemma": "Holztür",
+    "es": "puerta (en compuesto)"
   },
   "de:horchend": {
     "lemma": "horchend"
@@ -6339,7 +6506,7 @@
   },
   "de:hutgeschäft": {
     "lemma": "Hutgeschäft",
-    "es": "negocio (en compuesto)"
+    "es": "boneteria (vía inglés)"
   },
   "de:hälfte": {
     "lemma": "Hälfte",
@@ -6359,7 +6526,7 @@
   },
   "de:hängenden": {
     "lemma": "hängend",
-    "es": "finalizar (en compuesto)"
+    "es": "colgante (vía inglés)"
   },
   "de:hängt": {
     "lemma": "hängen",
@@ -6438,7 +6605,7 @@
   },
   "de:hörensagen": {
     "lemma": "Hörensag",
-    "es": "decir (en compuesto)"
+    "es": "habladuría (vía inglés)"
   },
   "de:hörte": {
     "lemma": "hören",
@@ -6471,7 +6638,8 @@
     "es": "idea / noción"
   },
   "de:ihm": {
-    "lemma": "ihm"
+    "lemma": "ihm",
+    "es": "el (vía inglés)"
   },
   "de:ihn": {
     "lemma": "ihn",
@@ -6502,7 +6670,8 @@
     "es": "su"
   },
   "de:ihrerseits": {
-    "lemma": "ihrerseits"
+    "lemma": "ihrerseits",
+    "es": "pago (vía inglés)"
   },
   "de:ihres": {
     "lemma": "Ihr",
@@ -6521,7 +6690,7 @@
   },
   "de:immerfort": {
     "lemma": "immerfort",
-    "es": "lejos (en compuesto)"
+    "es": "siempre (vía inglés)"
   },
   "de:immerhin": {
     "lemma": "immerhin",
@@ -6541,7 +6710,7 @@
   },
   "de:infolgedessen": {
     "lemma": "infolgedessen",
-    "es": "cuyo (en compuesto)"
+    "es": "de aquí (vía inglés)"
   },
   "de:inkasso": {
     "lemma": "Inkasso",
@@ -6552,14 +6721,16 @@
     "es": "en medio de"
   },
   "de:inne": {
-    "lemma": "innehalten"
+    "lemma": "innehalten",
+    "es": "pausa (vía inglés)"
   },
   "de:innen": {
     "lemma": "innen",
     "es": "dentro"
   },
   "de:inneren": {
-    "lemma": "innerer"
+    "lemma": "innerer",
+    "es": "interior (vía inglés)"
   },
   "de:innerhalb": {
     "lemma": "innerhalb",
@@ -6594,14 +6765,16 @@
     "es": "entretanto"
   },
   "de:irgend": {
-    "lemma": "irgend"
+    "lemma": "irgend",
+    "es": "posible (vía inglés)"
   },
   "de:irgendein": {
     "lemma": "irgendein",
     "es": "cualquiera"
   },
   "de:irgendeine": {
-    "lemma": "irgendeiner"
+    "lemma": "irgendeiner",
+    "es": "algo (vía inglés)"
   },
   "de:irgendeinen": {
     "lemma": "irgendein",
@@ -6613,10 +6786,11 @@
   },
   "de:irgendwelche": {
     "lemma": "irgendwelch",
-    "es": "qué (en compuesto)"
+    "es": "algo (vía inglés)"
   },
   "de:irgendwelchen": {
-    "lemma": "irgendwelcher"
+    "lemma": "irgendwelcher",
+    "es": "OMS (en compuesto)"
   },
   "de:irgendwie": {
     "lemma": "irgendwie",
@@ -6627,7 +6801,8 @@
     "es": "en alguna parte"
   },
   "de:irrsinnigen": {
-    "lemma": "irrsinnig"
+    "lemma": "irrsinnig",
+    "es": "gen (en compuesto)"
   },
   "de:irrte": {
     "lemma": "irrn"
@@ -6690,7 +6865,7 @@
   },
   "de:jedesmal": {
     "lemma": "jedesmal",
-    "es": "ligamentoso (en compuesto)"
+    "es": "cada vez (vía inglés)"
   },
   "de:jedoch": {
     "lemma": "jedoch",
@@ -6717,7 +6892,8 @@
     "es": "aquél / ésa / aquélla"
   },
   "de:jetzige": {
-    "lemma": "jetzig"
+    "lemma": "jetzig",
+    "es": "actual (vía inglés)"
   },
   "de:jetzt": {
     "lemma": "jetzt",
@@ -6755,13 +6931,16 @@
     "es": "venir / llegar / volver"
   },
   "de:kamen": {
-    "lemma": "wiederkommen"
+    "lemma": "wiederkommen",
+    "es": "volver (vía inglés)"
   },
   "de:kanapee": {
-    "lemma": "Kanapee"
+    "lemma": "Kanapee",
+    "es": "sofá (vía inglés)"
   },
   "de:kanapees": {
-    "lemma": "Kanapee"
+    "lemma": "Kanapee",
+    "es": "sofá (vía inglés)"
   },
   "de:kann": {
     "lemma": "können",
@@ -6792,10 +6971,12 @@
     "es": "cobradora"
   },
   "de:kasten": {
-    "lemma": "Kasten"
+    "lemma": "Kasten",
+    "es": "caja (vía inglés)"
   },
   "de:kastens": {
-    "lemma": "Kasten"
+    "lemma": "Kasten",
+    "es": "caja (vía inglés)"
   },
   "de:kauenden": {
     "lemma": "kauend",
@@ -6886,7 +7067,8 @@
     "es": "lamentar / quejarse / demandar"
   },
   "de:klang": {
-    "lemma": "Klang"
+    "lemma": "Klang",
+    "es": "Sund (vía inglés)"
   },
   "de:klar": {
     "lemma": "klar",
@@ -6924,11 +7106,12 @@
     "es": "vestido / ropa / vestuario"
   },
   "de:kleiden": {
-    "lemma": "kleiden"
+    "lemma": "kleiden",
+    "es": "vestir (vía inglés)"
   },
   "de:kleiderhaken": {
     "lemma": "Kleiderhak",
-    "es": "gancho (en compuesto)"
+    "es": "gancho (vía inglés)"
   },
   "de:kleiderrechen": {
     "lemma": "Kleiderreche",
@@ -6987,20 +7170,23 @@
     "es": "crujir"
   },
   "de:kniefällig": {
-    "lemma": "kniefällig"
+    "lemma": "kniefällig",
+    "es": "obsequioso (vía inglés)"
   },
   "de:knochen": {
     "lemma": "Knochen",
     "es": "hueso"
   },
   "de:knochenbaues": {
-    "lemma": "Knochenbau"
+    "lemma": "Knochenbau",
+    "es": "estructura (vía inglés)"
   },
   "de:knochige": {
     "lemma": "knochig"
   },
   "de:knäuel": {
-    "lemma": "Knäuel"
+    "lemma": "Knäuel",
+    "es": "cojón (vía inglés)"
   },
   "de:knöpfe": {
     "lemma": "Knöpfe"
@@ -7010,7 +7196,8 @@
     "es": "cocinar / cocer / hacer"
   },
   "de:kollektion": {
-    "lemma": "Kollektion"
+    "lemma": "Kollektion",
+    "es": "recogida (vía inglés)"
   },
   "de:komm": {
     "lemma": "komm"
@@ -7031,7 +7218,8 @@
     "lemma": "Kommi"
   },
   "de:kommt": {
-    "lemma": "herkommen"
+    "lemma": "herkommen",
+    "es": "aquí (vía inglés)"
   },
   "de:komplizierte": {
     "lemma": "kompliziert",
@@ -7105,7 +7293,7 @@
   },
   "de:krankenkassenarzt": {
     "lemma": "Krankenkassenarzt",
-    "es": "médico (en compuesto)"
+    "es": "doctor (en compuesto)"
   },
   "de:krankheit": {
     "lemma": "Krankheit",
@@ -7120,14 +7308,16 @@
     "es": "criatura / aborto"
   },
   "de:kredenz": {
-    "lemma": "Kredenz"
+    "lemma": "Kredenz",
+    "es": "armario (vía inglés)"
   },
   "de:kreis": {
     "lemma": "Kreis",
     "es": "circunscripción / distrito / sector"
   },
   "de:krepiert": {
-    "lemma": "krepieren"
+    "lemma": "krepieren",
+    "es": "croac (vía inglés)"
   },
   "de:kreuz": {
     "lemma": "kreuz",
@@ -7162,7 +7352,7 @@
   },
   "de:krückstock": {
     "lemma": "Krückstock",
-    "es": "palo (en compuesto)"
+    "es": "bastón (vía inglés)"
   },
   "de:kunden": {
     "lemma": "Kunde",
@@ -7245,7 +7435,8 @@
     "es": "cuerpo"
   },
   "de:kübel": {
-    "lemma": "Kübel"
+    "lemma": "Kübel",
+    "es": "cubo (vía inglés)"
   },
   "de:küche": {
     "lemma": "Küche",
@@ -7439,7 +7630,8 @@
     "es": "vacío"
   },
   "de:leere": {
-    "lemma": "Leere"
+    "lemma": "Leere",
+    "es": "bobina (vía inglés)"
   },
   "de:leeren": {
     "lemma": "leer",
@@ -7455,7 +7647,7 @@
   },
   "de:lehnstuhl": {
     "lemma": "Lehnstuhl",
-    "es": "silla (en compuesto)"
+    "es": "de salón (vía inglés)"
   },
   "de:lehnte": {
     "lemma": "lehnen",
@@ -7466,7 +7658,8 @@
     "es": "inclinarse / apoyar"
   },
   "de:lehrjungen": {
-    "lemma": "Lehrjung"
+    "lemma": "Lehrjung",
+    "es": "gen (en compuesto)"
   },
   "de:leib": {
     "lemma": "Leib",
@@ -7509,7 +7702,7 @@
   },
   "de:leidenden": {
     "lemma": "leidend",
-    "es": "finalizar (en compuesto)"
+    "es": "sufrido (vía inglés)"
   },
   "de:leidens": {
     "lemma": "Leidens"
@@ -7520,7 +7713,7 @@
   },
   "de:leintuch": {
     "lemma": "Leintuch",
-    "es": "paño (en compuesto)"
+    "es": "hoja (vía inglés)"
   },
   "de:leise": {
     "lemma": "leise",
@@ -7547,21 +7740,24 @@
     "es": "aprendizaje / estudio"
   },
   "de:letzten": {
-    "lemma": "letzter"
+    "lemma": "letzter",
+    "es": "último (vía inglés)"
   },
   "de:letztenmal": {
-    "lemma": "letztenmal"
+    "lemma": "letztenmal",
+    "es": "marca (en compuesto)"
   },
   "de:letzter": {
-    "lemma": "letzter"
+    "lemma": "letzter",
+    "es": "último (vía inglés)"
   },
   "de:leuchtende": {
     "lemma": "leuchtend",
-    "es": "fin (en compuesto)"
+    "es": "hacia arriba (vía inglés)"
   },
   "de:leuchtenden": {
     "lemma": "leuchtend",
-    "es": "finalizar (en compuesto)"
+    "es": "hacia arriba (vía inglés)"
   },
   "de:leute": {
     "lemma": "Leute",
@@ -7588,7 +7784,8 @@
     "es": "amable / agradable / querido"
   },
   "de:lieber": {
-    "lemma": "lieber"
+    "lemma": "lieber",
+    "es": "pronto (vía inglés)"
   },
   "de:liebkosten": {
     "lemma": "liebkosen",
@@ -7596,7 +7793,7 @@
   },
   "de:lieblingsgetränk": {
     "lemma": "Lieblingsgetränk",
-    "es": "bebida (en compuesto)"
+    "es": "trago (vía inglés)"
   },
   "de:liebt": {
     "lemma": "lieben",
@@ -7607,7 +7804,8 @@
     "es": "amar / querer"
   },
   "de:lief": {
-    "lemma": "zurücklaufen"
+    "lemma": "zurücklaufen",
+    "es": "anterior (vía inglés)"
   },
   "de:liefen": {
     "lemma": "laufen",
@@ -7673,7 +7871,8 @@
     "es": "sufrimiento / dolor / enfermedad"
   },
   "de:livree": {
-    "lemma": "Livree"
+    "lemma": "Livree",
+    "es": "librea (vía inglés)"
   },
   "de:livreerockes": {
     "lemma": "Livreerock"
@@ -7741,7 +7940,8 @@
     "es": "sonrisa"
   },
   "de:lächelnd": {
-    "lemma": "lächelnd"
+    "lemma": "lächelnd",
+    "es": "sonriente (vía inglés)"
   },
   "de:lächelte": {
     "lemma": "zulächelen"
@@ -7795,7 +7995,8 @@
     "es": "orear / airear / alzar"
   },
   "de:mach": {
-    "lemma": "aufmach"
+    "lemma": "aufmach",
+    "es": "número Mach (vía inglés)"
   },
   "de:mache": {
     "lemma": "machen",
@@ -7850,13 +8051,16 @@
     "es": "alguien / se"
   },
   "de:manche": {
-    "lemma": "mancher"
+    "lemma": "mancher",
+    "es": "un (vía inglés)"
   },
   "de:manchen": {
-    "lemma": "mancher"
+    "lemma": "mancher",
+    "es": "un (vía inglés)"
   },
   "de:manches": {
-    "lemma": "mancher"
+    "lemma": "mancher",
+    "es": "un (vía inglés)"
   },
   "de:manchmal": {
     "lemma": "manchmal",
@@ -7875,7 +8079,8 @@
     "es": "hombre / varón / marido"
   },
   "de:mannigfachen": {
-    "lemma": "mannigfach"
+    "lemma": "mannigfach",
+    "es": "plegable (en compuesto)"
   },
   "de:mantel": {
     "lemma": "Mantel",
@@ -8005,7 +8210,8 @@
     "es": "método"
   },
   "de:mich": {
-    "lemma": "mich"
+    "lemma": "mich",
+    "es": "me (vía inglés)"
   },
   "de:mietern": {
     "lemma": "Mieter",
@@ -8017,14 +8223,15 @@
   },
   "de:militärzeit": {
     "lemma": "Militärzeit",
-    "es": "tiempo (en compuesto)"
+    "es": "militar (vía inglés)"
   },
   "de:minuten": {
     "lemma": "Minute",
     "es": "minuto"
   },
   "de:mir": {
-    "lemma": "mir"
+    "lemma": "mir",
+    "es": "me (vía inglés)"
   },
   "de:mischte": {
     "lemma": "mischen",
@@ -8047,7 +8254,8 @@
     "es": "traer"
   },
   "de:mitleidig": {
-    "lemma": "mitleidig"
+    "lemma": "mitleidig",
+    "es": "molesto (en compuesto)"
   },
   "de:mittag": {
     "lemma": "Mittag",
@@ -8078,18 +8286,20 @@
     "es": "en mitad de"
   },
   "de:mittlere": {
-    "lemma": "mittlerer"
+    "lemma": "mittlerer",
+    "es": "medio (vía inglés)"
   },
   "de:mitzuhelfen": {
     "lemma": "mitzuhelfen",
     "es": "ayudar (en compuesto)"
   },
   "de:mißlingen": {
-    "lemma": "Mißlingen"
+    "lemma": "Mißlingen",
+    "es": "gen (en compuesto)"
   },
   "de:mißtrauen": {
     "lemma": "mißtrauen",
-    "es": "confiar (en compuesto)"
+    "es": "desconfianza (vía inglés)"
   },
   "de:mochte": {
     "lemma": "mögen",
@@ -8123,7 +8333,8 @@
     "es": "trabajo (en compuesto)"
   },
   "de:morgennebels": {
-    "lemma": "Morgennebel"
+    "lemma": "Morgennebel",
+    "es": "niebla (vía inglés)"
   },
   "de:morgens": {
     "lemma": "Morgen",
@@ -8131,10 +8342,11 @@
   },
   "de:morgenstunde": {
     "lemma": "Morgenstunde",
-    "es": "hora (en compuesto)"
+    "es": "hora (vía inglés)"
   },
   "de:morgenstunden": {
-    "lemma": "Morgenstunde"
+    "lemma": "Morgenstunde",
+    "es": "hora (vía inglés)"
   },
   "de:mund": {
     "lemma": "Mund",
@@ -8156,7 +8368,8 @@
     "es": "música"
   },
   "de:musterkollektion": {
-    "lemma": "Musterkollektion"
+    "lemma": "Musterkollektion",
+    "es": "recogida (vía inglés)"
   },
   "de:mute": {
     "lemma": "Mute"
@@ -8322,7 +8535,7 @@
   },
   "de:nachklang": {
     "lemma": "Nachklang",
-    "es": "largo (en compuesto)"
+    "es": "Sund (vía inglés)"
   },
   "de:nachlässig": {
     "lemma": "nachlässig",
@@ -8346,7 +8559,7 @@
   },
   "de:nachtmahl": {
     "lemma": "Nachtmahl",
-    "es": "comida (en compuesto)"
+    "es": "cena (vía inglés)"
   },
   "de:nachzudenken": {
     "lemma": "nachdenken",
@@ -8354,7 +8567,7 @@
   },
   "de:nachzulaufen": {
     "lemma": "nachlaufen",
-    "es": "correr (en compuesto)"
+    "es": "etiqueta (vía inglés)"
   },
   "de:nachzusehen": {
     "lemma": "nachsehen",
@@ -8397,7 +8610,8 @@
     "es": "bufón / tonto / necio"
   },
   "de:narrheiten": {
-    "lemma": "Narrheit"
+    "lemma": "Narrheit",
+    "es": "necedad (vía inglés)"
   },
   "de:nase": {
     "lemma": "Nase",
@@ -8425,14 +8639,15 @@
   },
   "de:nebeneinander": {
     "lemma": "nebeneinander",
-    "es": "mutuamente (en compuesto)"
+    "es": "coexistencia (vía inglés)"
   },
   "de:nebenzimmer": {
     "lemma": "Nebenzimmer",
-    "es": "habitación (en compuesto)"
+    "es": "espacio (vía inglés)"
   },
   "de:nebenzimmern": {
-    "lemma": "Nebenzimmer"
+    "lemma": "Nebenzimmer",
+    "es": "espacio (vía inglés)"
   },
   "de:nehmen": {
     "lemma": "nehmen",
@@ -8448,7 +8663,7 @@
   },
   "de:nervosität": {
     "lemma": "Nervosität",
-    "es": "idad (en compuesto)"
+    "es": "ráfaga (vía inglés)"
   },
   "de:nett": {
     "lemma": "nett",
@@ -8475,7 +8690,8 @@
     "es": "últimamente / desde hace poco / de nuevo"
   },
   "de:neuerlichen": {
-    "lemma": "neuerlich"
+    "lemma": "neuerlich",
+    "es": "nuevo (vía inglés)"
   },
   "de:neugierig": {
     "lemma": "neugierig",
@@ -8495,7 +8711,7 @@
   },
   "de:nichtsahnende": {
     "lemma": "nichtsahnend",
-    "es": "fin (en compuesto)"
+    "es": "desprevenido (vía inglés)"
   },
   "de:nicken": {
     "lemma": "Nicken",
@@ -8522,7 +8738,8 @@
     "es": "doblegar (en compuesto)"
   },
   "de:niederflossen": {
-    "lemma": "niederflossen"
+    "lemma": "niederflossen",
+    "es": "sen (en compuesto)"
   },
   "de:niedergekämmt": {
     "lemma": "niedergekämmen"
@@ -8565,7 +8782,7 @@
   },
   "de:notenpult": {
     "lemma": "Notenpult",
-    "es": "pupitre (en compuesto)"
+    "es": "escritorio (vía inglés)"
   },
   "de:notenzeilen": {
     "lemma": "Notenzeile",
@@ -8600,13 +8817,15 @@
     "es": "inútil"
   },
   "de:nächste": {
-    "lemma": "nächster"
+    "lemma": "nächster",
+    "es": "próximo (vía inglés)"
   },
   "de:nächsten": {
     "lemma": "nächster"
   },
   "de:nächstes": {
-    "lemma": "nächster"
+    "lemma": "nächster",
+    "es": "próximo (vía inglés)"
   },
   "de:nächte": {
     "lemma": "Nacht",
@@ -8614,7 +8833,7 @@
   },
   "de:näharbeit": {
     "lemma": "Näharbeit",
-    "es": "trabajo (en compuesto)"
+    "es": "costura (vía inglés)"
   },
   "de:nähe": {
     "lemma": "Nähe",
@@ -8629,7 +8848,8 @@
     "es": "costurero / cosedor"
   },
   "de:nähernden": {
-    "lemma": "nähernd"
+    "lemma": "nähernd",
+    "es": "OMS (en compuesto)"
   },
   "de:näherte": {
     "lemma": "näheren"
@@ -8650,7 +8870,8 @@
     "es": "costura"
   },
   "de:nähzeug": {
-    "lemma": "Nähzeug"
+    "lemma": "Nähzeug",
+    "es": "ensello (vía inglés)"
   },
   "de:närrisch": {
     "lemma": "närrisch",
@@ -8661,7 +8882,8 @@
     "es": "necesario"
   },
   "de:nötiger": {
-    "lemma": "nötiger"
+    "lemma": "nötiger",
+    "es": "tigre (en compuesto)"
   },
   "de:nüstern": {
     "lemma": "Nüster",
@@ -8689,7 +8911,7 @@
   },
   "de:obstschale": {
     "lemma": "Obstschale",
-    "es": "cáscara (en compuesto)"
+    "es": "canastilla (vía inglés)"
   },
   "de:obwohl": {
     "lemma": "obwohl",
@@ -8719,7 +8941,8 @@
     "es": "a menudo / frecuentemente"
   },
   "de:oh": {
-    "lemma": "Oh"
+    "lemma": "Oh",
+    "es": "oh (vía inglés)"
   },
   "de:ohne": {
     "lemma": "ohne",
@@ -8730,7 +8953,8 @@
     "es": "síncope / impotencia"
   },
   "de:ohnmachtähnlichen": {
-    "lemma": "ohnmachtähnlich"
+    "lemma": "ohnmachtähnlich",
+    "es": "liquen (en compuesto)"
   },
   "de:ohnmächtig": {
     "lemma": "ohnmächtig",
@@ -8789,7 +9013,7 @@
   },
   "de:paradieren": {
     "lemma": "paradieren",
-    "es": "borrar (en compuesto)"
+    "es": "desfile (vía inglés)"
   },
   "de:partei": {
     "lemma": "Partei",
@@ -8828,10 +9052,12 @@
     "es": "idad (en compuesto)"
   },
   "de:pelzboa": {
-    "lemma": "Pelzboa"
+    "lemma": "Pelzboa",
+    "es": "boa (en compuesto)"
   },
   "de:pelzhut": {
-    "lemma": "Pelzhut"
+    "lemma": "Pelzhut",
+    "es": "sombrero (en compuesto)"
   },
   "de:pelzmuff": {
     "lemma": "Pelzmuff",
@@ -8839,7 +9065,7 @@
   },
   "de:pelzwerk": {
     "lemma": "Pelzwerk",
-    "es": "obra (en compuesto)"
+    "es": "vero (vía inglés)"
   },
   "de:personal": {
     "lemma": "Personal",
@@ -8875,10 +9101,11 @@
   },
   "de:photographie": {
     "lemma": "Photographie",
-    "es": "grafía (en compuesto)"
+    "es": "fotografía (vía inglés)"
   },
   "de:piepsen": {
-    "lemma": "Piepsen"
+    "lemma": "Piepsen",
+    "es": "pitido (vía inglés)"
   },
   "de:plafond": {
     "lemma": "Plafond",
@@ -8921,14 +9148,16 @@
     "es": "de repente / súbitamente / repentino"
   },
   "de:polster": {
-    "lemma": "Polster"
+    "lemma": "Polster",
+    "es": "cojín (vía inglés)"
   },
   "de:posten": {
-    "lemma": "Posten"
+    "lemma": "Posten",
+    "es": "empleo (vía inglés)"
   },
   "de:praktischere": {
     "lemma": "praktischer",
-    "es": "tijeras (en compuesto)"
+    "es": "práctico (vía inglés)"
   },
   "de:preis": {
     "lemma": "Preis",
@@ -8943,7 +9172,8 @@
     "es": "presionar / exprimir"
   },
   "de:prinzipal": {
-    "lemma": "Prinzipal"
+    "lemma": "Prinzipal",
+    "es": "principal (vía inglés)"
   },
   "de:prokurist": {
     "lemma": "Prokurist",
@@ -8954,18 +9184,20 @@
     "es": "procurador"
   },
   "de:provinz": {
-    "lemma": "Provinz"
+    "lemma": "Provinz",
+    "es": "provincia (vía inglés)"
   },
   "de:provision": {
     "lemma": "Provision",
-    "es": "aparición (en compuesto)"
+    "es": "prémium (vía inglés)"
   },
   "de:prüfen": {
     "lemma": "prüfen",
     "es": "chequear / comprobar / verificar"
   },
   "de:prüfend": {
-    "lemma": "prüfend"
+    "lemma": "prüfend",
+    "es": "prueba (vía inglés)"
   },
   "de:prüfung": {
     "lemma": "Prüfung",
@@ -8979,7 +9211,8 @@
     "lemma": "Pulte"
   },
   "de:pünktchen": {
-    "lemma": "Pünktch"
+    "lemma": "Pünktch",
+    "es": "jota (vía inglés)"
   },
   "de:quadratmetern": {
     "lemma": "Quadratmeter",
@@ -8994,7 +9227,8 @@
     "es": "atormentar / torturar"
   },
   "de:quälerei": {
-    "lemma": "Quälerei"
+    "lemma": "Quälerei",
+    "es": "tortura (vía inglés)"
   },
   "de:ragte": {
     "lemma": "ragen"
@@ -9008,7 +9242,8 @@
     "es": "borde / margen / rand"
   },
   "de:rannte": {
-    "lemma": "hineinrennen"
+    "lemma": "hineinrennen",
+    "es": "de moda (vía inglés)"
   },
   "de:rasch": {
     "lemma": "Rasch",
@@ -9024,7 +9259,7 @@
   },
   "de:ratlosigkeit": {
     "lemma": "Ratlosigkeit",
-    "es": "idad (en compuesto)"
+    "es": "perplejidad (vía inglés)"
   },
   "de:rauch": {
     "lemma": "Rauch",
@@ -9034,7 +9269,8 @@
     "lemma": "rauchten"
   },
   "de:rauher": {
-    "lemma": "rauh"
+    "lemma": "rauh",
+    "es": "difícil (vía inglés)"
   },
   "de:raum": {
     "lemma": "Raum",
@@ -9056,7 +9292,8 @@
     "es": "derecha / diestra"
   },
   "de:rechten": {
-    "lemma": "rechter"
+    "lemma": "rechter",
+    "es": "derechista (vía inglés)"
   },
   "de:rechts": {
     "lemma": "rechts",
@@ -9120,7 +9357,7 @@
   },
   "de:reinlichkeit": {
     "lemma": "Reinlichkeit",
-    "es": "idad (en compuesto)"
+    "es": "limpieza (vía inglés)"
   },
   "de:reise": {
     "lemma": "Reise",
@@ -9136,7 +9373,7 @@
   },
   "de:reisenden": {
     "lemma": "reisend",
-    "es": "enviar (en compuesto)"
+    "es": "travelín (vía inglés)"
   },
   "de:reisender": {
     "lemma": "Reisender",
@@ -9191,7 +9428,8 @@
     "es": "dirección"
   },
   "de:rieb": {
-    "lemma": "rieb"
+    "lemma": "rieb",
+    "es": "rallado (vía inglés)"
   },
   "de:rieben": {
     "lemma": "reiben",
@@ -9218,17 +9456,19 @@
     "es": "gigantesco / ingente / grandioso"
   },
   "de:rings": {
-    "lemma": "rings"
+    "lemma": "rings",
+    "es": "por acá (vía inglés)"
   },
   "de:ringsherum": {
     "lemma": "ringsherum",
-    "es": "alrededor de (en compuesto)"
+    "es": "por acá (vía inglés)"
   },
   "de:rissen": {
     "lemma": "aufrissen"
   },
   "de:riß": {
-    "lemma": "aufreißen"
+    "lemma": "aufreißen",
+    "es": "abierto (vía inglés)"
   },
   "de:rock": {
     "lemma": "Rock",
@@ -9245,7 +9485,8 @@
     "lemma": "herrollen"
   },
   "de:rollten": {
-    "lemma": "herumrollen"
+    "lemma": "herumrollen",
+    "es": "alrededor (vía inglés)"
   },
   "de:rosinen": {
     "lemma": "Rosine",
@@ -9257,7 +9498,7 @@
   },
   "de:ruckweise": {
     "lemma": "ruckweise",
-    "es": "modo (en compuesto)"
+    "es": "cecina (vía inglés)"
   },
   "de:rufen": {
     "lemma": "rufen",
@@ -9301,17 +9542,19 @@
   },
   "de:rundgang": {
     "lemma": "Rundgang",
-    "es": "pandilla (en compuesto)"
+    "es": "recorrido (vía inglés)"
   },
   "de:rändern": {
     "lemma": "Rand",
     "es": "borde / margen / rand"
   },
   "de:räumten": {
-    "lemma": "ausräumen"
+    "lemma": "ausräumen",
+    "es": "desobstrucción (vía inglés)"
   },
   "de:röckchen": {
-    "lemma": "Röckchen"
+    "lemma": "Röckchen",
+    "es": "falda (vía inglés)"
   },
   "de:röcke": {
     "lemma": "Röck"
@@ -9325,7 +9568,7 @@
   },
   "de:rückenlage": {
     "lemma": "Rückenlage",
-    "es": "ubicación (en compuesto)"
+    "es": "posición (vía inglés)"
   },
   "de:rückgrat": {
     "lemma": "Rückgrat",
@@ -9348,14 +9591,16 @@
     "es": "consideración / deferencia / mira"
   },
   "de:rücksichtnahme": {
-    "lemma": "Rücksichtnahme"
+    "lemma": "Rücksichtnahme",
+    "es": "consideración (vía inglés)"
   },
   "de:rücksichtslos": {
-    "lemma": "rücksichtslos"
+    "lemma": "rücksichtslos",
+    "es": "destino (en compuesto)"
   },
   "de:rücksichtsvoll": {
     "lemma": "rücksichtsvoll",
-    "es": "lleno (en compuesto)"
+    "es": "considerado (vía inglés)"
   },
   "de:rückten": {
     "lemma": "rücken",
@@ -9363,7 +9608,7 @@
   },
   "de:rückwärtsgehen": {
     "lemma": "Rückwärtsgehen",
-    "es": "marcha (en compuesto)"
+    "es": "retroceder (vía inglés)"
   },
   "de:rückwärtslauf": {
     "lemma": "Rückwärtslauf",
@@ -9381,7 +9626,8 @@
     "es": "mover / mezclar"
   },
   "de:rührung": {
-    "lemma": "Rührung"
+    "lemma": "Rührung",
+    "es": "emoción (vía inglés)"
   },
   "de:sache": {
     "lemma": "Sache",
@@ -9396,7 +9642,8 @@
     "es": "circunstancia / estado de cosas"
   },
   "de:sachverständige": {
-    "lemma": "sachverständige"
+    "lemma": "sachverständige",
+    "es": "experto (vía inglés)"
   },
   "de:sage": {
     "lemma": "sagen",
@@ -9441,14 +9688,16 @@
     "es": "harto / saciado / lleno"
   },
   "de:sauce": {
-    "lemma": "Sauce"
+    "lemma": "Sauce",
+    "es": "salsa (vía inglés)"
   },
   "de:saugte": {
     "lemma": "saugen",
     "es": "chupar / succionar / aspirar"
   },
   "de:saust": {
-    "lemma": "sausen"
+    "lemma": "sausen",
+    "es": "flash (vía inglés)"
   },
   "de:saß": {
     "lemma": "sitzen",
@@ -9475,7 +9724,8 @@
     "es": "cerrado / filoso / afilado"
   },
   "de:scharrte": {
-    "lemma": "scharren"
+    "lemma": "scharren",
+    "es": "abrasión (vía inglés)"
   },
   "de:schauen": {
     "lemma": "schauen",
@@ -9585,7 +9835,8 @@
     "es": "arrastrar / remolcar"
   },
   "de:schleppte": {
-    "lemma": "nachschleppen"
+    "lemma": "nachschleppen",
+    "es": "calada (vía inglés)"
   },
   "de:schleuderte": {
     "lemma": "schleudern"
@@ -9629,7 +9880,8 @@
     "es": "batir / golpear / ganar a"
   },
   "de:schlummerte": {
-    "lemma": "schlummern"
+    "lemma": "schlummern",
+    "es": "dormitar (vía inglés)"
   },
   "de:schlusse": {
     "lemma": "Schlusse"
@@ -9680,10 +9932,12 @@
     "es": "doloroso"
   },
   "de:schmerzlicher": {
-    "lemma": "schmerzlich"
+    "lemma": "schmerzlich",
+    "es": "cortopunzante (vía inglés)"
   },
   "de:schmerzliches": {
-    "lemma": "schmerzlich"
+    "lemma": "schmerzlich",
+    "es": "cortopunzante (vía inglés)"
   },
   "de:schmutz": {
     "lemma": "Schmutz",
@@ -9698,10 +9952,12 @@
     "es": "banda (en compuesto)"
   },
   "de:schnappen": {
-    "lemma": "schnappen"
+    "lemma": "schnappen",
+    "es": "chasquido (vía inglés)"
   },
   "de:schnaufen": {
-    "lemma": "Schnaufen"
+    "lemma": "Schnaufen",
+    "es": "estertor sibilante (vía inglés)"
   },
   "de:schnaufend": {
     "lemma": "schnaufend"
@@ -9795,10 +10051,11 @@
   },
   "de:schreienden": {
     "lemma": "schreiend",
-    "es": "finalizar (en compuesto)"
+    "es": "afuera (vía inglés)"
   },
   "de:schreiender": {
-    "lemma": "Schreiender"
+    "lemma": "Schreiender",
+    "es": "que (en compuesto)"
   },
   "de:schrie": {
     "lemma": "schreien",
@@ -9888,18 +10145,20 @@
     "es": "pesado / difícil"
   },
   "de:schwere": {
-    "lemma": "Schwere"
+    "lemma": "Schwere",
+    "es": "magnitud (vía inglés)"
   },
   "de:schweren": {
     "lemma": "schwer",
     "es": "pesado / difícil"
   },
   "de:schwerfällig": {
-    "lemma": "schwerfällig"
+    "lemma": "schwerfällig",
+    "es": "aburrido (vía inglés)"
   },
   "de:schwerhörigkeit": {
     "lemma": "Schwerhörigkeit",
-    "es": "idad (en compuesto)"
+    "es": "oyente (vía inglés)"
   },
   "de:schwerkranken": {
     "lemma": "schwerkranke",
@@ -9935,7 +10194,7 @@
   },
   "de:schwindelanfall": {
     "lemma": "Schwindelanfall",
-    "es": "ataque (en compuesto)"
+    "es": "mareo (vía inglés)"
   },
   "de:schwingen": {
     "lemma": "schwingen",
@@ -9945,10 +10204,12 @@
     "lemma": "schwirrten"
   },
   "de:schwung": {
-    "lemma": "Schwung"
+    "lemma": "Schwung",
+    "es": "entusiasmo (vía inglés)"
   },
   "de:schwur": {
-    "lemma": "Schwur"
+    "lemma": "Schwur",
+    "es": "juramento (vía inglés)"
   },
   "de:schwäche": {
     "lemma": "Schwäche",
@@ -9959,7 +10220,8 @@
     "es": "débil / flojo / bajo"
   },
   "de:schwärmerische": {
-    "lemma": "schwärmerisch"
+    "lemma": "schwärmerisch",
+    "es": "apasionado (vía inglés)"
   },
   "de:schälen": {
     "lemma": "schälen",
@@ -10085,16 +10347,19 @@
   },
   "de:seitenblicken": {
     "lemma": "Seitenblick",
-    "es": "mirar (en compuesto)"
+    "es": "vistazo (vía inglés)"
   },
   "de:seitentür": {
-    "lemma": "Seitentür"
+    "lemma": "Seitentür",
+    "es": "puerta (vía inglés)"
   },
   "de:seitentüre": {
-    "lemma": "Seitentüre"
+    "lemma": "Seitentüre",
+    "es": "puerta (en compuesto)"
   },
   "de:seitlich": {
-    "lemma": "seitlich"
+    "lemma": "seitlich",
+    "es": "prenda (vía inglés)"
   },
   "de:seitwärts": {
     "lemma": "seitwärtsstoßen",
@@ -10121,7 +10386,7 @@
   },
   "de:selbstüberwindung": {
     "lemma": "Selbstüberwindung",
-    "es": "superación (en compuesto)"
+    "es": "conquista (vía inglés)"
   },
   "de:seltenen": {
     "lemma": "selten",
@@ -10259,16 +10524,20 @@
     "es": "mientras / en tanto que / hasta que"
   },
   "de:solche": {
-    "lemma": "solcher"
+    "lemma": "solcher",
+    "es": "tal (vía inglés)"
   },
   "de:solchen": {
-    "lemma": "solcher"
+    "lemma": "solcher",
+    "es": "tal (vía inglés)"
   },
   "de:solcher": {
-    "lemma": "solcher"
+    "lemma": "solcher",
+    "es": "tal (vía inglés)"
   },
   "de:solches": {
-    "lemma": "solcher"
+    "lemma": "solcher",
+    "es": "tal (vía inglés)"
   },
   "de:soll": {
     "lemma": "sollen",
@@ -10295,7 +10564,8 @@
     "es": "extraño / raro"
   },
   "de:sonderbaren": {
-    "lemma": "sonderbaren"
+    "lemma": "sonderbaren",
+    "es": "reno (en compuesto)"
   },
   "de:sondern": {
     "lemma": "sondern",
@@ -10360,7 +10630,8 @@
     "es": "en cuanto"
   },
   "de:sowohl": {
-    "lemma": "sowohl"
+    "lemma": "sowohl",
+    "es": "que (vía inglés)"
   },
   "de:spalte": {
     "lemma": "Spalte",
@@ -10376,11 +10647,11 @@
   },
   "de:sparsamkeit": {
     "lemma": "Sparsamkeit",
-    "es": "idad (en compuesto)"
+    "es": "ahorro (vía inglés)"
   },
   "de:spazierengehen": {
     "lemma": "spazierengehen",
-    "es": "marcha (en compuesto)"
+    "es": "paseo (vía inglés)"
   },
   "de:spaziergängen": {
     "lemma": "Spaziergang",
@@ -10404,7 +10675,7 @@
   },
   "de:speiseüberreste": {
     "lemma": "Speiseüberrest",
-    "es": "estonio (en compuesto)"
+    "es": "restos (en compuesto)"
   },
   "de:spie": {
     "lemma": "ausspie"
@@ -10422,10 +10693,12 @@
     "es": "juego"
   },
   "de:spielte": {
-    "lemma": "mitspielen"
+    "lemma": "mitspielen",
+    "es": "ecuación (vía inglés)"
   },
   "de:spionieren": {
-    "lemma": "spionieren"
+    "lemma": "spionieren",
+    "es": "espía (vía inglés)"
   },
   "de:spitze": {
     "lemma": "Spitze",
@@ -10540,7 +10813,8 @@
     "es": "polvo"
   },
   "de:staubbedeckt": {
-    "lemma": "staubbedecken"
+    "lemma": "staubbedecken",
+    "es": "polvo (vía inglés)"
   },
   "de:staubes": {
     "lemma": "Staub",
@@ -10555,7 +10829,8 @@
     "es": "asombro / sorpresa"
   },
   "de:staunend": {
-    "lemma": "staunend"
+    "lemma": "staunend",
+    "es": "asombrado (vía inglés)"
   },
   "de:staunte": {
     "lemma": "staunen",
@@ -10579,7 +10854,7 @@
   },
   "de:stehengeblieben": {
     "lemma": "stehengeblieben",
-    "es": "amar (en compuesto)"
+    "es": "hacia arriba (vía inglés)"
   },
   "de:steif": {
     "lemma": "steif",
@@ -10607,7 +10882,7 @@
   },
   "de:stenographie": {
     "lemma": "Stenographie",
-    "es": "grafía (en compuesto)"
+    "es": "estenografía (vía inglés)"
   },
   "de:sterben": {
     "lemma": "sterben",
@@ -10628,7 +10903,8 @@
     "lemma": "ausstassen"
   },
   "de:stießen": {
-    "lemma": "aneinanderstoßen"
+    "lemma": "aneinanderstoßen",
+    "es": "adyacencia (vía inglés)"
   },
   "de:still": {
     "lemma": "stillbleiben",
@@ -10643,7 +10919,8 @@
     "es": "inmóvil / silencioso / secreto"
   },
   "de:stiller": {
-    "lemma": "Stiller"
+    "lemma": "Stiller",
+    "es": "tranquilo (vía inglés)"
   },
   "de:stilles": {
     "lemma": "still",
@@ -10651,7 +10928,7 @@
   },
   "de:stillschweigen": {
     "lemma": "Stillschweigen",
-    "es": "silencio (en compuesto)"
+    "es": "cállate (vía inglés)"
   },
   "de:stillstand": {
     "lemma": "Stillstand",
@@ -10753,7 +11030,8 @@
     "es": "pelea / riña / disputa"
   },
   "de:strenge": {
-    "lemma": "Strenge"
+    "lemma": "Strenge",
+    "es": "ley (vía inglés)"
   },
   "de:strome": {
     "lemma": "Strom",
@@ -10761,7 +11039,7 @@
   },
   "de:sträubenden": {
     "lemma": "sträubend",
-    "es": "finalizar (en compuesto)"
+    "es": "erizamiento (vía inglés)"
   },
   "de:strömte": {
     "lemma": "hervorströmen"
@@ -10792,7 +11070,7 @@
   },
   "de:stumpfheit": {
     "lemma": "Stumpfheit",
-    "es": "dad (en compuesto)"
+    "es": "estado (vía inglés)"
   },
   "de:stunden": {
     "lemma": "Stunde",
@@ -10879,7 +11157,8 @@
     "es": "dulce / lindo / mono"
   },
   "de:süßlich": {
-    "lemma": "süßlich"
+    "lemma": "süßlich",
+    "es": "yo (en compuesto)"
   },
   "de:tag": {
     "lemma": "ausTag",
@@ -10940,7 +11219,8 @@
     "es": "efectivamente / en efecto / en realidad"
   },
   "de:tauchte": {
-    "lemma": "hineintauchen"
+    "lemma": "hineintauchen",
+    "es": "paloma (vía inglés)"
   },
   "de:tausendmal": {
     "lemma": "tausendmal",
@@ -10990,7 +11270,8 @@
     "es": "depresión"
   },
   "de:tieferer": {
-    "lemma": "tiefer"
+    "lemma": "tiefer",
+    "es": "subyacente (vía inglés)"
   },
   "de:tier": {
     "lemma": "Tier",
@@ -10998,7 +11279,7 @@
   },
   "de:tierstimme": {
     "lemma": "Tierstimm",
-    "es": "voz (en compuesto)"
+    "es": "voz (vía inglés)"
   },
   "de:tisch": {
     "lemma": "Tisch",
@@ -11068,7 +11349,8 @@
     "es": "triste / afligido / achucutado"
   },
   "de:traute": {
-    "lemma": "zutrauten"
+    "lemma": "zutrauten",
+    "es": "coraje (vía inglés)"
   },
   "de:treibt": {
     "lemma": "treiben",
@@ -11139,7 +11421,8 @@
     "es": "finalizar (en compuesto)"
   },
   "de:tränenlos": {
-    "lemma": "tränenlos"
+    "lemma": "tränenlos",
+    "es": "destino (en compuesto)"
   },
   "de:träume": {
     "lemma": "Traum",
@@ -11154,14 +11437,16 @@
     "es": "turbio / opaco / empañado"
   },
   "de:tuchwaren": {
-    "lemma": "Tuchwar"
+    "lemma": "Tuchwar",
+    "es": "géneros (vía inglés)"
   },
   "de:tun": {
     "lemma": "tun",
     "es": "el hacer"
   },
   "de:turmuhr": {
-    "lemma": "Turmuhr"
+    "lemma": "Turmuhr",
+    "es": "reloj (vía inglés)"
   },
   "de:tuschelten": {
     "lemma": "tuschelen",
@@ -11191,7 +11476,8 @@
     "es": "puerta"
   },
   "de:türe": {
-    "lemma": "Türe"
+    "lemma": "Türe",
+    "es": "puerta (vía inglés)"
   },
   "de:türen": {
     "lemma": "Tür",
@@ -11199,11 +11485,11 @@
   },
   "de:türezuschlagen": {
     "lemma": "Türezuschlag",
-    "es": "batir (en compuesto)"
+    "es": "azotar (en compuesto)"
   },
   "de:türflügel": {
     "lemma": "Türflügel",
-    "es": "ala (en compuesto)"
+    "es": "hoja (vía inglés)"
   },
   "de:türklinke": {
     "lemma": "Türklinke",
@@ -11211,11 +11497,11 @@
   },
   "de:türspalte": {
     "lemma": "Türspalt",
-    "es": "fisura (en compuesto)"
+    "es": "puerta (vía inglés)"
   },
   "de:türöffnung": {
     "lemma": "Türöffnung",
-    "es": "abertura (en compuesto)"
+    "es": "entrada (vía inglés)"
   },
   "de:uhr": {
     "lemma": "Uhr",
@@ -11238,10 +11524,11 @@
   },
   "de:umdrehung": {
     "lemma": "Umdrehung",
-    "es": "giro (en compuesto)"
+    "es": "vuelta (vía inglés)"
   },
   "de:umdrehungen": {
-    "lemma": "Umdrehung"
+    "lemma": "Umdrehung",
+    "es": "vuelta (vía inglés)"
   },
   "de:umfang": {
     "lemma": "Umfang",
@@ -11252,7 +11539,8 @@
     "es": "abrazar / rodear / envolver"
   },
   "de:umflatterndem": {
-    "lemma": "umflatternd"
+    "lemma": "umflatternd",
+    "es": "OMS (en compuesto)"
   },
   "de:umfloß": {
     "lemma": "umfloß"
@@ -11266,20 +11554,24 @@
     "es": "entorno / ambiente / alrededores"
   },
   "de:umgedreht": {
-    "lemma": "umgedrehen"
+    "lemma": "umgedrehen",
+    "es": "al revés (vía inglés)"
   },
   "de:umgestellt": {
     "lemma": "umstellen",
     "es": "abarcar"
   },
   "de:umgeworfenen": {
-    "lemma": "umgeworfen"
+    "lemma": "umgeworfen",
+    "es": "achatado (vía inglés)"
   },
   "de:umherflog": {
-    "lemma": "umherflog"
+    "lemma": "umherflog",
+    "es": "corredera (en compuesto)"
   },
   "de:umschlungen": {
-    "lemma": "umschlingen"
+    "lemma": "umschlingen",
+    "es": "abrazo (vía inglés)"
   },
   "de:umständen": {
     "lemma": "Umstand",
@@ -11308,16 +11600,20 @@
     "es": "desagradable"
   },
   "de:unannehmlichkeiten": {
-    "lemma": "Unannehmlichkeit"
+    "lemma": "Unannehmlichkeit",
+    "es": "desconveniencia (vía inglés)"
   },
   "de:unauffindbar": {
-    "lemma": "unauffindbar"
+    "lemma": "unauffindbar",
+    "es": "archivo (vía inglés)"
   },
   "de:unaufhörlich": {
-    "lemma": "unaufhörlich"
+    "lemma": "unaufhörlich",
+    "es": "yo (en compuesto)"
   },
   "de:unaufhörlichen": {
-    "lemma": "unaufhörlich"
+    "lemma": "unaufhörlich",
+    "es": "liquen (en compuesto)"
   },
   "de:unbedingt": {
     "lemma": "unbedingt",
@@ -11325,10 +11621,11 @@
   },
   "de:unbefriedigend": {
     "lemma": "unbefriedigend",
-    "es": "satisfactorio (en compuesto)"
+    "es": "insatisfactorio (vía inglés)"
   },
   "de:unbegreiflichen": {
-    "lemma": "unbegreiflich"
+    "lemma": "unbegreiflich",
+    "es": "liquen (en compuesto)"
   },
   "de:unbegründeten": {
     "lemma": "unbegründet"
@@ -11346,16 +11643,20 @@
     "es": "fundado (en compuesto)"
   },
   "de:unberührt": {
-    "lemma": "unberührt"
+    "lemma": "unberührt",
+    "es": "inocente (vía inglés)"
   },
   "de:unbeweglich": {
-    "lemma": "unbeweglich"
+    "lemma": "unbeweglich",
+    "es": "yo (en compuesto)"
   },
   "de:unbewußt": {
-    "lemma": "unbewußt"
+    "lemma": "unbewußt",
+    "es": "inconsciente (vía inglés)"
   },
   "de:unbewußten": {
-    "lemma": "unbewußt"
+    "lemma": "unbewußt",
+    "es": "inconsciente (vía inglés)"
   },
   "de:unbrauchbar": {
     "lemma": "unbrauchbar",
@@ -11374,17 +11675,20 @@
     "es": "indistinto / impreciso / vago"
   },
   "de:undurchführbar": {
-    "lemma": "undurchführbar"
+    "lemma": "undurchführbar",
+    "es": "imposible (vía inglés)"
   },
   "de:unentbehrlichen": {
     "lemma": "unentbehrlich",
     "es": "indispensable / imprescindible"
   },
   "de:unerbittlich": {
-    "lemma": "unerbittlich"
+    "lemma": "unerbittlich",
+    "es": "severo (vía inglés)"
   },
   "de:unerhörten": {
-    "lemma": "unerhört"
+    "lemma": "unerhört",
+    "es": "enloquecedor (vía inglés)"
   },
   "de:unerträglich": {
     "lemma": "unerträglich",
@@ -11424,7 +11728,7 @@
   },
   "de:ungemein": {
     "lemma": "ungemein",
-    "es": "común (en compuesto)"
+    "es": "excepcional (vía inglés)"
   },
   "de:ungenießbar": {
     "lemma": "ungenießbar",
@@ -11444,7 +11748,7 @@
   },
   "de:ungewißheit": {
     "lemma": "Ungewißheit",
-    "es": "dad (en compuesto)"
+    "es": "incertidumbre (vía inglés)"
   },
   "de:ungewöhnlich": {
     "lemma": "ungewöhnlich",
@@ -11479,7 +11783,8 @@
     "es": "uniforme"
   },
   "de:uniformrockes": {
-    "lemma": "Uniformrock"
+    "lemma": "Uniformrock",
+    "es": "túnica (vía inglés)"
   },
   "de:unmittelbar": {
     "lemma": "unmittelbar",
@@ -11495,7 +11800,7 @@
   },
   "de:unmöglichkeit": {
     "lemma": "Unmöglichkeit",
-    "es": "posibilidad (en compuesto)"
+    "es": "imposibilidad (vía inglés)"
   },
   "de:unnatürlich": {
     "lemma": "unnatürlich",
@@ -11506,7 +11811,8 @@
     "es": "innecesario"
   },
   "de:unnütz": {
-    "lemma": "unnütz"
+    "lemma": "unnütz",
+    "es": "desocupado (vía inglés)"
   },
   "de:unnützen": {
     "lemma": "unnützen",
@@ -11533,13 +11839,16 @@
     "es": "disturbio / fiebre / revuelta"
   },
   "de:unruhig": {
-    "lemma": "unruhig"
+    "lemma": "unruhig",
+    "es": "incómodo (vía inglés)"
   },
   "de:unruhigen": {
-    "lemma": "unruhig"
+    "lemma": "unruhig",
+    "es": "incómodo (vía inglés)"
   },
   "de:unruhiger": {
-    "lemma": "unruhig"
+    "lemma": "unruhig",
+    "es": "incómodo (vía inglés)"
   },
   "de:uns": {
     "lemma": "uns",
@@ -11594,20 +11903,23 @@
     "es": "hospedar / albergar"
   },
   "de:unterbrochene": {
-    "lemma": "unterbrochen"
+    "lemma": "unterbrochen",
+    "es": "bruja (vía inglés)"
   },
   "de:unterdrücken": {
     "lemma": "unterdrücken",
     "es": "oprimir"
   },
   "de:unterdrückendes": {
-    "lemma": "unterdrückend"
+    "lemma": "unterdrückend",
+    "es": "afilado (en compuesto)"
   },
   "de:untere": {
     "lemma": "unterer"
   },
   "de:unteren": {
-    "lemma": "unterer"
+    "lemma": "unterer",
+    "es": "hall (en compuesto)"
   },
   "de:untergebracht": {
     "lemma": "unterbringen",
@@ -11618,7 +11930,8 @@
     "es": "divertir / entretener / charlar"
   },
   "de:unterhaltendes": {
-    "lemma": "unterhaltend"
+    "lemma": "unterhaltend",
+    "es": "divertido (vía inglés)"
   },
   "de:unterhaltung": {
     "lemma": "Unterhaltung",
@@ -11644,7 +11957,8 @@
     "es": "bajo / debajo de"
   },
   "de:untermischt": {
-    "lemma": "untermischen"
+    "lemma": "untermischen",
+    "es": "de moda (vía inglés)"
   },
   "de:unternehmer": {
     "lemma": "Unternehmer",
@@ -11659,10 +11973,12 @@
     "es": "examen / investigación / análisis"
   },
   "de:unterzogen": {
-    "lemma": "unterziehen"
+    "lemma": "unterziehen",
+    "es": "gen (en compuesto)"
   },
   "de:untier": {
-    "lemma": "Untier"
+    "lemma": "Untier",
+    "es": "monstruo (vía inglés)"
   },
   "de:untätig": {
     "lemma": "untätig",
@@ -11682,7 +11998,7 @@
   },
   "de:unverletzt": {
     "lemma": "unverletzt",
-    "es": "herido (en compuesto)"
+    "es": "ileso (vía inglés)"
   },
   "de:unverständlichen": {
     "lemma": "unverständlich",
@@ -11709,7 +12025,8 @@
     "es": "inaccessible / inpenetrable"
   },
   "de:unüberlegt": {
-    "lemma": "unüberlegen"
+    "lemma": "unüberlegen",
+    "es": "adolorido (en compuesto)"
   },
   "de:ursache": {
     "lemma": "Ursache",
@@ -11740,14 +12057,16 @@
     "es": "despedirse / adoptar / pasar"
   },
   "de:veranlassung": {
-    "lemma": "Veranlassung"
+    "lemma": "Veranlassung",
+    "es": "motivo (vía inglés)"
   },
   "de:verantwortung": {
     "lemma": "Verantwortung",
     "es": "responsabilidad"
   },
   "de:verbarrikadieren": {
-    "lemma": "verbarrikadieren"
+    "lemma": "verbarrikadieren",
+    "es": "barricada (vía inglés)"
   },
   "de:verbeugten": {
     "lemma": "verbeugten"
@@ -11761,10 +12080,12 @@
     "es": "unión / conexión / compuesto"
   },
   "de:verbissenem": {
-    "lemma": "verbissen"
+    "lemma": "verbissen",
+    "es": "lóbrego (vía inglés)"
   },
   "de:verbittert": {
-    "lemma": "verbittern"
+    "lemma": "verbittern",
+    "es": "amargo (vía inglés)"
   },
   "de:verbiß": {
     "lemma": "verbeißen"
@@ -11794,10 +12115,12 @@
     "es": "sospecha"
   },
   "de:verdeckt": {
-    "lemma": "verdecken"
+    "lemma": "verdecken",
+    "es": "reproducción (vía inglés)"
   },
   "de:verdeckte": {
-    "lemma": "verdecken"
+    "lemma": "verdecken",
+    "es": "cubierto (vía inglés)"
   },
   "de:verdienen": {
     "lemma": "verdienen",
@@ -11812,7 +12135,8 @@
     "es": "ganar / merecer / ameritar"
   },
   "de:verdrehte": {
-    "lemma": "verdrehen"
+    "lemma": "verdrehen",
+    "es": "torcedura (vía inglés)"
   },
   "de:verdächtig": {
     "lemma": "verdächtig",
@@ -11846,7 +12170,8 @@
     "lemma": "verfault"
   },
   "de:verfing": {
-    "lemma": "verfangen"
+    "lemma": "verfangen",
+    "es": "atrapado (en compuesto)"
   },
   "de:verflucht": {
     "lemma": "verfluchen",
@@ -11916,7 +12241,8 @@
     "es": "diversión"
   },
   "de:vergoldeten": {
-    "lemma": "vergoldet"
+    "lemma": "vergoldet",
+    "es": "dorado (vía inglés)"
   },
   "de:vergraben": {
     "lemma": "vergraben",
@@ -11954,7 +12280,8 @@
     "es": "impedir / evitar"
   },
   "de:verhungere": {
-    "lemma": "verhungeren"
+    "lemma": "verhungeren",
+    "es": "coágulo (en compuesto)"
   },
   "de:verhungern": {
     "lemma": "verhungern",
@@ -11969,7 +12296,8 @@
     "es": "proporción / relación / ligue"
   },
   "de:verhüllte": {
-    "lemma": "verhülln"
+    "lemma": "verhülln",
+    "es": "cubierto (vía inglés)"
   },
   "de:verjagen": {
     "lemma": "verjagen",
@@ -11988,7 +12316,8 @@
     "es": "vendedora / dependienta / expendedora"
   },
   "de:verkäuflich": {
-    "lemma": "verkäuflich"
+    "lemma": "verkäuflich",
+    "es": "vendible (vía inglés)"
   },
   "de:verkühlung": {
     "lemma": "Verkühlung",
@@ -12102,7 +12431,8 @@
     "es": "obligar / comprometer / comprometerse"
   },
   "de:verrammeln": {
-    "lemma": "verrammeln"
+    "lemma": "verrammeln",
+    "es": "barricada (vía inglés)"
   },
   "de:verraten": {
     "lemma": "verraten",
@@ -12148,14 +12478,16 @@
     "es": "somnoliento / soñoliento"
   },
   "de:verschlimmerung": {
-    "lemma": "Verschlimmerung"
+    "lemma": "Verschlimmerung",
+    "es": "agravio (vía inglés)"
   },
   "de:verschloß": {
     "lemma": "verschließen",
     "es": "cerrar"
   },
   "de:verschnaufen": {
-    "lemma": "verschnaufen"
+    "lemma": "verschnaufen",
+    "es": "aliento (vía inglés)"
   },
   "de:verschont": {
     "lemma": "verschonen"
@@ -12194,10 +12526,11 @@
   },
   "de:versperren": {
     "lemma": "versperren",
-    "es": "bloquear (en compuesto)"
+    "es": "mechón (vía inglés)"
   },
   "de:versperrt": {
-    "lemma": "versperren"
+    "lemma": "versperren",
+    "es": "mechón (vía inglés)"
   },
   "de:verstand": {
     "lemma": "verstehen",
@@ -12220,7 +12553,8 @@
     "es": "entender / comprender / tener"
   },
   "de:versteifungen": {
-    "lemma": "Versteifung"
+    "lemma": "Versteifung",
+    "es": "gen (en compuesto)"
   },
   "de:verstellt": {
     "lemma": "verstellen",
@@ -12297,7 +12631,8 @@
     "es": "confianza / fianza"
   },
   "de:vertrauenswürdige": {
-    "lemma": "vertrauenswürdig"
+    "lemma": "vertrauenswürdig",
+    "es": "fidedigno (vía inglés)"
   },
   "de:vertreibe": {
     "lemma": "vertreiben",
@@ -12352,10 +12687,11 @@
   },
   "de:verwinden": {
     "lemma": "verwinden",
-    "es": "enrollar (en compuesto)"
+    "es": "distorsionar (vía inglés)"
   },
   "de:verwirklichung": {
-    "lemma": "Verwirklichung"
+    "lemma": "Verwirklichung",
+    "es": "promoción (vía inglés)"
   },
   "de:verwirren": {
     "lemma": "verwirren",
@@ -12375,7 +12711,7 @@
   },
   "de:verwundung": {
     "lemma": "Verwundung",
-    "es": "estiércol (en compuesto)"
+    "es": "herido (vía inglés)"
   },
   "de:verzehrte": {
     "lemma": "verzehren",
@@ -12386,7 +12722,8 @@
     "es": "renunciar"
   },
   "de:verzog": {
-    "lemma": "verziehen"
+    "lemma": "verziehen",
+    "es": "de baril (vía inglés)"
   },
   "de:verzweifelte": {
     "lemma": "verzweifelt",
@@ -12401,7 +12738,8 @@
     "es": "cambiar / modificar / alterar"
   },
   "de:veränderte": {
-    "lemma": "verändert"
+    "lemma": "verändert",
+    "es": "modificado (vía inglés)"
   },
   "de:veränderung": {
     "lemma": "Veränderung",
@@ -12416,7 +12754,8 @@
     "es": "mucho"
   },
   "de:viele": {
-    "lemma": "vieler"
+    "lemma": "vieler",
+    "es": "muchas (vía inglés)"
   },
   "de:vielen": {
     "lemma": "vieler"
@@ -12430,7 +12769,8 @@
     "es": "por el contrario / más bien / antes bien"
   },
   "de:vielversprechend": {
-    "lemma": "vielversprechend"
+    "lemma": "vielversprechend",
+    "es": "prometedor (vía inglés)"
   },
   "de:vier": {
     "lemma": "vier",
@@ -12442,7 +12782,7 @@
   },
   "de:viertelstunde": {
     "lemma": "Viertelstunde",
-    "es": "hora (en compuesto)"
+    "es": "hora (vía inglés)"
   },
   "de:viertelstundenlang": {
     "lemma": "viertelstundenlang",
@@ -12528,7 +12868,7 @@
   },
   "de:vorahnung": {
     "lemma": "Vorahnung",
-    "es": "corazonada (en compuesto)"
+    "es": "mal presentimiento (vía inglés)"
   },
   "de:voraussicht": {
     "lemma": "Voraussicht",
@@ -12550,7 +12890,8 @@
     "es": "preparación / preparativo / apronte"
   },
   "de:vorbote": {
-    "lemma": "Vorbote"
+    "lemma": "Vorbote",
+    "es": "presagio (vía inglés)"
   },
   "de:vorerst": {
     "lemma": "vorerst",
@@ -12562,7 +12903,7 @@
   },
   "de:vorführung": {
     "lemma": "Vorführung",
-    "es": "regencia (en compuesto)"
+    "es": "representación (vía inglés)"
   },
   "de:vorgebeugt": {
     "lemma": "vorbeugen",
@@ -12572,7 +12913,8 @@
     "lemma": "vorgefallener"
   },
   "de:vorgehaltene": {
-    "lemma": "vorgehalten"
+    "lemma": "vorgehalten",
+    "es": "afuera (vía inglés)"
   },
   "de:vorgekommen": {
     "lemma": "vorkommen",
@@ -12595,7 +12937,8 @@
     "es": "anteayer / antier / antiayer"
   },
   "de:vorgewagt": {
-    "lemma": "vorgewagen"
+    "lemma": "vorgewagen",
+    "es": "aventurero (en compuesto)"
   },
   "de:vorgänge": {
     "lemma": "Vorgang",
@@ -12634,7 +12977,8 @@
     "es": "mañana"
   },
   "de:vormittägigen": {
-    "lemma": "vormittägig"
+    "lemma": "vormittägig",
+    "es": "gen (en compuesto)"
   },
   "de:vorne": {
     "lemma": "vorne",
@@ -12642,10 +12986,11 @@
   },
   "de:vorplatz": {
     "lemma": "Vorplatz",
-    "es": "plaza (en compuesto)"
+    "es": "hall (vía inglés)"
   },
   "de:vorplatzes": {
-    "lemma": "Vorplatz"
+    "lemma": "Vorplatz",
+    "es": "hall (vía inglés)"
   },
   "de:vorsicht": {
     "lemma": "Vorsicht",
@@ -12692,7 +13037,8 @@
     "es": "finalizar (en compuesto)"
   },
   "de:vorwärtsgesprungen": {
-    "lemma": "vorwärtsgesprungen"
+    "lemma": "vorwärtsgesprungen",
+    "es": "gen (en compuesto)"
   },
   "de:vorwärtsstieß": {
     "lemma": "vorwärtsstieß"
@@ -12750,10 +13096,11 @@
   },
   "de:wachgeblieben": {
     "lemma": "wachgeblieben",
-    "es": "amar (en compuesto)"
+    "es": "existencia (en compuesto)"
   },
   "de:wachsendem": {
-    "lemma": "wachsend"
+    "lemma": "wachsend",
+    "es": "crecimiento (vía inglés)"
   },
   "de:wachte": {
     "lemma": "aufwachn"
@@ -12780,7 +13127,7 @@
   },
   "de:wahrheitsgetreu": {
     "lemma": "wahrheitsgetreu",
-    "es": "fiel (en compuesto)"
+    "es": "verdadero (vía inglés)"
   },
   "de:wahrscheinlich": {
     "lemma": "wahrscheinlich",
@@ -12818,7 +13165,8 @@
     "lemma": "Wangen"
   },
   "de:wankte": {
-    "lemma": "wanken"
+    "lemma": "wanken",
+    "es": "rodeo (vía inglés)"
   },
   "de:war": {
     "lemma": "sein",
@@ -12845,7 +13193,8 @@
     "es": "caliente / cálido / caluroso"
   },
   "de:warnungen": {
-    "lemma": "Warnung"
+    "lemma": "Warnung",
+    "es": "admonición (vía inglés)"
   },
   "de:warte": {
     "lemma": "warten",
@@ -12880,7 +13229,8 @@
     "es": "agua"
   },
   "de:wechselnder": {
-    "lemma": "wechselnd"
+    "lemma": "wechselnd",
+    "es": "alterno (vía inglés)"
   },
   "de:wechselte": {
     "lemma": "wechseln",
@@ -12899,7 +13249,8 @@
     "es": "despertador"
   },
   "de:weckuhr": {
-    "lemma": "Weckuhr"
+    "lemma": "Weckuhr",
+    "es": "reloj (en compuesto)"
   },
   "de:weder": {
     "lemma": "weder",
@@ -12919,11 +13270,11 @@
   },
   "de:wegfliegen": {
     "lemma": "wegfliegen",
-    "es": "vuelo (en compuesto)"
+    "es": "ausente (vía inglés)"
   },
   "de:weggefahren": {
     "lemma": "weggefahren",
-    "es": "ir (en compuesto)"
+    "es": "ausente (vía inglés)"
   },
   "de:weggehen": {
     "lemma": "weggehen",
@@ -12935,7 +13286,7 @@
   },
   "de:weggeschickt": {
     "lemma": "weggeschickt",
-    "es": "diestro (en compuesto)"
+    "es": "ausente (vía inglés)"
   },
   "de:wegnehmen": {
     "lemma": "wegnehmen",
@@ -12943,7 +13294,7 @@
   },
   "de:wegwerfen": {
     "lemma": "wegwerfen",
-    "es": "parir (en compuesto)"
+    "es": "resto (vía inglés)"
   },
   "de:wegzuschaffen": {
     "lemma": "wegzuschaffen",
@@ -12954,7 +13305,8 @@
     "es": "hacer daño / doler"
   },
   "de:wehmütigen": {
-    "lemma": "wehmütig"
+    "lemma": "wehmütig",
+    "es": "cortopunzante (vía inglés)"
   },
   "de:wehren": {
     "lemma": "wehren",
@@ -12987,7 +13339,8 @@
     "es": "porque / ya que / puesto que"
   },
   "de:weilchen": {
-    "lemma": "Weilchen"
+    "lemma": "Weilchen",
+    "es": "mientras (vía inglés)"
   },
   "de:weile": {
     "lemma": "Weile",
@@ -13003,7 +13356,7 @@
   },
   "de:weinkrampf": {
     "lemma": "Weinkrampf",
-    "es": "calambre (en compuesto)"
+    "es": "adecuado (vía inglés)"
   },
   "de:weinte": {
     "lemma": "weinen",
@@ -13033,11 +13386,11 @@
   },
   "de:weiterlaufen": {
     "lemma": "Weiterlaufen",
-    "es": "correr (en compuesto)"
+    "es": "continuar (vía inglés)"
   },
   "de:weiterschleppen": {
     "lemma": "weiterschleppen",
-    "es": "arrastrar (en compuesto)"
+    "es": "ón (vía inglés)"
   },
   "de:weiterschliefe": {
     "lemma": "weiterschliefe"
@@ -13099,7 +13452,8 @@
     "es": "poco"
   },
   "de:weniger": {
-    "lemma": "weniger"
+    "lemma": "weniger",
+    "es": "in (vía inglés)"
   },
   "de:wenigstens": {
     "lemma": "wenigstens",
@@ -13122,14 +13476,16 @@
     "es": "volverse / llegar a ser / ir a"
   },
   "de:werdend": {
-    "lemma": "werdend"
+    "lemma": "werdend",
+    "es": "en vías de desarrollo (vía inglés)"
   },
   "de:werdenden": {
     "lemma": "werdend",
-    "es": "finalizar (en compuesto)"
+    "es": "en vías de desarrollo (vía inglés)"
   },
   "de:werdender": {
-    "lemma": "werdend"
+    "lemma": "werdend",
+    "es": "en vías de desarrollo (vía inglés)"
   },
   "de:werfen": {
     "lemma": "werfen",
@@ -13140,7 +13496,8 @@
     "es": "herramienta / utensilio / fierro"
   },
   "de:wertheimkassa": {
-    "lemma": "Wertheimkassa"
+    "lemma": "Wertheimkassa",
+    "es": "oficio (en compuesto)"
   },
   "de:wetter": {
     "lemma": "Wetter",
@@ -13167,7 +13524,7 @@
   },
   "de:widerreden": {
     "lemma": "Widerrede",
-    "es": "hablar (en compuesto)"
+    "es": "contradicción (vía inglés)"
   },
   "de:widerspruch": {
     "lemma": "Widerspruch",
@@ -13178,7 +13535,8 @@
     "es": "resistencia / oposición / resistor"
   },
   "de:widerwillen": {
-    "lemma": "Widerwille"
+    "lemma": "Widerwille",
+    "es": "abominación (vía inglés)"
   },
   "de:wie": {
     "lemma": "wie",
@@ -13201,24 +13559,28 @@
     "es": "ir a buscar otra vez"
   },
   "de:wiederkam": {
-    "lemma": "wiederkommen"
+    "lemma": "wiederkommen",
+    "es": "volver (vía inglés)"
   },
   "de:wiederkehr": {
-    "lemma": "Wiederkehr"
+    "lemma": "Wiederkehr",
+    "es": "aniversario (vía inglés)"
   },
   "de:wiederum": {
     "lemma": "wiederum",
     "es": "nuevamente / otra vez / por el contrario"
   },
   "de:wieviel": {
-    "lemma": "wieviel"
+    "lemma": "wieviel",
+    "es": "cuánto (vía inglés)"
   },
   "de:wild": {
     "lemma": "wild",
     "es": "caza / venado"
   },
   "de:wilder": {
-    "lemma": "Wilder"
+    "lemma": "Wilder",
+    "es": "salvaje (vía inglés)"
   },
   "de:will": {
     "lemma": "wollen",
@@ -13240,7 +13602,8 @@
     "es": "ángulo / esquina / escuadra"
   },
   "de:winkte": {
-    "lemma": "abwinken"
+    "lemma": "abwinken",
+    "es": "retroceso (vía inglés)"
   },
   "de:wir": {
     "lemma": "wir",
@@ -13307,17 +13670,20 @@
     "es": "bienestar / bien"
   },
   "de:wohlbehagen": {
-    "lemma": "wohlbehagen"
+    "lemma": "wohlbehagen",
+    "es": "sentimental (vía inglés)"
   },
   "de:wohlbekannten": {
-    "lemma": "wohlbekannt"
+    "lemma": "wohlbekannt",
+    "es": "consabido (vía inglés)"
   },
   "de:wohlstand": {
     "lemma": "Wohlstand",
     "es": "prosperidad"
   },
   "de:wohltat": {
-    "lemma": "Wohltat"
+    "lemma": "Wohltat",
+    "es": "bendición (vía inglés)"
   },
   "de:wohnte": {
     "lemma": "wohnen",
@@ -13332,14 +13698,16 @@
     "es": "apartamento / casa / piso"
   },
   "de:wohnungstür": {
-    "lemma": "Wohnungstür"
+    "lemma": "Wohnungstür",
+    "es": "puerta (vía inglés)"
   },
   "de:wohnungstüre": {
-    "lemma": "Wohnungstüre"
+    "lemma": "Wohnungstüre",
+    "es": "puerta (vía inglés)"
   },
   "de:wohnungswechsel": {
     "lemma": "Wohnungswechsel",
-    "es": "cambio (en compuesto)"
+    "es": "residencia (vía inglés)"
   },
   "de:wohnzimmer": {
     "lemma": "Wohnzimmer",
@@ -13426,7 +13794,7 @@
   },
   "de:wundgerieben": {
     "lemma": "wundgeriebe",
-    "es": "llano (en compuesto)"
+    "es": "molido (en compuesto)"
   },
   "de:wunsch": {
     "lemma": "Wunsch",
@@ -13505,11 +13873,12 @@
     "es": "sortear (en compuesto)"
   },
   "de:zappelnden": {
-    "lemma": "zappelnd"
+    "lemma": "zappelnd",
+    "es": "OMS (en compuesto)"
   },
   "de:zartgefühl": {
     "lemma": "Zartgefühl",
-    "es": "sensación (en compuesto)"
+    "es": "sensibilidad (vía inglés)"
   },
   "de:zehn": {
     "lemma": "zehn",
@@ -13592,7 +13961,7 @@
   },
   "de:zerstreutheit": {
     "lemma": "Zerstreutheit",
-    "es": "dad (en compuesto)"
+    "es": "naturaleza (vía inglés)"
   },
   "de:zerstreuung": {
     "lemma": "Zerstreuung",
@@ -13603,7 +13972,8 @@
     "es": "destruir / destrozar"
   },
   "de:zerzauste": {
-    "lemma": "zerzaust"
+    "lemma": "zerzaust",
+    "es": "chascón (vía inglés)"
   },
   "de:zeug": {
     "lemma": "Zeug",
@@ -13634,7 +14004,8 @@
     "es": "señor (en compuesto)"
   },
   "de:zimmerherren": {
-    "lemma": "Zimmerherr"
+    "lemma": "Zimmerherr",
+    "es": "reno (en compuesto)"
   },
   "de:zimmerherrn": {
     "lemma": "Zimmerherr"
@@ -13672,10 +14043,12 @@
     "es": "sisear / silbar / chelear"
   },
   "de:zitternd": {
-    "lemma": "zitternd"
+    "lemma": "zitternd",
+    "es": "tembladero (vía inglés)"
   },
   "de:zitternden": {
-    "lemma": "zitternd"
+    "lemma": "zitternd",
+    "es": "tembladero (vía inglés)"
   },
   "de:zitterte": {
     "lemma": "zittern",
@@ -13714,10 +14087,12 @@
     "es": "casual / aleatorio"
   },
   "de:zufälligkeiten": {
-    "lemma": "Zufälligkeit"
+    "lemma": "Zufälligkeit",
+    "es": "contingencia (vía inglés)"
   },
   "de:zufügte": {
-    "lemma": "zufügen"
+    "lemma": "zufügen",
+    "es": "inflicción (vía inglés)"
   },
   "de:zug": {
     "lemma": "Zug",
@@ -13735,11 +14110,11 @@
   },
   "de:zugemacht": {
     "lemma": "zugemacht",
-    "es": "poder (en compuesto)"
+    "es": "cerrado (vía inglés)"
   },
   "de:zugeschlagen": {
     "lemma": "zuschlagen",
-    "es": "batir (en compuesto)"
+    "es": "azotar (vía inglés)"
   },
   "de:zugesehen": {
     "lemma": "zusehen",
@@ -13788,10 +14163,12 @@
     "es": "primero / al principio"
   },
   "de:zupfen": {
-    "lemma": "zupfen"
+    "lemma": "zupfen",
+    "es": "lana (vía inglés)"
   },
   "de:zupfte": {
-    "lemma": "zupfen"
+    "lemma": "zupfen",
+    "es": "lana (vía inglés)"
   },
   "de:zupften": {
     "lemma": "zupften"
@@ -13801,20 +14178,23 @@
     "es": "cerrado"
   },
   "de:zureden": {
-    "lemma": "Zureden"
+    "lemma": "Zureden",
+    "es": "hablar (en compuesto)"
   },
   "de:zurufe": {
     "lemma": "Zurufe"
   },
   "de:zurufen": {
-    "lemma": "zurufen"
+    "lemma": "zurufen",
+    "es": "grito (vía inglés)"
   },
   "de:zurück": {
     "lemma": "zurückschaukeln",
     "es": "atrás / de vuelta"
   },
   "de:zurückdrehte": {
-    "lemma": "zurückdrehen"
+    "lemma": "zurückdrehen",
+    "es": "revertir (vía inglés)"
   },
   "de:zurückgehe": {
     "lemma": "zurückgehen",
@@ -13826,14 +14206,15 @@
   },
   "de:zurückgelassen": {
     "lemma": "zurückgelassen",
-    "es": "sereno (en compuesto)"
+    "es": "izquierda (vía inglés)"
   },
   "de:zurückgelegt": {
     "lemma": "zurücklegen",
     "es": "reclinar / ahorrar / economizar"
   },
   "de:zurückgelehnt": {
-    "lemma": "zurücklehnen"
+    "lemma": "zurücklehnen",
+    "es": "reclinarse (vía inglés)"
   },
   "de:zurückgeschickt": {
     "lemma": "zurückschicken",
@@ -13841,7 +14222,7 @@
   },
   "de:zurückgeschlagen": {
     "lemma": "zuzurückschlagen",
-    "es": "batir (en compuesto)"
+    "es": "apagado (vía inglés)"
   },
   "de:zurückhalten": {
     "lemma": "zurückhalten",
@@ -13863,14 +14244,15 @@
   },
   "de:zurückschnappenden": {
     "lemma": "zurückschnappend",
-    "es": "finalizar (en compuesto)"
+    "es": "anterior (vía inglés)"
   },
   "de:zurückstoßen": {
     "lemma": "zurückstoßen",
-    "es": "empujar (en compuesto)"
+    "es": "anterior (vía inglés)"
   },
   "de:zurückwich": {
-    "lemma": "zurückwichdrücken"
+    "lemma": "zurückwichdrücken",
+    "es": "yo (en compuesto)"
   },
   "de:zurückziehen": {
     "lemma": "zurückziehen",
@@ -13890,7 +14272,7 @@
   },
   "de:zurückzuwandern": {
     "lemma": "zurückzuwandern",
-    "es": "hacer senderismo (en compuesto)"
+    "es": "inmigrar (en compuesto)"
   },
   "de:zusahen": {
     "lemma": "zusahen"
@@ -13900,11 +14282,12 @@
     "es": "fiasco / colapso"
   },
   "de:zusammenkehrte": {
-    "lemma": "zusammenkehren"
+    "lemma": "zusammenkehren",
+    "es": "barrer (vía inglés)"
   },
   "de:zusammenleben": {
     "lemma": "Zusammenleben",
-    "es": "vida (en compuesto)"
+    "es": "cohabitación (vía inglés)"
   },
   "de:zusammenpacken": {
     "lemma": "zusammenpacken",
@@ -13922,10 +14305,11 @@
   },
   "de:zuschlagen": {
     "lemma": "zuschlagen",
-    "es": "batir (en compuesto)"
+    "es": "azotar (vía inglés)"
   },
   "de:zuschlug": {
-    "lemma": "zuschlagen"
+    "lemma": "zuschlagen",
+    "es": "azotar (vía inglés)"
   },
   "de:zuschulden": {
     "lemma": "zuschulden",
@@ -13933,7 +14317,7 @@
   },
   "de:zusprache": {
     "lemma": "Zusprach",
-    "es": "lengua (en compuesto)"
+    "es": "subvención (vía inglés)"
   },
   "de:zustand": {
     "lemma": "Zustand",
@@ -13952,7 +14336,8 @@
     "es": "ser cierto / ser verdad"
   },
   "de:zuungunsten": {
-    "lemma": "zuungunsten"
+    "lemma": "zuungunsten",
+    "es": "de (vía inglés)"
   },
   "de:zuversicht": {
     "lemma": "Zuversicht",
@@ -13979,7 +14364,8 @@
     "es": "dos veces"
   },
   "de:zweitemal": {
-    "lemma": "zweitemal"
+    "lemma": "zweitemal",
+    "es": "marca (en compuesto)"
   },
   "de:zweiten": {
     "lemma": "zweiter",
@@ -14010,10 +14396,12 @@
     "es": "diente"
   },
   "de:zögernden": {
-    "lemma": "zögernd"
+    "lemma": "zögernd",
+    "es": "OMS (en compuesto)"
   },
   "de:ächzend": {
-    "lemma": "ächzend"
+    "lemma": "ächzend",
+    "es": "gemebundo (vía inglés)"
   },
   "de:ähnliches": {
     "lemma": "Ähnliches"
@@ -14062,10 +14450,11 @@
   },
   "de:äußerste": {
     "lemma": "äußerer",
-    "es": "primero (en compuesto)"
+    "es": "exterior (vía inglés)"
   },
   "de:äußersten": {
-    "lemma": "äußer"
+    "lemma": "äußer",
+    "es": "extrínseco (vía inglés)"
   },
   "de:öffnen": {
     "lemma": "öffnen",
@@ -14100,18 +14489,20 @@
     "es": "extremadamente"
   },
   "de:überbleibsel": {
-    "lemma": "Überbleibsel"
+    "lemma": "Überbleibsel",
+    "es": "resto (vía inglés)"
   },
   "de:überblick": {
     "lemma": "Überblick",
     "es": "resumen / panorama"
   },
   "de:überdeutlichen": {
-    "lemma": "überdeutlich"
+    "lemma": "überdeutlich",
+    "es": "obvio (vía inglés)"
   },
   "de:überdies": {
     "lemma": "überdies",
-    "es": "esto (en compuesto)"
+    "es": "además (vía inglés)"
   },
   "de:überdrüssig": {
     "lemma": "überdrüssig"
@@ -14187,7 +14578,8 @@
     "es": "asumir / tomar / usurpar"
   },
   "de:übernommene": {
-    "lemma": "übernommen"
+    "lemma": "übernommen",
+    "es": "paquete (vía inglés)"
   },
   "de:überraschende": {
     "lemma": "überraschend",
@@ -14206,14 +14598,16 @@
     "es": "persuadir / convencer"
   },
   "de:überreicher": {
-    "lemma": "überreich"
+    "lemma": "überreich",
+    "es": "profuso (vía inglés)"
   },
   "de:überschreiben": {
     "lemma": "überschreiben",
     "es": "escritura (en compuesto)"
   },
   "de:überschwung": {
-    "lemma": "Überschwung"
+    "lemma": "Überschwung",
+    "es": "entusiasmo (en compuesto)"
   },
   "de:überschüssigen": {
     "lemma": "überschüssig",
@@ -14225,7 +14619,7 @@
   },
   "de:übersiedlung": {
     "lemma": "Übersiedlung",
-    "es": "asentamiento (en compuesto)"
+    "es": "mudanza (vía inglés)"
   },
   "de:überstanden": {
     "lemma": "überstehen",
@@ -14257,7 +14651,7 @@
   },
   "de:überzieher": {
     "lemma": "Überzieher",
-    "es": "educador (en compuesto)"
+    "es": "abrigo (vía inglés)"
   },
   "de:übrig": {
     "lemma": "übrigbleiben",
@@ -14273,7 +14667,7 @@
   },
   "de:übriggeblieben": {
     "lemma": "übrigbleiben",
-    "es": "amar (en compuesto)"
+    "es": "existencia (en compuesto)"
   },
   "de:übung": {
     "lemma": "Übung",

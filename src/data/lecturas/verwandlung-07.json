@@ -9,7 +9,7 @@
     "de": "Die Verwandlung",
     "es": "La metamorfosis"
   },
-  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra de FreeDict deu-spa (https://freedict.org).",
+  "fuente": "«Die Verwandlung», Franz Kafka (1915; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. Procesado con spaCy; traducción por palabra con diccionarios FreeDict (deu-spa y cadena deu-eng→eng-spa, https://freedict.org).",
   "cuerpo": {
     "de": [
       "»Ich habe es ja erwartet,« sagte der Vater, »ich habe es euch ja immer gesagt, aber ihr Frauen wollt nicht hören.«",

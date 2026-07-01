@@ -1,20 +1,20 @@
 """Pipeline offline: libro (texto plano PD) -> lecturas JSON + léxico.
 
 Usa spaCy para segmentar en frases, tokenizar y lematizar (reconstruyendo los
-verbos separables del alemán a partir de la dependencia `svp`), y FreeDict
-deu-spa para la traducción por palabra. Exporta al formato que consume el
-frontend: src/data/lecturas/<id>.json y entradas en src/data/lexico.json.
+verbos separables del alemán a partir de la dependencia `svp`), y diccionarios
+FreeDict para la traducción por palabra (deu-spa directo + cadena
+deu-eng->eng-spa + cabeza de compuesto; ver traductor.py). Exporta al formato
+que consume el frontend: src/data/lecturas/<id>.json y src/data/lexico.json.
 
 Uso:  PYTHONUTF8=1 python procesar.py
 """
 import json
 import re
-import unicodedata
 from pathlib import Path
 
 import spacy
 
-from leer_diccionario import cargar_diccionario
+from traductor import Traductor
 
 RAIZ = Path(__file__).resolve().parents[1]
 DIR_LECTURAS = RAIZ / "src" / "data" / "lecturas"
@@ -30,8 +30,8 @@ CONFIG = {
     "fuente": (
         "«Die Verwandlung», Franz Kafka (1915; dominio público). "
         "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/22367. "
-        "Procesado con spaCy; traducción por palabra de FreeDict deu-spa "
-        "(https://freedict.org)."
+        "Procesado con spaCy; traducción por palabra con diccionarios FreeDict "
+        "(deu-spa y cadena deu-eng→eng-spa, https://freedict.org)."
     ),
     "archivo": Path(__file__).parent / "fuentes" / "verwandlung.txt",
     "inicio": "Als Gregor Samsa",
@@ -72,30 +72,6 @@ def normalizar(superficie):
     )
 
 
-def traducir(dic, lema, superficie):
-    """Busca traducción por lema y, si falla, por la forma tal cual (cubre
-    errores de lematización), y por último por la cabeza del compuesto alemán."""
-    for cand in (lema.lower(), superficie.lower()):
-        t = dic.get(cand)
-        if t:
-            return t
-    return traducir_compuesto(dic, superficie)
-
-
-def traducir_compuesto(dic, palabra):
-    """Compuesto alemán: la cabeza es el último elemento. Prueba sufijos de
-    longitud decreciente que sean entrada del diccionario (mínimo 4 letras)."""
-    w = palabra.lower()
-    if len(w) < 8:
-        return None
-    for i in range(1, len(w) - 3):
-        sufijo = w[i:]
-        if len(sufijo) >= 4 and sufijo in dic:
-            # solo la primera acepción: los compuestos son aproximados
-            return dic[sufijo].split(" / ")[0] + " (en compuesto)"
-    return None
-
-
 def lemas_con_separables(doc):
     """Mapa índice_de_token -> lema, reuniendo prefijos separables (svp)."""
     lemas = {t.i: t.lemma_ for t in doc}
@@ -108,10 +84,10 @@ def lemas_con_separables(doc):
 
 
 def procesar():
-    print(f"Cargando spaCy ({MODELO}) y FreeDict deu-spa...")
+    print(f"Cargando spaCy ({MODELO}) y diccionarios FreeDict...")
     nlp = spacy.load(MODELO)
-    dic = cargar_diccionario()
-    print(f"  diccionario: {len(dic)} lemas")
+    tr = Traductor()
+    print(f"  diccionarios: deu-spa={tr.tamanos()[0]} deu-eng={tr.tamanos()[1]} eng-spa={tr.tamanos()[2]}")
 
     contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
     nlp.max_length = max(nlp.max_length, len(contenido) + 100)
@@ -129,7 +105,7 @@ def procesar():
             continue
         lema = lemas[t.i]
         entrada = {"lemma": lema}
-        trad = traducir(dic, lema, t.text)
+        trad = tr.traducir(lema, t.text)
         if trad:
             entrada["es"] = trad
         lexico[clave] = entrada
