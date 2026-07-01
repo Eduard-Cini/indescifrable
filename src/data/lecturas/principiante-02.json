@@ -1,7 +1,11 @@
 {
   "id": "dia-de-ana",
   "nivel": "principiante",
-  "titulo": { "es": "Un día de Ana", "en": "Ana's day", "de": "Anas Tag" },
+  "titulo": {
+    "es": "Un día de Ana",
+    "en": "Ana's day",
+    "de": "Anas Tag"
+  },
   "fuente": "Texto original de autoría propia (vocabulario controlado para nivel principiante).",
   "cuerpo": {
     "es": [
@@ -25,5 +29,15 @@
       "Am Nachmittag liest sie ein Buch im Park.",
       "Am Abend isst sie mit ihrer Familie und geht schlafen."
     ]
+  },
+  "lexico": {
+    "de:auf": {
+      "lemma": "aufstehen",
+      "es": "se levanta (aufstehen)"
+    },
+    "de:steht": {
+      "lemma": "aufstehen",
+      "es": "se levanta (aufstehen)"
+    }
   }
 }

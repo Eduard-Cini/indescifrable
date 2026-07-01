@@ -2,7 +2,11 @@
   "id": "hormiga-y-cigarra",
   "nivel": "intermedio",
   "autor": "Esopo",
-  "titulo": { "es": "La hormiga y la cigarra", "en": "The ant and the grasshopper", "de": "Die Ameise und die Grille" },
+  "titulo": {
+    "es": "La hormiga y la cigarra",
+    "en": "The ant and the grasshopper",
+    "de": "Die Ameise und die Grille"
+  },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «La hormiga y la cigarra» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {
     "es": [
@@ -41,5 +45,11 @@
       "„Ich habe dir im Sommer einen Rat gegeben, aber du wolltest lieber singen“, sagte die Ameise.",
       "Zu spät verstand die Grille den Wert von Arbeit und Vorsorge."
     ]
+  },
+  "lexico": {
+    "de:an": {
+      "lemma": "anlegen",
+      "es": "acumular / hacer acopio (anlegen)"
+    }
   }
 }

@@ -45,5 +45,11 @@
       "Schließlich, von der Hitze überwältigt, zog er den Mantel aus freien Stücken aus.",
       "Auf diese Weise bewies die Sonne, dass Sanftheit mehr erreicht als Gewalt."
     ]
+  },
+  "lexico": {
+    "de:zog": {
+      "lemma": "ausziehen",
+      "es": "quitarse (la ropa) (ausziehen)"
+    }
   }
 }

@@ -39,5 +39,15 @@
       "Als es so im Dunkeln stand, fielen auf einmal die Sterne vom Himmel und wurden zu lauter blanken Silbertalern.",
       "Und obwohl es eben noch sein letztes Kleidungsstück weggegeben hatte, trug es nun ein neues aus feinstem Linnen; darin sammelte es die Taler und war reich für sein ganzes Leben."
     ]
+  },
+  "lexico": {
+    "de:hinaus": {
+      "lemma": "hinausgehen",
+      "es": "salir (hinausgehen)"
+    },
+    "de:weiter": {
+      "lemma": "weitergehen",
+      "es": "seguir / continuar (weitergehen)"
+    }
   }
 }

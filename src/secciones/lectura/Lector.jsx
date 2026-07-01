@@ -95,7 +95,10 @@ function Lector() {
 
   const seleccionarPalabra = (superficie) => {
     const id = clavePalabra(idioma, superficie);
-    const entradaLex = lexico?.[id];
+    // El override por lectura (verbos separables desambiguados) manda sobre el
+    // léxico global, que es context-free y no puede distinguir p. ej. "nahm"
+    // como parte de "annehmen" frente a "nehmen".
+    const entradaLex = lectura.lexico?.[id] ?? lexico?.[id];
     setSeleccion({
       surface: superficie,
       lemma: entradaLex?.lemma ?? superficie,

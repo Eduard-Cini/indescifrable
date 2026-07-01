@@ -2,7 +2,11 @@
   "id": "leon-y-raton",
   "nivel": "intermedio",
   "autor": "Esopo",
-  "titulo": { "es": "El león y el ratón", "en": "The lion and the mouse", "de": "Der Löwe und die Maus" },
+  "titulo": {
+    "es": "El león y el ratón",
+    "en": "The lion and the mouse",
+    "de": "Der Löwe und die Maus"
+  },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «El león y el ratón» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {
     "es": [
@@ -35,5 +39,19 @@
       "Die Maus hörte sein Gebrüll und nagte die Seile durch, bis sie ihn befreite.",
       "So rettete die kleine Maus den mächtigen Löwen."
     ]
+  },
+  "lexico": {
+    "de:auf": {
+      "lemma": "aufwecken",
+      "es": "despertar (aufwecken)"
+    },
+    "de:durch": {
+      "lemma": "durchnagen",
+      "es": "roer / carcomer (durchnagen)"
+    },
+    "de:frei": {
+      "lemma": "freilassen",
+      "es": "liberar / soltar (freilassen)"
+    }
   }
 }

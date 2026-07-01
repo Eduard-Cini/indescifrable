@@ -2,7 +2,11 @@
   "id": "liebre-y-tortuga",
   "nivel": "intermedio",
   "autor": "Esopo",
-  "titulo": { "es": "La liebre y la tortuga", "en": "The hare and the tortoise", "de": "Der Hase und die Schildkröte" },
+  "titulo": {
+    "es": "La liebre y la tortuga",
+    "en": "The hare and the tortoise",
+    "de": "Der Hase und die Schildkröte"
+  },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «La liebre y la tortuga» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {
     "es": [
@@ -44,5 +48,27 @@
       "Er rannte mit aller Kraft, aber es war schon zu spät.",
       "So besiegte die Beharrlichkeit der Schildkröte die Schnelligkeit des Hasen."
     ]
+  },
+  "lexico": {
+    "de:heraus": {
+      "lemma": "herausfordern",
+      "es": "desafiar / retar (herausfordern)"
+    },
+    "de:hielt": {
+      "lemma": "anhalten",
+      "es": "detenerse / pararse (anhalten)"
+    },
+    "de:los": {
+      "lemma": "losschießen",
+      "es": "salir disparado (losschießen)"
+    },
+    "de:nahm": {
+      "lemma": "annehmen",
+      "es": "suponer / dar por hecho (annehmen)"
+    },
+    "de:weiter": {
+      "lemma": "weitergehen",
+      "es": "seguir / continuar (weitergehen)"
+    }
   }
 }

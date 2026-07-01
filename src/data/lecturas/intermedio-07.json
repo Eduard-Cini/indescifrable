@@ -68,5 +68,27 @@
       "Le llenaron el vientre con piedras pesadas, y cuando el lobo despertó y quiso huir, cayó muerto al suelo.",
       "Caperucita, en cambio, pensó: «Nunca en la vida volverás a apartarte sola del camino hacia el bosque cuando tu madre te lo haya prohibido»."
     ]
+  },
+  "lexico": {
+    "de:fing": {
+      "lemma": "anfangen",
+      "es": "empezar / comenzar (anfangen)"
+    },
+    "de:hin": {
+      "lemma": "hinlegen",
+      "es": "acostarse / tumbarse (hinlegen)"
+    },
+    "de:setzte": {
+      "lemma": "aufsetzen",
+      "es": "ponerse (en la cabeza) (aufsetzen)"
+    },
+    "de:vorbei": {
+      "lemma": "vorbeigehen",
+      "es": "pasar de largo (vorbeigehen)"
+    },
+    "de:zog": {
+      "lemma": "anziehen",
+      "es": "ponerse (la ropa) (anziehen)"
+    }
   }
 }
