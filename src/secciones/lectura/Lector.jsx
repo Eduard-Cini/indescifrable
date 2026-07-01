@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { obtenerLectura, NOMBRE_IDIOMA, partesDeLibro } from '../../data/lecturas';
-import lexico from '../../data/lexico.json';
 import {
   cargarBolsa,
   guardarBolsa,
@@ -37,11 +36,18 @@ function Lector() {
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
   const [traducidas, setTraducidas] = useState({}); // traducción revelada por frase (índice -> bool)
   const [completada, setCompletada] = useState(false);
+  // El léxico (~465 KB) se carga bajo demanda para no inflar el bundle inicial:
+  // Vite lo emite como chunk aparte, cacheado, que solo se descarga al abrir una lectura.
+  const [lexico, setLexico] = useState(null);
 
   useEffect(() => {
     setBolsa(cargarBolsa());
     setCompletada(estaCompletada(cargarProgreso(), id));
   }, [id]);
+
+  useEffect(() => {
+    import('../../data/lexico.json').then((m) => setLexico(m.default));
+  }, []);
 
   // Enlace de vuelta que conserva el idioma y nivel elegidos en la Biblioteca.
   const volverBiblioteca = `/lectura?idioma=${idioma}&nivel=${nivel}`;
@@ -89,7 +95,7 @@ function Lector() {
 
   const seleccionarPalabra = (superficie) => {
     const id = clavePalabra(idioma, superficie);
-    const entradaLex = lexico[id];
+    const entradaLex = lexico?.[id];
     setSeleccion({
       surface: superficie,
       lemma: entradaLex?.lemma ?? superficie,
