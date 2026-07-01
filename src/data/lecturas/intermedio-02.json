@@ -1,6 +1,7 @@
 {
   "id": "liebre-y-tortuga",
   "nivel": "intermedio",
+  "autor": "Esopo",
   "titulo": { "es": "La liebre y la tortuga", "en": "The hare and the tortoise", "de": "Der Hase und die Schildkröte" },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «La liebre y la tortuga» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {

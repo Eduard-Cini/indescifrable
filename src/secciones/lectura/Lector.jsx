@@ -110,6 +110,8 @@ function Lector() {
         <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsa.length}</Link>
       </header>
 
+      {lectura.autor && <p className="lectura-autor">{lectura.autor}</p>}
+
       <p className="lectura-subtitulo">
         Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
         traducirla y guardarla{!esEspanol && ', o el ⇄ del margen para traducir la frase'}.
@@ -160,6 +162,8 @@ function Lector() {
           {completada ? '✓ Leída — volver a la biblioteca' : 'Finalizar lectura'}
         </button>
       </div>
+
+      {lectura.fuente && <p className="lectura-fuente">{lectura.fuente}</p>}
 
       {seleccion && (
         <PopupPalabra

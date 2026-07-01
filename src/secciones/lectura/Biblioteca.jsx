@@ -87,6 +87,7 @@ function Biblioteca() {
               </span>
               <span className="lectura-card-meta">
                 {NOMBRE_IDIOMA[idioma]} · {NOMBRE_NIVEL[lectura.nivel]}
+                {lectura.autor && ` · ${lectura.autor}`}
               </span>
             </button>
           );

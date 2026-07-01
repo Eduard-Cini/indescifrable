@@ -1,6 +1,7 @@
 {
   "id": "sterntaler",
   "nivel": "avanzado",
+  "autor": "Hermanos Grimm",
   "titulo": { "es": "El dinero de las estrellas", "en": "The star money", "de": "Die Sterntaler" },
   "fuente": "Adaptación de «Die Sterntaler» de los Hermanos Grimm (Kinder- und Hausmärchen, 1812; dominio público). Original alemán e inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/2591",
   "cuerpo": {

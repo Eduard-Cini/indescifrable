@@ -1,6 +1,7 @@
 {
   "id": "hormiga-y-cigarra",
   "nivel": "intermedio",
+  "autor": "Esopo",
   "titulo": { "es": "La hormiga y la cigarra", "en": "The ant and the grasshopper", "de": "Die Ameise und die Grille" },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «La hormiga y la cigarra» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {

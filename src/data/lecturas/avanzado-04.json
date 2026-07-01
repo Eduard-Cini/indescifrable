@@ -1,6 +1,7 @@
 {
   "id": "rotkaeppchen",
   "nivel": "avanzado",
+  "autor": "Hermanos Grimm",
   "titulo": { "es": "Caperucita Roja", "de": "Rotkäppchen" },
   "fuente": "Adaptación de «Rotkäppchen» (Caperucita Roja) de los Hermanos Grimm (Kinder- und Hausmärchen, 1812; dominio público). Original alemán: Project Gutenberg, https://www.gutenberg.org/ebooks/2591. Disponible en alemán con traducción al español.",
   "cuerpo": {
