@@ -1,8 +1,12 @@
 {
   "id": "olla-magica",
-  "nivel": "avanzado",
+  "nivel": "intermedio",
   "autor": "Hermanos Grimm",
-  "titulo": { "es": "El puré dulce", "en": "The sweet porridge", "de": "Der süße Brei" },
+  "titulo": {
+    "es": "El puré dulce",
+    "en": "The sweet porridge",
+    "de": "Der süße Brei"
+  },
   "fuente": "Adaptación de «Der süße Brei» de los Hermanos Grimm (Kinder- und Hausmärchen, 1812; dominio público). Original alemán e inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/2591",
   "cuerpo": {
     "es": [

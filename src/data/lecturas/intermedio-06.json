@@ -1,8 +1,12 @@
 {
   "id": "viento-y-sol",
-  "nivel": "avanzado",
+  "nivel": "intermedio",
   "autor": "Esopo",
-  "titulo": { "es": "El viento del norte y el sol", "en": "The North Wind and the Sun", "de": "Der Nordwind und die Sonne" },
+  "titulo": {
+    "es": "El viento del norte y el sol",
+    "en": "The North Wind and the Sun",
+    "de": "Der Nordwind und die Sonne"
+  },
   "fuente": "Adaptación trilingüe de la fábula de Esopo «El viento del norte y el sol» (dominio público). Original en inglés: Project Gutenberg, https://www.gutenberg.org/ebooks/11339",
   "cuerpo": {
     "es": [

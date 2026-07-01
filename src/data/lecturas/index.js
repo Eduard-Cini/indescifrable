@@ -1,15 +1,17 @@
-// Catálogo de lecturas. Cada archivo JSON es una lectura trilingüe (es/en/de)
-// con el mismo formato que más adelante emitirá el pipeline offline de Python.
+// Catálogo de lecturas. Cada archivo JSON es una lectura (es/en/de, o un
+// subconjunto) con el mismo formato que emite el pipeline offline de Python.
+// Las fábulas y cuentos son nivel intermedio; el avanzado se reserva para
+// libros completos procesados con el pipeline (spaCy).
 import mercado01 from './principiante-01.json';
 import diaDeAna from './principiante-02.json';
 import finDeSemana from './principiante-03.json';
 import leonYRaton from './intermedio-01.json';
 import liebreYTortuga from './intermedio-02.json';
 import hormigaYCigarra from './intermedio-03.json';
-import sterntaler from './avanzado-01.json';
-import ollaMagica from './avanzado-02.json';
-import vientoYSol from './avanzado-03.json';
-import rotkaeppchen from './avanzado-04.json';
+import sterntaler from './intermedio-04.json';
+import ollaMagica from './intermedio-05.json';
+import vientoYSol from './intermedio-06.json';
+import rotkaeppchen from './intermedio-07.json';
 
 export const NIVELES = ['principiante', 'intermedio', 'avanzado'];
 export const IDIOMAS = ['es', 'en', 'de'];
