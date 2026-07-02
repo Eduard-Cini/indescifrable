@@ -31,12 +31,13 @@ comparación Leitner/Markov por simulación), (3) Gramática cloze con spaCy ⏳
   los motores reales → `docs/datos-simulacion.json`. Resultado: Leitner retiene ~5 pp más
   pero cuesta ~50% más presentaciones (techo de caja 5 = sobre-repaso); SM-2 justificado.
 - **Motor puro + Vitest** (49 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner).
-- **Docs** en `docs/*.pdf`: técnica, plan-de-aprendizaje, reporte-metricas + Sección 2:
-  documentacion-repaso, metricas-repaso (simulación+Markov), ruta-aprendizaje-repaso (+ sus `generar_*.py`).
+- **Docs** en `docs/*.pdf` (cada portada rotulada con su sección; cada uno con su `generar_*.py`):
+  - **Sección 1 — Lectura**: `documentacion-tecnica`, `plan-de-aprendizaje`, `reporte-metricas`.
+  - **Sección 2 — Repaso**: `documentacion-repaso` (técnica), `metricas-repaso` (simulación + Markov + modelo de conocimiento), `ruta-aprendizaje-repaso` (auto-estudio).
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
-2. `src/engine/` JS puro (testeable) — bolsa, tablero, progreso.
+2. `src/engine/` JS puro (testeable) — bolsa, tablero, progreso, srs (SM-2), conocimiento, leitner (+ simulación en `simulacion/`).
 3. Frontend React 19 + Vite 8 + react-router 7 — solo presenta. **Sin APIs en vivo**;
    estado en `localStorage`. Catálogo se autocarga con `import.meta.glob`.
 
@@ -49,7 +50,7 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Overrides separables (principiante/intermedio, curados a mano): `python pipeline/overrides_lecturas.py`.
 - Frase por MT: `python pipeline/traducir_mt.py <prefijo>`.
 - Frase por LLM: `exportar_frases.py <id>` → pegar en Gemini → `importar_traduccion.py <id> <archivo>` (valida 1:1).
-- Regenerar PDFs: `python docs/generar_*.py`.
+- Regenerar PDFs: `python docs/generar_*.py` (el de `reporte-metricas` carga opus-mt para recalcular chrF; tarda ~1 min).
 
 ## Trampas del entorno (IMPORTANTES)
 - **git SSL**: usa `http.sslBackend schannel` (almacén de Windows). **Python SSL**: `pip-system-certs`.
@@ -69,5 +70,6 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking), opcional FSRS/retención objetivo en la simulación (ejercicios en ruta-aprendizaje-repaso.pdf).
 
 ## Cómo continuar en una sesión nueva
-Este archivo se carga solo. Además, revisar `docs/documentacion-tecnica.pdf` (cómo está resuelto todo)
-y `docs/plan-de-aprendizaje.pdf`. Pedir a Claude que confirme el estado con `git log --oneline -10`.
+Este archivo se carga solo. Para la Sección 1 revisar `docs/documentacion-tecnica.pdf` y
+`docs/plan-de-aprendizaje.pdf`; para la Sección 2, `docs/documentacion-repaso.pdf` y
+`docs/ruta-aprendizaje-repaso.pdf`. Pedir a Claude que confirme el estado con `git log --oneline -10`.
