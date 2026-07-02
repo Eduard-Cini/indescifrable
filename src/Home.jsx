@@ -17,7 +17,7 @@ function Home() {
 
         <Link to="/juegos" className="seccion-card juegos">
           <h2>🎮 Juegos</h2>
-          <p>Codenames en tres idiomas, escalera de palabras (BFS) y crucigrama (backtracking).</p>
+          <p>Cinco juegos de palabras: Codenames, escalera (BFS), crucigrama (backtracking), adivina la palabra (entropía) y sopa de letras.</p>
         </Link>
 
         <Link to="/repaso" className="seccion-card repaso">

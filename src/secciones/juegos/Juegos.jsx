@@ -45,6 +45,24 @@ function Juegos() {
           </p>
           <span className="juego-algoritmo">Colocación por backtracking</span>
         </Link>
+
+        <Link to="/juegos/wordle" className="juego-card">
+          <h2>🎯 Adivina la palabra</h2>
+          <p>
+            Una palabra alemana del corpus en seis intentos, con la traducción
+            de cada intento y el conteo de candidatas que van quedando.
+          </p>
+          <span className="juego-algoritmo">Feedback exacto + entropía de Shannon</span>
+        </Link>
+
+        <Link to="/juegos/sopa" className="juego-card">
+          <h2>🔍 Sopa de letras</h2>
+          <p>
+            Las pistas en español, las palabras escondidas en alemán: encontrar
+            «regalo» es encontrar GESCHENK.
+          </p>
+          <span className="juego-algoritmo">Colocación aleatorizada por semilla</span>
+        </Link>
       </div>
     </div>
   );

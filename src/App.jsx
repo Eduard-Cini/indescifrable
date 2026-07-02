@@ -4,6 +4,8 @@ import JuegoApp from './JuegoApp';
 import Juegos from './secciones/juegos/Juegos';
 import Escalera from './secciones/juegos/Escalera';
 import Crucigrama from './secciones/juegos/Crucigrama';
+import Wordle from './secciones/juegos/Wordle';
+import Sopa from './secciones/juegos/Sopa';
 import Biblioteca from './secciones/lectura/Biblioteca';
 import Lector from './secciones/lectura/Lector';
 import Bolsa from './secciones/lectura/Bolsa';
@@ -22,6 +24,8 @@ function App() {
         <Route path="/juegos/codenames/*" element={<JuegoApp />} />
         <Route path="/juegos/escalera" element={<Escalera />} />
         <Route path="/juegos/crucigrama" element={<Crucigrama />} />
+        <Route path="/juegos/wordle" element={<Wordle />} />
+        <Route path="/juegos/sopa" element={<Sopa />} />
         <Route path="/lectura" element={<Biblioteca />} />
         <Route path="/lectura/:idioma/:nivel/:id" element={<Lector />} />
         <Route path="/bolsa" element={<Bolsa />} />

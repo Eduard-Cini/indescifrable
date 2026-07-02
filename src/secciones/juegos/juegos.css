@@ -126,3 +126,58 @@
 .cruci-pistas li b { color: #8fbf9f; }
 .cruci-len { color: #666; font-size: 0.8rem; }
 .juego-exito { color: #8fbf9f; font-weight: bold; font-size: 1.1rem; margin: 0.8rem 0 0.4rem; }
+
+/* --- Wordle (adivina la palabra) --- */
+.wordle-tablero { display: flex; flex-direction: column; gap: 4px; margin: 1rem 0; }
+.wordle-fila { display: flex; gap: 4px; align-items: center; }
+.wordle-celda {
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  background: #1d1d1d;
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.wordle-celda.bien { background: #14201a; border-color: #4a7; color: #8fbf9f; }
+.wordle-celda.casi { background: #262113; border-color: #b7a86a; color: #d9c87a; }
+.wordle-celda.no { background: #161616; border-color: #262626; color: #666; }
+.wordle-glosa { color: #888; font-size: 0.8rem; margin-left: 0.6rem; }
+.wordle-candidatas { color: #9ad; font-size: 0.85rem; }
+
+/* --- Sopa de letras --- */
+.sopa-tablero { display: grid; gap: 2px; width: max-content; margin: 1rem auto; }
+.sopa-celda {
+  width: 1.9rem;
+  height: 1.9rem;
+  padding: 0;
+  border: 1px solid #262626;
+  border-radius: 4px;
+  background: #1d1d1d;
+  color: #ddd;
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.1s ease, background 0.1s ease;
+}
+.sopa-celda:hover { border-color: #6a8cff; }
+.sopa-celda.inicio { border-color: #6a8cff; background: #141a26; color: #9ad; }
+.sopa-celda.hallada { background: #14201a; border-color: #35563f; color: #8fbf9f; }
+.sopa-pistas { list-style: none; padding: 0; margin: 0.5rem 0; columns: 2; }
+.sopa-pistas li { color: #ccc; font-size: 0.95rem; line-height: 1.8; }
+.sopa-pistas li.hallada { color: #666; text-decoration: line-through; }
+.sopa-pistas li.hallada .sopa-solucion {
+  color: #8fbf9f;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 0.4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
