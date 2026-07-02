@@ -98,6 +98,8 @@ N = par["palabras"]
 
 # --- Portada ---------------------------------------------------------------
 story.append(Spacer(1, 2.6 * cm))
+story.append(Paragraph("Sección 2 — Repaso espaciado", St("secmarker", fontSize=13,
+             textColor=AZUL2, alignment=TA_CENTER, fontName="Helvetica-Bold", spaceAfter=6)))
 story.append(Paragraph("Métricas — Repaso espaciado", STIT))
 story.append(Paragraph("Comparación SM-2 vs Leitner por simulación, analítica de la "
                        "cadena de Markov y modelo de conocimiento", SSUB))

@@ -193,6 +193,8 @@ def tabla(filas, anchos):
 
 
 story.append(Spacer(1, 2.6 * cm))
+story.append(Paragraph("Sección 1 — Lectura", St("secmarker", fontSize=13,
+             textColor=AZUL2, alignment=TA_CENTER, fontName="Helvetica-Bold", spaceAfter=6)))
 story.append(Paragraph("Reporte de métricas", STIT))
 story.append(Paragraph("Plataforma de idiomas — sistema de lectura y pipeline de PLN", SSUB))
 story.append(Spacer(1, 0.3 * cm))

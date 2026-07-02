@@ -147,6 +147,9 @@ def recursos(items):
 #  PORTADA
 # =========================================================================
 story.append(Spacer(1, 3.3 * cm))
+story.append(Paragraph("Sección 1 — Lectura", ParagraphStyle(
+    "secmarker", parent=S["subtitulo"], textColor=AZUL2,
+    fontName="Helvetica-Bold", fontSize=13, spaceAfter=6)))
 story.append(Paragraph("Plan de aprendizaje práctico", S["titulo"]))
 story.append(Paragraph("Cómo dominar (y saber construir tú mismo) la sección de lectura "
                        "y su pipeline de PLN", S["subtitulo"]))

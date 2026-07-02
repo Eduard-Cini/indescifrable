@@ -146,6 +146,9 @@ def callout(tipo, titulo, cuerpo):
 #  PORTADA
 # =========================================================================
 story.append(Spacer(1, 3.5 * cm))
+story.append(Paragraph("Sección 1 — Lectura", ParagraphStyle(
+    "secmarker", parent=S["subtitulo"], textColor=AZUL2,
+    fontName="Helvetica-Bold", fontSize=13, spaceAfter=6)))
 story.append(Paragraph("Plataforma web para el aprendizaje de idiomas", S["titulo"]))
 story.append(Paragraph("Documentación técnica: sistema de lectura y pipeline de PLN",
                        S["subtitulo"]))
