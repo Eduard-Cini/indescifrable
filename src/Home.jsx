@@ -25,10 +25,10 @@ function Home() {
           <p>Repetición espaciada (SM-2) sobre tu bolsa de palabras.</p>
         </Link>
 
-        <div className="seccion-card proximamente">
+        <Link to="/gramatica" className="seccion-card gramatica">
           <h2>✍️ Gramática</h2>
-          <p>Ejercicios cloze a partir de los textos. Próximamente.</p>
-        </div>
+          <p>Ejercicios cloze de alemán por tema: declinación, casos, conjugación y verbos separables.</p>
+        </Link>
       </main>
     </div>
   );

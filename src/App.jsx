@@ -5,6 +5,8 @@ import Biblioteca from './secciones/lectura/Biblioteca';
 import Lector from './secciones/lectura/Lector';
 import Bolsa from './secciones/lectura/Bolsa';
 import Repaso from './secciones/repaso/Repaso';
+import Gramatica from './secciones/gramatica/Gramatica';
+import Ejercicios from './secciones/gramatica/Ejercicios';
 import './App.css';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
         <Route path="/lectura/:idioma/:nivel/:id" element={<Lector />} />
         <Route path="/bolsa" element={<Bolsa />} />
         <Route path="/repaso" element={<Repaso />} />
+        <Route path="/gramatica" element={<Gramatica />} />
+        <Route path="/gramatica/:tema" element={<Ejercicios />} />
       </Routes>
     </BrowserRouter>
   );
