@@ -14,7 +14,7 @@
 // Sin DOM ni localStorage; azar solo por el LCG determinista de board.js →
 // mismo crucigrama para la misma semilla.
 
-import { barajar, crearGeneradorNormalizado } from './board';
+import { barajar, crearGeneradorNormalizado } from './board.js';
 
 const PRESUPUESTO_NODOS = 5000;
 

@@ -1,4 +1,5 @@
-import { diccionarios } from '../data/diccionarios';
+// Extensión explícita: también se importa desde node (simulacion/*.mjs).
+import { diccionarios } from '../data/diccionarios.js';
 
 // Códigos compactos de 2 caracteres para incrustar el vocabulario en la semilla.
 // Primera letra = idioma (S/E/D), segunda = nivel (E/P/I/A). XX = personalizado.

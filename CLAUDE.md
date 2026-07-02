@@ -4,7 +4,8 @@ Sitio de aprendizaje de idiomas (es/en/de) como tesis en **matemática algorítm
 La aportación es el modelado matemático/algorítmico; el sitio es el vehículo.
 Cuatro vertientes: (1) **Lectura** ✅, (2) **Repaso espaciado** ✅ (SM-2 en producción +
 comparación Leitner/Markov por simulación), (3) **Gramática cloze** ✅ (spaCy + distractores
-híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
+híbridos paradigma/coseno), (4) **Juegos** ✅ (Codenames + escalera BFS + crucigrama
+backtracking).
 
 ## Estado actual (hecho)
 - **Sección Lectura completa**: biblioteca (idioma/nivel), lector con traducción por
@@ -49,13 +50,29 @@ híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
   Motor puro `src/engine/gramatica.js` (sesión/opciones deterministas por semilla; normaliza
   el LCG de board.js a [0,1)); UI en `/gramatica` (`src/secciones/gramatica/`), JSON por
   dynamic import (chunk aparte).
-- **Motor puro + Vitest** (61 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica).
+- **Sección Juegos (pipeline + motores + UI)**: /juegos es el HUB de tres juegos; Codenames
+  intacto en /juegos/codenames. **Escalera de palabras** (/juegos/escalera):
+  `src/engine/escalera.js` — grafo de Hamming 1 por cubetas comodín O(n·L), BFS de camino
+  mínimo, retos deterministas por semilla a distancia EXACTA (selector 3-5 letras y 3-6
+  pasos; pista/deshacer/rendirse; glosa española por peldaño). **Crucigrama**
+  (/juegos/crucigrama): `src/engine/crucigrama.js` — backtracking (anclaje en cruces,
+  más-cruces-primero, presupuesto 5.000 nodos con degradación n→n−1), numeración clásica;
+  palabra alemana + pista española; cuadrícula interactiva (foco direccional, click alterna
+  H/V). Datos: `pipeline/juegos.py` → `src/data/juegos.json` (escalera: formas ASCII L=3-5
+  con glosa — sin umlauts por tecleo; crucigrama: 400 lemas frecuencia ≥2 sin funcionales),
+  chunk aparte por dynamic import. Métricas reales: `npm run simular-juegos`
+  (`simulacion/juegos-stats.mjs` corre los motores de producción → `docs/datos-juegos.json`;
+  backtracking 100% éxito en n=6/8/10 a <0,5 ms; componente gigante 62/115/64 por longitud).
+  `board.js` ahora exporta `crearGeneradorNormalizado` (antes helper privado de gramatica.js)
+  y los imports internos del engine llevan extensión `.js` (los usa node).
+- **Motor puro + Vitest** (101 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:
   - **Sección 1 — Lectura**: `documentacion-seccion1`, `metricas-seccion1` (cobertura, chrF; carga opus-mt al regenerar), `autoaprendizaje-seccion1`.
   - **Sección 2 — Repaso**: `documentacion-seccion2`, `metricas-seccion2` (simulación + Markov + modelo de conocimiento), `autoaprendizaje-seccion2`.
   - **Sección 3 — Gramática**: `documentacion-seccion3`, `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus), `autoaprendizaje-seccion3`.
+  - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
@@ -64,13 +81,14 @@ híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
    estado en `localStorage`. Catálogo se autocarga con `import.meta.glob`.
 
 ## Comandos
-Frontend: `npm run dev` · `npm run build` · `npm test` · `npm run simular` (SM-2 vs Leitner → docs/datos-simulacion.json).
+Frontend: `npm run dev` · `npm run build` · `npm test` · `npm run simular` (SM-2 vs Leitner → docs/datos-simulacion.json) · `npm run simular-juegos` (estadísticas de juegos → docs/datos-juegos.json).
 Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Ingerir libro: `python pipeline/procesar.py <libro>` (libros en dict `LIBROS`; añadir texto con `fuentes_descargar.py <id> <nombre>`).
 - Léxico (todas las lecturas): `python pipeline/construir_lexico.py`.
 - Frecuencias por lema (para el modelo de conocimiento): `python pipeline/frecuencias.py` (re-ejecutar al añadir lecturas).
 - Overrides separables (principiante/intermedio, curados a mano): `python pipeline/overrides_lecturas.py`.
 - Ejercicios de gramática (todas las lecturas de): `python pipeline/gramatica.py [tema ...]` → `src/data/gramatica.json` (re-ejecutar al añadir lecturas).
+- Datos de juegos (escalera + crucigrama): `python pipeline/juegos.py` → `src/data/juegos.json` (re-ejecutar al añadir lecturas).
 - Frase por MT: `python pipeline/traducir_mt.py <prefijo>`.
 - Frase por LLM: `exportar_frases.py <id>` → pegar en Gemini → `importar_traduccion.py <id> <archivo>` (valida 1:1).
 - Regenerar PDFs: `python docs/generar_*.py` (el de `metricas-seccion1` carga opus-mt para recalcular chrF; tarda ~1 min).
@@ -91,7 +109,8 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 ## Próximo trabajo (prioridad)
 1. Menores de gramática: más temas (orden de palabras/verbo en 2ª posición, Konjunktiv),
    progreso persistente por tema en localStorage, ejercicios también en inglés.
-2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking), opcional FSRS/retención objetivo en la simulación (ejercicios en autoaprendizaje-seccion2.pdf).
+2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, opcional FSRS/retención objetivo en la simulación (ejercicios en autoaprendizaje-seccion2.pdf).
+3. Menores de juegos: reto diario (semilla = fecha), crucigrama con la bolsa del usuario como pool (puente con la Sección 2), umlauts como ae/oe/ue en la escalera (experimentos en autoaprendizaje-seccion4.pdf).
 
 ## Cómo continuar en una sesión nueva
 Este archivo se carga solo. Cada sección tiene sus tres PDFs en `docs/`

@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "test:watch": "vitest",
-    "simular": "node simulacion/comparar.mjs"
+    "simular": "node simulacion/comparar.mjs",
+    "simular-juegos": "node simulacion/juegos-stats.mjs"
   },
   "dependencies": {
     "react": "^19.2.4",

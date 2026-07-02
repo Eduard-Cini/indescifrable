@@ -14,7 +14,7 @@
 // Sin DOM ni localStorage (testeable con Vitest); el azar entra por el LCG
 // determinista de board.js → mismos retos para la misma semilla.
 
-import { barajar, crearGeneradorNormalizado } from './board';
+import { barajar, crearGeneradorNormalizado } from './board.js';
 
 /** ¿Difieren exactamente en una letra (misma longitud)? */
 export function sonVecinas(a, b) {

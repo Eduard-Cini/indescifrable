@@ -1,0 +1,154 @@
+{
+ "generado": "2026-07-02",
+ "entradasCrucigrama": 400,
+ "escalera": {
+  "3": {
+   "nodos": 97,
+   "aristas": 136,
+   "aisladas": 5,
+   "numComponentes": 11,
+   "mayoresComponentes": [
+    62,
+    16,
+    5,
+    5,
+    2
+   ],
+   "diametro": 19,
+   "distanciaMedia": 6.08,
+   "paresAlcanzables": 2033,
+   "paresPorDistancia": {
+    "1": 136,
+    "2": 204,
+    "3": 237,
+    "4": 234,
+    "5": 194,
+    "6": 180,
+    "7": 176,
+    "8": 167,
+    "9": 151,
+    "10": 114,
+    "11": 74,
+    "12": 53,
+    "13": 45,
+    "14": 33,
+    "15": 19,
+    "16": 8,
+    "17": 4,
+    "18": 3,
+    "19": 1
+   },
+   "hayRetoConPasos": {
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true
+   }
+  },
+  "4": {
+   "nodos": 268,
+   "aristas": 277,
+   "aisladas": 75,
+   "numComponentes": 95,
+   "mayoresComponentes": [
+    115,
+    16,
+    15,
+    9,
+    4
+   ],
+   "diametro": 16,
+   "distanciaMedia": 6.88,
+   "paresAlcanzables": 6845,
+   "paresPorDistancia": {
+    "1": 277,
+    "2": 395,
+    "3": 533,
+    "4": 624,
+    "5": 656,
+    "6": 672,
+    "7": 704,
+    "8": 737,
+    "9": 673,
+    "10": 573,
+    "11": 439,
+    "12": 292,
+    "13": 163,
+    "14": 77,
+    "15": 26,
+    "16": 4
+   },
+   "hayRetoConPasos": {
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true
+   }
+  },
+  "5": {
+   "nodos": 445,
+   "aristas": 315,
+   "aisladas": 176,
+   "numComponentes": 223,
+   "mayoresComponentes": [
+    64,
+    25,
+    18,
+    12,
+    10
+   ],
+   "diametro": 12,
+   "distanciaMedia": 4.46,
+   "paresAlcanzables": 2832,
+   "paresPorDistancia": {
+    "1": 315,
+    "2": 372,
+    "3": 413,
+    "4": 415,
+    "5": 397,
+    "6": 329,
+    "7": 259,
+    "8": 175,
+    "9": 87,
+    "10": 49,
+    "11": 17,
+    "12": 4
+   },
+   "hayRetoConPasos": {
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true
+   }
+  }
+ },
+ "crucigrama": {
+  "6": {
+   "semillas": 200,
+   "tasaExito": 1,
+   "palabrasMedias": 6,
+   "densidadMedia": 0.285,
+   "crucesMedios": 5.08,
+   "casillasMedias": 33.7,
+   "msPorTablero": 0.32
+  },
+  "8": {
+   "semillas": 200,
+   "tasaExito": 1,
+   "palabrasMedias": 8,
+   "densidadMedia": 0.268,
+   "crucesMedios": 7.15,
+   "casillasMedias": 43.4,
+   "msPorTablero": 0.25
+  },
+  "10": {
+   "semillas": 200,
+   "tasaExito": 1,
+   "palabrasMedias": 10,
+   "densidadMedia": 0.255,
+   "crucesMedios": 9.19,
+   "casillasMedias": 53.1,
+   "msPorTablero": 0.38
+  }
+ }
+}
