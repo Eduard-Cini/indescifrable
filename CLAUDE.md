@@ -2,8 +2,8 @@
 
 Sitio de aprendizaje de idiomas (es/en/de) como tesis en **matemática algorítmica**.
 La aportación es el modelado matemático/algorítmico; el sitio es el vehículo.
-Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (SM-2 ✅ · simulación Leitner/Markov ⏳),
-(3) Gramática cloze con spaCy ⏳, (4) Juegos (Codenames ✅).
+Cuatro vertientes: (1) **Lectura** ✅, (2) **Repaso espaciado** ✅ (SM-2 en producción +
+comparación Leitner/Markov por simulación), (3) Gramática cloze con spaCy ⏳, (4) Juegos (Codenames ✅).
 
 ## Estado actual (hecho)
 - **Sección Lectura completa**: biblioteca (idioma/nivel), lector con traducción por
@@ -25,8 +25,14 @@ Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (SM-2 ✅ · simula
   el Lector interpone `RepasoPrevio` con las menos probables (tope: 5/12/20 por nivel),
   saltable, máx. 1 vez/día/lectura (`repasoPrevio.v1`); «ya la conocía» → `conocidas.v1`.
   Frecuencias del corpus: `pipeline/frecuencias.py` → `src/data/frecuencias.json` (chunk aparte).
-- **Motor puro + Vitest** (40 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento).
-- **Docs** en `docs/*.pdf`: técnica, plan-de-aprendizaje, reporte-metricas (+ sus `generar_*.py`).
+- **Comparación Leitner vs SM-2** (núcleo matemático): `src/engine/leitner.js` (5 cajas +
+  cadena de Markov: matriz, estacionaria π, E[repasos hasta caja 5] = Σ p^(−j), días, tasa
+  1/Σ π·I) y `simulacion/comparar.mjs` (`npm run simular`): alumno sintético e^(−Δ/S) sobre
+  los motores reales → `docs/datos-simulacion.json`. Resultado: Leitner retiene ~5 pp más
+  pero cuesta ~50% más presentaciones (techo de caja 5 = sobre-repaso); SM-2 justificado.
+- **Motor puro + Vitest** (49 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner).
+- **Docs** en `docs/*.pdf`: técnica, plan-de-aprendizaje, reporte-metricas + Sección 2:
+  documentacion-repaso, metricas-repaso (simulación+Markov), ruta-aprendizaje-repaso (+ sus `generar_*.py`).
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
@@ -35,7 +41,7 @@ Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (SM-2 ✅ · simula
    estado en `localStorage`. Catálogo se autocarga con `import.meta.glob`.
 
 ## Comandos
-Frontend: `npm run dev` · `npm run build` · `npm test`.
+Frontend: `npm run dev` · `npm run build` · `npm test` · `npm run simular` (SM-2 vs Leitner → docs/datos-simulacion.json).
 Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Ingerir libro: `python pipeline/procesar.py <libro>` (libros en dict `LIBROS`; añadir texto con `fuentes_descargar.py <id> <nombre>`).
 - Léxico (todas las lecturas): `python pipeline/construir_lexico.py`.
@@ -59,9 +65,8 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Cobertura por palabra: 100% principiante/intermedio, ~92-94% libros. MT vs Gemini: chrF 61.9.
 
 ## Próximo trabajo (prioridad)
-1. **Sección 2 — parte matemática**: modelar Leitner como cadena de Markov y compararlo con SM-2 por **simulación** (alumno sintético con curva de olvido; opcional FSRS). El motor ya está listo para esto: `calificar(srs, q, ahora)` es puro con tiempo inyectado. Es el **núcleo matemático** de la tesis.
-2. **Sección 3 — Gramática**: cloze con spaCy Matcher/DependencyMatcher sobre los textos; distractores por similitud coseno (embeddings).
-3. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking).
+1. **Sección 3 — Gramática**: cloze con spaCy Matcher/DependencyMatcher sobre los textos; distractores por similitud coseno (embeddings).
+2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking), opcional FSRS/retención objetivo en la simulación (ejercicios en ruta-aprendizaje-repaso.pdf).
 
 ## Cómo continuar en una sesión nueva
 Este archivo se carga solo. Además, revisar `docs/documentacion-tecnica.pdf` (cómo está resuelto todo)

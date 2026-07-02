@@ -1,0 +1,1920 @@
+{
+ "parametros": {
+  "seed": 42,
+  "horizonteDias": 150,
+  "nuevasPorDia": 8,
+  "diasDeAlta": 60,
+  "palabras": 480,
+  "modeloOlvido": "P(recordar tras Δ) = exp(−Δ/S); acierto: S·g; fallo: max(S0, 0.5·S)",
+  "dificultad": "d ~ U(0.3, 0.9); S0 ~ U(6, 16) días; g = 2.2 + (1−d)·1.4"
+ },
+ "sm2": {
+  "serie": [
+   {
+    "dia": 0,
+    "repasos": 8,
+    "retencion": 1,
+    "maduras": 0
+   },
+   {
+    "dia": 1,
+    "repasos": 17,
+    "retencion": 1,
+    "maduras": 0
+   },
+   {
+    "dia": 2,
+    "repasos": 18,
+    "retencion": 0.9908623068842658,
+    "maduras": 0
+   },
+   {
+    "dia": 3,
+    "repasos": 19,
+    "retencion": 0.9768900669411966,
+    "maduras": 0
+   },
+   {
+    "dia": 4,
+    "repasos": 19,
+    "retencion": 0.9623319923001914,
+    "maduras": 0
+   },
+   {
+    "dia": 5,
+    "repasos": 18,
+    "retencion": 0.9457199118946117,
+    "maduras": 0
+   },
+   {
+    "dia": 6,
+    "repasos": 17,
+    "retencion": 0.9307350866900063,
+    "maduras": 0
+   },
+   {
+    "dia": 7,
+    "repasos": 28,
+    "retencion": 0.9343447851133991,
+    "maduras": 0
+   },
+   {
+    "dia": 8,
+    "repasos": 33,
+    "retencion": 0.9431490685813273,
+    "maduras": 0
+   },
+   {
+    "dia": 9,
+    "repasos": 29,
+    "retencion": 0.9452706591645228,
+    "maduras": 0
+   },
+   {
+    "dia": 10,
+    "repasos": 30,
+    "retencion": 0.9501675629641405,
+    "maduras": 0
+   },
+   {
+    "dia": 11,
+    "repasos": 30,
+    "retencion": 0.9464868606983224,
+    "maduras": 0
+   },
+   {
+    "dia": 12,
+    "repasos": 33,
+    "retencion": 0.946635145227779,
+    "maduras": 0
+   },
+   {
+    "dia": 13,
+    "repasos": 27,
+    "retencion": 0.9409649624061368,
+    "maduras": 0
+   },
+   {
+    "dia": 14,
+    "repasos": 33,
+    "retencion": 0.9439196126867151,
+    "maduras": 0
+   },
+   {
+    "dia": 15,
+    "repasos": 34,
+    "retencion": 0.9465975378807767,
+    "maduras": 0
+   },
+   {
+    "dia": 16,
+    "repasos": 28,
+    "retencion": 0.9414653388455747,
+    "maduras": 0
+   },
+   {
+    "dia": 17,
+    "repasos": 31,
+    "retencion": 0.9388794518450287,
+    "maduras": 0
+   },
+   {
+    "dia": 18,
+    "repasos": 33,
+    "retencion": 0.9373378813583714,
+    "maduras": 0
+   },
+   {
+    "dia": 19,
+    "repasos": 37,
+    "retencion": 0.937583055027836,
+    "maduras": 0
+   },
+   {
+    "dia": 20,
+    "repasos": 33,
+    "retencion": 0.9326765809515077,
+    "maduras": 0
+   },
+   {
+    "dia": 21,
+    "repasos": 36,
+    "retencion": 0.9316919674948463,
+    "maduras": 1
+   },
+   {
+    "dia": 22,
+    "repasos": 38,
+    "retencion": 0.9340093418582671,
+    "maduras": 6
+   },
+   {
+    "dia": 23,
+    "repasos": 39,
+    "retencion": 0.9314784022499144,
+    "maduras": 9
+   },
+   {
+    "dia": 24,
+    "repasos": 46,
+    "retencion": 0.9346380411524717,
+    "maduras": 13
+   },
+   {
+    "dia": 25,
+    "repasos": 44,
+    "retencion": 0.9372497500414383,
+    "maduras": 19
+   },
+   {
+    "dia": 26,
+    "repasos": 42,
+    "retencion": 0.9364268900088667,
+    "maduras": 24
+   },
+   {
+    "dia": 27,
+    "repasos": 45,
+    "retencion": 0.9382138156484372,
+    "maduras": 31
+   },
+   {
+    "dia": 28,
+    "repasos": 47,
+    "retencion": 0.9400292630260632,
+    "maduras": 38
+   },
+   {
+    "dia": 29,
+    "repasos": 42,
+    "retencion": 0.9388771295612016,
+    "maduras": 44
+   },
+   {
+    "dia": 30,
+    "repasos": 47,
+    "retencion": 0.9431494419102516,
+    "maduras": 55
+   },
+   {
+    "dia": 31,
+    "repasos": 42,
+    "retencion": 0.9449200404882021,
+    "maduras": 62
+   },
+   {
+    "dia": 32,
+    "repasos": 45,
+    "retencion": 0.9473149193082191,
+    "maduras": 69
+   },
+   {
+    "dia": 33,
+    "repasos": 43,
+    "retencion": 0.9465176450220224,
+    "maduras": 72
+   },
+   {
+    "dia": 34,
+    "repasos": 49,
+    "retencion": 0.9478137662704373,
+    "maduras": 76
+   },
+   {
+    "dia": 35,
+    "repasos": 47,
+    "retencion": 0.9493031486685162,
+    "maduras": 81
+   },
+   {
+    "dia": 36,
+    "repasos": 40,
+    "retencion": 0.9471226729096737,
+    "maduras": 87
+   },
+   {
+    "dia": 37,
+    "repasos": 40,
+    "retencion": 0.9472203174753735,
+    "maduras": 97
+   },
+   {
+    "dia": 38,
+    "repasos": 40,
+    "retencion": 0.9447021206861046,
+    "maduras": 100
+   },
+   {
+    "dia": 39,
+    "repasos": 41,
+    "retencion": 0.9414632237224356,
+    "maduras": 105
+   },
+   {
+    "dia": 40,
+    "repasos": 48,
+    "retencion": 0.9421219904965068,
+    "maduras": 110
+   },
+   {
+    "dia": 41,
+    "repasos": 53,
+    "retencion": 0.9430001087779832,
+    "maduras": 117
+   },
+   {
+    "dia": 42,
+    "repasos": 51,
+    "retencion": 0.943608883155922,
+    "maduras": 127
+   },
+   {
+    "dia": 43,
+    "repasos": 43,
+    "retencion": 0.9432963711623347,
+    "maduras": 135
+   },
+   {
+    "dia": 44,
+    "repasos": 42,
+    "retencion": 0.9414114046983377,
+    "maduras": 143
+   },
+   {
+    "dia": 45,
+    "repasos": 44,
+    "retencion": 0.9402606348325773,
+    "maduras": 152
+   },
+   {
+    "dia": 46,
+    "repasos": 39,
+    "retencion": 0.9389145170041356,
+    "maduras": 158
+   },
+   {
+    "dia": 47,
+    "repasos": 48,
+    "retencion": 0.9397583814716194,
+    "maduras": 168
+   },
+   {
+    "dia": 48,
+    "repasos": 55,
+    "retencion": 0.9410760900312488,
+    "maduras": 174
+   },
+   {
+    "dia": 49,
+    "repasos": 54,
+    "retencion": 0.9421217300843171,
+    "maduras": 184
+   },
+   {
+    "dia": 50,
+    "repasos": 44,
+    "retencion": 0.9427816011921354,
+    "maduras": 189
+   },
+   {
+    "dia": 51,
+    "repasos": 49,
+    "retencion": 0.9421556714159869,
+    "maduras": 196
+   },
+   {
+    "dia": 52,
+    "repasos": 46,
+    "retencion": 0.940520040332261,
+    "maduras": 204
+   },
+   {
+    "dia": 53,
+    "repasos": 45,
+    "retencion": 0.9391876227311199,
+    "maduras": 212
+   },
+   {
+    "dia": 54,
+    "repasos": 46,
+    "retencion": 0.9371326160656804,
+    "maduras": 220
+   },
+   {
+    "dia": 55,
+    "repasos": 57,
+    "retencion": 0.9382805809736514,
+    "maduras": 223
+   },
+   {
+    "dia": 56,
+    "repasos": 45,
+    "retencion": 0.9364497074485549,
+    "maduras": 230
+   },
+   {
+    "dia": 57,
+    "repasos": 44,
+    "retencion": 0.9354673256495476,
+    "maduras": 236
+   },
+   {
+    "dia": 58,
+    "repasos": 50,
+    "retencion": 0.9363833743166978,
+    "maduras": 244
+   },
+   {
+    "dia": 59,
+    "repasos": 49,
+    "retencion": 0.9367147134648312,
+    "maduras": 253
+   },
+   {
+    "dia": 60,
+    "repasos": 44,
+    "retencion": 0.9355431121303148,
+    "maduras": 258
+   },
+   {
+    "dia": 61,
+    "repasos": 40,
+    "retencion": 0.9363012324189087,
+    "maduras": 265
+   },
+   {
+    "dia": 62,
+    "repasos": 38,
+    "retencion": 0.9366231556970912,
+    "maduras": 276
+   },
+   {
+    "dia": 63,
+    "repasos": 43,
+    "retencion": 0.9396137976268618,
+    "maduras": 284
+   },
+   {
+    "dia": 64,
+    "repasos": 35,
+    "retencion": 0.939815426836735,
+    "maduras": 293
+   },
+   {
+    "dia": 65,
+    "repasos": 33,
+    "retencion": 0.9421779228079836,
+    "maduras": 299
+   },
+   {
+    "dia": 66,
+    "repasos": 31,
+    "retencion": 0.9444434857079388,
+    "maduras": 309
+   },
+   {
+    "dia": 67,
+    "repasos": 29,
+    "retencion": 0.9444980914087733,
+    "maduras": 318
+   },
+   {
+    "dia": 68,
+    "repasos": 32,
+    "retencion": 0.9442077654266934,
+    "maduras": 322
+   },
+   {
+    "dia": 69,
+    "repasos": 33,
+    "retencion": 0.9451553807461244,
+    "maduras": 328
+   },
+   {
+    "dia": 70,
+    "repasos": 31,
+    "retencion": 0.94643845116996,
+    "maduras": 336
+   },
+   {
+    "dia": 71,
+    "repasos": 24,
+    "retencion": 0.9459258056768755,
+    "maduras": 343
+   },
+   {
+    "dia": 72,
+    "repasos": 27,
+    "retencion": 0.947073860452022,
+    "maduras": 353
+   },
+   {
+    "dia": 73,
+    "repasos": 19,
+    "retencion": 0.9478662632617663,
+    "maduras": 360
+   },
+   {
+    "dia": 74,
+    "repasos": 19,
+    "retencion": 0.9482840310377638,
+    "maduras": 373
+   },
+   {
+    "dia": 75,
+    "repasos": 29,
+    "retencion": 0.9493500456621037,
+    "maduras": 380
+   },
+   {
+    "dia": 76,
+    "repasos": 27,
+    "retencion": 0.9498203223142287,
+    "maduras": 388
+   },
+   {
+    "dia": 77,
+    "repasos": 22,
+    "retencion": 0.9491424050965389,
+    "maduras": 390
+   },
+   {
+    "dia": 78,
+    "repasos": 32,
+    "retencion": 0.9510387564955854,
+    "maduras": 403
+   },
+   {
+    "dia": 79,
+    "repasos": 23,
+    "retencion": 0.9520123566931501,
+    "maduras": 409
+   },
+   {
+    "dia": 80,
+    "repasos": 26,
+    "retencion": 0.9544729819453802,
+    "maduras": 421
+   },
+   {
+    "dia": 81,
+    "repasos": 15,
+    "retencion": 0.9558409546130944,
+    "maduras": 427
+   },
+   {
+    "dia": 82,
+    "repasos": 18,
+    "retencion": 0.9553119892805132,
+    "maduras": 428
+   },
+   {
+    "dia": 83,
+    "repasos": 22,
+    "retencion": 0.9550797456363387,
+    "maduras": 432
+   },
+   {
+    "dia": 84,
+    "repasos": 15,
+    "retencion": 0.9546228924975598,
+    "maduras": 432
+   },
+   {
+    "dia": 85,
+    "repasos": 15,
+    "retencion": 0.9544805283129968,
+    "maduras": 432
+   },
+   {
+    "dia": 86,
+    "repasos": 18,
+    "retencion": 0.9541137392535238,
+    "maduras": 438
+   },
+   {
+    "dia": 87,
+    "repasos": 20,
+    "retencion": 0.9547454794327226,
+    "maduras": 436
+   },
+   {
+    "dia": 88,
+    "repasos": 15,
+    "retencion": 0.9544032327335918,
+    "maduras": 441
+   },
+   {
+    "dia": 89,
+    "repasos": 19,
+    "retencion": 0.9544160810399219,
+    "maduras": 443
+   },
+   {
+    "dia": 90,
+    "repasos": 18,
+    "retencion": 0.954973421620382,
+    "maduras": 444
+   },
+   {
+    "dia": 91,
+    "repasos": 13,
+    "retencion": 0.9547401149461572,
+    "maduras": 444
+   },
+   {
+    "dia": 92,
+    "repasos": 12,
+    "retencion": 0.954158034377109,
+    "maduras": 442
+   },
+   {
+    "dia": 93,
+    "repasos": 7,
+    "retencion": 0.9526012540538902,
+    "maduras": 443
+   },
+   {
+    "dia": 94,
+    "repasos": 18,
+    "retencion": 0.9524801712151783,
+    "maduras": 443
+   },
+   {
+    "dia": 95,
+    "repasos": 20,
+    "retencion": 0.9528708204930171,
+    "maduras": 444
+   },
+   {
+    "dia": 96,
+    "repasos": 17,
+    "retencion": 0.9531167441996524,
+    "maduras": 443
+   },
+   {
+    "dia": 97,
+    "repasos": 13,
+    "retencion": 0.9527825885103641,
+    "maduras": 445
+   },
+   {
+    "dia": 98,
+    "repasos": 16,
+    "retencion": 0.9529747969238463,
+    "maduras": 448
+   },
+   {
+    "dia": 99,
+    "repasos": 15,
+    "retencion": 0.9539554959461316,
+    "maduras": 448
+   },
+   {
+    "dia": 100,
+    "repasos": 15,
+    "retencion": 0.9541094787755391,
+    "maduras": 451
+   },
+   {
+    "dia": 101,
+    "repasos": 13,
+    "retencion": 0.9540603409381767,
+    "maduras": 452
+   },
+   {
+    "dia": 102,
+    "repasos": 23,
+    "retencion": 0.9555953414805972,
+    "maduras": 451
+   },
+   {
+    "dia": 103,
+    "repasos": 19,
+    "retencion": 0.9560926492693319,
+    "maduras": 450
+   },
+   {
+    "dia": 104,
+    "repasos": 12,
+    "retencion": 0.9565625651239821,
+    "maduras": 449
+   },
+   {
+    "dia": 105,
+    "repasos": 7,
+    "retencion": 0.9559462062574987,
+    "maduras": 449
+   },
+   {
+    "dia": 106,
+    "repasos": 15,
+    "retencion": 0.9558325726508546,
+    "maduras": 449
+   },
+   {
+    "dia": 107,
+    "repasos": 12,
+    "retencion": 0.9557790311813383,
+    "maduras": 450
+   },
+   {
+    "dia": 108,
+    "repasos": 18,
+    "retencion": 0.9568088107523045,
+    "maduras": 449
+   },
+   {
+    "dia": 109,
+    "repasos": 15,
+    "retencion": 0.9574919380475784,
+    "maduras": 450
+   },
+   {
+    "dia": 110,
+    "repasos": 16,
+    "retencion": 0.9587736144360658,
+    "maduras": 454
+   },
+   {
+    "dia": 111,
+    "repasos": 14,
+    "retencion": 0.9602553056195919,
+    "maduras": 454
+   },
+   {
+    "dia": 112,
+    "repasos": 14,
+    "retencion": 0.9610094604909296,
+    "maduras": 453
+   },
+   {
+    "dia": 113,
+    "repasos": 14,
+    "retencion": 0.9612175382302283,
+    "maduras": 452
+   },
+   {
+    "dia": 114,
+    "repasos": 23,
+    "retencion": 0.9625488098821796,
+    "maduras": 453
+   },
+   {
+    "dia": 115,
+    "repasos": 15,
+    "retencion": 0.9626817509775081,
+    "maduras": 454
+   },
+   {
+    "dia": 116,
+    "repasos": 13,
+    "retencion": 0.9638499135819051,
+    "maduras": 454
+   },
+   {
+    "dia": 117,
+    "repasos": 21,
+    "retencion": 0.9650701311485513,
+    "maduras": 455
+   },
+   {
+    "dia": 118,
+    "repasos": 15,
+    "retencion": 0.9664742784568833,
+    "maduras": 455
+   },
+   {
+    "dia": 119,
+    "repasos": 16,
+    "retencion": 0.9679472608279664,
+    "maduras": 454
+   },
+   {
+    "dia": 120,
+    "repasos": 13,
+    "retencion": 0.9676514086550116,
+    "maduras": 454
+   },
+   {
+    "dia": 121,
+    "repasos": 12,
+    "retencion": 0.9672405678785875,
+    "maduras": 455
+   },
+   {
+    "dia": 122,
+    "repasos": 6,
+    "retencion": 0.9662935891106746,
+    "maduras": 458
+   },
+   {
+    "dia": 123,
+    "repasos": 7,
+    "retencion": 0.9654173875535125,
+    "maduras": 458
+   },
+   {
+    "dia": 124,
+    "repasos": 8,
+    "retencion": 0.9647367386127134,
+    "maduras": 458
+   },
+   {
+    "dia": 125,
+    "repasos": 7,
+    "retencion": 0.9639264156076284,
+    "maduras": 458
+   },
+   {
+    "dia": 126,
+    "repasos": 13,
+    "retencion": 0.9643282449160994,
+    "maduras": 458
+   },
+   {
+    "dia": 127,
+    "repasos": 7,
+    "retencion": 0.9636168605880739,
+    "maduras": 459
+   },
+   {
+    "dia": 128,
+    "repasos": 4,
+    "retencion": 0.9629809315567254,
+    "maduras": 460
+   },
+   {
+    "dia": 129,
+    "repasos": 3,
+    "retencion": 0.9620312978144715,
+    "maduras": 460
+   },
+   {
+    "dia": 130,
+    "repasos": 4,
+    "retencion": 0.961220389762153,
+    "maduras": 460
+   },
+   {
+    "dia": 131,
+    "repasos": 6,
+    "retencion": 0.9606698353402536,
+    "maduras": 461
+   },
+   {
+    "dia": 132,
+    "repasos": 9,
+    "retencion": 0.9603182233185891,
+    "maduras": 463
+   },
+   {
+    "dia": 133,
+    "repasos": 9,
+    "retencion": 0.9598659943056482,
+    "maduras": 465
+   },
+   {
+    "dia": 134,
+    "repasos": 8,
+    "retencion": 0.9592984058993339,
+    "maduras": 467
+   },
+   {
+    "dia": 135,
+    "repasos": 8,
+    "retencion": 0.9584666641437991,
+    "maduras": 468
+   },
+   {
+    "dia": 136,
+    "repasos": 5,
+    "retencion": 0.9579436718615597,
+    "maduras": 466
+   },
+   {
+    "dia": 137,
+    "repasos": 8,
+    "retencion": 0.9571070926322041,
+    "maduras": 469
+   },
+   {
+    "dia": 138,
+    "repasos": 7,
+    "retencion": 0.9563958564308668,
+    "maduras": 470
+   },
+   {
+    "dia": 139,
+    "repasos": 8,
+    "retencion": 0.9557134450890509,
+    "maduras": 472
+   },
+   {
+    "dia": 140,
+    "repasos": 4,
+    "retencion": 0.9552464285476017,
+    "maduras": 472
+   },
+   {
+    "dia": 141,
+    "repasos": 3,
+    "retencion": 0.9543954725087732,
+    "maduras": 472
+   },
+   {
+    "dia": 142,
+    "repasos": 7,
+    "retencion": 0.9542329219471684,
+    "maduras": 472
+   },
+   {
+    "dia": 143,
+    "repasos": 12,
+    "retencion": 0.9538105525666329,
+    "maduras": 474
+   },
+   {
+    "dia": 144,
+    "repasos": 3,
+    "retencion": 0.9528769126875509,
+    "maduras": 475
+   },
+   {
+    "dia": 145,
+    "repasos": 4,
+    "retencion": 0.9520134052313826,
+    "maduras": 475
+   },
+   {
+    "dia": 146,
+    "repasos": 4,
+    "retencion": 0.9510776598355651,
+    "maduras": 475
+   },
+   {
+    "dia": 147,
+    "repasos": 6,
+    "retencion": 0.950403552055148,
+    "maduras": 475
+   },
+   {
+    "dia": 148,
+    "repasos": 4,
+    "retencion": 0.9498642603437004,
+    "maduras": 475
+   },
+   {
+    "dia": 149,
+    "repasos": 3,
+    "retencion": 0.9492667975187299,
+    "maduras": 474
+   },
+   {
+    "dia": 150,
+    "repasos": 7,
+    "retencion": 0.948680227180351,
+    "maduras": 474
+   }
+  ],
+  "totalPresentaciones": 3782,
+  "precisión": 0.8776342624065262,
+  "retencionFinal": 0.948680227180351,
+  "madurasFinal": 474
+ },
+ "leitner": {
+  "serie": [
+   {
+    "dia": 0,
+    "repasos": 8,
+    "retencion": 1,
+    "maduras": 0
+   },
+   {
+    "dia": 1,
+    "repasos": 16,
+    "retencion": 1,
+    "maduras": 0
+   },
+   {
+    "dia": 2,
+    "repasos": 16,
+    "retencion": 0.9894026493065416,
+    "maduras": 0
+   },
+   {
+    "dia": 3,
+    "repasos": 25,
+    "retencion": 0.9912347128340502,
+    "maduras": 0
+   },
+   {
+    "dia": 4,
+    "repasos": 26,
+    "retencion": 0.9919059810166939,
+    "maduras": 0
+   },
+   {
+    "dia": 5,
+    "repasos": 24,
+    "retencion": 0.9861528390319165,
+    "maduras": 0
+   },
+   {
+    "dia": 6,
+    "repasos": 28,
+    "retencion": 0.9865482455559773,
+    "maduras": 0
+   },
+   {
+    "dia": 7,
+    "repasos": 30,
+    "retencion": 0.9852873456665977,
+    "maduras": 0
+   },
+   {
+    "dia": 8,
+    "repasos": 33,
+    "retencion": 0.9865579064561921,
+    "maduras": 0
+   },
+   {
+    "dia": 9,
+    "repasos": 32,
+    "retencion": 0.9868313189336704,
+    "maduras": 0
+   },
+   {
+    "dia": 10,
+    "repasos": 33,
+    "retencion": 0.9871510256164978,
+    "maduras": 0
+   },
+   {
+    "dia": 11,
+    "repasos": 34,
+    "retencion": 0.9873338240683486,
+    "maduras": 0
+   },
+   {
+    "dia": 12,
+    "repasos": 35,
+    "retencion": 0.9860952498930046,
+    "maduras": 0
+   },
+   {
+    "dia": 13,
+    "repasos": 34,
+    "retencion": 0.9857543958326672,
+    "maduras": 0
+   },
+   {
+    "dia": 14,
+    "repasos": 37,
+    "retencion": 0.9849040839952063,
+    "maduras": 0
+   },
+   {
+    "dia": 15,
+    "repasos": 39,
+    "retencion": 0.9847431338483256,
+    "maduras": 7
+   },
+   {
+    "dia": 16,
+    "repasos": 46,
+    "retencion": 0.9870754648609693,
+    "maduras": 14
+   },
+   {
+    "dia": 17,
+    "repasos": 39,
+    "retencion": 0.9855163587250869,
+    "maduras": 21
+   },
+   {
+    "dia": 18,
+    "repasos": 45,
+    "retencion": 0.9870027390854778,
+    "maduras": 28
+   },
+   {
+    "dia": 19,
+    "repasos": 46,
+    "retencion": 0.9874384329651784,
+    "maduras": 34
+   },
+   {
+    "dia": 20,
+    "repasos": 47,
+    "retencion": 0.9880684810522573,
+    "maduras": 44
+   },
+   {
+    "dia": 21,
+    "repasos": 43,
+    "retencion": 0.9880990500928601,
+    "maduras": 52
+   },
+   {
+    "dia": 22,
+    "repasos": 45,
+    "retencion": 0.9882200099327361,
+    "maduras": 58
+   },
+   {
+    "dia": 23,
+    "repasos": 50,
+    "retencion": 0.9891258088750353,
+    "maduras": 67
+   },
+   {
+    "dia": 24,
+    "repasos": 37,
+    "retencion": 0.9879291896316553,
+    "maduras": 72
+   },
+   {
+    "dia": 25,
+    "repasos": 50,
+    "retencion": 0.9885005361747795,
+    "maduras": 78
+   },
+   {
+    "dia": 26,
+    "repasos": 43,
+    "retencion": 0.9877152410345401,
+    "maduras": 86
+   },
+   {
+    "dia": 27,
+    "repasos": 42,
+    "retencion": 0.9875484816685226,
+    "maduras": 91
+   },
+   {
+    "dia": 28,
+    "repasos": 46,
+    "retencion": 0.9875231545513714,
+    "maduras": 102
+   },
+   {
+    "dia": 29,
+    "repasos": 40,
+    "retencion": 0.9867428686412755,
+    "maduras": 105
+   },
+   {
+    "dia": 30,
+    "repasos": 43,
+    "retencion": 0.9862008047879505,
+    "maduras": 113
+   },
+   {
+    "dia": 31,
+    "repasos": 52,
+    "retencion": 0.9869111492594147,
+    "maduras": 123
+   },
+   {
+    "dia": 32,
+    "repasos": 47,
+    "retencion": 0.9867752076887082,
+    "maduras": 126
+   },
+   {
+    "dia": 33,
+    "repasos": 56,
+    "retencion": 0.9874919351363555,
+    "maduras": 137
+   },
+   {
+    "dia": 34,
+    "repasos": 53,
+    "retencion": 0.9878327225981829,
+    "maduras": 144
+   },
+   {
+    "dia": 35,
+    "repasos": 55,
+    "retencion": 0.9882838456107673,
+    "maduras": 153
+   },
+   {
+    "dia": 36,
+    "repasos": 57,
+    "retencion": 0.9886507965275126,
+    "maduras": 162
+   },
+   {
+    "dia": 37,
+    "repasos": 58,
+    "retencion": 0.9887048024297014,
+    "maduras": 174
+   },
+   {
+    "dia": 38,
+    "repasos": 54,
+    "retencion": 0.9887160328941371,
+    "maduras": 181
+   },
+   {
+    "dia": 39,
+    "repasos": 57,
+    "retencion": 0.9895881553344026,
+    "maduras": 191
+   },
+   {
+    "dia": 40,
+    "repasos": 46,
+    "retencion": 0.9891338230625231,
+    "maduras": 196
+   },
+   {
+    "dia": 41,
+    "repasos": 52,
+    "retencion": 0.9888634755506316,
+    "maduras": 203
+   },
+   {
+    "dia": 42,
+    "repasos": 57,
+    "retencion": 0.9904473286264763,
+    "maduras": 211
+   },
+   {
+    "dia": 43,
+    "repasos": 41,
+    "retencion": 0.9893885234746679,
+    "maduras": 215
+   },
+   {
+    "dia": 44,
+    "repasos": 62,
+    "retencion": 0.9898197034833822,
+    "maduras": 224
+   },
+   {
+    "dia": 45,
+    "repasos": 42,
+    "retencion": 0.9885201234223695,
+    "maduras": 231
+   },
+   {
+    "dia": 46,
+    "repasos": 55,
+    "retencion": 0.9896886672057557,
+    "maduras": 240
+   },
+   {
+    "dia": 47,
+    "repasos": 61,
+    "retencion": 0.9895060429494665,
+    "maduras": 250
+   },
+   {
+    "dia": 48,
+    "repasos": 54,
+    "retencion": 0.9894044076291353,
+    "maduras": 257
+   },
+   {
+    "dia": 49,
+    "repasos": 60,
+    "retencion": 0.9890980285394501,
+    "maduras": 268
+   },
+   {
+    "dia": 50,
+    "repasos": 67,
+    "retencion": 0.9903845920481619,
+    "maduras": 278
+   },
+   {
+    "dia": 51,
+    "repasos": 61,
+    "retencion": 0.9904625751609715,
+    "maduras": 284
+   },
+   {
+    "dia": 52,
+    "repasos": 62,
+    "retencion": 0.9903568831767018,
+    "maduras": 293
+   },
+   {
+    "dia": 53,
+    "repasos": 66,
+    "retencion": 0.9905212396310882,
+    "maduras": 300
+   },
+   {
+    "dia": 54,
+    "repasos": 60,
+    "retencion": 0.9912707058419336,
+    "maduras": 306
+   },
+   {
+    "dia": 55,
+    "repasos": 61,
+    "retencion": 0.9912650477091477,
+    "maduras": 313
+   },
+   {
+    "dia": 56,
+    "repasos": 55,
+    "retencion": 0.9907546878222411,
+    "maduras": 323
+   },
+   {
+    "dia": 57,
+    "repasos": 57,
+    "retencion": 0.9907582071691536,
+    "maduras": 328
+   },
+   {
+    "dia": 58,
+    "repasos": 64,
+    "retencion": 0.9919030989768343,
+    "maduras": 338
+   },
+   {
+    "dia": 59,
+    "repasos": 56,
+    "retencion": 0.9920729430933624,
+    "maduras": 347
+   },
+   {
+    "dia": 60,
+    "repasos": 52,
+    "retencion": 0.9913433196171245,
+    "maduras": 355
+   },
+   {
+    "dia": 61,
+    "repasos": 45,
+    "retencion": 0.9913442632429507,
+    "maduras": 362
+   },
+   {
+    "dia": 62,
+    "repasos": 42,
+    "retencion": 0.9915481302834359,
+    "maduras": 371
+   },
+   {
+    "dia": 63,
+    "repasos": 49,
+    "retencion": 0.9918141666462178,
+    "maduras": 378
+   },
+   {
+    "dia": 64,
+    "repasos": 29,
+    "retencion": 0.9912518830352012,
+    "maduras": 384
+   },
+   {
+    "dia": 65,
+    "repasos": 57,
+    "retencion": 0.9920639019287927,
+    "maduras": 394
+   },
+   {
+    "dia": 66,
+    "repasos": 43,
+    "retencion": 0.9930452019101889,
+    "maduras": 404
+   },
+   {
+    "dia": 67,
+    "repasos": 36,
+    "retencion": 0.9930368502626669,
+    "maduras": 412
+   },
+   {
+    "dia": 68,
+    "repasos": 38,
+    "retencion": 0.992917932446641,
+    "maduras": 419
+   },
+   {
+    "dia": 69,
+    "repasos": 40,
+    "retencion": 0.9932158318384071,
+    "maduras": 429
+   },
+   {
+    "dia": 70,
+    "repasos": 28,
+    "retencion": 0.9934806310934892,
+    "maduras": 438
+   },
+   {
+    "dia": 71,
+    "repasos": 38,
+    "retencion": 0.9938417730978061,
+    "maduras": 447
+   },
+   {
+    "dia": 72,
+    "repasos": 25,
+    "retencion": 0.993680000830535,
+    "maduras": 449
+   },
+   {
+    "dia": 73,
+    "repasos": 33,
+    "retencion": 0.9943739348657875,
+    "maduras": 461
+   },
+   {
+    "dia": 74,
+    "repasos": 33,
+    "retencion": 0.9952448606196725,
+    "maduras": 466
+   },
+   {
+    "dia": 75,
+    "repasos": 25,
+    "retencion": 0.9952822884328771,
+    "maduras": 468
+   },
+   {
+    "dia": 76,
+    "repasos": 31,
+    "retencion": 0.9952260073245996,
+    "maduras": 468
+   },
+   {
+    "dia": 77,
+    "repasos": 19,
+    "retencion": 0.995002736203224,
+    "maduras": 468
+   },
+   {
+    "dia": 78,
+    "repasos": 29,
+    "retencion": 0.9950100793459707,
+    "maduras": 468
+   },
+   {
+    "dia": 79,
+    "repasos": 37,
+    "retencion": 0.9950357775846008,
+    "maduras": 470
+   },
+   {
+    "dia": 80,
+    "repasos": 27,
+    "retencion": 0.9949596684227401,
+    "maduras": 471
+   },
+   {
+    "dia": 81,
+    "repasos": 42,
+    "retencion": 0.9952782126794254,
+    "maduras": 472
+   },
+   {
+    "dia": 82,
+    "repasos": 36,
+    "retencion": 0.9957702794193841,
+    "maduras": 471
+   },
+   {
+    "dia": 83,
+    "repasos": 32,
+    "retencion": 0.9959071086033803,
+    "maduras": 470
+   },
+   {
+    "dia": 84,
+    "repasos": 38,
+    "retencion": 0.9960120833289811,
+    "maduras": 470
+   },
+   {
+    "dia": 85,
+    "repasos": 38,
+    "retencion": 0.9963774708335402,
+    "maduras": 470
+   },
+   {
+    "dia": 86,
+    "repasos": 30,
+    "retencion": 0.9967236700460822,
+    "maduras": 469
+   },
+   {
+    "dia": 87,
+    "repasos": 38,
+    "retencion": 0.9971316929495012,
+    "maduras": 470
+   },
+   {
+    "dia": 88,
+    "repasos": 23,
+    "retencion": 0.9971535051982603,
+    "maduras": 471
+   },
+   {
+    "dia": 89,
+    "repasos": 33,
+    "retencion": 0.9976387167466282,
+    "maduras": 472
+   },
+   {
+    "dia": 90,
+    "repasos": 35,
+    "retencion": 0.9981996409687252,
+    "maduras": 473
+   },
+   {
+    "dia": 91,
+    "repasos": 21,
+    "retencion": 0.9982223431913417,
+    "maduras": 472
+   },
+   {
+    "dia": 92,
+    "repasos": 30,
+    "retencion": 0.9981924364555445,
+    "maduras": 473
+   },
+   {
+    "dia": 93,
+    "repasos": 19,
+    "retencion": 0.9980971993750118,
+    "maduras": 472
+   },
+   {
+    "dia": 94,
+    "repasos": 28,
+    "retencion": 0.9980986804599401,
+    "maduras": 472
+   },
+   {
+    "dia": 95,
+    "repasos": 37,
+    "retencion": 0.9981246903535934,
+    "maduras": 473
+   },
+   {
+    "dia": 96,
+    "repasos": 25,
+    "retencion": 0.9980831441112819,
+    "maduras": 473
+   },
+   {
+    "dia": 97,
+    "repasos": 42,
+    "retencion": 0.9982356463077493,
+    "maduras": 473
+   },
+   {
+    "dia": 98,
+    "repasos": 37,
+    "retencion": 0.998416555873259,
+    "maduras": 475
+   },
+   {
+    "dia": 99,
+    "repasos": 28,
+    "retencion": 0.9984476345952034,
+    "maduras": 475
+   },
+   {
+    "dia": 100,
+    "repasos": 37,
+    "retencion": 0.9984888434575884,
+    "maduras": 474
+   },
+   {
+    "dia": 101,
+    "repasos": 39,
+    "retencion": 0.9986399219949892,
+    "maduras": 474
+   },
+   {
+    "dia": 102,
+    "repasos": 28,
+    "retencion": 0.9987621301828543,
+    "maduras": 474
+   },
+   {
+    "dia": 103,
+    "repasos": 37,
+    "retencion": 0.9989201323475078,
+    "maduras": 474
+   },
+   {
+    "dia": 104,
+    "repasos": 25,
+    "retencion": 0.9989438764184594,
+    "maduras": 474
+   },
+   {
+    "dia": 105,
+    "repasos": 32,
+    "retencion": 0.9991296682052775,
+    "maduras": 475
+   },
+   {
+    "dia": 106,
+    "repasos": 33,
+    "retencion": 0.9993391644910316,
+    "maduras": 476
+   },
+   {
+    "dia": 107,
+    "repasos": 20,
+    "retencion": 0.9993413057625972,
+    "maduras": 476
+   },
+   {
+    "dia": 108,
+    "repasos": 31,
+    "retencion": 0.9993320142335359,
+    "maduras": 477
+   },
+   {
+    "dia": 109,
+    "repasos": 16,
+    "retencion": 0.9992870773254537,
+    "maduras": 477
+   },
+   {
+    "dia": 110,
+    "repasos": 26,
+    "retencion": 0.9992865375266113,
+    "maduras": 477
+   },
+   {
+    "dia": 111,
+    "repasos": 37,
+    "retencion": 0.9992967209133924,
+    "maduras": 477
+   },
+   {
+    "dia": 112,
+    "repasos": 25,
+    "retencion": 0.9992849510481266,
+    "maduras": 478
+   },
+   {
+    "dia": 113,
+    "repasos": 40,
+    "retencion": 0.9993263843987032,
+    "maduras": 478
+   },
+   {
+    "dia": 114,
+    "repasos": 35,
+    "retencion": 0.9993992285453295,
+    "maduras": 478
+   },
+   {
+    "dia": 115,
+    "repasos": 29,
+    "retencion": 0.9994105060627915,
+    "maduras": 479
+   },
+   {
+    "dia": 116,
+    "repasos": 35,
+    "retencion": 0.9994233306523248,
+    "maduras": 480
+   },
+   {
+    "dia": 117,
+    "repasos": 37,
+    "retencion": 0.9994768745321673,
+    "maduras": 480
+   },
+   {
+    "dia": 118,
+    "repasos": 27,
+    "retencion": 0.9995237371196368,
+    "maduras": 480
+   },
+   {
+    "dia": 119,
+    "repasos": 36,
+    "retencion": 0.9995843791648115,
+    "maduras": 480
+   },
+   {
+    "dia": 120,
+    "repasos": 23,
+    "retencion": 0.999591473754261,
+    "maduras": 480
+   },
+   {
+    "dia": 121,
+    "repasos": 32,
+    "retencion": 0.9996612969485118,
+    "maduras": 480
+   },
+   {
+    "dia": 122,
+    "repasos": 33,
+    "retencion": 0.9997471658146849,
+    "maduras": 480
+   },
+   {
+    "dia": 123,
+    "repasos": 19,
+    "retencion": 0.9997477943080192,
+    "maduras": 480
+   },
+   {
+    "dia": 124,
+    "repasos": 30,
+    "retencion": 0.9997427169038874,
+    "maduras": 480
+   },
+   {
+    "dia": 125,
+    "repasos": 16,
+    "retencion": 0.9997244521690513,
+    "maduras": 480
+   },
+   {
+    "dia": 126,
+    "repasos": 26,
+    "retencion": 0.9997235282594358,
+    "maduras": 480
+   },
+   {
+    "dia": 127,
+    "repasos": 37,
+    "retencion": 0.9997268683509671,
+    "maduras": 480
+   },
+   {
+    "dia": 128,
+    "repasos": 25,
+    "retencion": 0.9997236365444343,
+    "maduras": 480
+   },
+   {
+    "dia": 129,
+    "repasos": 40,
+    "retencion": 0.9997393981946843,
+    "maduras": 480
+   },
+   {
+    "dia": 130,
+    "repasos": 35,
+    "retencion": 0.9997685830186792,
+    "maduras": 479
+   },
+   {
+    "dia": 131,
+    "repasos": 30,
+    "retencion": 0.9997722419804779,
+    "maduras": 479
+   },
+   {
+    "dia": 132,
+    "repasos": 35,
+    "retencion": 0.9997769809708567,
+    "maduras": 479
+   },
+   {
+    "dia": 133,
+    "repasos": 38,
+    "retencion": 0.9997985716426471,
+    "maduras": 479
+   },
+   {
+    "dia": 134,
+    "repasos": 27,
+    "retencion": 0.9998166182416701,
+    "maduras": 479
+   },
+   {
+    "dia": 135,
+    "repasos": 36,
+    "retencion": 0.9998397141636464,
+    "maduras": 479
+   },
+   {
+    "dia": 136,
+    "repasos": 23,
+    "retencion": 0.9998423834609194,
+    "maduras": 479
+   },
+   {
+    "dia": 137,
+    "repasos": 33,
+    "retencion": 0.9998684837298772,
+    "maduras": 479
+   },
+   {
+    "dia": 138,
+    "repasos": 33,
+    "retencion": 0.9999033817448632,
+    "maduras": 479
+   },
+   {
+    "dia": 139,
+    "repasos": 19,
+    "retencion": 0.9999035262582987,
+    "maduras": 479
+   },
+   {
+    "dia": 140,
+    "repasos": 30,
+    "retencion": 0.9999011626026392,
+    "maduras": 479
+   },
+   {
+    "dia": 141,
+    "repasos": 16,
+    "retencion": 0.9998937530874309,
+    "maduras": 479
+   },
+   {
+    "dia": 142,
+    "repasos": 26,
+    "retencion": 0.9998931517371433,
+    "maduras": 479
+   },
+   {
+    "dia": 143,
+    "repasos": 37,
+    "retencion": 0.999894271993187,
+    "maduras": 479
+   },
+   {
+    "dia": 144,
+    "repasos": 25,
+    "retencion": 0.9998930500381528,
+    "maduras": 479
+   },
+   {
+    "dia": 145,
+    "repasos": 41,
+    "retencion": 0.9998991423003869,
+    "maduras": 480
+   },
+   {
+    "dia": 146,
+    "repasos": 34,
+    "retencion": 0.9999106068037127,
+    "maduras": 480
+   },
+   {
+    "dia": 147,
+    "repasos": 29,
+    "retencion": 0.9999117248001407,
+    "maduras": 480
+   },
+   {
+    "dia": 148,
+    "repasos": 35,
+    "retencion": 0.9999132693122424,
+    "maduras": 480
+   },
+   {
+    "dia": 149,
+    "repasos": 37,
+    "retencion": 0.9999219708772419,
+    "maduras": 480
+   },
+   {
+    "dia": 150,
+    "repasos": 27,
+    "retencion": 0.999928983663229,
+    "maduras": 480
+   }
+  ],
+  "totalPresentaciones": 5660,
+  "precisión": 0.9696911196911197,
+  "retencionFinal": 0.999928983663229,
+  "madurasFinal": 480
+ },
+ "histCajasLeitner": [
+  0,
+  0,
+  0,
+  0,
+  480
+ ],
+ "histIntervalosSm2": {
+  "cortes": [
+   1,
+   2,
+   6,
+   15,
+   30,
+   60,
+   "más"
+  ],
+  "conteos": [
+   0,
+   0,
+   1,
+   5,
+   24,
+   25,
+   425
+  ]
+ },
+ "markov": [
+  {
+   "p": 0.7,
+   "estacionaria": [
+    0.3,
+    0.21,
+    0.147,
+    0.1029,
+    0.2401
+   ],
+   "repasosHastaCaja5": 10.55,
+   "diasHastaCaja5": 29.6,
+   "repasosPorDiaPalabra": 0.1674
+  },
+  {
+   "p": 0.8,
+   "estacionaria": [
+    0.2,
+    0.16,
+    0.128,
+    0.1024,
+    0.4096
+   ],
+   "repasosHastaCaja5": 7.21,
+   "diasHastaCaja5": 22.6,
+   "repasosPorDiaPalabra": 0.119
+  },
+  {
+   "p": 0.9,
+   "estacionaria": [
+    0.1,
+    0.09,
+    0.081,
+    0.0729,
+    0.6561
+   ],
+   "repasosHastaCaja5": 5.24,
+   "diasHastaCaja5": 18.1,
+   "repasosPorDiaPalabra": 0.0856
+  },
+  {
+   "p": 0.95,
+   "estacionaria": [
+    0.05,
+    0.0475,
+    0.0451,
+    0.0429,
+    0.8145
+   ],
+   "repasosHastaCaja5": 4.55,
+   "diasHastaCaja5": 16.4,
+   "repasosPorDiaPalabra": 0.073
+  }
+ ]
+}
