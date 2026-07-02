@@ -2,27 +2,24 @@ import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
   agruparPorLectura,
-  lecturaCompletada,
-  claveEjercicio,
+  claveGrupo,
   opcionesDe,
   esCorrecta,
   resumenSesion,
 } from '../../engine/gramatica';
 import {
-  cargarGramaticaHechos,
-  guardarGramaticaHechos,
+  cargarGramaticaCompletados,
+  guardarGramaticaCompletados,
 } from '../../engine/almacenamiento';
 import '../lectura/lectura.css';
 import './gramatica.css';
 
 const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', avanzado: 'Avanzado' };
 
-// Sesión de gramática de UNA lectura: recorre todos sus ejercicios en orden
-// (agrupados por tema, del más básico al más avanzado). Cada acierto se
-// registra con una clave estable; la lectura queda «completada» (palomita en
-// el selector) cuando todos sus ejercicios se han respondido bien alguna vez.
+// Tanda de ejercicios de UN tema dentro de UNA lectura. Al llegar al final se
+// registra (lectura|tema) como terminado: esa es la palomita del índice.
 function Ejercicios() {
-  const { lectura } = useParams();
+  const { lectura, tema } = useParams();
   const [data, setData] = useState(null);
   const [idx, setIdx] = useState(0);
   const [elegida, setElegida] = useState(null);
@@ -41,15 +38,19 @@ function Ejercicios() {
   const grupo = data
     ? agruparPorLectura(data).find((g) => g.slug === lectura) ?? null
     : null;
-  const sesion = grupo?.ejercicios ?? [];
+  const subgrupo = grupo?.temas.find((t) => t.id === tema) ?? null;
+  const sesion = subgrupo?.ejercicios ?? [];
+  const meta = data?.temas.find((t) => t.id === tema) ?? null;
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to="/gramatica" className="lectura-link">← Gramática</Link>
-      <h1>{grupo?.titulo ?? 'Gramática'}</h1>
-      {grupo ? (
-        <span className={`gram-nivel ${grupo.nivel}`}>
-          {NOMBRE_NIVEL[grupo.nivel] ?? grupo.nivel}
+      <Link to={`/gramatica/${lectura}`} className="lectura-link">
+        ← {grupo?.titulo ?? 'Gramática'}
+      </Link>
+      <h1>{subgrupo?.titulo ?? 'Gramática'}</h1>
+      {subgrupo ? (
+        <span className={`gram-nivel ${subgrupo.nivel}`}>
+          {NOMBRE_NIVEL[subgrupo.nivel] ?? subgrupo.nivel}
         </span>
       ) : (
         <span />
@@ -61,13 +62,13 @@ function Ejercicios() {
     return <div className="lectura-container">{cabecera}</div>;
   }
 
-  if (!grupo || sesion.length === 0) {
+  if (!grupo || !subgrupo || sesion.length === 0) {
     return (
       <div className="lectura-container">
         {cabecera}
         <p className="lectura-subtitulo">
-          No hay ejercicios para esta lectura. Genera más con{' '}
-          <code>pipeline/gramatica.py</code>.
+          No hay ejercicios de este tema para esta lectura.{' '}
+          <Link to="/gramatica" className="lectura-link">Volver a Gramática</Link>.
         </p>
       </div>
     );
@@ -79,33 +80,36 @@ function Ejercicios() {
     setResultados([]);
   };
 
+  const siguiente = () => {
+    const proximo = idx + 1;
+    if (proximo >= sesion.length) {
+      // Tanda terminada: se registra (lectura|tema) → palomita en el índice.
+      const clave = claveGrupo(grupo, subgrupo.id);
+      const hechos = cargarGramaticaCompletados();
+      if (!hechos.includes(clave)) guardarGramaticaCompletados([...hechos, clave]);
+    }
+    setIdx(proximo);
+    setElegida(null);
+  };
+
   // Pantalla final
   if (idx >= sesion.length) {
     const r = resumenSesion(resultados);
-    const completada = lecturaCompletada(grupo, cargarGramaticaHechos());
     return (
       <div className="lectura-container">
         {cabecera}
         <div className="repaso-fin">
-          <p className="repaso-fin-titulo">
-            {completada ? 'Lectura completada ✓' : 'Sesión terminada 🎉'}
-          </p>
+          <p className="repaso-fin-titulo">Tema terminado ✓</p>
           <p className="repaso-fin-stats">
             {r.aciertos} de {r.total} correcta{r.aciertos === 1 ? '' : 's'} ·{' '}
             {r.porcentaje}%
           </p>
-          {!completada && (
-            <p className="lectura-subtitulo">
-              La palomita llega cuando todos los ejercicios de la lectura se
-              hayan respondido bien alguna vez.
-            </p>
-          )}
           <div className="gram-nav">
             <button type="button" className="gram-boton" onClick={reiniciar}>
               Otra ronda
             </button>
-            <Link to="/gramatica" className="gram-boton gram-boton-sec">
-              Otras lecturas
+            <Link to={`/gramatica/${lectura}`} className="gram-boton gram-boton-sec">
+              Otros temas
             </Link>
           </div>
         </div>
@@ -114,7 +118,6 @@ function Ejercicios() {
   }
 
   const ejercicio = sesion[idx];
-  const meta = data.temas.find((t) => t.id === ejercicio.tema) ?? null;
   const opciones = opcionesDe(ejercicio);
   const respondida = elegida !== null;
   const acerto = respondida && esCorrecta(ejercicio, elegida);
@@ -122,18 +125,7 @@ function Ejercicios() {
   const elegir = (op) => {
     if (respondida) return;
     setElegida(op);
-    const bien = esCorrecta(ejercicio, op);
-    setResultados([...resultados, bien]);
-    if (bien) {
-      const clave = claveEjercicio(ejercicio);
-      const hechos = cargarGramaticaHechos();
-      if (!hechos.includes(clave)) guardarGramaticaHechos([...hechos, clave]);
-    }
-  };
-
-  const siguiente = () => {
-    setIdx(idx + 1);
-    setElegida(null);
+    setResultados([...resultados, esCorrecta(ejercicio, op)]);
   };
 
   return (
@@ -142,15 +134,7 @@ function Ejercicios() {
 
       {meta && (
         <details className="gram-leccion">
-          <summary>
-            {meta.titulo}
-            {meta.nivel && (
-              <span className={`gram-nivel ${meta.nivel}`}>
-                {NOMBRE_NIVEL[meta.nivel] ?? meta.nivel}
-              </span>
-            )}
-            {' '}— ver la regla
-          </summary>
+          <summary>Ver la regla</summary>
           <p>{meta.resumen}</p>
           {meta.tabla && (
             <table className="gram-tabla">
@@ -216,7 +200,7 @@ function Ejercicios() {
           {ejercicio.pista && <p className="gram-pista">{ejercicio.pista}</p>}
           <div className="gram-nav">
             <button type="button" className="gram-boton" onClick={siguiente}>
-              {idx + 1 < sesion.length ? 'Siguiente' : 'Ver resultado'}
+              {idx + 1 < sesion.length ? 'Siguiente' : 'Terminar'}
             </button>
           </div>
         </div>

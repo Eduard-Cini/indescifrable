@@ -75,10 +75,10 @@ export function slugDeLectura(titulo) {
 
 /**
  * Reorganiza gramatica.json por LECTURA: una entrada por lectura de origen,
- * ordenadas por nivel ascendente (y título dentro del nivel). Los ejercicios
- * de cada lectura van agrupados por tema, en el orden (de dificultad) en que
- * los temas aparecen en data.temas, y cada uno lleva su tema anotado para que
- * la UI muestre la etiqueta y la regla correspondiente.
+ * ordenadas por nivel ascendente (y título dentro del nivel). Dentro de cada
+ * lectura, los ejercicios quedan en SUBGRUPOS POR TEMA, en el orden (de
+ * dificultad) en que los temas aparecen en data.temas: el usuario elige qué
+ * tema practicar y cada tema se completa por separado.
  */
 export function agruparPorLectura(data) {
   const grupos = new Map(); // fuente -> entrada
@@ -92,13 +92,16 @@ export function agruparPorLectura(data) {
           titulo,
           nivel: ej.nivel,
           fuente: ej.fuente,
-          ejercicios: [],
+          temas: [],
         };
         grupos.set(ej.fuente, g);
       }
-      // data.temas ya está ordenado por dificultad del tema, y este bucle lo
-      // recorre en ese orden: los ejercicios quedan agrupados tema a tema.
-      g.ejercicios.push({ ...ej, tema: tema.id });
+      let t = g.temas.find((x) => x.id === tema.id);
+      if (!t) {
+        t = { id: tema.id, titulo: tema.titulo, nivel: tema.nivel, ejercicios: [] };
+        g.temas.push(t); // data.temas va por dificultad → los subgrupos también
+      }
+      t.ejercicios.push({ ...ej, tema: tema.id });
     }
   }
   return [...grupos.values()].sort(
@@ -108,21 +111,29 @@ export function agruparPorLectura(data) {
   );
 }
 
-/**
- * ¿Está completada una lectura? Se considera completada cuando todos los ids
- * de sus ejercicios están en el registro de completados (persistido fuera de
- * este módulo). Los ids cambian al regenerar el corpus, así que el registro
- * guarda claves estables ejercicio→(fuente + respuesta + antes).
- */
-export function claveEjercicio(ej) {
-  return `${ej.fuente}|${ej.antes}|${ej.respuesta}`;
+/** Total de ejercicios de una lectura, sumando sus temas. */
+export function totalEjercicios(grupo) {
+  return grupo.temas.reduce((s, t) => s + t.ejercicios.length, 0);
 }
 
+/**
+ * Progreso: se marca por (lectura, tema) cuando el usuario TERMINA la tanda de
+ * ese tema. La clave es estable frente a regenerar el corpus (no usa ids).
+ */
+export function claveGrupo(grupo, temaId) {
+  return `${grupo.fuente}|${temaId}`;
+}
+
+export function temaCompletado(grupo, temaId, completados) {
+  return completados.includes(claveGrupo(grupo, temaId));
+}
+
+/** Una lectura está completada cuando todos sus temas lo están. */
 export function lecturaCompletada(grupo, completados) {
   const hechas = new Set(completados);
   return (
-    grupo.ejercicios.length > 0 &&
-    grupo.ejercicios.every((ej) => hechas.has(claveEjercicio(ej)))
+    grupo.temas.length > 0 &&
+    grupo.temas.every((t) => hechas.has(claveGrupo(grupo, t.id)))
   );
 }
 

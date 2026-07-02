@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { agruparPorLectura, lecturaCompletada } from '../../engine/gramatica';
-import { cargarGramaticaHechos } from '../../engine/almacenamiento';
+import { agruparPorLectura, lecturaCompletada, totalEjercicios } from '../../engine/gramatica';
+import { cargarGramaticaCompletados } from '../../engine/almacenamiento';
 import '../lectura/lectura.css';
 import './gramatica.css';
 
@@ -21,7 +21,7 @@ function Gramatica() {
     import('../../data/gramatica.json').then((m) => {
       if (!vivo) return;
       setGrupos(agruparPorLectura(m.default));
-      setHechos(cargarGramaticaHechos());
+      setHechos(cargarGramaticaCompletados());
     });
     return () => {
       vivo = false;
@@ -44,9 +44,9 @@ function Gramatica() {
     <div className="lectura-container">
       {cabecera}
       <p className="lectura-subtitulo">
-        Elige una lectura. Sus ejercicios de completar (cloze) van por tema
-        gramatical, del más básico al más avanzado; la regla de cada tema está
-        siempre a un toque.
+        Elige una lectura y, dentro, el tema gramatical que quieras practicar
+        (ordenados del más básico al más avanzado). Cada tema terminado se
+        marca con ✓.
       </p>
 
       <div className="gram-temas">
@@ -62,7 +62,8 @@ function Gramatica() {
                 {completada && <span className="gram-palomita" title="Completada"> ✓</span>}
               </h2>
               <span className="gram-tema-count">
-                {g.ejercicios.length} ejercicio{g.ejercicios.length === 1 ? '' : 's'}
+                {g.temas.length} tema{g.temas.length === 1 ? '' : 's'} ·{' '}
+                {totalEjercicios(g)} ejercicio{totalEjercicios(g) === 1 ? '' : 's'}
               </span>
             </Link>
           );

@@ -6,6 +6,7 @@ import Lector from './secciones/lectura/Lector';
 import Bolsa from './secciones/lectura/Bolsa';
 import Repaso from './secciones/repaso/Repaso';
 import Gramatica from './secciones/gramatica/Gramatica';
+import TemasDeLectura from './secciones/gramatica/TemasDeLectura';
 import Ejercicios from './secciones/gramatica/Ejercicios';
 import './App.css';
 
@@ -20,7 +21,8 @@ function App() {
         <Route path="/bolsa" element={<Bolsa />} />
         <Route path="/repaso" element={<Repaso />} />
         <Route path="/gramatica" element={<Gramatica />} />
-        <Route path="/gramatica/:lectura" element={<Ejercicios />} />
+        <Route path="/gramatica/:lectura" element={<TemasDeLectura />} />
+        <Route path="/gramatica/:lectura/:tema" element={<Ejercicios />} />
       </Routes>
     </BrowserRouter>
   );

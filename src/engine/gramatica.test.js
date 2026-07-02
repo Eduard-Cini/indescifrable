@@ -6,7 +6,9 @@ import {
   resumenSesion,
   slugDeLectura,
   agruparPorLectura,
-  claveEjercicio,
+  totalEjercicios,
+  claveGrupo,
+  temaCompletado,
   lecturaCompletada,
 } from './gramatica';
 
@@ -143,35 +145,45 @@ describe('agruparPorLectura', () => {
     expect(grupos[0].slug).toBe('el-mercado');
   });
 
-  it('dentro de una lectura, los ejercicios van por tema en el orden de data.temas', () => {
+  it('dentro de una lectura, subgrupos por tema en el orden de data.temas', () => {
     const mercado = agruparPorLectura(data)[0];
-    expect(mercado.ejercicios.map((e) => e.tema)).toEqual(['declinacion', 'preposicion_caso']);
-    expect(mercado.ejercicios.map((e) => e.id)).toEqual(['d2', 'p1']);
+    expect(mercado.temas.map((t) => t.id)).toEqual(['declinacion', 'preposicion_caso']);
+    expect(mercado.temas[0].ejercicios.map((e) => e.id)).toEqual(['d2']);
+    expect(mercado.temas[1].ejercicios.map((e) => e.id)).toEqual(['p1']);
+    expect(totalEjercicios(mercado)).toBe(2);
+  });
+
+  it('una lectura solo lista los temas de los que tiene ejercicios', () => {
+    const immensee = agruparPorLectura(data)[1];
+    expect(immensee.temas.map((t) => t.id)).toEqual(['declinacion']);
   });
 });
 
-describe('lecturaCompletada', () => {
+describe('progreso por tema', () => {
   const data = {
-    temas: [{ id: 't', nivel: 'principiante' }],
+    temas: [
+      { id: 't1', nivel: 'principiante' },
+      { id: 't2', nivel: 'intermedio' },
+    ],
     ejercicios: {
-      t: [
-        { id: 'a', fuente: 'principiante · X', nivel: 'principiante', antes: '1', respuesta: 'r1' },
-        { id: 'b', fuente: 'principiante · X', nivel: 'principiante', antes: '2', respuesta: 'r2' },
-      ],
+      t1: [{ id: 'a', fuente: 'principiante · X', nivel: 'principiante', antes: '1', respuesta: 'r' }],
+      t2: [{ id: 'b', fuente: 'principiante · X', nivel: 'principiante', antes: '2', respuesta: 'r' }],
     },
   };
   const grupo = agruparPorLectura(data)[0];
 
-  it('solo con todos los ejercicios respondidos bien', () => {
-    const claves = grupo.ejercicios.map(claveEjercicio);
-    expect(lecturaCompletada(grupo, [])).toBe(false);
-    expect(lecturaCompletada(grupo, [claves[0]])).toBe(false);
-    expect(lecturaCompletada(grupo, claves)).toBe(true);
+  it('el tema se marca por clave (lectura|tema), estable frente a los ids', () => {
+    expect(claveGrupo(grupo, 't1')).toBe('principiante · X|t1');
+    expect(temaCompletado(grupo, 't1', [])).toBe(false);
+    expect(temaCompletado(grupo, 't1', [claveGrupo(grupo, 't1')])).toBe(true);
   });
 
-  it('la clave es estable aunque cambien los ids', () => {
-    const otro = { ...grupo.ejercicios[0], id: 'renumerado-99' };
-    expect(claveEjercicio(otro)).toBe(claveEjercicio(grupo.ejercicios[0]));
+  it('la lectura se completa cuando TODOS sus temas están terminados', () => {
+    const c1 = claveGrupo(grupo, 't1');
+    const c2 = claveGrupo(grupo, 't2');
+    expect(lecturaCompletada(grupo, [])).toBe(false);
+    expect(lecturaCompletada(grupo, [c1])).toBe(false);
+    expect(lecturaCompletada(grupo, [c1, c2])).toBe(true);
   });
 });
 
