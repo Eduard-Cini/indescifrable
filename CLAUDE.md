@@ -48,10 +48,12 @@ híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
   el LCG de board.js a [0,1)); UI en `/gramatica` (`src/secciones/gramatica/`), JSON por
   dynamic import (chunk aparte).
 - **Motor puro + Vitest** (61 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica).
-- **Docs** en `docs/*.pdf` (cada portada rotulada con su sección; cada uno con su `generar_*.py`):
-  - **Sección 1 — Lectura**: `documentacion-tecnica`, `plan-de-aprendizaje`, `reporte-metricas`.
-  - **Sección 2 — Repaso**: `documentacion-repaso` (técnica), `metricas-repaso` (simulación + Markov + modelo de conocimiento), `ruta-aprendizaje-repaso` (auto-estudio).
-  - **Sección 3 — Gramática**: `documentacion-seccion3` (técnica), `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus).
+- **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
+  en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
+  cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:
+  - **Sección 1 — Lectura**: `documentacion-seccion1`, `metricas-seccion1` (cobertura, chrF; carga opus-mt al regenerar), `autoaprendizaje-seccion1`.
+  - **Sección 2 — Repaso**: `documentacion-seccion2`, `metricas-seccion2` (simulación + Markov + modelo de conocimiento), `autoaprendizaje-seccion2`.
+  - **Sección 3 — Gramática**: `documentacion-seccion3`, `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus), `autoaprendizaje-seccion3`.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
@@ -69,7 +71,7 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Ejercicios de gramática (todas las lecturas de): `python pipeline/gramatica.py [tema ...]` → `src/data/gramatica.json` (re-ejecutar al añadir lecturas).
 - Frase por MT: `python pipeline/traducir_mt.py <prefijo>`.
 - Frase por LLM: `exportar_frases.py <id>` → pegar en Gemini → `importar_traduccion.py <id> <archivo>` (valida 1:1).
-- Regenerar PDFs: `python docs/generar_*.py` (el de `reporte-metricas` carga opus-mt para recalcular chrF; tarda ~1 min).
+- Regenerar PDFs: `python docs/generar_*.py` (el de `metricas-seccion1` carga opus-mt para recalcular chrF; tarda ~1 min).
 
 ## Trampas del entorno (IMPORTANTES)
 - **git SSL**: usa `http.sslBackend schannel` (almacén de Windows). **Python SSL**: `pip-system-certs`.
@@ -87,10 +89,10 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 ## Próximo trabajo (prioridad)
 1. Menores de gramática: más temas (orden de palabras/verbo en 2ª posición, Konjunktiv),
    progreso persistente por tema en localStorage, ejercicios también en inglés.
-2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking), opcional FSRS/retención objetivo en la simulación (ejercicios en ruta-aprendizaje-repaso.pdf).
+2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking), opcional FSRS/retención objetivo en la simulación (ejercicios en autoaprendizaje-seccion2.pdf).
 
 ## Cómo continuar en una sesión nueva
-Este archivo se carga solo. Para la Sección 1 revisar `docs/documentacion-tecnica.pdf` y
-`docs/plan-de-aprendizaje.pdf`; para la Sección 2, `docs/documentacion-repaso.pdf` y
-`docs/ruta-aprendizaje-repaso.pdf`; para la Sección 3, `docs/documentacion-seccion3.pdf` y
-`docs/metricas-seccion3.pdf`. Pedir a Claude que confirme el estado con `git log --oneline -10`.
+Este archivo se carga solo. Cada sección tiene sus tres PDFs en `docs/`
+(`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`); empezar por la
+documentación técnica de la sección que toque. Pedir a Claude que confirme el estado con
+`git log --oneline -10`.

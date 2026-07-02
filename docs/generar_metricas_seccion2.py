@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
-"""Genera docs/metricas-repaso.pdf: métricas de la Sección 2 (repaso espaciado):
+"""Genera docs/metricas-seccion2.pdf: métricas de la Sección 2 (repaso espaciado):
 resultados de la simulación SM-2 vs Leitner, analítica de la cadena de Markov
 y ejemplos del modelo de conocimiento sobre el corpus real.
 
 Requiere docs/datos-simulacion.json (npm run simular) y src/data/frecuencias.json.
 
-Uso:  PYTHONUTF8=1 python docs/generar_metricas_repaso.py
+Uso:  PYTHONUTF8=1 python docs/generar_metricas_seccion2.py
 """
 import json
 import math
@@ -23,7 +23,7 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, Tab
                                 HRFlowable)
 
 RAIZ = Path(__file__).resolve().parents[1]
-SALIDA = Path(__file__).with_name("metricas-repaso.pdf")
+SALIDA = Path(__file__).with_name("metricas-seccion2.pdf")
 
 datos = json.loads(Path(__file__).with_name("datos-simulacion.json").read_text(encoding="utf-8"))
 frec = json.loads((RAIZ / "src" / "data" / "frecuencias.json").read_text(encoding="utf-8"))

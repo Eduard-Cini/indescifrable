@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Genera docs/documentacion-repaso.pdf: documentación técnica de la Sección 2
+"""Genera docs/documentacion-seccion2.pdf: documentación técnica de la Sección 2
 (repaso espaciado): motor SM-2, modelo de conocimiento, repaso previo,
 Leitner como cadena de Markov y la simulación comparativa.
 
-Uso:  PYTHONUTF8=1 python docs/generar_doc_repaso.py
+Uso:  PYTHONUTF8=1 python docs/generar_doc_seccion2.py
 """
 from pathlib import Path
 
@@ -16,7 +16,7 @@ from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, Tab
                                 HRFlowable, PageBreak)
 
 RAIZ = Path(__file__).resolve().parents[1]
-SALIDA = Path(__file__).with_name("documentacion-repaso.pdf")
+SALIDA = Path(__file__).with_name("documentacion-seccion2.pdf")
 
 AZUL = colors.HexColor("#1f3a5f"); AZUL2 = colors.HexColor("#2e5e8c")
 GRIS = colors.HexColor("#555555"); GRISC = colors.HexColor("#f0f0f0")
@@ -194,7 +194,7 @@ code("π = πP                    distribución estacionaria (iteración de pote
      "tasa en régimen = 1 / Σ_i π_i·I_i   repasos/día/palabra")
 p("Con p = 0.9: ≈ 5.24 repasos y ≈ 18.1 días para llegar a la caja 5, y en régimen una "
   "palabra consume ≈ 0.08 repasos/día. El detalle numérico y su contraste con la simulación "
-  "están en <b>metricas-repaso.pdf</b>.")
+  "están en <b>metricas-seccion2.pdf</b>.")
 
 h1("7. La simulación comparativa")
 p("<font face='Courier'>simulacion/comparar.mjs</font> (Node, <font face='Courier'>npm run simular</font>) enfrenta los dos "
@@ -227,9 +227,9 @@ h1("9. Cómo regenerar cada artefacto")
 code("python pipeline/frecuencias.py        # src/data/frecuencias.json\n"
      "npm test                              # 49 tests del engine\n"
      "npm run simular                       # docs/datos-simulacion.json\n"
-     "python docs/generar_doc_repaso.py     # este PDF\n"
-     "python docs/generar_metricas_repaso.py\n"
-     "python docs/generar_ruta_repaso.py")
+     "python docs/generar_doc_seccion2.py     # este PDF\n"
+     "python docs/generar_metricas_seccion2.py\n"
+     "python docs/generar_autoaprendizaje_seccion2.py")
 
 doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, topMargin=1.6 * cm,
                         bottomMargin=1.6 * cm, leftMargin=2 * cm, rightMargin=2 * cm,

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Genera docs/plan-de-aprendizaje.pdf: un plan de estudio práctico y progresivo
+"""Genera docs/autoaprendizaje-seccion1.pdf: un plan de estudio práctico y progresivo
 para dominar todo lo necesario y poder construir por cuenta propia la sección
 de lectura y su pipeline de PLN. Cada fase incluye objetivo, conceptos,
 mini-implementación (ejercicio), ejemplo de código, recursos y criterio de
-dominio.  Uso:  python docs/generar_plan_aprendizaje.py
+dominio.  Uso:  python docs/generar_autoaprendizaje_seccion1.py
 """
 from pathlib import Path
 
@@ -17,7 +17,7 @@ from reportlab.platypus import (
     Preformatted, HRFlowable, KeepTogether,
 )
 
-SALIDA = Path(__file__).parent / "plan-de-aprendizaje.pdf"
+SALIDA = Path(__file__).parent / "autoaprendizaje-seccion1.pdf"
 
 AZUL = colors.HexColor("#1f3a5f")
 AZUL2 = colors.HexColor("#2e5e8c")

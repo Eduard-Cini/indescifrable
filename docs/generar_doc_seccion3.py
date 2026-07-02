@@ -232,9 +232,10 @@ tabla([
 h1("10. Cómo regenerar cada artefacto")
 code("python pipeline/gramatica.py            # src/data/gramatica.json (los 4 temas)\n"
      "python pipeline/gramatica.py conjugacion   # un solo tema\n"
-     "npm test                                # 61 tests del engine (12 de gramática)\n"
+     "npm test                                # tests del engine\n"
      "python docs/generar_doc_seccion3.py     # este PDF\n"
-     "python docs/generar_metricas_seccion3.py")
+     "python docs/generar_metricas_seccion3.py\n"
+     "python docs/generar_autoaprendizaje_seccion3.py")
 
 doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, topMargin=1.6 * cm,
                         bottomMargin=1.6 * cm, leftMargin=2 * cm, rightMargin=2 * cm,

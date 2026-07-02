@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Genera docs/ruta-aprendizaje-repaso.pdf: ruta de auto-aprendizaje de la
+"""Genera docs/autoaprendizaje-seccion2.pdf: ruta de auto-aprendizaje de la
 Sección 2 (repaso espaciado): herramientas matemáticas, algoritmos paso a paso
 con ejemplos numéricos, insights de la implementación, paquetería, ejercicios
 y recursos externos.
 
-Uso:  PYTHONUTF8=1 python docs/generar_ruta_repaso.py
+Uso:  PYTHONUTF8=1 python docs/generar_autoaprendizaje_seccion2.py
 """
 import math
 from pathlib import Path
@@ -17,7 +17,7 @@ from reportlab.lib.units import cm
 from reportlab.platypus import (SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle,
                                 HRFlowable, PageBreak)
 
-SALIDA = Path(__file__).with_name("ruta-aprendizaje-repaso.pdf")
+SALIDA = Path(__file__).with_name("autoaprendizaje-seccion2.pdf")
 
 AZUL = colors.HexColor("#1f3a5f"); AZUL2 = colors.HexColor("#2e5e8c")
 GRIS = colors.HexColor("#555555"); GRISC = colors.HexColor("#f0f0f0")
@@ -124,7 +124,7 @@ h2("1.3 La función logística")
 p("σ(x) = 1/(1+e^(−x)) convierte una puntuación en probabilidad. El prior del modelo es "
   "<b>P(conocer) = σ((zipf − z<sub>0</sub>)/τ)</b> con z<sub>0</sub> = 3.0 (el punto del 50%) y τ = 0.7 (cuán "
   "brusca es la transición). Ejercicio de 5 minutos: calcula P para «und» (zipf ≈ 4.5) y "
-  "para un hapax (zipf ≈ 1.5) y comprueba contra la tabla de metricas-repaso.pdf.")
+  "para un hapax (zipf ≈ 1.5) y comprueba contra la tabla de metricas-seccion2.pdf.")
 
 # ---------------------------------------------------------------------------
 h1("Fase 2 — Cadenas de Markov (el corazón matemático)")
@@ -173,7 +173,7 @@ h1("Fase 3 — Los algoritmos SRS")
 h2("3.1 Leitner (1972): el algoritmo de las cajas")
 p("5 cajas con cadencias [1, 2, 4, 8, 16] días; acierto sube, fallo devuelve a la caja 1. "
   "Virtud: trivial de explicar y de implementar con fichas físicas. Defecto estructural "
-  "(cuantificado en metricas-repaso.pdf): el intervalo tiene <b>techo</b>, así que un mazo "
+  "(cuantificado en metricas-seccion2.pdf): el intervalo tiene <b>techo</b>, así que un mazo "
   "maduro cuesta N/16 repasos diarios para siempre.")
 h2("3.2 SM-2 (Wozniak, 1987): intervalos que crecen con el historial")
 p("Cada ítem lleva (n, EF, I). Tras una respuesta de calidad q ∈ 0..5: si q &lt; 3, n = 0 e "

@@ -366,7 +366,9 @@ def frases_alemanas():
         if not frases:
             continue
         nivel = datos.get("nivel", "avanzado")
-        titulo = datos.get("titulo", {}).get("es") or datos.get("titulo", {}).get("de", ruta.stem)
+        # Título en ALEMÁN: los ejercicios son de alemán y la lectura se muestra
+        # con su nombre original (Der Markt, Rotkäppchen…), no con la traducción.
+        titulo = datos.get("titulo", {}).get("de") or datos.get("titulo", {}).get("es", ruta.stem)
         fuente = f"{nivel} · {titulo}".strip(" ·")
         for frase in frases:
             yield frase, fuente, nivel

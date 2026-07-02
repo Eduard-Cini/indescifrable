@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Calcula métricas del proyecto y genera docs/reporte-metricas.pdf para la tesis:
+"""Calcula métricas del proyecto y genera docs/metricas-seccion1.pdf para la tesis:
 densidad/cobertura de traducción, contribución de cada capa del traductor,
 estadísticas del corpus y del motor, y una comparación cuantitativa (chrF y F1
 de tokens) de la traducción automática (opus-mt) frente a la referencia del LLM.
 
-Uso:  PYTHONUTF8=1 python docs/generar_reporte_metricas.py
+Uso:  PYTHONUTF8=1 python docs/generar_metricas_seccion1.py
 """
 import json
 import re
@@ -312,7 +312,7 @@ tabla([
 
 story.append(Spacer(1, 0.3 * cm))
 story.append(HRFlowable(width="100%", thickness=0.6, color=AZUL))
-story.append(Paragraph("Métricas calculadas automáticamente por docs/generar_reporte_metricas.py "
+story.append(Paragraph("Métricas calculadas automáticamente por docs/generar_metricas_seccion1.py "
                        "sobre el estado actual del repositorio. chrF/F1 implementados sin "
                        "dependencias externas.", SSMALL))
 
@@ -324,7 +324,7 @@ def _pie(c, d):
     c.restoreState()
 
 
-SALIDA = Path(__file__).parent / "reporte-metricas.pdf"
+SALIDA = Path(__file__).parent / "metricas-seccion1.pdf"
 SimpleDocTemplate(str(SALIDA), pagesize=A4, leftMargin=2.3 * cm, rightMargin=2.3 * cm,
                   topMargin=2 * cm, bottomMargin=1.8 * cm,
                   title="Reporte de métricas — Plataforma de idiomas").build(

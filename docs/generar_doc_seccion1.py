@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Genera docs/documentacion-tecnica.pdf: documentación detallada de todo lo
+"""Genera docs/documentacion-seccion1.pdf: documentación detallada de todo lo
 construido (frontend, pipeline PLN, traducción, errores, decisiones), pensada
 como base para la memoria de la tesis y para el auto-aprendizaje.
 
-Uso:  python docs/generar_documentacion.py
+Uso:  python docs/generar_doc_seccion1.py
 """
 from pathlib import Path
 
@@ -17,7 +17,7 @@ from reportlab.platypus import (
     Preformatted, HRFlowable, KeepTogether,
 )
 
-SALIDA = Path(__file__).parent / "documentacion-tecnica.pdf"
+SALIDA = Path(__file__).parent / "documentacion-seccion1.pdf"
 
 # --- Paleta ---------------------------------------------------------------
 AZUL = colors.HexColor("#1f3a5f")
