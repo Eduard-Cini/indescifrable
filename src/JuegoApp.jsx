@@ -5,8 +5,8 @@ import Tablero from './Tablero';
 import TableroClave from './TableroClave';
 import './App.css';
 
-// Sección "Juegos": el Codenames (Indescifrable). Es el mismo router por estado
-// que antes vivía en App.jsx; ahora App.jsx enruta las secciones de la plataforma.
+// Codenames (Indescifrable), uno de los juegos de la Sección 4. Es el mismo
+// router por estado de siempre; el hub de juegos vive en /juegos.
 function JuegoApp() {
   const [pantallaActiva, setPantallaActiva] = useState('landing');
   const [datosJuego, setDatosJuego] = useState(null);
@@ -18,7 +18,7 @@ function JuegoApp() {
 
   return (
     <>
-      <Link to="/" className="volver-plataforma">← Plataforma</Link>
+      <Link to="/juegos" className="volver-plataforma">← Juegos</Link>
 
       {pantallaActiva === 'landing' && (
         <Landing onIniciarPartida={iniciarPartida} />

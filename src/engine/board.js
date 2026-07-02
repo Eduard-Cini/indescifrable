@@ -39,6 +39,18 @@ export function crearGenerador(semilla) {
   };
 }
 
+// LCG normalizado a [0,1): crearGenerador puede salirse del rango (valores
+// negativos cuando el hash de la semilla es negativo, o 1.0 en el borde), lo
+// que haría a barajar leer índices fuera de rango. La parte fraccionaria lo
+// corrige sin alterar los tableros ya repartidos por crearGenerador.
+export function crearGeneradorNormalizado(semilla) {
+  const base = crearGenerador(String(semilla));
+  return () => {
+    const v = base();
+    return v - Math.floor(v);
+  };
+}
+
 export function barajar(array, rng) {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {

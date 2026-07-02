@@ -1,0 +1,128 @@
+/* Sección Juegos: hub + escalera de palabras + crucigrama.
+   Reutiliza el layout de lectura.css (.lectura-container, .lectura-top) y los
+   botones de gramatica.css (.gram-boton); paleta oscura común. */
+
+/* --- Hub --- */
+.juegos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.juego-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 1.2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.12s ease, transform 0.12s ease;
+}
+.juego-card:hover { border-color: #4a7; transform: translateY(-2px); }
+.juego-card h2 { margin: 0; font-size: 1.15rem; color: #f0f0f0; }
+.juego-card p { margin: 0; font-size: 0.85rem; color: #aaa; line-height: 1.4; }
+.juego-algoritmo { font-size: 0.75rem; color: #8fbf9f; margin-top: auto; }
+
+/* --- Configuración compartida (selects + botones) --- */
+.juego-config {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0.6rem 0 1rem;
+}
+.juego-config label { color: #aaa; font-size: 0.85rem; }
+.juego-select {
+  background: #1d1d1d;
+  color: #e0e0e0;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+/* --- Escalera de palabras --- */
+.esc-reto {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  color: #f0f0f0;
+}
+.esc-reto .esc-palabra { letter-spacing: 0.2em; font-weight: bold; text-transform: uppercase; }
+.esc-flecha { color: #6a8cff; }
+.esc-camino { list-style: none; padding: 0; margin: 1rem 0; }
+.esc-paso {
+  display: flex;
+  gap: 0.8rem;
+  align-items: baseline;
+  padding: 0.3rem 0;
+  font-size: 1.15rem;
+  color: #e0e0e0;
+}
+.esc-paso .esc-palabra { letter-spacing: 0.2em; text-transform: uppercase; }
+.esc-paso.meta .esc-palabra { color: #8fbf9f; font-weight: bold; }
+.esc-glosa { color: #888; font-size: 0.8rem; }
+.esc-form { display: flex; gap: 0.6rem; margin: 0.8rem 0; flex-wrap: wrap; }
+.esc-input {
+  background: #1d1d1d;
+  color: #f0f0f0;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  padding: 0.55rem 0.8rem;
+  font-family: inherit;
+  font-size: 1.05rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  width: 11rem;
+}
+.esc-input:focus { border-color: #6a8cff; outline: none; }
+.esc-aviso { color: #e79; font-size: 0.9rem; margin: 0.2rem 0; }
+.esc-contador { color: #8fbf9f; font-size: 0.85rem; }
+
+/* --- Crucigrama --- */
+.cruci-tablero { display: grid; gap: 2px; width: max-content; margin: 1rem auto; }
+.cruci-celda { position: relative; width: 2.2rem; height: 2.2rem; }
+.cruci-celda input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  color: #f0f0f0;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 0;
+}
+.cruci-celda input:focus { border-color: #6a8cff; outline: none; }
+.cruci-celda input.mal { border-color: #d88; color: #e79; }
+.cruci-celda input.bien { border-color: #35563f; color: #8fbf9f; }
+.cruci-num {
+  position: absolute;
+  top: 1px;
+  left: 3px;
+  font-size: 0.55rem;
+  color: #8fbf9f;
+  pointer-events: none;
+  z-index: 1;
+}
+.cruci-pistas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cruci-pistas h3 { margin: 0 0 0.4rem; font-size: 0.95rem; color: #9ad; }
+.cruci-pistas ol { list-style: none; padding: 0; margin: 0; }
+.cruci-pistas li { color: #ccc; font-size: 0.9rem; line-height: 1.6; }
+.cruci-pistas li b { color: #8fbf9f; }
+.cruci-len { color: #666; font-size: 0.8rem; }
+.juego-exito { color: #8fbf9f; font-weight: bold; font-size: 1.1rem; margin: 0.8rem 0 0.4rem; }

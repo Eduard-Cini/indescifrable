@@ -1,6 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import JuegoApp from './JuegoApp';
+import Juegos from './secciones/juegos/Juegos';
+import Escalera from './secciones/juegos/Escalera';
+import Crucigrama from './secciones/juegos/Crucigrama';
 import Biblioteca from './secciones/lectura/Biblioteca';
 import Lector from './secciones/lectura/Lector';
 import Bolsa from './secciones/lectura/Bolsa';
@@ -15,7 +18,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/juegos/*" element={<JuegoApp />} />
+        <Route path="/juegos" element={<Juegos />} />
+        <Route path="/juegos/codenames/*" element={<JuegoApp />} />
+        <Route path="/juegos/escalera" element={<Escalera />} />
+        <Route path="/juegos/crucigrama" element={<Crucigrama />} />
         <Route path="/lectura" element={<Biblioteca />} />
         <Route path="/lectura/:idioma/:nivel/:id" element={<Lector />} />
         <Route path="/bolsa" element={<Bolsa />} />

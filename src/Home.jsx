@@ -17,7 +17,7 @@ function Home() {
 
         <Link to="/juegos" className="seccion-card juegos">
           <h2>🎮 Juegos</h2>
-          <p>Indescifrable: el Codenames con vocabulario en tres idiomas.</p>
+          <p>Codenames en tres idiomas, escalera de palabras (BFS) y crucigrama (backtracking).</p>
         </Link>
 
         <Link to="/repaso" className="seccion-card repaso">

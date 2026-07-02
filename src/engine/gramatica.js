@@ -10,19 +10,7 @@
 // testearlo con Vitest igual que srs.js / leitner.js. El azar entra siempre por
 // el LCG determinista de board.js, así que la salida es reproducible por semilla.
 
-import { crearGenerador, barajar } from './board';
-
-// crearGenerador de board.js puede devolver valores fuera de [0,1) (negativos
-// cuando el hash de la semilla es negativo, o 1.0 en el borde), lo que haría a
-// barajar leer índices fuera de rango. Tomamos la parte fraccionaria para
-// garantizar [0,1) sin alterar board.js (usado por el tablero del juego).
-function rngDeterminista(semilla) {
-  const base = crearGenerador(String(semilla));
-  return () => {
-    const v = base();
-    return v - Math.floor(v);
-  };
-}
+import { barajar, crearGeneradorNormalizado as rngDeterminista } from './board';
 
 /**
  * Opciones (respuesta + distractores) de un ejercicio, barajadas de forma
