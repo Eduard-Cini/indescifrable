@@ -20,10 +20,10 @@ function Home() {
           <p>Indescifrable: el Codenames con vocabulario en tres idiomas.</p>
         </Link>
 
-        <div className="seccion-card proximamente">
+        <Link to="/repaso" className="seccion-card repaso">
           <h2>🗂️ Repaso</h2>
-          <p>Repetición espaciada (Leitner / SM-2). Próximamente.</p>
-        </div>
+          <p>Repetición espaciada (SM-2) sobre tu bolsa de palabras.</p>
+        </Link>
 
         <div className="seccion-card proximamente">
           <h2>✍️ Gramática</h2>

@@ -2,7 +2,17 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
 import { quitarPalabra } from '../../engine/bolsa';
+import { estaPendiente } from '../../engine/srs';
 import './lectura.css';
+
+function estadoRepaso(p, ahora) {
+  if (!p.srs) return 'nueva';
+  if (estaPendiente(p, ahora)) return 'pendiente de repaso';
+  const dias = Math.ceil(
+    (Date.parse(p.srs.vencimiento) - Date.parse(ahora)) / (24 * 60 * 60 * 1000)
+  );
+  return `vuelve en ${dias} día(s)`;
+}
 
 function Bolsa() {
   const [bolsa, setBolsa] = useState([]);
@@ -28,9 +38,16 @@ function Bolsa() {
       </header>
 
       <p className="lectura-subtitulo">
-        {bolsa.length === 0
-          ? 'Tu bolsa está vacía. Guarda palabras desde una lectura.'
-          : `${bolsa.length} palabra(s). Aquí vivirá el repaso espaciado (Sección 2).`}
+        {bolsa.length === 0 ? (
+          'Tu bolsa está vacía. Guarda palabras desde una lectura.'
+        ) : (
+          <>
+            {bolsa.length} palabra(s).{' '}
+            <Link to="/repaso" className="lectura-link">
+              Repásalas con repetición espaciada →
+            </Link>
+          </>
+        )}
       </p>
 
       <ul className="bolsa-lista">
@@ -46,6 +63,9 @@ function Bolsa() {
               {p.traducciones?.es && (
                 <span className="bolsa-meta">{p.traducciones.es}</span>
               )}
+              <span className="bolsa-srs">
+                {estadoRepaso(p, new Date().toISOString())}
+              </span>
             </div>
             {confirmando === p.id ? (
               <div className="bolsa-confirm">

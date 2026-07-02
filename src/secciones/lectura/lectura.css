@@ -284,6 +284,7 @@
 .bolsa-palabra { font-weight: bold; font-size: 1.05rem; }
 .bolsa-lemma { color: #888; font-size: 0.85rem; }
 .bolsa-meta { color: #8fbf9f; font-size: 0.8rem; }
+.bolsa-srs { color: #777; font-size: 0.7rem; }
 .bolsa-quitar {
   flex-shrink: 0;
   width: 26px;

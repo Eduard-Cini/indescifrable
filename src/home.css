@@ -49,6 +49,7 @@
 }
 
 .seccion-card.juegos:hover { border-color: #6a8cff; }
+.seccion-card.repaso:hover { border-color: #b7a86a; }
 .seccion-card.proximamente {
   opacity: 0.55;
   cursor: default;

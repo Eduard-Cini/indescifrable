@@ -1,0 +1,94 @@
+/* Sección Repaso: tarjeta de repaso espaciado (SM-2) sobre la bolsa.
+   Reutiliza el layout de lectura.css (.lectura-container, .lectura-top). */
+
+.repaso-tarjeta {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  background: #1d1d1d;
+  border: 1px solid #2e2e2e;
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.12s ease;
+}
+.repaso-tarjeta:hover { border-color: #4a7; }
+.repaso-tarjeta.volteada { cursor: default; border-color: #35563f; }
+
+.repaso-idioma {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 0.7rem;
+  color: #888;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.repaso-anverso {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+.repaso-lemma { font-size: 1rem; font-weight: normal; color: #888; }
+
+.repaso-reverso {
+  font-size: 1.3rem;
+  color: #8fbf9f;
+}
+
+.repaso-pista { font-size: 0.8rem; color: #666; }
+
+/* --- Botones de calificación (4 niveles) --- */
+.repaso-botones {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+@media (max-width: 480px) {
+  .repaso-botones { grid-template-columns: repeat(2, 1fr); }
+}
+
+.repaso-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  border: 1px solid #2e2e2e;
+  border-radius: 8px;
+  background: #1d1d1d;
+  color: #e0e0e0;
+  padding: 0.6rem 0.4rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease;
+}
+.repaso-btn-intervalo { font-size: 0.7rem; font-weight: normal; color: #888; }
+
+.repaso-btn.otraVez:hover { border-color: #d88; background: #2a1414; }
+.repaso-btn.dificil:hover { border-color: #b7a86a; background: #262114; }
+.repaso-btn.bien:hover { border-color: #4a7; background: #14201a; }
+.repaso-btn.facil:hover { border-color: #6a8cff; background: #141a26; }
+
+/* --- Fin de sesión --- */
+.repaso-fin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+.repaso-fin-titulo { font-size: 1.2rem; font-weight: bold; margin: 0; }
+.repaso-fin-stats { color: #8fbf9f; margin: 0; }

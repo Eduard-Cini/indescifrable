@@ -2,7 +2,7 @@
 
 Sitio de aprendizaje de idiomas (es/en/de) como tesis en **matemática algorítmica**.
 La aportación es el modelado matemático/algorítmico; el sitio es el vehículo.
-Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (Leitner/SM-2) ⏳,
+Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (SM-2 ✅ · simulación Leitner/Markov ⏳),
 (3) Gramática cloze con spaCy ⏳, (4) Juegos (Codenames ✅).
 
 ## Estado actual (hecho)
@@ -14,7 +14,12 @@ Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (Leitner/SM-2) ⏳,
   (directo → cadena de→en→es → compuesto), y por frase con LLM (Gemini) o MT (opus-mt).
 - **Contenido**: 9 lecturas cortas trilingües (principiante/intermedio) + 2 libros avanzados:
   *Die Verwandlung* (Kafka, frase por **Gemini**) e *Immensee* (Storm, frase por **MT opus-mt**).
-- **Motor puro + Vitest** (17 tests): `src/engine/` (board LCG, bolsa, progreso).
+- **Sección Repaso (motor + UI)**: SM-2 puro en `src/engine/srs.js` (estado `srs` dentro de
+  cada entrada de la bolsa; `ahora` inyectable → determinista y simulable). UI en `/repaso`
+  (`src/secciones/repaso/`): tarjeta palabra→traducción, 4 niveles estilo Anki
+  (otraVez=2/difícil=3/bien=4/fácil=5), falladas se reciclan en la sesión, tope 10 nuevas.
+  Decisión del usuario: **SM-2 único en producción**; Leitner solo para comparar por simulación.
+- **Motor puro + Vitest** (28 tests): `src/engine/` (board LCG, bolsa, progreso, srs).
 - **Docs** en `docs/*.pdf`: técnica, plan-de-aprendizaje, reporte-metricas (+ sus `generar_*.py`).
 
 ## Arquitectura (3 piezas separadas)
@@ -47,7 +52,7 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Cobertura por palabra: 100% principiante/intermedio, ~92-94% libros. MT vs Gemini: chrF 61.9.
 
 ## Próximo trabajo (prioridad)
-1. **Sección 2 — Repaso espaciado**: Leitner como cadena de Markov + SM-2 (comparar por simulación; opcional FSRS). Es el **núcleo matemático** de la tesis. Opera sobre la bolsa (`localStorage 'bolsa.v1'`); las entradas ya están listas para recibir estado SRS.
+1. **Sección 2 — parte matemática**: modelar Leitner como cadena de Markov y compararlo con SM-2 por **simulación** (alumno sintético con curva de olvido; opcional FSRS). El motor ya está listo para esto: `calificar(srs, q, ahora)` es puro con tiempo inyectado. Es el **núcleo matemático** de la tesis.
 2. **Sección 3 — Gramática**: cloze con spaCy Matcher/DependencyMatcher sobre los textos; distractores por similitud coseno (embeddings).
 3. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, más juegos (word ladder BFS, crucigrama backtracking).
 
