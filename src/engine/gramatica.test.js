@@ -4,6 +4,10 @@ import {
   esCorrecta,
   seleccionarSesion,
   resumenSesion,
+  slugDeLectura,
+  agruparPorLectura,
+  claveEjercicio,
+  lecturaCompletada,
 } from './gramatica';
 
 const ej = {
@@ -104,6 +108,70 @@ describe('seleccionarSesion', () => {
       { id: 'y', nivel: 'avanzado', fuente: 'z' },
     ];
     expect(seleccionarSesion(mixto, { n: 2 }).map((e) => e.id)).toEqual(['y', 'x']);
+  });
+});
+
+describe('slugDeLectura', () => {
+  it('quita acentos y normaliza a kebab-case', () => {
+    expect(slugDeLectura('Un día de Ana')).toBe('un-dia-de-ana');
+    expect(slugDeLectura('La metamorfosis')).toBe('la-metamorfosis');
+    expect(slugDeLectura('  ¡El león y el ratón!  ')).toBe('el-leon-y-el-raton');
+  });
+});
+
+describe('agruparPorLectura', () => {
+  const data = {
+    temas: [
+      { id: 'declinacion', nivel: 'principiante' },
+      { id: 'preposicion_caso', nivel: 'intermedio' },
+    ],
+    ejercicios: {
+      declinacion: [
+        { id: 'd1', fuente: 'avanzado · Immensee', nivel: 'avanzado', antes: 'x', respuesta: 'die' },
+        { id: 'd2', fuente: 'principiante · El mercado', nivel: 'principiante', antes: 'y', respuesta: 'das' },
+      ],
+      preposicion_caso: [
+        { id: 'p1', fuente: 'principiante · El mercado', nivel: 'principiante', antes: 'z', respuesta: 'mit' },
+      ],
+    },
+  };
+
+  it('agrupa por lectura y ordena por nivel ascendente', () => {
+    const grupos = agruparPorLectura(data);
+    expect(grupos.map((g) => g.titulo)).toEqual(['El mercado', 'Immensee']);
+    expect(grupos[0].nivel).toBe('principiante');
+    expect(grupos[0].slug).toBe('el-mercado');
+  });
+
+  it('dentro de una lectura, los ejercicios van por tema en el orden de data.temas', () => {
+    const mercado = agruparPorLectura(data)[0];
+    expect(mercado.ejercicios.map((e) => e.tema)).toEqual(['declinacion', 'preposicion_caso']);
+    expect(mercado.ejercicios.map((e) => e.id)).toEqual(['d2', 'p1']);
+  });
+});
+
+describe('lecturaCompletada', () => {
+  const data = {
+    temas: [{ id: 't', nivel: 'principiante' }],
+    ejercicios: {
+      t: [
+        { id: 'a', fuente: 'principiante · X', nivel: 'principiante', antes: '1', respuesta: 'r1' },
+        { id: 'b', fuente: 'principiante · X', nivel: 'principiante', antes: '2', respuesta: 'r2' },
+      ],
+    },
+  };
+  const grupo = agruparPorLectura(data)[0];
+
+  it('solo con todos los ejercicios respondidos bien', () => {
+    const claves = grupo.ejercicios.map(claveEjercicio);
+    expect(lecturaCompletada(grupo, [])).toBe(false);
+    expect(lecturaCompletada(grupo, [claves[0]])).toBe(false);
+    expect(lecturaCompletada(grupo, claves)).toBe(true);
+  });
+
+  it('la clave es estable aunque cambien los ids', () => {
+    const otro = { ...grupo.ejercicios[0], id: 'renumerado-99' };
+    expect(claveEjercicio(otro)).toBe(claveEjercicio(grupo.ejercicios[0]));
   });
 });
 

@@ -126,9 +126,9 @@ p("Cada tema lleva además su <b>lección</b>: <font face='Courier'>{ id, titulo
   "desplegable («Ver la regla») durante la práctica. El <font face='Courier'>nivel</font> del tema "
   "clasifica su dificultad (decisión del usuario: declinación, conjugación y separables = "
   "principiante; preposición y caso = intermedio); el del ejercicio es el de su lectura de "
-  "origen y define el <b>orden pedagógico</b>: tanto el JSON como cada sesión presentan los "
-  "ejercicios por nivel ascendente y, dentro del nivel, agrupados por lectura (la semilla "
-  "decide cuáles entran; el orden de presentación es fijo).")
+  "origen. La navegación es <b>por lectura</b>: el motor reagrupa el JSON con "
+  "<font face='Courier'>agruparPorLectura</font> (lecturas ordenadas por nivel ascendente; dentro de "
+  "cada una, los ejercicios agrupados por tema en orden de dificultad del tema).")
 
 h1("4. Detección de huecos (spaCy)")
 p("El pipeline recorre las frases en alemán de <b>todas</b> las lecturas (solo frases de "
@@ -192,21 +192,26 @@ p("Los candidatos se acumulan por (tema, fuente) con una cota de 12 por fuente, 
 
 h1("8. Motor puro (JS) y UI")
 h2("8.1 src/engine/gramatica.js")
-p("Cuatro funciones puras, testeadas con Vitest (12 tests): "
-  "<font face='Courier'>opcionesDe(ejercicio, semilla)</font> baraja respuesta+distractores de forma "
-  "determinista (mismo orden entre renders, distinto entre ejercicios); "
-  "<font face='Courier'>seleccionarSesion(banco, {n, semilla})</font> elige hasta n sin repetir; "
+p("Funciones puras testeadas con Vitest: <font face='Courier'>opcionesDe(ejercicio, semilla)</font> "
+  "baraja respuesta+distractores de forma determinista (mismo orden entre renders, distinto "
+  "entre ejercicios); <font face='Courier'>agruparPorLectura(data)</font> reagrupa los ejercicios por "
+  "lectura de origen (orden: nivel ascendente; dentro, por tema); "
+  "<font face='Courier'>claveEjercicio</font> / <font face='Courier'>lecturaCompletada</font> gobiernan el progreso "
+  "(clave estable fuente|antes|respuesta: sobrevive a regenerar los ids); "
   "<font face='Courier'>esCorrecta</font> y <font face='Courier'>resumenSesion</font> completan la sesión. "
   "El azar entra siempre por el LCG determinista de <font face='Courier'>board.js</font>, con una "
   "corrección: ese generador puede emitir valores fuera de [0,1) (hash de semilla negativo), "
   "así que el motor toma la parte fraccionaria antes de barajar.")
 h2("8.2 Flujo de la UI")
-p("<b>/gramatica</b> lista los temas (lección + conteo); <b>/gramatica/:tema</b> corre una "
-  "sesión de hasta 10 ejercicios: regla desplegable arriba, frase con hueco, 4 opciones; al "
-  "responder se colorea la elección y la correcta, se muestra pista y fuente, y al final un "
-  "resumen (aciertos, %) con «Otra ronda» (nueva semilla → nueva selección y orden). "
-  "<font face='Courier'>gramatica.json</font> se carga por <b>dynamic import</b>: es un chunk aparte "
-  "(~30 KB) fuera del bundle inicial, como el léxico.")
+p("<b>/gramatica</b> lista las <b>lecturas</b> del corpus con ejercicios, ordenadas de "
+  "principiante a avanzado, cada una con su etiqueta de nivel, el conteo y una palomita ✓ "
+  "si ya está completada. <b>/gramatica/:lectura</b> recorre TODOS los ejercicios de esa "
+  "lectura agrupados por tema (los temas de principiante primero); cada ejercicio muestra "
+  "la regla de su tema en un desplegable, la frase con hueco y 4 opciones; al responder se "
+  "colorea la elección y la correcta y se muestra la pista. Cada acierto se persiste "
+  "(<font face='Courier'>gramatica.hechos.v1</font>); la lectura queda completada cuando todos sus "
+  "ejercicios se han respondido bien alguna vez. <font face='Courier'>gramatica.json</font> se carga "
+  "por <b>dynamic import</b>: chunk aparte, fuera del bundle inicial, como el léxico.")
 
 h1("9. Decisiones y trampas")
 tabla([

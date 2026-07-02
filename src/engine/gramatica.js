@@ -63,6 +63,69 @@ export function seleccionarSesion(ejercicios, { n = 10, semilla = 'sesion' } = {
     );
 }
 
+/** Slug de URL a partir del título de la lectura («Un día de Ana» → un-dia-de-ana). */
+export function slugDeLectura(titulo) {
+  return String(titulo)
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '') // fuera diacríticos combinantes (tras NFD)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Reorganiza gramatica.json por LECTURA: una entrada por lectura de origen,
+ * ordenadas por nivel ascendente (y título dentro del nivel). Los ejercicios
+ * de cada lectura van agrupados por tema, en el orden (de dificultad) en que
+ * los temas aparecen en data.temas, y cada uno lleva su tema anotado para que
+ * la UI muestre la etiqueta y la regla correspondiente.
+ */
+export function agruparPorLectura(data) {
+  const grupos = new Map(); // fuente -> entrada
+  for (const tema of data.temas) {
+    for (const ej of data.ejercicios[tema.id] ?? []) {
+      const titulo = String(ej.fuente ?? '').split('·')[1]?.trim() || ej.fuente || '?';
+      let g = grupos.get(ej.fuente);
+      if (!g) {
+        g = {
+          slug: slugDeLectura(titulo),
+          titulo,
+          nivel: ej.nivel,
+          fuente: ej.fuente,
+          ejercicios: [],
+        };
+        grupos.set(ej.fuente, g);
+      }
+      // data.temas ya está ordenado por dificultad del tema, y este bucle lo
+      // recorre en ese orden: los ejercicios quedan agrupados tema a tema.
+      g.ejercicios.push({ ...ej, tema: tema.id });
+    }
+  }
+  return [...grupos.values()].sort(
+    (a, b) =>
+      (ORDEN_NIVEL[a.nivel] ?? 9) - (ORDEN_NIVEL[b.nivel] ?? 9) ||
+      a.titulo.localeCompare(b.titulo)
+  );
+}
+
+/**
+ * ¿Está completada una lectura? Se considera completada cuando todos los ids
+ * de sus ejercicios están en el registro de completados (persistido fuera de
+ * este módulo). Los ids cambian al regenerar el corpus, así que el registro
+ * guarda claves estables ejercicio→(fuente + respuesta + antes).
+ */
+export function claveEjercicio(ej) {
+  return `${ej.fuente}|${ej.antes}|${ej.respuesta}`;
+}
+
+export function lecturaCompletada(grupo, completados) {
+  const hechas = new Set(completados);
+  return (
+    grupo.ejercicios.length > 0 &&
+    grupo.ejercicios.every((ej) => hechas.has(claveEjercicio(ej)))
+  );
+}
+
 /**
  * Resumen de una sesión a partir de la lista de resultados booleanos
  * (true = acierto). porcentaje redondeado a entero.

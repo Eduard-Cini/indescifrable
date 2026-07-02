@@ -20,7 +20,7 @@ function App() {
         <Route path="/bolsa" element={<Bolsa />} />
         <Route path="/repaso" element={<Repaso />} />
         <Route path="/gramatica" element={<Gramatica />} />
-        <Route path="/gramatica/:tema" element={<Ejercicios />} />
+        <Route path="/gramatica/:lectura" element={<Ejercicios />} />
       </Routes>
     </BrowserRouter>
   );

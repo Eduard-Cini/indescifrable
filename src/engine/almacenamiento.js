@@ -6,6 +6,7 @@ const CLAVE_BOLSA = 'bolsa.v1';
 const CLAVE_PROGRESO = 'lecturas.completadas.v1';
 const CLAVE_CONOCIDAS = 'conocidas.v1';
 const CLAVE_REPASO_PREVIO = 'repasoPrevio.v1';
+const CLAVE_GRAMATICA = 'gramatica.hechos.v1';
 
 function cargarArray(clave) {
   if (typeof localStorage === 'undefined') return [];
@@ -70,4 +71,14 @@ export function cargarRepasoPrevio() {
 
 export function guardarRepasoPrevio(mapa) {
   guardar(CLAVE_REPASO_PREVIO, mapa);
+}
+
+/** Claves estables de ejercicios de gramática respondidos correctamente
+ *  (ver claveEjercicio en engine/gramatica.js; sobreviven a regenerar ids). */
+export function cargarGramaticaHechos() {
+  return cargarArray(CLAVE_GRAMATICA);
+}
+
+export function guardarGramaticaHechos(claves) {
+  guardar(CLAVE_GRAMATICA, claves);
 }

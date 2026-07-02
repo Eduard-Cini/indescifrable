@@ -37,6 +37,9 @@
 .gram-nivel.principiante { border-color: #35563f; color: #8fbf9f; }
 .gram-nivel.intermedio { border-color: #6a5c2e; color: #b7a86a; }
 .gram-nivel.avanzado { border-color: #56353f; color: #d88; }
+
+.gram-palomita { color: #4a7; font-weight: bold; }
+.gram-leccion summary .gram-nivel { margin-left: 0.4rem; }
 .gram-tema-card p { margin: 0; font-size: 0.85rem; color: #aaa; line-height: 1.4; }
 .gram-tema-count { font-size: 0.75rem; color: #8fbf9f; margin-top: auto; }
 

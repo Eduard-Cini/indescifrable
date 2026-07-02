@@ -34,8 +34,11 @@ híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
 - **Sección Gramática (pipeline + motor + UI)**: ejercicios cloze de alemán por tema
   (declinación del artículo, preposición+caso, conjugación, verbos separables), organizados
   como lección (regla + tabla) → práctica. Temas con nivel (declinación/conjugación/separables
-  = principiante; preposición+caso = intermedio) y ejercicios presentados en orden pedagógico:
-  nivel de la lectura de origen ascendente, agrupados por lectura (la semilla elige cuáles). `pipeline/gramatica.py` genera 157 ejercicios
+  = principiante; preposición+caso = intermedio). Navegación **por lectura**: /gramatica lista
+  las lecturas del corpus (orden principiante→avanzado, chip de nivel y palomita ✓ al completar);
+  /gramatica/:lectura recorre TODOS sus ejercicios agrupados por tema en orden de dificultad,
+  con la regla del tema desplegable. Aciertos persistidos en `gramatica.hechos.v1` con clave
+  estable fuente|antes|respuesta (sobrevive a regenerar ids). `pipeline/gramatica.py` genera 157 ejercicios
   desde TODAS las lecturas (selección estratificada round-robin por fuente) con distractores
   **híbridos**: el paradigma morfológico define el conjunto y la similitud coseno de los
   vectores spaCy lo ordena (hard negatives). Unicidad de respuesta garantizada por filtros:
