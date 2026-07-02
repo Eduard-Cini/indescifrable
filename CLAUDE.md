@@ -19,7 +19,13 @@ Cuatro vertientes: (1) **Lectura** ✅, (2) Repaso espaciado (SM-2 ✅ · simula
   (`src/secciones/repaso/`): tarjeta palabra→traducción, 4 niveles estilo Anki
   (otraVez=2/difícil=3/bien=4/fácil=5), falladas se reciclan en la sesión, tope 10 nuevas.
   Decisión del usuario: **SM-2 único en producción**; Leitner solo para comparar por simulación.
-- **Motor puro + Vitest** (28 tests): `src/engine/` (board LCG, bolsa, progreso, srs).
+- **Modelo de conocimiento + repaso previo**: `src/engine/conocimiento.js` estima P(conocer)
+  por palabra (marcada conocida 0.95 · retrievability e^(−t/S) si tiene SRS · 0.2 en bolsa
+  sin repasar · prior logístico sobre Zipf del corpus si nunca vista). Al abrir una lectura,
+  el Lector interpone `RepasoPrevio` con las menos probables (tope: 5/12/20 por nivel),
+  saltable, máx. 1 vez/día/lectura (`repasoPrevio.v1`); «ya la conocía» → `conocidas.v1`.
+  Frecuencias del corpus: `pipeline/frecuencias.py` → `src/data/frecuencias.json` (chunk aparte).
+- **Motor puro + Vitest** (40 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento).
 - **Docs** en `docs/*.pdf`: técnica, plan-de-aprendizaje, reporte-metricas (+ sus `generar_*.py`).
 
 ## Arquitectura (3 piezas separadas)
@@ -33,6 +39,7 @@ Frontend: `npm run dev` · `npm run build` · `npm test`.
 Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 - Ingerir libro: `python pipeline/procesar.py <libro>` (libros en dict `LIBROS`; añadir texto con `fuentes_descargar.py <id> <nombre>`).
 - Léxico (todas las lecturas): `python pipeline/construir_lexico.py`.
+- Frecuencias por lema (para el modelo de conocimiento): `python pipeline/frecuencias.py` (re-ejecutar al añadir lecturas).
 - Overrides separables (principiante/intermedio, curados a mano): `python pipeline/overrides_lecturas.py`.
 - Frase por MT: `python pipeline/traducir_mt.py <prefijo>`.
 - Frase por LLM: `exportar_frases.py <id>` → pegar en Gemini → `importar_traduccion.py <id> <archivo>` (valida 1:1).

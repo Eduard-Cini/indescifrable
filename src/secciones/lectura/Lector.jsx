@@ -6,26 +6,17 @@ import {
   guardarBolsa,
   cargarProgreso,
   guardarProgreso,
+  cargarConocidas,
+  cargarRepasoPrevio,
+  guardarRepasoPrevio,
 } from '../../engine/almacenamiento';
 import { agregarPalabra, crearEntrada, clavePalabra, tienePalabra } from '../../engine/bolsa';
 import { marcarCompletada, estaCompletada } from '../../engine/progreso';
+import { tokenizar } from '../../engine/tokenizar';
+import { candidatasRepasoPrevio } from '../../engine/conocimiento';
 import PopupPalabra from './PopupPalabra';
+import RepasoPrevio from './RepasoPrevio';
 import './lectura.css';
-
-// Separa una frase en palabras (clicables) y separadores (puntuación/espacios).
-function tokenizar(frase) {
-  const tokens = [];
-  const re = /\p{L}[\p{L}\p{M}'’-]*/gu;
-  let ultimo = 0;
-  let m;
-  while ((m = re.exec(frase)) !== null) {
-    if (m.index > ultimo) tokens.push({ tipo: 'sep', valor: frase.slice(ultimo, m.index) });
-    tokens.push({ tipo: 'palabra', valor: m[0] });
-    ultimo = m.index + m[0].length;
-  }
-  if (ultimo < frase.length) tokens.push({ tipo: 'sep', valor: frase.slice(ultimo) });
-  return tokens;
-}
 
 function Lector() {
   const { idioma, nivel, id } = useParams();
@@ -36,9 +27,15 @@ function Lector() {
   const [seleccion, setSeleccion] = useState(null); // { surface, lemma, traduccionEs, id }
   const [traducidas, setTraducidas] = useState({}); // traducción revelada por frase (índice -> bool)
   const [completada, setCompletada] = useState(false);
-  // El léxico (~465 KB) se carga bajo demanda para no inflar el bundle inicial:
-  // Vite lo emite como chunk aparte, cacheado, que solo se descarga al abrir una lectura.
+  // El léxico (~465 KB) y las frecuencias se cargan bajo demanda para no inflar
+  // el bundle inicial: Vite los emite como chunks aparte, cacheados, que solo
+  // se descargan al abrir una lectura.
   const [lexico, setLexico] = useState(null);
+  const [frecuencias, setFrecuencias] = useState(null);
+  // Repaso previo: { paraId, fichas } — guarda a qué lectura pertenece para
+  // que un render intermedio al navegar entre lecturas no use fichas viejas.
+  const [previo, setPrevio] = useState(null);
+  const fichasPrevio = previo?.paraId === id ? previo.fichas : null;
 
   useEffect(() => {
     setBolsa(cargarBolsa());
@@ -47,7 +44,36 @@ function Lector() {
 
   useEffect(() => {
     import('../../data/lexico.json').then((m) => setLexico(m.default));
+    import('../../data/frecuencias.json').then((m) => setFrecuencias(m.default));
   }, []);
+
+  // Decide el repaso previo cuando hay datos: solo en idioma extranjero y como
+  // mucho una vez al día por lectura (para no estorbar relecturas).
+  useEffect(() => {
+    if (!lectura?.cuerpo?.[idioma]) return;
+    if (idioma === 'es' || !lexico || !frecuencias) {
+      if (idioma === 'es') setPrevio({ paraId: id, fichas: [] });
+      return;
+    }
+    const hoy = new Date().toISOString().slice(0, 10);
+    const fichas =
+      cargarRepasoPrevio()[id]?.slice(0, 10) === hoy
+        ? []
+        : candidatasRepasoPrevio(lectura, idioma, {
+            bolsa: cargarBolsa(),
+            lexico,
+            frecuencias,
+            conocidas: cargarConocidas(),
+            ahora: new Date().toISOString(),
+          });
+    setPrevio({ paraId: id, fichas });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id, idioma, lexico, frecuencias]);
+
+  const terminarPrevio = () => {
+    guardarRepasoPrevio({ ...cargarRepasoPrevio(), [id]: new Date().toISOString() });
+    setPrevio({ paraId: id, fichas: [] });
+  };
 
   // Enlace de vuelta que conserva el idioma y nivel elegidos en la Biblioteca.
   const volverBiblioteca = `/lectura?idioma=${idioma}&nivel=${nivel}`;
@@ -138,6 +164,19 @@ function Lector() {
         <p className="lectura-parte">Parte {lectura.parte} de {lectura.partes}</p>
       )}
 
+      {fichasPrevio === null && !esEspanol ? (
+        <p className="lectura-subtitulo">Preparando la lectura…</p>
+      ) : fichasPrevio?.length > 0 ? (
+        <RepasoPrevio
+          key={id}
+          candidatas={fichasPrevio}
+          idioma={idioma}
+          bolsa={bolsa}
+          onBolsa={setBolsa}
+          onTerminar={terminarPrevio}
+        />
+      ) : (
+        <>
       <p className="lectura-subtitulo">
         Leyendo en <strong>{NOMBRE_IDIOMA[idioma]}</strong>. Toca una palabra para
         traducirla y guardarla{hayTraduccionFrase && ', o el ⇄ del margen para traducir la frase'}.
@@ -211,6 +250,8 @@ function Lector() {
       </div>
 
       {lectura.fuente && <p className="lectura-fuente">{lectura.fuente}</p>}
+        </>
+      )}
 
       {seleccion && (
         <PopupPalabra

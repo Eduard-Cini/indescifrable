@@ -81,6 +81,22 @@
 .repaso-btn.bien:hover { border-color: #4a7; background: #14201a; }
 .repaso-btn.facil:hover { border-color: #6a8cff; background: #141a26; }
 
+/* --- Repaso previo a la lectura --- */
+.previo-acciones { grid-template-columns: repeat(2, 1fr); }
+.repaso-btn.conocia:hover { border-color: #9ad; background: #14202a; }
+.repaso-btn.bolsa:hover { border-color: #4a7; background: #14201a; }
+
+.previo-saltar-zona { display: flex; justify-content: center; margin-top: 1.5rem; }
+.previo-saltar {
+  background: none;
+  border: none;
+  color: #9ad;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+.previo-saltar:hover { color: #cfe6ff; }
+
 /* --- Fin de sesión --- */
 .repaso-fin {
   display: flex;

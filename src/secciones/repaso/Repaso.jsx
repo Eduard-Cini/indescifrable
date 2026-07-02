@@ -3,29 +3,14 @@ import { Link } from 'react-router-dom';
 import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
 import {
   CALIFICACIONES,
-  calificar,
   seleccionarSesion,
   aplicarCalificacion,
   resumen,
 } from '../../engine/srs';
+import BotonesCalificacion from './BotonesCalificacion';
 import './repaso.css';
 
-// Etiquetas de los 4 niveles en el orden en que se pintan los botones.
-const NIVELES = [
-  { clave: 'otraVez', texto: 'Otra vez' },
-  { clave: 'dificil', texto: 'Difícil' },
-  { clave: 'bien', texto: 'Bien' },
-  { clave: 'facil', texto: 'Fácil' },
-];
-
 const NOMBRE_IDIOMA = { de: 'alemán', en: 'inglés', es: 'español' };
-
-function etiquetaIntervalo(dias) {
-  if (dias === 0) return 'ahora';
-  if (dias === 1) return '1 día';
-  if (dias < 30) return `${dias} días`;
-  return `${Math.round(dias / 30)} mes(es)`;
-}
 
 function Repaso() {
   const [bolsa, setBolsa] = useState(null); // null mientras carga
@@ -137,27 +122,7 @@ function Repaso() {
       </button>
 
       {volteada && (
-        <div className="repaso-botones">
-          {NIVELES.map(({ clave, texto }) => (
-            <button
-              key={clave}
-              type="button"
-              className={`repaso-btn ${clave}`}
-              onClick={() => graduar(clave)}
-            >
-              {texto}
-              <span className="repaso-btn-intervalo">
-                {etiquetaIntervalo(
-                  calificar(
-                    actual.srs,
-                    CALIFICACIONES[clave],
-                    new Date().toISOString()
-                  ).intervalo
-                )}
-              </span>
-            </button>
-          ))}
-        </div>
+        <BotonesCalificacion srs={actual.srs} onCalificar={graduar} />
       )}
     </div>
   );
