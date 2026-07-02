@@ -65,8 +65,8 @@ function TemasDeLectura() {
     <div className="lectura-container">
       {cabecera}
       <p className="lectura-subtitulo">
-        Elige un tema para practicar. Al terminar su tanda de ejercicios queda
-        marcado con ✓.
+        Elige un tema para practicar. Se marca con ✓ al completar una ronda
+        con todas las respuestas correctas.
       </p>
 
       <div className="gram-temas">

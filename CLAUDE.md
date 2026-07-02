@@ -38,9 +38,9 @@ híbridos paradigma/coseno), (4) Juegos (Codenames ✅).
   ALEMÁN: /gramatica lista las lecturas (orden principiante→avanzado, chip de nivel, palomita
   ✓ al completar); /gramatica/:lectura es el ÍNDICE de temas de esa lectura (el usuario elige
   cuál practicar; palomita por tema terminado); /gramatica/:lectura/:tema corre la tanda con
-  la regla desplegable. Al terminar una tanda se marca `lectura|tema` en
-  `gramatica.completados.v1` (clave estable, sobrevive a regenerar ids); lectura completada =
-  todos sus temas terminados. `pipeline/gramatica.py` genera 157 ejercicios
+  la regla desplegable. La palomita exige tanda PERFECTA: al terminar una ronda con todas
+  correctas se marca `lectura|tema` en `gramatica.completados.v1` (clave estable, sobrevive a
+  regenerar ids); lectura completada = todos sus temas con palomita. `pipeline/gramatica.py` genera 157 ejercicios
   desde TODAS las lecturas (selección estratificada round-robin por fuente) con distractores
   **híbridos**: el paradigma morfológico define el conjunto y la similitud coseno de los
   vectores spaCy lo ordena (hard negatives). Unicidad de respuesta garantizada por filtros:

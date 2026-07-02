@@ -210,9 +210,10 @@ p("<b>/gramatica</b> lista las <b>lecturas</b> del corpus con ejercicios (títul
   "de esa lectura: el usuario elige qué tema practicar (tarjetas en orden de dificultad, "
   "con palomita por tema terminado). <b>/gramatica/:lectura/:tema</b> corre la tanda de ese "
   "tema: regla desplegable, frase con hueco y 4 opciones; al responder se colorea la "
-  "elección y la correcta y se muestra la pista. Al TERMINAR la tanda se persiste la clave "
+  "elección y la correcta y se muestra la pista. La palomita exige la tanda <b>perfecta</b>: "
+  "al terminar una ronda con todas las respuestas correctas se persiste la clave "
   "lectura|tema (<font face='Courier'>gramatica.completados.v1</font>); la lectura queda completada "
-  "cuando todos sus temas están terminados. <font face='Courier'>gramatica.json</font> se carga por "
+  "cuando todos sus temas tienen palomita. <font face='Courier'>gramatica.json</font> se carga por "
   "<b>dynamic import</b>: chunk aparte, fuera del bundle inicial, como el léxico.")
 
 h1("9. Decisiones y trampas")

@@ -82,8 +82,13 @@ function Ejercicios() {
 
   const siguiente = () => {
     const proximo = idx + 1;
-    if (proximo >= sesion.length) {
-      // Tanda terminada: se registra (lectura|tema) → palomita en el índice.
+    // La palomita exige la tanda PERFECTA: todos los ejercicios del tema
+    // respondidos y todos correctos en esta ronda.
+    if (
+      proximo >= sesion.length &&
+      resultados.length === sesion.length &&
+      resultados.every(Boolean)
+    ) {
       const clave = claveGrupo(grupo, subgrupo.id);
       const hechos = cargarGramaticaCompletados();
       if (!hechos.includes(clave)) guardarGramaticaCompletados([...hechos, clave]);
@@ -95,15 +100,23 @@ function Ejercicios() {
   // Pantalla final
   if (idx >= sesion.length) {
     const r = resumenSesion(resultados);
+    const perfecta = r.total === sesion.length && r.fallos === 0;
     return (
       <div className="lectura-container">
         {cabecera}
         <div className="repaso-fin">
-          <p className="repaso-fin-titulo">Tema terminado ✓</p>
+          <p className="repaso-fin-titulo">
+            {perfecta ? 'Tema completado ✓' : 'Tanda terminada'}
+          </p>
           <p className="repaso-fin-stats">
             {r.aciertos} de {r.total} correcta{r.aciertos === 1 ? '' : 's'} ·{' '}
             {r.porcentaje}%
           </p>
+          {!perfecta && (
+            <p className="lectura-subtitulo">
+              La palomita llega con una ronda de todas correctas. ¡Otra ronda!
+            </p>
+          )}
           <div className="gram-nav">
             <button type="button" className="gram-boton" onClick={reiniciar}>
               Otra ronda
