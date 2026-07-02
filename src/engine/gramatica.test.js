@@ -76,6 +76,35 @@ describe('seleccionarSesion', () => {
     expect(seleccionarSesion(banco, { n: 999 })).toHaveLength(25);
     expect(seleccionarSesion([], { n: 5 })).toEqual([]);
   });
+
+  it('presenta por dificultad ascendente y agrupado por lectura', () => {
+    const mixto = [
+      { id: 'a', nivel: 'avanzado', fuente: 'avanzado · Immensee' },
+      { id: 'b', nivel: 'principiante', fuente: 'principiante · El mercado' },
+      { id: 'c', nivel: 'intermedio', fuente: 'intermedio · Caperucita' },
+      { id: 'd', nivel: 'principiante', fuente: 'principiante · Un día de Ana' },
+      { id: 'e', nivel: 'intermedio', fuente: 'intermedio · Caperucita' },
+      { id: 'f', nivel: 'principiante', fuente: 'principiante · El mercado' },
+    ];
+    const niveles = seleccionarSesion(mixto, { n: 6 }).map((e) => e.nivel);
+    expect(niveles).toEqual([
+      'principiante', 'principiante', 'principiante',
+      'intermedio', 'intermedio', 'avanzado',
+    ]);
+    const fuentes = seleccionarSesion(mixto, { n: 6 }).map((e) => e.fuente);
+    // Dentro de un nivel, los de la misma lectura quedan contiguos.
+    expect(fuentes.slice(3, 5)).toEqual([
+      'intermedio · Caperucita', 'intermedio · Caperucita',
+    ]);
+  });
+
+  it('los ejercicios sin nivel van al final', () => {
+    const mixto = [
+      { id: 'x' },
+      { id: 'y', nivel: 'avanzado', fuente: 'z' },
+    ];
+    expect(seleccionarSesion(mixto, { n: 2 }).map((e) => e.id)).toEqual(['y', 'x']);
+  });
 });
 
 describe('resumenSesion', () => {

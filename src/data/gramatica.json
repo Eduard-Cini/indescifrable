@@ -4,6 +4,7 @@
     {
       "id": "declinacion",
       "titulo": "Declinación del artículo",
+      "nivel": "principiante",
       "resumen": "El artículo definido alemán cambia de forma según el caso (nominativo para el sujeto, acusativo para el objeto directo, dativo para el indirecto y tras ciertas preposiciones, genitivo para la posesión), el género y el número. La tabla completa tiene 16 casillas pero solo 6 formas distintas: der, die, das, den, dem, des. Elige la forma que pide la función del sustantivo en la frase.",
       "tabla": {
         "cabecera": [
@@ -46,29 +47,9 @@
       }
     },
     {
-      "id": "preposicion_caso",
-      "titulo": "Preposición y caso",
-      "resumen": "Cada preposición alemana rige un caso fijo: el sustantivo que la sigue se declina en ese caso. Con dativo: mit, nach, aus, bei, zu, von, seit. Con acusativo: für, ohne, gegen, um, durch, bis. En estos ejercicios el artículo que sigue al hueco ya está declinado: solo una preposición es compatible con ese caso.",
-      "tabla": {
-        "cabecera": [
-          "Rige dativo",
-          "Rige acusativo"
-        ],
-        "filas": [
-          [
-            "mit, nach, aus",
-            "für, ohne, gegen"
-          ],
-          [
-            "bei, zu, von, seit",
-            "um, durch, bis"
-          ]
-        ]
-      }
-    },
-    {
       "id": "conjugacion",
       "titulo": "Conjugación del verbo",
+      "nivel": "principiante",
       "resumen": "El verbo finito concuerda en persona y número con el sujeto. Terminaciones del presente: ich -e, du -st, er/sie/es -t, wir -en, ihr -t, sie/Sie -en; algunos verbos cambian la vocal de la raíz en du/er (fahren→fährt, sprechen→sprichst). Hay verbos irregulares que no cumplen este patrón, como sein (ich bin, du bist, er ist) o haben (du hast, er hat).",
       "tabla": {
         "cabecera": [
@@ -108,6 +89,7 @@
     {
       "id": "separables",
       "titulo": "Verbos separables",
+      "nivel": "principiante",
       "resumen": "Muchos verbos alemanes llevan un prefijo separable (auf-, an-, vor-, ab-, ein-, hinein-…) que cambia el significado del verbo base: stehen (estar de pie) → aufstehen (levantarse). En una oración principal el prefijo se desprende y viaja al final: aufstehen → «Ich stehe früh auf». Completa con el prefijo que forma el verbo correcto; la pista te dice cuál es.",
       "tabla": {
         "cabecera": [
@@ -143,6 +125,28 @@
           ]
         ]
       }
+    },
+    {
+      "id": "preposicion_caso",
+      "titulo": "Preposición y caso",
+      "nivel": "intermedio",
+      "resumen": "Cada preposición alemana rige un caso fijo: el sustantivo que la sigue se declina en ese caso. Con dativo: mit, nach, aus, bei, zu, von, seit. Con acusativo: für, ohne, gegen, um, durch, bis. En estos ejercicios el artículo que sigue al hueco ya está declinado: solo una preposición es compatible con ese caso.",
+      "tabla": {
+        "cabecera": [
+          "Rige dativo",
+          "Rige acusativo"
+        ],
+        "filas": [
+          [
+            "mit, nach, aus",
+            "für, ohne, gegen"
+          ],
+          [
+            "bei, zu, von, seit",
+            "um, durch, bis"
+          ]
+        ]
+      }
     }
   ],
   "ejercicios": {
@@ -158,150 +162,8 @@
         ],
         "pista": "Acusativo · neutro · singular.",
         "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
         "id": "declinacion-01"
-      },
-      {
-        "antes": "",
-        "respuesta": "Das",
-        "despues": " Brot ist warm und riecht sehr gut.",
-        "distractores": [
-          "Dem",
-          "Der",
-          "Die"
-        ],
-        "pista": "Nominativo · neutro · singular.",
-        "fuente": "principiante · El mercado",
-        "id": "declinacion-02"
-      },
-      {
-        "antes": "Sie fährt mit ",
-        "respuesta": "dem",
-        "despues": " Fahrrad zur Schule.",
-        "distractores": [
-          "den",
-          "das",
-          "der"
-        ],
-        "pista": "Dativo · neutro · singular.",
-        "fuente": "principiante · Un día de Ana",
-        "id": "declinacion-03"
-      },
-      {
-        "antes": "„Ich will schon alles gut machen“, sagte Rotkäppchen und gab ",
-        "respuesta": "der",
-        "despues": " Mutter die Hand darauf.",
-        "distractores": [
-          "die",
-          "des",
-          "den"
-        ],
-        "pista": "Dativo · femenino · singular.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "declinacion-04"
-      },
-      {
-        "antes": "",
-        "respuesta": "Das",
-        "despues": " Mädchen reichte ihm das ganze Stück Brot und ging weiter.",
-        "distractores": [
-          "Dem",
-          "Der",
-          "Die"
-        ],
-        "pista": "Nominativo · neutro · singular.",
-        "fuente": "intermedio · El dinero de las estrellas",
-        "id": "declinacion-05"
-      },
-      {
-        "antes": "",
-        "respuesta": "Der",
-        "despues": " Löwe fing sie mit seiner Kralle, wütend über die Störung.",
-        "distractores": [
-          "Den",
-          "Dem",
-          "Das"
-        ],
-        "pista": "Nominativo · masculino · singular.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "declinacion-06"
-      },
-      {
-        "antes": "Eines Tages aber war ",
-        "respuesta": "das",
-        "despues": " Mädchen ausgegangen, und die Mutter sprach: „Töpfchen, koche.“",
-        "distractores": [
-          "dem",
-          "die",
-          "des"
-        ],
-        "pista": "Nominativo · neutro · singular.",
-        "fuente": "intermedio · El puré dulce",
-        "id": "declinacion-07"
-      },
-      {
-        "antes": "",
-        "respuesta": "Der",
-        "despues": " Nordwind und die Sonne stritten darüber, wer von beiden der Stärkere sei.",
-        "distractores": [
-          "Den",
-          "Dem",
-          "Das"
-        ],
-        "pista": "Nominativo · masculino · singular.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "declinacion-08"
-      },
-      {
-        "antes": "",
-        "respuesta": "Den",
-        "despues": " ganzen Sommer lang sang die Grille fröhlich in der Sonne.",
-        "distractores": [
-          "Der",
-          "Dem",
-          "Des"
-        ],
-        "pista": "Acusativo · masculino · singular.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "declinacion-09"
-      },
-      {
-        "antes": "Müde ",
-        "respuesta": "des",
-        "despues": " Spotts, forderte die Schildkröte ihn zu einem Wettrennen heraus.",
-        "distractores": [
-          "der",
-          "den",
-          "dem"
-        ],
-        "pista": "Genitivo · masculino · singular.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "declinacion-10"
-      },
-      {
-        "antes": "An einem Spätherbstnachmittage ging ein alter wohlgekleideter Mann langsam ",
-        "respuesta": "die",
-        "despues": " Straße hinab.",
-        "distractores": [
-          "der",
-          "den",
-          "des"
-        ],
-        "pista": "Acusativo · femenino · singular.",
-        "fuente": "avanzado · Immensee",
-        "id": "declinacion-11"
-      },
-      {
-        "antes": "Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnen Beine flimmerten ihm hilflos vor ",
-        "respuesta": "den",
-        "despues": " Augen.",
-        "distractores": [
-          "dem",
-          "der",
-          "die"
-        ],
-        "pista": "Dativo · neutro · plural.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "declinacion-12"
       },
       {
         "antes": "Am Nachmittag gehen Tom und sein Vater in ",
@@ -314,7 +176,22 @@
         ],
         "pista": "Acusativo · masculino · singular.",
         "fuente": "principiante · El fin de semana de Tom",
-        "id": "declinacion-13"
+        "nivel": "principiante",
+        "id": "declinacion-02"
+      },
+      {
+        "antes": "",
+        "respuesta": "Das",
+        "despues": " Brot ist warm und riecht sehr gut.",
+        "distractores": [
+          "Dem",
+          "Der",
+          "Die"
+        ],
+        "pista": "Nominativo · neutro · singular.",
+        "fuente": "principiante · El mercado",
+        "nivel": "principiante",
+        "id": "declinacion-03"
       },
       {
         "antes": "Zu Hause bereitet sie ",
@@ -327,7 +204,36 @@
         ],
         "pista": "Acusativo · neutro · singular.",
         "fuente": "principiante · El mercado",
-        "id": "declinacion-14"
+        "nivel": "principiante",
+        "id": "declinacion-04"
+      },
+      {
+        "antes": "Sie fährt mit ",
+        "respuesta": "dem",
+        "despues": " Fahrrad zur Schule.",
+        "distractores": [
+          "den",
+          "das",
+          "der"
+        ],
+        "pista": "Dativo · neutro · singular.",
+        "fuente": "principiante · Un día de Ana",
+        "nivel": "principiante",
+        "id": "declinacion-05"
+      },
+      {
+        "antes": "„Ich will schon alles gut machen“, sagte Rotkäppchen und gab ",
+        "respuesta": "der",
+        "despues": " Mutter die Hand darauf.",
+        "distractores": [
+          "die",
+          "des",
+          "den"
+        ],
+        "pista": "Dativo · femenino · singular.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "declinacion-06"
       },
       {
         "antes": "„Ich will schon alles gut machen“, sagte Rotkäppchen und gab der Mutter ",
@@ -340,7 +246,64 @@
         ],
         "pista": "Acusativo · femenino · singular.",
         "fuente": "intermedio · Caperucita Roja",
-        "id": "declinacion-15"
+        "nivel": "intermedio",
+        "id": "declinacion-07"
+      },
+      {
+        "antes": "",
+        "respuesta": "Die",
+        "despues": " Großmutter aber wohnte draußen im Wald, eine halbe Stunde vom Dorf.",
+        "distractores": [
+          "Der",
+          "Des",
+          "Das"
+        ],
+        "pista": "Nominativo · femenino · singular.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "declinacion-08"
+      },
+      {
+        "antes": "Als Rotkäppchen in ",
+        "respuesta": "den",
+        "despues": " Wald kam, begegnete ihm der Wolf.",
+        "distractores": [
+          "dem",
+          "der",
+          "die"
+        ],
+        "pista": "Acusativo · masculino · singular.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "declinacion-09"
+      },
+      {
+        "antes": "Als Rotkäppchen in den Wald kam, begegnete ihm ",
+        "respuesta": "der",
+        "despues": " Wolf.",
+        "distractores": [
+          "die",
+          "des",
+          "den"
+        ],
+        "pista": "Nominativo · masculino · singular.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "declinacion-10"
+      },
+      {
+        "antes": "",
+        "respuesta": "Das",
+        "despues": " Mädchen reichte ihm das ganze Stück Brot und ging weiter.",
+        "distractores": [
+          "Dem",
+          "Der",
+          "Die"
+        ],
+        "pista": "Nominativo · neutro · singular.",
+        "fuente": "intermedio · El dinero de las estrellas",
+        "nivel": "intermedio",
+        "id": "declinacion-11"
       },
       {
         "antes": "Das Mädchen reichte ihm ",
@@ -353,7 +316,22 @@
         ],
         "pista": "Nominativo · neutro · singular.",
         "fuente": "intermedio · El dinero de las estrellas",
-        "id": "declinacion-16"
+        "nivel": "intermedio",
+        "id": "declinacion-12"
+      },
+      {
+        "antes": "",
+        "respuesta": "Der",
+        "despues": " Löwe fing sie mit seiner Kralle, wütend über die Störung.",
+        "distractores": [
+          "Den",
+          "Dem",
+          "Das"
+        ],
+        "pista": "Nominativo · masculino · singular.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "declinacion-13"
       },
       {
         "antes": "Der Löwe fing sie mit seiner Kralle, wütend über ",
@@ -366,6 +344,49 @@
         ],
         "pista": "Acusativo · femenino · singular.",
         "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "declinacion-14"
+      },
+      {
+        "antes": "",
+        "respuesta": "Die",
+        "despues": " Maus flehte: „Lass mich frei, und eines Tages werde ich es dir vergelten.“",
+        "distractores": [
+          "Der",
+          "Des",
+          "Das"
+        ],
+        "pista": "Nominativo · femenino · singular.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "declinacion-15"
+      },
+      {
+        "antes": "",
+        "respuesta": "Der",
+        "despues": " Löwe lachte über die Idee, ließ sie aber gehen.",
+        "distractores": [
+          "Den",
+          "Dem",
+          "Das"
+        ],
+        "pista": "Nominativo · masculino · singular.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "declinacion-16"
+      },
+      {
+        "antes": "Eines Tages aber war ",
+        "respuesta": "das",
+        "despues": " Mädchen ausgegangen, und die Mutter sprach: „Töpfchen, koche.“",
+        "distractores": [
+          "dem",
+          "die",
+          "des"
+        ],
+        "pista": "Nominativo · neutro · singular.",
+        "fuente": "intermedio · El puré dulce",
+        "nivel": "intermedio",
         "id": "declinacion-17"
       },
       {
@@ -379,98 +400,8 @@
         ],
         "pista": "Nominativo · femenino · singular.",
         "fuente": "intermedio · El puré dulce",
+        "nivel": "intermedio",
         "id": "declinacion-18"
-      },
-      {
-        "antes": "Der Nordwind und ",
-        "respuesta": "die",
-        "despues": " Sonne stritten darüber, wer von beiden der Stärkere sei.",
-        "distractores": [
-          "der",
-          "den",
-          "des"
-        ],
-        "pista": "Nominativo · femenino · singular.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "declinacion-19"
-      },
-      {
-        "antes": "Den ganzen Sommer lang sang ",
-        "respuesta": "die",
-        "despues": " Grille fröhlich in der Sonne.",
-        "distractores": [
-          "der",
-          "den",
-          "des"
-        ],
-        "pista": "Nominativo · femenino · singular.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "declinacion-20"
-      },
-      {
-        "antes": "Müde des Spotts, forderte ",
-        "respuesta": "die",
-        "despues": " Schildkröte ihn zu einem Wettrennen heraus.",
-        "distractores": [
-          "der",
-          "den",
-          "des"
-        ],
-        "pista": "Acusativo · neutro · plural.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "declinacion-21"
-      },
-      {
-        "antes": "",
-        "respuesta": "Den",
-        "despues": " langen Rohrstock mit goldenem Knopf trug er unter dem Arm;",
-        "distractores": [
-          "Der",
-          "Dem",
-          "Des"
-        ],
-        "pista": "Acusativo · masculino · singular.",
-        "fuente": "avanzado · Immensee",
-        "id": "declinacion-22"
-      },
-      {
-        "antes": "Sein Zimmer, ein richtiges, nur etwas zu kleines Menschenzimmer, lag ruhig zwischen ",
-        "respuesta": "den",
-        "despues": " vier wohlbekannten Wänden.",
-        "distractores": [
-          "dem",
-          "der",
-          "die"
-        ],
-        "pista": "Dativo · femenino · plural.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "declinacion-23"
-      },
-      {
-        "antes": "",
-        "respuesta": "Die",
-        "despues": " Großmutter aber wohnte draußen im Wald, eine halbe Stunde vom Dorf.",
-        "distractores": [
-          "Der",
-          "Des",
-          "Das"
-        ],
-        "pista": "Nominativo · femenino · singular.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "declinacion-24"
-      },
-      {
-        "antes": "",
-        "respuesta": "Die",
-        "despues": " Maus flehte: „Lass mich frei, und eines Tages werde ich es dir vergelten.“",
-        "distractores": [
-          "Der",
-          "Des",
-          "Das"
-        ],
-        "pista": "Nominativo · femenino · singular.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "declinacion-25"
       },
       {
         "antes": "Bald war ",
@@ -483,98 +414,8 @@
         ],
         "pista": "Nominativo · femenino · singular.",
         "fuente": "intermedio · El puré dulce",
-        "id": "declinacion-26"
-      },
-      {
-        "antes": "Der Nordwind und die Sonne stritten darüber, wer von beiden ",
-        "respuesta": "der",
-        "despues": " Stärkere sei.",
-        "distractores": [
-          "die",
-          "des",
-          "den"
-        ],
-        "pista": "Genitivo · masculino · plural.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "declinacion-27"
-      },
-      {
-        "antes": "Den ganzen Sommer lang sang die Grille fröhlich in ",
-        "respuesta": "der",
-        "despues": " Sonne.",
-        "distractores": [
-          "die",
-          "des",
-          "den"
-        ],
-        "pista": "Dativo · femenino · singular.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "declinacion-28"
-      },
-      {
-        "antes": "",
-        "respuesta": "Der",
-        "despues": " Hase nahm an, seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
-        "distractores": [
-          "Den",
-          "Dem",
-          "Das"
-        ],
-        "pista": "Nominativo · masculino · singular.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "declinacion-29"
-      },
-      {
-        "antes": "Den langen Rohrstock mit goldenem Knopf trug er unter ",
-        "respuesta": "dem",
-        "despues": " Arm;",
-        "distractores": [
-          "den",
-          "das",
-          "der"
-        ],
-        "pista": "Dativo · masculino · singular.",
-        "fuente": "avanzado · Immensee",
-        "id": "declinacion-30"
-      },
-      {
-        "antes": "Tag aus, Tag ein auf ",
-        "respuesta": "der",
-        "despues": " Reise.",
-        "distractores": [
-          "die",
-          "des",
-          "den"
-        ],
-        "pista": "Dativo · femenino · singular.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "declinacion-31"
-      },
-      {
-        "antes": "Als Rotkäppchen in ",
-        "respuesta": "den",
-        "despues": " Wald kam, begegnete ihm der Wolf.",
-        "distractores": [
-          "dem",
-          "der",
-          "die"
-        ],
-        "pista": "Acusativo · masculino · singular.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "declinacion-32"
-      },
-      {
-        "antes": "",
-        "respuesta": "Der",
-        "despues": " Löwe lachte über die Idee, ließ sie aber gehen.",
-        "distractores": [
-          "Den",
-          "Dem",
-          "Das"
-        ],
-        "pista": "Nominativo · masculino · singular.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "declinacion-33"
+        "nivel": "intermedio",
+        "id": "declinacion-19"
       },
       {
         "antes": "Bald war die ganze Küche und ",
@@ -587,7 +428,50 @@
         ],
         "pista": "Nominativo · neutro · singular.",
         "fuente": "intermedio · El puré dulce",
-        "id": "declinacion-34"
+        "nivel": "intermedio",
+        "id": "declinacion-20"
+      },
+      {
+        "antes": "",
+        "respuesta": "Der",
+        "despues": " Nordwind und die Sonne stritten darüber, wer von beiden der Stärkere sei.",
+        "distractores": [
+          "Den",
+          "Dem",
+          "Das"
+        ],
+        "pista": "Nominativo · masculino · singular.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "declinacion-21"
+      },
+      {
+        "antes": "Der Nordwind und ",
+        "respuesta": "die",
+        "despues": " Sonne stritten darüber, wer von beiden der Stärkere sei.",
+        "distractores": [
+          "der",
+          "den",
+          "des"
+        ],
+        "pista": "Nominativo · femenino · singular.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "declinacion-22"
+      },
+      {
+        "antes": "Der Nordwind und die Sonne stritten darüber, wer von beiden ",
+        "respuesta": "der",
+        "despues": " Stärkere sei.",
+        "distractores": [
+          "die",
+          "des",
+          "den"
+        ],
+        "pista": "Genitivo · masculino · plural.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "declinacion-23"
       },
       {
         "antes": "Da keiner nachgeben wollte, beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der ",
@@ -600,7 +484,50 @@
         ],
         "pista": "Genitivo · masculino · singular.",
         "fuente": "intermedio · El viento del norte y el sol",
-        "id": "declinacion-35"
+        "nivel": "intermedio",
+        "id": "declinacion-24"
+      },
+      {
+        "antes": "",
+        "respuesta": "Den",
+        "despues": " ganzen Sommer lang sang die Grille fröhlich in der Sonne.",
+        "distractores": [
+          "Der",
+          "Dem",
+          "Des"
+        ],
+        "pista": "Acusativo · masculino · singular.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "declinacion-25"
+      },
+      {
+        "antes": "Den ganzen Sommer lang sang ",
+        "respuesta": "die",
+        "despues": " Grille fröhlich in der Sonne.",
+        "distractores": [
+          "der",
+          "den",
+          "des"
+        ],
+        "pista": "Nominativo · femenino · singular.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "declinacion-26"
+      },
+      {
+        "antes": "Den ganzen Sommer lang sang die Grille fröhlich in ",
+        "respuesta": "der",
+        "despues": " Sonne.",
+        "distractores": [
+          "die",
+          "des",
+          "den"
+        ],
+        "pista": "Dativo · femenino · singular.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "declinacion-27"
       },
       {
         "antes": "Währenddessen arbeitete ",
@@ -613,7 +540,50 @@
         ],
         "pista": "Nominativo · femenino · singular.",
         "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "declinacion-36"
+        "nivel": "intermedio",
+        "id": "declinacion-28"
+      },
+      {
+        "antes": "Müde ",
+        "respuesta": "des",
+        "despues": " Spotts, forderte die Schildkröte ihn zu einem Wettrennen heraus.",
+        "distractores": [
+          "der",
+          "den",
+          "dem"
+        ],
+        "pista": "Genitivo · masculino · singular.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "declinacion-29"
+      },
+      {
+        "antes": "Müde des Spotts, forderte ",
+        "respuesta": "die",
+        "despues": " Schildkröte ihn zu einem Wettrennen heraus.",
+        "distractores": [
+          "der",
+          "den",
+          "des"
+        ],
+        "pista": "Acusativo · neutro · plural.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "declinacion-30"
+      },
+      {
+        "antes": "",
+        "respuesta": "Der",
+        "despues": " Hase nahm an, seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
+        "distractores": [
+          "Den",
+          "Dem",
+          "Das"
+        ],
+        "pista": "Nominativo · masculino · singular.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "declinacion-31"
       },
       {
         "antes": "Beim Startsignal schoss ",
@@ -626,7 +596,50 @@
         ],
         "pista": "Nominativo · masculino · singular.",
         "fuente": "intermedio · La liebre y la tortuga",
-        "id": "declinacion-37"
+        "nivel": "intermedio",
+        "id": "declinacion-32"
+      },
+      {
+        "antes": "An einem Spätherbstnachmittage ging ein alter wohlgekleideter Mann langsam ",
+        "respuesta": "die",
+        "despues": " Straße hinab.",
+        "distractores": [
+          "der",
+          "den",
+          "des"
+        ],
+        "pista": "Acusativo · femenino · singular.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "declinacion-33"
+      },
+      {
+        "antes": "",
+        "respuesta": "Den",
+        "despues": " langen Rohrstock mit goldenem Knopf trug er unter dem Arm;",
+        "distractores": [
+          "Der",
+          "Dem",
+          "Des"
+        ],
+        "pista": "Acusativo · masculino · singular.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "declinacion-34"
+      },
+      {
+        "antes": "Den langen Rohrstock mit goldenem Knopf trug er unter ",
+        "respuesta": "dem",
+        "despues": " Arm;",
+        "distractores": [
+          "den",
+          "das",
+          "der"
+        ],
+        "pista": "Dativo · masculino · singular.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "declinacion-35"
       },
       {
         "antes": "",
@@ -639,7 +652,50 @@
         ],
         "pista": "Nominativo · masculino · singular.",
         "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "declinacion-36"
+      },
+      {
+        "antes": "Seine vielen, im Vergleich zu seinem sonstigen Umfang kläglich dünnen Beine flimmerten ihm hilflos vor ",
+        "respuesta": "den",
+        "despues": " Augen.",
+        "distractores": [
+          "dem",
+          "der",
+          "die"
+        ],
+        "pista": "Dativo · neutro · plural.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "declinacion-37"
+      },
+      {
+        "antes": "Sein Zimmer, ein richtiges, nur etwas zu kleines Menschenzimmer, lag ruhig zwischen ",
+        "respuesta": "den",
+        "despues": " vier wohlbekannten Wänden.",
+        "distractores": [
+          "dem",
+          "der",
+          "die"
+        ],
+        "pista": "Dativo · femenino · plural.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
         "id": "declinacion-38"
+      },
+      {
+        "antes": "Tag aus, Tag ein auf ",
+        "respuesta": "der",
+        "despues": " Reise.",
+        "distractores": [
+          "die",
+          "des",
+          "den"
+        ],
+        "pista": "Dativo · femenino · singular.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "declinacion-39"
       },
       {
         "antes": "",
@@ -652,542 +708,8 @@
         ],
         "pista": "Nominativo · masculino · singular.",
         "fuente": "avanzado · La metamorfosis",
-        "id": "declinacion-39"
-      },
-      {
-        "antes": "Als Rotkäppchen in den Wald kam, begegnete ihm ",
-        "respuesta": "der",
-        "despues": " Wolf.",
-        "distractores": [
-          "die",
-          "des",
-          "den"
-        ],
-        "pista": "Nominativo · masculino · singular.",
-        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "avanzado",
         "id": "declinacion-40"
-      }
-    ],
-    "preposicion_caso": [
-      {
-        "antes": "Am Morgen spielt er ",
-        "respuesta": "mit",
-        "despues": " seinem Hund im Garten.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · El fin de semana de Tom",
-        "id": "preposicion_caso-01"
-      },
-      {
-        "antes": "María bezahlt ",
-        "respuesta": "mit",
-        "despues": " einer Münze und geht nach Hause.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · El mercado",
-        "id": "preposicion_caso-02"
-      },
-      {
-        "antes": "Sie fährt ",
-        "respuesta": "mit",
-        "despues": " dem Fahrrad zur Schule.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · Un día de Ana",
-        "id": "preposicion_caso-03"
-      },
-      {
-        "antes": "Am liebsten aber hatte es seine Großmutter, die ihm einst ein Käppchen ",
-        "respuesta": "aus",
-        "despues": " rotem Samt schenkte.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "um"
-        ],
-        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-04"
-      },
-      {
-        "antes": "Der Löwe fing sie ",
-        "respuesta": "mit",
-        "despues": " seiner Kralle, wütend über die Störung.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "preposicion_caso-05"
-      },
-      {
-        "antes": "Wer aber wieder in die Stadt wollte, der musste sich ",
-        "respuesta": "durch",
-        "despues": " den süßen Brei hindurchessen.",
-        "distractores": [
-          "gegenüber",
-          "von",
-          "nach"
-        ],
-        "pista": "«durch» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El puré dulce",
-        "id": "preposicion_caso-06"
-      },
-      {
-        "antes": "Der Nordwind und die Sonne stritten darüber, wer ",
-        "respuesta": "von",
-        "despues": " beiden der Stärkere sei.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "bis"
-        ],
-        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "preposicion_caso-07"
-      },
-      {
-        "antes": "Währenddessen arbeitete die Ameise ohne Pause und sammelte Körner ",
-        "respuesta": "für",
-        "despues": " den Winter.",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "preposicion_caso-08"
-      },
-      {
-        "antes": "Müde des Spotts, forderte die Schildkröte ihn ",
-        "respuesta": "zu",
-        "despues": " einem Wettrennen heraus.",
-        "distractores": [
-          "um",
-          "ohne",
-          "durch"
-        ],
-        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "preposicion_caso-09"
-      },
-      {
-        "antes": "Er schien ",
-        "respuesta": "von",
-        "despues": " einem Spaziergange nach Hause zurückzukehren, denn seine Schnallenschuhe, die einer vorübergegangenen Mode angehörten, waren bestäubt.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "bis"
-        ],
-        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-10"
-      },
-      {
-        "antes": "Seine vielen, im Vergleich ",
-        "respuesta": "zu",
-        "despues": " seinem sonstigen Umfang kläglich dünnen Beine flimmerten ihm hilflos vor den Augen.",
-        "distractores": [
-          "um",
-          "ohne",
-          "durch"
-        ],
-        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-11"
-      },
-      {
-        "antes": "Sie essen Hähnchen ",
-        "respuesta": "mit",
-        "despues": " Reis und einen grünen Salat.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · El fin de semana de Tom",
-        "id": "preposicion_caso-12"
-      },
-      {
-        "antes": "Zu Hause bereitet sie das Frühstück ",
-        "respuesta": "für",
-        "despues": " ihre Familie vor.",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · El mercado",
-        "id": "preposicion_caso-13"
-      },
-      {
-        "antes": "Am Abend isst sie ",
-        "respuesta": "mit",
-        "despues": " ihrer Familie und geht schlafen.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "principiante · Un día de Ana",
-        "id": "preposicion_caso-14"
-      },
-      {
-        "antes": "Rotkäppchen wusste nicht, was ",
-        "respuesta": "für",
-        "despues": " ein böses Tier er war, und fürchtete sich nicht.",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-15"
-      },
-      {
-        "antes": "Tage später fingen Jäger den Löwen ",
-        "respuesta": "mit",
-        "despues": " einem Netz.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "preposicion_caso-16"
-      },
-      {
-        "antes": "Der Nordwind versuchte es zuerst und begann ",
-        "respuesta": "mit",
-        "despues": " aller Wut zu blasen.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "preposicion_caso-17"
-      },
-      {
-        "antes": "„Warum arbeitest du so viel?“, fragte die Grille. „Komm und sing ",
-        "respuesta": "mit",
-        "despues": " mir.“",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "preposicion_caso-18"
-      },
-      {
-        "antes": "Er rannte ",
-        "respuesta": "mit",
-        "despues": " aller Kraft, aber es war schon zu spät.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "preposicion_caso-19"
-      },
-      {
-        "antes": "Den langen Rohrstock ",
-        "respuesta": "mit",
-        "despues": " goldenem Knopf trug er unter dem Arm;",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-20"
-      },
-      {
-        "antes": "»Was ist ",
-        "respuesta": "mit",
-        "despues": " mir geschehen?« dachte er.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-21"
-      },
-      {
-        "antes": "",
-        "respuesta": "Ohne",
-        "despues": " ein Wort ging er zum Bett und verschlang die arme Großmutter.",
-        "distractores": [
-          "Mit",
-          "Zu",
-          "Aus"
-        ],
-        "pista": "«ohne» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-22"
-      },
-      {
-        "antes": "Schließlich, ",
-        "respuesta": "von",
-        "despues": " der Hitze überwältigt, zog er den Mantel aus freien Stücken aus.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "bis"
-        ],
-        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "preposicion_caso-23"
-      },
-      {
-        "antes": "„Ich lege Vorräte ",
-        "respuesta": "für",
-        "despues": " die kalten Tage an“, antwortete die Ameise. „Du solltest dasselbe tun.“",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "preposicion_caso-24"
-      },
-      {
-        "antes": "Der Mann winkte ihr ",
-        "respuesta": "mit",
-        "despues": " seinem Rohrstock.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-25"
-      },
-      {
-        "antes": "Sein Zimmer, ein richtiges, nur etwas ",
-        "respuesta": "zu",
-        "despues": " kleines Menschenzimmer, lag ruhig zwischen den vier wohlbekannten Wänden.",
-        "distractores": [
-          "um",
-          "ohne",
-          "durch"
-        ],
-        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-26"
-      },
-      {
-        "antes": "„Ei, Großmutter, was hast du ",
-        "respuesta": "für",
-        "despues": " große Ohren!“ – „Dass ich dich besser hören kann.“",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-27"
-      },
-      {
-        "antes": "Schließlich, von der Hitze überwältigt, zog er den Mantel ",
-        "respuesta": "aus",
-        "despues": " freien Stücken aus.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "um"
-        ],
-        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "preposicion_caso-28"
-      },
-      {
-        "antes": "Die Grille lachte und sang weiter, ohne sich ",
-        "respuesta": "um",
-        "despues": " die Zukunft zu sorgen.",
-        "distractores": [
-          "zu",
-          "nach",
-          "mit"
-        ],
-        "pista": "«um» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "preposicion_caso-29"
-      },
-      {
-        "antes": "Bald trat die anmutige Gestalt eines kleinen Mädchens ",
-        "respuesta": "zu",
-        "despues": " ihm.",
-        "distractores": [
-          "um",
-          "ohne",
-          "durch"
-        ],
-        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-30"
-      },
-      {
-        "antes": "»Ach Gott,« dachte er, »was ",
-        "respuesta": "für",
-        "despues": " einen anstrengenden Beruf habe ich gewählt!",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-31"
-      },
-      {
-        "antes": "„Ei, Großmutter, was hast du ",
-        "respuesta": "für",
-        "despues": " große Augen!“ – „Dass ich dich besser sehen kann.“",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-32"
-      },
-      {
-        "antes": "Die Monate vergingen und der Winter kam ",
-        "respuesta": "mit",
-        "despues": " seinem eisigen Wind.",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "preposicion_caso-33"
-      },
-      {
-        "antes": "das ließ ihr hübsch ",
-        "respuesta": "zu",
-        "despues": " den braunen Augen.",
-        "distractores": [
-          "um",
-          "ohne",
-          "durch"
-        ],
-        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-34"
-      },
-      {
-        "antes": "fand die juckende Stelle, die ",
-        "respuesta": "mit",
-        "despues": " lauter kleinen weißen Pünktchen besetzt war, die er nicht zu beurteilen verstand;",
-        "distractores": [
-          "durch",
-          "ohne",
-          "gegen"
-        ],
-        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-35"
-      },
-      {
-        "antes": "Kaum hatte der Wolf das gesagt, sprang er ",
-        "respuesta": "aus",
-        "despues": " dem Bett und verschlang das arme Rotkäppchen.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "um"
-        ],
-        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "preposicion_caso-36"
-      },
-      {
-        "antes": "Elisabeth nahm ihre Ringelchen ",
-        "respuesta": "aus",
-        "despues": " der Schürze und zog sie auf lange Bindfäden;",
-        "distractores": [
-          "durch",
-          "gegen",
-          "um"
-        ],
-        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-37"
-      },
-      {
-        "antes": "Das sollte ich ",
-        "respuesta": "bei",
-        "despues": " meinem Chef versuchen;",
-        "distractores": [
-          "durch",
-          "gegen",
-          "für"
-        ],
-        "pista": "«bei» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-38"
-      },
-      {
-        "antes": "So fängt ein wohlbekanntes Märchen ",
-        "respuesta": "von",
-        "despues": " den Gebrüdern Grimm an.",
-        "distractores": [
-          "durch",
-          "gegen",
-          "bis"
-        ],
-        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · Immensee",
-        "id": "preposicion_caso-39"
-      },
-      {
-        "antes": "Wer weiß übrigens, ob das nicht sehr gut ",
-        "respuesta": "für",
-        "despues": " mich wäre.",
-        "distractores": [
-          "bei",
-          "gegenüber",
-          "von"
-        ],
-        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "preposicion_caso-40"
       }
     ],
     "conjugacion": [
@@ -1202,150 +724,8 @@
         ],
         "pista": "3ª persona singular · verbo «sein».",
         "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
         "id": "conjugacion-01"
-      },
-      {
-        "antes": "Das Brot ",
-        "respuesta": "ist",
-        "despues": " warm und riecht sehr gut.",
-        "distractores": [
-          "sind",
-          "sein",
-          "wären"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "principiante · El mercado",
-        "id": "conjugacion-02"
-      },
-      {
-        "antes": "Am Nachmittag ",
-        "respuesta": "liest",
-        "despues": " sie ein Buch im Park.",
-        "distractores": [
-          "lesen",
-          "gelesen",
-          "lasen"
-        ],
-        "pista": "3ª persona singular · verbo «lesen».",
-        "fuente": "principiante · Un día de Ana",
-        "id": "conjugacion-03"
-      },
-      {
-        "antes": "Es ",
-        "respuesta": "war",
-        "despues": " einmal ein kleines, süßes Mädchen, das jeder liebhatte, der es nur ansah.",
-        "distractores": [
-          "waren",
-          "gewesen",
-          "bin"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "conjugacion-04"
-      },
-      {
-        "antes": "Doch es ",
-        "respuesta": "war",
-        "despues": " fromm und gut, und so ging es vertrauensvoll hinaus aufs Feld.",
-        "distractores": [
-          "waren",
-          "gewesen",
-          "bin"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "intermedio · El dinero de las estrellas",
-        "id": "conjugacion-05"
-      },
-      {
-        "antes": "Eine kleine Maus ",
-        "respuesta": "lief",
-        "despues": " über seine Pfote und weckte ihn auf.",
-        "distractores": [
-          "liefen",
-          "gelaufen",
-          "laufen"
-        ],
-        "pista": "3ª persona singular · verbo «laufen».",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "conjugacion-06"
-      },
-      {
-        "antes": "Eines Tages aber ",
-        "respuesta": "war",
-        "despues": " das Mädchen ausgegangen, und die Mutter sprach: „Töpfchen, koche.“",
-        "distractores": [
-          "waren",
-          "gewesen",
-          "bin"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "intermedio · El puré dulce",
-        "id": "conjugacion-07"
-      },
-      {
-        "antes": "Der Nordwind und die Sonne stritten darüber, wer von beiden der Stärkere ",
-        "respuesta": "sei",
-        "despues": ".",
-        "distractores": [
-          "seien",
-          "gewesen",
-          "wären"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "conjugacion-08"
-      },
-      {
-        "antes": "Den ganzen Sommer lang ",
-        "respuesta": "sang",
-        "despues": " die Grille fröhlich in der Sonne.",
-        "distractores": [
-          "sangen",
-          "singen",
-          "gesungen"
-        ],
-        "pista": "3ª persona singular · verbo «singen».",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "conjugacion-09"
-      },
-      {
-        "antes": "Ein Hase machte sich über eine Schildkröte lustig, weil sie so langsam ",
-        "respuesta": "war",
-        "despues": ".",
-        "distractores": [
-          "waren",
-          "gewesen",
-          "bin"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "conjugacion-10"
-      },
-      {
-        "antes": "An einem Spätherbstnachmittage ",
-        "respuesta": "ging",
-        "despues": " ein alter wohlgekleideter Mann langsam die Straße hinab.",
-        "distractores": [
-          "gegangen",
-          "gehen",
-          "geh"
-        ],
-        "pista": "3ª persona singular · verbo «gehen».",
-        "fuente": "avanzado · Immensee",
-        "id": "conjugacion-11"
-      },
-      {
-        "antes": "»Was ",
-        "respuesta": "ist",
-        "despues": " mit mir geschehen?« dachte er.",
-        "distractores": [
-          "sind",
-          "sein",
-          "wären"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "conjugacion-12"
       },
       {
         "antes": "Es ist Samstag und Tom ",
@@ -1358,7 +738,50 @@
         ],
         "pista": "3ª persona singular · verbo «gehen».",
         "fuente": "principiante · El fin de semana de Tom",
-        "id": "conjugacion-13"
+        "nivel": "principiante",
+        "id": "conjugacion-02"
+      },
+      {
+        "antes": "Am Nachmittag ",
+        "respuesta": "gehen",
+        "despues": " Tom und sein Vater in den Park.",
+        "distractores": [
+          "gegangen",
+          "geht",
+          "ging"
+        ],
+        "pista": "3ª persona plural · verbo «gehen».",
+        "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
+        "id": "conjugacion-03"
+      },
+      {
+        "antes": "Wenn es regnet, ",
+        "respuesta": "kommen",
+        "despues": " sie schnell nach Hause.",
+        "distractores": [
+          "kommt",
+          "komme",
+          "kommst"
+        ],
+        "pista": "3ª persona plural · verbo «kommen».",
+        "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
+        "id": "conjugacion-04"
+      },
+      {
+        "antes": "Das Brot ",
+        "respuesta": "ist",
+        "despues": " warm und riecht sehr gut.",
+        "distractores": [
+          "sind",
+          "sein",
+          "wären"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "principiante · El mercado",
+        "nivel": "principiante",
+        "id": "conjugacion-05"
       },
       {
         "antes": "María bezahlt mit einer Münze und ",
@@ -1371,7 +794,22 @@
         ],
         "pista": "3ª persona singular · verbo «gehen».",
         "fuente": "principiante · El mercado",
-        "id": "conjugacion-14"
+        "nivel": "principiante",
+        "id": "conjugacion-06"
+      },
+      {
+        "antes": "Am Nachmittag ",
+        "respuesta": "liest",
+        "despues": " sie ein Buch im Park.",
+        "distractores": [
+          "lesen",
+          "gelesen",
+          "lasen"
+        ],
+        "pista": "3ª persona singular · verbo «lesen».",
+        "fuente": "principiante · Un día de Ana",
+        "nivel": "principiante",
+        "id": "conjugacion-07"
       },
       {
         "antes": "Am Abend isst sie mit ihrer Familie und ",
@@ -1384,7 +822,22 @@
         ],
         "pista": "3ª persona singular · verbo «gehen».",
         "fuente": "principiante · Un día de Ana",
-        "id": "conjugacion-15"
+        "nivel": "principiante",
+        "id": "conjugacion-08"
+      },
+      {
+        "antes": "Es ",
+        "respuesta": "war",
+        "despues": " einmal ein kleines, süßes Mädchen, das jeder liebhatte, der es nur ansah.",
+        "distractores": [
+          "waren",
+          "gewesen",
+          "bin"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "conjugacion-09"
       },
       {
         "antes": "Am liebsten aber ",
@@ -1397,7 +850,50 @@
         ],
         "pista": "3ª persona singular · verbo «haben».",
         "fuente": "intermedio · Caperucita Roja",
-        "id": "conjugacion-16"
+        "nivel": "intermedio",
+        "id": "conjugacion-10"
+      },
+      {
+        "antes": "„Ich ",
+        "respuesta": "will",
+        "despues": " schon alles gut machen“, sagte Rotkäppchen und gab der Mutter die Hand darauf.",
+        "distractores": [
+          "wollen",
+          "willst",
+          "wollten"
+        ],
+        "pista": "1ª persona singular · verbo «wollen».",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "conjugacion-11"
+      },
+      {
+        "antes": "„Ich will schon alles gut machen“, ",
+        "respuesta": "sagte",
+        "despues": " Rotkäppchen und gab der Mutter die Hand darauf.",
+        "distractores": [
+          "sagten",
+          "gesagt",
+          "sagen"
+        ],
+        "pista": "3ª persona singular · verbo «sagen».",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "conjugacion-12"
+      },
+      {
+        "antes": "Doch es ",
+        "respuesta": "war",
+        "despues": " fromm und gut, und so ging es vertrauensvoll hinaus aufs Feld.",
+        "distractores": [
+          "waren",
+          "gewesen",
+          "bin"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "intermedio · El dinero de las estrellas",
+        "nivel": "intermedio",
+        "id": "conjugacion-13"
       },
       {
         "antes": "Das Mädchen reichte ihm das ganze Stück Brot und ",
@@ -1410,7 +906,22 @@
         ],
         "pista": "3ª persona singular · verbo «gehen».",
         "fuente": "intermedio · El dinero de las estrellas",
-        "id": "conjugacion-17"
+        "nivel": "intermedio",
+        "id": "conjugacion-14"
+      },
+      {
+        "antes": "Eine kleine Maus ",
+        "respuesta": "lief",
+        "despues": " über seine Pfote und weckte ihn auf.",
+        "distractores": [
+          "liefen",
+          "gelaufen",
+          "laufen"
+        ],
+        "pista": "3ª persona singular · verbo «laufen».",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "conjugacion-15"
       },
       {
         "antes": "Die Maus flehte: „Lass mich frei, und eines Tages ",
@@ -1423,6 +934,35 @@
         ],
         "pista": "1ª persona singular · verbo «werden».",
         "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "conjugacion-16"
+      },
+      {
+        "antes": "Der Löwe lachte über die Idee, ",
+        "respuesta": "ließ",
+        "despues": " sie aber gehen.",
+        "distractores": [
+          "ließen",
+          "lassen",
+          "gelassen"
+        ],
+        "pista": "3ª persona singular · verbo «lassen».",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "conjugacion-17"
+      },
+      {
+        "antes": "Eines Tages aber ",
+        "respuesta": "war",
+        "despues": " das Mädchen ausgegangen, und die Mutter sprach: „Töpfchen, koche.“",
+        "distractores": [
+          "waren",
+          "gewesen",
+          "bin"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "intermedio · El puré dulce",
+        "nivel": "intermedio",
         "id": "conjugacion-18"
       },
       {
@@ -1436,111 +976,8 @@
         ],
         "pista": "3ª persona singular · verbo «sprechen».",
         "fuente": "intermedio · El puré dulce",
+        "nivel": "intermedio",
         "id": "conjugacion-19"
-      },
-      {
-        "antes": "Da keiner nachgeben ",
-        "respuesta": "wollte",
-        "despues": ", beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der des Weges ging.",
-        "distractores": [
-          "wollten",
-          "wollen",
-          "willst"
-        ],
-        "pista": "3ª persona singular · verbo «wollen».",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "conjugacion-20"
-      },
-      {
-        "antes": "Die Grille lachte und ",
-        "respuesta": "sang",
-        "despues": " weiter, ohne sich um die Zukunft zu sorgen.",
-        "distractores": [
-          "sing",
-          "sangen",
-          "singe"
-        ],
-        "pista": "3ª persona singular · verbo «singen».",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "conjugacion-21"
-      },
-      {
-        "antes": "Der Hase ",
-        "respuesta": "nahm",
-        "despues": " an, seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
-        "distractores": [
-          "nahmen",
-          "genommen",
-          "nehmen"
-        ],
-        "pista": "3ª persona singular · verbo «nehmen».",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "conjugacion-22"
-      },
-      {
-        "antes": "Er schien von einem Spaziergange nach Hause zurückzukehren, denn seine Schnallenschuhe, die einer vorübergegangenen Mode angehörten, ",
-        "respuesta": "waren",
-        "despues": " bestäubt.",
-        "distractores": [
-          "war",
-          "gewesen",
-          "sei"
-        ],
-        "pista": "3ª persona plural · verbo «sein».",
-        "fuente": "avanzado · Immensee",
-        "id": "conjugacion-23"
-      },
-      {
-        "antes": "»Was ist mit mir geschehen?« ",
-        "respuesta": "dachte",
-        "despues": " er.",
-        "distractores": [
-          "dachten",
-          "gedacht",
-          "denken"
-        ],
-        "pista": "3ª persona singular · verbo «denken».",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "conjugacion-24"
-      },
-      {
-        "antes": "Am Nachmittag ",
-        "respuesta": "gehen",
-        "despues": " Tom und sein Vater in den Park.",
-        "distractores": [
-          "gegangen",
-          "geht",
-          "ging"
-        ],
-        "pista": "3ª persona plural · verbo «gehen».",
-        "fuente": "principiante · El fin de semana de Tom",
-        "id": "conjugacion-25"
-      },
-      {
-        "antes": "„Ich ",
-        "respuesta": "will",
-        "despues": " schon alles gut machen“, sagte Rotkäppchen und gab der Mutter die Hand darauf.",
-        "distractores": [
-          "wollen",
-          "willst",
-          "wollten"
-        ],
-        "pista": "1ª persona singular · verbo «wollen».",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "conjugacion-26"
-      },
-      {
-        "antes": "Der Löwe lachte über die Idee, ",
-        "respuesta": "ließ",
-        "despues": " sie aber gehen.",
-        "distractores": [
-          "ließen",
-          "lassen",
-          "gelassen"
-        ],
-        "pista": "3ª persona singular · verbo «lassen».",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "conjugacion-27"
       },
       {
         "antes": "Bald ",
@@ -1553,98 +990,8 @@
         ],
         "pista": "3ª persona singular · verbo «sein».",
         "fuente": "intermedio · El puré dulce",
-        "id": "conjugacion-28"
-      },
-      {
-        "antes": "Da keiner nachgeben wollte, beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der des Weges ",
-        "respuesta": "ging",
-        "despues": ".",
-        "distractores": [
-          "gegangen",
-          "gehen",
-          "geh"
-        ],
-        "pista": "3ª persona singular · verbo «gehen».",
-        "fuente": "intermedio · El viento del norte y el sol",
-        "id": "conjugacion-29"
-      },
-      {
-        "antes": "Die Monate vergingen und der Winter ",
-        "respuesta": "kam",
-        "despues": " mit seinem eisigen Wind.",
-        "distractores": [
-          "kamen",
-          "gekommen",
-          "kommen"
-        ],
-        "pista": "3ª persona singular · verbo «kommen».",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "conjugacion-30"
-      },
-      {
-        "antes": "Beim Startsignal schoss der Hase los und ",
-        "respuesta": "verschwand",
-        "despues": " bald in der Ferne.",
-        "distractores": [
-          "verschwanden",
-          "verschwunden",
-          "verschwinden"
-        ],
-        "pista": "3ª persona singular · verbo «verschwinden».",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "conjugacion-31"
-      },
-      {
-        "antes": "»Noch kein Licht!« sagte er in einem etwas südlichen Akzent, und die Haushälterin ",
-        "respuesta": "ließ",
-        "despues": " den Vorhang wieder fallen.",
-        "distractores": [
-          "ließen",
-          "lassen",
-          "gelassen"
-        ],
-        "pista": "3ª persona singular · verbo «lassen».",
-        "fuente": "avanzado · Immensee",
-        "id": "conjugacion-32"
-      },
-      {
-        "antes": "Es ",
-        "respuesta": "war",
-        "despues": " kein Traum.",
-        "distractores": [
-          "waren",
-          "gewesen",
-          "bin"
-        ],
-        "pista": "3ª persona singular · verbo «sein».",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "conjugacion-33"
-      },
-      {
-        "antes": "Wenn es regnet, ",
-        "respuesta": "kommen",
-        "despues": " sie schnell nach Hause.",
-        "distractores": [
-          "kommt",
-          "komme",
-          "kommst"
-        ],
-        "pista": "3ª persona plural · verbo «kommen».",
-        "fuente": "principiante · El fin de semana de Tom",
-        "id": "conjugacion-34"
-      },
-      {
-        "antes": "„Ich will schon alles gut machen“, ",
-        "respuesta": "sagte",
-        "despues": " Rotkäppchen und gab der Mutter die Hand darauf.",
-        "distractores": [
-          "sagten",
-          "gesagt",
-          "sagen"
-        ],
-        "pista": "3ª persona singular · verbo «sagen».",
-        "fuente": "intermedio · Caperucita Roja",
-        "id": "conjugacion-35"
+        "nivel": "intermedio",
+        "id": "conjugacion-20"
       },
       {
         "antes": "Endlich ",
@@ -1657,7 +1004,50 @@
         ],
         "pista": "3ª persona singular · verbo «kommen».",
         "fuente": "intermedio · El puré dulce",
-        "id": "conjugacion-36"
+        "nivel": "intermedio",
+        "id": "conjugacion-21"
+      },
+      {
+        "antes": "Der Nordwind und die Sonne stritten darüber, wer von beiden der Stärkere ",
+        "respuesta": "sei",
+        "despues": ".",
+        "distractores": [
+          "seien",
+          "gewesen",
+          "wären"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "conjugacion-22"
+      },
+      {
+        "antes": "Da keiner nachgeben ",
+        "respuesta": "wollte",
+        "despues": ", beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der des Weges ging.",
+        "distractores": [
+          "wollten",
+          "wollen",
+          "willst"
+        ],
+        "pista": "3ª persona singular · verbo «wollen».",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "conjugacion-23"
+      },
+      {
+        "antes": "Da keiner nachgeben wollte, beschlossen sie, ihre Kraft an einem Wanderer zu erproben, der des Weges ",
+        "respuesta": "ging",
+        "despues": ".",
+        "distractores": [
+          "gegangen",
+          "gehen",
+          "geh"
+        ],
+        "pista": "3ª persona singular · verbo «gehen».",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "conjugacion-24"
       },
       {
         "antes": "Doch je heftiger der Wind ",
@@ -1670,7 +1060,50 @@
         ],
         "pista": "3ª persona singular · verbo «werden».",
         "fuente": "intermedio · El viento del norte y el sol",
-        "id": "conjugacion-37"
+        "nivel": "intermedio",
+        "id": "conjugacion-25"
+      },
+      {
+        "antes": "Den ganzen Sommer lang ",
+        "respuesta": "sang",
+        "despues": " die Grille fröhlich in der Sonne.",
+        "distractores": [
+          "sangen",
+          "singen",
+          "gesungen"
+        ],
+        "pista": "3ª persona singular · verbo «singen».",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "conjugacion-26"
+      },
+      {
+        "antes": "Die Grille lachte und ",
+        "respuesta": "sang",
+        "despues": " weiter, ohne sich um die Zukunft zu sorgen.",
+        "distractores": [
+          "sing",
+          "sangen",
+          "singe"
+        ],
+        "pista": "3ª persona singular · verbo «singen».",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "conjugacion-27"
+      },
+      {
+        "antes": "Die Monate vergingen und der Winter ",
+        "respuesta": "kam",
+        "despues": " mit seinem eisigen Wind.",
+        "distractores": [
+          "kamen",
+          "gekommen",
+          "kommen"
+        ],
+        "pista": "3ª persona singular · verbo «kommen».",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "conjugacion-28"
       },
       {
         "antes": "Die Felder ",
@@ -1683,7 +1116,50 @@
         ],
         "pista": "3ª persona plural · verbo «sein».",
         "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "conjugacion-38"
+        "nivel": "intermedio",
+        "id": "conjugacion-29"
+      },
+      {
+        "antes": "Ein Hase machte sich über eine Schildkröte lustig, weil sie so langsam ",
+        "respuesta": "war",
+        "despues": ".",
+        "distractores": [
+          "waren",
+          "gewesen",
+          "bin"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "conjugacion-30"
+      },
+      {
+        "antes": "Der Hase ",
+        "respuesta": "nahm",
+        "despues": " an, seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
+        "distractores": [
+          "nahmen",
+          "genommen",
+          "nehmen"
+        ],
+        "pista": "3ª persona singular · verbo «nehmen».",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "conjugacion-31"
+      },
+      {
+        "antes": "Beim Startsignal schoss der Hase los und ",
+        "respuesta": "verschwand",
+        "despues": " bald in der Ferne.",
+        "distractores": [
+          "verschwanden",
+          "verschwunden",
+          "verschwinden"
+        ],
+        "pista": "3ª persona singular · verbo «verschwinden».",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "conjugacion-32"
       },
       {
         "antes": "Die Schildkröte dagegen ",
@@ -1696,7 +1172,50 @@
         ],
         "pista": "3ª persona singular · verbo «gehen».",
         "fuente": "intermedio · La liebre y la tortuga",
-        "id": "conjugacion-39"
+        "nivel": "intermedio",
+        "id": "conjugacion-33"
+      },
+      {
+        "antes": "An einem Spätherbstnachmittage ",
+        "respuesta": "ging",
+        "despues": " ein alter wohlgekleideter Mann langsam die Straße hinab.",
+        "distractores": [
+          "gegangen",
+          "gehen",
+          "geh"
+        ],
+        "pista": "3ª persona singular · verbo «gehen».",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "conjugacion-34"
+      },
+      {
+        "antes": "Er schien von einem Spaziergange nach Hause zurückzukehren, denn seine Schnallenschuhe, die einer vorübergegangenen Mode angehörten, ",
+        "respuesta": "waren",
+        "despues": " bestäubt.",
+        "distractores": [
+          "war",
+          "gewesen",
+          "sei"
+        ],
+        "pista": "3ª persona plural · verbo «sein».",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "conjugacion-35"
+      },
+      {
+        "antes": "»Noch kein Licht!« sagte er in einem etwas südlichen Akzent, und die Haushälterin ",
+        "respuesta": "ließ",
+        "despues": " den Vorhang wieder fallen.",
+        "distractores": [
+          "ließen",
+          "lassen",
+          "gelassen"
+        ],
+        "pista": "3ª persona singular · verbo «lassen».",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "conjugacion-36"
       },
       {
         "antes": "Hier ",
@@ -1709,6 +1228,49 @@
         ],
         "pista": "3ª persona singular · verbo «sein».",
         "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "conjugacion-37"
+      },
+      {
+        "antes": "»Was ",
+        "respuesta": "ist",
+        "despues": " mit mir geschehen?« dachte er.",
+        "distractores": [
+          "sind",
+          "sein",
+          "wären"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "conjugacion-38"
+      },
+      {
+        "antes": "»Was ist mit mir geschehen?« ",
+        "respuesta": "dachte",
+        "despues": " er.",
+        "distractores": [
+          "dachten",
+          "gedacht",
+          "denken"
+        ],
+        "pista": "3ª persona singular · verbo «denken».",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "conjugacion-39"
+      },
+      {
+        "antes": "Es ",
+        "respuesta": "war",
+        "despues": " kein Traum.",
+        "distractores": [
+          "waren",
+          "gewesen",
+          "bin"
+        ],
+        "pista": "3ª persona singular · verbo «sein».",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
         "id": "conjugacion-40"
       }
     ],
@@ -1724,6 +1286,7 @@
         ],
         "pista": "Verbo separable «vorbereiten»: el prefijo va al final.",
         "fuente": "principiante · El mercado",
+        "nivel": "principiante",
         "id": "separables-01"
       },
       {
@@ -1737,6 +1300,7 @@
         ],
         "pista": "Verbo separable «aufstehen»: el prefijo va al final.",
         "fuente": "principiante · Un día de Ana",
+        "nivel": "principiante",
         "id": "separables-02"
       },
       {
@@ -1750,85 +1314,8 @@
         ],
         "pista": "Verbo separable «anziehen»: el prefijo va al final.",
         "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
         "id": "separables-03"
-      },
-      {
-        "antes": "Doch es war fromm und gut, und so ging es vertrauensvoll ",
-        "respuesta": "hinaus",
-        "despues": " aufs Feld.",
-        "distractores": [
-          "weiter",
-          "heraus",
-          "über"
-        ],
-        "pista": "Verbo separable «hinausgehen»: el prefijo va al final.",
-        "fuente": "intermedio · El dinero de las estrellas",
-        "id": "separables-04"
-      },
-      {
-        "antes": "Eine kleine Maus lief über seine Pfote und weckte ihn ",
-        "respuesta": "auf",
-        "despues": ".",
-        "distractores": [
-          "über",
-          "an",
-          "zurück"
-        ],
-        "pista": "Verbo separable «aufwecken»: el prefijo va al final.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "separables-05"
-      },
-      {
-        "antes": "„Ich lege Vorräte für die kalten Tage ",
-        "respuesta": "an",
-        "despues": "“, antwortete die Ameise. „Du solltest dasselbe tun.“",
-        "distractores": [
-          "bei",
-          "vor",
-          "zusammen"
-        ],
-        "pista": "Verbo separable «anlegen»: el prefijo va al final.",
-        "fuente": "intermedio · La hormiga y la cigarra",
-        "id": "separables-06"
-      },
-      {
-        "antes": "Müde des Spotts, forderte die Schildkröte ihn zu einem Wettrennen ",
-        "respuesta": "heraus",
-        "despues": ".",
-        "distractores": [
-          "hinein",
-          "zusammen",
-          "zurück"
-        ],
-        "pista": "Verbo separable «herausfordern»: el prefijo va al final.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "separables-07"
-      },
-      {
-        "antes": "An einem Spätherbstnachmittage ging ein alter wohlgekleideter Mann langsam die Straße ",
-        "respuesta": "hinab",
-        "despues": ".",
-        "distractores": [
-          "vorbei",
-          "herein",
-          "weiter"
-        ],
-        "pista": "Verbo separable «hinabgehen»: el prefijo va al final.",
-        "fuente": "avanzado · Immensee",
-        "id": "separables-08"
-      },
-      {
-        "antes": "Man sah vom Bett ",
-        "respuesta": "aus",
-        "despues": ", daß er auf vier Uhr richtig eingestellt war;",
-        "distractores": [
-          "zusammen",
-          "heraus",
-          "mit"
-        ],
-        "pista": "Verbo separable «aussehen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-09"
       },
       {
         "antes": "Dann zog er ihre Kleider an, setzte ihre Haube ",
@@ -1841,59 +1328,8 @@
         ],
         "pista": "Verbo separable «aufsetzen»: el prefijo va al final.",
         "fuente": "intermedio · Caperucita Roja",
-        "id": "separables-10"
-      },
-      {
-        "antes": "Die Maus hörte sein Gebrüll und nagte die Seile ",
-        "respuesta": "durch",
-        "despues": ", bis sie ihn befreite.",
-        "distractores": [
-          "über",
-          "hinaus",
-          "weiter"
-        ],
-        "pista": "Verbo separable «durchnagen»: el prefijo va al final.",
-        "fuente": "intermedio · El león y el ratón",
-        "id": "separables-11"
-      },
-      {
-        "antes": "Der Hase nahm ",
-        "respuesta": "an",
-        "despues": ", seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
-        "distractores": [
-          "zurück",
-          "bei",
-          "vor"
-        ],
-        "pista": "Verbo separable «annehmen»: el prefijo va al final.",
-        "fuente": "intermedio · La liebre y la tortuga",
-        "id": "separables-12"
-      },
-      {
-        "antes": "Er stieg sie langsam ",
-        "respuesta": "hinauf",
-        "despues": ", schloß oben eine Tür auf und trat dann in ein mäßig großes Zimmer.",
-        "distractores": [
-          "empor",
-          "hinab",
-          "zurück"
-        ],
-        "pista": "Verbo separable «hinaufsteigen»: el prefijo va al final.",
-        "fuente": "avanzado · Immensee",
-        "id": "separables-13"
-      },
-      {
-        "antes": "Der Vater kehrte auch zu seinem Frühstück ",
-        "respuesta": "zurück",
-        "despues": ", die Schwester aber flüsterte: »",
-        "distractores": [
-          "fort",
-          "empor",
-          "hinab"
-        ],
-        "pista": "Verbo separable «zurückkehren»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-14"
+        "nivel": "intermedio",
+        "id": "separables-04"
       },
       {
         "antes": "Danach legte er sich wieder hin, schlief ein und fing ",
@@ -1906,7 +1342,92 @@
         ],
         "pista": "Verbo separable «anfing»: el prefijo va al final.",
         "fuente": "intermedio · Caperucita Roja",
-        "id": "separables-15"
+        "nivel": "intermedio",
+        "id": "separables-05"
+      },
+      {
+        "antes": "Doch es war fromm und gut, und so ging es vertrauensvoll ",
+        "respuesta": "hinaus",
+        "despues": " aufs Feld.",
+        "distractores": [
+          "weiter",
+          "heraus",
+          "über"
+        ],
+        "pista": "Verbo separable «hinausgehen»: el prefijo va al final.",
+        "fuente": "intermedio · El dinero de las estrellas",
+        "nivel": "intermedio",
+        "id": "separables-06"
+      },
+      {
+        "antes": "Eine kleine Maus lief über seine Pfote und weckte ihn ",
+        "respuesta": "auf",
+        "despues": ".",
+        "distractores": [
+          "über",
+          "an",
+          "zurück"
+        ],
+        "pista": "Verbo separable «aufwecken»: el prefijo va al final.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "separables-07"
+      },
+      {
+        "antes": "Die Maus hörte sein Gebrüll und nagte die Seile ",
+        "respuesta": "durch",
+        "despues": ", bis sie ihn befreite.",
+        "distractores": [
+          "über",
+          "hinaus",
+          "weiter"
+        ],
+        "pista": "Verbo separable «durchnagen»: el prefijo va al final.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "separables-08"
+      },
+      {
+        "antes": "„Ich lege Vorräte für die kalten Tage ",
+        "respuesta": "an",
+        "despues": "“, antwortete die Ameise. „Du solltest dasselbe tun.“",
+        "distractores": [
+          "bei",
+          "vor",
+          "zusammen"
+        ],
+        "pista": "Verbo separable «anlegen»: el prefijo va al final.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "separables-09"
+      },
+      {
+        "antes": "Müde des Spotts, forderte die Schildkröte ihn zu einem Wettrennen ",
+        "respuesta": "heraus",
+        "despues": ".",
+        "distractores": [
+          "hinein",
+          "zusammen",
+          "zurück"
+        ],
+        "pista": "Verbo separable «herausfordern»: el prefijo va al final.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "separables-10"
+      },
+      {
+        "antes": "Der Hase nahm ",
+        "respuesta": "an",
+        "despues": ", seines Sieges sicher, und alle Tiere versammelten sich, um zuzusehen.",
+        "distractores": [
+          "zurück",
+          "bei",
+          "vor"
+        ],
+        "pista": "Verbo separable «annehmen»: el prefijo va al final.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "separables-11"
       },
       {
         "antes": "Beim Startsignal schoss der Hase ",
@@ -1919,33 +1440,8 @@
         ],
         "pista": "Verbo separable «losschoss»: el prefijo va al final.",
         "fuente": "intermedio · La liebre y la tortuga",
-        "id": "separables-16"
-      },
-      {
-        "antes": "Er stieg sie langsam hinauf, schloß oben eine Tür ",
-        "respuesta": "auf",
-        "despues": " und trat dann in ein mäßig großes Zimmer.",
-        "distractores": [
-          "über",
-          "an",
-          "zurück"
-        ],
-        "pista": "Verbo separable «aufschließen»: el prefijo va al final.",
-        "fuente": "avanzado · Immensee",
-        "id": "separables-17"
-      },
-      {
-        "antes": "Im Nebenzimmer links trat eine peinliche Stille ",
-        "respuesta": "ein",
-        "despues": ", im Nebenzimmer rechts begann die Schwester zu schluchzen.",
-        "distractores": [
-          "heraus",
-          "hinein",
-          "her"
-        ],
-        "pista": "Verbo separable «eintreten»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-18"
+        "nivel": "intermedio",
+        "id": "separables-12"
       },
       {
         "antes": "Die Schildkröte dagegen ging Schritt für Schritt ",
@@ -1958,7 +1454,50 @@
         ],
         "pista": "Verbo separable «vorangehen»: el prefijo va al final.",
         "fuente": "intermedio · La liebre y la tortuga",
-        "id": "separables-19"
+        "nivel": "intermedio",
+        "id": "separables-13"
+      },
+      {
+        "antes": "An einem Spätherbstnachmittage ging ein alter wohlgekleideter Mann langsam die Straße ",
+        "respuesta": "hinab",
+        "despues": ".",
+        "distractores": [
+          "vorbei",
+          "herein",
+          "weiter"
+        ],
+        "pista": "Verbo separable «hinabgehen»: el prefijo va al final.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "separables-14"
+      },
+      {
+        "antes": "Er stieg sie langsam ",
+        "respuesta": "hinauf",
+        "despues": ", schloß oben eine Tür auf und trat dann in ein mäßig großes Zimmer.",
+        "distractores": [
+          "empor",
+          "hinab",
+          "zurück"
+        ],
+        "pista": "Verbo separable «hinaufsteigen»: el prefijo va al final.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "separables-15"
+      },
+      {
+        "antes": "Er stieg sie langsam hinauf, schloß oben eine Tür ",
+        "respuesta": "auf",
+        "despues": " und trat dann in ein mäßig großes Zimmer.",
+        "distractores": [
+          "über",
+          "an",
+          "zurück"
+        ],
+        "pista": "Verbo separable «aufschließen»: el prefijo va al final.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "separables-16"
       },
       {
         "antes": "komm ",
@@ -1971,20 +1510,8 @@
         ],
         "pista": "Verbo separable «hereinkommen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-20"
-      },
-      {
-        "antes": "Halten Sie sich nur nicht ",
-        "respuesta": "auf",
-        "despues": ", Herr Prokurist;",
-        "distractores": [
-          "über",
-          "an",
-          "fort"
-        ],
-        "pista": "Verbo separable «aufhalten»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-21"
+        "nivel": "avanzado",
+        "id": "separables-17"
       },
       {
         "antes": "Dann gingen sie beide ",
@@ -1997,20 +1524,8 @@
         ],
         "pista": "Verbo separable «hineingehen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-22"
-      },
-      {
-        "antes": "-- und rissen die Wohnungstüre ",
-        "respuesta": "auf",
-        "despues": ".",
-        "distractores": [
-          "über",
-          "an",
-          "zurück"
-        ],
-        "pista": "Verbo separable «aufrissen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-23"
+        "nivel": "avanzado",
+        "id": "separables-18"
       },
       {
         "antes": "So fängt ein wohlbekanntes Märchen von den Gebrüdern Grimm ",
@@ -2023,20 +1538,8 @@
         ],
         "pista": "Verbo separable «anfangen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-24"
-      },
-      {
-        "antes": "»Hören Sie nur,« sagte der Prokurist im Nebenzimmer, »er dreht den Schlüssel ",
-        "respuesta": "um",
-        "despues": ".«",
-        "distractores": [
-          "weiter",
-          "durch",
-          "über"
-        ],
-        "pista": "Verbo separable «umdrehen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-25"
+        "nivel": "avanzado",
+        "id": "separables-19"
       },
       {
         "antes": "Mitunter aber gähnten sie im Schlaf und reckten die roten Zungen ",
@@ -2049,20 +1552,8 @@
         ],
         "pista": "Verbo separable «ausrecken»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-26"
-      },
-      {
-        "antes": "sie gehorchten ",
-        "respuesta": "vollkommen",
-        "despues": ", wie er zu seiner Freude merkte; strebten sogar darnach, ihn fortzutragen, wohin er wollte;",
-        "distractores": [
-          "heraus",
-          "hinein",
-          "weiter"
-        ],
-        "pista": "Verbo separable «vollkommengehorchten»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-27"
+        "nivel": "avanzado",
+        "id": "separables-20"
       },
       {
         "antes": "Der winkte ihm mit der Hand und ging dann gerade in die Felsen ",
@@ -2075,20 +1566,8 @@
         ],
         "pista": "Verbo separable «hineingehen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-28"
-      },
-      {
-        "antes": "und schon glaubte er, die endgültige Besserung alles Leidens stehe unmittelbar ",
-        "respuesta": "bevor",
-        "despues": ".",
-        "distractores": [
-          "um",
-          "hinein",
-          "weiter"
-        ],
-        "pista": "Verbo separable «bevorstehen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-29"
+        "nivel": "avanzado",
+        "id": "separables-21"
       },
       {
         "antes": "»Nein,« sagte Reinhard, »die sind dann zu alt, die können nicht ",
@@ -2101,20 +1580,8 @@
         ],
         "pista": "Verbo separable «mitkönnen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-30"
-      },
-      {
-        "antes": "Unerbittlich drängte der Vater und stieß Zischlaute ",
-        "respuesta": "aus",
-        "despues": ", wie ein Wilder.",
-        "distractores": [
-          "zusammen",
-          "heraus",
-          "mit"
-        ],
-        "pista": "Verbo separable «ausstassen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-31"
+        "nivel": "avanzado",
+        "id": "separables-22"
       },
       {
         "antes": "»Wir kommen ja wieder,« sagte Reinhard heftig; »sag es nur gerade ",
@@ -2127,20 +1594,8 @@
         ],
         "pista": "Verbo separable «heraussag»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-32"
-      },
-      {
-        "antes": "Aber bald zog er ihn enttäuscht wieder ",
-        "respuesta": "zurück",
-        "despues": ";",
-        "distractores": [
-          "fort",
-          "empor",
-          "hinein"
-        ],
-        "pista": "Verbo separable «zurückziehen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-33"
+        "nivel": "avanzado",
+        "id": "separables-23"
       },
       {
         "antes": "Sonst geh’ ich allein, und dann komme ich nimmer ",
@@ -2153,20 +1608,8 @@
         ],
         "pista": "Verbo separable «wiederkommen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
-        "id": "separables-34"
-      },
-      {
-        "antes": "Nun kam gewiß bis zum Morgen niemand mehr zu Gregor ",
-        "respuesta": "herein",
-        "despues": ";",
-        "distractores": [
-          "hinein",
-          "empor",
-          "hinab"
-        ],
-        "pista": "Verbo separable «hereinkommen»: el prefijo va al final.",
-        "fuente": "avanzado · La metamorfosis",
-        "id": "separables-35"
+        "nivel": "avanzado",
+        "id": "separables-24"
       },
       {
         "antes": "Der Kleinen kam das Weinen ",
@@ -2179,6 +1622,161 @@
         ],
         "pista": "Verbo separable «nahekommen»: el prefijo va al final.",
         "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "separables-25"
+      },
+      {
+        "antes": "Man sah vom Bett ",
+        "respuesta": "aus",
+        "despues": ", daß er auf vier Uhr richtig eingestellt war;",
+        "distractores": [
+          "zusammen",
+          "heraus",
+          "mit"
+        ],
+        "pista": "Verbo separable «aussehen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-26"
+      },
+      {
+        "antes": "Der Vater kehrte auch zu seinem Frühstück ",
+        "respuesta": "zurück",
+        "despues": ", die Schwester aber flüsterte: »",
+        "distractores": [
+          "fort",
+          "empor",
+          "hinab"
+        ],
+        "pista": "Verbo separable «zurückkehren»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-27"
+      },
+      {
+        "antes": "Im Nebenzimmer links trat eine peinliche Stille ",
+        "respuesta": "ein",
+        "despues": ", im Nebenzimmer rechts begann die Schwester zu schluchzen.",
+        "distractores": [
+          "heraus",
+          "hinein",
+          "her"
+        ],
+        "pista": "Verbo separable «eintreten»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-28"
+      },
+      {
+        "antes": "Halten Sie sich nur nicht ",
+        "respuesta": "auf",
+        "despues": ", Herr Prokurist;",
+        "distractores": [
+          "über",
+          "an",
+          "fort"
+        ],
+        "pista": "Verbo separable «aufhalten»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-29"
+      },
+      {
+        "antes": "-- und rissen die Wohnungstüre ",
+        "respuesta": "auf",
+        "despues": ".",
+        "distractores": [
+          "über",
+          "an",
+          "zurück"
+        ],
+        "pista": "Verbo separable «aufrissen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-30"
+      },
+      {
+        "antes": "»Hören Sie nur,« sagte der Prokurist im Nebenzimmer, »er dreht den Schlüssel ",
+        "respuesta": "um",
+        "despues": ".«",
+        "distractores": [
+          "weiter",
+          "durch",
+          "über"
+        ],
+        "pista": "Verbo separable «umdrehen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-31"
+      },
+      {
+        "antes": "sie gehorchten ",
+        "respuesta": "vollkommen",
+        "despues": ", wie er zu seiner Freude merkte; strebten sogar darnach, ihn fortzutragen, wohin er wollte;",
+        "distractores": [
+          "heraus",
+          "hinein",
+          "weiter"
+        ],
+        "pista": "Verbo separable «vollkommengehorchten»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-32"
+      },
+      {
+        "antes": "und schon glaubte er, die endgültige Besserung alles Leidens stehe unmittelbar ",
+        "respuesta": "bevor",
+        "despues": ".",
+        "distractores": [
+          "um",
+          "hinein",
+          "weiter"
+        ],
+        "pista": "Verbo separable «bevorstehen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-33"
+      },
+      {
+        "antes": "Unerbittlich drängte der Vater und stieß Zischlaute ",
+        "respuesta": "aus",
+        "despues": ", wie ein Wilder.",
+        "distractores": [
+          "zusammen",
+          "heraus",
+          "mit"
+        ],
+        "pista": "Verbo separable «ausstassen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-34"
+      },
+      {
+        "antes": "Aber bald zog er ihn enttäuscht wieder ",
+        "respuesta": "zurück",
+        "despues": ";",
+        "distractores": [
+          "fort",
+          "empor",
+          "hinein"
+        ],
+        "pista": "Verbo separable «zurückziehen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "separables-35"
+      },
+      {
+        "antes": "Nun kam gewiß bis zum Morgen niemand mehr zu Gregor ",
+        "respuesta": "herein",
+        "despues": ";",
+        "distractores": [
+          "hinein",
+          "empor",
+          "hinab"
+        ],
+        "pista": "Verbo separable «hereinkommen»: el prefijo va al final.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
         "id": "separables-36"
       },
       {
@@ -2192,7 +1790,570 @@
         ],
         "pista": "Verbo separable «aufschrecken»: el prefijo va al final.",
         "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
         "id": "separables-37"
+      }
+    ],
+    "preposicion_caso": [
+      {
+        "antes": "Am Morgen spielt er ",
+        "respuesta": "mit",
+        "despues": " seinem Hund im Garten.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
+        "id": "preposicion_caso-01"
+      },
+      {
+        "antes": "Sie essen Hähnchen ",
+        "respuesta": "mit",
+        "despues": " Reis und einen grünen Salat.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · El fin de semana de Tom",
+        "nivel": "principiante",
+        "id": "preposicion_caso-02"
+      },
+      {
+        "antes": "María bezahlt ",
+        "respuesta": "mit",
+        "despues": " einer Münze und geht nach Hause.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · El mercado",
+        "nivel": "principiante",
+        "id": "preposicion_caso-03"
+      },
+      {
+        "antes": "Zu Hause bereitet sie das Frühstück ",
+        "respuesta": "für",
+        "despues": " ihre Familie vor.",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · El mercado",
+        "nivel": "principiante",
+        "id": "preposicion_caso-04"
+      },
+      {
+        "antes": "Sie fährt ",
+        "respuesta": "mit",
+        "despues": " dem Fahrrad zur Schule.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · Un día de Ana",
+        "nivel": "principiante",
+        "id": "preposicion_caso-05"
+      },
+      {
+        "antes": "Am Abend isst sie ",
+        "respuesta": "mit",
+        "despues": " ihrer Familie und geht schlafen.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "principiante · Un día de Ana",
+        "nivel": "principiante",
+        "id": "preposicion_caso-06"
+      },
+      {
+        "antes": "Am liebsten aber hatte es seine Großmutter, die ihm einst ein Käppchen ",
+        "respuesta": "aus",
+        "despues": " rotem Samt schenkte.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "um"
+        ],
+        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-07"
+      },
+      {
+        "antes": "Rotkäppchen wusste nicht, was ",
+        "respuesta": "für",
+        "despues": " ein böses Tier er war, und fürchtete sich nicht.",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-08"
+      },
+      {
+        "antes": "",
+        "respuesta": "Ohne",
+        "despues": " ein Wort ging er zum Bett und verschlang die arme Großmutter.",
+        "distractores": [
+          "Mit",
+          "Zu",
+          "Aus"
+        ],
+        "pista": "«ohne» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-09"
+      },
+      {
+        "antes": "„Ei, Großmutter, was hast du ",
+        "respuesta": "für",
+        "despues": " große Ohren!“ – „Dass ich dich besser hören kann.“",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-10"
+      },
+      {
+        "antes": "„Ei, Großmutter, was hast du ",
+        "respuesta": "für",
+        "despues": " große Augen!“ – „Dass ich dich besser sehen kann.“",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-11"
+      },
+      {
+        "antes": "Kaum hatte der Wolf das gesagt, sprang er ",
+        "respuesta": "aus",
+        "despues": " dem Bett und verschlang das arme Rotkäppchen.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "um"
+        ],
+        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · Caperucita Roja",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-12"
+      },
+      {
+        "antes": "Der Löwe fing sie ",
+        "respuesta": "mit",
+        "despues": " seiner Kralle, wütend über die Störung.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-13"
+      },
+      {
+        "antes": "Tage später fingen Jäger den Löwen ",
+        "respuesta": "mit",
+        "despues": " einem Netz.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El león y el ratón",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-14"
+      },
+      {
+        "antes": "Wer aber wieder in die Stadt wollte, der musste sich ",
+        "respuesta": "durch",
+        "despues": " den süßen Brei hindurchessen.",
+        "distractores": [
+          "gegenüber",
+          "von",
+          "nach"
+        ],
+        "pista": "«durch» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El puré dulce",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-15"
+      },
+      {
+        "antes": "Der Nordwind und die Sonne stritten darüber, wer ",
+        "respuesta": "von",
+        "despues": " beiden der Stärkere sei.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "bis"
+        ],
+        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-16"
+      },
+      {
+        "antes": "Der Nordwind versuchte es zuerst und begann ",
+        "respuesta": "mit",
+        "despues": " aller Wut zu blasen.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-17"
+      },
+      {
+        "antes": "Schließlich, ",
+        "respuesta": "von",
+        "despues": " der Hitze überwältigt, zog er den Mantel aus freien Stücken aus.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "bis"
+        ],
+        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-18"
+      },
+      {
+        "antes": "Schließlich, von der Hitze überwältigt, zog er den Mantel ",
+        "respuesta": "aus",
+        "despues": " freien Stücken aus.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "um"
+        ],
+        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · El viento del norte y el sol",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-19"
+      },
+      {
+        "antes": "Währenddessen arbeitete die Ameise ohne Pause und sammelte Körner ",
+        "respuesta": "für",
+        "despues": " den Winter.",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-20"
+      },
+      {
+        "antes": "„Warum arbeitest du so viel?“, fragte die Grille. „Komm und sing ",
+        "respuesta": "mit",
+        "despues": " mir.“",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-21"
+      },
+      {
+        "antes": "„Ich lege Vorräte ",
+        "respuesta": "für",
+        "despues": " die kalten Tage an“, antwortete die Ameise. „Du solltest dasselbe tun.“",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-22"
+      },
+      {
+        "antes": "Die Grille lachte und sang weiter, ohne sich ",
+        "respuesta": "um",
+        "despues": " die Zukunft zu sorgen.",
+        "distractores": [
+          "zu",
+          "nach",
+          "mit"
+        ],
+        "pista": "«um» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-23"
+      },
+      {
+        "antes": "Die Monate vergingen und der Winter kam ",
+        "respuesta": "mit",
+        "despues": " seinem eisigen Wind.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La hormiga y la cigarra",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-24"
+      },
+      {
+        "antes": "Müde des Spotts, forderte die Schildkröte ihn ",
+        "respuesta": "zu",
+        "despues": " einem Wettrennen heraus.",
+        "distractores": [
+          "um",
+          "ohne",
+          "durch"
+        ],
+        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-25"
+      },
+      {
+        "antes": "Er rannte ",
+        "respuesta": "mit",
+        "despues": " aller Kraft, aber es war schon zu spät.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "intermedio · La liebre y la tortuga",
+        "nivel": "intermedio",
+        "id": "preposicion_caso-26"
+      },
+      {
+        "antes": "Er schien ",
+        "respuesta": "von",
+        "despues": " einem Spaziergange nach Hause zurückzukehren, denn seine Schnallenschuhe, die einer vorübergegangenen Mode angehörten, waren bestäubt.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "bis"
+        ],
+        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-27"
+      },
+      {
+        "antes": "Den langen Rohrstock ",
+        "respuesta": "mit",
+        "despues": " goldenem Knopf trug er unter dem Arm;",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-28"
+      },
+      {
+        "antes": "Der Mann winkte ihr ",
+        "respuesta": "mit",
+        "despues": " seinem Rohrstock.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-29"
+      },
+      {
+        "antes": "Bald trat die anmutige Gestalt eines kleinen Mädchens ",
+        "respuesta": "zu",
+        "despues": " ihm.",
+        "distractores": [
+          "um",
+          "ohne",
+          "durch"
+        ],
+        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-30"
+      },
+      {
+        "antes": "das ließ ihr hübsch ",
+        "respuesta": "zu",
+        "despues": " den braunen Augen.",
+        "distractores": [
+          "um",
+          "ohne",
+          "durch"
+        ],
+        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-31"
+      },
+      {
+        "antes": "Elisabeth nahm ihre Ringelchen ",
+        "respuesta": "aus",
+        "despues": " der Schürze und zog sie auf lange Bindfäden;",
+        "distractores": [
+          "durch",
+          "gegen",
+          "um"
+        ],
+        "pista": "«aus» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-32"
+      },
+      {
+        "antes": "So fängt ein wohlbekanntes Märchen ",
+        "respuesta": "von",
+        "despues": " den Gebrüdern Grimm an.",
+        "distractores": [
+          "durch",
+          "gegen",
+          "bis"
+        ],
+        "pista": "«von» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · Immensee",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-33"
+      },
+      {
+        "antes": "Seine vielen, im Vergleich ",
+        "respuesta": "zu",
+        "despues": " seinem sonstigen Umfang kläglich dünnen Beine flimmerten ihm hilflos vor den Augen.",
+        "distractores": [
+          "um",
+          "ohne",
+          "durch"
+        ],
+        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-34"
+      },
+      {
+        "antes": "»Was ist ",
+        "respuesta": "mit",
+        "despues": " mir geschehen?« dachte er.",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-35"
+      },
+      {
+        "antes": "Sein Zimmer, ein richtiges, nur etwas ",
+        "respuesta": "zu",
+        "despues": " kleines Menschenzimmer, lag ruhig zwischen den vier wohlbekannten Wänden.",
+        "distractores": [
+          "um",
+          "ohne",
+          "durch"
+        ],
+        "pista": "«zu» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-36"
+      },
+      {
+        "antes": "»Ach Gott,« dachte er, »was ",
+        "respuesta": "für",
+        "despues": " einen anstrengenden Beruf habe ich gewählt!",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-37"
+      },
+      {
+        "antes": "fand die juckende Stelle, die ",
+        "respuesta": "mit",
+        "despues": " lauter kleinen weißen Pünktchen besetzt war, die er nicht zu beurteilen verstand;",
+        "distractores": [
+          "durch",
+          "ohne",
+          "gegen"
+        ],
+        "pista": "«mit» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-38"
+      },
+      {
+        "antes": "Das sollte ich ",
+        "respuesta": "bei",
+        "despues": " meinem Chef versuchen;",
+        "distractores": [
+          "durch",
+          "gegen",
+          "für"
+        ],
+        "pista": "«bei» rige dativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-39"
+      },
+      {
+        "antes": "Wer weiß übrigens, ob das nicht sehr gut ",
+        "respuesta": "für",
+        "despues": " mich wäre.",
+        "distractores": [
+          "bei",
+          "gegenüber",
+          "von"
+        ],
+        "pista": "«für» rige acusativo: mira el caso del artículo que sigue al hueco.",
+        "fuente": "avanzado · La metamorfosis",
+        "nivel": "avanzado",
+        "id": "preposicion_caso-40"
       }
     ]
   }

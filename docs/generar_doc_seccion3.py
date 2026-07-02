@@ -119,10 +119,16 @@ code('{ "id": "declinacion-03",\n'
      '  "despues": " Fahrrad zur Schule.",\n'
      '  "distractores": ["den", "das", "der"],\n'
      '  "pista": "Dativo · neutro · singular.",\n'
-     '  "fuente": "principiante · Un día de Ana" }')
-p("Cada tema lleva además su <b>lección</b>: <font face='Courier'>{ id, titulo, resumen, "
+     '  "fuente": "principiante · Un día de Ana",\n'
+     '  "nivel": "principiante" }')
+p("Cada tema lleva además su <b>lección</b>: <font face='Courier'>{ id, titulo, nivel, resumen, "
   "tabla: { cabecera, filas } }</font>. La UI la muestra en la portada del tema y como "
-  "desplegable («Ver la regla») durante la práctica.")
+  "desplegable («Ver la regla») durante la práctica. El <font face='Courier'>nivel</font> del tema "
+  "clasifica su dificultad (decisión del usuario: declinación, conjugación y separables = "
+  "principiante; preposición y caso = intermedio); el del ejercicio es el de su lectura de "
+  "origen y define el <b>orden pedagógico</b>: tanto el JSON como cada sesión presentan los "
+  "ejercicios por nivel ascendente y, dentro del nivel, agrupados por lectura (la semilla "
+  "decide cuáles entran; el orden de presentación es fijo).")
 
 h1("4. Detección de huecos (spaCy)")
 p("El pipeline recorre las frases en alemán de <b>todas</b> las lecturas (solo frases de "

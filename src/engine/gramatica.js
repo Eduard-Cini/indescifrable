@@ -41,14 +41,26 @@ export function esCorrecta(ejercicio, opcion) {
   return opcion === ejercicio.respuesta;
 }
 
+// Dificultad de la lectura de origen; lo desconocido va al final.
+const ORDEN_NIVEL = { principiante: 0, intermedio: 1, avanzado: 2 };
+
 /**
- * Selecciona una sesión de hasta n ejercicios de un tema, en orden determinista
- * por semilla. No repite ejercicios (barajado sin reemplazo).
+ * Selecciona una sesión de hasta n ejercicios de un tema. La semilla decide
+ * CUÁLES entran (barajado sin reemplazo, determinista); la presentación va en
+ * orden pedagógico: nivel de la lectura de origen ascendente y, dentro del
+ * nivel, agrupados por lectura (sort estable: conserva el orden de la semilla
+ * entre iguales).
  */
 export function seleccionarSesion(ejercicios, { n = 10, semilla = 'sesion' } = {}) {
   if (!Array.isArray(ejercicios) || ejercicios.length === 0) return [];
   const revueltos = barajar(ejercicios, rngDeterminista(semilla));
-  return revueltos.slice(0, Math.max(0, n));
+  return revueltos
+    .slice(0, Math.max(0, n))
+    .sort(
+      (a, b) =>
+        (ORDEN_NIVEL[a.nivel] ?? 9) - (ORDEN_NIVEL[b.nivel] ?? 9) ||
+        String(a.fuente ?? '').localeCompare(String(b.fuente ?? ''))
+    );
 }
 
 /**

@@ -24,6 +24,19 @@
 }
 .gram-tema-card:hover { border-color: #4a7; transform: translateY(-2px); }
 .gram-tema-card h2 { margin: 0; font-size: 1.15rem; color: #f0f0f0; }
+
+/* Chip de nivel del tema (principiante/intermedio) */
+.gram-nivel {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  border: 1px solid #2e2e2e;
+  border-radius: 4px;
+  padding: 1px 6px;
+  color: #888;
+}
+.gram-nivel.principiante { border-color: #35563f; color: #8fbf9f; }
+.gram-nivel.intermedio { border-color: #6a5c2e; color: #b7a86a; }
+.gram-nivel.avanzado { border-color: #56353f; color: #d88; }
 .gram-tema-card p { margin: 0; font-size: 0.85rem; color: #aaa; line-height: 1.4; }
 .gram-tema-count { font-size: 0.75rem; color: #8fbf9f; margin-top: auto; }
 

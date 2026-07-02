@@ -71,6 +71,7 @@ TEMAS = [
     {
         "id": "declinacion",
         "titulo": "Declinación del artículo",
+        "nivel": "principiante",
         "resumen": (
             "El artículo definido alemán cambia de forma según el caso "
             "(nominativo para el sujeto, acusativo para el objeto directo, "
@@ -91,26 +92,9 @@ TEMAS = [
         },
     },
     {
-        "id": "preposicion_caso",
-        "titulo": "Preposición y caso",
-        "resumen": (
-            "Cada preposición alemana rige un caso fijo: el sustantivo que "
-            "la sigue se declina en ese caso. Con dativo: mit, nach, aus, "
-            "bei, zu, von, seit. Con acusativo: für, ohne, gegen, um, durch, "
-            "bis. En estos ejercicios el artículo que sigue al hueco ya está "
-            "declinado: solo una preposición es compatible con ese caso."
-        ),
-        "tabla": {
-            "cabecera": ["Rige dativo", "Rige acusativo"],
-            "filas": [
-                ["mit, nach, aus", "für, ohne, gegen"],
-                ["bei, zu, von, seit", "um, durch, bis"],
-            ],
-        },
-    },
-    {
         "id": "conjugacion",
         "titulo": "Conjugación del verbo",
+        "nivel": "principiante",
         "resumen": (
             "El verbo finito concuerda en persona y número con el sujeto. "
             "Terminaciones del presente: ich -e, du -st, er/sie/es -t, "
@@ -133,6 +117,7 @@ TEMAS = [
     {
         "id": "separables",
         "titulo": "Verbos separables",
+        "nivel": "principiante",
         "resumen": (
             "Muchos verbos alemanes llevan un prefijo separable (auf-, an-, "
             "vor-, ab-, ein-, hinein-…) que cambia el significado del verbo "
@@ -149,6 +134,25 @@ TEMAS = [
                 ["vorbereiten", "preparar", "vor"],
                 ["abfahren", "partir / salir", "ab"],
                 ["hineingehen", "entrar", "hinein"],
+            ],
+        },
+    },
+    {
+        "id": "preposicion_caso",
+        "titulo": "Preposición y caso",
+        "nivel": "intermedio",
+        "resumen": (
+            "Cada preposición alemana rige un caso fijo: el sustantivo que "
+            "la sigue se declina en ese caso. Con dativo: mit, nach, aus, "
+            "bei, zu, von, seit. Con acusativo: für, ohne, gegen, um, durch, "
+            "bis. En estos ejercicios el artículo que sigue al hueco ya está "
+            "declinado: solo una preposición es compatible con ese caso."
+        ),
+        "tabla": {
+            "cabecera": ["Rige dativo", "Rige acusativo"],
+            "filas": [
+                ["mit, nach, aus", "für, ohne, gegen"],
+                ["bei, zu, von, seit", "um, durch, bis"],
             ],
         },
     },
@@ -332,9 +336,9 @@ def gen_separables(ctx, frase, doc):
 
 GENERADORES = {
     "declinacion": gen_declinacion,
-    "preposicion_caso": gen_preposicion,
     "conjugacion": gen_conjugacion,
     "separables": gen_separables,
+    "preposicion_caso": gen_preposicion,
 }
 
 
@@ -407,6 +411,7 @@ def generar(temas):
                     continue
                 vistos[tema].add(clave)
                 ej["fuente"] = fuente
+                ej["nivel"] = nivel
                 cola.append(ej)
                 if len(cola) >= MAX_POR_FUENTE:
                     break
@@ -416,6 +421,10 @@ def generar(temas):
         orden = sorted(candidatos[tema],
                        key=lambda f: (NIVEL_ORDEN.get(nivel_de.get(f), 9), f))
         elegidos = estratificar(candidatos[tema], orden, TOPE_POR_TEMA)
+        # Orden pedagógico de salida: primero las lecturas fáciles, agrupadas
+        # por lectura (la estratificación ya decidió CUÁLES entran; esto solo
+        # decide en qué orden se presentan).
+        elegidos.sort(key=lambda e: (NIVEL_ORDEN.get(e["nivel"], 9), e["fuente"]))
         for i, ej in enumerate(elegidos, start=1):
             ej["id"] = f"{tema}-{i:02d}"
         ejercicios[tema] = elegidos

@@ -37,11 +37,16 @@ function Ejercicios() {
     [banco, semilla]
   );
 
+  const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', avanzado: 'Avanzado' };
   const cabecera = (
     <header className="lectura-top">
       <Link to="/gramatica" className="lectura-link">← Gramática</Link>
       <h1>{meta?.titulo ?? 'Gramática'}</h1>
-      <span />
+      {meta?.nivel ? (
+        <span className={`gram-nivel ${meta.nivel}`}>{NOMBRE_NIVEL[meta.nivel] ?? meta.nivel}</span>
+      ) : (
+        <span />
+      )}
     </header>
   );
 
