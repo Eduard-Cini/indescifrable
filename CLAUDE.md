@@ -5,7 +5,7 @@ La aportación es el modelado matemático/algorítmico; el sitio es el vehículo
 Cuatro vertientes: (1) **Lectura** ✅, (2) **Repaso espaciado** ✅ (SM-2 en producción +
 comparación Leitner/Markov por simulación), (3) **Gramática cloze** ✅ (spaCy + distractores
 híbridos paradigma/coseno), (4) **Juegos** ✅ (Codenames + escalera BFS + crucigrama
-backtracking).
+backtracking + Wordle entropía + sopa de letras).
 
 ## Estado actual (hecho)
 - **Sección Lectura completa**: biblioteca (idioma/nivel), lector con traducción por
@@ -50,7 +50,7 @@ backtracking).
   Motor puro `src/engine/gramatica.js` (sesión/opciones deterministas por semilla; normaliza
   el LCG de board.js a [0,1)); UI en `/gramatica` (`src/secciones/gramatica/`), JSON por
   dynamic import (chunk aparte).
-- **Sección Juegos (pipeline + motores + UI)**: /juegos es el HUB de tres juegos; Codenames
+- **Sección Juegos (pipeline + motores + UI)**: /juegos es el HUB de CINCO juegos; Codenames
   intacto en /juegos/codenames. **Escalera de palabras** (/juegos/escalera):
   `src/engine/escalera.js` — grafo de Hamming 1 por cubetas comodín O(n·L), BFS de camino
   mínimo, retos deterministas por semilla a distancia EXACTA (selector 3-5 letras y 3-6
@@ -58,21 +58,30 @@ backtracking).
   (/juegos/crucigrama): `src/engine/crucigrama.js` — backtracking (anclaje en cruces,
   más-cruces-primero, presupuesto 5.000 nodos con degradación n→n−1), numeración clásica;
   palabra alemana + pista española; cuadrícula interactiva (foco direccional, click alterna
-  H/V). Datos: `pipeline/juegos.py` → `src/data/juegos.json` (escalera: formas ASCII L=3-5
-  con glosa — sin umlauts por tecleo; crucigrama: 400 lemas frecuencia ≥2 sin funcionales),
-  chunk aparte por dynamic import. Métricas reales: `npm run simular-juegos`
-  (`simulacion/juegos-stats.mjs` corre los motores de producción → `docs/datos-juegos.json`;
-  backtracking 100% éxito en n=6/8/10 a <0,5 ms; componente gigante 62/115/64 por longitud).
-  `board.js` ahora exporta `crearGeneradorNormalizado` (antes helper privado de gramatica.js)
-  y los imports internos del engine llevan extensión `.js` (los usa node).
-- **Motor puro + Vitest** (101 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama).
+  H/V). **Adivina la palabra** (/juegos/wordle): `src/engine/wordle.js` — feedback con
+  letras repetidas en DOS pasadas (verdes consumen primero), `filtrarConsistentes` por
+  definición (mismo patrón en cada intento) y entropía de Shannon de la partición que induce
+  un intento; UI con glosa por intento y contador «quedan N posibles»; intentos restringidos
+  al corpus. **Sopa de letras** (/juegos/sopa): `src/engine/sopa.js` — colocación
+  aleatorizada con reintentos (solo →, ↓, ↘; solapes compatibles), relleno muestreando la
+  distribución de letras del pool, selección por dos clicks (inicio/fin, válida al revés);
+  pistas en español, palabras en alemán. Datos: `pipeline/juegos.py` → `src/data/juegos.json`
+  (escalera/wordle: formas ASCII L=3-5 con glosa — sin umlauts por tecleo; crucigrama/sopa:
+  400 lemas frecuencia ≥2 sin funcionales), chunk aparte por dynamic import. Métricas
+  reales: `npm run simular-juegos` (`simulacion/juegos-stats.mjs` corre los motores de
+  producción → `docs/datos-juegos.json`; backtracking y sopa 100% éxito; componente gigante
+  62/115/64 por longitud; wordle: mejor 1er intento «nahe»/«heran» 4.2/5.6 bits, solver
+  voraz 3.4/3.0 intentos medios, ≥99% en ≤6). `board.js` exporta `crearGeneradorNormalizado`
+  (antes helper privado de gramatica.js) y los imports internos del engine llevan extensión
+  `.js` (los usa node).
+- **Motor puro + Vitest** (129 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:
   - **Sección 1 — Lectura**: `documentacion-seccion1`, `metricas-seccion1` (cobertura, chrF; carga opus-mt al regenerar), `autoaprendizaje-seccion1`.
   - **Sección 2 — Repaso**: `documentacion-seccion2`, `metricas-seccion2` (simulación + Markov + modelo de conocimiento), `autoaprendizaje-seccion2`.
   - **Sección 3 — Gramática**: `documentacion-seccion3`, `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus), `autoaprendizaje-seccion3`.
-  - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
+  - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking, entropía del Wordle; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.

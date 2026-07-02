@@ -130,7 +130,7 @@
    "densidadMedia": 0.285,
    "crucesMedios": 5.08,
    "casillasMedias": 33.7,
-   "msPorTablero": 0.32
+   "msPorTablero": 0.28
   },
   "8": {
    "semillas": 200,
@@ -139,7 +139,7 @@
    "densidadMedia": 0.268,
    "crucesMedios": 7.15,
    "casillasMedias": 43.4,
-   "msPorTablero": 0.25
+   "msPorTablero": 0.39
   },
   "10": {
    "semillas": 200,
@@ -148,7 +148,62 @@
    "densidadMedia": 0.255,
    "crucesMedios": 9.19,
    "casillasMedias": 53.1,
-   "msPorTablero": 0.38
+   "msPorTablero": 0.36
+  }
+ },
+ "wordle": {
+  "4": {
+   "palabras": 268,
+   "mejorPrimerIntento": "nahe",
+   "entropiaPrimerIntento": 4.166,
+   "entropiaMaxima": 8.066,
+   "intentosMedios": 3.369,
+   "resueltosEnSeis": 0.9925,
+   "distribucion": {
+    "1": 1,
+    "2": 37,
+    "3": 122,
+    "4": 87,
+    "5": 14,
+    "6": 5,
+    "7": 2
+   },
+   "msTotal": 242
+  },
+  "5": {
+   "palabras": 445,
+   "mejorPrimerIntento": "heran",
+   "entropiaPrimerIntento": 5.608,
+   "entropiaMaxima": 8.798,
+   "intentosMedios": 3.029,
+   "resueltosEnSeis": 0.9978,
+   "distribucion": {
+    "1": 1,
+    "2": 89,
+    "3": 266,
+    "4": 77,
+    "5": 10,
+    "6": 1,
+    "7": 1
+   },
+   "msTotal": 454
+  }
+ },
+ "sopa": {
+  "6": {
+   "semillas": 200,
+   "tasaCompleta": 1,
+   "palabrasMedias": 6
+  },
+  "8": {
+   "semillas": 200,
+   "tasaCompleta": 1,
+   "palabrasMedias": 8
+  },
+  "10": {
+   "semillas": 200,
+   "tasaCompleta": 1,
+   "palabrasMedias": 10
   }
  }
 }

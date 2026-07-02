@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Genera docs/autoaprendizaje-seccion4.pdf: ruta de estudio autodidacta de la
-Sección 4 (juegos): grafos y BFS, backtracking/CSP y aleatoriedad determinista
-(LCG, Fisher–Yates), siempre anclada al código del repo.
+Sección 4 (juegos): grafos y BFS, backtracking/CSP, aleatoriedad determinista
+(LCG, Fisher–Yates) y teoría de la información (Wordle), anclada al repo.
 
 Uso:  PYTHONUTF8=1 python docs/generar_autoaprendizaje_seccion4.py
 """
@@ -70,9 +70,9 @@ def tabla(filas, anchos):
 # --- Portada -----------------------------------------------------------------
 story.append(Spacer(1, 2.6 * cm))
 story.append(Paragraph("Sección 4 — Juegos", STIT))
-story.append(Paragraph("Ruta de autoaprendizaje: grafos y BFS, backtracking y "
-                       "aleatoriedad determinista, desde cero hasta defender el código "
-                       "de esta sección", SSUB))
+story.append(Paragraph("Ruta de autoaprendizaje: grafos y BFS, backtracking, aleatoriedad "
+                       "determinista y teoría de la información, desde cero hasta "
+                       "defender el código de esta sección", SSUB))
 story.append(Spacer(1, 0.7 * cm))
 story.append(HRFlowable(width="55%", thickness=1, color=AZUL))
 story.append(Spacer(1, 0.5 * cm))
@@ -86,7 +86,9 @@ tabla([
      "Trazar a mano la colocación de un crucigrama de 4 palabras, con retroceso"],
     ["3", "Aleatoriedad determinista: LCG, semillas y Fisher–Yates", "1 semana",
      "Predecir un tablero de Codenames a partir de su semilla, a mano"],
-    ["4", "Implementación y experimentos en el repo", "1-2 semanas",
+    ["4", "Teoría de la información: el Wordle como experimento", "1 semana",
+     "Calcular la entropía de un intento a mano y explicar el solver voraz"],
+    ["5", "Implementación y experimentos en el repo", "1-2 semanas",
      "Añadir una variante de juego y medirla con simular-juegos"],
 ], [1.2 * cm, 6.6 * cm, 3.2 * cm, 5.4 * cm])
 p("Regla de oro (la misma de las Secciones 2 y 3): cada concepto se aprende <b>tres "
@@ -211,8 +213,50 @@ tabla([
 ], [8.6 * cm, 7.8 * cm])
 
 # ---------------------------------------------------------------------------
-h1("Fase 4 — Implementación y experimentos en el repo")
-h2("4.1 Recorrido guiado del código")
+h1("Fase 4 — Teoría de la información: el Wordle como experimento")
+h2("4.1 La entropía de una pregunta")
+p("Shannon (1948): la información de un suceso de probabilidad p es −log2 p bits, y la "
+  "entropía H = −Σ p·log2 p es la información ESPERADA. En el Wordle cada intento es una "
+  "«pregunta» cuya «respuesta» es el patrón de feedback: el intento parte el conjunto de "
+  "candidatas en clases (una por patrón) y su entropía mide cuánto se espera aprender. "
+  "Intuición clave: un intento es bueno si sus patrones posibles son <b>muchos y "
+  "equiprobables</b> — por eso «zz…» (que da el mismo patrón para casi todo) vale ~0 bits.")
+code("H(intento) = − Σ_π  (|S_π|/|S|) · log2(|S_π|/|S|)     [engine/wordle.js: entropiaDe]\n"
+     "máximo teórico: log2 |S|  (cada candidata, su propio patrón)")
+p("Ejercicio de 30 minutos: con candidatas {aa, ab, ba, bb} calcula a mano H(«ab») y "
+  "H(«zz») y comprueba contra src/engine/wordle.test.js (2 bits y 0 bits). Después "
+  "reproduce el «mejor primer intento» de metricas-seccion4.pdf con node y "
+  "<font face='Courier'>mejorIntento()</font>.")
+h2("4.2 El detalle que nadie implementa bien: letras repetidas")
+p("El feedback correcto exige dos pasadas (los verdes consumen la letra del secreto; solo "
+  "las sobrantes pueden dar amarillo). La consistencia se define SIN reglas ad hoc: una "
+  "candidata sobrevive si, de ser el secreto, habría producido exactamente el mismo patrón "
+  "en cada intento jugado (<font face='Courier'>filtrarConsistentes</font>). Ejercicio: "
+  "deriva a mano el patrón de «anna» contra secreto «nase» (está en los tests) y explica "
+  "por qué la segunda «n» queda gris.")
+h2("4.3 Voraz vs óptimo")
+p("El solver de las métricas maximiza la entropía del turno; el jugador óptimo minimiza la "
+  "profundidad esperada del árbol de decisión completo — no siempre coinciden (la ganancia "
+  "de hoy puede dejar particiones mal repartidas mañana). Para el Wordle inglés el óptimo "
+  "se calculó por búsqueda exhaustiva con poda; aquí el voraz resuelve el 99.3–99.8% del "
+  "diccionario en ≤ 6 y basta como caracterización. Discute: ¿por qué el contador «quedan "
+  "N posibles» de la UI es exactamente |S| y qué aprende el alumno al verlo bajar?")
+h2("4.4 Qué estudiar y dónde")
+tabla([
+    ["Recurso", "Qué aporta"],
+    ["Shannon (1948), «A Mathematical Theory of Communication», §6",
+     "La definición de entropía y por qué es la única medida razonable de incertidumbre"],
+    ["MacKay, «Information Theory, Inference, and Learning Algorithms», cap. 2 y 4 "
+     "(gratis en inference.org.uk)", "Entropía y juegos de preguntas (incluye el "
+     "submarino/batalla naval como partición)"],
+    ["3Blue1Brown, «Solving Wordle using information theory» (vídeo + código)",
+     "Exactamente esta fase, visualizada; contrasta su solver con el del repo"],
+], [8.6 * cm, 7.8 * cm])
+
+# ---------------------------------------------------------------------------
+story.append(PageBreak())
+h1("Fase 5 — Implementación y experimentos en el repo")
+h2("5.1 Recorrido guiado del código")
 tabla([
     ["Orden", "Archivo", "Qué mirar"],
     ["1", "src/engine/board.js", "LCG, hash de semilla, Fisher–Yates, composición "
@@ -221,12 +265,16 @@ tabla([
      "de camino, generación de retos a distancia exacta"],
     ["3", "src/engine/crucigrama.js + crucigrama.test.js", "Reglas de legalidad, anclaje "
      "en cruces, retroceso con deshacer selectivo, numeración"],
-    ["4", "pipeline/juegos.py", "Qué palabras entran a cada juego y por qué (ASCII, "
+    ["4", "src/engine/wordle.js + wordle.test.js", "Feedback en dos pasadas, consistencia "
+     "por definición, entropía de una partición"],
+    ["5", "src/engine/sopa.js + sopa.test.js", "Colocación aleatorizada con reintentos, "
+     "relleno por distribución de letras, selección en línea recta"],
+    ["6", "pipeline/juegos.py", "Qué palabras entran a cada juego y por qué (ASCII, "
      "funcionales, frecuencia mínima)"],
-    ["5", "simulacion/juegos-stats.mjs", "Cómo se mide un motor: mismos módulos que "
-     "producción, barrido de semillas, salida versionada en docs/"],
+    ["7", "simulacion/juegos-stats.mjs", "Cómo se mide un motor: mismos módulos que "
+     "producción, barrido de semillas y secretos, salida versionada en docs/"],
 ], [1.3 * cm, 6.3 * cm, 8.8 * cm])
-h2("4.2 Experimentos propuestos (de menor a mayor)")
+h2("5.2 Experimentos propuestos (de menor a mayor)")
 p("<b>(a) Reto diario.</b> Semilla = fecha ISO → todos los usuarios del día juegan la misma "
   "escalera. Son ~5 líneas en la UI; discute por qué NO hay que tocar el motor. "
   "<b>(b) Distancia media por longitud.</b> Amplía juegos-stats.mjs para emitir el "
@@ -237,14 +285,20 @@ p("<b>(a) Reto diario.</b> Semilla = fecha ISO → todos los usuarios del día j
   "tiempo mejoran. "
   "<b>(d) Umlauts.</b> Acepta ae/oe/ue como ä/ö/ü en la escalera (normalización en ambos "
   "lados) y mide cuánto crece la componente gigante. "
-  "<b>(e) Crucigrama personal.</b> Usa la bolsa de palabras del usuario (Sección 2) como "
-  "pool — el puente natural entre juegos y repaso espaciado.")
-h2("4.3 Criterio de «sección defendida»")
+  "<b>(e) Modo difícil del Wordle.</b> Obliga a que cada intento sea consistente con los "
+  "anteriores (ya tienes filtrarConsistentes) y mide con el solver cuántos intentos cuesta. "
+  "<b>(f) Sopa con invertidas.</b> Añade las direcciones ←, ↑ y la diagonal ascendente "
+  "como opción y razona qué cambia en buscarSeleccion (nada: ya acepta la lectura al "
+  "revés — ¿por qué?). "
+  "<b>(g) Crucigrama/sopa personal.</b> Usa la bolsa de palabras del usuario (Sección 2) "
+  "como pool — el puente natural entre juegos y repaso espaciado.")
+h2("5.3 Criterio de «sección defendida»")
 p("Sabes defender esta sección cuando puedes: (1) probar la invariante de BFS y explicar "
   "las cubetas comodín sin mirar el código; (2) trazar un retroceso real del crucigrama y "
   "justificar cada una de las tres reglas de legalidad con un contraejemplo; (3) explicar "
-  "qué garantiza (y qué NO garantiza) un LCG y por qué aquí basta; y (4) reproducir "
-  "cualquier cifra de metricas-seccion4.pdf con un comando.")
+  "qué garantiza (y qué NO garantiza) un LCG y por qué aquí basta; (4) calcular a mano la "
+  "entropía de un intento de Wordle y el patrón de un intento con letras repetidas; y "
+  "(5) reproducir cualquier cifra de metricas-seccion4.pdf con un comando.")
 
 doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, topMargin=1.6 * cm,
                         bottomMargin=1.6 * cm, leftMargin=2 * cm, rightMargin=2 * cm,

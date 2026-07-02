@@ -74,13 +74,15 @@ def tabla(filas, anchos):
 
 ESC = STATS["escalera"]
 CRU = STATS["crucigrama"]
+WOR = STATS["wordle"]
+SOP = STATS["sopa"]
 
 # --- Portada -----------------------------------------------------------------
 story.append(Spacer(1, 2.6 * cm))
 story.append(Paragraph("Sección 4 — Juegos", STIT))
 story.append(Paragraph("Métricas: el grafo de Hamming 1 del corpus, la tasa de éxito del "
-                       "backtracking y el determinismo por semilla, medidos sobre los "
-                       "motores reales", SSUB))
+                       "backtracking, la entropía del Wordle y el determinismo por "
+                       "semilla, medidos sobre los motores reales", SSUB))
 story.append(Spacer(1, 0.7 * cm))
 story.append(HRFlowable(width="55%", thickness=1, color=AZUL))
 story.append(Spacer(1, 0.5 * cm))
@@ -91,8 +93,10 @@ p("Todas las cifras de este documento salen de <b>ejecutar los motores de produc
   "(simulacion/juegos-stats.mjs → docs/datos-juegos.json, mismo patrón que la comparación "
   "SM-2/Leitner de la Sección 2). No hay reimplementación paralela: si el motor cambia, las "
   "métricas cambian con él. Para la <b>escalera</b> se caracteriza el grafo de palabras del "
-  "corpus (¿existen retos? ¿de qué dificultades?); para el <b>crucigrama</b>, un barrido de "
-  f"{CRU['8']['semillas']} semillas por tamaño mide tasa de éxito, densidad y coste.")
+  "corpus (¿existen retos? ¿de qué dificultades?); para el <b>crucigrama</b> y la <b>sopa</b>, "
+  f"un barrido de {CRU['8']['semillas']} semillas por tamaño mide tasa de éxito, densidad y "
+  "coste; para el <b>Wordle</b>, un solver voraz por entropía juega contra TODOS los "
+  "secretos posibles de cada longitud.")
 
 h1("2. Escalera: el grafo de Hamming 1 del corpus")
 h2("2.1 Formalización")
@@ -155,7 +159,51 @@ p(f"Con el pool real ({STATS['entradasCrucigrama']} entradas, 30 candidatas bara
   "imposibles. La densidad (casillas ocupadas / rectángulo envolvente) baja suavemente con "
   "n: tableros más grandes se dispersan, pero no colapsan.")
 
-h1("4. Codenames: la semilla como canal")
+h1("4. Adivina la palabra: la entropía medida")
+h2("4.1 Formalización")
+p("Sea S el conjunto de candidatas. Un intento g induce la partición de S por patrones de "
+  "feedback (unión disjunta de clases S<sub>p</sub> = {s : feedback(s, g) = p}). La "
+  "información esperada de g es la entropía de Shannon H(g) = −Σ (|S<sub>π</sub>|/|S|) · "
+  "log2(|S<sub>π</sub>|/|S|); el máximo teórico con |S| candidatas es log2|S| (partición en "
+  "clases unitarias: el intento identificaría el secreto de golpe). El solver voraz juega "
+  "el argmax de H sobre las candidatas consistentes en cada turno — voraz, no óptimo: el "
+  "árbol de decisión óptimo exige minimizar la profundidad esperada, no la ganancia del "
+  "turno (véase §8).")
+h2("4.2 Resultados por longitud")
+filas = [["L", "Palabras", "Mejor 1er intento", "H (bits)", "máx. log2|S|",
+          "Intentos medios", "Resuelto en ≤ 6"]]
+for L in sorted(WOR):
+    w = WOR[L]
+    filas.append([L, w["palabras"], f"«{w['mejorPrimerIntento']}»",
+                  w["entropiaPrimerIntento"], w["entropiaMaxima"],
+                  w["intentosMedios"], f"{w['resueltosEnSeis'] * 100:.1f}%"])
+tabla(filas, [0.9 * cm, 1.9 * cm, 3.3 * cm, 1.9 * cm, 2.4 * cm, 2.9 * cm, 2.7 * cm])
+dist4 = WOR["4"]["distribucion"]; dist5 = WOR["5"]["distribucion"]
+p("Distribución de intentos del solver (L=4): "
+  + ", ".join(f"{t}: {n}" for t, n in sorted(dist4.items(), key=lambda x: int(x[0])))
+  + ". (L=5): "
+  + ", ".join(f"{t}: {n}" for t, n in sorted(dist5.items(), key=lambda x: int(x[0])))
+  + ".")
+p("Dos lecturas: (1) el mejor primer intento aporta ~4.2/5.6 bits de los ~8.1/8.8 posibles "
+  "— un solo feedback no identifica el secreto, pero recorta el espacio en un factor "
+  "2<super>H</super> ≈ 18–49; (2) el solver voraz resuelve casi todo el diccionario dentro "
+  "de los 6 intentos del juego (99.3–99.8%) con ~3 de media: la cota de 6 intentos de la UI "
+  "es holgada pero no trivial, señal de dificultad bien calibrada. El contador «quedan N "
+  "posibles» de la UI muestra al alumno exactamente |S| tras cada intento.")
+
+h1("5. Sopa de letras: colocación aleatorizada medida")
+filas = [["n pedido", "Semillas", "Sopas completas", "Palabras medias"]]
+for n in sorted(SOP, key=int):
+    s = SOP[n]
+    filas.append([n, s["semillas"], f"{s['tasaCompleta'] * 100:.1f}%", s["palabrasMedias"]])
+tabla(filas, [2.2 * cm, 2.2 * cm, 3.2 * cm, 3.2 * cm])
+p("La colocación aleatorizada (sin backtracking: sortear y reintentar) coloca las n "
+  "palabras pedidas en el 100% de las semillas para n = 6–10 en la cuadrícula 12×12: con "
+  "esa holgura de espacio, el retroceso sería maquinaria de más. El contraste con el "
+  "crucigrama es el punto pedagógico: misma familia de problema, pero la restricción de "
+  "conectividad (cada palabra debe cruzar otra) es la que obliga a retroceder.")
+
+h1("6. Codenames: la semilla como canal")
 p("La partida entera se codifica en 6 caracteres: 2 de vocabulario (idioma × nivel) y 4 de "
   "semilla en alfabeto de 36 símbolos → 36<super>4</super> = 1.679.616 tableros por "
   "vocabulario. El LCG "
@@ -167,8 +215,8 @@ p("La partida entera se codifica en 6 caracteres: 2 de vocabulario (idioma × ni
 code("x_{i+1} = (a·x_i + c) mod m      con x_0 = hash(semilla)\n"
      "36^4 = 1 679 616 tableros/vocabulario · 13 vocabularios")
 
-h1("5. Determinismo transversal")
-p("Los tres juegos comparten el mismo generador (board.js) y la misma disciplina que las "
+h1("7. Determinismo transversal")
+p("Los cinco juegos comparten el mismo generador (board.js) y la misma disciplina que las "
   "Secciones 2 y 3: <b>el azar solo entra por la semilla</b>. Consecuencias medibles: los "
   "tests de los motores pueden afirmar igualdad exacta de retos y tableros "
   "(<font face='Courier'>toEqual</font> entre dos llamadas con la misma semilla); un reto de "
@@ -176,7 +224,7 @@ p("Los tres juegos comparten el mismo generador (board.js) y la misma disciplina
   "estadísticas de este documento son reproducibles con "
   "<font face='Courier'>npm run simular-juegos</font>.")
 
-h1("6. Limitaciones y trabajo futuro")
+h1("8. Limitaciones y trabajo futuro")
 p("<b>El grafo hereda el corpus.</b> Las glosas y las palabras vienen de lecturas "
   "literarias: hay formas conjugadas raras en la escalera y alguna glosa contextual "
   "(«hoch» → «anticiclón» si en el texto era el sustantivo Hoch). El filtro es léxico, no "
@@ -184,8 +232,12 @@ p("<b>El grafo hereda el corpus.</b> Las glosas y las palabras vienen de lectura
   "alemán real; una alternativa futura es aceptar ae/oe/ue como equivalentes. "
   "<b>Crucigrama sin rejilla simétrica.</b> Se genera estilo «entrelazado libre», no la "
   "rejilla simétrica de periódico (eso exigiría diccionarios mucho mayores y otro "
-  "algoritmo, p. ej. dancing links). <b>Futuro</b>: retos diarios (semilla = fecha), "
-  "palabras de la bolsa del usuario como pool del crucigrama (conectaría con la Sección 2), "
+  "algoritmo, p. ej. dancing links). <b>Solver voraz, no óptimo.</b> Maximizar la entropía "
+  "del turno no minimiza la profundidad esperada del árbol de decisión (el óptimo exacto es "
+  "un problema de búsqueda en árboles con poda, resuelto por fuerza bruta en el Wordle "
+  "inglés); para caracterizar la dificultad del diccionario, el voraz basta y es el "
+  "estándar de referencia. <b>Futuro</b>: retos diarios (semilla = fecha), palabras de la "
+  "bolsa del usuario como pool del crucigrama y de la sopa (conectaría con la Sección 2), "
   "y dificultad de la escalera por rareza de las palabras además de por distancia.")
 
 doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, topMargin=1.6 * cm,

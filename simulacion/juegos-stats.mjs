@@ -12,6 +12,14 @@
 // Crucigrama: para cada tamaño n, un barrido de semillas mide la tasa de
 // éxito del backtracking (¿colocó las n palabras?), la densidad y los cruces
 // del tablero resultante y el tiempo medio de generación.
+//
+// Wordle: por longitud, el mejor primer intento (argmax de la entropía de
+// Shannon de la partición que induce) y el rendimiento de un solver voraz
+// por entropía jugando contra TODOS los secretos posibles (distribución de
+// intentos, media, % resuelto en ≤ 6).
+//
+// Sopa: barrido de semillas midiendo cuántas de las n palabras pedidas
+// se colocan (la colocación aleatorizada no garantiza n; el crucigrama sí).
 
 import { writeFileSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
@@ -25,6 +33,13 @@ import {
   generarReto,
 } from '../src/engine/escalera.js';
 import { generarCrucigrama, metricas } from '../src/engine/crucigrama.js';
+import {
+  evaluar,
+  esVictoria,
+  filtrarConsistentes,
+  mejorIntento,
+} from '../src/engine/wordle.js';
+import { generarSopa } from '../src/engine/sopa.js';
 
 const RAIZ = dirname(dirname(fileURLToPath(import.meta.url)));
 const SALIDA = join(RAIZ, 'docs', 'datos-juegos.json');
@@ -110,11 +125,73 @@ for (const n of TAMANOS_CRUCI) {
   };
 }
 
+// --- Wordle -------------------------------------------------------------------
+// Solver voraz: primer intento fijo (mejor entropía global) y después el
+// intento de mayor entropía ENTRE las candidatas consistentes.
+function resolver(secreto, primero, palabras) {
+  let candidatas = palabras;
+  let intento = primero;
+  for (let turno = 1; turno <= 15; turno++) {
+    const resultado = evaluar(secreto, intento);
+    if (esVictoria(resultado)) return turno;
+    candidatas = filtrarConsistentes(candidatas, [{ intento, resultado }]);
+    intento = mejorIntento(candidatas, candidatas).intento;
+  }
+  return Infinity; // no ocurre: las candidatas se estrictamente reducen
+}
+
+const wordle = {};
+for (const longitud of ['4', '5']) {
+  const palabras = Object.keys(juegos.escalera[longitud]);
+  const t0 = performance.now();
+  const primero = mejorIntento(palabras);
+  const distribucion = {};
+  let suma = 0;
+  for (const secreto of palabras) {
+    const turnos = resolver(secreto, primero.intento, palabras);
+    distribucion[turnos] = (distribucion[turnos] ?? 0) + 1;
+    suma += turnos;
+  }
+  const ms = performance.now() - t0;
+  const resueltosEn6 = Object.entries(distribucion)
+    .filter(([t]) => Number(t) <= 6)
+    .reduce((acc, [, cnt]) => acc + cnt, 0);
+  wordle[longitud] = {
+    palabras: palabras.length,
+    mejorPrimerIntento: primero.intento,
+    entropiaPrimerIntento: +primero.entropia.toFixed(3),
+    entropiaMaxima: +Math.log2(palabras.length).toFixed(3),
+    intentosMedios: +(suma / palabras.length).toFixed(3),
+    resueltosEnSeis: +(resueltosEn6 / palabras.length).toFixed(4),
+    distribucion,
+    msTotal: +ms.toFixed(0),
+  };
+}
+
+// --- Sopa -----------------------------------------------------------------------
+const sopa = {};
+for (const n of TAMANOS_CRUCI) {
+  let colocadasTotal = 0;
+  let completas = 0;
+  for (let i = 0; i < SEMILLAS_CRUCI; i++) {
+    const s = generarSopa(juegos.crucigrama, { n, filas: 12, columnas: 12, semilla: `S${i}` });
+    colocadasTotal += s.palabras.length;
+    if (s.palabras.length === n) completas += 1;
+  }
+  sopa[n] = {
+    semillas: SEMILLAS_CRUCI,
+    tasaCompleta: +(completas / SEMILLAS_CRUCI).toFixed(4),
+    palabrasMedias: +(colocadasTotal / SEMILLAS_CRUCI).toFixed(2),
+  };
+}
+
 const salida = {
   generado: new Date().toISOString().slice(0, 10),
   entradasCrucigrama: juegos.crucigrama.length,
   escalera,
   crucigrama,
+  wordle,
+  sopa,
 };
 writeFileSync(SALIDA, JSON.stringify(salida, null, 1) + '\n');
 
@@ -129,5 +206,15 @@ for (const [n, c] of Object.entries(crucigrama)) {
     `crucigrama n=${n}: éxito=${(c.tasaExito * 100).toFixed(1)}%, ` +
       `densidad=${c.densidadMedia}, cruces=${c.crucesMedios}, ${c.msPorTablero} ms/tablero`
   );
+}
+for (const [L, w] of Object.entries(wordle)) {
+  console.log(
+    `wordle L=${L}: mejor 1er intento «${w.mejorPrimerIntento}» ` +
+      `(${w.entropiaPrimerIntento}/${w.entropiaMaxima} bits), ` +
+      `media=${w.intentosMedios} intentos, ≤6: ${(w.resueltosEnSeis * 100).toFixed(1)}%`
+  );
+}
+for (const [n, s] of Object.entries(sopa)) {
+  console.log(`sopa n=${n}: completa=${(s.tasaCompleta * 100).toFixed(1)}%, medias=${s.palabrasMedias}`);
 }
 console.log(`-> ${SALIDA}`);
