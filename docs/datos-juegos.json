@@ -1,5 +1,5 @@
 {
- "generado": "2026-07-02",
+ "generado": "2026-07-03",
  "entradasCrucigrama": 400,
  "escalera": {
   "3": {
@@ -130,7 +130,7 @@
    "densidadMedia": 0.285,
    "crucesMedios": 5.08,
    "casillasMedias": 33.7,
-   "msPorTablero": 0.28
+   "msPorTablero": 0.26
   },
   "8": {
    "semillas": 200,
@@ -139,7 +139,7 @@
    "densidadMedia": 0.268,
    "crucesMedios": 7.15,
    "casillasMedias": 43.4,
-   "msPorTablero": 0.39
+   "msPorTablero": 0.25
   },
   "10": {
    "semillas": 200,
@@ -148,7 +148,7 @@
    "densidadMedia": 0.255,
    "crucesMedios": 9.19,
    "casillasMedias": 53.1,
-   "msPorTablero": 0.36
+   "msPorTablero": 0.34
   }
  },
  "wordle": {
@@ -168,7 +168,7 @@
     "6": 5,
     "7": 2
    },
-   "msTotal": 242
+   "msTotal": 229
   },
   "5": {
    "palabras": 445,
@@ -186,7 +186,7 @@
     "6": 1,
     "7": 1
    },
-   "msTotal": 454
+   "msTotal": 464
   }
  },
  "sopa": {
@@ -205,5 +205,189 @@
    "tasaCompleta": 1,
    "palabrasMedias": 10
   }
- }
+ },
+ "lecturas": [
+  {
+   "titulo": "Anas Tag",
+   "nivel": "principiante",
+   "palabrasPorLongitud": {
+    "3": 9,
+    "4": 5,
+    "5": 5
+   },
+   "entradasCrucigrama": 17,
+   "disponibles": [
+    "crucigrama",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Der Markt",
+   "nivel": "principiante",
+   "palabrasPorLongitud": {
+    "3": 8,
+    "4": 6,
+    "5": 4
+   },
+   "entradasCrucigrama": 10,
+   "disponibles": [
+    "crucigrama",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Toms Wochenende",
+   "nivel": "principiante",
+   "palabrasPorLongitud": {
+    "3": 10,
+    "4": 10,
+    "5": 10
+   },
+   "entradasCrucigrama": 23,
+   "disponibles": [
+    "crucigrama",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Der Hase und die Schildkröte",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 13,
+    "4": 16,
+    "5": 11
+   },
+   "entradasCrucigrama": 32,
+   "disponibles": [
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Der Löwe und die Maus",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 12,
+    "4": 12,
+    "5": 11
+   },
+   "entradasCrucigrama": 22,
+   "disponibles": [
+    "escalera",
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Der Nordwind und die Sonne",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 16,
+    "4": 11,
+    "5": 12
+   },
+   "entradasCrucigrama": 38,
+   "disponibles": [
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Der süße Brei",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 21,
+    "4": 26,
+    "5": 20
+   },
+   "entradasCrucigrama": 43,
+   "disponibles": [
+    "escalera",
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Die Ameise und die Grille",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 15,
+    "4": 15,
+    "5": 8
+   },
+   "entradasCrucigrama": 45,
+   "disponibles": [
+    "escalera",
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Die Sterntaler",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 23,
+    "4": 16,
+    "5": 20
+   },
+   "entradasCrucigrama": 44,
+   "disponibles": [
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Rotkäppchen",
+   "nivel": "intermedio",
+   "palabrasPorLongitud": {
+    "3": 35,
+    "4": 44,
+    "5": 45
+   },
+   "entradasCrucigrama": 100,
+   "disponibles": [
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Die Verwandlung",
+   "nivel": "avanzado",
+   "palabrasPorLongitud": {
+    "3": 78,
+    "4": 189,
+    "5": 316
+   },
+   "entradasCrucigrama": 120,
+   "disponibles": [
+    "escalera",
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  },
+  {
+   "titulo": "Immensee",
+   "nivel": "avanzado",
+   "palabrasPorLongitud": {
+    "3": 86,
+    "4": 186,
+    "5": 274
+   },
+   "entradasCrucigrama": 120,
+   "disponibles": [
+    "escalera",
+    "crucigrama",
+    "wordle",
+    "sopa"
+   ]
+  }
+ ]
 }

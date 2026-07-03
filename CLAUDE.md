@@ -50,8 +50,15 @@ backtracking + Wordle entropía + sopa de letras).
   Motor puro `src/engine/gramatica.js` (sesión/opciones deterministas por semilla; normaliza
   el LCG de board.js a [0,1)); UI en `/gramatica` (`src/secciones/gramatica/`), JSON por
   dynamic import (chunk aparte).
-- **Sección Juegos (pipeline + motores + UI)**: /juegos es el HUB de CINCO juegos; Codenames
-  intacto en /juegos/codenames. **Escalera de palabras** (/juegos/escalera):
+- **Sección Juegos (pipeline + motores + UI)**: navegación POR LECTURA en dos niveles, como
+  gramática: /juegos lista las lecturas (chip de nivel, nº de juegos disponibles) + «Todo el
+  corpus» + Codenames (intacto en /juegos/codenames); /juegos/:lectura es el ÍNDICE de juegos
+  que ese vocabulario aguanta; /juegos/:lectura/:juego juega con ese pool. La disponibilidad
+  es un CRITERIO FORMAL por juego en `src/engine/juegos.js` (escalera: ∃ par a distancia ≥3
+  en el grafo; wordle: ≥12 palabras en alguna longitud; crucigrama/sopa: ≥6 entradas), y los
+  selectores solo ofrecen combinaciones jugables (`pasosDisponibles`, `longitudes*`,
+  `tamanosTablero`). Resultado medido: principiante → crucigrama+sopa; intermedio → +wordle
+  (y escalera si el grafo da); avanzado/corpus → los cuatro. **Escalera de palabras**:
   `src/engine/escalera.js` — grafo de Hamming 1 por cubetas comodín O(n·L), BFS de camino
   mínimo, retos deterministas por semilla a distancia EXACTA (selector 3-5 letras y 3-6
   pasos; pista/deshacer/rendirse; glosa española por peldaño). **Crucigrama**
@@ -67,21 +74,23 @@ backtracking + Wordle entropía + sopa de letras).
   distribución de letras del pool, selección por dos clicks (inicio/fin, válida al revés);
   pistas en español, palabras en alemán. Datos: `pipeline/juegos.py` → `src/data/juegos.json`
   (escalera/wordle: formas ASCII L=3-5 con glosa — sin umlauts por tecleo; crucigrama/sopa:
-  400 lemas frecuencia ≥2 sin funcionales), chunk aparte por dynamic import. Métricas
+  400 lemas frecuencia ≥2 sin funcionales; y los MISMOS pools POR LECTURA, partes de libro
+  agrupadas por título y override léxico de la lectura aplicado), chunk aparte por dynamic
+  import. Métricas
   reales: `npm run simular-juegos` (`simulacion/juegos-stats.mjs` corre los motores de
   producción → `docs/datos-juegos.json`; backtracking y sopa 100% éxito; componente gigante
   62/115/64 por longitud; wordle: mejor 1er intento «nahe»/«heran» 4.2/5.6 bits, solver
   voraz 3.4/3.0 intentos medios, ≥99% en ≤6). `board.js` exporta `crearGeneradorNormalizado`
   (antes helper privado de gramatica.js) y los imports internos del engine llevan extensión
   `.js` (los usa node).
-- **Motor puro + Vitest** (129 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa).
+- **Motor puro + Vitest** (142 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, juegos ← pools/disponibilidad).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:
   - **Sección 1 — Lectura**: `documentacion-seccion1`, `metricas-seccion1` (cobertura, chrF; carga opus-mt al regenerar), `autoaprendizaje-seccion1`.
   - **Sección 2 — Repaso**: `documentacion-seccion2`, `metricas-seccion2` (simulación + Markov + modelo de conocimiento), `autoaprendizaje-seccion2`.
   - **Sección 3 — Gramática**: `documentacion-seccion3`, `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus), `autoaprendizaje-seccion3`.
-  - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking, entropía del Wordle; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
+  - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking, entropía del Wordle, disponibilidad por lectura; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.

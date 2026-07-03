@@ -168,7 +168,7 @@ p("Sea S el conjunto de candidatas. Un intento g induce la partición de S por p
   "clases unitarias: el intento identificaría el secreto de golpe). El solver voraz juega "
   "el argmax de H sobre las candidatas consistentes en cada turno — voraz, no óptimo: el "
   "árbol de decisión óptimo exige minimizar la profundidad esperada, no la ganancia del "
-  "turno (véase §8).")
+  "turno (véase §9).")
 h2("4.2 Resultados por longitud")
 filas = [["L", "Palabras", "Mejor 1er intento", "H (bits)", "máx. log2|S|",
           "Intentos medios", "Resuelto en ≤ 6"]]
@@ -215,7 +215,30 @@ p("La partida entera se codifica en 6 caracteres: 2 de vocabulario (idioma × ni
 code("x_{i+1} = (a·x_i + c) mod m      con x_0 = hash(semilla)\n"
      "36^4 = 1 679 616 tableros/vocabulario · 13 vocabularios")
 
-h1("7. Determinismo transversal")
+h1("7. Los juegos por lectura: disponibilidad medida")
+p("Los cuatro juegos de palabras se pueden jugar con el vocabulario de UNA lectura (misma "
+  "organización que la Sección 3). La disponibilidad no es una lista curada: cada juego "
+  "tiene un criterio formal en src/engine/juegos.js — escalera: existe un par a distancia "
+  "≥ 3 en el grafo de Hamming de la lectura; Wordle: alguna longitud con ≥ 12 palabras; "
+  "crucigrama/sopa: ≥ 6 entradas con pista. La tabla sale de ejecutar esos criterios sobre "
+  "los pools reales (pipeline/juegos.py agrupa las partes de un libro por título):")
+filas = [["Lectura", "Nivel", "L=3/4/5", "Entradas", "Juegos disponibles"]]
+for lec in STATS["lecturas"]:
+    p_ = lec["palabrasPorLongitud"]
+    filas.append([
+        lec["titulo"], lec["nivel"],
+        f"{p_.get('3', 0)}/{p_.get('4', 0)}/{p_.get('5', 0)}",
+        lec["entradasCrucigrama"],
+        ", ".join(lec["disponibles"]),
+    ])
+tabla(filas, [4.6 * cm, 2.3 * cm, 2.2 * cm, 1.9 * cm, 5.4 * cm])
+p("El patrón confirma la intuición pedagógica que motivó el diseño: las lecturas de "
+  "principiante (30-40 palabras útiles) no sostienen ni el grafo de la escalera (sin pares "
+  "a distancia 3) ni un diccionario de Wordle, pero sí crucigrama y sopa; las intermedias "
+  "ganan el Wordle y, las más ricas, la escalera; los libros lo ofrecen todo. El criterio "
+  "es una función del vocabulario, así que al añadir lecturas la tabla se actualiza sola.")
+
+h1("8. Determinismo transversal")
 p("Los cinco juegos comparten el mismo generador (board.js) y la misma disciplina que las "
   "Secciones 2 y 3: <b>el azar solo entra por la semilla</b>. Consecuencias medibles: los "
   "tests de los motores pueden afirmar igualdad exacta de retos y tableros "
@@ -224,7 +247,7 @@ p("Los cinco juegos comparten el mismo generador (board.js) y la misma disciplin
   "estadísticas de este documento son reproducibles con "
   "<font face='Courier'>npm run simular-juegos</font>.")
 
-h1("8. Limitaciones y trabajo futuro")
+h1("9. Limitaciones y trabajo futuro")
 p("<b>El grafo hereda el corpus.</b> Las glosas y las palabras vienen de lecturas "
   "literarias: hay formas conjugadas raras en la escalera y alguna glosa contextual "
   "(«hoch» → «anticiclón» si en el texto era el sustantivo Hoch). El filtro es léxico, no "

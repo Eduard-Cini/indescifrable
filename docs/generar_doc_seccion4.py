@@ -120,9 +120,12 @@ tabla([
     ["Motor Codenames", "src/engine/board.js (+ .test)",
      "LCG por semilla, Fisher–Yates, composición/parseo de semilla con código "
      "de vocabulario"],
+    ["Pools y disponibilidad", "src/engine/juegos.js (+ .test)",
+     "Pool del corpus o de una lectura, criterios de disponibilidad por juego "
+     "y selectores jugables (longitudes, pasos, tamaños)"],
     ["UI", "src/secciones/juegos/*.jsx + juegos.css",
-     "/juegos (hub), /juegos/escalera, /juegos/crucigrama; Codenames en "
-     "/juegos/codenames (src/JuegoApp.jsx, previo a esta sección)"],
+     "/juegos (lecturas + corpus), /juegos/:lectura (índice de juegos), "
+     "/juegos/:lectura/:juego; Codenames en /juegos/codenames"],
     ["Estadísticas", "simulacion/juegos-stats.mjs",
      "Ejecuta los motores reales → docs/datos-juegos.json (lo consume el PDF "
      "de métricas)"],
@@ -140,9 +143,24 @@ code('{ "escalera": { "4": { "haus": "casa", "hand": "mano", ... }, ... },\n'
      '  "crucigrama": [ { "palabra": "sagen", "pista": "decir" }, ... ] }')
 p("Los dos pools sirven a los cuatro juegos nuevos: <b>adivina la palabra</b> usa el "
   "diccionario de la escalera (mismas longitudes, mismas glosas) y la <b>sopa de letras</b> "
-  "usa las entradas del crucigrama (palabra alemana + pista española). Como el resto de "
-  "datos pesados, <font face='Courier'>juegos.json</font> entra al frontend por <b>dynamic "
-  "import</b>: chunk aparte, fuera del bundle inicial.")
+  "usa las entradas del crucigrama (palabra alemana + pista española). Además de los pools "
+  "globales, el pipeline emite los MISMOS pools <b>por lectura</b> (partes de un libro "
+  "agrupadas por título, como la Sección 3; el override léxico de la lectura manda sobre "
+  "el léxico global, igual que en el Lector): el alumno puede jugar solo con el "
+  "vocabulario de la lectura que está leyendo. Como el resto de datos pesados, "
+  "<font face='Courier'>juegos.json</font> entra al frontend por <b>dynamic import</b>: chunk "
+  "aparte, fuera del bundle inicial.")
+
+h2("3.1 Disponibilidad por lectura")
+p("No toda lectura aguanta todo juego: una de principiante tiene ~30-40 palabras útiles y "
+  "su grafo de Hamming apenas tiene aristas. En vez de una lista curada, "
+  "<font face='Courier'>src/engine/juegos.js</font> aplica un <b>criterio formal por juego</b>: "
+  "escalera si existe algún par a distancia ≥ 3 (hay reto que proponer); Wordle si alguna "
+  "longitud reúne ≥ 12 palabras (con menos no hay incertidumbre que reducir); crucigrama y "
+  "sopa si hay ≥ 6 entradas con pista. Los selectores de la UI salen de la misma fuente "
+  "(<font face='Courier'>pasosDisponibles</font>, <font face='Courier'>longitudesEscalera/Wordle</font>, "
+  "<font face='Courier'>tamanosTablero</font>), así que nunca ofrecen combinaciones vacías. La "
+  "tabla medida por lectura está en metricas-seccion4.pdf §7.")
 
 h1("4. Escalera de palabras: grafo de Hamming 1 + BFS")
 h2("4.1 El modelo")
@@ -246,16 +264,18 @@ p("Los cinco motores viven en <font face='Courier'>src/engine/</font> sin DOM ni
   "testeados con Vitest (grafo y BFS sobre diccionarios de juguete y sobre el real; "
   "legalidad, determinismo e invariantes del crucigrama: cruces ≥ palabras − 1, sin "
   "conflictos de letra, numeración en orden de lectura; feedback del Wordle con repetidas; "
-  "palabras de la sopa legibles en sus casillas). La UI "
-  "(<font face='Courier'>src/secciones/juegos/</font>) solo presenta: <b>/juegos</b> es el hub "
-  "con los cinco juegos; <b>/juegos/escalera</b> ofrece longitud (3–5) y pasos (3–6), input "
-  "con validación (¿cambia una letra? ¿existe en el corpus?) y glosa por peldaño; "
-  "<b>/juegos/crucigrama</b> renderiza la cuadrícula interactiva (avance de foco en la "
-  "dirección activa, click repetido alterna horizontal/vertical, flechas y Backspace), "
-  "comprobar y revelar; <b>/juegos/wordle</b> muestra glosa y feedback por intento más el "
-  "contador de candidatas consistentes; <b>/juegos/sopa</b> marca palabras con dos clicks "
-  "(inicio y fin) y tacha la pista revelando la palabra alemana. "
-  "El Codenames conserva su pantalla clásica en /juegos/codenames.")
+  "palabras de la sopa legibles en sus casillas; criterios de disponibilidad). La UI "
+  "(<font face='Courier'>src/secciones/juegos/</font>) solo presenta y navega en DOS niveles, "
+  "como la Sección 3: <b>/juegos</b> lista las lecturas (chip de nivel, nº de juegos "
+  "disponibles) más «Todo el corpus» y el Codenames; <b>/juegos/:lectura</b> es el índice "
+  "de juegos que ese vocabulario aguanta; <b>/juegos/:lectura/:juego</b> juega con ese "
+  "pool. La <b>escalera</b> ofrece longitud y pasos (solo los jugables), input con "
+  "validación y glosa por peldaño; el <b>crucigrama</b> renderiza la cuadrícula interactiva "
+  "(avance de foco en la dirección activa, click repetido alterna horizontal/vertical, "
+  "flechas y Backspace), comprobar y revelar; el <b>Wordle</b> muestra glosa y feedback por "
+  "intento más el contador de candidatas consistentes; la <b>sopa</b> marca palabras con "
+  "dos clicks (inicio y fin) y tacha la pista revelando la palabra alemana. El Codenames "
+  "conserva su pantalla clásica en /juegos/codenames.")
 
 h1("10. Decisiones y trampas")
 tabla([

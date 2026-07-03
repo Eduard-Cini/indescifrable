@@ -40,6 +40,7 @@ import {
   mejorIntento,
 } from '../src/engine/wordle.js';
 import { generarSopa } from '../src/engine/sopa.js';
+import { juegosDisponibles, lecturasOrdenadas } from '../src/engine/juegos.js';
 
 const RAIZ = dirname(dirname(fileURLToPath(import.meta.url)));
 const SALIDA = join(RAIZ, 'docs', 'datos-juegos.json');
@@ -185,6 +186,17 @@ for (const n of TAMANOS_CRUCI) {
   };
 }
 
+// --- Disponibilidad por lectura (los criterios de engine/juegos.js) -----------
+const lecturas = lecturasOrdenadas(juegos).map((lectura) => ({
+  titulo: lectura.titulo,
+  nivel: lectura.nivel,
+  palabrasPorLongitud: Object.fromEntries(
+    Object.entries(lectura.escalera).map(([L, d]) => [L, Object.keys(d).length])
+  ),
+  entradasCrucigrama: lectura.crucigrama.length,
+  disponibles: juegosDisponibles(lectura),
+}));
+
 const salida = {
   generado: new Date().toISOString().slice(0, 10),
   entradasCrucigrama: juegos.crucigrama.length,
@@ -192,6 +204,7 @@ const salida = {
   crucigrama,
   wordle,
   sopa,
+  lecturas,
 };
 writeFileSync(SALIDA, JSON.stringify(salida, null, 1) + '\n');
 
@@ -216,5 +229,8 @@ for (const [L, w] of Object.entries(wordle)) {
 }
 for (const [n, s] of Object.entries(sopa)) {
   console.log(`sopa n=${n}: completa=${(s.tasaCompleta * 100).toFixed(1)}%, medias=${s.palabrasMedias}`);
+}
+for (const l of lecturas) {
+  console.log(`  ${l.nivel.padEnd(12)} ${l.titulo.padEnd(28)} → ${l.disponibles.join(', ')}`);
 }
 console.log(`-> ${SALIDA}`);
