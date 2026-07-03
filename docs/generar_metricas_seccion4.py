@@ -76,6 +76,8 @@ ESC = STATS["escalera"]
 CRU = STATS["crucigrama"]
 WOR = STATS["wordle"]
 SOP = STATS["sopa"]
+SUD = STATS["sudoku"]
+NOMBRE_DIF = {"facil": "Fácil", "medio": "Intermedio", "dificil": "Difícil"}
 
 # --- Portada -----------------------------------------------------------------
 story.append(Spacer(1, 2.6 * cm))
@@ -168,7 +170,7 @@ p("Sea S el conjunto de candidatas. Un intento g induce la partición de S por p
   "clases unitarias: el intento identificaría el secreto de golpe). El solver voraz juega "
   "el argmax de H sobre las candidatas consistentes en cada turno — voraz, no óptimo: el "
   "árbol de decisión óptimo exige minimizar la profundidad esperada, no la ganancia del "
-  "turno (véase §9).")
+  "turno (véase §10).")
 h2("4.2 Resultados por longitud")
 filas = [["L", "Palabras", "Mejor 1er intento", "H (bits)", "máx. log2|S|",
           "Intentos medios", "Resuelto en ≤ 6"]]
@@ -203,7 +205,29 @@ p("La colocación aleatorizada (sin backtracking: sortear y reintentar) coloca l
   "crucigrama es el punto pedagógico: misma familia de problema, pero la restricción de "
   "conectividad (cada palabra debe cruzar otra) es la que obliga a retroceder.")
 
-h1("6. Codenames: la semilla como canal")
+h1("6. Sudoku de palabras: unicidad y dificultad medidas")
+p("El sudoku usa como símbolos las 9 letras (todas distintas) de una palabra del corpus; "
+  "una fila de la solución la lee completa. La generación es backtracking barajado + "
+  "<b>excavado con unicidad</b>: cada vaciado se consiente solo si un contador de "
+  "soluciones (MRV, corte en 2) sigue dando exactamente una. La <b>dificultad es del "
+  "puzle</b> — las casillas dadas que quedan — no del vocabulario. El barrido genera "
+  f"{SUD['facil']['semillas']} tableros por dificultad desde el pool real "
+  f"({STATS['entradasSudoku']} palabras de 9 letras distintas) y re-verifica la unicidad "
+  "de cada tablero de forma independiente:")
+filas = [["Dificultad", "Dadas objetivo", "Dadas medias", "Unicidad verificada",
+          "ms / tablero"]]
+for d in ("facil", "medio", "dificil"):
+    s = SUD[d]
+    filas.append([NOMBRE_DIF[d], s["objetivoDadas"], s["dadasMedias"],
+                  f"{s['unicidad'] * 100:.1f}%", s["msPorTablero"]])
+tabla(filas, [2.6 * cm, 2.7 * cm, 2.6 * cm, 3.4 * cm, 2.4 * cm])
+p("Fácil e intermedio alcanzan el objetivo exacto; en difícil el excavado se queda a veces "
+  "una casilla corto (26,1 de media): no existía más vaciado que conservara la unicidad — "
+  "el algoritmo prefiere un puzle honesto a uno con el número redondo. El coste crece con "
+  "la dificultad (más llamadas al contador sobre tableros más vacíos) pero se mantiene en "
+  "decenas de milisegundos: generable en el navegador al vuelo.")
+
+h1("7. Codenames: la semilla como canal")
 p("La partida entera se codifica en 6 caracteres: 2 de vocabulario (idioma × nivel) y 4 de "
   "semilla en alfabeto de 36 símbolos → 36<super>4</super> = 1.679.616 tableros por "
   "vocabulario. El LCG "
@@ -215,13 +239,14 @@ p("La partida entera se codifica en 6 caracteres: 2 de vocabulario (idioma × ni
 code("x_{i+1} = (a·x_i + c) mod m      con x_0 = hash(semilla)\n"
      "36^4 = 1 679 616 tableros/vocabulario · 13 vocabularios")
 
-h1("7. Los juegos por lectura: disponibilidad medida")
+h1("8. Los juegos por lectura: disponibilidad medida")
 p("Los cuatro juegos de palabras se pueden jugar con el vocabulario de UNA lectura: la "
   "navegación va por juego y, dentro de cada juego, se elige el vocabulario (el corpus "
   "entero o una lectura). La disponibilidad no es una lista curada: cada juego "
   "tiene un criterio formal en src/engine/juegos.js — escalera: existe un par a distancia "
   "≥ 3 en el grafo de Hamming de la lectura; Wordle: alguna longitud con ≥ 12 palabras; "
-  "crucigrama/sopa: ≥ 6 entradas con pista. El índice de cada juego lista solo las "
+  "crucigrama/sopa: ≥ 6 entradas con pista; sudoku: ≥ 1 palabra de 9 letras distintas. "
+  "El índice de cada juego lista solo las "
   "lecturas que lo aguantan. La tabla sale de ejecutar esos criterios sobre los pools "
   "reales (pipeline/juegos.py agrupa las partes de un libro por título):")
 filas = [["Lectura", "Nivel", "L=3/4/5", "Entradas", "Juegos disponibles"]]
@@ -237,11 +262,11 @@ tabla(filas, [4.6 * cm, 2.3 * cm, 2.2 * cm, 1.9 * cm, 5.4 * cm])
 p("El patrón confirma la intuición pedagógica que motivó el diseño: las lecturas de "
   "principiante (30-40 palabras útiles) no sostienen ni el grafo de la escalera (sin pares "
   "a distancia 3) ni un diccionario de Wordle, pero sí crucigrama y sopa; las intermedias "
-  "ganan el Wordle y, las más ricas, la escalera; los libros lo ofrecen todo. El criterio "
+  "ganan el Wordle (y Rotkäppchen, el sudoku); los libros lo ofrecen todo. El criterio "
   "es una función del vocabulario, así que al añadir lecturas la tabla se actualiza sola.")
 
-h1("8. Determinismo transversal")
-p("Los cinco juegos comparten el mismo generador (board.js) y la misma disciplina que las "
+h1("9. Determinismo transversal")
+p("Los seis juegos comparten el mismo generador (board.js) y la misma disciplina que las "
   "Secciones 2 y 3: <b>el azar solo entra por la semilla</b>. Consecuencias medibles: los "
   "tests de los motores pueden afirmar igualdad exacta de retos y tableros "
   "(<font face='Courier'>toEqual</font> entre dos llamadas con la misma semilla); un reto de "
@@ -249,7 +274,7 @@ p("Los cinco juegos comparten el mismo generador (board.js) y la misma disciplin
   "estadísticas de este documento son reproducibles con "
   "<font face='Courier'>npm run simular-juegos</font>.")
 
-h1("9. Limitaciones y trabajo futuro")
+h1("10. Limitaciones y trabajo futuro")
 p("<b>El grafo hereda el corpus.</b> Las glosas y las palabras vienen de lecturas "
   "literarias: hay formas conjugadas raras en la escalera y alguna glosa contextual "
   "(«hoch» → «anticiclón» si en el texto era el sustantivo Hoch). El filtro es léxico, no "

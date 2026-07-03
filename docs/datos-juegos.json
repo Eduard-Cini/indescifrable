@@ -1,6 +1,7 @@
 {
  "generado": "2026-07-03",
  "entradasCrucigrama": 400,
+ "entradasSudoku": 40,
  "escalera": {
   "3": {
    "nodos": 97,
@@ -130,7 +131,7 @@
    "densidadMedia": 0.285,
    "crucesMedios": 5.08,
    "casillasMedias": 33.7,
-   "msPorTablero": 0.26
+   "msPorTablero": 0.47
   },
   "8": {
    "semillas": 200,
@@ -139,7 +140,7 @@
    "densidadMedia": 0.268,
    "crucesMedios": 7.15,
    "casillasMedias": 43.4,
-   "msPorTablero": 0.25
+   "msPorTablero": 0.44
   },
   "10": {
    "semillas": 200,
@@ -148,7 +149,7 @@
    "densidadMedia": 0.255,
    "crucesMedios": 9.19,
    "casillasMedias": 53.1,
-   "msPorTablero": 0.34
+   "msPorTablero": 0.6
   }
  },
  "wordle": {
@@ -168,7 +169,7 @@
     "6": 5,
     "7": 2
    },
-   "msTotal": 229
+   "msTotal": 400
   },
   "5": {
    "palabras": 445,
@@ -186,7 +187,7 @@
     "6": 1,
     "7": 1
    },
-   "msTotal": 464
+   "msTotal": 778
   }
  },
  "sopa": {
@@ -204,6 +205,29 @@
    "semillas": 200,
    "tasaCompleta": 1,
    "palabrasMedias": 10
+  }
+ },
+ "sudoku": {
+  "facil": {
+   "semillas": 40,
+   "objetivoDadas": 40,
+   "dadasMedias": 40,
+   "unicidad": 1,
+   "msPorTablero": 4.6
+  },
+  "medio": {
+   "semillas": 40,
+   "objetivoDadas": 32,
+   "dadasMedias": 32,
+   "unicidad": 1,
+   "msPorTablero": 9.5
+  },
+  "dificil": {
+   "semillas": 40,
+   "objetivoDadas": 26,
+   "dadasMedias": 26.1,
+   "unicidad": 1,
+   "msPorTablero": 65.8
   }
  },
  "lecturas": [
@@ -354,7 +378,8 @@
    "disponibles": [
     "crucigrama",
     "wordle",
-    "sopa"
+    "sopa",
+    "sudoku"
    ]
   },
   {
@@ -370,7 +395,8 @@
     "escalera",
     "crucigrama",
     "wordle",
-    "sopa"
+    "sopa",
+    "sudoku"
    ]
   },
   {
@@ -386,7 +412,8 @@
     "escalera",
     "crucigrama",
     "wordle",
-    "sopa"
+    "sopa",
+    "sudoku"
    ]
   }
  ]

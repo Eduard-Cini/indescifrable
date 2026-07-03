@@ -153,14 +153,23 @@ p("Variables = palabras a colocar; dominio de cada una = sus colocaciones legale
   "<font face='Courier'>puedeColocar</font> dibujando el tablero en papel cuadriculado, y "
   "provoca un retroceso real eligiendo mal la segunda palabra. Después compara con "
   "<font face='Courier'>src/engine/crucigrama.test.js</font>, que usa exactamente ese pool.")
-h2("2.3 Presupuestos y anytime")
+h2("2.3 La otra cara: el sudoku y la unicidad")
+p("El repo trae una segunda instancia de CSP con papeles invertidos: en el crucigrama el "
+  "backtracking BUSCA una solución; en el sudoku de palabras "
+  "(<font face='Courier'>src/engine/sudoku.js</font>) además CUENTA soluciones. El generador "
+  "excava casillas de una solución completa y solo consiente cada vaciado si el contador "
+  "(backtracking con MRV: ramificar por la casilla con menos candidatos, corte en 2) sigue "
+  "dando exactamente una — un sudoku con dos soluciones no es un puzle. Ejercicio de 20 "
+  "minutos: explica por qué el corte en 2 basta y qué costaría contar TODAS las soluciones "
+  "del tablero vacío (pista: ~6,67·10<super>21</super>).")
+h2("2.4 Presupuestos y anytime")
 p("El peor caso del backtracking es exponencial y no se puede eliminar, solo domesticar: "
   "un <b>presupuesto de nodos</b> convierte el algoritmo en <i>anytime</i> (siempre hay "
   "respuesta, quizá con n−1 palabras). La medición del repo "
   "(<font face='Courier'>npm run simular-juegos</font>) muestra que con el pool real el "
   "presupuesto nunca se activa (100% de éxito en &lt; 0,5 ms) — pero el seguro debe existir "
   "ANTES de saberlo. Discute: ¿por qué se degrada n en vez de aumentar el presupuesto?")
-h2("2.4 Qué estudiar y dónde")
+h2("2.5 Qué estudiar y dónde")
 tabla([
     ["Recurso", "Qué aporta"],
     ["Russell &amp; Norvig, «Artificial Intelligence: A Modern Approach», cap. de CSP",
@@ -269,9 +278,11 @@ tabla([
      "por definición, entropía de una partición"],
     ["5", "src/engine/sopa.js + sopa.test.js", "Colocación aleatorizada con reintentos, "
      "relleno por distribución de letras, selección en línea recta"],
-    ["6", "pipeline/juegos.py", "Qué palabras entran a cada juego y por qué (ASCII, "
-     "funcionales, frecuencia mínima)"],
-    ["7", "simulacion/juegos-stats.mjs", "Cómo se mide un motor: mismos módulos que "
+    ["6", "src/engine/sudoku.js + sudoku.test.js", "Backtracking barajado, contador de "
+     "soluciones con MRV, excavado con unicidad, biyección dígito→letra"],
+    ["7", "pipeline/juegos.py", "Qué palabras entran a cada juego y por qué (ASCII, "
+     "funcionales, frecuencia mínima, 9 letras distintas)"],
+    ["8", "simulacion/juegos-stats.mjs", "Cómo se mide un motor: mismos módulos que "
      "producción, barrido de semillas y secretos, salida versionada en docs/"],
 ], [1.3 * cm, 6.3 * cm, 8.8 * cm])
 h2("5.2 Experimentos propuestos (de menor a mayor)")

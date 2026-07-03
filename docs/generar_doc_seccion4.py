@@ -2,7 +2,8 @@
 """Genera docs/documentacion-seccion4.pdf: documentación técnica de la Sección 4
 (juegos): Codenames determinista por semilla, escalera de palabras (grafo de
 Hamming 1 + BFS), crucigrama (backtracking), adivina la palabra (feedback
-exacto + entropía de Shannon) y sopa de letras (colocación aleatorizada).
+exacto + entropía de Shannon), sopa de letras (colocación aleatorizada) y
+sudoku de palabras (backtracking + excavado con unicidad).
 
 Uso:  PYTHONUTF8=1 python docs/generar_doc_seccion4.py
 """
@@ -71,15 +72,16 @@ def tabla(filas, anchos):
 # --- Portada ---------------------------------------------------------------
 story.append(Spacer(1, 2.6 * cm))
 story.append(Paragraph("Sección 4 — Juegos", STIT))
-story.append(Paragraph("Documentación técnica: Codenames por semilla, escalera de "
-                       "palabras (Hamming 1 + BFS), crucigrama (backtracking), adivina "
-                       "la palabra (entropía) y sopa de letras", SSUB))
+story.append(Paragraph("Documentación técnica: Codenames por semilla, escalera "
+                       "(Hamming 1 + BFS), crucigrama (backtracking), adivina la "
+                       "palabra (entropía), sopa de letras y sudoku de palabras "
+                       "(excavado con unicidad)", SSUB))
 story.append(Spacer(1, 0.7 * cm))
 story.append(HRFlowable(width="55%", thickness=1, color=AZUL))
 story.append(Spacer(1, 0.5 * cm))
 
 h1("1. Qué resuelve esta sección")
-p("La Sección 4 convierte el vocabulario de la plataforma en <b>cinco juegos de "
+p("La Sección 4 convierte el vocabulario de la plataforma en <b>seis juegos de "
   "palabras</b>, cada uno con un algoritmo clásico como corazón: el <b>Codenames</b> "
   "(Indescifrable) reparte un tablero 5×5 con un generador congruencial lineal, de modo que "
   "una semilla de 6 caracteres reemplaza a un servidor; la <b>escalera de palabras</b> pide "
@@ -87,8 +89,10 @@ p("La Sección 4 convierte el vocabulario de la plataforma en <b>cinco juegos de
   "grafo de Hamming 1 que se resuelve con BFS; el <b>crucigrama</b> coloca palabras alemanas "
   "entrelazadas con <b>backtracking</b>, con las pistas en español; <b>adivina la palabra</b> "
   "es el Wordle sobre el corpus, con el feedback de letras repetidas bien contado y la "
-  "<b>entropía de Shannon</b> como medida de cada intento; y la <b>sopa de letras</b> "
-  "esconde palabras alemanas que se buscan por su pista española. Todos comparten el "
+  "<b>entropía de Shannon</b> como medida de cada intento; la <b>sopa de letras</b> "
+  "esconde palabras alemanas que se buscan por su pista española; y el <b>sudoku de "
+  "palabras</b> usa las 9 letras (todas distintas) de una palabra del corpus como símbolos "
+  "de un sudoku con solución única. Todos comparten el "
   "principio de la plataforma: <b>sin APIs en vivo</b> — todo es determinista por semilla, "
   "así que compartir una partida es compartir un string.")
 p("Los juegos son además <b>pedagógicos</b>: las palabras salen del corpus de lecturas "
@@ -117,6 +121,9 @@ tabla([
     ["Motor sopa", "src/engine/sopa.js (+ .test)",
      "Colocación aleatorizada con reintentos, relleno con la distribución de "
      "letras del pool, extracción/validación de selecciones en línea recta"],
+    ["Motor sudoku", "src/engine/sudoku.js (+ .test)",
+     "Solución por backtracking barajado, contador de soluciones (MRV), "
+     "excavado con unicidad y biyección dígito→letra por fila"],
     ["Motor Codenames", "src/engine/board.js (+ .test)",
      "LCG por semilla, Fisher–Yates, composición/parseo de semilla con código "
      "de vocabulario"],
@@ -142,9 +149,10 @@ p("El pipeline no inventa vocabulario: filtra el léxico de la Sección 1. Para 
   "«el / la» no enseña nada. Quedan las 400 más frecuentes, ordenadas por frecuencia.")
 code('{ "escalera": { "4": { "haus": "casa", "hand": "mano", ... }, ... },\n'
      '  "crucigrama": [ { "palabra": "sagen", "pista": "decir" }, ... ] }')
-p("Los dos pools sirven a los cuatro juegos nuevos: <b>adivina la palabra</b> usa el "
-  "diccionario de la escalera (mismas longitudes, mismas glosas) y la <b>sopa de letras</b> "
-  "usa las entradas del crucigrama (palabra alemana + pista española). Además de los pools "
+p("Los pools se comparten entre juegos: <b>adivina la palabra</b> usa el diccionario de la "
+  "escalera (mismas longitudes, mismas glosas), la <b>sopa de letras</b> usa las entradas "
+  "del crucigrama (palabra alemana + pista española) y el <b>sudoku</b> tiene su pool "
+  "propio (palabras de 9 letras todas distintas, con glosa). Además de los pools "
   "globales, el pipeline emite los MISMOS pools <b>por lectura</b> (partes de un libro "
   "agrupadas por título, como la Sección 3; el override léxico de la lectura manda sobre "
   "el léxico global, igual que en el Lector): el alumno puede jugar solo con el "
@@ -158,12 +166,13 @@ p("No toda lectura aguanta todo juego: una de principiante tiene ~30-40 palabras
   "<font face='Courier'>src/engine/juegos.js</font> aplica un <b>criterio formal por juego</b>: "
   "escalera si existe algún par a distancia ≥ 3 (hay reto que proponer); Wordle si alguna "
   "longitud reúne ≥ 12 palabras (con menos no hay incertidumbre que reducir); crucigrama y "
-  "sopa si hay ≥ 6 entradas con pista. El índice de cada juego "
+  "sopa si hay ≥ 6 entradas con pista; sudoku si hay al menos una palabra de 9 letras "
+  "distintas. El índice de cada juego "
   "(<font face='Courier'>lecturasConJuego</font>) solo lista las lecturas que lo aguantan, y los "
   "selectores de la UI salen de la misma fuente "
   "(<font face='Courier'>pasosDisponibles</font>, <font face='Courier'>longitudesEscalera/Wordle</font>, "
   "<font face='Courier'>tamanosTablero</font>), así que nunca ofrecen combinaciones vacías. La "
-  "tabla medida por lectura está en metricas-seccion4.pdf §7.")
+  "tabla medida por lectura está en metricas-seccion4.pdf §8.")
 
 h1("4. Escalera de palabras: grafo de Hamming 1 + BFS")
 h2("4.1 El modelo")
@@ -251,7 +260,33 @@ p("Es el hermano probabilista del crucigrama: como no hay restricción de conect
   "exactos de la palabra. Las pistas van en español: encontrar «regalo» es encontrar "
   "GESCHENK.")
 
-h1("8. Codenames (Indescifrable): la semilla como servidor")
+h1("8. Sudoku de palabras: excavado con unicidad")
+h2("8.1 La palabra como alfabeto del sudoku")
+p("Un sudoku no sabe de números: es un problema de restricciones sobre NUEVE símbolos "
+  "cualesquiera. Aquí los símbolos son las 9 letras — <b>todas distintas</b> — de una "
+  "palabra alemana del corpus (auswendig, mondlicht…), y una fila de la solución lee la "
+  "palabra completa: resolver el sudoku es descubrirla (se revela con su traducción). El "
+  "truco es una <b>biyección dígito→letra</b>: se genera la solución sobre dígitos, se "
+  "elige una fila al azar y, como toda fila contiene los 9 dígitos, asignar a cada dígito "
+  "la letra de esa columna garantiza a la vez la palabra en la fila y la consistencia del "
+  "resto del tablero.")
+h2("8.2 Generar y excavar")
+p("La solución completa sale de un <b>backtracking con candidatos barajados</b> (LCG por "
+  "semilla). Después se <b>excava</b>: se intenta vaciar casillas en orden aleatorio y un "
+  "<b>contador de soluciones</b> (backtracking con heurística MRV — ramificar siempre por "
+  "la casilla con menos candidatos — y corte en 2) solo consiente cada vaciado si la "
+  "solución sigue siendo <b>única</b>. Un sudoku con dos soluciones no es un puzle: la "
+  "unicidad es la propiedad central, y las métricas la verifican de forma independiente "
+  "sobre cada tablero generado (100% medido).")
+h2("8.3 La dificultad es del sudoku")
+p("La dificultad no toca el vocabulario: es la del puzle — cuántas <b>casillas dadas</b> "
+  "quedan tras excavar: fácil = 40, intermedio = 32, difícil = 26. Menos dadas = más "
+  "deducción encadenada. El excavado puede quedarse a una casilla del objetivo si ya no "
+  "hay vaciado que conserve la unicidad (medido: 26,1 dadas de media en difícil). "
+  "Disponibilidad por lectura: hace falta al menos una palabra de 9 letras distintas — la "
+  "tienen el corpus (40), los dos libros (23/22) y Rotkäppchen (1).")
+
+h1("9. Codenames (Indescifrable): la semilla como servidor")
 p("El juego original necesita que dos capitanes vean la MISMA clave secreta sin "
   "comunicarse. Aquí lo resuelve la aritmética: la semilla (p. ej. "
   "<font face='Courier'>DP-K9A2</font>) codifica el vocabulario (DP = alemán principiante) y "
@@ -266,8 +301,8 @@ p("El juego original necesita que dos capitanes vean la MISMA clave secreta sin 
   "original puede emitir valores fuera de [0, 1) con hashes negativos, y la parte "
   "fraccionaria lo normaliza sin alterar los tableros ya repartidos.")
 
-h1("9. Motor puro (JS) y UI")
-p("Los cinco motores viven en <font face='Courier'>src/engine/</font> sin DOM ni localStorage, "
+h1("10. Motor puro (JS) y UI")
+p("Los seis motores viven en <font face='Courier'>src/engine/</font> sin DOM ni localStorage, "
   "testeados con Vitest (grafo y BFS sobre diccionarios de juguete y sobre el real; "
   "legalidad, determinismo e invariantes del crucigrama: cruces ≥ palabras − 1, sin "
   "conflictos de letra, numeración en orden de lectura; feedback del Wordle con repetidas; "
@@ -281,10 +316,12 @@ p("Los cinco motores viven en <font face='Courier'>src/engine/</font> sin DOM ni
   "(avance de foco en la dirección activa, click repetido alterna horizontal/vertical, "
   "flechas y Backspace), comprobar y revelar; el <b>Wordle</b> muestra glosa y feedback por "
   "intento más el contador de candidatas consistentes; la <b>sopa</b> marca palabras con "
-  "dos clicks (inicio y fin) y tacha la pista revelando la palabra alemana. El Codenames "
+  "dos clicks (inicio y fin) y tacha la pista revelando la palabra alemana; el <b>sudoku</b> "
+  "ofrece las tres dificultades, acepta solo las 9 letras del puzle y al terminar resalta "
+  "la fila de la palabra escondida. El Codenames "
   "conserva su pantalla clásica en /juegos/codenames.")
 
-h1("10. Decisiones y trampas")
+h1("11. Decisiones y trampas")
 tabla([
     ["Tema", "Decisión / trampa"],
     ["Solo ASCII en escalera/crucigrama", "Umlauts y ß se excluyen: en teclado español "
@@ -302,11 +339,13 @@ tabla([
     ["Sopa sin palabras invertidas", "Solo →, ↓ y diagonal descendente: leer al revés no "
      "enseña alemán; el relleno imita la distribución de letras del pool para no delatar "
      "por contraste"],
+    ["Unicidad del sudoku", "Cada vaciado del excavado se valida con el contador de "
+     "soluciones (corte en 2); un sudoku con dos soluciones no es un puzle (§8.2)"],
     ["Imports con extensión .js", "Los motores se importan también desde node "
      "(simulacion/juegos-stats.mjs): los imports internos llevan extensión explícita"],
 ], [4.2 * cm, 12.2 * cm])
 
-h1("11. Cómo regenerar cada artefacto")
+h1("12. Cómo regenerar cada artefacto")
 code("python pipeline/juegos.py               # src/data/juegos.json (tras añadir lecturas)\n"
      "npm test                                # tests de los motores\n"
      "npm run simular-juegos                  # docs/datos-juegos.json (estadísticas reales)\n"

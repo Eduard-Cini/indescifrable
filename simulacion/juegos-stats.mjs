@@ -20,6 +20,10 @@
 //
 // Sopa: barrido de semillas midiendo cuántas de las n palabras pedidas
 // se colocan (la colocación aleatorizada no garantiza n; el crucigrama sí).
+//
+// Sudoku: por dificultad, un barrido de semillas mide las casillas dadas
+// que realmente quedan tras el excavado con unicidad, verifica la unicidad
+// resultante con el contador de soluciones y cronometra la generación.
 
 import { writeFileSync } from 'node:fs';
 import { readFileSync } from 'node:fs';
@@ -41,6 +45,7 @@ import {
 } from '../src/engine/wordle.js';
 import { generarSopa } from '../src/engine/sopa.js';
 import { juegosDisponibles, lecturasOrdenadas } from '../src/engine/juegos.js';
+import { generarSudoku, contarSoluciones, DIFICULTADES } from '../src/engine/sudoku.js';
 
 const RAIZ = dirname(dirname(fileURLToPath(import.meta.url)));
 const SALIDA = join(RAIZ, 'docs', 'datos-juegos.json');
@@ -186,6 +191,31 @@ for (const n of TAMANOS_CRUCI) {
   };
 }
 
+// --- Sudoku ---------------------------------------------------------------------
+const SEMILLAS_SUDOKU = 40;
+const sudoku = {};
+for (const dificultad of Object.keys(DIFICULTADES)) {
+  let dadasTotal = 0;
+  let unicos = 0;
+  const t0 = performance.now();
+  for (let i = 0; i < SEMILLAS_SUDOKU; i++) {
+    const s = generarSudoku(juegos.sudoku, { dificultad, semilla: `S${i}` });
+    dadasTotal += s.dadas;
+    // Verificación independiente de la unicidad: letra → dígito y a contar.
+    const digito = Object.fromEntries(s.letras.map((l, idx) => [l, idx + 1]));
+    const plano = s.inicial.flat().map((l) => (l === null ? 0 : digito[l]));
+    if (contarSoluciones(plano, 2) === 1) unicos += 1;
+  }
+  const ms = performance.now() - t0;
+  sudoku[dificultad] = {
+    semillas: SEMILLAS_SUDOKU,
+    objetivoDadas: DIFICULTADES[dificultad],
+    dadasMedias: +(dadasTotal / SEMILLAS_SUDOKU).toFixed(2),
+    unicidad: +(unicos / SEMILLAS_SUDOKU).toFixed(4),
+    msPorTablero: +(ms / SEMILLAS_SUDOKU).toFixed(1),
+  };
+}
+
 // --- Disponibilidad por lectura (los criterios de engine/juegos.js) -----------
 const lecturas = lecturasOrdenadas(juegos).map((lectura) => ({
   titulo: lectura.titulo,
@@ -200,10 +230,12 @@ const lecturas = lecturasOrdenadas(juegos).map((lectura) => ({
 const salida = {
   generado: new Date().toISOString().slice(0, 10),
   entradasCrucigrama: juegos.crucigrama.length,
+  entradasSudoku: juegos.sudoku.length,
   escalera,
   crucigrama,
   wordle,
   sopa,
+  sudoku,
   lecturas,
 };
 writeFileSync(SALIDA, JSON.stringify(salida, null, 1) + '\n');
@@ -229,6 +261,12 @@ for (const [L, w] of Object.entries(wordle)) {
 }
 for (const [n, s] of Object.entries(sopa)) {
   console.log(`sopa n=${n}: completa=${(s.tasaCompleta * 100).toFixed(1)}%, medias=${s.palabrasMedias}`);
+}
+for (const [d, s] of Object.entries(sudoku)) {
+  console.log(
+    `sudoku ${d}: dadas=${s.dadasMedias} (objetivo ${s.objetivoDadas}), ` +
+      `unicidad=${(s.unicidad * 100).toFixed(1)}%, ${s.msPorTablero} ms/tablero`
+  );
 }
 for (const l of lecturas) {
   console.log(`  ${l.nivel.padEnd(12)} ${l.titulo.padEnd(28)} → ${l.disponibles.join(', ')}`);
