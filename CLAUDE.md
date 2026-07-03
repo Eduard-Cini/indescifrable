@@ -69,8 +69,9 @@ backtracking + Wordle entropía + sopa de letras).
   H/V). **Adivina la palabra** (/juegos/wordle): `src/engine/wordle.js` — feedback con
   letras repetidas en DOS pasadas (verdes consumen primero), `filtrarConsistentes` por
   definición (mismo patrón en cada intento) y entropía de Shannon de la partición que induce
-  un intento; UI con glosa por intento y contador «quedan N posibles»; intentos restringidos
-  al corpus. **Sopa de letras** (/juegos/sopa): `src/engine/sopa.js` — colocación
+  un intento; UI con glosa por intento, contador «quedan N posibles», pista opcional (la
+  traducción del secreto) y colores sólidos de alto contraste; intentos restringidos al
+  corpus (o a la lectura). **Sopa de letras** (/juegos/sopa): `src/engine/sopa.js` — colocación
   aleatorizada con reintentos (solo →, ↓, ↘; solapes compatibles), relleno muestreando la
   distribución de letras del pool, selección por dos clicks (inicio/fin, válida al revés);
   pistas en español, palabras en alemán. Datos: `pipeline/juegos.py` → `src/data/juegos.json`
@@ -129,7 +130,7 @@ Pipeline (**usar PowerShell**, con `$env:PYTHONUTF8=1`):
 1. Menores de gramática: más temas (orden de palabras/verbo en 2ª posición, Konjunktiv),
    progreso persistente por tema en localStorage, ejercicios también en inglés.
 2. Menores: léxico por token (ambigüedad total), dividir léxico/lecturas para peso, opcional FSRS/retención objetivo en la simulación (ejercicios en autoaprendizaje-seccion2.pdf).
-3. Menores de juegos: reto diario (semilla = fecha), crucigrama con la bolsa del usuario como pool (puente con la Sección 2), umlauts como ae/oe/ue en la escalera (experimentos en autoaprendizaje-seccion4.pdf).
+3. Menores de juegos: reto diario (semilla = fecha), crucigrama/sopa con la bolsa del usuario como pool (el Codenames YA acepta la bolsa como vocabulario, opción «Mi bolsa» en Landing.jsx), umlauts como ae/oe/ue en la escalera (experimentos en autoaprendizaje-seccion4.pdf).
 
 ## Cómo continuar en una sesión nueva
 Este archivo se carga solo. Cada sección tiene sus tres PDFs en `docs/`

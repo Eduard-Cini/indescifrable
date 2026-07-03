@@ -29,6 +29,7 @@ function Wordle() {
   const [entrada, setEntrada] = useState('');
   const [aviso, setAviso] = useState(null);
   const [rendido, setRendido] = useState(false);
+  const [conPista, setConPista] = useState(false);
 
   useEffect(() => {
     let vivo = true;
@@ -62,6 +63,7 @@ function Wordle() {
     setEntrada('');
     setAviso(null);
     setRendido(false);
+    setConPista(false);
   }, [secreto]);
 
   const cabecera = (
@@ -186,7 +188,19 @@ function Wordle() {
             Intento {intentos.length + 1} de {MAX_INTENTOS} · quedan{' '}
             {candidatas.length} palabra{candidatas.length === 1 ? '' : 's'} posibles
           </p>
+          {conPista && (
+            <p className="esc-glosa">Pista — significa: «{glosas[secreto]}»</p>
+          )}
           <div className="gram-nav">
+            {!conPista && (
+              <button
+                type="button"
+                className="gram-boton gram-boton-sec"
+                onClick={() => setConPista(true)}
+              >
+                Pista (traducción)
+              </button>
+            )}
             <button
               type="button"
               className="gram-boton gram-boton-sec"

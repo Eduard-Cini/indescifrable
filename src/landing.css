@@ -71,6 +71,15 @@ h2 {
   flex-direction: column;
 }
 
+/* Nota bajo el selector cuando el vocabulario es la bolsa del usuario. */
+.nota-bolsa {
+  font-size: 0.8rem;
+  color: #8fbf9f;
+  line-height: 1.4;
+  margin: -0.4rem 0 1rem;
+}
+.form-group .btn-secondary { margin-top: 0.5rem; }
+
 label {
   margin-bottom: 0.3125rem;
   font-size: 0.9rem;

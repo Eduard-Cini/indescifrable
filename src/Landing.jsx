@@ -1,9 +1,12 @@
 import { useState, useMemo } from 'react';
 import { parsearSemilla } from './engine/board';
+import { cargarBolsa } from './engine/almacenamiento';
 import './landing.css';
 import hero from './assets/hero1.webp';
 import imageNash from './assets/Nash.webp';
 
+// El tablero reparte 25 tarjetas: la bolsa debe dar al menos para un tablero.
+const MINIMO_BOLSA = 25;
 
 function Landing({ onIniciarPartida }) {
   const [rondas, setRondas] = useState('3');
@@ -21,6 +24,17 @@ function Landing({ onIniciarPartida }) {
   const requierePalabrasPersonalizadas =
     semillaParseada?.vocabulario === 'personalizado';
 
+  // Palabras de la bolsa del usuario (Secciones 1-2) como vocabulario del
+  // tablero: los lemas, sin repetidos. Viaja por el mismo camino que el
+  // vocabulario personalizado (semilla XX-), así que el capitán en otro
+  // dispositivo puede pegar la lista — o usar su propia bolsa si es la misma.
+  const palabrasBolsa = useMemo(() => {
+    const bolsa = cargarBolsa();
+    return [...new Set(bolsa.map((p) => (p.lemma ?? p.surface).toUpperCase()))];
+  }, []);
+  const bolsaLista = palabrasBolsa.join(', ');
+  const bolsaSuficiente = palabrasBolsa.length >= MINIMO_BOLSA;
+
   const manejarCambioIdioma = (e) => {
     const nuevoIdioma = e.target.value;
     setIdioma(nuevoIdioma);
@@ -30,12 +44,15 @@ function Landing({ onIniciarPartida }) {
   };
 
   const crearPartidaNueva = () => {
+    // La bolsa viaja como vocabulario personalizado: misma semilla XX-,
+    // mismo mecanismo de acceso para el capitán.
+    const usaBolsa = vocabularioCrear === 'bolsa';
     onIniciarPartida({
       destino: 'tablero_principal',
       rondas,
       idioma,
-      vocabulario: vocabularioCrear,
-      palabras: palabrasCrear,
+      vocabulario: usaBolsa ? 'personalizado' : vocabularioCrear,
+      palabras: usaBolsa ? bolsaLista : palabrasCrear,
     });
   };
 
@@ -113,6 +130,9 @@ function Landing({ onIniciarPartida }) {
                 </>
               )}
               <option value="personalizado">Personalizado</option>
+              <option value="bolsa" disabled={!bolsaSuficiente}>
+                Mi bolsa de palabras ({palabrasBolsa.length})
+              </option>
             </select>
           </div>
 
@@ -125,6 +145,14 @@ function Landing({ onIniciarPartida }) {
                 onChange={(e) => setPalabrasCrear(e.target.value)}
               />
             </div>
+          )}
+
+          {vocabularioCrear === 'bolsa' && (
+            <p className='nota-bolsa'>
+              El tablero usará {palabrasBolsa.length} palabras de tu bolsa
+              (Lectura/Repaso). El capitán puede pulsar «Usar mi bolsa» en el
+              panel de acceso si comparte este dispositivo, o pegar la lista.
+            </p>
           )}
 
           <button className="btn-primary" onClick={crearPartidaNueva}>Iniciar Juego</button>
@@ -153,6 +181,15 @@ function Landing({ onIniciarPartida }) {
                 value={palabrasAcceso}
                 onChange={(e) => setPalabrasAcceso(e.target.value)}
               />
+              {bolsaSuficiente && (
+                <button
+                  type="button"
+                  className="btn-secondary"
+                  onClick={() => setPalabrasAcceso(bolsaLista)}
+                >
+                  Usar mi bolsa ({palabrasBolsa.length})
+                </button>
+              )}
             </div>
           )}
 

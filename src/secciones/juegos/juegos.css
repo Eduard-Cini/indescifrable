@@ -144,9 +144,11 @@
   font-weight: bold;
   text-transform: uppercase;
 }
-.wordle-celda.bien { background: #14201a; border-color: #4a7; color: #8fbf9f; }
-.wordle-celda.casi { background: #262113; border-color: #b7a86a; color: #d9c87a; }
-.wordle-celda.no { background: #161616; border-color: #262626; color: #666; }
+/* Colores sólidos de alto contraste (los del Wordle clásico en oscuro):
+   el estado de cada letra debe leerse de un vistazo. */
+.wordle-celda.bien { background: #538d4e; border-color: #538d4e; color: #fff; }
+.wordle-celda.casi { background: #b59f3b; border-color: #b59f3b; color: #fff; }
+.wordle-celda.no { background: #3a3a3c; border-color: #3a3a3c; color: #bbb; }
 .wordle-glosa { color: #888; font-size: 0.8rem; margin-left: 0.6rem; }
 .wordle-candidatas { color: #9ad; font-size: 0.85rem; }
 

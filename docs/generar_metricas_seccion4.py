@@ -262,8 +262,9 @@ p("<b>El grafo hereda el corpus.</b> Las glosas y las palabras vienen de lectura
   "un problema de búsqueda en árboles con poda, resuelto por fuerza bruta en el Wordle "
   "inglés); para caracterizar la dificultad del diccionario, el voraz basta y es el "
   "estándar de referencia. <b>Futuro</b>: retos diarios (semilla = fecha), palabras de la "
-  "bolsa del usuario como pool del crucigrama y de la sopa (conectaría con la Sección 2), "
-  "y dificultad de la escalera por rareza de las palabras además de por distancia.")
+  "bolsa del usuario como pool del crucigrama y de la sopa (el Codenames ya la acepta como "
+  "vocabulario del tablero), y dificultad de la escalera por rareza de las palabras además "
+  "de por distancia.")
 
 doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, topMargin=1.6 * cm,
                         bottomMargin=1.6 * cm, leftMargin=2 * cm, rightMargin=2 * cm,

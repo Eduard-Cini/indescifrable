@@ -257,7 +257,11 @@ p("El juego original necesita que dos capitanes vean la MISMA clave secreta sin 
   "<font face='Courier'>DP-K9A2</font>) codifica el vocabulario (DP = alemán principiante) y "
   "alimenta un <b>LCG</b> (a = 1103515245, c = 12345, m = 2³¹) que baraja las palabras y "
   "reparte los colores con Fisher–Yates. Mismo string → mismo tablero y misma clave en "
-  "cualquier dispositivo, sin backend. El barajado del resto de juegos reutiliza este LCG "
+  "cualquier dispositivo, sin backend. Además del vocabulario personalizado por texto, el "
+  "tablero puede usar la <b>bolsa de palabras del usuario</b> (Secciones 1-2, ≥ 25 "
+  "palabras): viaja por el mismo canal que el personalizado (semilla XX-), y el capitán "
+  "rellena su lista con un click («Usar mi bolsa») o pegándola. El barajado del resto de "
+  "juegos reutiliza este LCG "
   "con una corrección (<font face='Courier'>crearGeneradorNormalizado</font>): el generador "
   "original puede emitir valores fuera de [0, 1) con hashes negativos, y la parte "
   "fraccionaria lo normaliza sin alterar los tableros ya repartidos.")
