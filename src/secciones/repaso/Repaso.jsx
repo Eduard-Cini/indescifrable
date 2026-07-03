@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
+import SelectorIdioma from '../../componentes/SelectorIdioma';
 import {
   CALIFICACIONES,
   seleccionarSesion,
@@ -13,20 +15,28 @@ import './repaso.css';
 const NOMBRE_IDIOMA = { de: 'alemán', en: 'inglés', es: 'español' };
 
 function Repaso() {
-  const [bolsa, setBolsa] = useState(null); // null mientras carga
+  const { idioma } = useIdiomaEstudio();
+  const [bolsa, setBolsa] = useState(null); // bolsa COMPLETA (todos los idiomas)
   const [cola, setCola] = useState([]); // ids pendientes de la sesión
   const [volteada, setVolteada] = useState(false);
   const [hechas, setHechas] = useState(0);
   const [fallos, setFallos] = useState(0);
 
+  // La sesión se arma solo con las palabras del idioma de estudio, pero se
+  // conserva la bolsa completa para no perder el otro idioma al persistir.
   useEffect(() => {
     const b = cargarBolsa();
     setBolsa(b);
-    setCola(seleccionarSesion(b, new Date().toISOString()).map((p) => p.id));
-  }, []);
+    const delIdioma = b.filter((p) => p.lang === idioma);
+    setCola(seleccionarSesion(delIdioma, new Date().toISOString()).map((p) => p.id));
+    setHechas(0);
+    setFallos(0);
+    setVolteada(false);
+  }, [idioma]);
 
   if (bolsa === null) return null;
 
+  const bolsaIdioma = bolsa.filter((p) => p.lang === idioma);
   const actual = bolsa.find((p) => p.id === cola[0]);
 
   const graduar = (clave) => {
@@ -50,25 +60,29 @@ function Repaso() {
     <header className="lectura-top">
       <Link to="/" className="lectura-link">← Plataforma</Link>
       <h1>Repaso</h1>
-      <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsa.length}</Link>
+      <div className="repaso-top-acciones">
+        <SelectorIdioma />
+        <Link to="/bolsa" className="lectura-link bolsa-badge">🎒 {bolsaIdioma.length}</Link>
+      </div>
     </header>
   );
 
-  if (bolsa.length === 0) {
+  if (bolsaIdioma.length === 0) {
     return (
       <div className="lectura-container">
         {cabecera}
         <p className="lectura-subtitulo">
-          Tu bolsa está vacía. Guarda palabras desde una{' '}
-          <Link to="/lectura" className="lectura-link">lectura</Link> para
-          empezar a repasar.
+          No tienes palabras en {NOMBRE_IDIOMA[idioma] ?? idioma} en tu bolsa.
+          Guarda palabras desde una{' '}
+          <Link to="/lectura" className="lectura-link">lectura</Link> o cambia el
+          idioma de estudio arriba.
         </p>
       </div>
     );
   }
 
   if (!actual) {
-    const r = resumen(bolsa, new Date().toISOString());
+    const r = resumen(bolsaIdioma, new Date().toISOString());
     return (
       <div className="lectura-container">
         {cabecera}

@@ -1,12 +1,23 @@
 import { Link } from 'react-router-dom';
+import SelectorIdioma from './componentes/SelectorIdioma';
+import { useIdiomaEstudio } from './contexto/idiomaEstudio';
+import { NOMBRE_IDIOMA } from './data/lecturas';
 import './home.css';
 
 function Home() {
+  const { idioma } = useIdiomaEstudio();
   return (
     <div className="home-container">
       <header className="home-header">
         <h1>Plataforma de Idiomas</h1>
-        <p>Aprende español, inglés y alemán leyendo, repasando y jugando.</p>
+        <p>Aprende inglés y alemán leyendo, repasando y jugando.</p>
+        <div className="home-idioma">
+          <SelectorIdioma />
+          <span className="home-idioma-nota">
+            Estudias <strong>{NOMBRE_IDIOMA[idioma]}</strong>: la lectura, la
+            bolsa y el repaso se adaptan a este idioma.
+          </span>
+        </div>
       </header>
 
       <main className="home-secciones">

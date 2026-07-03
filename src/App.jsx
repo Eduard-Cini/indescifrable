@@ -15,12 +15,14 @@ import Repaso from './secciones/repaso/Repaso';
 import Gramatica from './secciones/gramatica/Gramatica';
 import TemasDeLectura from './secciones/gramatica/TemasDeLectura';
 import Ejercicios from './secciones/gramatica/Ejercicios';
+import { IdiomaEstudioProvider } from './contexto/idiomaEstudio';
 import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <IdiomaEstudioProvider>
+      <BrowserRouter>
+        <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/juegos" element={<Juegos />} />
         <Route path="/juegos/codenames/*" element={<JuegoApp />} />
@@ -41,8 +43,9 @@ function App() {
         <Route path="/gramatica" element={<Gramatica />} />
         <Route path="/gramatica/:lectura" element={<TemasDeLectura />} />
         <Route path="/gramatica/:lectura/:tema" element={<Ejercicios />} />
-      </Routes>
-    </BrowserRouter>
+        </Routes>
+      </BrowserRouter>
+    </IdiomaEstudioProvider>
   );
 }
 

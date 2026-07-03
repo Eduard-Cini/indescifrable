@@ -1,8 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { cargarBolsa, guardarBolsa } from '../../engine/almacenamiento';
+import {
+  cargarBolsa,
+  guardarBolsa,
+  cargarIdiomaEstudio,
+  exportarPerfil,
+  importarPerfil,
+} from '../../engine/almacenamiento';
 import { quitarPalabra } from '../../engine/bolsa';
 import { estaPendiente } from '../../engine/srs';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
+import SelectorIdioma from '../../componentes/SelectorIdioma';
+import { NOMBRE_IDIOMA } from '../../data/lecturas';
 import './lectura.css';
 
 function estadoRepaso(p, ahora) {
@@ -15,12 +24,17 @@ function estadoRepaso(p, ahora) {
 }
 
 function Bolsa() {
-  const [bolsa, setBolsa] = useState([]);
+  const { idioma, setIdioma } = useIdiomaEstudio();
+  const [bolsa, setBolsa] = useState([]); // bolsa COMPLETA (todos los idiomas)
   const [confirmando, setConfirmando] = useState(null);
+  const [mensaje, setMensaje] = useState(null);
+  const inputArchivo = useRef(null);
 
   useEffect(() => {
     setBolsa(cargarBolsa());
   }, []);
+
+  const bolsaIdioma = bolsa.filter((p) => p.lang === idioma);
 
   const quitar = (id) => {
     const nueva = quitarPalabra(bolsa, id);
@@ -29,20 +43,72 @@ function Bolsa() {
     setConfirmando(null);
   };
 
+  const exportar = () => {
+    const perfil = exportarPerfil();
+    const blob = new Blob([JSON.stringify(perfil, null, 2)], {
+      type: 'application/json',
+    });
+    const url = URL.createObjectURL(blob);
+    const enlace = document.createElement('a');
+    enlace.href = url;
+    enlace.download = `indescifrable-perfil-${new Date().toISOString().slice(0, 10)}.json`;
+    enlace.click();
+    URL.revokeObjectURL(url);
+    setMensaje('Progreso exportado.');
+  };
+
+  const importar = (evento) => {
+    const archivo = evento.target.files?.[0];
+    evento.target.value = ''; // permite reimportar el mismo archivo
+    if (!archivo) return;
+    const lector = new FileReader();
+    lector.onload = () => {
+      try {
+        const n = importarPerfil(JSON.parse(lector.result));
+        setBolsa(cargarBolsa());
+        setIdioma(cargarIdiomaEstudio());
+        setMensaje(`Progreso importado (${n} sección(es) restaurada(s)).`);
+      } catch (err) {
+        setMensaje(`No se pudo importar: ${err.message}`);
+      }
+    };
+    lector.readAsText(archivo);
+  };
+
   return (
     <div className="lectura-container">
       <header className="lectura-top">
         <Link to="/lectura" className="lectura-link">← Biblioteca</Link>
         <h1>Tu bolsa de palabras</h1>
-        <Link to="/" className="lectura-link">Plataforma →</Link>
+        <SelectorIdioma />
       </header>
 
+      <div className="bolsa-perfil">
+        <button className="bolsa-perfil-btn" onClick={exportar}>
+          ⬇ Exportar progreso
+        </button>
+        <button
+          className="bolsa-perfil-btn"
+          onClick={() => inputArchivo.current?.click()}
+        >
+          ⬆ Importar progreso
+        </button>
+        <input
+          ref={inputArchivo}
+          type="file"
+          accept="application/json,.json"
+          onChange={importar}
+          hidden
+        />
+        {mensaje && <span className="bolsa-perfil-msg">{mensaje}</span>}
+      </div>
+
       <p className="lectura-subtitulo">
-        {bolsa.length === 0 ? (
-          'Tu bolsa está vacía. Guarda palabras desde una lectura.'
+        {bolsaIdioma.length === 0 ? (
+          `Tu bolsa de ${NOMBRE_IDIOMA[idioma]} está vacía. Guarda palabras desde una lectura.`
         ) : (
           <>
-            {bolsa.length} palabra(s).{' '}
+            {bolsaIdioma.length} palabra(s) en {NOMBRE_IDIOMA[idioma]}.{' '}
             <Link to="/repaso" className="lectura-link">
               Repásalas con repetición espaciada →
             </Link>
@@ -51,7 +117,7 @@ function Bolsa() {
       </p>
 
       <ul className="bolsa-lista">
-        {bolsa.map((p) => (
+        {bolsaIdioma.map((p) => (
           <li key={p.id} className="bolsa-item">
             <div className="bolsa-item-info">
               <span className="bolsa-palabra">

@@ -7,6 +7,21 @@ const CLAVE_PROGRESO = 'lecturas.completadas.v1';
 const CLAVE_CONOCIDAS = 'conocidas.v1';
 const CLAVE_REPASO_PREVIO = 'repasoPrevio.v1';
 const CLAVE_GRAMATICA = 'gramatica.completados.v1';
+const CLAVE_IDIOMA = 'idiomaEstudio.v1';
+
+const IDIOMA_DEFECTO = 'de';
+
+// Todo el estado persistente del usuario vive en estas claves. Un «perfil» es
+// simplemente su serialización conjunta (exportarPerfil/importarPerfil), lo que
+// permite copia de seguridad y portabilidad sin necesidad de un servidor.
+const CLAVES_PERFIL = [
+  CLAVE_BOLSA,
+  CLAVE_PROGRESO,
+  CLAVE_CONOCIDAS,
+  CLAVE_REPASO_PREVIO,
+  CLAVE_GRAMATICA,
+  CLAVE_IDIOMA,
+];
 
 function cargarArray(clave) {
   if (typeof localStorage === 'undefined') return [];
@@ -81,4 +96,72 @@ export function cargarGramaticaCompletados() {
 
 export function guardarGramaticaCompletados(claves) {
   guardar(CLAVE_GRAMATICA, claves);
+}
+
+/** Idioma de estudio activo (gobierna Repaso, Bolsa y la Biblioteca). */
+export function cargarIdiomaEstudio() {
+  if (typeof localStorage === 'undefined') return IDIOMA_DEFECTO;
+  try {
+    const crudo = localStorage.getItem(CLAVE_IDIOMA);
+    const v = crudo ? JSON.parse(crudo) : null;
+    return typeof v === 'string' ? v : IDIOMA_DEFECTO;
+  } catch {
+    return IDIOMA_DEFECTO;
+  }
+}
+
+export function guardarIdiomaEstudio(idioma) {
+  guardar(CLAVE_IDIOMA, idioma);
+}
+
+// --- Perfil: exportar / importar todo el progreso (sin servidor) -------------
+// El perfil viaja como un único objeto JSON con las claves crudas (ya
+// serializadas), de modo que la ronda export→import es sin pérdidas.
+
+export function exportarPerfil() {
+  const datos = {};
+  if (typeof localStorage !== 'undefined') {
+    for (const clave of CLAVES_PERFIL) {
+      const crudo = localStorage.getItem(clave);
+      if (crudo != null) datos[clave] = crudo;
+    }
+  }
+  return {
+    app: 'indescifrable',
+    tipo: 'perfil',
+    version: 1,
+    exportadoEn: new Date().toISOString(),
+    datos,
+  };
+}
+
+/**
+ * Restaura un perfil exportado. Valida la envoltura y que cada valor sea JSON
+ * válido antes de escribirlo; ignora claves desconocidas o corruptas. Devuelve
+ * el número de claves restauradas.
+ */
+export function importarPerfil(objeto) {
+  if (
+    !objeto ||
+    objeto.app !== 'indescifrable' ||
+    objeto.tipo !== 'perfil' ||
+    !objeto.datos ||
+    typeof objeto.datos !== 'object'
+  ) {
+    throw new Error('El archivo no es un perfil de indescifrable válido.');
+  }
+  if (typeof localStorage === 'undefined') return 0;
+  let restauradas = 0;
+  for (const clave of CLAVES_PERFIL) {
+    const crudo = objeto.datos[clave];
+    if (typeof crudo !== 'string') continue;
+    try {
+      JSON.parse(crudo); // descarta valores corruptos sin tocar lo guardado
+      localStorage.setItem(clave, crudo);
+      restauradas += 1;
+    } catch {
+      // valor no parseable: se omite
+    }
+  }
+  return restauradas;
 }

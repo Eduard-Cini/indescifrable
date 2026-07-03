@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { lecturasConJuego } from '../../engine/juegos';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import { FICHAS } from './fichas';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
@@ -12,6 +13,7 @@ import './juegos.css';
 // src/engine/juegos.js). El Codenames va aparte (usa sus propios
 // diccionarios, no el corpus).
 function Juegos() {
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
 
   useEffect(() => {
@@ -44,6 +46,13 @@ function Juegos() {
         y, dentro, la lectura con la que quieres jugar (o el corpus entero).
         Partidas reproducibles por semilla.
       </p>
+
+      {idioma !== 'de' && (
+        <p className="juegos-aviso-idioma">
+          Por ahora estos juegos usan vocabulario <strong>alemán</strong>. La
+          versión en inglés está en camino.
+        </p>
+      )}
 
       <div className="juegos-grid">
         <Link to="/juegos/codenames" className="juego-card">

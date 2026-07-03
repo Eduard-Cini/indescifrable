@@ -25,13 +25,14 @@ function Landing({ onIniciarPartida }) {
     semillaParseada?.vocabulario === 'personalizado';
 
   // Palabras de la bolsa del usuario (Secciones 1-2) como vocabulario del
-  // tablero: los lemas, sin repetidos. Viaja por el mismo camino que el
-  // vocabulario personalizado (semilla XX-), así que el capitán en otro
-  // dispositivo puede pegar la lista — o usar su propia bolsa si es la misma.
+  // tablero: los lemas del idioma elegido, sin repetidos. Viaja por el mismo
+  // camino que el vocabulario personalizado (semilla XX-), así que el capitán
+  // en otro dispositivo puede pegar la lista — o usar su propia bolsa si es la
+  // misma. Se filtra por idioma para no mezclar alemán e inglés en un tablero.
   const palabrasBolsa = useMemo(() => {
-    const bolsa = cargarBolsa();
+    const bolsa = cargarBolsa().filter((p) => p.lang === idioma);
     return [...new Set(bolsa.map((p) => (p.lemma ?? p.surface).toUpperCase()))];
-  }, []);
+  }, [idioma]);
   const bolsaLista = palabrasBolsa.join(', ');
   const bolsaSuficiente = palabrasBolsa.length >= MINIMO_BOLSA;
 

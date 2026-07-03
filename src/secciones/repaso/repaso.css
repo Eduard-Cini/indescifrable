@@ -1,6 +1,12 @@
 /* Sección Repaso: tarjeta de repaso espaciado (SM-2) sobre la bolsa.
    Reutiliza el layout de lectura.css (.lectura-container, .lectura-top). */
 
+.repaso-top-acciones {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
 .repaso-tarjeta {
   position: relative;
   width: 100%;

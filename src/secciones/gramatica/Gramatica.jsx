@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { agruparPorLectura, lecturaCompletada, totalEjercicios } from '../../engine/gramatica';
 import { cargarGramaticaCompletados } from '../../engine/almacenamiento';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import './gramatica.css';
 
@@ -13,6 +14,7 @@ const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', a
 // etiqueta de nivel y una palomita si todos sus ejercicios ya se respondieron
 // bien alguna vez. Dentro, los ejercicios van agrupados por tema gramatical.
 function Gramatica() {
+  const { idioma } = useIdiomaEstudio();
   const [grupos, setGrupos] = useState(null);
   const [hechos, setHechos] = useState([]);
 
@@ -48,6 +50,13 @@ function Gramatica() {
         (ordenados del más básico al más avanzado). Cada tema terminado se
         marca con ✓.
       </p>
+
+      {idioma !== 'de' && (
+        <p className="juegos-aviso-idioma">
+          Los ejercicios de gramática son de <strong>alemán</strong> por ahora.
+          Los de inglés están en camino.
+        </p>
+      )}
 
       <div className="gram-temas">
         {grupos.map((g) => {

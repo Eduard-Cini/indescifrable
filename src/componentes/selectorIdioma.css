@@ -1,0 +1,15 @@
+.selector-idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.selector-idioma-etiqueta {
+  opacity: 0.75;
+}
+
+.selector-idioma select {
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+}
