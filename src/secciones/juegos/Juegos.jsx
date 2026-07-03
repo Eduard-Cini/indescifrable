@@ -1,21 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  juegosDisponibles,
-  lecturasOrdenadas,
-  poolDe,
-  SLUG_CORPUS,
-} from '../../engine/juegos';
+import { lecturasConJuego } from '../../engine/juegos';
+import { FICHAS } from './fichas';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
 
-const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', avanzado: 'Avanzado' };
-
-// Hub de la Sección 4, organizado POR LECTURA (como la Sección 3): cada
-// lectura del corpus es una tarjeta y dentro están los juegos que su
-// vocabulario aguanta (src/engine/juegos.js decide cuáles). «Todo el corpus»
-// juega con el léxico completo; el Codenames va aparte (usa sus propios
+// Hub de la Sección 4, organizado POR JUEGO: cada juego es una tarjeta y
+// dentro se elige el vocabulario (todo el corpus o una lectura concreta;
+// solo se listan las lecturas que el juego aguanta, según los criterios de
+// src/engine/juegos.js). El Codenames va aparte (usa sus propios
 // diccionarios, no el corpus).
 function Juegos() {
   const [datos, setDatos] = useState(null);
@@ -42,15 +36,13 @@ function Juegos() {
     return <div className="lectura-container">{cabecera}</div>;
   }
 
-  const corpus = poolDe(datos, SLUG_CORPUS);
-
   return (
     <div className="lectura-container">
       {cabecera}
       <p className="lectura-subtitulo">
-        Juegos de palabras con el vocabulario de las lecturas: elige una
-        lectura (o el corpus entero) y dentro verás los juegos que su
-        vocabulario aguanta. Partidas reproducibles por semilla.
+        Juegos de palabras con el vocabulario de las lecturas: elige un juego
+        y, dentro, la lectura con la que quieres jugar (o el corpus entero).
+        Partidas reproducibles por semilla.
       </p>
 
       <div className="juegos-grid">
@@ -63,28 +55,15 @@ function Juegos() {
           <span className="juego-algoritmo">Tablero determinista por LCG</span>
         </Link>
 
-        <Link to={`/juegos/${SLUG_CORPUS}`} className="juego-card">
-          <h2>📚 Todo el corpus</h2>
-          <p>
-            Los cuatro juegos de palabras sobre el léxico completo de la
-            plataforma: el modo clásico.
-          </p>
-          <span className="juego-algoritmo">
-            {juegosDisponibles(corpus).length} juegos disponibles
-          </span>
-        </Link>
-
-        {lecturasOrdenadas(datos).map((lectura) => {
-          const disponibles = juegosDisponibles(lectura);
+        {Object.entries(FICHAS).map(([juego, ficha]) => {
+          const lecturas = lecturasConJuego(datos, juego);
           return (
-            <Link key={lectura.slug} to={`/juegos/${lectura.slug}`} className="juego-card">
-              <span className={`gram-nivel ${lectura.nivel}`}>
-                {NOMBRE_NIVEL[lectura.nivel] ?? lectura.nivel}
-              </span>
-              <h2>{lectura.titulo}</h2>
+            <Link key={juego} to={`/juegos/${juego}`} className="juego-card">
+              <h2>{ficha.titulo}</h2>
+              <p>{ficha.descripcion}</p>
               <span className="juego-algoritmo">
-                {disponibles.length} juego{disponibles.length === 1 ? '' : 's'} disponible
-                {disponibles.length === 1 ? '' : 's'}
+                {ficha.algoritmo} · corpus + {lecturas.length} lectura
+                {lecturas.length === 1 ? '' : 's'}
               </span>
             </Link>
           );

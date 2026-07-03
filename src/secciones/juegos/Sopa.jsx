@@ -58,11 +58,13 @@ function Sopa() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to={`/juegos/${lectura}`} className="lectura-link">
-        ← {pool?.titulo ?? 'Juegos'}
-      </Link>
+      <Link to="/juegos/sopa" className="lectura-link">← Lecturas</Link>
       <h1>Sopa de letras</h1>
-      <span />
+      {pool ? (
+        <span className={`gram-nivel ${pool.nivel ?? ''}`}>{pool.titulo}</span>
+      ) : (
+        <span />
+      )}
     </header>
   );
 
@@ -72,7 +74,7 @@ function Sopa() {
         {cabecera}
         <p className="lectura-subtitulo">
           Este vocabulario no da para una sopa de letras (pocas entradas).{' '}
-          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+          <Link to="/juegos/sopa" className="lectura-link">Elegir otra lectura</Link>.
         </p>
       </div>
     );
@@ -198,8 +200,8 @@ function Sopa() {
           <button type="button" className="gram-boton" onClick={nuevaSopa}>
             Otra sopa
           </button>
-          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
-            Otros juegos
+          <Link to="/juegos/sopa" className="gram-boton gram-boton-sec">
+            Otra lectura
           </Link>
         </div>
       )}

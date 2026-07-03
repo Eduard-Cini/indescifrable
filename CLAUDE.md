@@ -50,15 +50,16 @@ backtracking + Wordle entropía + sopa de letras).
   Motor puro `src/engine/gramatica.js` (sesión/opciones deterministas por semilla; normaliza
   el LCG de board.js a [0,1)); UI en `/gramatica` (`src/secciones/gramatica/`), JSON por
   dynamic import (chunk aparte).
-- **Sección Juegos (pipeline + motores + UI)**: navegación POR LECTURA en dos niveles, como
-  gramática: /juegos lista las lecturas (chip de nivel, nº de juegos disponibles) + «Todo el
-  corpus» + Codenames (intacto en /juegos/codenames); /juegos/:lectura es el ÍNDICE de juegos
-  que ese vocabulario aguanta; /juegos/:lectura/:juego juega con ese pool. La disponibilidad
-  es un CRITERIO FORMAL por juego en `src/engine/juegos.js` (escalera: ∃ par a distancia ≥3
-  en el grafo; wordle: ≥12 palabras en alguna longitud; crucigrama/sopa: ≥6 entradas), y los
-  selectores solo ofrecen combinaciones jugables (`pasosDisponibles`, `longitudes*`,
-  `tamanosTablero`). Resultado medido: principiante → crucigrama+sopa; intermedio → +wordle
-  (y escalera si el grafo da); avanzado/corpus → los cuatro. **Escalera de palabras**:
+- **Sección Juegos (pipeline + motores + UI)**: navegación POR JUEGO en dos niveles
+  (decisión del usuario): /juegos lista los juegos + Codenames (intacto en
+  /juegos/codenames); /juegos/:juego es el ÍNDICE de vocabularios de ese juego («Todo el
+  corpus» + solo las lecturas que lo aguantan, chip de nivel); /juegos/:juego/:lectura juega
+  con ese pool. La disponibilidad es un CRITERIO FORMAL por juego en `src/engine/juegos.js`
+  (escalera: ∃ par a distancia ≥3 en el grafo; wordle: ≥12 palabras en alguna longitud;
+  crucigrama/sopa: ≥6 entradas; `lecturasConJuego` filtra el índice), y los selectores solo
+  ofrecen combinaciones jugables (`pasosDisponibles`, `longitudes*`, `tamanosTablero`).
+  Resultado medido: principiante → crucigrama+sopa; intermedio → +wordle (y escalera si el
+  grafo da); avanzado/corpus → los cuatro. **Escalera de palabras**:
   `src/engine/escalera.js` — grafo de Hamming 1 por cubetas comodín O(n·L), BFS de camino
   mínimo, retos deterministas por semilla a distancia EXACTA (selector 3-5 letras y 3-6
   pasos; pista/deshacer/rendirse; glosa española por peldaño). **Crucigrama**

@@ -63,11 +63,13 @@ function Crucigrama() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to={`/juegos/${lectura}`} className="lectura-link">
-        ← {pool?.titulo ?? 'Juegos'}
-      </Link>
+      <Link to="/juegos/crucigrama" className="lectura-link">← Lecturas</Link>
       <h1>Crucigrama</h1>
-      <span />
+      {pool ? (
+        <span className={`gram-nivel ${pool.nivel ?? ''}`}>{pool.titulo}</span>
+      ) : (
+        <span />
+      )}
     </header>
   );
 
@@ -77,7 +79,7 @@ function Crucigrama() {
         {cabecera}
         <p className="lectura-subtitulo">
           Este vocabulario no da para un crucigrama (pocas entradas).{' '}
-          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+          <Link to="/juegos/crucigrama" className="lectura-link">Elegir otra lectura</Link>.
         </p>
       </div>
     );
@@ -230,8 +232,8 @@ function Crucigrama() {
           <button type="button" className="gram-boton" onClick={nuevo}>
             Otro crucigrama
           </button>
-          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
-            Otros juegos
+          <Link to="/juegos/crucigrama" className="gram-boton gram-boton-sec">
+            Otra lectura
           </Link>
         </div>
       )}

@@ -124,8 +124,9 @@ tabla([
      "Pool del corpus o de una lectura, criterios de disponibilidad por juego "
      "y selectores jugables (longitudes, pasos, tamaños)"],
     ["UI", "src/secciones/juegos/*.jsx + juegos.css",
-     "/juegos (lecturas + corpus), /juegos/:lectura (índice de juegos), "
-     "/juegos/:lectura/:juego; Codenames en /juegos/codenames"],
+     "/juegos (los juegos), /juegos/:juego (índice de vocabularios: corpus + "
+     "lecturas que lo aguantan), /juegos/:juego/:lectura; Codenames en "
+     "/juegos/codenames"],
     ["Estadísticas", "simulacion/juegos-stats.mjs",
      "Ejecuta los motores reales → docs/datos-juegos.json (lo consume el PDF "
      "de métricas)"],
@@ -157,7 +158,9 @@ p("No toda lectura aguanta todo juego: una de principiante tiene ~30-40 palabras
   "<font face='Courier'>src/engine/juegos.js</font> aplica un <b>criterio formal por juego</b>: "
   "escalera si existe algún par a distancia ≥ 3 (hay reto que proponer); Wordle si alguna "
   "longitud reúne ≥ 12 palabras (con menos no hay incertidumbre que reducir); crucigrama y "
-  "sopa si hay ≥ 6 entradas con pista. Los selectores de la UI salen de la misma fuente "
+  "sopa si hay ≥ 6 entradas con pista. El índice de cada juego "
+  "(<font face='Courier'>lecturasConJuego</font>) solo lista las lecturas que lo aguantan, y los "
+  "selectores de la UI salen de la misma fuente "
   "(<font face='Courier'>pasosDisponibles</font>, <font face='Courier'>longitudesEscalera/Wordle</font>, "
   "<font face='Courier'>tamanosTablero</font>), así que nunca ofrecen combinaciones vacías. La "
   "tabla medida por lectura está en metricas-seccion4.pdf §7.")
@@ -266,10 +269,10 @@ p("Los cinco motores viven en <font face='Courier'>src/engine/</font> sin DOM ni
   "conflictos de letra, numeración en orden de lectura; feedback del Wordle con repetidas; "
   "palabras de la sopa legibles en sus casillas; criterios de disponibilidad). La UI "
   "(<font face='Courier'>src/secciones/juegos/</font>) solo presenta y navega en DOS niveles, "
-  "como la Sección 3: <b>/juegos</b> lista las lecturas (chip de nivel, nº de juegos "
-  "disponibles) más «Todo el corpus» y el Codenames; <b>/juegos/:lectura</b> es el índice "
-  "de juegos que ese vocabulario aguanta; <b>/juegos/:lectura/:juego</b> juega con ese "
-  "pool. La <b>escalera</b> ofrece longitud y pasos (solo los jugables), input con "
+  "ordenados <b>por juego</b>: <b>/juegos</b> lista los juegos (más el Codenames); "
+  "<b>/juegos/:juego</b> es el índice de vocabularios de ese juego — «Todo el corpus» más "
+  "las lecturas que lo aguantan, con chip de nivel; <b>/juegos/:juego/:lectura</b> juega "
+  "con ese pool. La <b>escalera</b> ofrece longitud y pasos (solo los jugables), input con "
   "validación y glosa por peldaño; el <b>crucigrama</b> renderiza la cuadrícula interactiva "
   "(avance de foco en la dirección activa, click repetido alterna horizontal/vertical, "
   "flechas y Backspace), comprobar y revelar; el <b>Wordle</b> muestra glosa y feedback por "

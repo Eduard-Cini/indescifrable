@@ -216,12 +216,14 @@ code("x_{i+1} = (a·x_i + c) mod m      con x_0 = hash(semilla)\n"
      "36^4 = 1 679 616 tableros/vocabulario · 13 vocabularios")
 
 h1("7. Los juegos por lectura: disponibilidad medida")
-p("Los cuatro juegos de palabras se pueden jugar con el vocabulario de UNA lectura (misma "
-  "organización que la Sección 3). La disponibilidad no es una lista curada: cada juego "
+p("Los cuatro juegos de palabras se pueden jugar con el vocabulario de UNA lectura: la "
+  "navegación va por juego y, dentro de cada juego, se elige el vocabulario (el corpus "
+  "entero o una lectura). La disponibilidad no es una lista curada: cada juego "
   "tiene un criterio formal en src/engine/juegos.js — escalera: existe un par a distancia "
   "≥ 3 en el grafo de Hamming de la lectura; Wordle: alguna longitud con ≥ 12 palabras; "
-  "crucigrama/sopa: ≥ 6 entradas con pista. La tabla sale de ejecutar esos criterios sobre "
-  "los pools reales (pipeline/juegos.py agrupa las partes de un libro por título):")
+  "crucigrama/sopa: ≥ 6 entradas con pista. El índice de cada juego lista solo las "
+  "lecturas que lo aguantan. La tabla sale de ejecutar esos criterios sobre los pools "
+  "reales (pipeline/juegos.py agrupa las partes de un libro por título):")
 filas = [["Lectura", "Nivel", "L=3/4/5", "Entradas", "Juegos disponibles"]]
 for lec in STATS["lecturas"]:
     p_ = lec["palabrasPorLongitud"]

@@ -7,6 +7,7 @@ import {
   tamanosTablero,
   juegosDisponibles,
   lecturasOrdenadas,
+  lecturasConJuego,
   MIN_WORDLE,
   MIN_TABLERO,
   SLUG_CORPUS,
@@ -99,6 +100,26 @@ describe('juegosDisponibles', () => {
     for (const lectura of juegos.lecturas.filter((l) => l.nivel === 'avanzado')) {
       expect(juegosDisponibles(lectura)).toEqual(['escalera', 'crucigrama', 'wordle', 'sopa']);
     }
+  });
+});
+
+describe('lecturasConJuego', () => {
+  it('lista exactamente las lecturas donde el juego está disponible', () => {
+    for (const juego of ['escalera', 'crucigrama', 'wordle', 'sopa']) {
+      const lista = lecturasConJuego(juegos, juego);
+      for (const lectura of lista) {
+        expect(juegosDisponibles(lectura)).toContain(juego);
+      }
+      const fuera = juegos.lecturas.filter((l) => !lista.includes(l));
+      for (const lectura of fuera) {
+        expect(juegosDisponibles(lectura)).not.toContain(juego);
+      }
+    }
+  });
+
+  it('crucigrama y sopa están en todas las lecturas actuales del corpus', () => {
+    expect(lecturasConJuego(juegos, 'crucigrama')).toHaveLength(juegos.lecturas.length);
+    expect(lecturasConJuego(juegos, 'sopa')).toHaveLength(juegos.lecturas.length);
   });
 });
 

@@ -94,3 +94,10 @@ export function lecturasOrdenadas(data) {
       a.titulo.localeCompare(b.titulo)
   );
 }
+
+/** Lecturas cuyo vocabulario aguanta un juego concreto, en orden de nivel.
+ *  Alimenta el índice de vocabularios de cada juego (la UI añade además
+ *  «Todo el corpus», que los aguanta todos). */
+export function lecturasConJuego(data, juego) {
+  return lecturasOrdenadas(data).filter((l) => juegosDisponibles(l).includes(juego));
+}

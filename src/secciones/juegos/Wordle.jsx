@@ -66,11 +66,13 @@ function Wordle() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to={`/juegos/${lectura}`} className="lectura-link">
-        ← {pool?.titulo ?? 'Juegos'}
-      </Link>
+      <Link to="/juegos/wordle" className="lectura-link">← Lecturas</Link>
       <h1>Adivina la palabra</h1>
-      <span />
+      {pool ? (
+        <span className={`gram-nivel ${pool.nivel ?? ''}`}>{pool.titulo}</span>
+      ) : (
+        <span />
+      )}
     </header>
   );
 
@@ -80,7 +82,7 @@ function Wordle() {
         {cabecera}
         <p className="lectura-subtitulo">
           Este vocabulario no da para adivinar la palabra (pocas candidatas).{' '}
-          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+          <Link to="/juegos/wordle" className="lectura-link">Elegir otra lectura</Link>.
         </p>
       </div>
     );
@@ -201,8 +203,8 @@ function Wordle() {
           <button type="button" className="gram-boton" onClick={nuevaPalabra}>
             Otra palabra
           </button>
-          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
-            Otros juegos
+          <Link to="/juegos/wordle" className="gram-boton gram-boton-sec">
+            Otra lectura
           </Link>
         </div>
       )}
