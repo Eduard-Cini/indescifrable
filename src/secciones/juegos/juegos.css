@@ -127,6 +127,54 @@
 .cruci-len { color: #666; font-size: 0.8rem; }
 .juego-exito { color: #8fbf9f; font-weight: bold; font-size: 1.1rem; margin: 0.8rem 0 0.4rem; }
 
+/* --- Sudoku de palabras --- */
+.sudoku-letras { color: #9ad; letter-spacing: 0.08em; text-transform: uppercase; }
+.sudoku-tablero {
+  display: grid;
+  grid-template-columns: repeat(9, 2.2rem);
+  width: max-content;
+  margin: 1rem auto;
+  border: 2px solid #555;
+  border-radius: 4px;
+}
+.sudoku-celda {
+  width: 2.2rem;
+  height: 2.2rem;
+  box-sizing: border-box;
+  border: 1px solid #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sudoku-celda.caja-der { border-right: 2px solid #555; }
+.sudoku-celda.caja-abajo { border-bottom: 2px solid #555; }
+.sudoku-celda.dada {
+  background: #242424;
+  color: #f0f0f0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.05rem;
+}
+.sudoku-celda input {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: #1a1a1a;
+  color: #9ad;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 1.05rem;
+  padding: 0;
+}
+.sudoku-celda input:focus { outline: none; background: #141a26; }
+.sudoku-celda input.mal { background: #2a1414; color: #e79; }
+.sudoku-celda input.bien { color: #8fbf9f; }
+.sudoku-celda.palabra, .sudoku-celda input.palabra,
+.sudoku-celda input.bien.palabra { background: #14201a; }
+.sudoku-celda.dada.palabra { color: #8fbf9f; }
+
 /* --- Wordle (adivina la palabra) --- */
 .wordle-tablero { display: flex; flex-direction: column; gap: 4px; margin: 1rem 0; }
 .wordle-fila { display: flex; gap: 4px; align-items: center; }

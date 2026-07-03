@@ -69,9 +69,11 @@ describe('tamanosTablero', () => {
 });
 
 describe('juegosDisponibles', () => {
-  it('pool rico → los cuatro juegos', () => {
+  it('pool rico → los cinco juegos', () => {
     const pool = poolDe(juegos, SLUG_CORPUS);
-    expect(juegosDisponibles(pool)).toEqual(['escalera', 'crucigrama', 'wordle', 'sopa']);
+    expect(juegosDisponibles(pool)).toEqual([
+      'escalera', 'crucigrama', 'wordle', 'sopa', 'sudoku',
+    ]);
   });
 
   it('pool pobre en grafo pero con pistas → tablero sí, escalera no', () => {
@@ -96,16 +98,29 @@ describe('juegosDisponibles', () => {
     }
   });
 
-  it('los libros (avanzado) ofrecen los cuatro juegos', () => {
+  it('los libros (avanzado) ofrecen los cinco juegos', () => {
     for (const lectura of juegos.lecturas.filter((l) => l.nivel === 'avanzado')) {
-      expect(juegosDisponibles(lectura)).toEqual(['escalera', 'crucigrama', 'wordle', 'sopa']);
+      expect(juegosDisponibles(lectura)).toEqual([
+        'escalera', 'crucigrama', 'wordle', 'sopa', 'sudoku',
+      ]);
     }
+  });
+
+  it('sudoku exige al menos una palabra de 9 letras distintas', () => {
+    const sinSudoku = { escalera: {}, crucigrama: [], sudoku: [] };
+    expect(juegosDisponibles(sinSudoku)).not.toContain('sudoku');
+    const conSudoku = {
+      escalera: {},
+      crucigrama: [],
+      sudoku: [{ palabra: 'auswendig', pista: 'de memoria' }],
+    };
+    expect(juegosDisponibles(conSudoku)).toEqual(['sudoku']);
   });
 });
 
 describe('lecturasConJuego', () => {
   it('lista exactamente las lecturas donde el juego está disponible', () => {
-    for (const juego of ['escalera', 'crucigrama', 'wordle', 'sopa']) {
+    for (const juego of ['escalera', 'crucigrama', 'wordle', 'sopa', 'sudoku']) {
       const lista = lecturasConJuego(juegos, juego);
       for (const lectura of lista) {
         expect(juegosDisponibles(lectura)).toContain(juego);

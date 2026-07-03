@@ -32,4 +32,12 @@ export const FICHAS = {
       '«regalo» es encontrar GESCHENK.',
     algoritmo: 'Colocación aleatorizada por semilla',
   },
+  sudoku: {
+    titulo: '🧩 Sudoku de palabras',
+    nombre: 'Sudoku de palabras',
+    descripcion:
+      'Un sudoku 9×9 con letras en vez de números: una fila esconde una ' +
+      'palabra alemana de 9 letras. Tres dificultades.',
+    algoritmo: 'Backtracking + excavado con unicidad',
+  },
 };

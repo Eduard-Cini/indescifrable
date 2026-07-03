@@ -10,6 +10,7 @@
 //  - wordle: alguna longitud con >= MIN_WORDLE palabras (con menos, un par
 //    de intentos agotan las candidatas y no hay juego).
 //  - crucigrama / sopa: >= MIN_TABLERO entradas con pista.
+//  - sudoku: >= 1 palabra de 9 letras todas distintas (los 9 símbolos).
 // Los selectores de la UI también salen de aquí (longitudes y nº de pasos
 // realmente jugables por pool), así nunca ofrecen combinaciones vacías.
 
@@ -29,6 +30,7 @@ export function poolDe(data, slug = SLUG_CORPUS) {
       nivel: null,
       escalera: data.escalera,
       crucigrama: data.crucigrama,
+      sudoku: data.sudoku,
     };
   }
   return data.lecturas?.find((l) => l.slug === slug) ?? null;
@@ -79,6 +81,7 @@ export function juegosDisponibles(pool) {
   if ((pool.crucigrama?.length ?? 0) >= MIN_TABLERO) juegos.push('crucigrama');
   if (longitudesWordle(pool.escalera).length > 0) juegos.push('wordle');
   if ((pool.crucigrama?.length ?? 0) >= MIN_TABLERO) juegos.push('sopa');
+  if ((pool.sudoku?.length ?? 0) > 0) juegos.push('sudoku');
   return juegos;
 }
 

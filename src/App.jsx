@@ -7,6 +7,7 @@ import Escalera from './secciones/juegos/Escalera';
 import Crucigrama from './secciones/juegos/Crucigrama';
 import Wordle from './secciones/juegos/Wordle';
 import Sopa from './secciones/juegos/Sopa';
+import Sudoku from './secciones/juegos/Sudoku';
 import Biblioteca from './secciones/lectura/Biblioteca';
 import Lector from './secciones/lectura/Lector';
 import Bolsa from './secciones/lectura/Bolsa';
@@ -31,6 +32,8 @@ function App() {
         <Route path="/juegos/wordle/:lectura" element={<Wordle />} />
         <Route path="/juegos/sopa" element={<LecturasDeJuego juego="sopa" />} />
         <Route path="/juegos/sopa/:lectura" element={<Sopa />} />
+        <Route path="/juegos/sudoku" element={<LecturasDeJuego juego="sudoku" />} />
+        <Route path="/juegos/sudoku/:lectura" element={<Sudoku />} />
         <Route path="/lectura" element={<Biblioteca />} />
         <Route path="/lectura/:idioma/:nivel/:id" element={<Lector />} />
         <Route path="/bolsa" element={<Bolsa />} />

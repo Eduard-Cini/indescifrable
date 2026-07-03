@@ -67,7 +67,9 @@ function LecturasDeJuego({ juego }) {
             </span>
             <h2>{lectura.titulo}</h2>
             <span className="juego-algoritmo">
-              {lectura.crucigrama.length} palabras con pista
+              {juego === 'sudoku'
+                ? `${lectura.sudoku.length} palabra${lectura.sudoku.length === 1 ? '' : 's'} de 9 letras`
+                : `${lectura.crucigrama.length} palabras con pista`}
             </span>
           </Link>
         ))}

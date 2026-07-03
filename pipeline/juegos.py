@@ -9,6 +9,9 @@ solo se seleccionan las palabras):
   src/engine/escalera.js y wordle.js.
 - Crucigrama/Sopa: lemas de contenido del corpus (sin palabras funcionales,
   atestiguados >= 2 veces) con la traducción española como pista.
+- Sudoku de palabras: palabras de 9 letras TODAS DISTINTAS (formas o lemas,
+  ASCII) con glosa: los 9 símbolos del sudoku. La generación (backtracking +
+  excavado con unicidad) vive en src/engine/sudoku.js.
 
 Además, los MISMOS pools POR LECTURA (agrupando las partes de un libro por
 título, como hace gramatica.py): el frontend deja jugar con el vocabulario
@@ -81,15 +84,22 @@ def slug_de(titulo):
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+def es_palabra_sudoku(palabra):
+    """9 letras ASCII, todas distintas: los 9 símbolos de un sudoku."""
+    return bool(RE_ASCII.fullmatch(palabra)) and len(palabra) == 9 and len(set(palabra)) == 9
+
+
 def pools_de(formas, lexico_de, glosa_lema, frecuencias):
-    """(escalera, crucigrama) para un conjunto de formas alemanas.
+    """(escalera, crucigrama, sudoku) para un conjunto de formas alemanas.
 
     escalera: forma ASCII L=3-5 -> glosa (para escalera y Wordle).
     crucigrama: lemas de contenido atestiguados en esas formas, con pista
     (para crucigrama y sopa), ordenados por frecuencia global descendente.
+    sudoku: palabras (formas o lemas) de 9 letras todas distintas, con glosa.
     """
     escalera = {str(n): {} for n in LONGITUDES_ESCALERA}
     lemas = set()
+    sudoku = {}
     for forma in formas:
         entrada = lexico_de.get(forma)
         if not entrada:
@@ -97,9 +107,13 @@ def pools_de(formas, lexico_de, glosa_lema, frecuencias):
         es = (entrada.get("es") or "").strip()
         if es and RE_ASCII.fullmatch(forma) and len(forma) in LONGITUDES_ESCALERA:
             escalera[str(len(forma))][forma] = es
+        if es and es_palabra_sudoku(forma):
+            sudoku.setdefault(forma, es)
         lema = normalizar(entrada.get("lemma") or "")
         if lema:
             lemas.add(lema)
+            if lema in glosa_lema and es_palabra_sudoku(lema):
+                sudoku.setdefault(lema, glosa_lema[lema])
 
     lo, hi = LONGITUD_CRUCIGRAMA
     candidatos = [
@@ -113,7 +127,8 @@ def pools_de(formas, lexico_de, glosa_lema, frecuencias):
     candidatos.sort(key=lambda t: (-t[0], t[1]))
     crucigrama = [{"palabra": lema, "pista": es} for _, lema, es in candidatos]
     escalera = {n: dict(sorted(d.items())) for n, d in escalera.items()}
-    return escalera, crucigrama
+    sudoku = [{"palabra": p, "pista": sudoku[p]} for p in sorted(sudoku)]
+    return escalera, crucigrama, sudoku
 
 
 def construir():
@@ -135,7 +150,7 @@ def construir():
             glosa_lema[lema] = es
 
     # --- Pools globales (todo el corpus) -----------------------------------
-    escalera, crucigrama_todo = pools_de(
+    escalera, crucigrama_todo, sudoku = pools_de(
         lexico_de.keys(), lexico_de, glosa_lema, frecuencias
     )
     crucigrama = [
@@ -169,25 +184,32 @@ def construir():
     lecturas = []
     for (_, _), g in sorted(grupos.items()):
         lexico_local = {**lexico_de, **g.get("override", {})}
-        esc, cru = pools_de(g["formas"], lexico_local, glosa_lema, frecuencias)
+        esc, cru, sud = pools_de(g["formas"], lexico_local, glosa_lema, frecuencias)
         lecturas.append({
             "slug": slug_de(g["titulo"]),
             "titulo": g["titulo"],
             "nivel": g["nivel"],
             "escalera": esc,
             "crucigrama": cru[:MAX_CRUCIGRAMA_LECTURA],
+            "sudoku": sud,
         })
 
-    salida = {"escalera": escalera, "crucigrama": crucigrama, "lecturas": lecturas}
+    salida = {
+        "escalera": escalera,
+        "crucigrama": crucigrama,
+        "sudoku": sudoku,
+        "lecturas": lecturas,
+    }
     RUTA_JUEGOS.write_text(
         json.dumps(salida, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
     )
 
     resumen = ", ".join(f"L={n}: {len(escalera[str(n)])}" for n in LONGITUDES_ESCALERA)
-    print(f"corpus: escalera ({resumen})  crucigrama: {len(crucigrama)} entradas")
+    print(f"corpus: escalera ({resumen})  crucigrama: {len(crucigrama)}  sudoku: {len(sudoku)}")
     for lec in lecturas:
         tam = ", ".join(f"L={n}: {len(lec['escalera'][str(n)])}" for n in LONGITUDES_ESCALERA)
-        print(f"  {lec['nivel']:<12} {lec['titulo']:<28} escalera({tam})  crucigrama: {len(lec['crucigrama'])}")
+        print(f"  {lec['nivel']:<12} {lec['titulo']:<28} escalera({tam})  "
+              f"crucigrama: {len(lec['crucigrama'])}  sudoku: {len(lec['sudoku'])}")
     print(f"-> {RUTA_JUEGOS.relative_to(RAIZ)}")
 
 

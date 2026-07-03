@@ -2419,6 +2419,168 @@
    "pista": "reproche / recriminación"
   }
  ],
+ "sudoku": [
+  {
+   "palabra": "absichten",
+   "pista": "intención / propósito / fin"
+  },
+  {
+   "palabra": "anblickte",
+   "pista": "mirar / contemplar"
+  },
+  {
+   "palabra": "auswendig",
+   "pista": "de memoria / de cabeza"
+  },
+  {
+   "palabra": "brauchten",
+   "pista": "necesitar"
+  },
+  {
+   "palabra": "buschigen",
+   "pista": "poblado (vía inglés)"
+  },
+  {
+   "palabra": "dreiklang",
+   "pista": "tríada"
+  },
+  {
+   "palabra": "entsprach",
+   "pista": "corresponder / complacer"
+  },
+  {
+   "palabra": "erkundigt",
+   "pista": "informar / orientar / preguntar"
+  },
+  {
+   "palabra": "erlaubnis",
+   "pista": "permiso"
+  },
+  {
+   "palabra": "exkursion",
+   "pista": "visita (vía inglés)"
+  },
+  {
+   "palabra": "fernsicht",
+   "pista": "vista (en compuesto)"
+  },
+  {
+   "palabra": "flausrock",
+   "pista": "rock (en compuesto)"
+  },
+  {
+   "palabra": "forschend",
+   "pista": "investigación (vía inglés)"
+  },
+  {
+   "palabra": "gebraucht",
+   "pista": "necesitar"
+  },
+  {
+   "palabra": "kinderaug",
+   "pista": "en privado (en compuesto)"
+  },
+  {
+   "palabra": "klatschen",
+   "pista": "aplaudir / chismear"
+  },
+  {
+   "palabra": "mondlicht",
+   "pista": "luz de la luna"
+  },
+  {
+   "palabra": "moralisch",
+   "pista": "moral"
+  },
+  {
+   "palabra": "nachspiel",
+   "pista": "consecuencia"
+  },
+  {
+   "palabra": "pflichten",
+   "pista": "deber / obligación"
+  },
+  {
+   "palabra": "postwagen",
+   "pista": "carro (vía inglés)"
+  },
+  {
+   "palabra": "rauschend",
+   "pista": "finalizar (en compuesto)"
+  },
+  {
+   "palabra": "schaukeln",
+   "pista": "balancear / columpiar / columpiarse"
+  },
+  {
+   "palabra": "schlafend",
+   "pista": "somnífero (vía inglés)"
+  },
+  {
+   "palabra": "schmutzig",
+   "pista": "sucio"
+  },
+  {
+   "palabra": "schultern",
+   "pista": "hombro"
+  },
+  {
+   "palabra": "schwankte",
+   "pista": "vacilar / fluctuar"
+  },
+  {
+   "palabra": "schwarzem",
+   "pista": "negro"
+  },
+  {
+   "palabra": "schwarzen",
+   "pista": "negro"
+  },
+  {
+   "palabra": "steinwurf",
+   "pista": "saque de banda (en compuesto)"
+  },
+  {
+   "palabra": "tuchwaren",
+   "pista": "géneros (vía inglés)"
+  },
+  {
+   "palabra": "umherflog",
+   "pista": "corredera (en compuesto)"
+  },
+  {
+   "palabra": "verflucht",
+   "pista": "maldecir"
+  },
+  {
+   "palabra": "vorschein",
+   "pista": "brillo (en compuesto)"
+  },
+  {
+   "palabra": "wohlstand",
+   "pista": "prosperidad"
+  },
+  {
+   "palabra": "zischlaut",
+   "pista": "sibilante"
+  },
+  {
+   "palabra": "zugemacht",
+   "pista": "cerrado (vía inglés)"
+  },
+  {
+   "palabra": "zugewandt",
+   "pista": "hábil (en compuesto)"
+  },
+  {
+   "palabra": "zumindest",
+   "pista": "al menos / por lo menos"
+  },
+  {
+   "palabra": "zusprache",
+   "pista": "subvención (vía inglés)"
+  }
+ ],
  "lecturas": [
   {
    "slug": "anas-tag",
@@ -2520,7 +2682,8 @@
      "palabra": "trinken",
      "pista": "beber / tomar"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "der-markt",
@@ -2593,7 +2756,8 @@
      "palabra": "riechen",
      "pista": "huele"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "toms-wochenende",
@@ -2730,7 +2894,8 @@
      "palabra": "samstag",
      "pista": "sábado"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "der-hase-und-die-schildkrote",
@@ -2913,7 +3078,8 @@
      "palabra": "spott",
      "pista": "burla"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "der-lowe-und-die-maus",
@@ -3051,7 +3217,8 @@
      "palabra": "vergeln",
      "pista": "vengar / retribuir"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "der-nordwind-und-die-sonne",
@@ -3257,7 +3424,8 @@
      "palabra": "vortritt",
      "pista": "preferencia (vía inglés)"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "der-su-e-brei",
@@ -3511,7 +3679,8 @@
      "palabra": "topf",
      "pista": "olla / maceta / cazuela"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "die-ameise-und-die-grille",
@@ -3744,7 +3913,8 @@
      "palabra": "vorsorge",
      "pista": "prevención / previsión"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "die-sterntaler",
@@ -3994,7 +4164,8 @@
      "palabra": "unterwegs",
      "pista": "en camino / en el camino / de un lado para el otro"
     }
-   ]
+   ],
+   "sudoku": []
   },
   {
    "slug": "rotkappchen",
@@ -4532,6 +4703,12 @@
     {
      "palabra": "wein",
      "pista": "vid / vino / uva"
+    }
+   ],
+   "sudoku": [
+    {
+     "palabra": "schlafend",
+     "pista": "somnífero (vía inglés)"
     }
    ]
   },
@@ -5611,6 +5788,100 @@
      "palabra": "vergessen",
      "pista": "olvido"
     }
+   ],
+   "sudoku": [
+    {
+     "palabra": "absichten",
+     "pista": "intención / propósito / fin"
+    },
+    {
+     "palabra": "brauchten",
+     "pista": "necesitar"
+    },
+    {
+     "palabra": "buschigen",
+     "pista": "poblado (vía inglés)"
+    },
+    {
+     "palabra": "entsprach",
+     "pista": "corresponder / complacer"
+    },
+    {
+     "palabra": "erkundigt",
+     "pista": "informar / orientar / preguntar"
+    },
+    {
+     "palabra": "erlaubnis",
+     "pista": "permiso"
+    },
+    {
+     "palabra": "gebraucht",
+     "pista": "necesitar"
+    },
+    {
+     "palabra": "klatschen",
+     "pista": "aplaudir / chismear"
+    },
+    {
+     "palabra": "pflichten",
+     "pista": "deber / obligación"
+    },
+    {
+     "palabra": "rauschend",
+     "pista": "finalizar (en compuesto)"
+    },
+    {
+     "palabra": "schaukeln",
+     "pista": "balancear / columpiar / columpiarse"
+    },
+    {
+     "palabra": "schmutzig",
+     "pista": "sucio"
+    },
+    {
+     "palabra": "schultern",
+     "pista": "hombro"
+    },
+    {
+     "palabra": "schwankte",
+     "pista": "vacilar / fluctuar"
+    },
+    {
+     "palabra": "schwarzen",
+     "pista": "negro"
+    },
+    {
+     "palabra": "tuchwaren",
+     "pista": "géneros (vía inglés)"
+    },
+    {
+     "palabra": "umherflog",
+     "pista": "corredera (en compuesto)"
+    },
+    {
+     "palabra": "verflucht",
+     "pista": "maldecir"
+    },
+    {
+     "palabra": "wohlstand",
+     "pista": "prosperidad"
+    },
+    {
+     "palabra": "zischlaut",
+     "pista": "sibilante"
+    },
+    {
+     "palabra": "zugemacht",
+     "pista": "cerrado (vía inglés)"
+    },
+    {
+     "palabra": "zumindest",
+     "pista": "al menos / por lo menos"
+    },
+    {
+     "palabra": "zusprache",
+     "pista": "subvención (vía inglés)"
+    }
    ]
   },
   {
@@ -6651,6 +6922,96 @@
     {
      "palabra": "stark",
      "pista": "fuerte / intenso"
+    }
+   ],
+   "sudoku": [
+    {
+     "palabra": "anblickte",
+     "pista": "mirar / contemplar"
+    },
+    {
+     "palabra": "auswendig",
+     "pista": "de memoria / de cabeza"
+    },
+    {
+     "palabra": "dreiklang",
+     "pista": "tríada"
+    },
+    {
+     "palabra": "erkundigt",
+     "pista": "informar / orientar / preguntar"
+    },
+    {
+     "palabra": "erlaubnis",
+     "pista": "permiso"
+    },
+    {
+     "palabra": "exkursion",
+     "pista": "visita (vía inglés)"
+    },
+    {
+     "palabra": "fernsicht",
+     "pista": "vista (en compuesto)"
+    },
+    {
+     "palabra": "flausrock",
+     "pista": "rock (en compuesto)"
+    },
+    {
+     "palabra": "forschend",
+     "pista": "investigación (vía inglés)"
+    },
+    {
+     "palabra": "gebraucht",
+     "pista": "necesitar"
+    },
+    {
+     "palabra": "kinderaug",
+     "pista": "en privado (en compuesto)"
+    },
+    {
+     "palabra": "klatschen",
+     "pista": "aplaudir / chismear"
+    },
+    {
+     "palabra": "mondlicht",
+     "pista": "luz de la luna"
+    },
+    {
+     "palabra": "moralisch",
+     "pista": "moral"
+    },
+    {
+     "palabra": "nachspiel",
+     "pista": "consecuencia"
+    },
+    {
+     "palabra": "postwagen",
+     "pista": "carro (vía inglés)"
+    },
+    {
+     "palabra": "schwankte",
+     "pista": "vacilar / fluctuar"
+    },
+    {
+     "palabra": "schwarzem",
+     "pista": "negro"
+    },
+    {
+     "palabra": "schwarzen",
+     "pista": "negro"
+    },
+    {
+     "palabra": "steinwurf",
+     "pista": "saque de banda (en compuesto)"
+    },
+    {
+     "palabra": "vorschein",
+     "pista": "brillo (en compuesto)"
+    },
+    {
+     "palabra": "zugewandt",
+     "pista": "hábil (en compuesto)"
     }
    ]
   }
