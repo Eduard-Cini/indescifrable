@@ -1,30 +1,33 @@
-"""Traducción automática offline alemán -> español con opus-mt (Helsinki-NLP,
+"""Traducción automática offline <idioma> -> español con opus-mt (Helsinki-NLP,
 modelos Marian) vía transformers. Alternativa sin API a la traducción por
-frase con un LLM. Traducción directa de->es (sin pivote por inglés).
+frase con un LLM. Traducción directa (sin pivote), de->es o en->es.
 
-Primera ejecución: descarga el modelo Helsinki-NLP/opus-mt-de-es (~300 MB).
-Uso como módulo:  from mt import traducir_mt   # traducir_mt(list[str]) -> list[str]
+Primera ejecución: descarga el modelo (~300 MB) del idioma pedido.
+Uso como módulo:  from mt import traducir_mt   # traducir_mt(list[str], origen="en")
 Uso directo:      python mt.py                  # prueba de ejemplo
 """
-MODELO = "Helsinki-NLP/opus-mt-de-es"
-_tok = None
-_model = None
+MODELOS = {
+    "de": "Helsinki-NLP/opus-mt-de-es",
+    "en": "Helsinki-NLP/opus-mt-en-es",
+}
+_cache = {}  # origen -> (tok, model)
 
 
-def _cargar():
-    global _tok, _model
-    if _model is None:
+def _cargar(origen):
+    if origen not in _cache:
         from transformers import MarianMTModel, MarianTokenizer
-        print(f"Cargando {MODELO}...")
-        _tok = MarianTokenizer.from_pretrained(MODELO)
-        _model = MarianMTModel.from_pretrained(MODELO)
-    return _tok, _model
+        nombre = MODELOS[origen]
+        print(f"Cargando {nombre}...")
+        tok = MarianTokenizer.from_pretrained(nombre)
+        model = MarianMTModel.from_pretrained(nombre)
+        _cache[origen] = (tok, model)
+    return _cache[origen]
 
 
-def traducir_mt(frases, tam_lote=16):
-    """Traduce una lista de frases de->es, en lotes. Devuelve una lista del
+def traducir_mt(frases, origen="de", tam_lote=16):
+    """Traduce una lista de frases <origen>->es, en lotes. Devuelve una lista del
     mismo tamaño (alineación 1:1 garantizada)."""
-    tok, model = _cargar()
+    tok, model = _cargar(origen)
     salida = []
     for i in range(0, len(frases), tam_lote):
         lote = frases[i : i + tam_lote]
@@ -36,10 +39,10 @@ def traducir_mt(frases, tam_lote=16):
 
 if __name__ == "__main__":
     ejemplos = [
-        "Als Gregor Samsa eines Morgens aus unruhigen Träumen erwachte, "
-        "fand er sich in seinem Bett zu einem ungeheueren Ungeziefer verwandelt.",
-        "Es war kein Traum.",
+        "The Time Traveller (for so it will be convenient to speak of him) "
+        "was expounding a recondite matter to us.",
+        "It was not a dream.",
     ]
-    for s, t in zip(ejemplos, traducir_mt(ejemplos)):
-        print("DE:", s)
+    for s, t in zip(ejemplos, traducir_mt(ejemplos, origen="en")):
+        print("EN:", s)
         print("MT:", t, "\n")

@@ -1,0 +1,53 @@
+{
+  "id": "timemachine-22",
+  "nivel": "intermedio",
+  "autor": "H. G. Wells",
+  "libro": "timemachine",
+  "parte": 22,
+  "partes": 22,
+  "titulo": {
+    "en": "The Time Machine",
+    "es": "La máquina del tiempo"
+  },
+  "fuente": "«The Time Machine», H. G. Wells (1895; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/35. Procesado con spaCy; traducción por frase con MT offline (opus-mt en-es, Helsinki-NLP); traducción por palabra con FreeDict.",
+  "cuerpo": {
+    "en": [
+      "I was expecting to find him here.”",
+      "At that I understood.",
+      "At the risk of disappointing Richardson I stayed on, waiting for the Time Traveller; waiting for the second, perhaps still stranger story, and the specimens and photographs he would bring with him.",
+      "But I am beginning now to fear that I must wait a lifetime.",
+      "The Time Traveller vanished three years ago.",
+      "And, as everybody knows now, he has never returned.",
+      "Epilogue One cannot choose but wonder.",
+      "Will he ever return?",
+      "It may be that he swept back into the past, and fell among the blood-drinking, hairy savages of the Age of Unpolished Stone; into the abysses of the Cretaceous Sea; or among the grotesque saurians, the huge reptilian brutes of the Jurassic times.",
+      "He may even now—if I may use the phrase—be wandering on some plesiosaurus-haunted Oolitic coral reef, or beside the lonely saline seas of the Triassic Age.",
+      "Or did he go forward, into one of the nearer ages, in which men are still men, but with the riddles of our own time answered and its wearisome problems solved?",
+      "Into the manhood of the race: for I, for my own part, cannot think that these latter days of weak experiment, fragmentary theory, and mutual discord are indeed man’s culminating time!",
+      "I say, for my own part.",
+      "He, I know—for the question had been discussed among us long before the Time Machine was made—thought but cheerlessly of the Advancement of Mankind, and saw in the growing pile of civilisation only a foolish heaping that must inevitably fall back upon and destroy its makers in the end.",
+      "If that is so, it remains for us to live as though it were not so.",
+      "But to me the future is still black and blank—is a vast ignorance, lit at a few casual places by the memory of his story.",
+      "And I have by me, for my comfort, two strange white flowers—shrivelled now, and brown and flat and brittle—to witness that even when mind and strength had gone, gratitude and a mutual tenderness still lived on in the heart of man."
+    ],
+    "es": [
+      "Esperaba encontrarlo aquí.",
+      "En eso lo entendí.",
+      "A riesgo de decepcionar a Richardson me quedé, esperando al Viajero del Tiempo; esperando la segunda historia, tal vez aún más extraña, y los especímenes y fotografías que traería con él.",
+      "Pero estoy empezando ahora a temer que debo esperar toda la vida.",
+      "El viajero del tiempo desapareció hace tres años.",
+      "Y, como todo el mundo sabe ahora, nunca ha regresado.",
+      "Epílogo Uno no puede elegir sino maravillarse.",
+      "¿Volverá alguna vez?",
+      "Puede ser que él barrió hacia atrás en el pasado, y cayó entre los salvajes peludos y bebidos de sangre de la Edad de Piedra sin pulir; en los abismos del Mar Cretácico; o entre los saurianos grotescos, los enormes brutos reptilianos de los tiempos jurásicos.",
+      "Incluso ahora —si puedo usar la frase— puede estar vagando en algún arrecife coralino oolitico embrujado por plesiosaurios, o al lado de los mares salinos solitarios de la Era Triásica.",
+      "¿O fue hacia adelante, a una de las edades más cercanas, en la que los hombres todavía son hombres, pero con los acertijos de nuestro tiempo respondido y sus problemas fatigosos resueltos?",
+      "¡En la virilidad de la raza: porque yo, por mi parte, no puedo pensar que estos últimos días de experimento débil, teoría fragmentaria y discordia mutua son realmente el tiempo culminante del hombre!",
+      "Digo, por mi parte.",
+      "Él, yo sé —porque la pregunta había sido discutida entre nosotros mucho antes de que se hiciera la Máquina del Tiempo— pensó pero sin ánimos en el Avance de la Humanidad, y vio en la creciente pila de civilización sólo un tonto montón que inevitablemente debe caer sobre sus creadores y destruirlos al final.",
+      "Si eso es así, nos queda vivir como si no fuera así.",
+      "Pero para mí el futuro sigue siendo negro y en blanco—es una vasta ignorancia, iluminada en algunos lugares casuales por el recuerdo de su historia.",
+      "Y tengo por mí, para mi consuelo, dos extrañas flores blancas, marchitas ahora, y marrones y planas y quebradizas, para atestiguar que incluso cuando la mente y la fuerza habían desaparecido, la gratitud y una ternura mutua aún vivían en el corazón del hombre."
+    ]
+  }
+}

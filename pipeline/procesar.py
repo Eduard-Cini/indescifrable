@@ -6,7 +6,10 @@ FreeDict para la traducción por palabra (deu-spa directo + cadena
 deu-eng->eng-spa + cabeza de compuesto; ver traductor.py). Exporta al formato
 que consume el frontend: src/data/lecturas/<id>.json y src/data/lexico.json.
 
-Uso:  PYTHONUTF8=1 python procesar.py <libro>   (p. ej. verwandlung, immensee)
+Para libros en inglés (idioma "en") la traducción por palabra es directa con
+eng-spa y no hay verbos separables que reconstruir.
+
+Uso:  PYTHONUTF8=1 python procesar.py <libro>   (p. ej. verwandlung, timemachine)
 """
 import json
 import re
@@ -54,10 +57,76 @@ LIBROS = {
         "inicio": "An einem Spätherbstnachmittage",
         "frases_por_parte": 90,
     },
+    "timemachine": {
+        "id_base": "timemachine",
+        "idioma": "en",
+        "nivel": "intermedio",
+        "autor": "H. G. Wells",
+        "titulo": {"en": "The Time Machine", "es": "La máquina del tiempo"},
+        "fuente": (
+            "«The Time Machine», H. G. Wells (1895; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/35. "
+            "Procesado con spaCy; traducción por frase con MT offline "
+            "(opus-mt en-es, Helsinki-NLP); traducción por palabra con FreeDict."
+        ),
+        "archivo": FUENTES / "timemachine.txt",
+        "inicio": "The Time Traveller (for so",
+        "frases_por_parte": 90,
+    },
+    "christmascarol": {
+        "id_base": "christmascarol",
+        "idioma": "en",
+        "nivel": "intermedio",
+        "autor": "Charles Dickens",
+        "titulo": {"en": "A Christmas Carol", "es": "Canción de Navidad"},
+        "fuente": (
+            "«A Christmas Carol», Charles Dickens (1843; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/46. "
+            "Procesado con spaCy; traducción por frase con MT offline "
+            "(opus-mt en-es, Helsinki-NLP); traducción por palabra con FreeDict."
+        ),
+        "archivo": FUENTES / "christmascarol.txt",
+        "inicio": "MARLEY was dead",
+        "frases_por_parte": 90,
+    },
+    "usher": {
+        "id_base": "usher",
+        "idioma": "en",
+        "nivel": "avanzado",
+        "autor": "Edgar Allan Poe",
+        "titulo": {"en": "The Fall of the House of Usher", "es": "La caída de la Casa Usher"},
+        "fuente": (
+            "«The Fall of the House of Usher», Edgar Allan Poe (1839; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/932. "
+            "Procesado con spaCy; traducción por frase con MT offline "
+            "(opus-mt en-es, Helsinki-NLP); traducción por palabra con FreeDict."
+        ),
+        "archivo": FUENTES / "usher.txt",
+        "inicio": "During the whole of a dull",
+        "frases_por_parte": 90,
+    },
+    "deathinvenice": {
+        "id_base": "deathinvenice",
+        "idioma": "en",
+        "nivel": "avanzado",
+        "autor": "Thomas Mann",
+        "titulo": {"en": "Death in Venice", "es": "La muerte en Venecia"},
+        "fuente": (
+            "«Death in Venice», Thomas Mann (1912; trad. inglesa de Kenneth Burke, "
+            "1925; dominio público). Texto: Project Gutenberg, "
+            "https://www.gutenberg.org/ebooks/66073. Procesado con spaCy; traducción "
+            "por frase con MT offline (opus-mt en-es, Helsinki-NLP); traducción por "
+            "palabra con FreeDict."
+        ),
+        "archivo": FUENTES / "deathinvenice.txt",
+        "inicio": "On a spring afternoon",
+        "frases_por_parte": 90,
+    },
 }
 
 CONFIG = None  # lo fija procesar(nombre)
-MODELO = "de_core_news_md"
+# Modelo de spaCy por idioma del libro (solo se usa para segmentar en frases).
+MODELOS = {"de": "de_core_news_md", "en": "en_core_web_sm"}
 RUTA_BASE = Path(__file__).parent / "lexico.base.json"
 
 
@@ -112,8 +181,9 @@ def lemas_con_separables(doc):
 def procesar(nombre):
     global CONFIG
     CONFIG = LIBROS[nombre]
-    print(f"Libro: {nombre}. Cargando spaCy ({MODELO})...")
-    nlp = spacy.load(MODELO)
+    modelo = MODELOS[CONFIG["idioma"]]
+    print(f"Libro: {nombre}. Cargando spaCy ({modelo})...")
+    nlp = spacy.load(modelo)
 
     contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
     nlp.max_length = max(nlp.max_length, len(contenido) + 100)
