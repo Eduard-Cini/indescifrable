@@ -1,16 +1,18 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { generarCrucigrama, cuadricula } from '../../engine/crucigrama';
+import { poolDe, tamanosTablero } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
 
-// Crucigrama (Sección 4): palabras alemanas del corpus con la pista en
-// español. La colocación la decide src/engine/crucigrama.js (backtracking)
-// de forma determinista por semilla; las entradas salen de pipeline/juegos.py
-// (lemas frecuentes de las lecturas) vía dynamic import.
+// Crucigrama (Sección 4): palabras alemanas del pool (todo el corpus o UNA
+// lectura, según la ruta) con la pista en español. La colocación la decide
+// src/engine/crucigrama.js (backtracking) de forma determinista por semilla;
+// los tamaños ofrecidos dependen del pool (engine/juegos.js).
 function Crucigrama() {
+  const { lectura } = useParams();
   const [datos, setDatos] = useState(null);
   const [n, setN] = useState(8);
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -31,10 +33,18 @@ function Crucigrama() {
     };
   }, []);
 
+  const pool = datos ? poolDe(datos, lectura) : null;
+  const tamanos = useMemo(() => (pool ? tamanosTablero(pool.crucigrama) : []), [pool]);
+  const nActivo = tamanos.includes(n) ? n : tamanos[0];
   const cruci = useMemo(
     () =>
-      datos ? generarCrucigrama(datos.crucigrama, { n, semilla: `${n}:${semilla}` }) : null,
-    [datos, n, semilla]
+      pool && nActivo
+        ? generarCrucigrama(pool.crucigrama, {
+            n: nActivo,
+            semilla: `${lectura}:${nActivo}:${semilla}`,
+          })
+        : null,
+    [pool, nActivo, semilla, lectura]
   );
   const solucion = useMemo(() => (cruci ? cuadricula(cruci) : null), [cruci]);
   const numeros = useMemo(() => {
@@ -53,11 +63,25 @@ function Crucigrama() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to="/juegos" className="lectura-link">← Juegos</Link>
+      <Link to={`/juegos/${lectura}`} className="lectura-link">
+        ← {pool?.titulo ?? 'Juegos'}
+      </Link>
       <h1>Crucigrama</h1>
       <span />
     </header>
   );
+
+  if (datos && (!pool || tamanos.length === 0)) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Este vocabulario no da para un crucigrama (pocas entradas).{' '}
+          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+        </p>
+      </div>
+    );
+  }
 
   if (!cruci || !solucion) {
     return <div className="lectura-container">{cabecera}</div>;
@@ -136,12 +160,12 @@ function Crucigrama() {
           Palabras{' '}
           <select
             className="juego-select"
-            value={n}
+            value={nActivo}
             onChange={(e) => setN(Number(e.target.value))}
           >
-            <option value="6">6</option>
-            <option value="8">8</option>
-            <option value="10">10</option>
+            {tamanos.map((t) => (
+              <option key={t} value={t}>{t}</option>
+            ))}
           </select>
         </label>
         <button type="button" className="gram-boton gram-boton-sec" onClick={nuevo}>
@@ -206,7 +230,7 @@ function Crucigrama() {
           <button type="button" className="gram-boton" onClick={nuevo}>
             Otro crucigrama
           </button>
-          <Link to="/juegos" className="gram-boton gram-boton-sec">
+          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
             Otros juegos
           </Link>
         </div>

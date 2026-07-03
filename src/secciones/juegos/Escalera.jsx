@@ -1,22 +1,25 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {
   construirGrafo,
   caminoMinimo,
   generarReto,
   sonVecinas,
 } from '../../engine/escalera';
+import { longitudesEscalera, pasosDisponibles, poolDe } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
 
 // Escalera de palabras (Sección 4): transformar origen → destino cambiando una
-// letra por paso, pisando solo palabras del corpus. El reto lo genera
-// src/engine/escalera.js (grafo de Hamming 1 + BFS) de forma determinista por
-// semilla; cada palabra pisada muestra su traducción (también aquí se aprende
-// vocabulario). El diccionario viene de pipeline/juegos.py vía dynamic import.
+// letra por paso, pisando solo palabras del pool (todo el corpus o UNA
+// lectura, según la ruta). El reto lo genera src/engine/escalera.js (grafo de
+// Hamming 1 + BFS) de forma determinista por semilla; cada palabra pisada
+// muestra su traducción. Los selectores solo ofrecen longitudes y pasos
+// realmente jugables con este pool (src/engine/juegos.js).
 function Escalera() {
+  const { lectura } = useParams();
   const [datos, setDatos] = useState(null);
   const [longitud, setLongitud] = useState('4');
   const [pasos, setPasos] = useState(4);
@@ -36,16 +39,28 @@ function Escalera() {
     };
   }, []);
 
-  const glosas = datos?.escalera[longitud] ?? null;
+  const pool = datos ? poolDe(datos, lectura) : null;
+  const longitudes = useMemo(
+    () => (pool ? longitudesEscalera(pool.escalera) : []),
+    [pool]
+  );
+  // Si la longitud elegida no es jugable con este pool, cae a la primera.
+  const longitudActiva = longitudes.includes(longitud) ? longitud : longitudes[0];
+  const glosas = pool?.escalera[longitudActiva] ?? null;
   const palabras = useMemo(() => (glosas ? Object.keys(glosas) : []), [glosas]);
+  const opcionesPasos = useMemo(() => pasosDisponibles(palabras), [palabras]);
+  const pasosActivos = opcionesPasos.includes(pasos) ? pasos : opcionesPasos[0];
   const enDiccionario = useMemo(() => new Set(palabras), [palabras]);
   const grafo = useMemo(() => construirGrafo(palabras), [palabras]);
   const reto = useMemo(
     () =>
-      palabras.length > 0
-        ? generarReto(palabras, { pasos, semilla: `${longitud}:${pasos}:${semilla}` })
+      palabras.length > 0 && pasosActivos
+        ? generarReto(palabras, {
+            pasos: pasosActivos,
+            semilla: `${lectura}:${longitudActiva}:${pasosActivos}:${semilla}`,
+          })
         : null,
-    [palabras, pasos, semilla, longitud]
+    [palabras, pasosActivos, semilla, longitudActiva, lectura]
   );
 
   useEffect(() => {
@@ -57,11 +72,25 @@ function Escalera() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to="/juegos" className="lectura-link">← Juegos</Link>
+      <Link to={`/juegos/${lectura}`} className="lectura-link">
+        ← {pool?.titulo ?? 'Juegos'}
+      </Link>
       <h1>Escalera de palabras</h1>
       <span />
     </header>
   );
+
+  if (datos && (!pool || longitudes.length === 0)) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Este vocabulario no da para la escalera (el grafo no tiene caminos).{' '}
+          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+        </p>
+      </div>
+    );
+  }
 
   if (!datos || !reto || historial.length === 0) {
     return <div className="lectura-container">{cabecera}</div>;
@@ -115,25 +144,24 @@ function Escalera() {
           Letras{' '}
           <select
             className="juego-select"
-            value={longitud}
+            value={longitudActiva}
             onChange={(e) => setLongitud(e.target.value)}
           >
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
+            {longitudes.map((L) => (
+              <option key={L} value={L}>{L}</option>
+            ))}
           </select>
         </label>
         <label>
           Pasos mínimos{' '}
           <select
             className="juego-select"
-            value={pasos}
+            value={pasosActivos}
             onChange={(e) => setPasos(Number(e.target.value))}
           >
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
+            {opcionesPasos.map((p) => (
+              <option key={p} value={p}>{p}</option>
+            ))}
           </select>
         </label>
         <button type="button" className="gram-boton gram-boton-sec" onClick={nuevoReto}>
@@ -183,8 +211,8 @@ function Escalera() {
               className="esc-input"
               value={entrada}
               onChange={(e) => setEntrada(e.target.value)}
-              maxLength={Number(longitud)}
-              placeholder={'·'.repeat(Number(longitud))}
+              maxLength={Number(longitudActiva)}
+              placeholder={'·'.repeat(Number(longitudActiva))}
               autoFocus
             />
             <button type="submit" className="gram-boton">Probar</button>
@@ -221,7 +249,7 @@ function Escalera() {
           <button type="button" className="gram-boton" onClick={nuevoReto}>
             Otro reto
           </button>
-          <Link to="/juegos" className="gram-boton gram-boton-sec">
+          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
             Otros juegos
           </Link>
         </div>

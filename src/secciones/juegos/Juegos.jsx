@@ -1,19 +1,56 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {
+  juegosDisponibles,
+  lecturasOrdenadas,
+  poolDe,
+  SLUG_CORPUS,
+} from '../../engine/juegos';
 import '../lectura/lectura.css';
+import '../gramatica/gramatica.css';
 import './juegos.css';
 
-// Hub de la Sección 4: cada juego de palabras con el algoritmo que lo genera.
+const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', avanzado: 'Avanzado' };
+
+// Hub de la Sección 4, organizado POR LECTURA (como la Sección 3): cada
+// lectura del corpus es una tarjeta y dentro están los juegos que su
+// vocabulario aguanta (src/engine/juegos.js decide cuáles). «Todo el corpus»
+// juega con el léxico completo; el Codenames va aparte (usa sus propios
+// diccionarios, no el corpus).
 function Juegos() {
+  const [datos, setDatos] = useState(null);
+
+  useEffect(() => {
+    let vivo = true;
+    import('../../data/juegos.json').then((m) => {
+      if (vivo) setDatos(m.default);
+    });
+    return () => {
+      vivo = false;
+    };
+  }, []);
+
+  const cabecera = (
+    <header className="lectura-top">
+      <Link to="/" className="lectura-link">← Plataforma</Link>
+      <h1>Juegos</h1>
+      <span />
+    </header>
+  );
+
+  if (!datos) {
+    return <div className="lectura-container">{cabecera}</div>;
+  }
+
+  const corpus = poolDe(datos, SLUG_CORPUS);
+
   return (
     <div className="lectura-container">
-      <header className="lectura-top">
-        <Link to="/" className="lectura-link">← Plataforma</Link>
-        <h1>Juegos</h1>
-        <span />
-      </header>
+      {cabecera}
       <p className="lectura-subtitulo">
-        Juegos de palabras generados con los algoritmos de la plataforma: mismo
-        vocabulario que las lecturas, partidas reproducibles por semilla.
+        Juegos de palabras con el vocabulario de las lecturas: elige una
+        lectura (o el corpus entero) y dentro verás los juegos que su
+        vocabulario aguanta. Partidas reproducibles por semilla.
       </p>
 
       <div className="juegos-grid">
@@ -21,48 +58,37 @@ function Juegos() {
           <h2>🕵️ Indescifrable</h2>
           <p>
             El Codenames con vocabulario en tres idiomas: pistas de una palabra
-            para que tu equipo adivine sus casillas. Comparte la semilla y todos
-            ven el mismo tablero.
+            para que tu equipo adivine sus casillas.
           </p>
           <span className="juego-algoritmo">Tablero determinista por LCG</span>
         </Link>
 
-        <Link to="/juegos/escalera" className="juego-card">
-          <h2>🪜 Escalera de palabras</h2>
+        <Link to={`/juegos/${SLUG_CORPUS}`} className="juego-card">
+          <h2>📚 Todo el corpus</h2>
           <p>
-            Transforma una palabra alemana en otra cambiando una sola letra por
-            paso, pisando siempre palabras del corpus. ¿Igualas el camino
-            mínimo?
+            Los cuatro juegos de palabras sobre el léxico completo de la
+            plataforma: el modo clásico.
           </p>
-          <span className="juego-algoritmo">Grafo de Hamming 1 + BFS</span>
+          <span className="juego-algoritmo">
+            {juegosDisponibles(corpus).length} juegos disponibles
+          </span>
         </Link>
 
-        <Link to="/juegos/crucigrama" className="juego-card">
-          <h2>✏️ Crucigrama</h2>
-          <p>
-            Crucigrama de alemán con las pistas en español, armado con las
-            palabras más frecuentes de las lecturas.
-          </p>
-          <span className="juego-algoritmo">Colocación por backtracking</span>
-        </Link>
-
-        <Link to="/juegos/wordle" className="juego-card">
-          <h2>🎯 Adivina la palabra</h2>
-          <p>
-            Una palabra alemana del corpus en seis intentos, con la traducción
-            de cada intento y el conteo de candidatas que van quedando.
-          </p>
-          <span className="juego-algoritmo">Feedback exacto + entropía de Shannon</span>
-        </Link>
-
-        <Link to="/juegos/sopa" className="juego-card">
-          <h2>🔍 Sopa de letras</h2>
-          <p>
-            Las pistas en español, las palabras escondidas en alemán: encontrar
-            «regalo» es encontrar GESCHENK.
-          </p>
-          <span className="juego-algoritmo">Colocación aleatorizada por semilla</span>
-        </Link>
+        {lecturasOrdenadas(datos).map((lectura) => {
+          const disponibles = juegosDisponibles(lectura);
+          return (
+            <Link key={lectura.slug} to={`/juegos/${lectura.slug}`} className="juego-card">
+              <span className={`gram-nivel ${lectura.nivel}`}>
+                {NOMBRE_NIVEL[lectura.nivel] ?? lectura.nivel}
+              </span>
+              <h2>{lectura.titulo}</h2>
+              <span className="juego-algoritmo">
+                {disponibles.length} juego{disponibles.length === 1 ? '' : 's'} disponible
+                {disponibles.length === 1 ? '' : 's'}
+              </span>
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

@@ -2418,5 +2418,4241 @@
    "palabra": "vorwurf",
    "pista": "reproche / recriminación"
   }
+ ],
+ "lecturas": [
+  {
+   "slug": "anas-tag",
+   "titulo": "Anas Tag",
+   "nivel": "principiante",
+   "escalera": {
+    "3": {
+     "ana": "(nombre propio)",
+     "auf": "se levanta (aufstehen)",
+     "dem": "que",
+     "ein": "un",
+     "mit": "con",
+     "sie": "ella / ellos",
+     "uhr": "reloj / hora",
+     "und": "y",
+     "zur": "cerrado"
+    },
+    "4": {
+     "brot": "pan",
+     "buch": "libro",
+     "geht": "va / ir",
+     "isst": "come",
+     "park": "parque"
+    },
+    "5": {
+     "abend": "tarde / noche / víspera",
+     "einen": "un",
+     "ihrer": "su",
+     "liest": "lectura",
+     "steht": "se levanta (aufstehen)"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "familie",
+     "pista": "familia"
+    },
+    {
+     "palabra": "abend",
+     "pista": "tarde / noche / víspera"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "lesen",
+     "pista": "lectura"
+    },
+    {
+     "palabra": "aufstehen",
+     "pista": "levantarse / abierto / estar"
+    },
+    {
+     "palabra": "brot",
+     "pista": "pan"
+    },
+    {
+     "palabra": "buch",
+     "pista": "libro"
+    },
+    {
+     "palabra": "sieben",
+     "pista": "siete"
+    },
+    {
+     "palabra": "fahren",
+     "pista": "ir / andar / ir en coche"
+    },
+    {
+     "palabra": "morgens",
+     "pista": "por la mañana / de mañana"
+    },
+    {
+     "palabra": "schule",
+     "pista": "escuela / colegio / clase"
+    },
+    {
+     "palabra": "kaffee",
+     "pista": "café / feca / cafeto"
+    },
+    {
+     "palabra": "fahrrad",
+     "pista": "bicicleta / cicla / baica"
+    },
+    {
+     "palabra": "park",
+     "pista": "parque"
+    },
+    {
+     "palabra": "trinken",
+     "pista": "beber / tomar"
+    }
+   ]
+  },
+  {
+   "slug": "der-markt",
+   "titulo": "Der Markt",
+   "nivel": "principiante",
+   "escalera": {
+    "3": {
+     "das": "el / la / eso",
+     "gut": "bien / bueno",
+     "ist": "es / está",
+     "mit": "con",
+     "sie": "ella / ellos",
+     "und": "y",
+     "vor": "preparar (partícula separable de bereitet … vor)",
+     "zum": "al / hacia el"
+    },
+    "4": {
+     "brot": "pan",
+     "geht": "va / ir",
+     "ihre": "su / sus",
+     "nach": "a / hacia",
+     "sehr": "muy",
+     "warm": "caliente"
+    },
+    "5": {
+     "einer": "una",
+     "hause": "casa",
+     "kauft": "compra",
+     "markt": "mercado"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "familie",
+     "pista": "familia"
+    },
+    {
+     "palabra": "brot",
+     "pista": "pan"
+    },
+    {
+     "palabra": "apfel",
+     "pista": "manzana / poma / manzano"
+    },
+    {
+     "palabra": "warm",
+     "pista": "caliente"
+    },
+    {
+     "palabra": "bezahlen",
+     "pista": "pagar / saldar"
+    },
+    {
+     "palabra": "kaufen",
+     "pista": "compra"
+    },
+    {
+     "palabra": "markt",
+     "pista": "mercado"
+    },
+    {
+     "palabra": "riechen",
+     "pista": "huele"
+    }
+   ]
+  },
+  {
+   "slug": "toms-wochenende",
+   "titulo": "Toms Wochenende",
+   "nivel": "principiante",
+   "escalera": {
+    "3": {
+     "das": "el / la / eso",
+     "den": "que",
+     "ein": "un",
+     "eis": "hielo / helado",
+     "ist": "es / está",
+     "mit": "con",
+     "sie": "ella / ellos",
+     "tom": "(nombre propio)",
+     "und": "y",
+     "zur": "cerrado"
+    },
+    "4": {
+     "dann": "después / luego / entonces",
+     "dort": "allá / allí / ahí",
+     "film": "capa / película / cine",
+     "geht": "va / ir",
+     "hund": "perro / can / canalla",
+     "nach": "a / hacia",
+     "park": "parque",
+     "reis": "arroz",
+     "sein": "ser",
+     "wenn": "cuando / si / aunque"
+    },
+    "5": {
+     "abend": "tarde / noche / víspera",
+     "einen": "un",
+     "essen": "comida",
+     "gehen": "marcha / marcha atlética",
+     "hause": "casa",
+     "hilft": "ayudar",
+     "nicht": "no",
+     "salat": "lechuga / ensalada",
+     "sieht": "ver",
+     "vater": "padre"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "mutter",
+     "pista": "madre / tuerca"
+    },
+    {
+     "palabra": "sehen",
+     "pista": "ver"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "vater",
+     "pista": "padre"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "abend",
+     "pista": "tarde / noche / víspera"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "garten",
+     "pista": "jardín / huerto"
+    },
+    {
+     "palabra": "helfen",
+     "pista": "ayudar"
+    },
+    {
+     "palabra": "fahren",
+     "pista": "ir / andar / ir en coche"
+    },
+    {
+     "palabra": "schnell",
+     "pista": "rápido / veloz"
+    },
+    {
+     "palabra": "spielen",
+     "pista": "juego"
+    },
+    {
+     "palabra": "schule",
+     "pista": "escuela / colegio / clase"
+    },
+    {
+     "palabra": "fahrrad",
+     "pista": "bicicleta / cicla / baica"
+    },
+    {
+     "palabra": "hund",
+     "pista": "perro / can / canalla"
+    },
+    {
+     "palabra": "park",
+     "pista": "parque"
+    },
+    {
+     "palabra": "reis",
+     "pista": "arroz"
+    },
+    {
+     "palabra": "film",
+     "pista": "capa / película / cine"
+    },
+    {
+     "palabra": "regnen",
+     "pista": "llover"
+    },
+    {
+     "palabra": "salat",
+     "pista": "lechuga / ensalada"
+    },
+    {
+     "palabra": "samstag",
+     "pista": "sábado"
+    }
+   ]
+  },
+  {
+   "slug": "der-hase-und-die-schildkrote",
+   "titulo": "Der Hase und die Schildkröte",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "als": "que / cuando / como",
+     "das": "el / la / eso",
+     "der": "que",
+     "des": "que",
+     "die": "que",
+     "ein": "un",
+     "ihn": "lo / le",
+     "los": "salir disparado (losschießen)",
+     "mit": "con",
+     "sah": "ver",
+     "sie": "ella / ellos",
+     "und": "y",
+     "war": "ser"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "alle": "agotado",
+     "bald": "pronto / en breve",
+     "baum": "árbol",
+     "beim": "cerca de / en casa de / durante",
+     "dass": "que",
+     "eine": "un",
+     "ging": "fue / iba",
+     "hase": "liebre / conejo",
+     "kurz": "corto / breve",
+     "nahm": "suponer / dar por hecho (annehmen)",
+     "ohne": "sin",
+     "sich": "se",
+     "weil": "porque / ya que / puesto que",
+     "zeit": "tiempo",
+     "ziel": "objetivo / meta / fin"
+    },
+    "5": {
+     "aller": "todo (vía inglés)",
+     "davor": "delante / ahí delante / antes",
+     "einem": "un",
+     "ferne": "lejanía / tierras lejanas",
+     "hasen": "liebre / conejo",
+     "hielt": "detenerse / pararse (anhalten)",
+     "kraft": "fuerza / eficacia / fibra",
+     "schon": "ya",
+     "tiere": "animal / bestia",
+     "unter": "bajo / debajo de",
+     "voran": "delante / por delante / primero"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "sehen",
+     "pista": "ver"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "machen",
+     "pista": "hacer"
+    },
+    {
+     "palabra": "zeit",
+     "pista": "tiempo"
+    },
+    {
+     "palabra": "langsam",
+     "pista": "lento / despacio"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "kraft",
+     "pista": "fuerza / eficacia / fibra"
+    },
+    {
+     "palabra": "kurz",
+     "pista": "corto / breve"
+    },
+    {
+     "palabra": "merken",
+     "pista": "darse cuenta / reconocer"
+    },
+    {
+     "palabra": "schritt",
+     "pista": "paso / entrepierna"
+    },
+    {
+     "palabra": "baum",
+     "pista": "árbol"
+    },
+    {
+     "palabra": "dagegen",
+     "pista": "contra eso / contra esto / al contrario"
+    },
+    {
+     "palabra": "niemals",
+     "pista": "jamás / nunca"
+    },
+    {
+     "palabra": "hase",
+     "pista": "liebre / conejo"
+    },
+    {
+     "palabra": "vergehen",
+     "pista": "delito / contravención / delito de menor cuantía"
+    },
+    {
+     "palabra": "ferne",
+     "pista": "lejanía / tierras lejanas"
+    },
+    {
+     "palabra": "tier",
+     "pista": "animal / bestia"
+    },
+    {
+     "palabra": "sicher",
+     "pista": "seguro"
+    },
+    {
+     "palabra": "ziel",
+     "pista": "objetivo / meta / fin"
+    },
+    {
+     "palabra": "annehmen",
+     "pista": "suponer / asumir / recibir"
+    },
+    {
+     "palabra": "gewinnen",
+     "pista": "ganar / extraer / sacar"
+    },
+    {
+     "palabra": "lustig",
+     "pista": "divertido / alegre / antojado"
+    },
+    {
+     "palabra": "besiegen",
+     "pista": "vencer / batir / superar"
+    },
+    {
+     "palabra": "davor",
+     "pista": "delante / ahí delante / antes"
+    },
+    {
+     "palabra": "rennen",
+     "pista": "correr"
+    },
+    {
+     "palabra": "zusehen",
+     "pista": "contemplar / procurar"
+    },
+    {
+     "palabra": "aufwachen",
+     "pista": "despertamiento / despertar"
+    },
+    {
+     "palabra": "beschloss",
+     "pista": "cerradura (en compuesto)"
+    },
+    {
+     "palabra": "geduldig",
+     "pista": "paciente"
+    },
+    {
+     "palabra": "losschoss",
+     "pista": "caray (vía inglés)"
+    },
+    {
+     "palabra": "sieg",
+     "pista": "victoria / triunfo"
+    },
+    {
+     "palabra": "spott",
+     "pista": "burla"
+    }
+   ]
+  },
+  {
+   "slug": "der-lowe-und-die-maus",
+   "titulo": "Der Löwe und die Maus",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "auf": "despertar (aufwecken)",
+     "bis": "hasta",
+     "den": "que",
+     "der": "que",
+     "die": "que",
+     "dir": "(a) ti / te",
+     "ein": "un",
+     "ich": "yo",
+     "ihn": "lo / le",
+     "mit": "con",
+     "sie": "ella / ellos",
+     "und": "y"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "eine": "un",
+     "fing": "atrapado (vía inglés)",
+     "frei": "liberar / soltar (freilassen)",
+     "idee": "idea / noción",
+     "lass": "deja",
+     "lief": "correr / andar / marchar",
+     "maus": "ratón / laucha / mouse",
+     "mich": "me (vía inglés)",
+     "netz": "red / malla",
+     "sein": "ser",
+     "tage": "día / jornada / dieta"
+    },
+    "5": {
+     "durch": "roer / carcomer (durchnagen)",
+     "einem": "un",
+     "eines": "un",
+     "gehen": "marcha / marcha atlética",
+     "nagte": "apagado (vía inglés)",
+     "pfote": "pata / pata de gallo",
+     "ruhig": "quieto / tranquilo / sosegado",
+     "seile": "cuerda / soga",
+     "seine": "ser",
+     "tages": "día / jornada / dieta",
+     "werde": "volverse / llegar a ser / ir a"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "klein",
+     "pista": "pequeño / bajo / chico"
+    },
+    {
+     "palabra": "ruhig",
+     "pista": "quieto / tranquilo / sosegado"
+    },
+    {
+     "palabra": "mich",
+     "pista": "me (vía inglés)"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "laufen",
+     "pista": "correr / andar / marchar"
+    },
+    {
+     "palabra": "baum",
+     "pista": "árbol"
+    },
+    {
+     "palabra": "fing",
+     "pista": "atrapado (vía inglés)"
+    },
+    {
+     "palabra": "lachen",
+     "pista": "risa"
+    },
+    {
+     "palabra": "schatten",
+     "pista": "sombra"
+    },
+    {
+     "palabra": "maus",
+     "pista": "ratón / laucha / mouse"
+    },
+    {
+     "palabra": "retten",
+     "pista": "rescate"
+    },
+    {
+     "palabra": "aufwecken",
+     "pista": "despertar"
+    },
+    {
+     "palabra": "befreien",
+     "pista": "liberarse / liberar"
+    },
+    {
+     "palabra": "idee",
+     "pista": "idea / noción"
+    },
+    {
+     "palabra": "netz",
+     "pista": "red / malla"
+    },
+    {
+     "palabra": "fangen",
+     "pista": "pillapilla / chucha / lleva"
+    },
+    {
+     "palabra": "flehen",
+     "pista": "implorar / rogar / suplicar"
+    },
+    {
+     "palabra": "kralle",
+     "pista": "garra"
+    },
+    {
+     "palabra": "pfote",
+     "pista": "pata / pata de gallo"
+    },
+    {
+     "palabra": "seil",
+     "pista": "cuerda / soga"
+    },
+    {
+     "palabra": "vergeln",
+     "pista": "vengar / retribuir"
+    }
+   ]
+  },
+  {
+   "slug": "der-nordwind-und-die-sonne",
+   "titulo": "Der Nordwind und die Sonne",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "als": "que / cuando / como",
+     "auf": "alcanzar",
+     "aus": "fin",
+     "dem": "que",
+     "den": "que",
+     "der": "que",
+     "des": "que",
+     "die": "que",
+     "mit": "con",
+     "sei": "ser",
+     "sie": "ella / ellos",
+     "und": "y",
+     "von": "de",
+     "wer": "quién / quien",
+     "wut": "rabia / furor / cólera",
+     "zog": "quitarse (la ropa) (ausziehen)"
+    },
+    "4": {
+     "dann": "después / luego / entonces",
+     "dass": "que",
+     "doch": "sí",
+     "ging": "fue / iba",
+     "ihre": "su / sus",
+     "luft": "aire",
+     "mann": "hombre / varón / marido",
+     "mehr": "más",
+     "ohne": "sin",
+     "sich": "se",
+     "wind": "viento / aire"
+    },
+    "5": {
+     "aller": "todo (vía inglés)",
+     "desto": "tanto / más",
+     "diese": "este",
+     "einem": "un",
+     "hitze": "calor / bochorno",
+     "kraft": "fuerza / eficacia / fibra",
+     "sanft": "suave",
+     "seine": "ser",
+     "sonne": "sol / Sol",
+     "weges": "camino / rumbo / manera",
+     "weise": "modo / manera / forma",
+     "wurde": "volverse / llegar a ser / ir a"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "scheinen",
+     "pista": "brillar / lucir / parecer"
+    },
+    {
+     "palabra": "zuerst",
+     "pista": "primero / antes"
+    },
+    {
+     "palabra": "mann",
+     "pista": "hombre / varón / marido"
+    },
+    {
+     "palabra": "beginnen",
+     "pista": "comenzó / empezó"
+    },
+    {
+     "palabra": "kraft",
+     "pista": "fuerza / eficacia / fibra"
+    },
+    {
+     "palabra": "merken",
+     "pista": "darse cuenta / reconocer"
+    },
+    {
+     "palabra": "stark",
+     "pista": "fuerte / intenso"
+    },
+    {
+     "palabra": "frei",
+     "pista": "libre / liberal / abierto"
+    },
+    {
+     "palabra": "erreichen",
+     "pista": "alcanzar / lograr / llegar"
+    },
+    {
+     "palabra": "luft",
+     "pista": "aire"
+    },
+    {
+     "palabra": "sonne",
+     "pista": "sol / Sol"
+    },
+    {
+     "palabra": "weise",
+     "pista": "modo / manera / forma"
+    },
+    {
+     "palabra": "wind",
+     "pista": "viento / aire"
+    },
+    {
+     "palabra": "heftig",
+     "pista": "intenso / violento"
+    },
+    {
+     "palabra": "versuchen",
+     "pista": "intentar / probar / tentar"
+    },
+    {
+     "palabra": "wanderer",
+     "pista": "excursionista"
+    },
+    {
+     "palabra": "aufgeben",
+     "pista": "rendirse / renunciar / cesar"
+    },
+    {
+     "palabra": "fest",
+     "pista": "fiesta / festividad / pachanga"
+    },
+    {
+     "palabra": "gelingen",
+     "pista": "salir bien"
+    },
+    {
+     "palabra": "gewalt",
+     "pista": "violencia / poder"
+    },
+    {
+     "palabra": "sanft",
+     "pista": "suave"
+    },
+    {
+     "palabra": "mantel",
+     "pista": "abrigo / revestimiento"
+    },
+    {
+     "palabra": "gewinnen",
+     "pista": "ganar / extraer / sacar"
+    },
+    {
+     "palabra": "besiegen",
+     "pista": "vencer / batir / superar"
+    },
+    {
+     "palabra": "beweisen",
+     "pista": "probar / demostrar / presentar pruebas"
+    },
+    {
+     "palabra": "nordwind",
+     "pista": "cierzo / viento del norte"
+    },
+    {
+     "palabra": "angenehm",
+     "pista": "agradable / amigo"
+    },
+    {
+     "palabra": "blasen",
+     "pista": "soplar / mamarlo (a) / succionarlo (a)"
+    },
+    {
+     "palabra": "erproben",
+     "pista": "probar"
+    },
+    {
+     "palabra": "hitze",
+     "pista": "calor / bochorno"
+    },
+    {
+     "palabra": "kleidung",
+     "pista": "ropa / vestidos / vestido"
+    },
+    {
+     "palabra": "lockern",
+     "pista": "aflojó"
+    },
+    {
+     "palabra": "nachgeben",
+     "pista": "agregar / ceder / caer"
+    },
+    {
+     "palabra": "sanftheit",
+     "pista": "tranquilidad (vía inglés)"
+    },
+    {
+     "palabra": "streiten",
+     "pista": "discutir / pelear / debatir"
+    },
+    {
+     "palabra": "vortritt",
+     "pista": "preferencia (vía inglés)"
+    }
+   ]
+  },
+  {
+   "slug": "der-su-e-brei",
+   "titulo": "Der süße Brei",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "als": "que / cuando / como",
+     "auf": "alcanzar",
+     "das": "el / la / eso",
+     "dem": "que",
+     "den": "que",
+     "der": "que",
+     "die": "que",
+     "ein": "un",
+     "ihm": "el (vía inglés)",
+     "ihr": "su",
+     "kam": "venir / llegar / volver",
+     "man": "alguien / se",
+     "mit": "con",
+     "not": "necesidad / emergencia",
+     "nun": "ahora / ya",
+     "nur": "solamente / sólo",
+     "sie": "ella / ellos",
+     "und": "y",
+     "war": "ser",
+     "wer": "quién / quien",
+     "wie": "como"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "alte": "alto",
+     "bald": "pronto / en breve",
+     "brei": "papilla / puré",
+     "dann": "después / luego / entonces",
+     "dass": "que",
+     "doch": "sí",
+     "dort": "allá / allí / ahí",
+     "eine": "un",
+     "ende": "fin / final",
+     "frau": "mujer / esposa / señora",
+     "ging": "fue / iba",
+     "haus": "casa / cámara",
+     "ihre": "su / sus",
+     "kind": "niño / niña / hijo",
+     "mehr": "más",
+     "nach": "a / hacia",
+     "rand": "borde / margen / rand",
+     "satt": "harto / saciado / lleno",
+     "sich": "se",
+     "steh": "detente / párate",
+     "topf": "olla / maceta / cazuela",
+     "voll": "lleno / pleno / borracho",
+     "wald": "bosque",
+     "welt": "mundo / Tierra / universo",
+     "wort": "palabra / vocablo"
+    },
+    "5": {
+     "armes": "brazo",
+     "armut": "pobreza",
+     "damit": "para que / a fin de que",
+     "durch": "a través / por / por medio",
+     "eines": "un",
+     "essen": "comida",
+     "floss": "fluyó",
+     "ganze": "todo / entero",
+     "guten": "bienes / bienes inmuebles / finca",
+     "hatte": "haber",
+     "hause": "casa",
+     "immer": "siempre",
+     "koche": "cocinar / cocer / hacer",
+     "lebte": "vida",
+     "sagen": "decir",
+     "sagte": "decir",
+     "seine": "ser",
+     "stadt": "ciudad / urbe",
+     "stieg": "subir (vía inglés)",
+     "tages": "día / jornada / dieta"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "sagen",
+     "pista": "decir"
+    },
+    {
+     "palabra": "mutter",
+     "pista": "madre / tuerca"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "machen",
+     "pista": "hacer"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "einmal",
+     "pista": "una vez"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "scheinen",
+     "pista": "brillar / lucir / parecer"
+    },
+    {
+     "palabra": "frau",
+     "pista": "mujer / esposa / señora"
+    },
+    {
+     "palabra": "wissen",
+     "pista": "conocimiento / saber"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "wort",
+     "pista": "palabra / vocablo"
+    },
+    {
+     "palabra": "endlich",
+     "pista": "limitado / finito / definitivo"
+    },
+    {
+     "palabra": "stehen",
+     "pista": "estar de pie / estar / estar en pie"
+    },
+    {
+     "palabra": "leben",
+     "pista": "vida"
+    },
+    {
+     "palabra": "weiter",
+     "pista": "más / adelante"
+    },
+    {
+     "palabra": "allein",
+     "pista": "solo"
+    },
+    {
+     "palabra": "sprechen",
+     "pista": "hablar"
+    },
+    {
+     "palabra": "kind",
+     "pista": "niño / niña / hijo"
+    },
+    {
+     "palabra": "wald",
+     "pista": "bosque"
+    },
+    {
+     "palabra": "ende",
+     "pista": "fin / final"
+    },
+    {
+     "palabra": "vergessen",
+     "pista": "olvido"
+    },
+    {
+     "palabra": "bringen",
+     "pista": "traer / llevar"
+    },
+    {
+     "palabra": "voll",
+     "pista": "lleno / pleno / borracho"
+    },
+    {
+     "palabra": "kennen",
+     "pista": "saber / conocer"
+    },
+    {
+     "palabra": "kochen",
+     "pista": "cocinar / cocer / hacer"
+    },
+    {
+     "palabra": "stadt",
+     "pista": "ciudad / urbe"
+    },
+    {
+     "palabra": "hunger",
+     "pista": "hambre / filo"
+    },
+    {
+     "palabra": "begegnen",
+     "pista": "encontrar a / afrontar"
+    },
+    {
+     "palabra": "schenken",
+     "pista": "donar / regalar / dedicar"
+    },
+    {
+     "palabra": "rand",
+     "pista": "borde / margen / rand"
+    },
+    {
+     "palabra": "welt",
+     "pista": "mundo / Tierra / universo"
+    },
+    {
+     "palabra": "brei",
+     "pista": "papilla / puré"
+    },
+    {
+     "palabra": "satt",
+     "pista": "harto / saciado / lleno"
+    },
+    {
+     "palabra": "ausgehen",
+     "pista": "salir / salir a divertirse / acabar"
+    },
+    {
+     "palabra": "bereits",
+     "pista": "ya"
+    },
+    {
+     "palabra": "fromm",
+     "pista": "piadoso / devoto"
+    },
+    {
+     "palabra": "abhelfen",
+     "pista": "poner remedio"
+    },
+    {
+     "palabra": "armut",
+     "pista": "pobreza"
+    },
+    {
+     "palabra": "hirsebrei",
+     "pista": "avenate (vía inglés)"
+    },
+    {
+     "palabra": "sogleich",
+     "pista": "en caliente"
+    },
+    {
+     "palabra": "topf",
+     "pista": "olla / maceta / cazuela"
+    }
+   ]
+  },
+  {
+   "slug": "die-ameise-und-die-grille",
+   "titulo": "Die Ameise und die Grille",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "den": "que",
+     "der": "que",
+     "die": "que",
+     "dir": "(a) ti / te",
+     "gab": "dio",
+     "ich": "yo",
+     "kam": "venir / llegar / volver",
+     "mir": "me (vía inglés)",
+     "mit": "con",
+     "rat": "aviso / consejo",
+     "sie": "ella / ellos",
+     "tun": "el hacer",
+     "und": "y",
+     "von": "de",
+     "zur": "cerrado"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "ging": "fue / iba",
+     "habe": "haber",
+     "komm": "ven",
+     "lang": "largo",
+     "lege": "disponer / colocar / juntar",
+     "mehr": "más",
+     "ohne": "sin",
+     "sang": "cantar",
+     "sich": "se",
+     "sing": "canta",
+     "tage": "día / jornada / dieta",
+     "viel": "mucho",
+     "wert": "valor / valía",
+     "wind": "viento / aire"
+    },
+    "5": {
+     "einen": "un",
+     "essen": "comida",
+     "hilfe": "ayuda / socorro",
+     "pause": "pausa / descanso / recreo",
+     "sagte": "decir",
+     "sonne": "sol / Sol",
+     "waren": "ser",
+     "warum": "por qué / porqué"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "sagen",
+     "pista": "decir"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "lang",
+     "pista": "largo"
+    },
+    {
+     "palabra": "geben",
+     "pista": "dar / donar / haber"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "fragen",
+     "pista": "preguntar / interrogar"
+    },
+    {
+     "palabra": "viel",
+     "pista": "mucho"
+    },
+    {
+     "palabra": "verstehen",
+     "pista": "entender / comprender / tener"
+    },
+    {
+     "palabra": "weiter",
+     "pista": "más / adelante"
+    },
+    {
+     "palabra": "lieb",
+     "pista": "amable / agradable / querido"
+    },
+    {
+     "palabra": "singen",
+     "pista": "cantar"
+    },
+    {
+     "palabra": "antworten",
+     "pista": "responder / contestar"
+    },
+    {
+     "palabra": "arbeiten",
+     "pista": "trabajar"
+    },
+    {
+     "palabra": "bitten",
+     "pista": "pedir / rogar"
+    },
+    {
+     "palabra": "arbeit",
+     "pista": "trabajo / labor"
+    },
+    {
+     "palabra": "sonne",
+     "pista": "sol / Sol"
+    },
+    {
+     "palabra": "wind",
+     "pista": "viento / aire"
+    },
+    {
+     "palabra": "hilfe",
+     "pista": "ayuda / socorro"
+    },
+    {
+     "palabra": "monat",
+     "pista": "mes"
+    },
+    {
+     "palabra": "sorgen",
+     "pista": "importar / preocuparse / cuidar"
+    },
+    {
+     "palabra": "lachen",
+     "pista": "risa"
+    },
+    {
+     "palabra": "zitternd",
+     "pista": "tembladero (vía inglés)"
+    },
+    {
+     "palabra": "grille",
+     "pista": "grillo"
+    },
+    {
+     "palabra": "sammeln",
+     "pista": "coleccionar / recoger / concentrar"
+    },
+    {
+     "palabra": "ameise",
+     "pista": "hormiga"
+    },
+    {
+     "palabra": "feld",
+     "pista": "campo / campo de batalla / pelotón"
+    },
+    {
+     "palabra": "pause",
+     "pista": "pausa / descanso / recreo"
+    },
+    {
+     "palabra": "winter",
+     "pista": "invierno"
+    },
+    {
+     "palabra": "anlegen",
+     "pista": "disponer / colocar / juntar"
+    },
+    {
+     "palabra": "bedeckt",
+     "pista": "cubierto (vía inglés)"
+    },
+    {
+     "palabra": "sommer",
+     "pista": "verano / estío"
+    },
+    {
+     "palabra": "zukunft",
+     "pista": "futuro / porvenir"
+    },
+    {
+     "palabra": "hungrig",
+     "pista": "hambre / hambriento / ávido"
+    },
+    {
+     "palabra": "kalt",
+     "pista": "frío / fiambre"
+    },
+    {
+     "palabra": "schnee",
+     "pista": "nieve"
+    },
+    {
+     "palabra": "wert",
+     "pista": "valor / valía"
+    },
+    {
+     "palabra": "wolltest",
+     "pista": "prueba (en compuesto)"
+    },
+    {
+     "palabra": "eisig",
+     "pista": "glacial"
+    },
+    {
+     "palabra": "korn",
+     "pista": "aguardiente"
+    },
+    {
+     "palabra": "solltest",
+     "pista": "prueba (en compuesto)"
+    },
+    {
+     "palabra": "vergingen",
+     "pista": "gen (en compuesto)"
+    },
+    {
+     "palabra": "vorrat",
+     "pista": "abasto / reserva / provisión"
+    },
+    {
+     "palabra": "vorsorge",
+     "pista": "prevención / previsión"
+    }
+   ]
+  },
+  {
+   "slug": "die-sterntaler",
+   "titulo": "Die Sterntaler",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "ach": "¡ ah !",
+     "als": "que / cuando / como",
+     "arm": "brazo",
+     "auf": "alcanzar",
+     "aus": "fin",
+     "bin": "ser",
+     "bis": "hasta",
+     "das": "el / la / eso",
+     "dem": "que",
+     "der": "que",
+     "die": "que",
+     "ein": "un",
+     "gab": "dio",
+     "gib": "da",
+     "gut": "bien / bueno",
+     "ich": "yo",
+     "ihm": "el (vía inglés)",
+     "mir": "me (vía inglés)",
+     "nun": "ahora / ya",
+     "und": "y",
+     "vom": "de",
+     "vor": "preparar (partícula separable de bereitet … vor)",
+     "war": "ser"
+    },
+    "4": {
+     "aufs": "abierto",
+     "brot": "pan",
+     "dann": "después / luego / entonces",
+     "dass": "que",
+     "doch": "sí",
+     "eben": "llano / plano",
+     "eine": "un",
+     "feld": "campo / campo de batalla / pelotón",
+     "ging": "fue / iba",
+     "kein": "ningún / no / ninguno",
+     "kind": "niño / niña / hijo",
+     "mann": "hombre / varón / marido",
+     "mehr": "más",
+     "noch": "todavía / aún / tampoco",
+     "sein": "ser",
+     "trug": "llevar / transportar / llevar consigo"
+    },
+    "5": {
+     "armer": "brazo",
+     "blieb": "quedar / quedarse / permanecer",
+     "darin": "dentro",
+     "einem": "un",
+     "essen": "comida",
+     "etwas": "algo",
+     "fromm": "piadoso / devoto",
+     "ganze": "todo / entero",
+     "hatte": "haber",
+     "jacke": "chaqueta / cazadora",
+     "kleid": "vestido / ropa / vestuario",
+     "leben": "vida",
+     "leibe": "cuerpo / barriga / vientre",
+     "neues": "nuevo / nueva",
+     "reich": "reino / imperio",
+     "seele": "alma",
+     "seine": "ser",
+     "stand": "estado / estado civil",
+     "taler": "escudo / tálero",
+     "waren": "ser"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "zimmer",
+     "pista": "habitación / cuarto / pieza"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "klein",
+     "pista": "pequeño / bajo / chico"
+    },
+    {
+     "palabra": "bleiben",
+     "pista": "quedar / quedarse / permanecer"
+    },
+    {
+     "palabra": "einmal",
+     "pista": "una vez"
+    },
+    {
+     "palabra": "geben",
+     "pista": "dar / donar / haber"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "eltern",
+     "pista": "padres"
+    },
+    {
+     "palabra": "leben",
+     "pista": "vida"
+    },
+    {
+     "palabra": "letzter",
+     "pista": "último (vía inglés)"
+    },
+    {
+     "palabra": "mann",
+     "pista": "hombre / varón / marido"
+    },
+    {
+     "palabra": "tragen",
+     "pista": "llevar / transportar / llevar consigo"
+    },
+    {
+     "palabra": "sprechen",
+     "pista": "hablar"
+    },
+    {
+     "palabra": "kind",
+     "pista": "niño / niña / hijo"
+    },
+    {
+     "palabra": "fein",
+     "pista": "fino / delicado / bien"
+    },
+    {
+     "palabra": "brot",
+     "pista": "pan"
+    },
+    {
+     "palabra": "lauter",
+     "pista": "sincero / puro"
+    },
+    {
+     "palabra": "leib",
+     "pista": "cuerpo / barriga / vientre"
+    },
+    {
+     "palabra": "sterben",
+     "pista": "morir / fallecer"
+    },
+    {
+     "palabra": "kleid",
+     "pista": "vestido / ropa / vestuario"
+    },
+    {
+     "palabra": "wohnen",
+     "pista": "vivir / habitar / residir"
+    },
+    {
+     "palabra": "zitternd",
+     "pista": "tembladero (vía inglés)"
+    },
+    {
+     "palabra": "begegnen",
+     "pista": "encontrar a / afrontar"
+    },
+    {
+     "palabra": "darin",
+     "pista": "dentro"
+    },
+    {
+     "palabra": "dunkeln",
+     "pista": "oscuro (vía inglés)"
+    },
+    {
+     "palabra": "sammeln",
+     "pista": "coleccionar / recoger / concentrar"
+    },
+    {
+     "palabra": "schenken",
+     "pista": "donar / regalar / dedicar"
+    },
+    {
+     "palabra": "feld",
+     "pista": "campo / campo de batalla / pelotón"
+    },
+    {
+     "palabra": "reichen",
+     "pista": "pasar / servir / bastar"
+    },
+    {
+     "palabra": "zuletzt",
+     "pista": "en último lugar / últimamente"
+    },
+    {
+     "palabra": "blank",
+     "pista": "en blanco (vía inglés)"
+    },
+    {
+     "palabra": "fromm",
+     "pista": "piadoso / devoto"
+    },
+    {
+     "palabra": "himmel",
+     "pista": "cielo / firmamento / Cielo"
+    },
+    {
+     "palabra": "hungrig",
+     "pista": "hambre / hambriento / ávido"
+    },
+    {
+     "palabra": "mitleidig",
+     "pista": "molesto (en compuesto)"
+    },
+    {
+     "palabra": "besitzen",
+     "pista": "poseer / tener"
+    },
+    {
+     "palabra": "jacke",
+     "pista": "chaqueta / cazadora"
+    },
+    {
+     "palabra": "linnen",
+     "pista": "lino (vía inglés)"
+    },
+    {
+     "palabra": "reich",
+     "pista": "reino / imperio"
+    },
+    {
+     "palabra": "seele",
+     "pista": "alma"
+    },
+    {
+     "palabra": "stern",
+     "pista": "estrella / astro / asterisco"
+    },
+    {
+     "palabra": "taler",
+     "pista": "escudo / tálero"
+    },
+    {
+     "palabra": "unterwegs",
+     "pista": "en camino / en el camino / de un lado para el otro"
+    }
+   ]
+  },
+  {
+   "slug": "rotkappchen",
+   "titulo": "Rotkäppchen",
+   "nivel": "intermedio",
+   "escalera": {
+    "3": {
+     "als": "que / cuando / como",
+     "auf": "alcanzar",
+     "aus": "fin",
+     "bei": "cerca de / en casa de / durante",
+     "das": "el / la / eso",
+     "dem": "que",
+     "den": "que",
+     "der": "que",
+     "die": "que",
+     "ein": "un",
+     "gab": "dio",
+     "geh": "ve / anda",
+     "gut": "bien / bueno",
+     "hat": "haber",
+     "her": "aquí / acá",
+     "hin": "acostarse / tumbarse (hinlegen)",
+     "ich": "yo",
+     "ihm": "el (vía inglés)",
+     "ihr": "su",
+     "ist": "es / está",
+     "kam": "venir / llegar / volver",
+     "mit": "con",
+     "nur": "solamente / sólo",
+     "sie": "ella / ellos",
+     "tag": "día / jornada / dieta",
+     "tot": "muerto / fallecido / inanimado",
+     "und": "y",
+     "vom": "de",
+     "war": "ser",
+     "was": "qué / que / algo",
+     "weg": "camino / rumbo / manera",
+     "wie": "como",
+     "zog": "ponerse (la ropa) (anziehen)",
+     "zum": "al / hacia el",
+     "zur": "cerrado"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "alte": "alto",
+     "arme": "brazo",
+     "bett": "cama / lecho / cauce",
+     "brav": "obediente / bravo",
+     "dann": "después / luego / entonces",
+     "dass": "que",
+     "dein": "tu / tuyo",
+     "dich": "a ti",
+     "ding": "cosa",
+     "dorf": "pueblo / aldea",
+     "eine": "un",
+     "fiel": "caer / abandonar / dejar caer",
+     "fing": "empezar / comenzar (anfangen)",
+     "frau": "mujer / esposa / señora",
+     "ging": "fue / iba",
+     "hand": "mano",
+     "hast": "haber",
+     "haus": "casa / cámara",
+     "hier": "aquí / acá",
+     "ihre": "su / sus",
+     "kann": "capacidad / saber",
+     "kaum": "apenas / a duras penas",
+     "komm": "ven",
+     "laut": "sonido",
+     "lief": "correr / andar / marchar",
+     "maul": "boca / hocico",
+     "mehr": "más",
+     "noch": "todavía / aún / tampoco",
+     "ohne": "sin",
+     "samt": "terciopelo",
+     "sich": "se",
+     "sieh": "mira",
+     "soll": "deber / haber de",
+     "tier": "animal / bestia",
+     "trat": "pedalear / avanzar / entrar",
+     "wald": "bosque",
+     "wege": "camino / rumbo / manera",
+     "weil": "porque / ya que / puesto que",
+     "wein": "vid / vino / uva",
+     "wenn": "cuando / si / aunque",
+     "will": "de lana",
+     "wolf": "lobo / Lupus / el Lobo",
+     "wort": "palabra / vocablo"
+    },
+    "5": {
+     "alles": "todo (vía inglés)",
+     "ankam": "llegar / depender de",
+     "ansah": "reputación / vista / apariencia",
+     "augen": "ojo / punto / yema",
+     "bauch": "vientre / barriga / abdomen",
+     "beide": "ambos",
+     "boden": "tierra / terreno / fondo",
+     "bring": "trae",
+     "damit": "para que / a fin de que",
+     "eilte": "correr",
+     "einen": "un",
+     "eines": "un",
+     "einst": "antaño / algún día",
+     "essen": "comida",
+     "etwas": "algo",
+     "fehlt": "falta / carencia / estar ausente",
+     "guten": "bienes / bienes inmuebles / finca",
+     "guter": "bienes / bienes inmuebles / finca",
+     "halbe": "mitad / medio",
+     "hatte": "haber",
+     "haube": "cofia / secador",
+     "jeder": "cada / todo / cada uno",
+     "junge": "chico / muchacho / joven",
+     "krank": "enfermo / malo",
+     "lange": "largo",
+     "leben": "vida",
+     "legte": "poner / acostar / tender",
+     "musst": "debes / tienes que",
+     "neben": "al lado / a la vera de / junto",
+     "nicht": "no",
+     "offen": "abierto",
+     "ohren": "oído / oreja",
+     "rotem": "rojo",
+     "sagen": "decir",
+     "sagte": "decir",
+     "schon": "ya",
+     "sehen": "ver",
+     "seine": "ser",
+     "stand": "estado / estado civil",
+     "stube": "cámara",
+     "tages": "día / jornada / dieta",
+     "warum": "por qué / porqué",
+     "wohin": "adónde / hacia dónde",
+     "wurde": "volverse / llegar a ser / ir a",
+     "zarte": "suave / delicado / frágil"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "sagen",
+     "pista": "decir"
+    },
+    {
+     "palabra": "mutter",
+     "pista": "madre / tuerca"
+    },
+    {
+     "palabra": "sehen",
+     "pista": "ver"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "zimmer",
+     "pista": "habitación / cuarto / pieza"
+    },
+    {
+     "palabra": "hand",
+     "pista": "mano"
+    },
+    {
+     "palabra": "machen",
+     "pista": "hacer"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "klein",
+     "pista": "pequeño / bajo / chico"
+    },
+    {
+     "palabra": "lang",
+     "pista": "largo"
+    },
+    {
+     "palabra": "einmal",
+     "pista": "una vez"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "auge",
+     "pista": "ojo / punto / yema"
+    },
+    {
+     "palabra": "denken",
+     "pista": "pensamiento / meditación / reflexión"
+    },
+    {
+     "palabra": "geben",
+     "pista": "dar / donar / haber"
+    },
+    {
+     "palabra": "frau",
+     "pista": "mujer / esposa / señora"
+    },
+    {
+     "palabra": "wissen",
+     "pista": "conocimiento / saber"
+    },
+    {
+     "palabra": "bett",
+     "pista": "cama / lecho / cauce"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "fallen",
+     "pista": "caer / abandonar / dejar caer"
+    },
+    {
+     "palabra": "wort",
+     "pista": "palabra / vocablo"
+    },
+    {
+     "palabra": "endlich",
+     "pista": "limitado / finito / definitivo"
+    },
+    {
+     "palabra": "stehen",
+     "pista": "estar de pie / estar / estar en pie"
+    },
+    {
+     "palabra": "stimme",
+     "pista": "voz / voto"
+    },
+    {
+     "palabra": "leben",
+     "pista": "vida"
+    },
+    {
+     "palabra": "abwenden",
+     "pista": "apartar / evitar"
+    },
+    {
+     "palabra": "boden",
+     "pista": "tierra / terreno / fondo"
+    },
+    {
+     "palabra": "legen",
+     "pista": "poner / acostar / tender"
+    },
+    {
+     "palabra": "suchen",
+     "pista": "buscar"
+    },
+    {
+     "palabra": "treten",
+     "pista": "pedalear / avanzar / entrar"
+    },
+    {
+     "palabra": "gerade",
+     "pista": "línea recta / recta / recto"
+    },
+    {
+     "palabra": "kaum",
+     "pista": "apenas / a duras penas"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "schwer",
+     "pista": "pesado / difícil"
+    },
+    {
+     "palabra": "laufen",
+     "pista": "correr / andar / marchar"
+    },
+    {
+     "palabra": "lieb",
+     "pista": "amable / agradable / querido"
+    },
+    {
+     "palabra": "allein",
+     "pista": "solo"
+    },
+    {
+     "palabra": "tragen",
+     "pista": "llevar / transportar / llevar consigo"
+    },
+    {
+     "palabra": "darauf",
+     "pista": "en / eso / encima"
+    },
+    {
+     "palabra": "dich",
+     "pista": "a ti"
+    },
+    {
+     "palabra": "sprechen",
+     "pista": "hablar"
+    },
+    {
+     "palabra": "wald",
+     "pista": "bosque"
+    },
+    {
+     "palabra": "bekommen",
+     "pista": "recibir / obtener"
+    },
+    {
+     "palabra": "bringen",
+     "pista": "traer / llevar"
+    },
+    {
+     "palabra": "antworten",
+     "pista": "responder / contestar"
+    },
+    {
+     "palabra": "anziehen",
+     "pista": "ponerse / vestirse / vestir"
+    },
+    {
+     "palabra": "erkennen",
+     "pista": "distinguir / ver / reconocer"
+    },
+    {
+     "palabra": "anfangen",
+     "pista": "comenzar / empezar"
+    },
+    {
+     "palabra": "ding",
+     "pista": "cosa"
+    },
+    {
+     "palabra": "eilen",
+     "pista": "correr"
+    },
+    {
+     "palabra": "halb",
+     "pista": "mitad / medio"
+    },
+    {
+     "palabra": "heraussag",
+     "pista": "afuera"
+    },
+    {
+     "palabra": "stunde",
+     "pista": "hora"
+    },
+    {
+     "palabra": "springen",
+     "pista": "saltar / brincar"
+    },
+    {
+     "palabra": "weilchen",
+     "pista": "mientras (vía inglés)"
+    },
+    {
+     "palabra": "blume",
+     "pista": "flor / espuma / buqué"
+    },
+    {
+     "palabra": "krank",
+     "pista": "enfermo / malo"
+    },
+    {
+     "palabra": "laut",
+     "pista": "sonido"
+    },
+    {
+     "palabra": "wolf",
+     "pista": "lobo / Lupus / el Lobo"
+    },
+    {
+     "palabra": "kleid",
+     "pista": "vestido / ropa / vestuario"
+    },
+    {
+     "palabra": "wohnen",
+     "pista": "vivir / habitar / residir"
+    },
+    {
+     "palabra": "bauch",
+     "pista": "vientre / barriga / abdomen"
+    },
+    {
+     "palabra": "begegnen",
+     "pista": "encontrar a / afrontar"
+    },
+    {
+     "palabra": "kuchen",
+     "pista": "pastel / tarta"
+    },
+    {
+     "palabra": "schenken",
+     "pista": "donar / regalar / dedicar"
+    },
+    {
+     "palabra": "tier",
+     "pista": "animal / bestia"
+    },
+    {
+     "palabra": "erwachen",
+     "pista": "despertamiento / despertar"
+    },
+    {
+     "palabra": "fehlen",
+     "pista": "falta / carencia / estar ausente"
+    },
+    {
+     "palabra": "klopfen",
+     "pista": "percutir / golpetear / aporrear"
+    },
+    {
+     "palabra": "ankommen",
+     "pista": "llegar / depender de"
+    },
+    {
+     "palabra": "ansehen",
+     "pista": "reputación / vista / apariencia"
+    },
+    {
+     "palabra": "junge",
+     "pista": "chico / muchacho / joven"
+    },
+    {
+     "palabra": "nachsehen",
+     "pista": "enterarse / informarse / examinar"
+    },
+    {
+     "palabra": "stube",
+     "pista": "cámara"
+    },
+    {
+     "palabra": "wundern",
+     "pista": "se asombró / se extrañó"
+    },
+    {
+     "palabra": "aufsetzen",
+     "pista": "poner / enderezar / poner derecho"
+    },
+    {
+     "palabra": "bisse",
+     "pista": "bocado"
+    },
+    {
+     "palabra": "brav",
+     "pista": "obediente / bravo"
+    },
+    {
+     "palabra": "danach",
+     "pista": "después / eso"
+    },
+    {
+     "palabra": "einst",
+     "pista": "antaño / algún día"
+    },
+    {
+     "palabra": "flasche",
+     "pista": "botella"
+    },
+    {
+     "palabra": "samt",
+     "pista": "terciopelo"
+    },
+    {
+     "palabra": "stein",
+     "pista": "piedra / cálculo / hueso"
+    },
+    {
+     "palabra": "zart",
+     "pista": "suave / delicado / frágil"
+    },
+    {
+     "palabra": "dorf",
+     "pista": "pueblo / aldea"
+    },
+    {
+     "palabra": "einlassen",
+     "pista": "admitir / vertir / colocar"
+    },
+    {
+     "palabra": "erwischen",
+     "pista": "atrapas / pillas"
+    },
+    {
+     "palabra": "fliehen",
+     "pista": "huir / fugarse"
+    },
+    {
+     "palabra": "fressen",
+     "pista": "bodrio / pasto"
+    },
+    {
+     "palabra": "haube",
+     "pista": "cofia / secador"
+    },
+    {
+     "palabra": "lebtag",
+     "pista": "vida (en toda la vida)"
+    },
+    {
+     "palabra": "liebhaben",
+     "pista": "quería / amaba"
+    },
+    {
+     "palabra": "listig",
+     "pista": "astuto / astuta"
+    },
+    {
+     "palabra": "maul",
+     "pista": "boca / hocico"
+    },
+    {
+     "palabra": "schere",
+     "pista": "tijeras / tijera / pinza"
+    },
+    {
+     "palabra": "schlafend",
+     "pista": "somnífero (vía inglés)"
+    },
+    {
+     "palabra": "verbieten",
+     "pista": "prohibir"
+    },
+    {
+     "palabra": "vergiss",
+     "pista": "cálculo (en compuesto)"
+    },
+    {
+     "palabra": "wein",
+     "pista": "vid / vino / uva"
+    }
+   ]
+  },
+  {
+   "slug": "die-verwandlung",
+   "titulo": "Die Verwandlung",
+   "nivel": "avanzado",
+   "escalera": {
+    "3": {
+     "ach": "¡ ah !",
+     "all": "todo",
+     "als": "que / cuando / como",
+     "ans": "encendido / prendido",
+     "arm": "brazo",
+     "art": "tipo / clase / manera",
+     "auf": "alcanzar",
+     "aus": "fin",
+     "bat": "pedir / rogar",
+     "bei": "cerca de / en casa de / durante",
+     "bin": "ser",
+     "bis": "hasta",
+     "dar": "representar",
+     "das": "el / la / eso",
+     "dem": "que",
+     "den": "que",
+     "der": "que",
+     "des": "que",
+     "die": "que",
+     "dir": "(a) ti / te",
+     "ehe": "matrimonio",
+     "ein": "un",
+     "eng": "estrecho / angosto",
+     "gab": "dio",
+     "gar": "cocido / hecho / finalizado",
+     "gas": "gas / acelerador",
+     "gut": "bien / bueno",
+     "hat": "haber",
+     "her": "aquí / acá",
+     "hin": "sentarse",
+     "hob": "levantar / elevar / aumentar",
+     "hut": "sombrero / sombrerillo",
+     "ich": "yo",
+     "ihm": "el (vía inglés)",
+     "ihn": "lo / le",
+     "ihr": "su",
+     "ins": "en / dentro de / a",
+     "ist": "es / está",
+     "kam": "venir / llegar / volver",
+     "lag": "yacer / tender / estar",
+     "los": "soltar / liberar",
+     "mal": "marca / vez",
+     "man": "alguien / se",
+     "mir": "me (vía inglés)",
+     "mit": "con",
+     "neu": "nuevo / nueva",
+     "nie": "nunca",
+     "not": "necesidad / emergencia",
+     "nun": "ahora / ya",
+     "nur": "solamente / sólo",
+     "oft": "a menudo / frecuentemente",
+     "ohr": "oído / oreja",
+     "rat": "aviso / consejo",
+     "sah": "ver",
+     "sei": "ser",
+     "sie": "ella / ellos",
+     "tag": "día / jornada / dieta",
+     "tat": "el hacer",
+     "ton": "arcilla / sonido / tono",
+     "tot": "muerto / fallecido / inanimado",
+     "tun": "el hacer",
+     "uhr": "reloj / hora",
+     "und": "y",
+     "uns": "se",
+     "vom": "de",
+     "von": "de",
+     "vor": "preparar (partícula separable de bereitet … vor)",
+     "war": "ser",
+     "was": "qué / que / algo",
+     "weg": "camino / rumbo / manera",
+     "wer": "quién / quien",
+     "wie": "como",
+     "wir": "nosotros / nosotras",
+     "wut": "rabia / furor / cólera",
+     "zog": "tirar / sacar / extraer",
+     "zug": "tren / tracción / tensión",
+     "zum": "al / hacia el",
+     "zur": "cerrado"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "acht": "ocho / atención / cuidado",
+     "alle": "agotado",
+     "also": "así / de este modo / de tal manera",
+     "alte": "alto",
+     "anna": "Ana",
+     "arme": "brazo",
+     "arzt": "médico / doctor / físico",
+     "atem": "aliento / respiración",
+     "auch": "también / aun / asimismo",
+     "aufs": "abierto",
+     "auge": "ojo / punto / yema",
+     "bald": "pronto / en breve",
+     "band": "tomo / volumen",
+     "bank": "banco / escaño / banca",
+     "beim": "cerca de / en casa de / durante",
+     "bein": "pierna / pata",
+     "bett": "cama / lecho / cauce",
+     "bier": "cerveza / caña",
+     "bild": "imagen / cuadro / pintura",
+     "bist": "ser",
+     "brot": "pan",
+     "chef": "jefe / patrón",
+     "dame": "señora / dama / reina",
+     "dann": "después / luego / entonces",
+     "darf": "poder / permitido / tener",
+     "dazu": "a eso / a esto / además",
+     "denn": "pero / pues",
+     "dich": "a ti",
+     "dies": "este",
+     "doch": "sí",
+     "dort": "allá / allí / ahí",
+     "drei": "número tres / tres",
+     "drin": "dentro / en esto",
+     "eben": "llano / plano",
+     "ecke": "rincón / ángulo / esquina",
+     "eher": "antes",
+     "eile": "prisa / apuro",
+     "eine": "un",
+     "ende": "fin / final",
+     "enge": "estrecho / angosto",
+     "erde": "tierra / suelo / Tierra",
+     "erst": "primero / en primer lugar / apenas",
+     "etwa": "aproximadamente / por ejemplo",
+     "euch": "mismos (vía inglés)",
+     "fall": "caída / caso / causa",
+     "fand": "encontrar / hallar / aparecer",
+     "fast": "casi",
+     "faul": "podrido / perezoso / flojo",
+     "fest": "fiesta / festividad / pachanga",
+     "fett": "grasa",
+     "fiel": "caer / abandonar / dejar caer",
+     "fing": "atrapado (vía inglés)",
+     "fixe": "definido (vía inglés)",
+     "flog": "vuelo",
+     "form": "forma / molde",
+     "frau": "mujer / esposa / señora",
+     "frei": "libre / liberal / abierto",
+     "froh": "contento / alegre / feliz",
+     "fuhr": "pasar",
+     "ganz": "todo / entero",
+     "gebe": "rendirse / renunciar / cesar",
+     "geht": "va / ir",
+     "geld": "dinero / plata / billete",
+     "gern": "de buena gana / con mucho gusto / frecuentemente",
+     "gibt": "dar / donar / haber",
+     "ging": "fue / iba",
+     "glas": "vidrio / cristal / vaso",
+     "gott": "dios / Dios",
+     "gute": "bienes / bienes inmuebles / finca",
+     "haar": "pelo / cabello / tricoma",
+     "habe": "haber",
+     "halb": "mitad / medio",
+     "half": "ayudar",
+     "hals": "cuello / garganta",
+     "halt": "parada / alto",
+     "hand": "mano",
+     "hart": "duro / rígido / fuerte",
+     "hast": "haber",
+     "hemd": "camisa",
+     "herr": "señor / amo / Señor",
+     "herz": "corazón",
+     "hier": "aquí / acá",
+     "hoch": "anticiclón",
+     "hohe": "anticiclón",
+     "idee": "idea / noción",
+     "ihre": "su / sus",
+     "inne": "pausa (vía inglés)",
+     "jahr": "año",
+     "jede": "cada / todo / cada uno",
+     "kalt": "frío / fiambre",
+     "kann": "capacidad / saber",
+     "kaum": "apenas / a duras penas",
+     "kein": "ningún / no / ninguno",
+     "kind": "niño / niña / hijo",
+     "kinn": "mentón / barbilla",
+     "klar": "claro",
+     "klug": "inteligente / listo / sabio",
+     "komm": "ven",
+     "kopf": "cabeza",
+     "kram": "trastos / chismes / chécheres",
+     "kurz": "corto / breve",
+     "lage": "ubicación / sitio / posición",
+     "lang": "largo",
+     "last": "carga",
+     "lauf": "carrera",
+     "laut": "sonido",
+     "leer": "vacío",
+     "leib": "cuerpo / barriga / vientre",
+     "lieb": "amable / agradable / querido",
+     "lief": "correr / andar / marchar",
+     "litt": "sufrimiento / dolor / enfermedad",
+     "luft": "aire",
+     "lust": "gana / placer / deseo",
+     "mach": "número Mach (vía inglés)",
+     "male": "marca / vez",
+     "mann": "hombre / varón / marido",
+     "matt": "mate / bajo",
+     "mehr": "más",
+     "mein": "mi / mío",
+     "mich": "me (vía inglés)",
+     "mund": "boca",
+     "nach": "a / hacia",
+     "nahe": "cercano / cercana",
+     "nahm": "tomar / coger / agarrar",
+     "napf": "escudilla / cuenca / fuente",
+     "nase": "nariz / napias",
+     "nein": "no",
+     "nett": "amable / bonito",
+     "neue": "nuevo / nueva",
+     "noch": "todavía / aún / tampoco",
+     "oben": "arriba / alto",
+     "oder": "Óder / Odra",
+     "ohne": "sin",
+     "paar": "pareja / par",
+     "plan": "plan / plano",
+     "pult": "pupitre",
+     "quer": "a través / de través",
+     "raum": "espacio / habitación / cuarto",
+     "rede": "discurso / alocución",
+     "rieb": "rallado (vía inglés)",
+     "rief": "llamar",
+     "rock": "rock",
+     "ruhe": "calma / tranquilidad / reposo",
+     "sage": "decir",
+     "samt": "terciopelo",
+     "satt": "harto / saciado / lleno",
+     "sehe": "ver",
+     "sehr": "muy",
+     "seht": "ver",
+     "sein": "ser",
+     "seit": "desde",
+     "sich": "se",
+     "sieh": "mira",
+     "sind": "ser",
+     "sinn": "sentido / significado",
+     "sofa": "sofá / sillón",
+     "sohn": "hijo / retoño",
+     "soll": "deber / haber de",
+     "tage": "día / jornada / dieta",
+     "teil": "parte",
+     "tief": "depresión",
+     "tier": "animal / bestia",
+     "tode": "muerte",
+     "traf": "encontrar / localizar",
+     "trat": "pedalear / avanzar / entrar",
+     "trug": "llevar / transportar / llevar consigo",
+     "viel": "mucho",
+     "vier": "cuatro",
+     "voll": "lleno / pleno / borracho",
+     "wand": "pared / tabique / frente",
+     "warf": "parir / lanzar / echar",
+     "weil": "porque / ya que / puesto que",
+     "weit": "extenso / lejano",
+     "welt": "mundo / Tierra / universo",
+     "wenn": "cuando / si / aunque",
+     "wild": "caza / venado",
+     "will": "de lana",
+     "wind": "viento / aire",
+     "wird": "volverse / llegar a ser / ir a",
+     "wohl": "bienestar / bien",
+     "wort": "palabra / vocablo",
+     "wurf": "tiro / camada / cría",
+     "zahl": "número / sello",
+     "zehn": "diez",
+     "zeit": "tiempo",
+     "zeug": "cosa",
+     "zwar": "ciertamente / por cierto / sin duda",
+     "zwei": "dos"
+    },
+    "5": {
+     "abend": "tarde / noche / víspera",
+     "ahnen": "temer / intuir / presentir",
+     "allem": "agotado",
+     "allen": "Allen",
+     "aller": "todo (vía inglés)",
+     "alles": "todo (vía inglés)",
+     "allzu": "demasiado",
+     "alten": "alto",
+     "alter": "alto",
+     "altes": "alto",
+     "angst": "miedo / ansiedad / temor",
+     "anruf": "llamada / llamamiento",
+     "ansah": "reputación / vista / apariencia",
+     "apfel": "manzana / poma / manzano",
+     "armen": "brazo",
+     "atmen": "respirar",
+     "augen": "ojo / punto / yema",
+     "bauch": "vientre / barriga / abdomen",
+     "beide": "ambos",
+     "beine": "pierna / pata",
+     "bekam": "recibir / obtener",
+     "beleg": "evidencia / prueba / recibo",
+     "beruf": "profesión / oficio",
+     "besen": "escoba",
+     "beste": "bienes / bienes inmuebles / finca",
+     "bette": "cama / lecho / cauce",
+     "bevor": "ser inminente",
+     "bitte": "petición / solicitud",
+     "blatt": "hoja / folio / gaceta",
+     "blaue": "azul / celeste",
+     "blick": "mirada / vistazo",
+     "blieb": "quedar / quedarse / permanecer",
+     "boden": "tierra / terreno / fondo",
+     "bogen": "arco / curva / hoja",
+     "brach": "romper / partir / quebrarse",
+     "breit": "ancho / amplio / extenso",
+     "brust": "pecho / tórax / seno",
+     "chefs": "jefe / patrón",
+     "dabei": "ahí / por / con ello",
+     "daher": "por consiguiente / de allá / de allí",
+     "dahin": "allí / hacia allí",
+     "damit": "para que / a fin de que",
+     "danke": "gracias",
+     "daran": "tecnología de la información (vía inglés)",
+     "darin": "dentro",
+     "darum": "en conclusión",
+     "davon": "de allí / sobre eso",
+     "decke": "cubierta / frazada / cobija",
+     "degen": "espada",
+     "demut": "humildad",
+     "denen": "que",
+     "denkt": "pensamiento / meditación / reflexión",
+     "deren": "que",
+     "desto": "tanto / más",
+     "diese": "este",
+     "dinge": "cosa",
+     "drang": "ímpetu",
+     "dreht": "volver / voltear / dar media vuelta",
+     "durch": "a través / por / por medio",
+     "ehren": "honor / orgullo",
+     "eilig": "apresurado / apresurada",
+     "eilte": "correr",
+     "einem": "un",
+     "einen": "un",
+     "einer": "una",
+     "eines": "un",
+     "empor": "hacia arriba",
+     "enden": "fin / final",
+     "engen": "estrecho / angosto",
+     "erhob": "elevar / levantar / recolectar",
+     "ernst": "seriedad / rigor / severidad",
+     "erste": "primero",
+     "essen": "comida",
+     "etwas": "algo",
+     "ewige": "eterno / eternal",
+     "fahre": "ir / andar / ir en coche",
+     "fahrt": "viaje / velocidad",
+     "falle": "caída / caso / causa",
+     "faust": "puño",
+     "feder": "pluma / pena / plumilla",
+     "feind": "enemigo / adversario",
+     "feine": "fino / delicado / bien",
+     "ferne": "lejanía / tierras lejanas",
+     "feste": "fiesta / festividad / pachanga",
+     "feuer": "fuego / lumbre / incendio",
+     "firma": "empresa / firma",
+     "flach": "plano / llano / superficial",
+     "fleck": "mancha / mácula / punto",
+     "frage": "pregunta / cuestión",
+     "freie": "libre / liberal / abierto",
+     "front": "frente (vía inglés)",
+     "gabel": "tenedor / horca / horquilla",
+     "ganze": "todo / entero",
+     "gasse": "calleja / callejuela",
+     "geben": "dar / donar / haber",
+     "gebot": "mandamiento / orden / precepto",
+     "gegen": "contra / contrario / en contra de",
+     "gehen": "marcha / marcha atlética",
+     "genau": "exacto / precisamente",
+     "genug": "bastante / suficiente / abastanza",
+     "gerne": "con mucho gusto / con gusto / gustoso",
+     "getan": "el hacer",
+     "glitt": "deslizada (vía inglés)",
+     "graue": "gris",
+     "grete": "Rita",
+     "grund": "causa / razón / terreno",
+     "guten": "bienes / bienes inmuebles / finca",
+     "gutes": "Guido (vía inglés)",
+     "haare": "pelo / cabello / tricoma",
+     "haben": "haber",
+     "hatte": "haber",
+     "hause": "casa",
+     "heben": "levantar / elevar / aumentar",
+     "herab": "deprimido (vía inglés)",
+     "heran": "acercar",
+     "herrn": "señor / amo / Señor",
+     "herum": "alrededor de / en torno a",
+     "heute": "hoy",
+     "hielt": "tener / aguantar / sostener",
+     "hilfe": "ayuda / socorro",
+     "hoben": "levantar / elevar / aumentar",
+     "hohen": "anticiclón",
+     "holen": "recoger / aliento / inhalar",
+     "holte": "recoger / aliento / inhalar",
+     "hotel": "hotel / albergue",
+     "ihnen": "les",
+     "ihrem": "su",
+     "ihren": "su",
+     "ihrer": "su",
+     "ihres": "su",
+     "immer": "siempre",
+     "innen": "dentro",
+     "jagte": "cazar / seguir / correr",
+     "jahre": "año",
+     "jedem": "cada / todo / cada uno",
+     "jeden": "cada / todo / cada uno",
+     "jeder": "cada / todo / cada uno",
+     "jedes": "cada / todo / cada uno",
+     "jenem": "aquél / ésa / aquélla",
+     "jener": "aquél / ésa / aquélla",
+     "jetzt": "ahora / ya",
+     "junge": "chico / muchacho / joven",
+     "kamen": "venir / llegar / volver",
+     "kanne": "jarra",
+     "kappe": "capucha / cerradero",
+     "keine": "ningún / no / ninguno",
+     "kiste": "caja / cajón / cafetera",
+     "klage": "lamentación / lamento / queja",
+     "klang": "tintinear / campanillear / sonar",
+     "klare": "claro",
+     "kleid": "vestido / ropa / vestuario",
+     "knapp": "escaso / corto / ajustado",
+     "komme": "venir / llegar / volver",
+     "kommt": "venir / llegar / volver",
+     "kopfe": "cabeza",
+     "krach": "ruido / alboroto / jaleo",
+     "kraft": "fuerza / eficacia / fibra",
+     "krank": "enfermo / malo",
+     "kreis": "circunscripción / distrito / sector",
+     "kreuz": "cruz / riñones / pinta",
+     "kurze": "corto / breve",
+     "lagen": "yacer / tender / estar",
+     "lange": "largo",
+     "lasen": "lectura",
+     "laufe": "carrera",
+     "laune": "humor",
+     "leben": "vida",
+     "lebte": "vida",
+     "leder": "cuero / piel",
+     "leere": "bobina (vía inglés)",
+     "legte": "poner / acostar / tender",
+     "leibe": "cuerpo / barriga / vientre",
+     "leise": "bajo / silencioso / silente",
+     "leute": "gente",
+     "licht": "luz / alumbrado / ilustración",
+     "liebe": "amable / agradable / querido",
+     "liebt": "amar / querer",
+     "liege": "yacer / tender / estar",
+     "liegt": "yacer / tender / estar",
+     "liest": "lectura",
+     "linie": "línea recta / línea",
+     "linke": "izquierdo / da izquierda / izquierdista",
+     "links": "a la izquierda",
+     "lobte": "alabar / elogiar",
+     "lunge": "pulmón",
+     "mache": "hacer",
+     "macht": "hacer",
+     "mager": "magro / flaco / flamenco",
+     "meine": "mi / mío",
+     "meist": "mayor / mayoría / parte",
+     "milch": "leche",
+     "mitte": "medio / centro",
+     "monat": "mes",
+     "munde": "boca",
+     "musik": "música",
+     "nacht": "noche",
+     "nahen": "cercano / próximo",
+     "namen": "nombre / denominación",
+     "narbe": "cicatriz / estigma",
+     "nebel": "niebla / bruma / nebulosa",
+     "neben": "al lado / a la vera de / junto",
+     "nehmt": "tomar / coger / agarrar",
+     "neuen": "nuevo / nueva",
+     "nicht": "no",
+     "noten": "nota / billete",
+     "offen": "abierto",
+     "ohres": "oído / oreja",
+     "opfer": "ofrenda / sacrificio / víctima",
+     "pfiff": "silbido",
+     "plage": "incordio",
+     "platz": "plaza / lugar / sitio",
+     "plump": "tosco",
+     "preis": "precio / premio",
+     "rande": "borde / margen / rand",
+     "rasch": "rápido / veloz",
+     "rauch": "humo",
+     "recht": "derecho / pretensión",
+     "reden": "discurso / alocución",
+     "regen": "lluvia",
+     "reine": "estufa",
+     "reise": "viaje",
+     "rings": "por acá (vía inglés)",
+     "rohen": "crudo",
+     "roten": "rojo",
+     "rufen": "llamar",
+     "ruhig": "quieto / tranquilo / sosegado",
+     "ruhte": "reposar / descansar / parar",
+     "runde": "vuelta / ronda / asalto",
+     "sache": "cosa / objeto / asunto",
+     "sagen": "decir",
+     "sagte": "decir",
+     "sahen": "ver",
+     "sauce": "salsa (vía inglés)",
+     "saust": "flash (vía inglés)",
+     "scham": "vergüenza",
+     "scheu": "timidez",
+     "schob": "anterior (vía inglés)",
+     "schon": "ya",
+     "sechs": "seis",
+     "sehen": "ver",
+     "seien": "ser",
+     "seine": "ser",
+     "seite": "lado / faz / página",
+     "sieht": "ver",
+     "sinne": "sentido / significado",
+     "sitzt": "sentarse / estar / sentado",
+     "sogar": "incluso / hasta",
+     "sohle": "planta / suela / fondo",
+     "solle": "deber / haber de",
+     "sonne": "sol / Sol",
+     "sonst": "por lo demás / aparte de esto",
+     "sorge": "preocupación / inquietud / cuidado",
+     "spiel": "juego",
+     "stadt": "ciudad / urbe",
+     "stand": "estado / estado civil",
+     "stark": "fuerte / intenso",
+     "starr": "rígido",
+     "statt": "en vez de / en lugar de",
+     "staub": "polvo",
+     "stehe": "levantarse / abierto / estar",
+     "steif": "rígido / tieso",
+     "stets": "siempre / en todo momento / en toda ocasión",
+     "still": "inmóvil / silencioso / secreto",
+     "stirn": "frente",
+     "stock": "palo / bastón / planta",
+     "stolz": "orgullo",
+     "stuhl": "silla / sede / excremento",
+     "stumm": "mudo / callado",
+     "sucht": "buscar",
+     "summe": "suma",
+     "tagen": "día / jornada / dieta",
+     "tages": "día / jornada / dieta",
+     "taten": "el hacer",
+     "teils": "en parte / medio",
+     "thema": "tema / asunto",
+     "tisch": "mesa",
+     "trage": "andas",
+     "traum": "sueño / ensueño / deseo",
+     "trieb": "conducir / flotar / practicar",
+     "trotz": "desafío / despecho / rebeldía",
+     "unrat": "basura",
+     "unser": "nuestro",
+     "unten": "abajo",
+     "unter": "bajo / debajo de",
+     "vater": "padre",
+     "viele": "muchas (vía inglés)",
+     "vorne": "delante",
+     "wagen": "coche / vagón",
+     "wagte": "coche / vagón",
+     "wange": "mejilla / faces",
+     "waren": "ser",
+     "warme": "caliente / cálido / caluroso",
+     "warte": "esperar / aguardar / mantener",
+     "warum": "por qué / porqué",
+     "weder": "ni",
+     "wegen": "a causa de / debido a",
+     "weile": "rato",
+     "weise": "modo / manera / forma",
+     "wenig": "poco",
+     "werde": "volverse / llegar a ser / ir a",
+     "wider": "contra",
+     "wisse": "conocimiento / saber",
+     "witwe": "viuda",
+     "woche": "semana",
+     "wohin": "adónde / hacia dónde",
+     "wolle": "de lana",
+     "wollt": "de lana",
+     "womit": "con qué",
+     "worte": "palabra / vocablo",
+     "wunde": "herida",
+     "wurde": "volverse / llegar a ser / ir a",
+     "zeige": "mostrar / demostrar / presentar",
+     "zeigt": "dejar ver",
+     "ziele": "objetivo / meta / fin",
+     "zogen": "ponerse / vestirse / vestir",
+     "zumal": "sobre todo / dado que / especialmente porque"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "gregor",
+     "pista": "Gregorio"
+    },
+    {
+     "palabra": "sagen",
+     "pista": "decir"
+    },
+    {
+     "palabra": "mutter",
+     "pista": "madre / tuerca"
+    },
+    {
+     "palabra": "sehen",
+     "pista": "ver"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "schwester",
+     "pista": "hermana / sor"
+    },
+    {
+     "palabra": "vater",
+     "pista": "padre"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "zimmer",
+     "pista": "habitación / cuarto / pieza"
+    },
+    {
+     "palabra": "hand",
+     "pista": "mano"
+    },
+    {
+     "palabra": "machen",
+     "pista": "hacer"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "herr",
+     "pista": "señor / amo / Señor"
+    },
+    {
+     "palabra": "klein",
+     "pista": "pequeño / bajo / chico"
+    },
+    {
+     "palabra": "liegen",
+     "pista": "yacer / tender / estar"
+    },
+    {
+     "palabra": "rufen",
+     "pista": "llamar"
+    },
+    {
+     "palabra": "lang",
+     "pista": "largo"
+    },
+    {
+     "palabra": "bleiben",
+     "pista": "quedar / quedarse / permanecer"
+    },
+    {
+     "palabra": "einmal",
+     "pista": "una vez"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "auge",
+     "pista": "ojo / punto / yema"
+    },
+    {
+     "palabra": "kopf",
+     "pista": "cabeza"
+    },
+    {
+     "palabra": "prokurist",
+     "pista": "procurador"
+    },
+    {
+     "palabra": "zeit",
+     "pista": "tiempo"
+    },
+    {
+     "palabra": "nehmen",
+     "pista": "tomar / coger / agarrar"
+    },
+    {
+     "palabra": "denken",
+     "pista": "pensamiento / meditación / reflexión"
+    },
+    {
+     "palabra": "geben",
+     "pista": "dar / donar / haber"
+    },
+    {
+     "palabra": "langsam",
+     "pista": "lento / despacio"
+    },
+    {
+     "palabra": "scheinen",
+     "pista": "brillar / lucir / parecer"
+    },
+    {
+     "palabra": "frau",
+     "pista": "mujer / esposa / señora"
+    },
+    {
+     "palabra": "wissen",
+     "pista": "conocimiento / saber"
+    },
+    {
+     "palabra": "bett",
+     "pista": "cama / lecho / cauce"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "sitzen",
+     "pista": "sentarse / estar / sentado"
+    },
+    {
+     "palabra": "familie",
+     "pista": "familia"
+    },
+    {
+     "palabra": "selbst",
+     "pista": "yo"
+    },
+    {
+     "palabra": "fallen",
+     "pista": "caer / abandonar / dejar caer"
+    },
+    {
+     "palabra": "gleich",
+     "pista": "igual / equivalente / parecido"
+    },
+    {
+     "palabra": "wort",
+     "pista": "palabra / vocablo"
+    },
+    {
+     "palabra": "endlich",
+     "pista": "limitado / finito / definitivo"
+    },
+    {
+     "palabra": "fenster",
+     "pista": "ventana"
+    },
+    {
+     "palabra": "eltern",
+     "pista": "padres"
+    },
+    {
+     "palabra": "hinsetzen",
+     "pista": "sentarse"
+    },
+    {
+     "palabra": "seite",
+     "pista": "lado / faz / página"
+    },
+    {
+     "palabra": "stehen",
+     "pista": "estar de pie / estar / estar en pie"
+    },
+    {
+     "palabra": "tisch",
+     "pista": "mesa"
+    },
+    {
+     "palabra": "zwei",
+     "pista": "dos"
+    },
+    {
+     "palabra": "wenig",
+     "pista": "poco"
+    },
+    {
+     "palabra": "stimme",
+     "pista": "voz / voto"
+    },
+    {
+     "palabra": "ihnen",
+     "pista": "les"
+    },
+    {
+     "palabra": "leben",
+     "pista": "vida"
+    },
+    {
+     "palabra": "erster",
+     "pista": "primero"
+    },
+    {
+     "palabra": "fragen",
+     "pista": "preguntar / interrogar"
+    },
+    {
+     "palabra": "ruhig",
+     "pista": "quieto / tranquilo / sosegado"
+    },
+    {
+     "palabra": "setzen",
+     "pista": "colocar / poner / apostar"
+    },
+    {
+     "palabra": "daran",
+     "pista": "tecnología de la información (vía inglés)"
+    },
+    {
+     "palabra": "leicht",
+     "pista": "ligero / liviano / de poco peso"
+    },
+    {
+     "palabra": "schlagen",
+     "pista": "batir / golpear / ganar a"
+    },
+    {
+     "palabra": "sofort",
+     "pista": "inmediatamente"
+    },
+    {
+     "palabra": "wohnung",
+     "pista": "apartamento / casa / piso"
+    },
+    {
+     "palabra": "abwenden",
+     "pista": "apartar / evitar"
+    },
+    {
+     "palabra": "boden",
+     "pista": "tierra / terreno / fondo"
+    },
+    {
+     "palabra": "finden",
+     "pista": "encontrar / hallar / aparecer"
+    },
+    {
+     "palabra": "gesicht",
+     "pista": "cara / rostro / faz"
+    },
+    {
+     "palabra": "halten",
+     "pista": "tener / aguantar / sostener"
+    },
+    {
+     "palabra": "legen",
+     "pista": "poner / acostar / tender"
+    },
+    {
+     "palabra": "mich",
+     "pista": "me (vía inglés)"
+    },
+    {
+     "palabra": "suchen",
+     "pista": "buscar"
+    },
+    {
+     "palabra": "viel",
+     "pista": "mucho"
+    },
+    {
+     "palabra": "abend",
+     "pista": "tarde / noche / víspera"
+    },
+    {
+     "palabra": "blatt",
+     "pista": "hoja / folio / gaceta"
+    },
+    {
+     "palabra": "jahr",
+     "pista": "año"
+    },
+    {
+     "palabra": "treten",
+     "pista": "pedalear / avanzar / entrar"
+    },
+    {
+     "palabra": "verstehen",
+     "pista": "entender / comprender / tener"
+    },
+    {
+     "palabra": "weit",
+     "pista": "extenso / lejano"
+    },
+    {
+     "palabra": "weiter",
+     "pista": "más / adelante"
+    },
+    {
+     "palabra": "gerade",
+     "pista": "línea recta / recta / recto"
+    },
+    {
+     "palabra": "grete",
+     "pista": "Rita"
+    },
+    {
+     "palabra": "hoch",
+     "pista": "anticiclón"
+    },
+    {
+     "palabra": "kanapee",
+     "pista": "sofá (vía inglés)"
+    },
+    {
+     "palabra": "kaum",
+     "pista": "apenas / a duras penas"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "schwer",
+     "pista": "pesado / difícil"
+    },
+    {
+     "palabra": "sessel",
+     "pista": "sillón / butaca / silla"
+    },
+    {
+     "palabra": "tief",
+     "pista": "depresión"
+    },
+    {
+     "palabra": "zuerst",
+     "pista": "primero / antes"
+    },
+    {
+     "palabra": "laufen",
+     "pista": "correr / andar / marchar"
+    },
+    {
+     "palabra": "letzter",
+     "pista": "último (vía inglés)"
+    },
+    {
+     "palabra": "lieb",
+     "pista": "amable / agradable / querido"
+    },
+    {
+     "palabra": "mann",
+     "pista": "hombre / varón / marido"
+    },
+    {
+     "palabra": "sonst",
+     "pista": "por lo demás / aparte de esto"
+    },
+    {
+     "palabra": "allein",
+     "pista": "solo"
+    },
+    {
+     "palabra": "also",
+     "pista": "así / de este modo / de tal manera"
+    },
+    {
+     "palabra": "blick",
+     "pista": "mirada / vistazo"
+    },
+    {
+     "palabra": "heben",
+     "pista": "levantar / elevar / aumentar"
+    },
+    {
+     "palabra": "tragen",
+     "pista": "llevar / transportar / llevar consigo"
+    },
+    {
+     "palabra": "verlassen",
+     "pista": "abandonar / dejar / confiar"
+    },
+    {
+     "palabra": "darauf",
+     "pista": "en / eso / encima"
+    },
+    {
+     "palabra": "dich",
+     "pista": "a ti"
+    },
+    {
+     "palabra": "sprechen",
+     "pista": "hablar"
+    },
+    {
+     "palabra": "trotzdem",
+     "pista": "sin embargo"
+    },
+    {
+     "palabra": "wand",
+     "pista": "pared / tabique / frente"
+    },
+    {
+     "palabra": "brauchen",
+     "pista": "necesitar"
+    },
+    {
+     "palabra": "dunkel",
+     "pista": "oscuro / oscura"
+    },
+    {
+     "palabra": "drei",
+     "pista": "número tres / tres"
+    },
+    {
+     "palabra": "geschehen",
+     "pista": "sucesos / hechos"
+    },
+    {
+     "palabra": "kind",
+     "pista": "niño / niña / hijo"
+    },
+    {
+     "palabra": "rasch",
+     "pista": "rápido / veloz"
+    },
+    {
+     "palabra": "schreiben",
+     "pista": "escritura / carta / epístola"
+    },
+    {
+     "palabra": "werfen",
+     "pista": "parir / lanzar / echar"
+    },
+    {
+     "palabra": "wirklich",
+     "pista": "verdadero / cierto"
+    },
+    {
+     "palabra": "beginnen",
+     "pista": "comenzó / empezó"
+    },
+    {
+     "palabra": "beinchen",
+     "pista": "pasador (vía inglés)"
+    },
+    {
+     "palabra": "bekommen",
+     "pista": "recibir / obtener"
+    },
+    {
+     "palabra": "chef",
+     "pista": "jefe / patrón"
+    },
+    {
+     "palabra": "ende",
+     "pista": "fin / final"
+    },
+    {
+     "palabra": "jung",
+     "pista": "joven"
+    },
+    {
+     "palabra": "lesen",
+     "pista": "lectura"
+    },
+    {
+     "palabra": "nacht",
+     "pista": "noche"
+    },
+    {
+     "palabra": "vergessen",
+     "pista": "olvido"
+    }
+   ]
+  },
+  {
+   "slug": "immensee",
+   "titulo": "Immensee",
+   "nivel": "avanzado",
+   "escalera": {
+    "3": {
+     "ach": "¡ ah !",
+     "all": "todo",
+     "als": "que / cuando / como",
+     "alt": "alto",
+     "ans": "encendido / prendido",
+     "arm": "brazo",
+     "art": "tipo / clase / manera",
+     "ast": "rama",
+     "auf": "alcanzar",
+     "aus": "fin",
+     "bat": "pedir / rogar",
+     "bau": "construcción / edificación / obra",
+     "bei": "cerca de / en casa de / durante",
+     "bin": "ser",
+     "bis": "hasta",
+     "das": "el / la / eso",
+     "dem": "que",
+     "den": "que",
+     "der": "que",
+     "des": "que",
+     "die": "que",
+     "dir": "(a) ti / te",
+     "ehe": "matrimonio",
+     "ein": "un",
+     "gab": "dio",
+     "gar": "cocido / hecho / finalizado",
+     "geh": "ve / anda",
+     "gib": "da",
+     "gut": "bien / bueno",
+     "hat": "haber",
+     "her": "aquí / acá",
+     "hin": "sentarse",
+     "hob": "levantar / elevar / aumentar",
+     "hof": "patio / finca / granja",
+     "hut": "sombrero / sombrerillo",
+     "ich": "yo",
+     "ihm": "el (vía inglés)",
+     "ihn": "lo / le",
+     "ihr": "su",
+     "ins": "en / dentro de / a",
+     "ist": "es / está",
+     "kam": "venir / llegar / volver",
+     "lag": "yacer / tender / estar",
+     "las": "lectura",
+     "los": "soltar / liberar",
+     "mag": "gustar / querer / preferir",
+     "man": "alguien / se",
+     "mir": "me (vía inglés)",
+     "mit": "con",
+     "neu": "nuevo / nueva",
+     "nie": "nunca",
+     "nun": "ahora / ya",
+     "nur": "solamente / sólo",
+     "oft": "a menudo / frecuentemente",
+     "ohr": "oído / oreja",
+     "ost": "levante (vía inglés)",
+     "rad": "rueda / bicicleta / bici",
+     "rat": "aviso / consejo",
+     "rot": "rojo",
+     "sah": "ver",
+     "see": "mar",
+     "sei": "ser",
+     "sie": "ella / ellos",
+     "tag": "día / jornada / dieta",
+     "tal": "valle",
+     "tat": "el hacer",
+     "tod": "muerte",
+     "tun": "el hacer",
+     "uhr": "reloj / hora",
+     "und": "y",
+     "uns": "se",
+     "vom": "de",
+     "von": "de",
+     "vor": "preparar (partícula separable de bereitet … vor)",
+     "war": "ser",
+     "was": "qué / que / algo",
+     "weg": "camino / rumbo / manera",
+     "weh": "dolor / pena / mal",
+     "wen": "quién / quiénes",
+     "wer": "quién / quien",
+     "wie": "como",
+     "wir": "nosotros / nosotras",
+     "zog": "tirar / sacar / extraer",
+     "zug": "tren / tracción / tensión",
+     "zum": "al / hacia el",
+     "zur": "cerrado"
+    },
+    "4": {
+     "aber": "pero / mas / ahora",
+     "alle": "agotado",
+     "alte": "alto",
+     "arme": "brazo",
+     "atem": "aliento / respiración",
+     "auch": "también / aun / asimismo",
+     "auge": "ojo / punto / yema",
+     "bach": "arroyo / riachuelo",
+     "bald": "pronto / en breve",
+     "band": "tomo / volumen",
+     "bank": "banco / escaño / banca",
+     "beim": "cerca de / en casa de / durante",
+     "berg": "montaña / monte",
+     "bild": "imagen / cuadro / pintura",
+     "bist": "ser",
+     "blau": "azul / celeste",
+     "bord": "tirar por la borda",
+     "brot": "pan",
+     "buch": "libro",
+     "dach": "techo / tejado",
+     "dank": "gracias / agradecimiento",
+     "dann": "después / luego / entonces",
+     "darf": "poder / permitido / tener",
+     "dazu": "a eso / a esto / además",
+     "dein": "tu / tuyo",
+     "denn": "pero / pues",
+     "dich": "a ti",
+     "dies": "este",
+     "doch": "sí",
+     "dort": "allá / allí / ahí",
+     "drei": "número tres / tres",
+     "duft": "aroma",
+     "eben": "llano / plano",
+     "ecke": "rincón / ángulo / esquina",
+     "eier": "ía / ería",
+     "eine": "un",
+     "ende": "fin / final",
+     "enge": "estrecho / angosto",
+     "erst": "primero / en primer lugar / apenas",
+     "etwa": "aproximadamente / por ejemplo",
+     "euch": "mismos (vía inglés)",
+     "fand": "encontrar / hallar / aparecer",
+     "fang": "principio / comienzo / inicio",
+     "fast": "casi",
+     "feld": "campo / campo de batalla / pelotón",
+     "fern": "lejano",
+     "fest": "fiesta / festividad / pachanga",
+     "fiel": "caer / abandonar / dejar caer",
+     "fing": "atrapado (vía inglés)",
+     "flog": "vuelo",
+     "flur": "corredor",
+     "fort": "lejos / continuamente",
+     "frau": "mujer / esposa / señora",
+     "frei": "libre / liberal / abierto",
+     "fuhr": "pasar",
+     "fund": "hallazgo / descubrimiento",
+     "gang": "pandilla / banda",
+     "ganz": "todo / entero",
+     "gast": "invitado",
+     "geht": "va / ir",
+     "geld": "dinero / plata / billete",
+     "gelt": "estéril (vía inglés)",
+     "gern": "de buena gana / con mucho gusto / frecuentemente",
+     "gibt": "dar / donar / haber",
+     "ging": "fue / iba",
+     "glas": "vidrio / cristal / vaso",
+     "gott": "dios / Dios",
+     "gras": "hierba / grama",
+     "gute": "bienes / bienes inmuebles / finca",
+     "haar": "pelo / cabello / tricoma",
+     "habe": "haber",
+     "habt": "haber",
+     "halb": "mitad / medio",
+     "hals": "cuello / garganta",
+     "halt": "parada / alto",
+     "hand": "mano",
+     "hart": "duro / rígido / fuerte",
+     "hast": "haber",
+     "haus": "casa / cámara",
+     "heim": "hogar / casa / asilo",
+     "herr": "señor / amo / Señor",
+     "herz": "corazón",
+     "hier": "aquí / acá",
+     "hohe": "anticiclón",
+     "hund": "perro / can / canalla",
+     "ihre": "su / sus",
+     "jahr": "año",
+     "jene": "aquél / ésa / aquélla",
+     "jung": "joven",
+     "juni": "junio",
+     "kahn": "bote / barco de fondo plano",
+     "kann": "capacidad / saber",
+     "kaum": "apenas / a duras penas",
+     "kein": "ningún / no / ninguno",
+     "kind": "niño / niña / hijo",
+     "kinn": "mentón / barbilla",
+     "klug": "inteligente / listo / sabio",
+     "komm": "ven",
+     "kopf": "cabeza",
+     "korb": "cesta / canasta / rechazo",
+     "kurz": "corto / breve",
+     "land": "tierra / país / bien raíz",
+     "lang": "largo",
+     "laub": "follaje / fronda",
+     "leid": "pena / aflicción",
+     "lieb": "amable / agradable / querido",
+     "lied": "canción / tema",
+     "luft": "aire",
+     "lust": "gana / placer / deseo",
+     "mach": "número Mach (vía inglés)",
+     "male": "marca / vez",
+     "mann": "hombre / varón / marido",
+     "matt": "mate / bajo",
+     "mehr": "más",
+     "mein": "mi / mío",
+     "mich": "me (vía inglés)",
+     "mode": "moda (vía inglés)",
+     "mond": "satélite / luna / Luna",
+     "mund": "boca",
+     "nach": "a / hacia",
+     "nahe": "cercano / cercana",
+     "nahm": "tomar / coger / agarrar",
+     "nein": "no",
+     "neue": "nuevo / nueva",
+     "noch": "todavía / aún / tampoco",
+     "oben": "arriba / alto",
+     "oder": "Óder / Odra",
+     "ofen": "horno / estufa",
+     "ohne": "sin",
+     "pfad": "sendero / senda / camino",
+     "pfui": "puaj / guácala / qué asco",
+     "pult": "pupitre",
+     "quer": "a través / de través",
+     "raum": "espacio / habitación / cuarto",
+     "rede": "discurso / alocución",
+     "reim": "rima",
+     "reis": "arroz",
+     "rest": "resto / radical",
+     "rieb": "rallado (vía inglés)",
+     "rief": "llamar",
+     "rote": "rojo",
+     "ruhe": "calma / tranquilidad / reposo",
+     "saal": "sala / salón",
+     "sagt": "decir",
+     "sang": "cantar",
+     "saum": "bajo / filete",
+     "sees": "mar",
+     "sehr": "muy",
+     "seht": "ver",
+     "seid": "ser",
+     "sein": "ser",
+     "seit": "desde",
+     "sich": "se",
+     "sind": "ser",
+     "sinn": "sentido / significado",
+     "soll": "deber / haber de",
+     "tage": "día / jornada / dieta",
+     "tief": "depresión",
+     "tode": "muerte",
+     "trat": "pedalear / avanzar / entrar",
+     "trug": "llevar / transportar / llevar consigo",
+     "tuch": "paño",
+     "ufer": "orilla / ribera",
+     "viel": "mucho",
+     "voll": "lleno / pleno / borracho",
+     "wald": "bosque",
+     "wall": "terraplén",
+     "wand": "pared / tabique / frente",
+     "wann": "cuándo / cuando",
+     "warf": "parir / lanzar / echar",
+     "wege": "camino / rumbo / manera",
+     "weil": "porque / ya que / puesto que",
+     "weit": "extenso / lejano",
+     "welt": "mundo / Tierra / universo",
+     "wenn": "cuando / si / aunque",
+     "wert": "valor / valía",
+     "west": "oeste",
+     "will": "de lana",
+     "wind": "viento / aire",
+     "wird": "volverse / llegar a ser / ir a",
+     "wohl": "bienestar / bien",
+     "wort": "palabra / vocablo",
+     "zehn": "diez",
+     "zeit": "tiempo",
+     "ziel": "objetivo / meta / fin",
+     "zwei": "dos"
+    },
+    "5": {
+     "abend": "tarde / noche / víspera",
+     "adler": "águila / Aquila / Águila",
+     "allem": "agotado",
+     "allen": "Allen",
+     "aller": "todo (vía inglés)",
+     "alles": "todo (vía inglés)",
+     "alten": "alto",
+     "alter": "alto",
+     "altes": "alto",
+     "armen": "brazo",
+     "armer": "brazo",
+     "atmen": "respirar",
+     "augen": "ojo / punto / yema",
+     "bauer": "campesino / agricultor / ganadero",
+     "beide": "ambos",
+     "berge": "montaña / monte",
+     "bitte": "petición / solicitud",
+     "blatt": "hoja / folio / gaceta",
+     "blaue": "azul / celeste",
+     "blick": "mirada / vistazo",
+     "blieb": "quedar / quedarse / permanecer",
+     "blume": "flor / espuma / buqué",
+     "boden": "tierra / terreno / fondo",
+     "bogen": "arco / curva / hoja",
+     "brach": "romper / partir / quebrarse",
+     "brief": "carta / epístola",
+     "brust": "pecho / tórax / seno",
+     "buche": "libro",
+     "busch": "arbusto",
+     "dabei": "ahí / por / con ello",
+     "dahin": "allí / hacia allí",
+     "damit": "para que / a fin de que",
+     "daran": "tecnología de la información (vía inglés)",
+     "darin": "dentro",
+     "darum": "en conclusión",
+     "davon": "de allí / sobre eso",
+     "davor": "delante / ahí delante / antes",
+     "decke": "cubierta / frazada / cobija",
+     "deine": "tu / tuyo",
+     "denen": "que",
+     "denkt": "pensamiento / meditación / reflexión",
+     "deren": "que",
+     "desto": "tanto / más",
+     "dicht": "denso / espeso / cerca",
+     "diele": "tabla (vía inglés)",
+     "diese": "este",
+     "dufte": "bonísimo (vía inglés)",
+     "durch": "a través / por / por medio",
+     "durst": "sed",
+     "ehren": "honor / orgullo",
+     "eifer": "celo / afán / empeño",
+     "eilig": "apresurado / apresurada",
+     "einem": "un",
+     "einen": "un",
+     "einer": "una",
+     "eines": "un",
+     "einst": "antaño / algún día",
+     "elfen": "elfa",
+     "empor": "hacia arriba",
+     "emsig": "diligente / laborioso",
+     "engel": "ángel",
+     "ergab": "sumiso / fiel / leal",
+     "erhob": "elevar / levantar / recolectar",
+     "ernst": "seriedad / rigor / severidad",
+     "erste": "primero",
+     "essen": "comida",
+     "etwas": "algo",
+     "faden": "hilo / filo",
+     "fahrt": "viaje / velocidad",
+     "fegte": "barrer",
+     "fehlt": "falta / carencia / estar ausente",
+     "feine": "fino / delicado / bien",
+     "ferne": "lejanía / tierras lejanas",
+     "feuer": "fuego / lumbre / incendio",
+     "flach": "plano / llano / superficial",
+     "flink": "ágil / despabilado / despierto",
+     "frage": "pregunta / cuestión",
+     "fremd": "desconocido / forastero / extranjero",
+     "ganze": "todo / entero",
+     "gasse": "calleja / callejuela",
+     "geben": "dar / donar / haber",
+     "gegen": "contra / contrario / en contra de",
+     "gehen": "marcha / marcha atlética",
+     "genau": "exacto / precisamente",
+     "genug": "bastante / suficiente / abastanza",
+     "getan": "el hacer",
+     "glanz": "brillo (vía inglés)",
+     "glitt": "deslizada (vía inglés)",
+     "griff": "coger / aferrar / engarzar",
+     "grimm": "ferocidad",
+     "guten": "bienes / bienes inmuebles / finca",
+     "guter": "bienes / bienes inmuebles / finca",
+     "haare": "pelo / cabello / tricoma",
+     "haben": "haber",
+     "halbe": "mitad / medio",
+     "halse": "cuello / garganta",
+     "hatte": "haber",
+     "hause": "casa",
+     "heide": "ateo / pagano",
+     "helle": "claro / luminoso / pálido",
+     "heran": "acercar",
+     "herum": "alrededor de / en torno a",
+     "heute": "hoy",
+     "hielt": "tener / aguantar / sostener",
+     "hilfe": "ayuda / socorro",
+     "hinab": "bajar",
+     "hohen": "anticiclón",
+     "hoher": "anticiclón",
+     "hohle": "hueco",
+     "ihnen": "les",
+     "ihrem": "su",
+     "ihren": "su",
+     "ihrer": "su",
+     "ihres": "su",
+     "immer": "siempre",
+     "indem": "al / mientras",
+     "indes": "ahora",
+     "jahre": "año",
+     "jeder": "cada / todo / cada uno",
+     "jedes": "cada / todo / cada uno",
+     "jenen": "aquél / ésa / aquélla",
+     "jetzt": "ahora / ya",
+     "junge": "chico / muchacho / joven",
+     "kamen": "venir / llegar / volver",
+     "keine": "ningún / no / ninguno",
+     "kenne": "saber / conocer",
+     "kennt": "saber / conocer",
+     "klang": "tintinear / campanillear / sonar",
+     "klare": "claro",
+     "knopf": "botón / mocoso / pelado",
+     "komme": "venir / llegar / volver",
+     "kommt": "venir / llegar / volver",
+     "kraft": "fuerza / eficacia / fibra",
+     "kraut": "hierba",
+     "kreuz": "cruz / riñones / pinta",
+     "krumm": "torcido / corvo",
+     "kurze": "corto / breve",
+     "lacht": "risa",
+     "laden": "tienda / comercio / contraventana",
+     "lampe": "lámpara",
+     "lande": "tierra / país / bien raíz",
+     "lange": "largo",
+     "laube": "alburno",
+     "leben": "vida",
+     "legte": "poner / acostar / tender",
+     "leise": "bajo / silencioso / silente",
+     "lesen": "lectura",
+     "leute": "gente",
+     "licht": "luz / alumbrado / ilustración",
+     "liebe": "amable / agradable / querido",
+     "liegt": "yacer / tender / estar",
+     "lilie": "azucena / lirio",
+     "linde": "tilo",
+     "links": "a la izquierda",
+     "maria": "María / Maite / Marcia",
+     "meine": "mi / mío",
+     "mitte": "medio / centro",
+     "monat": "mes",
+     "nacht": "noche",
+     "namen": "nombre / denominación",
+     "neben": "al lado / a la vera de / junto",
+     "nehme": "tomar / coger / agarrar",
+     "netze": "red / malla",
+     "neuen": "nuevo / nueva",
+     "neuer": "nuevo / nueva",
+     "neues": "nuevo / nueva",
+     "nicht": "no",
+     "noten": "nota / billete",
+     "offen": "abierto",
+     "ohren": "oído / oreja",
+     "osten": "este / oriente",
+     "paket": "paquete",
+     "pause": "pausa / descanso / recreo",
+     "platz": "plaza / lugar / sitio",
+     "punkt": "punto",
+     "rache": "venganza",
+     "rande": "borde / margen / rand",
+     "ranke": "zarcillo",
+     "rasch": "rápido / veloz",
+     "recht": "derecho / pretensión",
+     "reden": "discurso / alocución",
+     "regen": "lluvia",
+     "regte": "lluvia",
+     "reime": "rima",
+     "reise": "viaje",
+     "rings": "por acá (vía inglés)",
+     "rotem": "rojo",
+     "roten": "rojo",
+     "roter": "rojo",
+     "rotes": "rojo",
+     "rufen": "llamar",
+     "ruhen": "reposar / descansar / parar",
+     "ruhig": "quieto / tranquilo / sosegado",
+     "ruhte": "reposar / descansar / parar",
+     "sagen": "decir",
+     "sagte": "decir",
+     "sahen": "ver",
+     "samen": "semilla / semen",
+     "sanft": "suave",
+     "schau": "exposición / espectáculo / vista",
+     "schob": "anterior (vía inglés)",
+     "schon": "ya",
+     "sehen": "ver",
+     "seine": "ser",
+     "seite": "lado / faz / página",
+     "singe": "cantar",
+     "sitzt": "sentarse / estar / sentado",
+     "sonne": "sol / Sol",
+     "sonst": "por lo demás / aparte de esto",
+     "spiel": "juego",
+     "stadt": "ciudad / urbe",
+     "stand": "estado / estado civil",
+     "starr": "rígido",
+     "statt": "en vez de / en lugar de",
+     "steht": "estar de pie / estar / estar en pie",
+     "steil": "empinado / escarpado / guay",
+     "stieg": "subir (vía inglés)",
+     "still": "inmóvil / silencioso / secreto",
+     "stirn": "frente",
+     "stock": "palo / bastón / planta",
+     "stolz": "orgullo",
+     "strom": "corriente / río / oleada",
+     "stube": "cámara",
+     "stuhl": "silla / sede / excremento",
+     "stumm": "mudo / callado",
+     "tabak": "tabaco",
+     "tafel": "pizarra / pizarrón / banco de alimentos",
+     "tages": "día / jornada / dieta",
+     "tante": "tía",
+     "taube": "paloma / pichón / palomo",
+     "taugt": "servir para",
+     "tempo": "tempo / velocidad",
+     "tenor": "tenor",
+     "tiefe": "depresión",
+     "tirol": "Tirol",
+     "tisch": "mesa",
+     "toten": "muerto / fallecido / inanimado",
+     "trank": "pócima / filtro",
+     "tritt": "pisada / patada / escalerilla",
+     "trotz": "desafío / despecho / rebeldía",
+     "ufern": "orilla / ribera",
+     "unser": "nuestro",
+     "unten": "abajo",
+     "unter": "bajo / debajo de",
+     "vater": "padre",
+     "verse": "verso",
+     "vogel": "ave / pájaro / figura",
+     "volle": "lleno / pleno / borracho",
+     "wagen": "coche / vagón",
+     "wange": "mejilla / faces",
+     "waren": "ser",
+     "warte": "esperar / aguardar / mantener",
+     "warum": "por qué / porqué",
+     "weges": "camino / rumbo / manera",
+     "weile": "rato",
+     "weise": "modo / manera / forma",
+     "weite": "extenso / lejano",
+     "werde": "volverse / llegar a ser / ir a",
+     "wider": "contra",
+     "wiese": "prado / pradera",
+     "wirte": "mesonero / hostelero / huésped",
+     "woche": "semana",
+     "woher": "de dónde",
+     "wolle": "de lana",
+     "womit": "con qué",
+     "worin": "en qué / en la cual",
+     "worte": "palabra / vocablo",
+     "wovon": "de qué / de la cual / de la que",
+     "wurde": "volverse / llegar a ser / ir a",
+     "zeigt": "dejar ver",
+     "ziele": "objetivo / meta / fin",
+     "zogen": "ponerse / vestirse / vestir",
+     "zuvor": "antes / anteriormente",
+     "zweig": "ramita / ramilla"
+    }
+   },
+   "crucigrama": [
+    {
+     "palabra": "sagen",
+     "pista": "decir"
+    },
+    {
+     "palabra": "mutter",
+     "pista": "madre / tuerca"
+    },
+    {
+     "palabra": "sehen",
+     "pista": "ver"
+    },
+    {
+     "palabra": "kommen",
+     "pista": "venir / llegar / volver"
+    },
+    {
+     "palabra": "vater",
+     "pista": "padre"
+    },
+    {
+     "palabra": "gehen",
+     "pista": "marcha / marcha atlética"
+    },
+    {
+     "palabra": "zimmer",
+     "pista": "habitación / cuarto / pieza"
+    },
+    {
+     "palabra": "elisabeth",
+     "pista": "Elizabeth / Isabel"
+    },
+    {
+     "palabra": "hand",
+     "pista": "mano"
+    },
+    {
+     "palabra": "machen",
+     "pista": "hacer"
+    },
+    {
+     "palabra": "mehr",
+     "pista": "más"
+    },
+    {
+     "palabra": "herr",
+     "pista": "señor / amo / Señor"
+    },
+    {
+     "palabra": "klein",
+     "pista": "pequeño / bajo / chico"
+    },
+    {
+     "palabra": "liegen",
+     "pista": "yacer / tender / estar"
+    },
+    {
+     "palabra": "rufen",
+     "pista": "llamar"
+    },
+    {
+     "palabra": "lang",
+     "pista": "largo"
+    },
+    {
+     "palabra": "bleiben",
+     "pista": "quedar / quedarse / permanecer"
+    },
+    {
+     "palabra": "einmal",
+     "pista": "una vez"
+    },
+    {
+     "palabra": "haus",
+     "pista": "casa / cámara"
+    },
+    {
+     "palabra": "auge",
+     "pista": "ojo / punto / yema"
+    },
+    {
+     "palabra": "kopf",
+     "pista": "cabeza"
+    },
+    {
+     "palabra": "zeit",
+     "pista": "tiempo"
+    },
+    {
+     "palabra": "nehmen",
+     "pista": "tomar / coger / agarrar"
+    },
+    {
+     "palabra": "denken",
+     "pista": "pensamiento / meditación / reflexión"
+    },
+    {
+     "palabra": "geben",
+     "pista": "dar / donar / haber"
+    },
+    {
+     "palabra": "langsam",
+     "pista": "lento / despacio"
+    },
+    {
+     "palabra": "scheinen",
+     "pista": "brillar / lucir / parecer"
+    },
+    {
+     "palabra": "frau",
+     "pista": "mujer / esposa / señora"
+    },
+    {
+     "palabra": "wissen",
+     "pista": "conocimiento / saber"
+    },
+    {
+     "palabra": "essen",
+     "pista": "comida"
+    },
+    {
+     "palabra": "sitzen",
+     "pista": "sentarse / estar / sentado"
+    },
+    {
+     "palabra": "familie",
+     "pista": "familia"
+    },
+    {
+     "palabra": "selbst",
+     "pista": "yo"
+    },
+    {
+     "palabra": "fallen",
+     "pista": "caer / abandonar / dejar caer"
+    },
+    {
+     "palabra": "gleich",
+     "pista": "igual / equivalente / parecido"
+    },
+    {
+     "palabra": "wort",
+     "pista": "palabra / vocablo"
+    },
+    {
+     "palabra": "endlich",
+     "pista": "limitado / finito / definitivo"
+    },
+    {
+     "palabra": "fenster",
+     "pista": "ventana"
+    },
+    {
+     "palabra": "hinsetzen",
+     "pista": "sentarse"
+    },
+    {
+     "palabra": "seite",
+     "pista": "lado / faz / página"
+    },
+    {
+     "palabra": "stehen",
+     "pista": "estar de pie / estar / estar en pie"
+    },
+    {
+     "palabra": "tisch",
+     "pista": "mesa"
+    },
+    {
+     "palabra": "zwei",
+     "pista": "dos"
+    },
+    {
+     "palabra": "stimme",
+     "pista": "voz / voto"
+    },
+    {
+     "palabra": "ihnen",
+     "pista": "les"
+    },
+    {
+     "palabra": "leben",
+     "pista": "vida"
+    },
+    {
+     "palabra": "erster",
+     "pista": "primero"
+    },
+    {
+     "palabra": "fragen",
+     "pista": "preguntar / interrogar"
+    },
+    {
+     "palabra": "ruhig",
+     "pista": "quieto / tranquilo / sosegado"
+    },
+    {
+     "palabra": "setzen",
+     "pista": "colocar / poner / apostar"
+    },
+    {
+     "palabra": "daran",
+     "pista": "tecnología de la información (vía inglés)"
+    },
+    {
+     "palabra": "leicht",
+     "pista": "ligero / liviano / de poco peso"
+    },
+    {
+     "palabra": "schlagen",
+     "pista": "batir / golpear / ganar a"
+    },
+    {
+     "palabra": "wohnung",
+     "pista": "apartamento / casa / piso"
+    },
+    {
+     "palabra": "abwenden",
+     "pista": "apartar / evitar"
+    },
+    {
+     "palabra": "boden",
+     "pista": "tierra / terreno / fondo"
+    },
+    {
+     "palabra": "finden",
+     "pista": "encontrar / hallar / aparecer"
+    },
+    {
+     "palabra": "gesicht",
+     "pista": "cara / rostro / faz"
+    },
+    {
+     "palabra": "halten",
+     "pista": "tener / aguantar / sostener"
+    },
+    {
+     "palabra": "legen",
+     "pista": "poner / acostar / tender"
+    },
+    {
+     "palabra": "mich",
+     "pista": "me (vía inglés)"
+    },
+    {
+     "palabra": "suchen",
+     "pista": "buscar"
+    },
+    {
+     "palabra": "viel",
+     "pista": "mucho"
+    },
+    {
+     "palabra": "abend",
+     "pista": "tarde / noche / víspera"
+    },
+    {
+     "palabra": "blatt",
+     "pista": "hoja / folio / gaceta"
+    },
+    {
+     "palabra": "jahr",
+     "pista": "año"
+    },
+    {
+     "palabra": "treten",
+     "pista": "pedalear / avanzar / entrar"
+    },
+    {
+     "palabra": "verstehen",
+     "pista": "entender / comprender / tener"
+    },
+    {
+     "palabra": "weit",
+     "pista": "extenso / lejano"
+    },
+    {
+     "palabra": "weiter",
+     "pista": "más / adelante"
+    },
+    {
+     "palabra": "gerade",
+     "pista": "línea recta / recta / recto"
+    },
+    {
+     "palabra": "hoch",
+     "pista": "anticiclón"
+    },
+    {
+     "palabra": "kaum",
+     "pista": "apenas / a duras penas"
+    },
+    {
+     "palabra": "schlafen",
+     "pista": "dormir / apolillar / pernoctar"
+    },
+    {
+     "palabra": "schwer",
+     "pista": "pesado / difícil"
+    },
+    {
+     "palabra": "tief",
+     "pista": "depresión"
+    },
+    {
+     "palabra": "zuerst",
+     "pista": "primero / antes"
+    },
+    {
+     "palabra": "laufen",
+     "pista": "correr / andar / marchar"
+    },
+    {
+     "palabra": "letzter",
+     "pista": "último (vía inglés)"
+    },
+    {
+     "palabra": "lieb",
+     "pista": "amable / agradable / querido"
+    },
+    {
+     "palabra": "mann",
+     "pista": "hombre / varón / marido"
+    },
+    {
+     "palabra": "sonst",
+     "pista": "por lo demás / aparte de esto"
+    },
+    {
+     "palabra": "allein",
+     "pista": "solo"
+    },
+    {
+     "palabra": "blick",
+     "pista": "mirada / vistazo"
+    },
+    {
+     "palabra": "heben",
+     "pista": "levantar / elevar / aumentar"
+    },
+    {
+     "palabra": "tragen",
+     "pista": "llevar / transportar / llevar consigo"
+    },
+    {
+     "palabra": "verlassen",
+     "pista": "abandonar / dejar / confiar"
+    },
+    {
+     "palabra": "darauf",
+     "pista": "en / eso / encima"
+    },
+    {
+     "palabra": "dich",
+     "pista": "a ti"
+    },
+    {
+     "palabra": "singen",
+     "pista": "cantar"
+    },
+    {
+     "palabra": "sprechen",
+     "pista": "hablar"
+    },
+    {
+     "palabra": "wand",
+     "pista": "pared / tabique / frente"
+    },
+    {
+     "palabra": "brauchen",
+     "pista": "necesitar"
+    },
+    {
+     "palabra": "dunkel",
+     "pista": "oscuro / oscura"
+    },
+    {
+     "palabra": "drei",
+     "pista": "número tres / tres"
+    },
+    {
+     "palabra": "geschehen",
+     "pista": "sucesos / hechos"
+    },
+    {
+     "palabra": "kind",
+     "pista": "niño / niña / hijo"
+    },
+    {
+     "palabra": "rasch",
+     "pista": "rápido / veloz"
+    },
+    {
+     "palabra": "schreiben",
+     "pista": "escritura / carta / epístola"
+    },
+    {
+     "palabra": "wald",
+     "pista": "bosque"
+    },
+    {
+     "palabra": "werfen",
+     "pista": "parir / lanzar / echar"
+    },
+    {
+     "palabra": "wirklich",
+     "pista": "verdadero / cierto"
+    },
+    {
+     "palabra": "beginnen",
+     "pista": "comenzó / empezó"
+    },
+    {
+     "palabra": "bekommen",
+     "pista": "recibir / obtener"
+    },
+    {
+     "palabra": "ende",
+     "pista": "fin / final"
+    },
+    {
+     "palabra": "jung",
+     "pista": "joven"
+    },
+    {
+     "palabra": "lesen",
+     "pista": "lectura"
+    },
+    {
+     "palabra": "nacht",
+     "pista": "noche"
+    },
+    {
+     "palabra": "vergessen",
+     "pista": "olvido"
+    },
+    {
+     "palabra": "bringen",
+     "pista": "traer / llevar"
+    },
+    {
+     "palabra": "fein",
+     "pista": "fino / delicado / bien"
+    },
+    {
+     "palabra": "freund",
+     "pista": "amigo / novio"
+    },
+    {
+     "palabra": "genau",
+     "pista": "exacto / precisamente"
+    },
+    {
+     "palabra": "genug",
+     "pista": "bastante / suficiente / abastanza"
+    },
+    {
+     "palabra": "kraft",
+     "pista": "fuerza / eficacia / fibra"
+    },
+    {
+     "palabra": "kurz",
+     "pista": "corto / breve"
+    },
+    {
+     "palabra": "platz",
+     "pista": "plaza / lugar / sitio"
+    },
+    {
+     "palabra": "recht",
+     "pista": "derecho / pretensión"
+    },
+    {
+     "palabra": "schritt",
+     "pista": "paso / entrepierna"
+    },
+    {
+     "palabra": "stark",
+     "pista": "fuerte / intenso"
+    }
+   ]
+  }
  ]
 }

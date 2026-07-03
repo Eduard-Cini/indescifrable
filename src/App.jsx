@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import JuegoApp from './JuegoApp';
 import Juegos from './secciones/juegos/Juegos';
+import JuegosDeLectura from './secciones/juegos/JuegosDeLectura';
 import Escalera from './secciones/juegos/Escalera';
 import Crucigrama from './secciones/juegos/Crucigrama';
 import Wordle from './secciones/juegos/Wordle';
@@ -22,10 +23,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/juegos" element={<Juegos />} />
         <Route path="/juegos/codenames/*" element={<JuegoApp />} />
-        <Route path="/juegos/escalera" element={<Escalera />} />
-        <Route path="/juegos/crucigrama" element={<Crucigrama />} />
-        <Route path="/juegos/wordle" element={<Wordle />} />
-        <Route path="/juegos/sopa" element={<Sopa />} />
+        <Route path="/juegos/:lectura" element={<JuegosDeLectura />} />
+        <Route path="/juegos/:lectura/escalera" element={<Escalera />} />
+        <Route path="/juegos/:lectura/crucigrama" element={<Crucigrama />} />
+        <Route path="/juegos/:lectura/wordle" element={<Wordle />} />
+        <Route path="/juegos/:lectura/sopa" element={<Sopa />} />
         <Route path="/lectura" element={<Biblioteca />} />
         <Route path="/lectura/:idioma/:nivel/:id" element={<Lector />} />
         <Route path="/bolsa" element={<Bolsa />} />

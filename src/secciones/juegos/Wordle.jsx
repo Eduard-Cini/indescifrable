@@ -1,11 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {
   evaluar,
   esVictoria,
   elegirSecreto,
   filtrarConsistentes,
 } from '../../engine/wordle';
+import { longitudesWordle, poolDe } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
@@ -13,11 +14,14 @@ import './juegos.css';
 
 const MAX_INTENTOS = 6;
 
-// Adivina la palabra (Sección 4): Wordle sobre el vocabulario alemán del
-// corpus. Los intentos deben ser palabras de las lecturas (así cada intento
-// enseña: se muestra su traducción) y el contador de candidatas consistentes
-// hace visible la teoría de la información del juego (engine/wordle.js).
+// Adivina la palabra (Sección 4): Wordle sobre el vocabulario alemán del pool
+// (todo el corpus o UNA lectura, según la ruta). Los intentos deben ser
+// palabras del pool (así cada intento enseña: se muestra su traducción) y el
+// contador de candidatas consistentes hace visible la teoría de la
+// información del juego (engine/wordle.js). Solo se ofrecen longitudes con
+// diccionario suficiente (engine/juegos.js).
 function Wordle() {
+  const { lectura } = useParams();
   const [datos, setDatos] = useState(null);
   const [longitud, setLongitud] = useState('4');
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -36,13 +40,21 @@ function Wordle() {
     };
   }, []);
 
-  const glosas = datos?.escalera[longitud] ?? null;
+  const pool = datos ? poolDe(datos, lectura) : null;
+  const longitudes = useMemo(
+    () => (pool ? longitudesWordle(pool.escalera) : []),
+    [pool]
+  );
+  const longitudActiva = longitudes.includes(longitud) ? longitud : longitudes[0];
+  const glosas = pool?.escalera[longitudActiva] ?? null;
   const palabras = useMemo(() => (glosas ? Object.keys(glosas) : []), [glosas]);
   const enDiccionario = useMemo(() => new Set(palabras), [palabras]);
   const secreto = useMemo(
     () =>
-      palabras.length > 0 ? elegirSecreto(palabras, `${longitud}:${semilla}`) : null,
-    [palabras, longitud, semilla]
+      palabras.length > 0
+        ? elegirSecreto(palabras, `${lectura}:${longitudActiva}:${semilla}`)
+        : null,
+    [palabras, longitudActiva, semilla, lectura]
   );
 
   useEffect(() => {
@@ -54,11 +66,25 @@ function Wordle() {
 
   const cabecera = (
     <header className="lectura-top">
-      <Link to="/juegos" className="lectura-link">← Juegos</Link>
+      <Link to={`/juegos/${lectura}`} className="lectura-link">
+        ← {pool?.titulo ?? 'Juegos'}
+      </Link>
       <h1>Adivina la palabra</h1>
       <span />
     </header>
   );
+
+  if (datos && (!pool || longitudes.length === 0)) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Este vocabulario no da para adivinar la palabra (pocas candidatas).{' '}
+          <Link to={`/juegos/${lectura}`} className="lectura-link">Otros juegos</Link>.
+        </p>
+      </div>
+    );
+  }
 
   if (!secreto) {
     return <div className="lectura-container">{cabecera}</div>;
@@ -73,8 +99,8 @@ function Wordle() {
     e.preventDefault();
     if (terminado) return;
     const palabra = entrada.trim().toLowerCase();
-    if (palabra.length !== Number(longitud)) {
-      setAviso(`La palabra tiene ${longitud} letras.`);
+    if (palabra.length !== Number(longitudActiva)) {
+      setAviso(`La palabra tiene ${longitudActiva} letras.`);
       return;
     }
     if (!enDiccionario.has(palabra)) {
@@ -97,11 +123,12 @@ function Wordle() {
           Letras{' '}
           <select
             className="juego-select"
-            value={longitud}
+            value={longitudActiva}
             onChange={(e) => setLongitud(e.target.value)}
           >
-            <option value="4">4</option>
-            <option value="5">5</option>
+            {longitudes.map((L) => (
+              <option key={L} value={L}>{L}</option>
+            ))}
           </select>
         </label>
         <button type="button" className="gram-boton gram-boton-sec" onClick={nuevaPalabra}>
@@ -110,7 +137,7 @@ function Wordle() {
       </div>
 
       <p className="lectura-subtitulo">
-        Una palabra alemana de {longitud} letras del corpus, en {MAX_INTENTOS} intentos.
+        Una palabra alemana de {longitudActiva} letras de este vocabulario, en {MAX_INTENTOS} intentos.
         Verde = letra en su sitio; amarillo = está pero en otra posición.
       </p>
 
@@ -146,8 +173,8 @@ function Wordle() {
               className="esc-input"
               value={entrada}
               onChange={(e) => setEntrada(e.target.value)}
-              maxLength={Number(longitud)}
-              placeholder={'·'.repeat(Number(longitud))}
+              maxLength={Number(longitudActiva)}
+              placeholder={'·'.repeat(Number(longitudActiva))}
               autoFocus
             />
             <button type="submit" className="gram-boton">Probar</button>
@@ -174,7 +201,7 @@ function Wordle() {
           <button type="button" className="gram-boton" onClick={nuevaPalabra}>
             Otra palabra
           </button>
-          <Link to="/juegos" className="gram-boton gram-boton-sec">
+          <Link to={`/juegos/${lectura}`} className="gram-boton gram-boton-sec">
             Otros juegos
           </Link>
         </div>
