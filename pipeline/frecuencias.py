@@ -50,6 +50,21 @@ def contar():
                     conteos[f"{idioma}:{lema}"] += 1
                     totales[idioma] += 1
 
+        # Español como lengua de estudio: solo los libros con cuerpo solo `es`
+        # (no las lecturas trilingües, donde `es` es traducción).
+        cuerpo = datos.get("cuerpo", {})
+        if cuerpo.get("es") and "de" not in cuerpo and "en" not in cuerpo:
+            override = datos.get("lexico", {})
+            for frase in cuerpo["es"]:
+                for m in RE_PALABRA.finditer(frase):
+                    forma = normalizar(m.group())
+                    if not forma:
+                        continue
+                    entrada = override.get(f"es:{forma}") or lexico.get(f"es:{forma}")
+                    lema = normalizar(entrada["lemma"]) if entrada else forma
+                    conteos[f"es:{lema}"] += 1
+                    totales["es"] += 1
+
     salida = {
         "totales": dict(totales),
         "lemas": dict(sorted(conteos.items())),

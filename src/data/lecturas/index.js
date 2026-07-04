@@ -21,13 +21,15 @@ export const lecturas = Object.keys(modulos)
   .sort()
   .map((ruta) => modulos[ruta]);
 
-// Idiomas en los que existe una lectura (una lectura ya no tiene que ser
-// trilingüe: puede ser de+es, en+es, etc.). El español actúa además como
-// idioma de traducción, así que se asume siempre presente cuando lo hay.
+// Idiomas de ESTUDIO de una lectura. El de/en están disponibles si hay cuerpo.
+// El español es lengua de estudio SOLO cuando es el original (no hay de/en): en
+// las lecturas de/en el español es la traducción-pivote, no un texto a estudiar.
 export function idiomasDisponibles(lectura) {
-  return IDIOMAS.filter(
-    (i) => Array.isArray(lectura.cuerpo?.[i]) && lectura.cuerpo[i].length > 0
-  );
+  const cuerpo = lectura.cuerpo ?? {};
+  const tiene = (i) => Array.isArray(cuerpo[i]) && cuerpo[i].length > 0;
+  const estudio = ['de', 'en'].filter(tiene);
+  if (estudio.length === 0 && tiene('es')) estudio.push('es');
+  return estudio;
 }
 
 export function lecturasPorNivel(nivel) {

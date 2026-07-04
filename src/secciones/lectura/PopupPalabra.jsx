@@ -14,7 +14,11 @@ function PopupPalabra({ seleccion, esEspanol, yaEnBolsa, onAgregar, onCerrar }) 
         )}
 
         {esEspanol ? (
-          <p className="popup-traduccion neutral">Estás leyendo en español.</p>
+          traduccionEs ? (
+            <p className="popup-traduccion">≈ {traduccionEs}</p>
+          ) : (
+            <p className="popup-traduccion neutral">Palabra de uso común (sin glosa).</p>
+          )
         ) : traduccionEs ? (
           <p className="popup-traduccion">→ {traduccionEs}</p>
         ) : (

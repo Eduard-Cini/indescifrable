@@ -127,8 +127,10 @@ function Lector() {
     const entradaLex = lectura.lexico?.[id] ?? lexico?.[id];
     setSeleccion({
       surface: superficie,
+      // En español la glosa es una DEFINICIÓN de la voz rara (solo las poco
+      // comunes están en el léxico); en de/en es la traducción.
       lemma: entradaLex?.lemma ?? superficie,
-      traduccionEs: esEspanol ? null : entradaLex?.es ?? null,
+      traduccionEs: entradaLex?.es ?? null,
       id,
     });
   };

@@ -60534,5 +60534,821 @@
   "en:zoological": {
     "lemma": "zoological",
     "es": "zoológico"
+  },
+  "es:abadejo": {
+    "lemma": "abadejo",
+    "es": "bacalao (pez)"
+  },
+  "es:adarga": {
+    "lemma": "adarga",
+    "es": "escudo de cuero, ovalado o de forma de corazón"
+  },
+  "es:aderezan": {
+    "lemma": "aderezar",
+    "es": "componer, adornar o sazonar"
+  },
+  "es:aderezó": {
+    "lemma": "aderezar",
+    "es": "componer, adornar o sazonar"
+  },
+  "es:aguardan": {
+    "lemma": "aguardar",
+    "es": "esperar"
+  },
+  "es:aguardar": {
+    "lemma": "aguardar",
+    "es": "esperar"
+  },
+  "es:aleccionados": {
+    "lemma": "aleccionar",
+    "es": "instruir; enseñar"
+  },
+  "es:aleccionar": {
+    "lemma": "aleccionar",
+    "es": "instruir; enseñar"
+  },
+  "es:alforjas": {
+    "lemma": "alforja",
+    "es": "talega doble que se echa al hombro o a la cabalgadura"
+  },
+  "es:ansimesmo": {
+    "lemma": "ansimesmo",
+    "es": "forma antigua de «asimismo» (también)"
+  },
+  "es:apear": {
+    "lemma": "apear",
+    "es": "bajar de una cabalgadura o carruaje"
+  },
+  "es:apeó": {
+    "lemma": "apear",
+    "es": "bajar de una cabalgadura o carruaje"
+  },
+  "es:aposento": {
+    "lemma": "aposento",
+    "es": "habitación; cuarto"
+  },
+  "es:apriesa": {
+    "lemma": "apriés",
+    "es": "forma antigua de «aprisa» (deprisa)"
+  },
+  "es:apuntaciones": {
+    "lemma": "apuntación",
+    "es": "nota o apunte breve"
+  },
+  "es:apuntación": {
+    "lemma": "apuntación",
+    "es": "nota o apunte breve"
+  },
+  "es:arriero": {
+    "lemma": "arriero",
+    "es": "el que transporta mercancías con bestias de carga"
+  },
+  "es:arrieros": {
+    "lemma": "arriero",
+    "es": "el que transporta mercancías con bestias de carga"
+  },
+  "es:arrimada": {
+    "lemma": "arrimado",
+    "es": "apoyado; acogido en casa ajena"
+  },
+  "es:arrimado": {
+    "lemma": "arrimado",
+    "es": "apoyado; acogido en casa ajena"
+  },
+  "es:artillar": {
+    "lemma": "artillar",
+    "es": "armar con artillería"
+  },
+  "es:artilló": {
+    "lemma": "artillar",
+    "es": "armar con artillería"
+  },
+  "es:asaz": {
+    "lemma": "asaz",
+    "es": "bastante, muy (voz arcaica)"
+  },
+  "es:asir": {
+    "lemma": "asir",
+    "es": "agarrar; coger con la mano"
+  },
+  "es:asió": {
+    "lemma": "asir",
+    "es": "agarrar; coger con la mano"
+  },
+  "es:avariento": {
+    "lemma": "avariento",
+    "es": "avaro; codicioso"
+  },
+  "es:azogueros": {
+    "lemma": "azoguero",
+    "es": "trabajador que beneficia el mineral con azogue (mercurio)"
+  },
+  "es:azote": {
+    "lemma": "azote",
+    "es": "golpe dado con un látigo; latigazo"
+  },
+  "es:añadidura": {
+    "lemma": "añadidura",
+    "es": "lo que se añade; «por añadidura» = además"
+  },
+  "es:bahorrina": {
+    "lemma": "bahorrina",
+    "es": "conjunto de gente soez; suciedad, bazofia"
+  },
+  "es:bellaco": {
+    "lemma": "bellaco",
+    "es": "pícaro, ruin; astuto y de malas mañas"
+  },
+  "es:bellaquería": {
+    "lemma": "bellaquerío",
+    "es": "pillería; acción propia de un bellaco"
+  },
+  "es:bercera": {
+    "lemma": "bercera",
+    "es": "verdulera; mujer que vende verduras (berzas)"
+  },
+  "es:berceras": {
+    "lemma": "bercera",
+    "es": "verdulera; mujer que vende verduras (berzas)"
+  },
+  "es:brida": {
+    "lemma": "brida",
+    "es": "freno y riendas del caballo"
+  },
+  "es:brío": {
+    "lemma": "brío",
+    "es": "energía; ánimo; garbo"
+  },
+  "es:bríos": {
+    "lemma": "brío",
+    "es": "energía; ánimo; garbo"
+  },
+  "es:bucanero": {
+    "lemma": "bucanero",
+    "es": "pirata que asaltaba las colonias españolas de América"
+  },
+  "es:bucaneros": {
+    "lemma": "bucanero",
+    "es": "pirata que asaltaba las colonias españolas de América"
+  },
+  "es:caballeriza": {
+    "lemma": "caballeriza",
+    "es": "lugar cubierto donde se guardan los caballos"
+  },
+  "es:capones": {
+    "lemma": "capón",
+    "es": "pollo castrado y cebado; también golpe en la cabeza"
+  },
+  "es:capón": {
+    "lemma": "capón",
+    "es": "pollo castrado y cebado; también golpe en la cabeza"
+  },
+  "es:cascarilla": {
+    "lemma": "cascarilla",
+    "es": "corteza medicinal amarga; quina de poca calidad"
+  },
+  "es:celada": {
+    "lemma": "celado",
+    "es": "pieza de la armadura que cubre la cabeza; casco"
+  },
+  "es:coces": {
+    "lemma": "coz",
+    "es": "golpe que da una bestia con las patas traseras"
+  },
+  "es:codician": {
+    "lemma": "codiciar",
+    "es": "desear con ansia algo, sobre todo riquezas"
+  },
+  "es:codiciando": {
+    "lemma": "codiciar",
+    "es": "desear con ansia algo, sobre todo riquezas"
+  },
+  "es:cogote": {
+    "lemma": "cogote",
+    "es": "parte posterior del cuello; nuca"
+  },
+  "es:contemporizado": {
+    "lemma": "contemporizar",
+    "es": "acomodarse a la opinión o gusto ajeno por conveniencia"
+  },
+  "es:contemporizó": {
+    "lemma": "contemporizar",
+    "es": "acomodarse a la opinión o gusto ajeno por conveniencia"
+  },
+  "es:convenible": {
+    "lemma": "convenible",
+    "es": "conveniente; razonable (arcaico)"
+  },
+  "es:coronista": {
+    "lemma": "coronista",
+    "es": "forma antigua de «cronista»"
+  },
+  "es:cuitas": {
+    "lemma": "cuita",
+    "es": "pena; aflicción; congoja"
+  },
+  "es:curadillo": {
+    "lemma": "curadillo",
+    "es": "bacalao curado o abadejo seco"
+  },
+  "es:degolladura": {
+    "lemma": "degolladura",
+    "es": "corte en la garganta; degüello"
+  },
+  "es:degolladuras": {
+    "lemma": "degolladura",
+    "es": "corte en la garganta; degüello"
+  },
+  "es:dello": {
+    "lemma": "dello",
+    "es": "contracción antigua de «de ello»"
+  },
+  "es:dellos": {
+    "lemma": "dello",
+    "es": "contracción antigua de «de ellos»"
+  },
+  "es:depredaciones": {
+    "lemma": "depredación",
+    "es": "saqueo; robo con violencia"
+  },
+  "es:depredación": {
+    "lemma": "depredación",
+    "es": "saqueo; robo con violencia"
+  },
+  "es:descalabrado": {
+    "lemma": "descalabrado",
+    "es": "herido en la cabeza"
+  },
+  "es:descomedidos": {
+    "lemma": "descomedido",
+    "es": "descortés; desmesurado"
+  },
+  "es:descomulgado": {
+    "lemma": "descomulgado",
+    "es": "forma antigua de «excomulgado»"
+  },
+  "es:desdichado": {
+    "lemma": "desdichado",
+    "es": "desgraciado; infeliz"
+  },
+  "es:desfacedor": {
+    "lemma": "desfacedor",
+    "es": "forma antigua: «deshacedor», el que deshace agravios"
+  },
+  "es:desta": {
+    "lemma": "destar",
+    "es": "contracción antigua de «de esta»"
+  },
+  "es:destas": {
+    "lemma": "desta",
+    "es": "contracción antigua de «de estas»"
+  },
+  "es:deste": {
+    "lemma": "destar",
+    "es": "contracción antigua de «de este»"
+  },
+  "es:eceto": {
+    "lemma": "eceto",
+    "es": "forma antigua de «excepto»"
+  },
+  "es:efeto": {
+    "lemma": "efeto",
+    "es": "forma antigua de «efecto»"
+  },
+  "es:embrazando": {
+    "lemma": "embrazar",
+    "es": "sujetar el escudo o broquel al brazo"
+  },
+  "es:embrazó": {
+    "lemma": "embrazar",
+    "es": "sujetar el escudo o broquel al brazo"
+  },
+  "es:encaminaba": {
+    "lemma": "encaminar",
+    "es": "dirigir por buen camino; encaminarse = dirigirse"
+  },
+  "es:encaminar": {
+    "lemma": "encaminar",
+    "es": "dirigir por buen camino; encaminarse = dirigirse"
+  },
+  "es:encaminase": {
+    "lemma": "encaminar",
+    "es": "dirigir por buen camino; encaminarse = dirigirse"
+  },
+  "es:encaminó": {
+    "lemma": "encaminar",
+    "es": "dirigir por buen camino; encaminarse = dirigirse"
+  },
+  "es:encarecimiento": {
+    "lemma": "encarecimiento",
+    "es": "acción de ponderar o exagerar la importancia de algo"
+  },
+  "es:ensartando": {
+    "lemma": "ensartar",
+    "es": "pasar por un hilo (cuentas); enhebrar; encadenar dichos"
+  },
+  "es:ensartaron": {
+    "lemma": "ensartar",
+    "es": "pasar por un hilo (cuentas); enhebrar; encadenar dichos"
+  },
+  "es:ensillaba": {
+    "lemma": "ensillar",
+    "es": "poner la silla a una cabalgadura"
+  },
+  "es:ensillando": {
+    "lemma": "ensillar",
+    "es": "poner la silla a una cabalgadura"
+  },
+  "es:escrebir": {
+    "lemma": "escrebir",
+    "es": "forma antigua de «escribir»"
+  },
+  "es:escuderil": {
+    "lemma": "escuderil",
+    "es": "propio de escudero"
+  },
+  "es:escudilla": {
+    "lemma": "escudilla",
+    "es": "vasija ancha para servir caldo o sopa"
+  },
+  "es:escudillas": {
+    "lemma": "escudilla",
+    "es": "vasija ancha para servir caldo o sopa"
+  },
+  "es:esforzando": {
+    "lemma": "esforzar",
+    "es": "dar fuerza o ánimo; esforzarse = empeñarse"
+  },
+  "es:esforzar": {
+    "lemma": "esforzar",
+    "es": "dar fuerza o ánimo; esforzarse = empeñarse"
+  },
+  "es:esforzó": {
+    "lemma": "esforzar",
+    "es": "dar fuerza o ánimo; esforzarse = empeñarse"
+  },
+  "es:estraña": {
+    "lemma": "estraño",
+    "es": "forma antigua de «extraño»"
+  },
+  "es:estraño": {
+    "lemma": "estraño",
+    "es": "forma antigua de «extraño»"
+  },
+  "es:estribo": {
+    "lemma": "estribo",
+    "es": "pieza donde el jinete apoya el pie"
+  },
+  "es:estribos": {
+    "lemma": "estribo",
+    "es": "pieza donde el jinete apoya el pie"
+  },
+  "es:excomulgado": {
+    "lemma": "excomulgado",
+    "es": "expulsado de la comunión de la Iglesia"
+  },
+  "es:extravío": {
+    "lemma": "extravío",
+    "es": "acción de extraviarse; desorden de conducta"
+  },
+  "es:extravíos": {
+    "lemma": "extravío",
+    "es": "acción de extraviarse; desorden de conducta"
+  },
+  "es:fasta": {
+    "lemma": "fasta",
+    "es": "forma antigua de «hasta»"
+  },
+  "es:fazañas": {
+    "lemma": "fazaña",
+    "es": "forma antigua de «hazaña»"
+  },
+  "es:fermosura": {
+    "lemma": "fermosura",
+    "es": "forma antigua de «hermosura»"
+  },
+  "es:filibusteros": {
+    "lemma": "filibustero",
+    "es": "pirata que asolaba el mar de las Antillas"
+  },
+  "es:fortifican": {
+    "lemma": "fortificar",
+    "es": "reforzar con obras de defensa; dar fuerza"
+  },
+  "es:fortificar": {
+    "lemma": "fortificar",
+    "es": "reforzar con obras de defensa; dar fuerza"
+  },
+  "es:frisaba": {
+    "lemma": "frisar",
+    "es": "acercarse a (una edad o cantidad); rozar"
+  },
+  "es:gabán": {
+    "lemma": "gabán",
+    "es": "abrigo o capote de manga"
+  },
+  "es:galgo": {
+    "lemma": "galgo",
+    "es": "perro de caza esbelto y muy veloz"
+  },
+  "es:gargajo": {
+    "lemma": "gargajo",
+    "es": "flema o escupitajo espeso"
+  },
+  "es:gargajos": {
+    "lemma": "gargajo",
+    "es": "flema o escupitajo espeso"
+  },
+  "es:gaznate": {
+    "lemma": "gaznate",
+    "es": "garganta; garguero"
+  },
+  "es:gules": {
+    "lemma": "gul",
+    "es": "en heráldica, el color rojo"
+  },
+  "es:hablista": {
+    "lemma": "hablista",
+    "es": "persona que habla o escribe con corrección y elegancia"
+  },
+  "es:hanegas": {
+    "lemma": "hanega",
+    "es": "fanega: medida antigua de grano o de tierra"
+  },
+  "es:hidalgo": {
+    "lemma": "hidalgo",
+    "es": "noble de baja categoría, exento de impuestos"
+  },
+  "es:hincar": {
+    "lemma": "hincar",
+    "es": "clavar; hincarse de rodillas = arrodillarse"
+  },
+  "es:hincó": {
+    "lemma": "hincar",
+    "es": "clavar; hincarse de rodillas = arrodillarse"
+  },
+  "es:hinque": {
+    "lemma": "hincar",
+    "es": "clavar; hincarse de rodillas = arrodillarse"
+  },
+  "es:holgasen": {
+    "lemma": "holgar",
+    "es": "descansar; alegrarse; holgarse de algo"
+  },
+  "es:holgó": {
+    "lemma": "holgar",
+    "es": "descansar; alegrarse; holgarse de algo"
+  },
+  "es:huelgo": {
+    "lemma": "huelgo",
+    "es": "aliento; respiración"
+  },
+  "es:inviar": {
+    "lemma": "inviar",
+    "es": "forma antigua de «enviar»"
+  },
+  "es:lantejas": {
+    "lemma": "lanteja",
+    "es": "forma antigua de «lenteja»"
+  },
+  "es:lavatorio": {
+    "lemma": "lavatorio",
+    "es": "acción de lavar; ceremonia de lavar los pies"
+  },
+  "es:librejo": {
+    "lemma": "librejo",
+    "es": "libro de poco valor (despectivo)"
+  },
+  "es:lición": {
+    "lemma": "lición",
+    "es": "forma antigua de «lección»"
+  },
+  "es:lid": {
+    "lemma": "lid",
+    "es": "combate; disputa"
+  },
+  "es:lides": {
+    "lemma": "lid",
+    "es": "combate; disputa"
+  },
+  "es:maltrecho": {
+    "lemma": "maltrecho",
+    "es": "malparado; en mal estado tras un daño"
+  },
+  "es:maltrechos": {
+    "lemma": "maltrecho",
+    "es": "malparado; en mal estado tras un daño"
+  },
+  "es:mancebo": {
+    "lemma": "mancebo",
+    "es": "mozo; joven; o dependiente de comercio"
+  },
+  "es:manteo": {
+    "lemma": "manteo",
+    "es": "capa larga que llevaban clérigos y estudiantes"
+  },
+  "es:medroso": {
+    "lemma": "medroso",
+    "es": "miedoso; que siente o causa miedo"
+  },
+  "es:melecina": {
+    "lemma": "melecín",
+    "es": "forma antigua de «medicina»; también lavativa"
+  },
+  "es:mendrugos": {
+    "lemma": "mendrugo",
+    "es": "pedazo de pan duro"
+  },
+  "es:menester": {
+    "lemma": "menester",
+    "es": "necesidad; «haber menester» = necesitar"
+  },
+  "es:menesteroso": {
+    "lemma": "menesteroso",
+    "es": "necesitado; pobre"
+  },
+  "es:menesterosos": {
+    "lemma": "menesteroso",
+    "es": "necesitado; pobre"
+  },
+  "es:mesma": {
+    "lemma": "mesmo",
+    "es": "forma antigua de «mismo»"
+  },
+  "es:mesmo": {
+    "lemma": "mesmo",
+    "es": "forma antigua de «mismo»"
+  },
+  "es:mesmos": {
+    "lemma": "mesmo",
+    "es": "forma antigua de «mismo»"
+  },
+  "es:mocedad": {
+    "lemma": "mocedad",
+    "es": "juventud; travesura propia de joven"
+  },
+  "es:montoneras": {
+    "lemma": "montonera",
+    "es": "partida de jinetes de las guerras civiles hispanoamericanas"
+  },
+  "es:morisco": {
+    "lemma": "morisco",
+    "es": "musulmán bautizado que quedó en España tras la Reconquista"
+  },
+  "es:moriscos": {
+    "lemma": "morisco",
+    "es": "musulmán bautizado que quedó en España tras la Reconquista"
+  },
+  "es:morrión": {
+    "lemma": "morrión",
+    "es": "casco militar antiguo con el borde levantado"
+  },
+  "es:murmuraciones": {
+    "lemma": "murmuración",
+    "es": "crítica o chisme contra alguien ausente"
+  },
+  "es:ociosas": {
+    "lemma": "ocioso",
+    "es": "que no trabaja; inútil o sin provecho"
+  },
+  "es:ocioso": {
+    "lemma": "ocioso",
+    "es": "que no trabaja; inútil o sin provecho"
+  },
+  "es:ociosos": {
+    "lemma": "ocioso",
+    "es": "que no trabaja; inútil o sin provecho"
+  },
+  "es:osaba": {
+    "lemma": "osar",
+    "es": "atreverse"
+  },
+  "es:osado": {
+    "lemma": "osar",
+    "es": "atreverse"
+  },
+  "es:osamos": {
+    "lemma": "osar",
+    "es": "atreverse"
+  },
+  "es:pendencia": {
+    "lemma": "pendencia",
+    "es": "riña; pelea"
+  },
+  "es:pendencias": {
+    "lemma": "pendencia",
+    "es": "riña; pelea"
+  },
+  "es:pirática": {
+    "lemma": "pirático",
+    "es": "propio de los piratas"
+  },
+  "es:piráticos": {
+    "lemma": "pirático",
+    "es": "propio de los piratas"
+  },
+  "es:polvoroso": {
+    "lemma": "polvoroso",
+    "es": "lleno de polvo; «poner pies en polvorosa» = huir"
+  },
+  "es:pormenores": {
+    "lemma": "pormenor",
+    "es": "detalle; circunstancia menuda"
+  },
+  "es:priesa": {
+    "lemma": "priesa",
+    "es": "forma antigua de «prisa»"
+  },
+  "es:prosupuesto": {
+    "lemma": "prosupuesto",
+    "es": "forma antigua de «presupuesto» (propósito, motivo)"
+  },
+  "es:pupilaje": {
+    "lemma": "pupilaje",
+    "es": "casa donde se daba hospedaje y comida a estudiantes (pupilos)"
+  },
+  "es:pupilero": {
+    "lemma": "pupilero",
+    "es": "dueño de una casa de pupilos (hospedaje de estudiantes)"
+  },
+  "es:quebranto": {
+    "lemma": "quebranto",
+    "es": "daño o aflicción; «duelos y quebrantos» = huevos con torreznos"
+  },
+  "es:quebrantos": {
+    "lemma": "quebranto",
+    "es": "daño o aflicción; «duelos y quebrantos» = huevos con torreznos"
+  },
+  "es:quijote": {
+    "lemma": "Quijote",
+    "es": "pieza de la armadura que protege el muslo"
+  },
+  "es:quina": {
+    "lemma": "quina",
+    "es": "corteza medicinal amarga, usada contra las fiebres"
+  },
+  "es:recebido": {
+    "lemma": "recebir",
+    "es": "forma antigua de «recibir»"
+  },
+  "es:recebir": {
+    "lemma": "recebir",
+    "es": "forma antigua de «recibir»"
+  },
+  "es:recebía": {
+    "lemma": "recebir",
+    "es": "forma antigua de «recibía» (recibir)"
+  },
+  "es:recebían": {
+    "lemma": "recebir",
+    "es": "forma antigua de «recibir»"
+  },
+  "es:refectorio": {
+    "lemma": "refectorio",
+    "es": "sala donde come una comunidad (convento, colegio)"
+  },
+  "es:remendona": {
+    "lemma": "remendón",
+    "es": "el que remienda ropa o calzado usados"
+  },
+  "es:remendón": {
+    "lemma": "remendón",
+    "es": "el que remienda ropa o calzado usados"
+  },
+  "es:reprehensión": {
+    "lemma": "reprehensión",
+    "es": "reprensión; reprimenda"
+  },
+  "es:requiebros": {
+    "lemma": "requiebro",
+    "es": "piropo; dicho galante"
+  },
+  "es:rocines": {
+    "lemma": "rocín",
+    "es": "caballo de mala traza o de trabajo; jamelgo"
+  },
+  "es:rocino": {
+    "lemma": "rocino",
+    "es": "caballo de mala traza; rocín"
+  },
+  "es:rocín": {
+    "lemma": "rocín",
+    "es": "caballo de mala traza o de trabajo; jamelgo"
+  },
+  "es:ropilla": {
+    "lemma": "ropilla",
+    "es": "vestidura corta con mangas que se llevaba sobre el jubón"
+  },
+  "es:sayo": {
+    "lemma": "sayo",
+    "es": "prenda de vestir holgada, sin botones, que cubría el cuerpo"
+  },
+  "es:sinople": {
+    "lemma": "sinople",
+    "es": "en heráldica, el color verde"
+  },
+  "es:sinrazones": {
+    "lemma": "sinrazón",
+    "es": "acción injusta; falta de razón"
+  },
+  "es:sinrazón": {
+    "lemma": "sinrazón",
+    "es": "acción injusta; falta de razón"
+  },
+  "es:solazando": {
+    "lemma": "solazar",
+    "es": "dar solaz o esparcimiento; recrearse"
+  },
+  "es:soldada": {
+    "lemma": "soldada",
+    "es": "sueldo o paga, sobre todo del soldado o criado"
+  },
+  "es:sotana": {
+    "lemma": "sotana",
+    "es": "vestidura talar (larga) de los clérigos"
+  },
+  "es:terciana": {
+    "lemma": "terciana",
+    "es": "fiebre intermitente que repite cada tercer día (paludismo)"
+  },
+  "es:topaba": {
+    "lemma": "topar",
+    "es": "encontrar o tropezar con algo o alguien"
+  },
+  "es:topar": {
+    "lemma": "topar",
+    "es": "encontrar o tropezar con algo o alguien"
+  },
+  "es:topó": {
+    "lemma": "topar",
+    "es": "encontrar o tropezar con algo o alguien"
+  },
+  "es:tornarían": {
+    "lemma": "tornar",
+    "es": "volver, regresar; o volver a hacer algo"
+  },
+  "es:tornó": {
+    "lemma": "tornar",
+    "es": "volver, regresar; o volver a hacer algo"
+  },
+  "es:truchuela": {
+    "lemma": "truchuela",
+    "es": "bacalao seco y curado"
+  },
+  "es:truchuelas": {
+    "lemma": "truchuela",
+    "es": "bacalao seco y curado"
+  },
+  "es:trujeron": {
+    "lemma": "trujeron",
+    "es": "forma antigua de «trajeron» (traer)"
+  },
+  "es:ungüentos": {
+    "lemma": "ungüento",
+    "es": "sustancia grasa que se aplica como remedio"
+  },
+  "es:velarte": {
+    "lemma": "velarte",
+    "es": "paño fino de color negro"
+  },
+  "es:vellorí": {
+    "lemma": "vellorí",
+    "es": "paño entrefino de color pardo o ceniciento"
+  },
+  "es:venteril": {
+    "lemma": "venteril",
+    "es": "propio de la venta o del ventero"
+  },
+  "es:ventero": {
+    "lemma": "ventero",
+    "es": "dueño de una venta (posada de camino)"
+  },
+  "es:virreina": {
+    "lemma": "virreina",
+    "es": "esposa del virrey; señora de un virreinato"
+  },
+  "es:vizcaíno": {
+    "lemma": "vizcaíno",
+    "es": "natural de Vizcaya; hablaba un castellano tosco y atropellado"
+  },
+  "es:vizcaínos": {
+    "lemma": "vizcaíno",
+    "es": "natural de Vizcaya; hablaba un castellano tosco y atropellado"
+  },
+  "es:yesones": {
+    "lemma": "yesón",
+    "es": "trozo grande de yeso; cascote"
+  },
+  "es:yesón": {
+    "lemma": "yesón",
+    "es": "trozo grande de yeso; cascote"
+  },
+  "es:ánima": {
+    "lemma": "ánima",
+    "es": "alma, en especial la del purgatorio"
+  },
+  "es:ánimas": {
+    "lemma": "ánima",
+    "es": "alma, en especial la del purgatorio"
   }
 }

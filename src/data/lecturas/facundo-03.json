@@ -1,0 +1,39 @@
+{
+  "id": "facundo-03",
+  "nivel": "avanzado",
+  "autor": "Domingo F. Sarmiento",
+  "libro": "facundo",
+  "parte": 3,
+  "partes": 3,
+  "titulo": {
+    "es": "Facundo (selección)"
+  },
+  "fuente": "«Facundo. Civilización y barbarie», Domingo Faustino Sarmiento (1845; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/33267. Selección procesada con spaCy; glosa de voces poco comunes y regionalismos rioplatenses.",
+  "cuerpo": {
+    "es": [
+      "Los cuatro fueron conducidos a Buenos Aires y degollados en Santos Lugares, previas las profanaciones referidas.",
+      "[30] Tengo estos hechos de don Domingo de Oro, quien estaba por entonces al lado de López, y servía de padrino a Rosas, muy desvalido para con aquél en aquellos momentos.",
+      "[31] El éxito final no ha justificado tan halagüeñas esperanzas; la industria de la seda languidece hoy en Mendoza, y desaparecerá por falta de fomento.--(_Nota de la edición de 1851.",
+      "_)",
+      "[32] Frase vulgar tomada del modo de lavar de la plebe golpeando la ropa; quiere decir que todavía faltan muchas dificultades que vencer.",
+      "[33] Pueblos de abajo, Buenos Aires, etc., de arriba, Tucumán, etc. [34] Estancieros del sur de Buenos Aires me han aseverado después que la expedición aseguró la frontera, alejando a los bárbaros indómitos y sometiendo muchas tribus, que han formado una barrera que pone a cubierto las estancias de las incursiones de aquéllos, y que, a merced de estas ventajas obtenidas, la población ha podido extenderse hacia el Sur.",
+      "La geografía hizo también importantes conquistas, descubriendo territorios desconocidos hasta entonces y aclarando muchas dudas.",
+      "El general Pacheco hizo un reconocimiento del río Negro, donde Rosas se hizo adjudicar la isla de Choelechoel, y la división de Mendoza descubrió todo el curso del río Salado hasta su desagüe en la laguna de Yauquenes.",
+      "Pero un Gobierno inteligente habría asegurado de esta vez para siempre las fronteras del sur de Buenos Aires.",
+      "El Río Colorado, navegable desde poco más abajo de Cobu-Sebu, cuarenta leguas distante de Concepción, donde lo atravesó don Luis de la Cruz, ofrece en todo su curso, desde la cordillera de los Andes hasta el Atlántico, una frontera a poca costa impasable para los indios.",
+      "Por lo que hace a la provincia de Buenos Aires, un fuerte establecido en la Laguna del Monte en que desagua el arroyo Guamini, sostenido por otro a las inmediaciones de la laguna de las Salinas hacia el Sur, otro en la sierra de la Ventana hasta apoyarse en el Fuerte Argentino, en Bahía Blanca, habrían permitido la población del espacio de territorio inmenso que media entre este último punto y el Fuerte de la Independencia en la sierra del Tandil, límite de la población de Buenos Aires al Sur.",
+      "Para completar este sistema de ocupación, requeríase, además, establecer colonias agrícolas en Bahía Blanca y en la embocadura del río Colorado, de manera que sirviesen de mercado para la exportación de los productos de los países circunvecinos; pues careciendo de puertos toda la costa intermediaria hasta Buenos Aires, los productos de las estancias más avanzadas al Sur se pierden, no pudiendo transportarse las lanas, sebos, cueros, astas, etc., sin perder su valor en los fletes.",
+      "La navegación y población de Río Colorado adentro traería, a más de los productos que pueden hacer nacer, la ventaja de desalojar a los salvajes poco numerosos que quedarían cortados hacia el Norte, haciéndolos buscar el territorio al sur del Colorado.",
+      "Lejos de haberse asegurado de una manera permanente las fronteras, los bárbaros han invadido desde la época de la expedición al Sur, y despoblado toda la campaña de Córdoba y de San Luis; la primera hasta San José del Morro, que está en la misma latitud que la ciudad.",
+      "Ambas provincias viven desde entonces en continua alarma, con tropas constantemente sobre las armas, lo que, con el sistema de depredación de los gobernantes, hace una plaga más ruinosa que las incursiones de los salvajes.",
+      "La cría de ganado está casi extinguida, y los estancieros apresuran su extinción para librarse al fin de las exacciones de los gobernantes por un lado, y de las depredaciones de los indios por otro.",
+      "Por un sistema de política inexplicable, Rosas prohibe a los Gobiernos de la frontera emprender expedición alguna contra los indios, dejando que invadan periódicamente el país y asolen más de doscientas leguas de frontera.",
+      "Esto es lo que Rosas no hizo como debía hacerlo en la tan decantada expedición al Sur, cuyos resultados fueron efímeros, dejando subsistente el mal, que ha tomado después mayor agravación que antes.--(_Nota de la edición de 1851.",
+      "_)",
+      "[35] En la causa criminal seguida contra los cómplices en la muerte de Quiroga, el reo Cabanillas declaró en un momento de efusión, de rodillas, en presencia del doctor Maza--degollado por los agentes de Rosas--, que él no se había propuesto sino salvar a Quiroga; que el 24 de diciembre había escrito a un amigo de éste, un francés, que le hiciese decir a Quiroga que no pasase por el monte de San Pedro, donde él estaba aguardándole con veinticinco hombres para asesinarlo por orden de su Gobierno; que Toribio Junco--un gaucho de quien Santos Pérez decía: «Hay otro más valiente que yo: es Toribio Junco»--había dicho al mismo Cabanillas que, observando cierto desorden en la conducta de Santos Pérez, empezó a acecharlo, hasta que un día lo encontró arrodillado en la capilla de la Virgen de Tulumba, con los ojos arrasados de lágrimas; que preguntándole la causa de su quebranto, le dijo: «Estoy pidiéndole a la Virgen me ilumine sobre si debo matar a Quiroga, según me lo ordenan; pues me presentan este acto como convenido entre los gobernadores López de Santa Fe, y Rosas, de Buenos Aires, único medio de salvar la República.--(_Nota de la edición de 1851.",
+      "_)",
+      "[36] Tuve estos detalles del malogrado doctor Piñero, muerto en 1846 en Chile, pariente del doctor Ortiz, compañero de viaje de Quiroga desde Buenos Aires hasta Córdoba.",
+      "Es triste nece"
+    ]
+  }
+}

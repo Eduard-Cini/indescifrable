@@ -8,7 +8,9 @@ import {
   guardarIdiomaEstudio,
 } from '../engine/almacenamiento';
 
-export const IDIOMAS_ESTUDIO = ['de', 'en'];
+// El español es también lengua de estudio (para nativos que amplían vocabulario
+// con libros difíciles), no solo la lengua de traducción de de/en.
+export const IDIOMAS_ESTUDIO = ['de', 'en', 'es'];
 
 const Contexto = createContext(null);
 

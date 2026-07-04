@@ -122,11 +122,83 @@ LIBROS = {
         "inicio": "On a spring afternoon",
         "frases_por_parte": 90,
     },
+    # --- Español como lengua de estudio (libros difíciles; se ingiere un
+    # FRAGMENTO acotado por `max_chars`, no la obra entera). La glosa por
+    # palabra (definición de voces raras) la añade el pipeline de léxico es. ---
+    "quijote": {
+        "id_base": "quijote",
+        "idioma": "es",
+        "nivel": "avanzado",
+        "autor": "Miguel de Cervantes",
+        "titulo": {"es": "Don Quijote de la Mancha (selección)"},
+        "fuente": (
+            "«El ingenioso hidalgo don Quijote de la Mancha», Miguel de "
+            "Cervantes (1605; dominio público). Texto: Project Gutenberg, "
+            "https://www.gutenberg.org/ebooks/2000. Selección de los primeros "
+            "capítulos, procesada con spaCy; glosa de voces poco comunes en "
+            "español."
+        ),
+        "archivo": FUENTES / "quijote.txt",
+        "inicio": "En un lugar de la Mancha, de cuyo nombre no quiero acordarme",
+        "frases_por_parte": 90,
+        "max_chars": 45000,
+    },
+    "buscon": {
+        "id_base": "buscon",
+        "idioma": "es",
+        "nivel": "avanzado",
+        "autor": "Francisco de Quevedo",
+        "titulo": {"es": "La vida del Buscón (selección)"},
+        "fuente": (
+            "«Historia de la vida del Buscón», Francisco de Quevedo (1626; "
+            "dominio público). Texto: Project Gutenberg, "
+            "https://www.gutenberg.org/ebooks/32315. Selección procesada con "
+            "spaCy; glosa de voces poco comunes en español."
+        ),
+        "archivo": FUENTES / "buscon.txt",
+        "inicio": "Yo, señora, soy de Segovia",
+        "frases_por_parte": 90,
+        "max_chars": 45000,
+    },
+    "facundo": {
+        "id_base": "facundo",
+        "idioma": "es",
+        "nivel": "avanzado",
+        "autor": "Domingo F. Sarmiento",
+        "titulo": {"es": "Facundo (selección)"},
+        "fuente": (
+            "«Facundo. Civilización y barbarie», Domingo Faustino Sarmiento "
+            "(1845; dominio público). Texto: Project Gutenberg, "
+            "https://www.gutenberg.org/ebooks/33267. Selección procesada con "
+            "spaCy; glosa de voces poco comunes y regionalismos rioplatenses."
+        ),
+        "archivo": FUENTES / "facundo.txt",
+        "inicio": "Sombra terrible de Facundo, voy a evocarte",
+        "frases_por_parte": 90,
+        "max_chars": 45000,
+    },
+    "tradiciones": {
+        "id_base": "tradiciones",
+        "idioma": "es",
+        "nivel": "avanzado",
+        "autor": "Ricardo Palma",
+        "titulo": {"es": "Tradiciones peruanas (selección)"},
+        "fuente": (
+            "«Tradiciones peruanas», Ricardo Palma (s. XIX; dominio público). "
+            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/21282. "
+            "Selección de las primeras tradiciones, procesada con spaCy; glosa "
+            "de voces poco comunes y peruanismos."
+        ),
+        "archivo": FUENTES / "tradiciones.txt",
+        "inicio": "Esta tradición no tiene otra fuente",
+        "frases_por_parte": 90,
+        "max_chars": 45000,
+    },
 }
 
 CONFIG = None  # lo fija procesar(nombre)
 # Modelo de spaCy por idioma del libro (solo se usa para segmentar en frases).
-MODELOS = {"de": "de_core_news_md", "en": "en_core_web_sm"}
+MODELOS = {"de": "de_core_news_md", "en": "en_core_web_sm", "es": "es_core_news_md"}
 RUTA_BASE = Path(__file__).parent / "lexico.base.json"
 
 
@@ -186,6 +258,9 @@ def procesar(nombre):
     nlp = spacy.load(modelo)
 
     contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
+    # Fragmento: para obras enormes (Quijote) se ingiere solo un tramo inicial.
+    if CONFIG.get("max_chars"):
+        contenido = contenido[:CONFIG["max_chars"]]
     nlp.max_length = max(nlp.max_length, len(contenido) + 100)
     doc = nlp(contenido)
 
