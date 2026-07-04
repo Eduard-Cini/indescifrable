@@ -38,7 +38,7 @@ function Home() {
 
         <Link to="/gramatica" className="seccion-card gramatica">
           <h2>✍️ Gramática</h2>
-          <p>Ejercicios cloze de alemán por tema: declinación, casos, conjugación y verbos separables.</p>
+          <p>Ejercicios cloze por tema, adaptados a tu idioma de estudio, con distractores por similitud.</p>
         </Link>
       </main>
     </div>

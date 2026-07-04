@@ -11,6 +11,7 @@ import {
   cargarGramaticaCompletados,
   guardarGramaticaCompletados,
 } from '../../engine/almacenamiento';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import './gramatica.css';
 
@@ -20,6 +21,7 @@ const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', a
 // registra (lectura|tema) como terminado: esa es la palomita del índice.
 function Ejercicios() {
   const { lectura, tema } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [data, setData] = useState(null);
   const [idx, setIdx] = useState(0);
   const [elegida, setElegida] = useState(null);
@@ -28,12 +30,12 @@ function Ejercicios() {
   useEffect(() => {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
-      if (vivo) setData(m.default);
+      if (vivo) setData(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const grupo = data
     ? agruparPorLectura(data).find((g) => g.slug === lectura) ?? null

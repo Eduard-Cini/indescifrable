@@ -1,36 +1,43 @@
-"""Pipeline offline de la Sección 3 (Gramática): corpus alemán -> ejercicios cloze.
+"""Pipeline offline de la Sección 3 (Gramática): corpus -> ejercicios cloze.
 
-Recorre las frases en alemán de TODAS las lecturas de src/data/lecturas, usa
-spaCy (de_core_news_md, con vectores) para localizar un «hueco» por cada uno de
-los cuatro temas y genera los distractores con un método HÍBRIDO:
+Recorre las frases de TODAS las lecturas de src/data/lecturas y, para cada
+idioma de estudio (alemán e inglés), usa spaCy (modelo CON vectores) para
+localizar un «hueco» por tema y genera los distractores con un método HÍBRIDO:
 
   1. el PARADIGMA morfológico define el CONJUNTO de candidatos plausibles, y
   2. la SIMILITUD COSENO de los vectores spaCy los ORDENA para quedarnos con
      los k «hard negatives» más parecidos al correcto.
 
 Para que la respuesta sea ÚNICA (un cloze sin respuesta única no evalúa nada),
-cada tema añade su propio criterio de exclusión de alternativas válidas:
+cada tema añade su propio criterio de exclusión de alternativas válidas.
+
+Alemán (la unicidad se apoya en el sistema de CASOS y de CONCORDANCIA):
   - declinación: las demás formas del artículo violan caso/género/número.
-  - preposición: el pool son las preposiciones del CASO OPUESTO, así el
-    artículo visible en la frase descarta los distractores.
-  - conjugación: un candidato solo vale como distractor si, re-parseada la
-    frase con la sustitución, VIOLA la concordancia (persona/número) o no es
-    forma finita; si concuerda (p. ej. otro tiempo: ging→geht) se descarta
-    porque también sería una frase válida.
-  - separables: se excluyen los prefijos que forman con el mismo verbo otro
-    verbo atestiguado en el léxico del corpus (aufmachen vs zumachen).
+  - preposición: el pool son las preposiciones del CASO OPUESTO (el artículo
+    declinado visible descarta los distractores).
+  - conjugación: un candidato solo vale si, re-parseada la frase, VIOLA la
+    concordancia (persona/número) o no es forma finita.
+  - separables: se excluyen los prefijos que forman otro verbo atestiguado.
+
+Inglés (sin casos; se eligen temas donde la unicidad es formalmente demostrable):
+  - a/an: el artículo indefinido lo fija el SONIDO siguiente; el distractor es
+    el otro artículo y la respuesta correcta es la atestiguada por el autor.
+  - presente 3ª persona -s: los distractores son formas NO finitas o la base
+    (agramaticales como verbo finito 3sg); nunca una forma finita de pasado,
+    que sería una frase válida.
+  - infinitivo tras modal: tras can/must/will… el verbo va en forma base, así
+    que toda forma flexionada (‑s, ‑ing, pasado) es agramatical.
 
 La selección final es ESTRATIFICADA: round-robin entre fuentes (ordenadas por
 nivel) hasta el tope, para que principiante/intermedio/libros aporten todos.
 
-El resultado (src/data/gramatica.json) lo consume src/engine/gramatica.js y la
-UI de /gramatica. El frontend nunca calcula coseno: todo ocurre aquí, offline.
+El resultado (src/data/gramatica.json) queda indexado por idioma
+({"de": {temas, ejercicios}, "en": {...}}); lo consume src/engine/gramatica.js
+y la UI de /gramatica. El frontend nunca calcula coseno: todo ocurre aquí.
 
-Uso:  PYTHONUTF8=1 python gramatica.py [tema ...]
-      (sin argumentos procesa los cuatro temas)
+Uso:  PYTHONUTF8=1 python gramatica.py
 """
 import json
-import sys
 from pathlib import Path
 
 import numpy as np
@@ -41,7 +48,8 @@ from procesar import normalizar, RAIZ
 DIR_LECTURAS = RAIZ / "src" / "data" / "lecturas"
 RUTA_SALIDA = RAIZ / "src" / "data" / "gramatica.json"
 RUTA_LEXICO = RAIZ / "src" / "data" / "lexico.json"
-MODELO = "de_core_news_md"
+
+MODELOS = {"de": "de_core_news_md", "en": "en_core_web_md"}
 
 # Sólo frases legibles como cloze: las de los libros llegan a 40+ tokens.
 MAX_TOKENS = 18
@@ -51,7 +59,7 @@ N_DISTRACTORES = 3
 
 NIVEL_ORDEN = {"principiante": 0, "intermedio": 1, "avanzado": 2}
 
-# --- Paradigmas (el CONJUNTO de candidatos) ---------------------------------
+# --- Paradigmas alemanes (el CONJUNTO de candidatos) -------------------------
 ARTICULOS = ["der", "die", "das", "den", "dem", "des"]
 
 PREP_DATIVO = {"mit", "nach", "aus", "bei", "zu", "von", "seit", "gegenüber"}
@@ -66,8 +74,15 @@ PREFIJOS_SEPARABLES = list(dict.fromkeys([
     "heraus", "empor",
 ]))
 
+# --- Paradigmas ingleses -----------------------------------------------------
+MODALES = {"can", "could", "will", "would", "shall", "should", "may", "might", "must"}
+
+CASO_ES = {"Nom": "nominativo", "Acc": "acusativo", "Dat": "dativo", "Gen": "genitivo"}
+GENERO_ES = {"Masc": "masculino", "Fem": "femenino", "Neut": "neutro"}
+NUMERO_ES = {"Sing": "singular", "Plur": "plural"}
+
 # --- Metadatos de cada tema (la lección presentada antes de los ejercicios) --
-TEMAS = [
+TEMAS_DE = [
     {
         "id": "declinacion",
         "titulo": "Declinación del artículo",
@@ -158,9 +173,64 @@ TEMAS = [
     },
 ]
 
-CASO_ES = {"Nom": "nominativo", "Acc": "acusativo", "Dat": "dativo", "Gen": "genitivo"}
-GENERO_ES = {"Masc": "masculino", "Fem": "femenino", "Neut": "neutro"}
-NUMERO_ES = {"Sing": "singular", "Plur": "plural"}
+TEMAS_EN = [
+    {
+        "id": "articulo_an",
+        "titulo": "Artículo «a» / «an»",
+        "nivel": "principiante",
+        "resumen": (
+            "El artículo indefinido inglés es «a» ante sonido consonántico "
+            "(a book, a cat) y «an» ante sonido vocálico (an apple, an egg). "
+            "Lo que cuenta es el SONIDO, no la letra: «a university» (suena "
+            "«iu-») pero «an hour» (h muda). Elige el que pide la palabra que "
+            "sigue al hueco."
+        ),
+        "tabla": {
+            "cabecera": ["Sonido siguiente", "Artículo", "Ejemplo"],
+            "filas": [
+                ["consonántico", "a", "a cat · a university"],
+                ["vocálico", "an", "an egg · an hour"],
+            ],
+        },
+    },
+    {
+        "id": "presente_s",
+        "titulo": "Presente: 3ª persona (-s)",
+        "nivel": "principiante",
+        "resumen": (
+            "En el presente simple, la 3ª persona del singular (he, she, it) "
+            "añade -s al verbo: I work → he works. Las demás personas usan la "
+            "forma base. Verbos en -o/-ss/-sh/-ch/-x añaden -es (go→goes, "
+            "watch→watches); consonante + y pasa a -ies (study→studies)."
+        ),
+        "tabla": {
+            "cabecera": ["Persona", "Forma", "Ejemplo (work)"],
+            "filas": [
+                ["I / you / we / they", "base", "work"],
+                ["he / she / it", "+ -s", "works"],
+            ],
+        },
+    },
+    {
+        "id": "infinitivo_modal",
+        "titulo": "Infinitivo tras un modal",
+        "nivel": "intermedio",
+        "resumen": (
+            "Tras un verbo modal (can, could, will, would, shall, should, "
+            "may, might, must) el verbo principal va en su FORMA BASE: sin -s, "
+            "sin -ing y sin pasado. She can swim (no «swims», «swimming» ni "
+            "«swam»). El modal ya aporta el tiempo y el modo."
+        ),
+        "tabla": {
+            "cabecera": ["Modal", "Verbo", "Ejemplo"],
+            "filas": [
+                ["can", "forma base", "she can go"],
+                ["must", "forma base", "he must work"],
+                ["will", "forma base", "they will come"],
+            ],
+        },
+    },
+]
 
 
 # --- Utilidades vectoriales (el COSENO ordena el pool) -----------------------
@@ -213,7 +283,20 @@ def viola_concordancia(nlp, antes, forma, despues, persona, numero):
             or t2.morph.get("Number") != numero)
 
 
-# --- Generadores por tema ----------------------------------------------------
+def no_finita_o_base(nlp, antes, forma, despues, lemma):
+    """True si `forma` en el hueco es NO finita (‑ing, participio) o es la
+    forma base del verbo. Ambas son agramaticales como verbo finito de 3ª
+    persona del singular en presente; una forma finita de PASADO (went) daría
+    frase válida, así que se excluye devolviendo False."""
+    if normalizar(forma) == normalizar(lemma):
+        return True  # forma base: «she go» es agramatical
+    t2 = _token_sustituido(nlp, antes, forma, despues)
+    if t2 is None:
+        return False
+    return "Fin" not in t2.morph.get("VerbForm")
+
+
+# --- Generadores por tema (alemán) -------------------------------------------
 # Cada generador emite candidatos {antes, respuesta, despues, distractores,
 # pista} para una frase ya parseada. `ctx` lleva nlp y los índices del léxico.
 
@@ -334,22 +417,116 @@ def gen_separables(ctx, frase, doc):
         }
 
 
-GENERADORES = {
-    "declinacion": gen_declinacion,
-    "conjugacion": gen_conjugacion,
-    "separables": gen_separables,
-    "preposicion_caso": gen_preposicion,
+# --- Generadores por tema (inglés) -------------------------------------------
+
+def gen_articulo_an(ctx, frase, doc):
+    for t in doc:
+        if t.pos_ != "DET":
+            continue
+        base = normalizar(t.text)
+        if base not in ("a", "an"):
+            continue
+        # La palabra que sigue (el núcleo que decide a/an) debe existir: sin
+        # nada detrás el ejercicio no tendría contexto.
+        if t.i + 1 >= len(doc):
+            continue
+        otro = "an" if base == "a" else "a"
+        antes, resp, despues = hueco(frase, t, t.text)
+        yield {
+            "antes": antes, "respuesta": resp, "despues": despues,
+            "distractores": [con_mayuscula_como(t.text, otro)],
+            "pista": "«an» ante sonido vocálico, «a» ante sonido consonántico.",
+        }
+
+
+def gen_presente_s(ctx, frase, doc):
+    nlp = ctx["nlp"]
+    for t in doc:
+        if t.pos_ not in ("VERB", "AUX"):
+            continue
+        m = t.morph
+        if "Fin" not in m.get("VerbForm") or m.get("Tense") != ["Pres"]:
+            continue
+        if m.get("Person") != ["3"] or m.get("Number") != ["Sing"]:
+            continue
+        base = normalizar(t.text)
+        if base == normalizar(t.lemma_):
+            continue  # verbo invariable en 3sg (p. ej. «can»): no enseña la -s
+        otras = [f for f in ctx["formas_por_lema"].get(t.lemma_, ()) if f != base]
+        antes, resp, despues = hueco(frase, t, t.text)
+        # Distractores: formas NO finitas o la base; nunca una finita de pasado
+        # (sería frase válida). La forma base (lema) entra siempre como ancla.
+        distractores = []
+        for f in ordenar_por_coseno(nlp, t.vector, [normalizar(t.lemma_)] + otras):
+            forma = con_mayuscula_como(t.text, f)
+            if forma not in distractores and no_finita_o_base(nlp, antes, forma, despues, t.lemma_):
+                distractores.append(forma)
+            if len(distractores) == N_DISTRACTORES:
+                break
+        if not distractores:
+            continue
+        yield {
+            "antes": antes, "respuesta": resp, "despues": despues,
+            "distractores": distractores,
+            "pista": f"3ª persona del singular (he/she/it): «{t.lemma_}» → «{normalizar(t.text)}».",
+        }
+
+
+def gen_infinitivo_modal(ctx, frase, doc):
+    nlp = ctx["nlp"]
+    for t in doc:
+        if t.pos_ != "VERB" or "Inf" not in t.morph.get("VerbForm"):
+            continue
+        # Tiene un modal como hijo auxiliar (can/must/will…): fuerza la base.
+        if not any(c.tag_ == "MD" or normalizar(c.text) in MODALES
+                   for c in t.children):
+            continue
+        base = normalizar(t.text)
+        otras = [f for f in ctx["formas_por_lema"].get(t.lemma_, ()) if f != base]
+        # Toda forma flexionada es agramatical tras un modal → todas valen.
+        distractores = ordenar_por_coseno(nlp, t.vector, otras)[:N_DISTRACTORES]
+        if len(distractores) < 2:
+            continue
+        modal = next((c.text.lower() for c in t.children
+                      if c.tag_ == "MD" or normalizar(c.text) in MODALES), "un modal")
+        antes, resp, despues = hueco(frase, t, t.text)
+        yield {
+            "antes": antes, "respuesta": resp, "despues": despues,
+            "distractores": distractores,
+            "pista": f"Tras «{modal}» el verbo va en forma base (sin -s, -ing ni pasado).",
+        }
+
+
+CONFIG = {
+    "de": {
+        "temas": TEMAS_DE,
+        "generadores": {
+            "declinacion": gen_declinacion,
+            "conjugacion": gen_conjugacion,
+            "separables": gen_separables,
+            "preposicion_caso": gen_preposicion,
+        },
+    },
+    "en": {
+        "temas": TEMAS_EN,
+        "generadores": {
+            "articulo_an": gen_articulo_an,
+            "presente_s": gen_presente_s,
+            "infinitivo_modal": gen_infinitivo_modal,
+        },
+    },
 }
 
 
 # --- Corpus e índices ---------------------------------------------------------
-def indices_lexico():
-    """Del léxico global: lema alemán -> {formas vistas} y el set de lemas."""
+def indices_lexico(idioma):
+    """Del léxico global: lema -> {formas vistas} y el set de lemas, del idioma."""
     lexico = json.loads(RUTA_LEXICO.read_text(encoding="utf-8"))
     formas = {}
     lemas = set()
+    prefijo = f"{idioma}:"
     for clave, entrada in lexico.items():
-        if not clave.startswith("de:"):
+        if not clave.startswith(prefijo):
             continue
         forma = clave.split(":", 1)[1]
         lema = entrada["lemma"]
@@ -358,19 +535,19 @@ def indices_lexico():
     return formas, lemas
 
 
-def frases_alemanas():
-    """(frase, fuente, nivel) de todas las lecturas con cuerpo en alemán."""
+def frases(idioma):
+    """(frase, fuente, nivel) de todas las lecturas con cuerpo en el idioma.
+    El título se muestra en el propio idioma (Der Markt / The market)."""
     for ruta in sorted(DIR_LECTURAS.glob("*.json")):
         datos = json.loads(ruta.read_text(encoding="utf-8"))
-        frases = datos.get("cuerpo", {}).get("de")
-        if not frases:
+        cuerpo = datos.get("cuerpo", {}).get(idioma)
+        if not cuerpo:
             continue
         nivel = datos.get("nivel", "avanzado")
-        # Título en ALEMÁN: los ejercicios son de alemán y la lectura se muestra
-        # con su nombre original (Der Markt, Rotkäppchen…), no con la traducción.
-        titulo = datos.get("titulo", {}).get("de") or datos.get("titulo", {}).get("es", ruta.stem)
+        titulos = datos.get("titulo", {})
+        titulo = titulos.get(idioma) or titulos.get("es") or ruta.stem
         fuente = f"{nivel} · {titulo}".strip(" ·")
-        for frase in frases:
+        for frase in cuerpo:
             yield frase, fuente, nivel
 
 
@@ -386,17 +563,21 @@ def estratificar(por_fuente, orden_fuentes, tope):
     return salida
 
 
-def generar(temas):
-    print(f"Cargando spaCy ({MODELO})...")
-    nlp = spacy.load(MODELO)
-    formas_por_lema, lemas = indices_lexico()
+def generar_idioma(idioma):
+    """Bloque {temas, ejercicios} de gramatica.json para un idioma."""
+    modelo = MODELOS[idioma]
+    print(f"[{idioma}] Cargando spaCy ({modelo})...")
+    nlp = spacy.load(modelo)
+    formas_por_lema, lemas = indices_lexico(idioma)
     ctx = {"nlp": nlp, "formas_por_lema": formas_por_lema, "lemas": lemas}
 
+    generadores = CONFIG[idioma]["generadores"]
+    temas = list(generadores)
     candidatos = {t: {} for t in temas}   # tema -> fuente -> [ejercicio]
     vistos = {t: set() for t in temas}    # dedupe por (antes, respuesta, despues)
     nivel_de = {}                          # fuente -> nivel (para ordenar)
 
-    for frase, fuente, nivel in frases_alemanas():
+    for frase, fuente, nivel in frases(idioma):
         if len(frase.split()) > MAX_TOKENS:
             continue  # prefiltro barato antes de parsear
         doc = nlp(frase)
@@ -407,7 +588,7 @@ def generar(temas):
             cola = candidatos[tema].setdefault(fuente, [])
             if len(cola) >= MAX_POR_FUENTE:
                 continue
-            for ej in GENERADORES[tema](ctx, frase, doc):
+            for ej in generadores[tema](ctx, frase, doc):
                 clave = (ej["antes"], ej["respuesta"], ej["despues"])
                 if clave in vistos[tema] or not ej["distractores"]:
                     continue
@@ -424,33 +605,34 @@ def generar(temas):
                        key=lambda f: (NIVEL_ORDEN.get(nivel_de.get(f), 9), f))
         elegidos = estratificar(candidatos[tema], orden, TOPE_POR_TEMA)
         # Orden pedagógico de salida: primero las lecturas fáciles, agrupadas
-        # por lectura (la estratificación ya decidió CUÁLES entran; esto solo
-        # decide en qué orden se presentan).
+        # por lectura (la estratificación ya decidió CUÁLES entran).
         elegidos.sort(key=lambda e: (NIVEL_ORDEN.get(e["nivel"], 9), e["fuente"]))
         for i, ej in enumerate(elegidos, start=1):
             ej["id"] = f"{tema}-{i:02d}"
         ejercicios[tema] = elegidos
 
-    salida = {
-        "_nota": (
-            "Generado por pipeline/gramatica.py (spaCy + distractores híbridos "
-            "paradigma/coseno). Editar a mano se pierde al regenerar."
-        ),
-        "temas": [t for t in TEMAS if t["id"] in temas],
-        "ejercicios": ejercicios,
-    }
-    RUTA_SALIDA.write_text(
-        json.dumps(salida, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
-    )
     for tema in temas:
         fuentes = sorted({e["fuente"] for e in ejercicios[tema]})
         print(f"  {tema:18} {len(ejercicios[tema]):3} ejercicios de {len(fuentes)} fuentes")
+
+    return {"temas": CONFIG[idioma]["temas"], "ejercicios": ejercicios}
+
+
+def generar():
+    salida = {
+        "_nota": (
+            "Generado por pipeline/gramatica.py (spaCy + distractores híbridos "
+            "paradigma/coseno). Indexado por idioma. Editar a mano se pierde al "
+            "regenerar."
+        ),
+    }
+    for idioma in MODELOS:
+        salida[idioma] = generar_idioma(idioma)
+    RUTA_SALIDA.write_text(
+        json.dumps(salida, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
     print(f"-> {RUTA_SALIDA.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":
-    pedidos = sys.argv[1:] or list(GENERADORES)
-    desconocidos = [t for t in pedidos if t not in GENERADORES]
-    if desconocidos:
-        raise SystemExit(f"Temas desconocidos: {desconocidos}. Opciones: {list(GENERADORES)}")
-    generar(pedidos)
+    generar()

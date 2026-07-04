@@ -22,13 +22,13 @@ function Gramatica() {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
       if (!vivo) return;
-      setGrupos(agruparPorLectura(m.default));
+      setGrupos(agruparPorLectura(m.default[idioma] ?? m.default.de));
       setHechos(cargarGramaticaCompletados());
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const cabecera = (
     <header className="lectura-top">
@@ -50,13 +50,6 @@ function Gramatica() {
         (ordenados del más básico al más avanzado). Cada tema terminado se
         marca con ✓.
       </p>
-
-      {idioma !== 'de' && (
-        <p className="juegos-aviso-idioma">
-          Los ejercicios de gramática son de <strong>alemán</strong> por ahora.
-          Los de inglés están en camino.
-        </p>
-      )}
 
       <div className="gram-temas">
         {grupos.map((g) => {

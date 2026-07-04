@@ -5,6 +5,7 @@ import {
   temaCompletado,
 } from '../../engine/gramatica';
 import { cargarGramaticaCompletados } from '../../engine/almacenamiento';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import './gramatica.css';
 
@@ -14,6 +15,7 @@ const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', a
 // dificultad. El usuario elige cuál practicar; el tema terminado lleva ✓.
 function TemasDeLectura() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [grupo, setGrupo] = useState(null);
   const [completados, setCompletados] = useState([]);
   const [cargado, setCargado] = useState(false);
@@ -22,14 +24,15 @@ function TemasDeLectura() {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
       if (!vivo) return;
-      setGrupo(agruparPorLectura(m.default).find((g) => g.slug === lectura) ?? null);
+      const data = m.default[idioma] ?? m.default.de;
+      setGrupo(agruparPorLectura(data).find((g) => g.slug === lectura) ?? null);
       setCompletados(cargarGramaticaCompletados());
       setCargado(true);
     });
     return () => {
       vivo = false;
     };
-  }, [lectura]);
+  }, [lectura, idioma]);
 
   const cabecera = (
     <header className="lectura-top">

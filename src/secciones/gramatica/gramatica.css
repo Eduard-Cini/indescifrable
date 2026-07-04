@@ -2,17 +2,6 @@
    Reutiliza el layout de lectura.css (.lectura-container, .lectura-top) y la
    paleta oscura de repaso.css. */
 
-/* Aviso de idioma: contenido aún solo en alemán (Juegos y Gramática). */
-.juegos-aviso-idioma {
-  margin: 0.2rem 0 0.8rem;
-  padding: 0.6rem 0.9rem;
-  border: 1px solid #4a4326;
-  background: #221f14;
-  border-radius: 8px;
-  color: #d8cfa0;
-  font-size: 0.88rem;
-}
-
 /* --- Selector de temas --- */
 .gram-temas {
   display: grid;
