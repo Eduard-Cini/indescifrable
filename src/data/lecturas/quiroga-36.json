@@ -1,0 +1,22 @@
+{
+  "id": "quiroga-36",
+  "nivel": "avanzado",
+  "autor": "Horacio Quiroga",
+  "libro": "quiroga",
+  "parte": 36,
+  "partes": 36,
+  "titulo": {
+    "es": "Cuentos de amor de locura y de muerte"
+  },
+  "fuente": "«Cuentos de amor de locura y de muerte», Horacio Quiroga (1917; dominio público). Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/13507. Obra completa, procesada con spaCy; glosa de voces poco comunes y regionalismos rioplatenses.",
+  "cuerpo": {
+    "es": [
+      "Y como argumento irrefutable, me echa los brazos al cuello y me mira, no sé si a mucho más de cinco centímetros.",
+      "--¿Es verdad?--murmura--o arrulla, mejor dicho.",
+      "--¿Se puede poner arrulla?--le pregunto.",
+      "--¡Sí, y esto, y esto!",
+      "Y me da un beso.",
+      "¿Qué más puedo añadir?"
+    ]
+  }
+}

@@ -214,16 +214,18 @@
   bottom: 1.25rem;
   left: 50%;
   transform: translateX(-50%);
-  width: min(420px, 92vw);
+  width: min(460px, 92vw);
   background: #1d1d1d;
   border: 1px solid #3a3a3a;
   border-radius: 12px;
   /* banda superior para la × de cerrar, así nunca se solapa con el contenido */
-  padding: 1.6rem 1.1rem 1rem;
+  padding: 1.6rem 1.25rem 1.1rem;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  /* apilado en columna: la palabra, luego la definición a todo el ancho
+     (legible aunque sea larga) y el botón debajo — así el botón nunca se sale */
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.85rem;
 }
 .popup-cerrar {
   position: absolute;
@@ -244,21 +246,26 @@
   transition: background 0.12s ease, color 0.12s ease;
 }
 .popup-cerrar:hover { background: #2a1414; color: #ff8a85; }
-.popup-cuerpo { flex: 1; }
 .popup-surface { font-size: 1.2rem; font-weight: bold; color: #f0f0f0; }
 .popup-lemma { color: #888; margin-left: 0.4rem; font-size: 0.9rem; }
-.popup-traduccion { margin: 0.35rem 0 0; color: #8fbf9f; font-size: 1.05rem; }
-.popup-traduccion.sin, .popup-traduccion.neutral { color: #888; font-size: 0.9rem; }
+.popup-traduccion {
+  margin: 0.45rem 0 0;
+  color: #a9dcb8;
+  font-size: 1.1rem;
+  line-height: 1.45;
+}
+.popup-traduccion.sin, .popup-traduccion.neutral { color: #888; font-size: 0.95rem; }
 
 .popup-agregar {
+  width: 100%;
   background: #4a7;
   color: #08110b;
   border: none;
   border-radius: 8px;
-  padding: 0.6rem 0.9rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
   font-weight: bold;
   cursor: pointer;
-  white-space: nowrap;
   font-family: inherit;
 }
 .popup-agregar:hover { background: #5cc78c; }

@@ -160,39 +160,39 @@ LIBROS = {
         "frases_por_parte": 90,
         "max_chars": 45000,
     },
-    "facundo": {
-        "id_base": "facundo",
+    # Estos dos entran COMPLETOS (obras cortas): sin `max_chars`.
+    "azul": {
+        "id_base": "azul",
         "idioma": "es",
         "nivel": "avanzado",
-        "autor": "Domingo F. Sarmiento",
-        "titulo": {"es": "Facundo (selección)"},
+        "autor": "Rubén Darío",
+        "titulo": {"es": "Azul…"},
         "fuente": (
-            "«Facundo. Civilización y barbarie», Domingo Faustino Sarmiento "
-            "(1845; dominio público). Texto: Project Gutenberg, "
-            "https://www.gutenberg.org/ebooks/33267. Selección procesada con "
-            "spaCy; glosa de voces poco comunes y regionalismos rioplatenses."
+            "«Azul…», Rubén Darío (1888; dominio público). Texto: Project "
+            "Gutenberg, https://www.gutenberg.org/ebooks/52894. Obra completa "
+            "(cuentos y poemas), procesada con spaCy; glosa de voces poco "
+            "comunes y del vocabulario modernista."
         ),
-        "archivo": FUENTES / "facundo.txt",
-        "inicio": "Sombra terrible de Facundo, voy a evocarte",
+        "archivo": FUENTES / "azul.txt",
+        "inicio": "el cielo está opaco, el aire frío, el día triste",
+        "fin": "\nINDICE",
         "frases_por_parte": 90,
-        "max_chars": 45000,
     },
-    "tradiciones": {
-        "id_base": "tradiciones",
+    "quiroga": {
+        "id_base": "quiroga",
         "idioma": "es",
         "nivel": "avanzado",
-        "autor": "Ricardo Palma",
-        "titulo": {"es": "Tradiciones peruanas (selección)"},
+        "autor": "Horacio Quiroga",
+        "titulo": {"es": "Cuentos de amor de locura y de muerte"},
         "fuente": (
-            "«Tradiciones peruanas», Ricardo Palma (s. XIX; dominio público). "
-            "Texto: Project Gutenberg, https://www.gutenberg.org/ebooks/21282. "
-            "Selección de las primeras tradiciones, procesada con spaCy; glosa "
-            "de voces poco comunes y peruanismos."
+            "«Cuentos de amor de locura y de muerte», Horacio Quiroga (1917; "
+            "dominio público). Texto: Project Gutenberg, "
+            "https://www.gutenberg.org/ebooks/13507. Obra completa, procesada "
+            "con spaCy; glosa de voces poco comunes y regionalismos rioplatenses."
         ),
-        "archivo": FUENTES / "tradiciones.txt",
-        "inicio": "Esta tradición no tiene otra fuente",
+        "archivo": FUENTES / "quiroga.txt",
+        "inicio": "Era el martes de carnaval",
         "frases_por_parte": 90,
-        "max_chars": 45000,
     },
 }
 
@@ -202,15 +202,21 @@ MODELOS = {"de": "de_core_news_md", "en": "en_core_web_sm", "es": "es_core_news_
 RUTA_BASE = Path(__file__).parent / "lexico.base.json"
 
 
-def extraer_contenido(ruta, inicio):
-    """Quita el boilerplate de Gutenberg y las páginas previas al texto."""
+def extraer_contenido(ruta, inicio, fin_marcador=None):
+    """Quita el boilerplate de Gutenberg y las páginas previas al texto. Si se
+    da `fin_marcador`, recorta también todo lo posterior (p. ej. un índice al
+    final de la obra)."""
     txt = Path(ruta).read_text(encoding="utf-8")
-    fin = txt.find("*** END")
-    if fin != -1:
-        txt = txt[:fin]
+    corte = txt.find("*** END")
+    if corte != -1:
+        txt = txt[:corte]
     i = txt.find(inicio)
     if i != -1:
         txt = txt[i:]
+    if fin_marcador:
+        j = txt.find(fin_marcador)
+        if j != -1:
+            txt = txt[:j]
     return txt
 
 
@@ -226,9 +232,10 @@ def _es_titulo(linea):
 
 def limpiar_texto(texto):
     """El texto de Gutenberg viene doble-espaciado (una línea en blanco entre
-    cada línea envuelta). Quitamos los marcadores de capítulo y unimos todo en
-    un flujo continuo para que spaCy segmente por frases reales, no por saltos
-    de línea."""
+    cada línea envuelta). Quitamos los marcadores de ilustración y de capítulo
+    y unimos todo en un flujo continuo para que spaCy segmente por frases
+    reales, no por saltos de línea."""
+    texto = re.sub(r"\[[Ii]llustration:.*?\]", " ", texto, flags=re.S)
     lineas = [l for l in texto.splitlines() if not _es_titulo(l)]
     return re.sub(r"\s+", " ", " ".join(lineas)).strip()
 
@@ -257,7 +264,9 @@ def procesar(nombre):
     print(f"Libro: {nombre}. Cargando spaCy ({modelo})...")
     nlp = spacy.load(modelo)
 
-    contenido = limpiar_texto(extraer_contenido(CONFIG["archivo"], CONFIG["inicio"]))
+    contenido = limpiar_texto(
+        extraer_contenido(CONFIG["archivo"], CONFIG["inicio"], CONFIG.get("fin"))
+    )
     # Fragmento: para obras enormes (Quijote) se ingiere solo un tramo inicial.
     if CONFIG.get("max_chars"):
         contenido = contenido[:CONFIG["max_chars"]]
