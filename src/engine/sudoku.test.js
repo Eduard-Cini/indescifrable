@@ -8,7 +8,8 @@ import {
   generarSudoku,
 } from './sudoku';
 import { crearGeneradorNormalizado } from './board';
-import juegos from '../data/juegos.json';
+import juegosPorIdioma from '../data/juegos.json';
+const juegos = juegosPorIdioma.de;
 
 const ENTRADAS = [
   { palabra: 'auswendig', pista: 'de memoria' },

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { lecturasConJuego, SLUG_CORPUS } from '../../engine/juegos';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import { FICHAS } from './fichas';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
@@ -14,18 +15,19 @@ const NOMBRE_NIVEL = { principiante: 'Principiante', intermedio: 'Intermedio', a
 // caminos, pero sí en crucigrama y sopa). Cada tarjeta lleva a
 // /juegos/:juego/:lectura.
 function LecturasDeJuego({ juego }) {
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const ficha = FICHAS[juego];
 
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const cabecera = (
     <header className="lectura-top">

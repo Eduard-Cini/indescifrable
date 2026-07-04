@@ -19,12 +19,12 @@ function Juegos() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const cabecera = (
     <header className="lectura-top">
@@ -46,13 +46,6 @@ function Juegos() {
         y, dentro, la lectura con la que quieres jugar (o el corpus entero).
         Partidas reproducibles por semilla.
       </p>
-
-      {idioma !== 'de' && (
-        <p className="juegos-aviso-idioma">
-          Por ahora estos juegos usan vocabulario <strong>alemán</strong>. La
-          versión en inglés está en camino.
-        </p>
-      )}
 
       <div className="juegos-grid">
         <Link to="/juegos/codenames" className="juego-card">

@@ -8,6 +8,7 @@ import {
 } from '../../engine/escalera';
 import { longitudesEscalera, pasosDisponibles, poolDe } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
@@ -20,6 +21,7 @@ import './juegos.css';
 // realmente jugables con este pool (src/engine/juegos.js).
 function Escalera() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const [longitud, setLongitud] = useState('4');
   const [pasos, setPasos] = useState(4);
@@ -32,12 +34,12 @@ function Escalera() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const pool = datos ? poolDe(datos, lectura) : null;
   const longitudes = useMemo(

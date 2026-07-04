@@ -12,7 +12,10 @@ import {
   MIN_TABLERO,
   SLUG_CORPUS,
 } from './juegos';
-import juegos from '../data/juegos.json';
+import juegosPorIdioma from '../data/juegos.json';
+
+// juegos.json está indexado por idioma; los tests operan sobre el corpus alemán.
+const juegos = juegosPorIdioma.de;
 
 // Cadena aaa—aab—abb—bbb—bbc (distancias 1..4) más una palabra aislada.
 const CADENA = { aaa: 'x', aab: 'x', abb: 'x', bbb: 'x', bbc: 'x', zzz: 'x' };
@@ -144,6 +147,36 @@ describe('lecturasOrdenadas', () => {
     const pesos = { principiante: 0, intermedio: 1, avanzado: 2 };
     for (let i = 1; i < orden.length; i++) {
       expect(pesos[orden[i - 1]]).toBeLessThanOrEqual(pesos[orden[i]]);
+    }
+  });
+});
+
+describe('datos por idioma (inglés)', () => {
+  const en = juegosPorIdioma.en;
+
+  it('existe el bloque inglés con pools del corpus', () => {
+    expect(en).toBeTruthy();
+    expect(en.crucigrama.length).toBeGreaterThan(0);
+    expect(en.lecturas.length).toBeGreaterThan(0);
+  });
+
+  it('el corpus inglés ofrece los cinco juegos', () => {
+    expect(juegosDisponibles(poolDe(en, SLUG_CORPUS))).toEqual([
+      'escalera', 'crucigrama', 'wordle', 'sopa', 'sudoku',
+    ]);
+  });
+
+  it('toda lectura inglesa ofrece al menos un juego', () => {
+    for (const lectura of en.lecturas) {
+      expect(juegosDisponibles(lectura).length, `lectura ${lectura.slug}`).toBeGreaterThan(0);
+    }
+  });
+
+  it('los libros ingleses (avanzado) ofrecen los cinco juegos', () => {
+    for (const lectura of en.lecturas.filter((l) => l.nivel === 'avanzado')) {
+      expect(juegosDisponibles(lectura)).toEqual([
+        'escalera', 'crucigrama', 'wordle', 'sopa', 'sudoku',
+      ]);
     }
   });
 });

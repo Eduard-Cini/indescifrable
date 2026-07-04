@@ -8,7 +8,8 @@ import {
   esPasoValido,
   estadisticas,
 } from './escalera';
-import juegos from '../data/juegos.json';
+import juegosPorIdioma from '../data/juegos.json';
+const juegos = juegosPorIdioma.de;
 
 // Cadena aaa—aab—abb—bbb más una rama (aba) y una isla (zzz).
 const DICCIONARIO = ['aaa', 'aab', 'abb', 'bbb', 'aba', 'zzz'];

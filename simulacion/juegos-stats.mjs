@@ -49,9 +49,11 @@ import { generarSudoku, contarSoluciones, DIFICULTADES } from '../src/engine/sud
 
 const RAIZ = dirname(dirname(fileURLToPath(import.meta.url)));
 const SALIDA = join(RAIZ, 'docs', 'datos-juegos.json');
+// juegos.json está indexado por idioma; estas métricas (y el PDF de la sección
+// 4) cubren por ahora el corpus alemán. TODO: métricas interlingües de<->en.
 const juegos = JSON.parse(
   readFileSync(join(RAIZ, 'src', 'data', 'juegos.json'), 'utf-8')
-);
+).de;
 
 const SEMILLAS_CRUCI = 200;
 const TAMANOS_CRUCI = [6, 8, 10];

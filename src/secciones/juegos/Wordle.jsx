@@ -8,6 +8,7 @@ import {
 } from '../../engine/wordle';
 import { longitudesWordle, poolDe } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
@@ -22,6 +23,7 @@ const MAX_INTENTOS = 6;
 // diccionario suficiente (engine/juegos.js).
 function Wordle() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const [longitud, setLongitud] = useState('4');
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -34,12 +36,12 @@ function Wordle() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const pool = datos ? poolDe(datos, lectura) : null;
   const longitudes = useMemo(
@@ -141,7 +143,7 @@ function Wordle() {
       </div>
 
       <p className="lectura-subtitulo">
-        Una palabra alemana de {longitudActiva} letras de este vocabulario, en {MAX_INTENTOS} intentos.
+        Una palabra de {longitudActiva} letras de este vocabulario, en {MAX_INTENTOS} intentos.
         Verde = letra en su sitio; amarillo = está pero en otra posición.
       </p>
 

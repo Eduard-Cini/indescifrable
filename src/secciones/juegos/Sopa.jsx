@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { generarSopa, buscarSeleccion, casillasDe } from '../../engine/sopa';
 import { poolDe, tamanosTablero } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
@@ -15,6 +16,7 @@ import './juegos.css';
 // determinista por semilla; los tamaños dependen del pool (engine/juegos.js).
 function Sopa() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const [n, setN] = useState(8);
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -26,12 +28,12 @@ function Sopa() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const pool = datos ? poolDe(datos, lectura) : null;
   const tamanos = useMemo(() => (pool ? tamanosTablero(pool.crucigrama) : []), [pool]);
@@ -138,7 +140,7 @@ function Sopa() {
       </div>
 
       <p className="lectura-subtitulo">
-        Busca la palabra alemana de cada pista (→, ↓ o ↘). Click en su primera
+        Busca la palabra de cada pista (→, ↓ o ↘). Click en su primera
         letra y otro en la última.
       </p>
 

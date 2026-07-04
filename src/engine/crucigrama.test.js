@@ -6,7 +6,8 @@ import {
   cuadricula,
   metricas,
 } from './crucigrama';
-import juegos from '../data/juegos.json';
+import juegosPorIdioma from '../data/juegos.json';
+const juegos = juegosPorIdioma.de;
 
 // Tablero de partida: «anna» en horizontal en la fila 0.
 function tableroAnna() {

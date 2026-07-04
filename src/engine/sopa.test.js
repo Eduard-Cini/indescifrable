@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { generarSopa, extraerPalabra, buscarSeleccion, casillasDe } from './sopa';
-import juegos from '../data/juegos.json';
+import juegosPorIdioma from '../data/juegos.json';
+const juegos = juegosPorIdioma.de;
 
 const ENTRADAS = [
   { palabra: 'haus', pista: 'casa' },

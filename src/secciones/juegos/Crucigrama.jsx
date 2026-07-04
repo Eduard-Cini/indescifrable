@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { generarCrucigrama, cuadricula } from '../../engine/crucigrama';
 import { poolDe, tamanosTablero } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
@@ -13,6 +14,7 @@ import './juegos.css';
 // los tamaños ofrecidos dependen del pool (engine/juegos.js).
 function Crucigrama() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const [n, setN] = useState(8);
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -26,12 +28,12 @@ function Crucigrama() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const pool = datos ? poolDe(datos, lectura) : null;
   const tamanos = useMemo(() => (pool ? tamanosTablero(pool.crucigrama) : []), [pool]);

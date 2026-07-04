@@ -6,21 +6,21 @@ export const FICHAS = {
     titulo: '🪜 Escalera de palabras',
     nombre: 'Escalera de palabras',
     descripcion:
-      'Transforma una palabra alemana en otra cambiando una sola letra por ' +
+      'Transforma una palabra en otra cambiando una sola letra por ' +
       'paso. ¿Igualas el camino mínimo?',
     algoritmo: 'Grafo de Hamming 1 + BFS',
   },
   crucigrama: {
     titulo: '✏️ Crucigrama',
     nombre: 'Crucigrama',
-    descripcion: 'Palabras alemanas entrelazadas; las pistas, en español.',
+    descripcion: 'Palabras del vocabulario entrelazadas; las pistas, en español.',
     algoritmo: 'Colocación por backtracking',
   },
   wordle: {
     titulo: '🎯 Adivina la palabra',
     nombre: 'Adivina la palabra',
     descripcion:
-      'Una palabra alemana en seis intentos, con la traducción de cada ' +
+      'Adivina la palabra en seis intentos, con la traducción de cada ' +
       'intento y el conteo de candidatas.',
     algoritmo: 'Feedback exacto + entropía de Shannon',
   },
@@ -28,8 +28,8 @@ export const FICHAS = {
     titulo: '🔍 Sopa de letras',
     nombre: 'Sopa de letras',
     descripcion:
-      'Las pistas en español, las palabras escondidas en alemán: encontrar ' +
-      '«regalo» es encontrar GESCHENK.',
+      'Las pistas en español; encuentra en la cuadrícula la palabra que ' +
+      'cada una nombra.',
     algoritmo: 'Colocación aleatorizada por semilla',
   },
   sudoku: {
@@ -37,7 +37,7 @@ export const FICHAS = {
     nombre: 'Sudoku de palabras',
     descripcion:
       'Un sudoku 9×9 con letras en vez de números: una fila esconde una ' +
-      'palabra alemana de 9 letras. Tres dificultades.',
+      'palabra de 9 letras. Tres dificultades.',
     algoritmo: 'Backtracking + excavado con unicidad',
   },
 };

@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { generarSudoku } from '../../engine/sudoku';
 import { poolDe } from '../../engine/juegos';
 import { generarSemillaAleatoria } from '../../engine/board';
+import { useIdiomaEstudio } from '../../contexto/idiomaEstudio';
 import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './juegos.css';
@@ -16,6 +17,7 @@ const NOMBRE_DIFICULTAD = { facil: 'FÃ¡cil', medio: 'Intermedio', dificil: 'DifÃ
 // (backtracking + excavado con unicidad) vive en src/engine/sudoku.js.
 function Sudoku() {
   const { lectura } = useParams();
+  const { idioma } = useIdiomaEstudio();
   const [datos, setDatos] = useState(null);
   const [dificultad, setDificultad] = useState('facil');
   const [semilla, setSemilla] = useState(() => generarSemillaAleatoria());
@@ -27,12 +29,12 @@ function Sudoku() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default);
+      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
     });
     return () => {
       vivo = false;
     };
-  }, []);
+  }, [idioma]);
 
   const pool = datos ? poolDe(datos, lectura) : null;
   const sudoku = useMemo(
