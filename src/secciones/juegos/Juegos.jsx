@@ -19,7 +19,9 @@ function Juegos() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
+      // false = sin datos para este idioma (p. ej. español): no se cae al
+      // alemán en silencio, se desactivan los juegos de vocabulario.
+      if (vivo) setDatos(m.default[idioma] ?? false);
     });
     return () => {
       vivo = false;
@@ -33,6 +35,33 @@ function Juegos() {
       <span />
     </header>
   );
+
+  const cartaCodenames = (
+    <Link to="/juegos/codenames" className="juego-card">
+      <h2>🕵️ Indescifrable</h2>
+      <p>
+        El Codenames con vocabulario en tres idiomas: pistas de una palabra
+        para que tu equipo adivine sus casillas.
+      </p>
+      <span className="juego-algoritmo">Tablero determinista por LCG</span>
+    </Link>
+  );
+
+  // Sin datos para el idioma de estudio (español): los juegos de vocabulario
+  // se desactivan; el Indescifrable sigue (su vocabulario se elige dentro).
+  if (datos === false) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Los juegos de vocabulario aún no están disponibles en tu idioma de
+          estudio. El Indescifrable sí: su vocabulario (incluido el español)
+          se elige al crear la partida.
+        </p>
+        <div className="juegos-grid">{cartaCodenames}</div>
+      </div>
+    );
+  }
 
   if (!datos) {
     return <div className="lectura-container">{cabecera}</div>;
@@ -48,14 +77,7 @@ function Juegos() {
       </p>
 
       <div className="juegos-grid">
-        <Link to="/juegos/codenames" className="juego-card">
-          <h2>🕵️ Indescifrable</h2>
-          <p>
-            El Codenames con vocabulario en tres idiomas: pistas de una palabra
-            para que tu equipo adivine sus casillas.
-          </p>
-          <span className="juego-algoritmo">Tablero determinista por LCG</span>
-        </Link>
+        {cartaCodenames}
 
         {Object.entries(FICHAS).map(([juego, ficha]) => {
           const lecturas = lecturasConJuego(datos, juego);

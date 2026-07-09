@@ -22,7 +22,7 @@ function LecturasDeJuego({ juego }) {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
+      if (vivo) setDatos(m.default[idioma] ?? false);
     });
     return () => {
       vivo = false;
@@ -36,6 +36,18 @@ function LecturasDeJuego({ juego }) {
       <span />
     </header>
   );
+
+  if (datos === false) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Este juego aún no está disponible en tu idioma de estudio.{' '}
+          <Link to="/juegos" className="lectura-link">← Volver a Juegos</Link>
+        </p>
+      </div>
+    );
+  }
 
   if (!datos) {
     return <div className="lectura-container">{cabecera}</div>;

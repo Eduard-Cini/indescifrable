@@ -63,3 +63,19 @@
 .seccion-card.juegos:hover { border-color: #6a8cff; }
 .seccion-card.repaso:hover { border-color: #b7a86a; }
 .seccion-card.gramatica:hover { border-color: #c58fd8; }
+
+/* Sección sin datos para el idioma de estudio actual (p. ej. español). */
+.seccion-card.deshabilitada {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.seccion-card.deshabilitada:hover {
+  transform: none;
+  border-color: #2e2e2e;
+}
+.seccion-nodisp {
+  display: block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #b7a86a;
+}

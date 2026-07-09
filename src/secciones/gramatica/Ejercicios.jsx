@@ -30,7 +30,7 @@ function Ejercicios() {
   useEffect(() => {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
-      if (vivo) setData(m.default[idioma] ?? m.default.de);
+      if (vivo) setData(m.default[idioma] ?? { temas: [], ejercicios: {} });
     });
     return () => {
       vivo = false;

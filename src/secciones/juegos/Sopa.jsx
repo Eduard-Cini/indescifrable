@@ -28,7 +28,7 @@ function Sopa() {
   useEffect(() => {
     let vivo = true;
     import('../../data/juegos.json').then((m) => {
-      if (vivo) setDatos(m.default[idioma] ?? m.default.de);
+      if (vivo) setDatos(m.default[idioma] ?? false);
     });
     return () => {
       vivo = false;
@@ -69,6 +69,18 @@ function Sopa() {
       )}
     </header>
   );
+
+  if (datos === false) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          Este juego aún no está disponible en tu idioma de estudio.{' '}
+          <Link to="/juegos" className="lectura-link">← Volver a Juegos</Link>
+        </p>
+      </div>
+    );
+  }
 
   if (datos && (!pool || tamanos.length === 0)) {
     return (

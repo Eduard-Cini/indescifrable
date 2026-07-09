@@ -24,7 +24,9 @@ function TemasDeLectura() {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
       if (!vivo) return;
-      const data = m.default[idioma] ?? m.default.de;
+      // Sin bloque para el idioma → catálogo vacío (el mensaje de "no hay
+      // ejercicios" ya cubre el caso; no se cae al alemán).
+      const data = m.default[idioma] ?? { temas: [], ejercicios: {} };
       setGrupo(agruparPorLectura(data).find((g) => g.slug === lectura) ?? null);
       setCompletados(cargarGramaticaCompletados());
       setCargado(true);

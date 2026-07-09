@@ -22,7 +22,10 @@ function Gramatica() {
     let vivo = true;
     import('../../data/gramatica.json').then((m) => {
       if (!vivo) return;
-      setGrupos(agruparPorLectura(m.default[idioma] ?? m.default.de));
+      // false = sin ejercicios para este idioma (p. ej. español): la sección
+      // se desactiva en vez de caer al alemán en silencio.
+      const bloque = m.default[idioma];
+      setGrupos(bloque ? agruparPorLectura(bloque) : false);
       setHechos(cargarGramaticaCompletados());
     });
     return () => {
@@ -40,6 +43,18 @@ function Gramatica() {
 
   if (grupos === null) {
     return <div className="lectura-container">{cabecera}</div>;
+  }
+
+  if (grupos === false) {
+    return (
+      <div className="lectura-container">
+        {cabecera}
+        <p className="lectura-subtitulo">
+          La gramática aún no está disponible en tu idioma de estudio.{' '}
+          <Link to="/" className="lectura-link">← Volver a la plataforma</Link>
+        </p>
+      </div>
+    );
   }
 
   return (

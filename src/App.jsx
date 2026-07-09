@@ -16,12 +16,14 @@ import Gramatica from './secciones/gramatica/Gramatica';
 import TemasDeLectura from './secciones/gramatica/TemasDeLectura';
 import Ejercicios from './secciones/gramatica/Ejercicios';
 import { IdiomaEstudioProvider } from './contexto/idiomaEstudio';
+import Favicon from './componentes/Favicon';
 import './App.css';
 
 function App() {
   return (
     <IdiomaEstudioProvider>
       <BrowserRouter>
+        <Favicon />
         <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/juegos" element={<Juegos />} />
