@@ -187,7 +187,7 @@ tabla([
     ["3", "Enrutado y estructura de la app", "App.jsx, Biblioteca.jsx"],
     ["4", "Datos y experiencia de lectura", "Lector.jsx, data/lecturas/"],
     ["5", "Python + spaCy (segmentar, lematizar)", "pipeline/procesar.py"],
-    ["6", "Diccionarios y traducción por palabra", "pipeline/traductor.py, leer_diccionario.py"],
+    ["6", "Diccionarios, traducción por palabra y glosado", "pipeline/traductor.py, glosas_es.json"],
     ["7", "Traducción por oración: MT y LLM", "pipeline/mt.py, importar_traduccion.py"],
     ["8", "Integración del pipeline y despliegue", "construir_lexico.py, Netlify/git"],
     ["Cap.", "Capstone: mini-lector de punta a punta", "(todo junto)"],
@@ -465,9 +465,10 @@ caja("dominio", "",
 # =========================================================================
 #  FASE 6
 # =========================================================================
-h1("Fase 6 — Diccionarios y traducción por palabra")
-p("<b>Objetivo:</b> traducir palabra por palabra <b>sin API</b>, y aprender a medir y mejorar "
-  "la cobertura.")
+h1("Fase 6 — Diccionarios, traducción por palabra y glosado monolingüe")
+p("<b>Objetivo:</b> traducir palabra por palabra <b>sin API</b>, aprender a medir y mejorar "
+  "la cobertura, y — para la lengua materna — <b>glosar</b> las voces raras en vez de "
+  "traducirlas.")
 h2("Conceptos clave")
 li([
     "Parsear un diccionario <b>FreeDict</b> (TEI/XML) con "
@@ -477,6 +478,10 @@ li([
     "-&gt; <b>descomposición de compuestos</b>.",
     "<b>Cobertura</b>: % de formas con traducción; diagnóstico por categoría gramatical para "
     "saber qué falla y por qué.",
+    "<b>Glosado monolingüe</b>: cuando la lengua de estudio es la materna no hay lengua "
+    "destino; se define la voz rara en la misma lengua. La <b>rareza</b> se decide con la "
+    "frecuencia general (escala Zipf, biblioteca <font face='Courier'>wordfreq</font>) y las "
+    "definiciones se curan a mano — los MT no sirven aquí.",
 ])
 caja("concepto", "Medir antes de optimizar",
      ["En el proyecto, la cobertura pasó de 70% a 92%. El diagnóstico reveló que el problema "
@@ -490,6 +495,9 @@ caja("mini", "Parser + traductor con fallback",
       "sobre una lista de 50 palabras <b>mide la cobertura</b>."],
      items=[
          "Reto: añade la cabeza del compuesto (sufijo &gt;= 3 letras) como último fallback.",
+         "Reto 2 (glosado): con <font face='Courier'>wordfreq</font>, extrae de un párrafo "
+         "del Quijote las palabras con <font face='Courier'>zipf_frequency(p,'es') &lt; 3</font> "
+         "y escribe a mano su definición — acabas de construir un mini-glosario monolingüe.",
      ])
 code('''import xml.etree.ElementTree as ET
 NS = "{http://www.tei-c.org/ns/1.0}"
@@ -507,6 +515,8 @@ recursos([
     ("Python — ElementTree", "https://docs.python.org/3/library/xml.etree.elementtree.html",
      "Parseo de XML; ojo con los namespaces {...}."),
     ("Wiktionary / kaikki", "https://kaikki.org", "Alternativa de mayor cobertura (más pesada)."),
+    ("wordfreq", "https://pypi.org/project/wordfreq/",
+     "Frecuencias léxicas multilíngües (escala Zipf); detecta las voces raras a glosar."),
 ])
 caja("dominio", "",
      ["Puedes parsear un diccionario, construir un traductor con fallbacks y reportar su "
@@ -610,6 +620,8 @@ li([
     "<b>Motor puro + prueba:</b> la lógica de la bolsa en un módulo puro con al menos un test "
     "Vitest.",
     "<b>Despliegue:</b> repo en Git + Netlify.",
+    "<b>Extensión opcional (glosado):</b> añade un texto en tu lengua materna con 5-10 voces "
+    "raras glosadas a mano (detectadas con wordfreq) y haz que el popup muestre la definición.",
 ])
 h2("Criterios de éxito")
 li([

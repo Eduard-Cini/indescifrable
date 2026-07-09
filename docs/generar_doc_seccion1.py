@@ -153,7 +153,7 @@ story.append(Paragraph("Plataforma web para el aprendizaje de idiomas", S["titul
 story.append(Paragraph("Documentación técnica: sistema de lectura y pipeline de PLN",
                        S["subtitulo"]))
 story.append(Spacer(1, 0.4 * cm))
-story.append(Paragraph("Español · Inglés · Alemán &nbsp;|&nbsp; React + Vite · Python · spaCy · FreeDict · opus-mt / Gemini",
+story.append(Paragraph("Español · Inglés · Alemán &nbsp;|&nbsp; React + Vite · Python · spaCy (de/en/es) · FreeDict · opus-mt / Gemini · wordfreq",
                        S["subtitulo"]))
 story.append(Spacer(1, 1.2 * cm))
 story.append(HRFlowable(width="60%", thickness=1, color=AZUL))
@@ -198,18 +198,26 @@ p("El proyecto es una plataforma web para aprender español, inglés y alemán, 
   "sustenta (procesos estocásticos, modelos de frecuencia léxica, reglas morfológicas, "
   "álgebra lineal, teoría de grafos y de números); el sitio es el medio donde esas "
   "herramientas viven y se demuestran en funcionamiento.")
-p("La plataforma se organiza en cuatro vertientes: (1) <b>lectura por placer</b>, "
-  "(2) <b>repaso de vocabulario</b> con repetición espaciada (Leitner como cadena de Markov + "
-  "SM-2), (3) <b>gramática</b> generada con PLN sobre los propios textos, y (4) <b>juegos</b> "
-  "(un Codenames ya desarrollado). Este documento cubre lo construido hasta ahora: la "
-  "<b>vertiente de lectura</b> y su <b>pipeline de PLN</b>, además de mejoras al juego existente.")
+p("La plataforma se organiza en cuatro vertientes: (1) <b>lectura</b>, "
+  "(2) <b>repaso de vocabulario</b> con repetición espaciada (SM-2 en producción, Leitner "
+  "como cadena de Markov por simulación), (3) <b>gramática</b> generada con PLN sobre los "
+  "propios textos, y (4) <b>juegos</b> de palabras. Este documento cubre la <b>vertiente de "
+  "lectura</b> y su <b>pipeline de PLN</b> en los tres idiomas de estudio: alemán e inglés "
+  "(traducidos al español) y <b>español como lengua de estudio para nativos</b> (libros "
+  "difíciles con glosado de voces raras).")
 h2("Alcance de lo construido")
 li([
     "Sección de <b>Lectura</b> completa: biblioteca por idioma/nivel, lector con traducción "
     "por palabra y por frase, bolsa de palabras persistente y seguimiento de progreso.",
+    "<b>Tres idiomas de estudio</b>: alemán e inglés (con traducción al español) y "
+    "<b>español como lengua de estudio para nativos</b>, con libros difíciles glosados "
+    "(definiciones de voces raras, no traducción).",
     "<b>Pipeline de PLN offline</b> en Python que ingiere libros de dominio público, los "
-    "procesa con spaCy y genera el JSON que consume el frontend (traducción por palabra y "
-    "por frase).",
+    "procesa con spaCy (modelo por idioma) y genera el JSON que consume el frontend "
+    "(traducción por palabra, por frase, y glosado monolingüe del español).",
+    "<b>Idioma de estudio global</b> (contexto React persistido) que gobierna todas las "
+    "secciones; bolsa filtrada por idioma; <b>perfil exportable/importable</b> como JSON "
+    "sin servidor.",
     "<b>Motor de lógica pura</b> con pruebas unitarias (Vitest), germen del núcleo matemático.",
     "Mejoras al <b>juego Codenames</b>: extracción del generador congruencial a un módulo puro, "
     "semilla que codifica idioma y nivel, y optimización de recursos.",
@@ -273,9 +281,11 @@ p("<font face='Courier'>App.jsx</font> pasó de ser el router del juego a un rou
 
 h2("3.3 Modelo de datos")
 p("Cada <b>lectura</b> es un JSON con metadatos y el cuerpo alineado por frase entre idiomas. "
-  "Las lecturas ya no tienen que ser trilingües: pueden ser de+es, en+es, etc.; el español "
-  "actúa como idioma de traducción. Los libros añaden campos "
-  "<font face='Courier'>libro/parte/partes</font> para agruparse.")
+  "Las lecturas ya no tienen que ser trilingües: pueden ser de+es, en+es, o <b>solo es</b> "
+  "(libros de estudio para nativos). La regla de <font face='Courier'>idiomasDisponibles</font> "
+  "es: de/en son idiomas de estudio si tienen cuerpo; el español lo es <b>solo cuando es el "
+  "original</b> (no hay de/en) — en las demás lecturas actúa como idioma de traducción. Los "
+  "libros añaden campos <font face='Courier'>libro/parte/partes</font> para agruparse.")
 code('''{
   "id": "mercado-01", "nivel": "principiante", "autor": "...",
   "titulo": { "es": "El mercado", "en": "The market", "de": "Der Markt" },
@@ -287,9 +297,12 @@ code('''{
 }''')
 p("El <b>léxico</b> (traducción por palabra) es un mapa "
   "<font face='Courier'>idioma:forma -&gt; { lemma, es }</font>. Se busca por la forma "
-  "superficial normalizada (minúsculas, sin puntuación), conservando acentos y umlauts.")
-code('''{ "de:frau":  { "lemma": "Frau",  "es": "mujer" },
-  "de:kauft": { "lemma": "kaufen","es": "compra" } }''')
+  "superficial normalizada (minúsculas, sin puntuación), conservando acentos y umlauts. "
+  "En las entradas <font face='Courier'>es:</font> el campo <font face='Courier'>es</font> "
+  "no es una traducción sino una <b>definición en español moderno</b> de una voz rara.")
+code('''{ "de:frau":   { "lemma": "Frau",   "es": "mujer" },
+  "en:mice":   { "lemma": "mouse",  "es": "ratón" },
+  "es:adarga": { "lemma": "adarga", "es": "escudo de cuero, ovalado…" } }''')
 p("La <b>bolsa de palabras</b> es única y persistente; cada entrada guarda "
   "<font face='Courier'>id, lang, surface, lemma, traducciones, origen, addedAt</font>. "
   "Está diseñada para que el motor de repaso (Sección 2 de la tesis) le agregue después su "
@@ -341,6 +354,30 @@ p("El catálogo carga todas las lecturas automáticamente con "
   "descargado solo al abrir una lectura. Bundle inicial: <b>1018 KB -&gt; 694 KB</b> "
   "(gzip 328 -&gt; 253 KB).")
 
+h2("3.7 Idioma de estudio global, bolsa por idioma y perfil")
+p("Al crecer a tres idiomas de estudio hizo falta una noción transversal de <b>idioma de "
+  "estudio actual</b>. Es un contexto React "
+  "(<font face='Courier'>contexto/idiomaEstudio.jsx</font>) persistido en "
+  "<font face='Courier'>idiomaEstudio.v1</font>, con un selector compartido presente en el "
+  "hub, el Repaso y la Bolsa; las demás secciones (Juegos, Gramática) leen el mismo contexto "
+  "para elegir su bloque de datos.")
+li([
+    "<b>La bolsa no se parte por idioma:</b> sigue siendo un único almacén "
+    "<font face='Courier'>bolsa.v1</font> (cada entrada ya lleva "
+    "<font face='Courier'>lang</font> y su id es <font face='Courier'>lang:forma</font>); se "
+    "<b>filtra al consumir</b>. Detalle importante: el Repaso conserva la bolsa completa en "
+    "memoria y solo arma la sesión con el idioma activo — si persistiera la lista filtrada, "
+    "borraría el resto de idiomas.",
+    "<b>Perfil exportable/importable:</b> todo el estado del usuario vive en unas pocas "
+    "claves de localStorage detrás de <font face='Courier'>almacenamiento.js</font> (única "
+    "frontera de I/O). <font face='Courier'>exportarPerfil()</font> las serializa a un JSON "
+    "descargable y <font face='Courier'>importarPerfil()</font> las restaura validando la "
+    "envoltura y cada valor; da copia de seguridad y portabilidad <b>sin servidor</b>.",
+    "<b>Popup de palabra:</b> se rediseñó en columna (palabra, traducción/definición a todo "
+    "el ancho, botón debajo) para que las definiciones largas del glosado español se lean "
+    "bien y el botón nunca desborde.",
+])
+
 # =========================================================================
 #  4. PIPELINE
 # =========================================================================
@@ -352,11 +389,17 @@ p("El pipeline vive en <font face='Courier'>pipeline/</font> y convierte libros 
   "(<font face='Courier'>construir_lexico.py</font>).")
 
 h2("4.1 spaCy: segmentación, tokenización, lematización")
-p("Se usa <b>spaCy</b> con los modelos <font face='Courier'>de_core_news_md</font> (alemán) y "
-  "<font face='Courier'>en_core_web_sm</font> (inglés). spaCy segmenta el texto en frases, "
+p("Se usa <b>spaCy</b> con un modelo por idioma: <font face='Courier'>de_core_news_md</font> "
+  "(alemán), <font face='Courier'>en_core_web_sm</font> (inglés) y "
+  "<font face='Courier'>es_core_news_md</font> (español). spaCy segmenta el texto en frases, "
   "tokeniza y asigna a cada token su lema, categoría gramatical (POS), rasgos morfológicos y "
   "relaciones de dependencia. El pipeline aprovecha las <b>frases</b> (para alinear "
-  "traducciones) y los <b>lemas</b> (para buscar en el diccionario).")
+  "traducciones) y los <b>lemas</b> (para buscar en el diccionario). "
+  "<font face='Courier'>procesar.py</font> elige el modelo según el "
+  "<font face='Courier'>idioma</font> declarado por cada libro en "
+  "<font face='Courier'>LIBROS</font>, admite ingerir un <b>fragmento</b> acotado "
+  "(<font face='Courier'>max_chars</font>, para obras enormes como el Quijote) y un marcador "
+  "<font face='Courier'>fin</font> (para recortar índices al final, como en <i>Azul…</i>).")
 callout("insight", "Verbos separables del alemán vía la dependencia svp",
         ["El alemán parte muchos verbos: “…bereitet … vor” es el verbo <b>vorbereiten</b> "
          "(preparar). spaCy etiqueta el prefijo con la dependencia "
@@ -371,7 +414,8 @@ callout("insight", "Verbos separables del alemán vía la dependencia svp",
 h2("4.2 Traducción por palabra: diccionarios FreeDict por capas")
 p("La traducción por palabra es <b>determinista y offline</b>. Se usan diccionarios libres de "
   "<b>FreeDict</b> (formato TEI/XML) y una estrategia por capas en "
-  "<font face='Courier'>traductor.py</font>:")
+  "<font face='Courier'>traductor.py</font> (para el alemán; el inglés va directo por "
+  "eng-spa, sin capas):")
 tabla([
     ["Capa", "Método", "Marca"],
     ["1. Directo", "deu-spa (36.744 entradas), por lema y por forma", "—"],
@@ -429,14 +473,44 @@ callout("insight", "Por qué un léxico global no basta",
          "(algo que spaCy ya permite) y renderizar con esos tokens en vez de tokenizar en el "
          "cliente. Es un refactor mayor, anotado como trabajo futuro."])
 
+h2("4.5 Glosado monolingüe del español (lengua de estudio para nativos)")
+p("El español dejó de ser solo la lengua-puente: hay libros difíciles (Quijote y Buscón en "
+  "fragmento; <i>Azul…</i> de Darío y los <i>Cuentos</i> de Quiroga completos) pensados para "
+  "que un <b>nativo</b> amplíe vocabulario. Aquí “traducir” no tiene sentido: se <b>glosa</b> "
+  "— una definición breve en español moderno — y <b>solo las voces poco comunes</b>: "
+  "arcaísmos del Siglo de Oro (adarga, rocín, fazaña), léxico modernista (ánfora, cendal) y "
+  "regionalismos rioplatenses (mensú, tacuara, jangada).")
+li([
+    "<b>Detección de rareza:</b> offline, con la frecuencia general del español (escala "
+    "Zipf de la biblioteca <font face='Courier'>wordfreq</font>): se extraen los lemas con "
+    "Zipf bajo y ocurrencias suficientes, que forman la lista de trabajo a curar.",
+    "<b>Definiciones curadas a mano</b> en <font face='Courier'>pipeline/glosas_es.json</font> "
+    "(~190 voces). Los MT no sirven aquí (no hay lengua destino); el diccionario monolingüe "
+    "curado es la única vía con calidad garantizada.",
+    "<b>Casado robusto:</b> <font face='Courier'>construir_lexico.py</font> genera entradas "
+    "<font face='Courier'>es:forma</font> casando por forma superficial <b>o</b> por lema, "
+    "porque el lematizador español tropieza con arcaísmos y enclíticas "
+    "(celada -&gt; “celado”, trujeron, preguntóle).",
+    "<b>Solo libros de estudio:</b> la rama es del léxico se aplica únicamente a lecturas "
+    "cuyo cuerpo es solo español (en las trilingües, es es la traducción, no texto a glosar).",
+])
+callout("insight", "El modelo de conocimiento hace el resto",
+        ["No hace falta lógica nueva para que el sistema priorice las voces raras: el modelo "
+         "de conocimiento de la Sección 2 ya estima P(conocer) con un prior logístico sobre "
+         "la frecuencia Zipf del corpus. Para un nativo, las palabras corrientes salen con "
+         "probabilidad altísima y las raras bajan — el repaso previo del Lector destaca "
+         "exactamente las glosadas. La misma matemática sirve para los tres idiomas."])
+
 # =========================================================================
 #  5. TRADUCCIÓN POR ORACIÓN
 # =========================================================================
 h1("5. Traducción por oración de libros (LLM vs MT)")
-p("Los libros de nivel avanzado solo traen el texto original; darles traducción <b>por frase</b> "
-  "exige una versión española <b>alineada 1:1</b> con las frases alemanas (la frase "
-  "<font face='Courier'>es[i]</font> corresponde a <font face='Courier'>de[i]</font>). Esa "
-  "alineación es la restricción que manda en todas las opciones. Se implementaron dos vías.")
+p("Los libros de alemán e inglés solo traen el texto original; darles traducción <b>por "
+  "frase</b> exige una versión española <b>alineada 1:1</b> con las frases originales (la "
+  "frase <font face='Courier'>es[i]</font> corresponde a la <font face='Courier'>i</font>-ésima "
+  "del original). Esa alineación es la restricción que manda en todas las opciones. Se "
+  "implementaron dos vías. Los libros en español no llevan traducción por frase: son "
+  "monolingües y el Lector oculta el marcador.")
 
 h2("5.1 Vía LLM (Gemini) — máxima calidad, semi-manual")
 p("Flujo con validación de alineación: <font face='Courier'>exportar_frases.py</font> vuelca "
@@ -447,10 +521,17 @@ p("Flujo con validación de alineación: <font face='Courier'>exportar_frases.py
 
 h2("5.2 Vía MT offline (opus-mt) — automática, sin API")
 p("Alternativa totalmente automática con <b>opus-mt</b> (Helsinki-NLP, modelos Marian) vía "
-  "<font face='Courier'>transformers</font>, traducción directa de-&gt;es. La alineación 1:1 es "
-  "automática (una salida por frase). Antes se descartó <b>Argos Translate</b>, que no tiene "
-  "de-&gt;es directo y <b>pivota por inglés</b> (de-&gt;en-&gt;es), con errores graves. Con MT "
-  "se tradujo <i>Immensee</i> de Theodor Storm (10 partes) sin copia-pega.")
+  "<font face='Courier'>transformers</font>, traducción directa <b>sin pivote</b>. "
+  "<font face='Courier'>mt.py</font> está parametrizado por idioma de origen "
+  "(<font face='Courier'>opus-mt-de-es</font> y <font face='Courier'>opus-mt-en-es</font>) y "
+  "<font face='Courier'>traducir_mt.py</font> deduce el origen del cuerpo de cada lectura. La "
+  "alineación 1:1 es automática (una salida por frase). Antes se descartó <b>Argos "
+  "Translate</b>, que no tiene de-&gt;es directo y <b>pivota por inglés</b>, con errores "
+  "graves. Con MT se tradujeron <i>Immensee</i> (de-&gt;es) y los <b>cuatro libros "
+  "ingleses</b> — <i>The Time Machine</i> (Wells), <i>A Christmas Carol</i> (Dickens), "
+  "<i>The Fall of the House of Usher</i> (Poe) y <i>Death in Venice</i> (Mann, trad. Kenneth "
+  "Burke 1925) — 58 partes en-&gt;es sin copia-pega. El par en-&gt;es es de los mejor "
+  "entrenados de Helsinki-NLP, con calidad notablemente superior al de-&gt;es.")
 
 h2("5.3 Comparación de calidad")
 tabla([
@@ -523,6 +604,17 @@ callout("error", "MT por pivote confundía el sentido",
          "acumula errores de sentido.",
          "<b>Solución:</b> usar opus-mt directo de-&gt;es (Helsinki-NLP), que no pivota y da "
          "traducciones sin ese tipo de error grave."])
+
+callout("error", "El lematizador español tropieza con arcaísmos y enclíticas",
+        ["<b>Síntoma:</b> al glosar los libros del Siglo de Oro, spaCy producía lemas "
+         "inexistentes: <i>celada</i> -&gt; “celado”, <i>azotes</i> -&gt; “azot”, y formas con "
+         "pronombre enclítico (<i>preguntóle</i>, <i>trujeron</i>) quedaban sin analizar.",
+         "<b>Causa:</b> <font face='Courier'>es_core_news_md</font> está entrenado con español "
+         "contemporáneo; el español áureo queda fuera de distribución.",
+         "<b>Solución:</b> el glosario casa por <b>forma superficial además de por lema</b>: "
+         "una entrada como “trujeron” se define por su forma exacta y no depende del "
+         "lematizador. Las voces del glosario se detectan con la frecuencia Zipf del español "
+         "general (wordfreq), no con el análisis morfológico."])
 
 callout("error", "Codificación de consola y shell en Windows",
         ["<b>Síntoma:</b> los umlauts salían como cajas o daban "
@@ -602,26 +694,32 @@ tabla([
 h2("8.2 Pipeline de PLN")
 tabla([
     ["Recurso", "Licencia", "Uso"],
-    ["spaCy + de_core_news_md / en_core_web_sm", "MIT",
-     "Segmentación, tokenización, lematización, dependencias"],
+    ["spaCy + de_core_news_md / en_core_web_sm / es_core_news_md", "MIT",
+     "Segmentación, tokenización, lematización, dependencias (un modelo por idioma)"],
     ["FreeDict deu-spa / deu-eng / eng-spa (TEI)", "Libre (GPL/CC)",
-     "Traducción por palabra (directo + cadena)"],
+     "Traducción por palabra (directo + cadena; el inglés va directo por eng-spa)"],
     ["transformers + torch", "Apache-2.0 / BSD",
      "Ejecutar opus-mt"],
-    ["Helsinki-NLP/opus-mt-de-es (Marian)", "CC-BY / Apache",
-     "MT por frase de-&gt;es (offline)"],
+    ["Helsinki-NLP/opus-mt-de-es y opus-mt-en-es (Marian)", "CC-BY / Apache",
+     "MT por frase de-&gt;es y en-&gt;es (offline)"],
+    ["wordfreq", "Apache-2.0",
+     "Frecuencia Zipf del español general: detecta las voces raras a glosar"],
+    ["glosas_es.json (curado propio)", "—",
+     "Glosario monolingüe de voces raras del español (definiciones a mano)"],
     ["Argos Translate (evaluado, descartado)", "MIT/CC",
      "MT por pivote; peor calidad para de-&gt;es"],
     ["pip-system-certs", "BSD",
      "Usar el almacén de certificados de Windows (SSL)"],
     ["Project Gutenberg (textos)", "Dominio público",
-     "Corpus de lectura (Kafka, Storm, Esopo, Grimm)"],
+     "Corpus de lectura (Kafka, Storm, Wells, Dickens, Poe, Mann, Cervantes, Quevedo, "
+     "Darío, Quiroga, Esopo, Grimm)"],
 ], [5.6 * cm, 3.0 * cm, 7.8 * cm])
 h2("8.3 Modelos: notas de tamaño y calidad")
 li([
-    "<b>de_core_news_md</b>: modelo mediano alemán; mejor etiquetado/lematización que el "
-    "pequeño. Clave para reducir errores de lema.",
-    "<b>opus-mt-de-es</b>: ~300 MB; inferencia en CPU; directo (sin pivote).",
+    "<b>de_core_news_md / es_core_news_md</b>: modelos medianos; mejor etiquetado y "
+    "lematización que los pequeños. Clave para reducir errores de lema.",
+    "<b>opus-mt-de-es / opus-mt-en-es</b>: ~300 MB cada uno; inferencia en CPU; directos "
+    "(sin pivote). El par en-&gt;es da calidad claramente superior.",
     "Las dependencias pesadas de MT (transformers/torch) y los modelos <b>no</b> se versionan "
     "en git; se documentan y se cachean fuera del repo. Solo se versiona el JSON de salida.",
 ])
@@ -654,25 +752,30 @@ li([
 h1("10. Estado actual y trabajo futuro")
 h2("Hecho")
 li([
-    "Sección de Lectura completa (biblioteca, lector, bolsa, progreso, libros por partes).",
-    "Pipeline de PLN: ingesta, spaCy, traducción por palabra (92% en libros; 100% en "
-    "principiante/intermedio) y por frase (Gemini y MT).",
-    "Contenido: 9 lecturas cortas trilingües + 2 libros completos (Die Verwandlung, Immensee).",
-    "Motor puro con pruebas; juego Codenames refactorizado; recursos optimizados.",
+    "Sección de Lectura completa (biblioteca, lector, bolsa, progreso, libros por partes) "
+    "en <b>tres idiomas de estudio</b>.",
+    "Pipeline de PLN multilingüe: ingesta con modelo spaCy por idioma (y fragmentos con "
+    "max_chars/fin), traducción por palabra (FreeDict por capas para de; eng-spa directo "
+    "para en), por frase (Gemini y opus-mt de-&gt;es / en-&gt;es) y <b>glosado monolingüe "
+    "del español</b> (wordfreq + glosario curado).",
+    "Contenido: 9 lecturas cortas trilingües + 2 libros alemanes (Die Verwandlung, Immensee) "
+    "+ 4 ingleses (Wells, Dickens, Poe, Mann) + 4 españoles (Quijote y Buscón en fragmento; "
+    "Azul… y los Cuentos de Quiroga completos).",
+    "Idioma de estudio global (contexto persistido), bolsa filtrada por idioma y perfil "
+    "export/import sin servidor.",
+    "Motor puro con pruebas (161 en toda la plataforma); Codenames refactorizado; recursos "
+    "optimizados.",
 ])
 h2("Pendiente / próximos pasos")
 li([
-    "<b>Sección 2 (Repaso):</b> repetición espaciada (Leitner como cadena de Markov + SM-2, "
-    "opcional FSRS) sobre la bolsa; es el núcleo matemático de la tesis.",
-    "<b>Sección 3 (Gramática):</b> ejercicios cloze generados con spaCy (Matcher / "
-    "DependencyMatcher) sobre los propios textos; distractores por similitud coseno de "
-    "embeddings (álgebra lineal).",
-    "<b>Más juegos:</b> word ladder (BFS en grafo de palabras), crucigramas (backtracking), "
-    "sudoku de palabras (cuadrados latinos).",
+    "<b>Ampliar el glosario español:</b> subir la densidad de glosas de Azul/Quiroga y "
+    "extender el fragmento del Quijote (p. ej. hasta los molinos de viento, cap. VIII).",
+    "<b>Léxico por token:</b> anotar la traducción por posición en el pipeline para resolver "
+    "la ambigüedad de forma general (hoy: overrides por lectura).",
     "<b>Optimización adicional del peso:</b> separar metadatos del contenido para cargar las "
     "lecturas también bajo demanda; dividir el léxico por idioma/libro.",
-    "<b>Mejorar cobertura y MT:</b> analizador morfológico para verbos fuertes; evaluar "
-    "modelos de MT mayores.",
+    "<b>Mejorar cobertura y MT:</b> analizador morfológico para verbos fuertes alemanes; "
+    "evaluar modelos de MT mayores.",
 ])
 
 # =========================================================================
@@ -697,6 +800,9 @@ glos = [
     ("SPA / bundle", "Single Page Application; bundle: JS empaquetado que se descarga."),
     ("dynamic import", "Carga de un módulo bajo demanda; genera un chunk aparte en Vite."),
     ("Cobertura de traducción", "% de formas de palabra distintas que reciben traducción."),
+    ("Glosa / glosado", "Definición breve en la misma lengua para una voz rara (español)."),
+    ("Escala Zipf", "log10 de la frecuencia por millón de palabras; mide la rareza léxica."),
+    ("wordfreq", "Biblioteca Python con frecuencias léxicas multilíngües (escala Zipf)."),
     ("Leitner / SM-2 / FSRS", "Algoritmos de repetición espaciada para el repaso."),
 ]
 tabla([["Término", "Definición"]] + [[t, d] for t, d in glos], [4.4 * cm, 12 * cm])
