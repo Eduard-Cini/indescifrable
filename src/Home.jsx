@@ -13,7 +13,8 @@ function Home() {
   return (
     <div className="home-container">
       <header className="home-header">
-        <h1>Plataforma de Idiomas</h1>
+        <h1>El castillo de la memoria</h1>
+        <p className="home-sub">Plataforma de idiomas</p>
         <p>Aprende alemán e inglés — y amplía tu español — leyendo, repasando y jugando.</p>
         <div className="home-idioma">
           <SelectorIdioma />
