@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Landing from './Landing';
 import Tablero from './Tablero';
 import TableroClave from './TableroClave';
+import TableroAgente from './TableroAgente';
 import './App.css';
 
 // Codenames (Indescifrable), uno de los juegos de la Sección 4. Es el mismo
@@ -33,6 +34,13 @@ function JuegoApp() {
 
       {pantallaActiva === 'tablero_clave' && (
         <TableroClave
+          datos={datosJuego}
+          onVolver={() => setPantallaActiva('landing')}
+        />
+      )}
+
+      {pantallaActiva === 'tablero_agente' && (
+        <TableroAgente
           datos={datosJuego}
           onVolver={() => setPantallaActiva('landing')}
         />

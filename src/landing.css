@@ -80,6 +80,13 @@ h2 {
 }
 .form-group .btn-secondary { margin-top: 0.5rem; }
 
+/* Dos accesos con la misma semilla: clave (capitanes) y tablero (agentes). */
+.acceso-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
 label {
   margin-bottom: 0.3125rem;
   font-size: 0.9rem;

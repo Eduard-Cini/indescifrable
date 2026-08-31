@@ -1,19 +1,24 @@
 import { useState, useMemo } from 'react';
 import { parsearSemilla } from './engine/board';
 import { cargarBolsa } from './engine/almacenamiento';
+import { useIdiomaEstudio } from './contexto/idiomaEstudio';
 import './landing.css';
 import hero from './assets/hero1.webp';
 import imageNash from './assets/Nash.webp';
 
 // El tablero reparte 25 tarjetas: la bolsa debe dar al menos para un tablero.
 const MINIMO_BOLSA = 25;
+const NOMBRE_IDIOMA = { es: 'Español', en: 'English', de: 'Deutsch' };
 
 function Landing({ onIniciarPartida }) {
+  const { idioma: idiomaEstudio } = useIdiomaEstudio();
   const [rondas, setRondas] = useState('3');
-  const [idioma, setIdioma] = useState('es');
+  // El idioma del tablero arranca en el idioma de estudio global: así «Mi bolsa»
+  // encuentra de entrada las palabras que el usuario ha estado guardando.
+  const [idioma, setIdioma] = useState(idiomaEstudio);
 
   // Estados para NUEVA PARTIDA
-  const [vocabularioCrear, setVocabularioCrear] = useState('es_es');
+  const [vocabularioCrear, setVocabularioCrear] = useState(`${idiomaEstudio}_es`);
   const [palabrasCrear, setPalabrasCrear] = useState('');
 
   // Estados para ACCESO
@@ -29,19 +34,30 @@ function Landing({ onIniciarPartida }) {
   // camino que el vocabulario personalizado (semilla XX-), así que el capitán
   // en otro dispositivo puede pegar la lista — o usar su propia bolsa si es la
   // misma. Se filtra por idioma para no mezclar alemán e inglés en un tablero.
+  const bolsaCompleta = useMemo(() => cargarBolsa(), []);
   const palabrasBolsa = useMemo(() => {
-    const bolsa = cargarBolsa().filter((p) => p.lang === idioma);
+    const bolsa = bolsaCompleta.filter((p) => p.lang === idioma);
     return [...new Set(bolsa.map((p) => (p.lemma ?? p.surface).toUpperCase()))];
-  }, [idioma]);
+  }, [bolsaCompleta, idioma]);
   const bolsaLista = palabrasBolsa.join(', ');
   const bolsaSuficiente = palabrasBolsa.length >= MINIMO_BOLSA;
+  // Idiomas donde SÍ hay bolsa suficiente, para orientar cuando falta en el actual.
+  const idiomasConBolsa = useMemo(() => {
+    const cuenta = {};
+    for (const p of bolsaCompleta) {
+      const clave = (p.lemma ?? p.surface).toUpperCase();
+      (cuenta[p.lang] ??= new Set()).add(clave);
+    }
+    return Object.entries(cuenta)
+      .filter(([, s]) => s.size >= MINIMO_BOLSA)
+      .map(([l, s]) => `${NOMBRE_IDIOMA[l] ?? l} (${s.size})`);
+  }, [bolsaCompleta]);
 
   const manejarCambioIdioma = (e) => {
     const nuevoIdioma = e.target.value;
     setIdioma(nuevoIdioma);
-    if (nuevoIdioma === 'es') setVocabularioCrear('es_es');
-    if (nuevoIdioma === 'en') setVocabularioCrear('en_es');
-    if (nuevoIdioma === 'de') setVocabularioCrear('de_es');
+    // Conserva «Mi bolsa» al cambiar de idioma; si no, vuelve al vocabulario estándar.
+    setVocabularioCrear((prev) => (prev === 'bolsa' ? 'bolsa' : `${nuevoIdioma}_es`));
   };
 
   const crearPartidaNueva = () => {
@@ -57,7 +73,9 @@ function Landing({ onIniciarPartida }) {
     });
   };
 
-  const accederPartidaExistente = () => {
+  // destino: 'tablero_clave' (capitán, con colores) o 'tablero_agente'
+  // (las mismas palabras sin colores, para seguir la partida desde el móvil).
+  const accederPartidaExistente = (destino) => {
     if (!semillaParseada) {
       alert('Semilla inválida. El formato es XX-YYYY (por ejemplo SE-K9A2).');
       return;
@@ -68,7 +86,7 @@ function Landing({ onIniciarPartida }) {
     }
 
     onIniciarPartida({
-      destino: 'tablero_clave',
+      destino,
       semilla: semillaParseada.semillaCompleta,
       palabras: palabrasAcceso,
     });
@@ -148,11 +166,23 @@ function Landing({ onIniciarPartida }) {
             </div>
           )}
 
-          {vocabularioCrear === 'bolsa' && (
+          {vocabularioCrear === 'bolsa' && bolsaSuficiente && (
             <p className='nota-bolsa'>
               El tablero usará {palabrasBolsa.length} palabras de tu bolsa
-              (Lectura/Repaso). El capitán puede pulsar «Usar mi bolsa» en el
-              panel de acceso si comparte este dispositivo, o pegar la lista.
+              (Lectura/Repaso) en {NOMBRE_IDIOMA[idioma]}. El capitán puede pulsar
+              «Usar mi bolsa» en el panel de acceso si comparte este dispositivo,
+              o pegar la lista.
+            </p>
+          )}
+
+          {!bolsaSuficiente && (
+            <p className='nota-bolsa'>
+              Tu bolsa tiene {palabrasBolsa.length} palabra(s) en{' '}
+              {NOMBRE_IDIOMA[idioma]}; hacen falta {MINIMO_BOLSA} para llenar un
+              tablero.
+              {idiomasConBolsa.length > 0
+                ? ` Sí te alcanza en: ${idiomasConBolsa.join(', ')} — cambia el idioma arriba.`
+                : ' Guarda más palabras leyendo para desbloquear esta opción.'}
             </p>
           )}
 
@@ -160,8 +190,11 @@ function Landing({ onIniciarPartida }) {
         </section>
 
         <section className='access-panel'>
-          <h2>Panel de acceso (Capitanes)</h2>
-          <p>Introduce la semilla que mostró el tablero original. El idioma y el vocabulario se deducen automáticamente.</p>
+          <h2>Panel de acceso</h2>
+          <p>Introduce la semilla que mostró el tablero original: el idioma y el
+            vocabulario se deducen automáticamente. Los <b>capitanes</b> abren la
+            clave con los colores; los <b>agentes</b> abren el mismo tablero sin
+            colores para seguir la partida desde su propio móvil.</p>
 
           <div className="form-group">
             <label>Semilla de la partida:</label>
@@ -194,9 +227,20 @@ function Landing({ onIniciarPartida }) {
             </div>
           )}
 
-          <button className="btn-secondary" onClick={accederPartidaExistente}>
-            Ver Clave del Tablero
-          </button>
+          <div className="acceso-botones">
+            <button
+              className="btn-secondary"
+              onClick={() => accederPartidaExistente('tablero_clave')}
+            >
+              Ver clave (capitanes)
+            </button>
+            <button
+              className="btn-secondary"
+              onClick={() => accederPartidaExistente('tablero_agente')}
+            >
+              Ver tablero (agentes)
+            </button>
+          </div>
         </section>
       </main>
 

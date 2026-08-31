@@ -1,16 +1,16 @@
-// Favicon dinámico por sección: el icono reptiliano original queda reservado
-// para el juego Indescifrable (Codenames); las demás secciones usan su emoji
-// (como SVG inline, sin archivos extra) y la portada lleva el camello 🐪.
+// Favicon dinámico por sección. El icono general del sitio es el castillo sobre
+// el libro (public/favicon-castillo.png, generado por scripts/generar_identidad.py);
+// el reptiliano original queda reservado para el juego Indescifrable, y cada
+// sección muestra su emoji como SVG inline (sin archivos extra).
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-// href original de index.html (el reptiliano), capturado antes de tocarlo.
-const ORIGINAL = document.querySelector("link[rel~='icon']")?.href ?? null;
+const CASTILLO = '/favicon-castillo.png';
+const REPTILIANO = '/faviconReptiliano.png';
 
 // Prefijos de ruta en orden de especificidad (el primero que casa, gana).
-// null = conservar el favicon original.
-const EMOJIS = [
-  ['/juegos/codenames', null],
+const ICONOS = [
+  ['/juegos/codenames', REPTILIANO],
   ['/juegos/escalera', '🪜'],
   ['/juegos/crucigrama', '✏️'],
   ['/juegos/wordle', '🎯'],
@@ -36,16 +36,14 @@ function Favicon() {
   useEffect(() => {
     const link = document.querySelector("link[rel~='icon']");
     if (!link) return;
-    const regla = EMOJIS.find(([prefijo]) => pathname.startsWith(prefijo));
-    const emoji = regla ? regla[1] : '🐪'; // portada y rutas sin regla
-    if (emoji === null) {
-      if (ORIGINAL) {
-        link.type = 'image/png';
-        link.href = ORIGINAL;
-      }
+    const regla = ICONOS.find(([prefijo]) => pathname.startsWith(prefijo));
+    const icono = regla ? regla[1] : CASTILLO; // portada y rutas sin regla
+    if (icono.startsWith('/')) {
+      link.type = 'image/png';
+      link.href = icono;
     } else {
       link.type = 'image/svg+xml';
-      link.href = dataUri(emoji);
+      link.href = dataUri(icono);
     }
   }, [pathname]);
 

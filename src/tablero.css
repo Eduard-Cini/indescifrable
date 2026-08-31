@@ -363,3 +363,12 @@
     font-size: 1.5rem;
   }
 }
+/* Nota de la vista de agente (tablero sin colores para seguir desde el móvil). */
+.agente-nota {
+  max-width: 900px;
+  margin: 0.2rem auto 0.9rem;
+  padding: 0 1rem;
+  color: #9a9a9a;
+  font-size: 0.85rem;
+  text-align: center;
+}
