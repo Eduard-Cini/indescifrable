@@ -40,7 +40,10 @@ def entradas_de_texto(frases, idioma, nlp, tr):
                 continue
             lema = lemas[t.i]
             entrada = {"lemma": lema}
-            trad = tr.traducir(lema, t.text) if idioma == "de" else tr.traducir_en(lema, t.text)
+            # La categoría gramatical del token elige la acepción correcta del
+            # diccionario (bone sustantivo = «hueso», no el adjetivo «osiforme»).
+            trad = (tr.traducir(lema, t.text, t.pos_) if idioma == "de"
+                    else tr.traducir_en(lema, t.text, t.pos_))
             if trad:
                 entrada["es"] = trad
             else:
