@@ -1,0 +1,43 @@
+{
+  "tema": "valores",
+  "titulo": "Valores",
+  "nota": "Ejercicios propios sobre la formación de palabras de los valores (género por terminación y familias de palabras).",
+  "tandas": [
+    {
+      "id": "articulo",
+      "titulo": "¿der, die o das?",
+      "instruccion": "Elige el artículo. Pista: fíjate en la terminación.",
+      "modelo": "Lernwortschatz, Übungsbuch S. 124",
+      "ejercicios": [
+        { "id": "ar1", "partes": ["", " Freiheit"], "respuesta": "die", "distractores": ["der", "das"], "pista": "-heit → siempre femenino." },
+        { "id": "ar2", "partes": ["", " Gemeinschaft"], "respuesta": "die", "distractores": ["der", "das"], "pista": "-schaft → siempre femenino." },
+        { "id": "ar3", "partes": ["", " Solidarität"], "respuesta": "die", "distractores": ["der", "das"], "pista": "-ität → siempre femenino." },
+        { "id": "ar4", "partes": ["", " Zusammenleben"], "respuesta": "das", "distractores": ["der", "die"], "pista": "Infinitivo usado como sustantivo → neutro." },
+        { "id": "ar5", "partes": ["", " Wert"], "respuesta": "der", "distractores": ["die", "das"], "pista": "Sin sufijo hay que aprenderlo: der Wert, die Werte." },
+        { "id": "ar6", "partes": ["", " Vorurteil"], "respuesta": "das", "distractores": ["der", "die"], "pista": "das Urteil → das Vorurteil: el prefijo no cambia el género." },
+        { "id": "ar7", "partes": ["", " Erziehung"], "respuesta": "die", "distractores": ["der", "das"], "pista": "-ung → siempre femenino." },
+        { "id": "ar8", "partes": ["", " Respekt"], "respuesta": "der", "distractores": ["die", "das"], "pista": "Sin sufijo: der Respekt (Sg.)." },
+        { "id": "ar9", "partes": ["", " Toleranz"], "respuesta": "die", "distractores": ["der", "das"], "pista": "-anz → femenino." },
+        { "id": "ar10", "partes": ["", " Menschenrecht"], "respuesta": "das", "distractores": ["der", "die"], "pista": "Compuesto: manda la última palabra (das Recht)." },
+        { "id": "ar11", "partes": ["", " Meinungsfreiheit"], "respuesta": "die", "distractores": ["der", "das"], "pista": "Compuesto: manda la última palabra (die Freiheit)." },
+        { "id": "ar12", "partes": ["", " Frieden"], "respuesta": "der", "distractores": ["die", "das"], "pista": "Sin sufijo: der Frieden (Sg.)." }
+      ]
+    },
+    {
+      "id": "familia",
+      "titulo": "Del adjetivo al sustantivo",
+      "instruccion": "¿Qué sustantivo corresponde a cada adjetivo?",
+      "modelo": "Übungsbuch S. 125",
+      "ejercicios": [
+        { "id": "fa1", "partes": ["ehrlich → die ", ""], "respuesta": "Ehrlichkeit", "distractores": ["Ehrlichheit", "Ehrlichung", "Ehrlichschaft"], "pista": "-keit detrás de -lich." },
+        { "id": "fa2", "partes": ["gerecht → die ", ""], "respuesta": "Gerechtigkeit", "distractores": ["Gerechtheit", "Gerechtung", "Gerechtschaft"], "pista": "gerecht → Gerecht-igkeit." },
+        { "id": "fa3", "partes": ["frei → die ", ""], "respuesta": "Freiheit", "distractores": ["Freikeit", "Freiung", "Freischaft"], "pista": "Adjetivo corto + -heit." },
+        { "id": "fa4", "partes": ["tolerant → die ", ""], "respuesta": "Toleranz", "distractores": ["Tolerantheit", "Toleranzung", "Tolerantkeit"], "pista": "Préstamo: -ant → -anz." },
+        { "id": "fa5", "partes": ["solidarisch → die ", ""], "respuesta": "Solidarität", "distractores": ["Solidarischkeit", "Solidarheit", "Solidarung"], "pista": "Préstamo: -isch → -ität." },
+        { "id": "fa6", "partes": ["sicher → die ", ""], "respuesta": "Sicherheit", "distractores": ["Sicherkeit", "Sicherschaft", "Sichertum"], "pista": "sicher + -heit." },
+        { "id": "fa7", "partes": ["gesund → die ", ""], "respuesta": "Gesundheit", "distractores": ["Gesundkeit", "Gesundschaft", "Gesundtum"], "pista": "gesund + -heit." },
+        { "id": "fa8", "partes": ["hilfsbereit → die ", ""], "respuesta": "Hilfsbereitschaft", "distractores": ["Hilfsbereitheit", "Hilfsbereitung", "Hilfsbereitkeit"], "pista": "bereit → die Bereitschaft; hilfsbereit → die Hilfsbereitschaft." }
+      ]
+    }
+  ]
+}

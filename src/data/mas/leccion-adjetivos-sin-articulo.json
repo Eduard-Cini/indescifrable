@@ -1,0 +1,74 @@
+{
+  "id": "adjetivos-sin-articulo",
+  "titulo": "Adjetivos sin artículo",
+  "descripcion": "La declinación del adjetivo cuando no hay artículo delante (anuncios, titulares, mit großem Spaß): el adjetivo lleva la marca del artículo determinado.",
+  "fuente": "Netzwerk neu B1, Kapitel 9: Kursbuch S. 104-105 y 109 · Übungsbuch S. 111 (R3) · Intensivtrainer S. 47",
+  "libro": {
+    "referencia": "Kursbuch S. 105 (recuadro G) y S. 109 («kurz und klar»)",
+    "puntos": [
+      "Sin artículo, el adjetivo toma la misma terminación que tendría el artículo determinado: der Spaß → großer Spaß; das Stück → neues Stück.",
+      "La tabla del libro cubre nominativo, acusativo, dativo y genitivo en los tres géneros y en plural.",
+      "Excepción: en el genitivo singular masculino y neutro el adjetivo termina en -en.",
+      "El genitivo sin artículo se usa casi solo detrás de preposiciones como wegen o trotz."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "¿Cuándo no hay artículo?",
+      "texto": [
+        "En anuncios y titulares, con sustantivos incontables (Tee, Wasser, Musik), con plurales indefinidos y detrás de preposiciones en expresiones fijas."
+      ],
+      "ejemplos": [
+        { "de": "Große Wohnung zu vermieten.", "es": "Se alquila piso grande." },
+        { "de": "Ich trinke gern kalten Tee.", "es": "Me gusta tomar té frío." },
+        { "de": "Er spielt mit großer Freude.", "es": "Toca con mucha alegría." }
+      ]
+    },
+    {
+      "titulo": "La regla: la marca del artículo pasa al adjetivo",
+      "texto": [
+        "Como no hay artículo que muestre el caso y el género, la muestra el adjetivo con la terminación del artículo determinado (der → -er, das → -es, dem → -em…)."
+      ],
+      "tabla": {
+        "cabecera": ["", "masculino", "neutro", "femenino", "plural"],
+        "filas": [
+          ["Nom.", "kalter Tee (der)", "frisches Brot (das)", "warme Milch (die)", "alte Bücher (die)"],
+          ["Akk.", "kalten Tee (den)", "frisches Brot (das)", "warme Milch (die)", "alte Bücher (die)"],
+          ["Dat.", "kaltem Tee (dem)", "frischem Brot (dem)", "warmer Milch (der)", "alten Büchern (den)"],
+          ["Gen.", "kalten Tees (¡-en!)", "frischen Brotes (¡-en!)", "warmer Milch (der)", "alter Bücher (der)"]
+        ]
+      },
+      "notas": [
+        "En dativo plural, el sustantivo añade -n si no lo tiene ya: mit alten Freunden."
+      ]
+    },
+    {
+      "titulo": "La excepción del genitivo",
+      "texto": [
+        "En genitivo singular masculino y neutro, el sustantivo ya lleva la marca -(e)s, así que el adjetivo se queda en -en. Casi siempre aparece detrás de wegen o trotz."
+      ],
+      "ejemplos": [
+        { "de": "Wegen starken Regens fällt das Konzert aus.", "es": "El concierto se suspende por la lluvia fuerte." },
+        { "de": "Trotz hohen Fiebers ging er zur Probe.", "es": "A pesar de la fiebre alta, fue al ensayo." }
+      ]
+    },
+    {
+      "titulo": "Con artículo, sin artículo",
+      "texto": [
+        "Compara: con artículo determinado, el artículo ya lleva la marca y el adjetivo toma -e o -en; sin artículo, la marca la lleva el adjetivo."
+      ],
+      "tabla": {
+        "cabecera": ["Con artículo", "Sin artículo"],
+        "filas": [
+          ["der kalte Tee", "kalter Tee"],
+          ["das frische Wasser", "frisches Wasser"],
+          ["mit dem großen Spaß", "mit großem Spaß"],
+          ["die neuen Mitglieder", "neue Mitglieder"]
+        ]
+      },
+      "notas": [
+        "Algunos adjetivos no se declinan nunca: lila, rosa, super, prima y durcheinander (este último, solo después del verbo)."
+      ]
+    }
+  ]
+}

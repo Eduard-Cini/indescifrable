@@ -70,6 +70,7 @@
 .seccion-card.juegos:hover { border-color: #6a8cff; }
 .seccion-card.repaso:hover { border-color: #b7a86a; }
 .seccion-card.gramatica:hover { border-color: #c58fd8; }
+.seccion-card.mas:hover { border-color: #e07a8a; }
 
 /* Sección sin datos para el idioma de estudio actual (p. ej. español). */
 .seccion-card.deshabilitada {

@@ -56,6 +56,12 @@ function Home() {
             <p>Ejercicios cloze por tema, adaptados a tu idioma de estudio, con distractores por similitud.</p>
           </Link>
         )}
+
+        {/* Material de alemán propio (Netzwerk neu B1): no depende del idioma de estudio. */}
+        <Link to="/mas" className="seccion-card mas">
+          <h2>📚 Más contenidos</h2>
+          <p>Alemán · Netzwerk neu B1, capítulo 10: valores y voz pasiva, por vocabulario (fichas SM-2) y por gramática (lección y ejercicios).</p>
+        </Link>
       </main>
     </div>
   );

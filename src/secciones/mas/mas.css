@@ -1,0 +1,131 @@
+/* Sección «Más contenidos»: portada por bloques, fichas SM-2, lecciones y
+   ejercicios. Reutiliza lectura.css (layout), gramatica.css (tarjetas,
+   opciones, feedback) y repaso.css (ficha y botones de calificación). */
+
+/* --- Portada --- */
+.mas-bloque { margin-top: 1.8rem; }
+.mas-bloque-titulo { font-size: 1.25rem; margin: 0 0 0.2rem; color: #f0f0f0; }
+.mas-bloque-sub { margin: 0; color: #9a9a9a; font-size: 0.85rem; }
+
+.mas-capitulo { margin-top: 1rem; }
+.mas-capitulo h3 {
+  margin: 0.4rem 0 0;
+  font-size: 0.95rem;
+  color: #b7a86a;
+  letter-spacing: 0.03em;
+}
+
+.mas-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.mas-subenlace {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #9ad;
+  text-decoration: none;
+  border: 1px solid #2e2e2e;
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+.mas-subenlace:hover { border-color: #6a8cff; color: #cfe6ff; }
+
+/* --- Género por color (convención habitual): der azul, die rojo, das verde --- */
+.genero { font-weight: bold; }
+.genero.der { color: #6a8cff; }
+.genero.die { color: #e07a8a; }
+.genero.das { color: #8fbf9f; }
+
+/* --- Ficha --- */
+.mazo-controles {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+  font-size: 0.85rem;
+}
+.mazo-controles select {
+  background: #1d1d1d;
+  color: #e0e0e0;
+  border: 1px solid #2e2e2e;
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-family: inherit;
+}
+
+.mazo-lws {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 0.65rem;
+  color: #b7a86a;
+  border: 1px solid #6a5c2e;
+  border-radius: 4px;
+  padding: 1px 5px;
+}
+
+.mazo-formas { border-collapse: collapse; font-size: 0.95rem; }
+.mazo-formas th {
+  color: #888;
+  font-weight: normal;
+  text-align: right;
+  padding: 0.15rem 0.7rem;
+  white-space: nowrap;
+}
+.mazo-formas td { color: #f0f0f0; text-align: left; padding: 0.15rem 0.7rem; }
+.mazo-significado { font-size: 1.25rem; color: #8fbf9f; text-align: center; }
+.mazo-familia { font-size: 0.85rem; color: #aaa; text-align: center; margin: 0; }
+.mazo-pasiva { font-size: 0.85rem; color: #9ad; text-align: center; margin: 0; }
+.mazo-nota { font-size: 0.8rem; color: #b7a86a; text-align: center; margin: 0; }
+.mazo-ejemplo { font-size: 0.95rem; color: #ddd; font-style: italic; text-align: center; margin: 0; }
+.mazo-ejemplo-es { font-size: 0.8rem; color: #888; text-align: center; margin: 0; }
+.mazo-fuente { font-size: 0.7rem; color: #666; margin: 0; }
+
+/* --- Lista completa del mazo --- */
+.mazo-lista { margin-top: 2rem; }
+.mazo-lista summary { cursor: pointer; color: #9ad; font-size: 0.9rem; }
+.mas-tabla-envoltura { overflow-x: auto; margin-top: 0.6rem; }
+.mazo-estado { font-size: 0.75rem; color: #888; white-space: nowrap; }
+
+/* --- Lección --- */
+.leccion-seccion {
+  background: #171717;
+  border: 1px solid #2e2e2e;
+  border-radius: 10px;
+  padding: 0.8rem 1.1rem;
+  margin-bottom: 1rem;
+}
+.leccion-seccion h2 { font-size: 1.05rem; margin: 0 0 0.5rem; color: #8fbf9f; }
+.leccion-seccion p { color: #ccc; font-size: 0.92rem; line-height: 1.55; margin: 0.4rem 0; }
+.leccion-seccion p.leccion-nota { color: #b7a86a; font-size: 0.85rem; }
+.leccion-libro { border-color: #6a5c2e; background: #1b1912; }
+.leccion-libro h2 { color: #b7a86a; }
+.leccion-seccion p.leccion-referencia { color: #888; font-size: 0.8rem; margin-top: 0; }
+.leccion-libro ul { margin: 0.4rem 0 0; padding-left: 1.2rem; }
+.leccion-libro li { color: #ddd; font-size: 0.9rem; line-height: 1.5; margin: 0.3rem 0; }
+.leccion-ejemplos { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.leccion-ejemplos li { margin: 0.4rem 0; }
+.leccion-ejemplos .de { color: #f0f0f0; }
+.leccion-ejemplos .es { display: block; color: #888; font-size: 0.85rem; }
+
+.mas-acciones {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+.mas-fuente { color: #666; font-size: 0.75rem; text-align: center; margin-top: 2rem; }
+
+/* --- Ejercicios --- */
+.mas-modelo { font-size: 0.75rem; color: #888; }
+.mas-pregunta { font-size: 1.2rem; color: #f0f0f0; margin: 1rem 0 1.2rem; }
+.gram-opciones.frases { grid-template-columns: 1fr; }
+.gram-opcion.frase { text-align: left; font-size: 0.98rem; }

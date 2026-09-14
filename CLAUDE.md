@@ -91,7 +91,23 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   voraz 3.4/3.0 intentos medios, ≥99% en ≤6). `board.js` exporta `crearGeneradorNormalizado`
   (antes helper privado de gramatica.js) y los imports internos del engine llevan extensión
   `.js` (los usa node).
-- **Motor puro + Vitest** (157 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad).
+- **Más contenidos** (`/mas`, `src/secciones/mas/`): material de alemán del curso del usuario
+  (Netzwerk neu B1, caps. 9 «Kunststücke» y 10 «Miteinander»). Portada en tres bloques
+  (decisión del usuario; sin emojis en las subsecciones): **Vocabulario por tema**, **Gramática**
+  (lección + subsección de ejercicios) y **Vocabulario y verbos del capítulo**, agrupados por
+  capítulo. Catálogo en `src/data/mas/indice.json`; por tema, convención `mazo-<id>`,
+  `leccion-<id>`, `ejercicios-<id>` (cap. 9: nicht, adjetivos-sin-articulo, adjetivos-compuestos;
+  cap. 10: valores, pasiva, adjetivos-los-bar); mazos de capítulo `mazo-k9|k10-vocabulario|verbos`
+  (`incluye` reutiliza las fichas de otro mazo). Fichas sobre el MISMO SM-2 (`src/engine/mazos.js`);
+  el estado (`mazos.srs.v1`) va por PALABRA (`tipo:id`), compartido entre mazos y fuera de la bolsa.
+  REGLAS del usuario: sustantivo SIEMPRE con género y plural; verbo SIEMPRE con presente, pasado y
+  Partizip II; cada lección trae «Lo que explica el libro» (resumen propio con página). Tests de
+  integridad: fichas completas, misma palabra = mismas formas en todos los mazos, Partizip II
+  coherente con el prefijo, catálogo completo. Ejercicios de opción múltiple con huecos múltiples
+  («wird … gebaut», `src/engine/ejercicios.js`) con frases PROPIAS modeladas sobre el
+  Intensivtrainer/Übungsbuch (no copiar el libro: copyright y sitio público); ✓ por tanda en
+  `mas.completados.v1`. Los PDF son escaneos: página PDF = página del libro + 1.
+- **Motor puro + Vitest** (219 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad, mazos, ejercicios).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:

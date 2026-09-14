@@ -1,0 +1,132 @@
+{
+  "id": "pasiva",
+  "titulo": "Voz pasiva (Passiv)",
+  "descripcion": "Cómo se forma y cuándo se usa la pasiva: Passiv Präsens, Präteritum y Perfekt, y la pasiva con verbo modal (la gramática del capítulo 10).",
+  "fuente": "Netzwerk neu B1, Kapitel 10: Kursbuch S. 119, 121 y 125 · Übungsbuch S. 117-120",
+  "libro": {
+    "referencia": "Kursbuch S. 125 («kurz und klar») y Übungsbuch S. 117 (Partizip II)",
+    "puntos": [
+      "La activa responde a «¿quién hace algo?»; la pasiva, a «¿qué pasa?». Lo que en la activa es el acusativo pasa a ser el nominativo de la pasiva.",
+      "Si se quiere decir quién realiza la acción, se añade von + dativo.",
+      "Formación: Präsens = werden + Partizip II; Präteritum = wurde + Partizip II; Perfekt = sein + Partizip II + worden.",
+      "Para la pasiva en pasado se usa sobre todo el Präteritum.",
+      "Con verbo modal: el modal conjugado va en la segunda posición y al final van el Partizip II y werden en infinitivo.",
+      "Partizip II: los regulares llevan ge- y terminan en -(e)t (en los separables, ge va entre el prefijo y el verbo); los inseparables y los verbos en -ieren van sin ge-; los irregulares terminan en -en."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "¿Activa o pasiva?",
+      "texto": [
+        "En la activa importa quién hace algo: el agente es el sujeto. En la pasiva importa lo que se hace o lo que pasa; muchas veces el agente ni se menciona.",
+        "El complemento en acusativo de la frase activa pasa a ser el sujeto (nominativo) de la pasiva. Si se quiere decir quién lo hace, se añade von + dativo."
+      ],
+      "tabla": {
+        "cabecera": ["", "Frase", "Qué cambia"],
+        "filas": [
+          ["Activa", "Die Stadt baut eine neue Schule.", "sujeto: die Stadt · acusativo: eine neue Schule"],
+          ["Pasiva", "Eine neue Schule wird (von der Stadt) gebaut.", "sujeto: eine neue Schule · agente: von der Stadt (dativo)"]
+        ]
+      }
+    },
+    {
+      "titulo": "Formación: werden + Partizip II",
+      "texto": [
+        "La pasiva se forma con el verbo werden conjugado y el Partizip II del verbo principal, que se va al final de la frase."
+      ],
+      "tabla": {
+        "cabecera": ["Tiempo", "Estructura", "Ejemplo"],
+        "filas": [
+          ["Präsens", "wird / werden + Partizip II", "Die Straße wird repariert."],
+          ["Präteritum", "wurde / wurden + Partizip II", "Die Straße wurde repariert."],
+          ["Perfekt", "ist / sind + Partizip II + worden", "Die Straße ist repariert worden."],
+          ["Con verbo modal", "modal + Partizip II + werden", "Die Straße muss repariert werden."]
+        ]
+      },
+      "notas": [
+        "En el Perfekt de la pasiva se usa «worden», nunca «geworden».",
+        "Para contar algo pasado lo más habitual es el Präteritum: wurde + Partizip II."
+      ]
+    },
+    {
+      "titulo": "Conjugación de werden",
+      "tabla": {
+        "cabecera": ["Persona", "Präsens", "Präteritum"],
+        "filas": [
+          ["ich", "werde", "wurde"],
+          ["du", "wirst", "wurdest"],
+          ["er / sie / es", "wird", "wurde"],
+          ["wir", "werden", "wurden"],
+          ["ihr", "werdet", "wurdet"],
+          ["sie / Sie", "werden", "wurden"]
+        ]
+      },
+      "notas": [
+        "Perfekt: ist geworden (werden como verbo pleno) · ist … worden (pasiva)."
+      ]
+    },
+    {
+      "titulo": "Los tres usos de werden",
+      "tabla": {
+        "cabecera": ["Uso", "Estructura", "Ejemplo"],
+        "filas": [
+          ["Verbo pleno: llegar a ser, ponerse", "werden + sustantivo / adjetivo", "Mein Bruder wird Arzt. · Es wird kalt."],
+          ["Futur I", "werden + infinitivo", "Ich werde dich morgen anrufen."],
+          ["Pasiva", "werden + Partizip II", "Das Paket wird morgen geliefert."]
+        ]
+      },
+      "texto": [
+        "Truco: busca la otra forma verbal de la frase. ¿Un infinitivo? Es futuro. ¿Un Partizip II? Es pasiva. ¿Ninguna, sino un sustantivo o un adjetivo? Es el verbo pleno."
+      ]
+    },
+    {
+      "titulo": "El Partizip II",
+      "tabla": {
+        "cabecera": ["Tipo de verbo", "Regla", "Ejemplos"],
+        "filas": [
+          ["Regular", "ge- + raíz + -(e)t", "machen → gemacht · spenden → gespendet"],
+          ["Irregular", "ge- + raíz (a menudo con otra vocal) + -en", "rufen → gerufen · treffen → getroffen"],
+          ["Separable (ab-, auf-, aus-, ein-, mit-, weg-, zu-, zurück-…)", "prefijo + ge + participio", "ab|holen → abgeholt · ein|nehmen → eingenommen"],
+          ["Inseparable (be-, emp-, ent-, er-, ge-, miss-, ver-, zer-)", "sin ge-", "bezahlen → bezahlt · verteilen → verteilt · entsorgen → entsorgt"],
+          ["Terminado en -ieren", "sin ge-, termina en -t", "reparieren → repariert · finanzieren → finanziert"]
+        ]
+      },
+      "notas": [
+        "über-, unter- y durch- pueden ser inseparables (übernehmen → übernommen, unterstützen → unterstützt) o separables (durch|führen → durchgeführt). En las fichas, la barra | marca el prefijo separable."
+      ]
+    },
+    {
+      "titulo": "El orden en la frase",
+      "texto": [
+        "En la oración principal, werden (o el modal) ocupa la posición 2 y el Partizip II va al final: es el «paréntesis verbal» (Satzklammer).",
+        "En la subordinada todo el bloque verbal se va al final y el verbo conjugado cierra la frase."
+      ],
+      "ejemplos": [
+        { "de": "Heute wird im Park ein Fest gefeiert.", "es": "Hoy se celebra una fiesta en el parque." },
+        { "de": "Ich weiß, dass im Park ein Fest gefeiert wird.", "es": "Sé que en el parque se celebra una fiesta." },
+        { "de": "Er sagt, dass die Tür geschlossen werden muss.", "es": "Dice que hay que cerrar la puerta." }
+      ]
+    },
+    {
+      "titulo": "Pasiva impersonal",
+      "texto": [
+        "Con verbos sin complemento en acusativo (arbeiten, feiern, tanzen, rauchen…) la pasiva no tiene sujeto y el verbo va siempre en singular: wird / wurde.",
+        "Si nada más ocupa la posición 1, se pone «es»; en cuanto otro elemento va delante, «es» desaparece."
+      ],
+      "ejemplos": [
+        { "de": "Hier wird nicht geraucht.", "es": "Aquí no se fuma." },
+        { "de": "Am Samstag wird getanzt.", "es": "El sábado se baila." },
+        { "de": "Es wird viel gelacht.", "es": "Se ríe mucho." }
+      ]
+    },
+    {
+      "titulo": "¿Quién lo hace? von + dativo",
+      "texto": [
+        "El agente se nombra con von + dativo: von der Stadt, von den Nachbarn, vom Bürgermeister. A menudo se omite porque no importa o porque es evidente."
+      ],
+      "ejemplos": [
+        { "de": "Der Brief wurde vom Bürgermeister unterschrieben.", "es": "La carta fue firmada por el alcalde." }
+      ]
+    }
+  ]
+}

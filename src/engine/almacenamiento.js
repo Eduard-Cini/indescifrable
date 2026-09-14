@@ -8,6 +8,8 @@ const CLAVE_CONOCIDAS = 'conocidas.v1';
 const CLAVE_REPASO_PREVIO = 'repasoPrevio.v1';
 const CLAVE_GRAMATICA = 'gramatica.completados.v1';
 const CLAVE_IDIOMA = 'idiomaEstudio.v1';
+const CLAVE_MAZOS = 'mazos.srs.v1';
+const CLAVE_MAS = 'mas.completados.v1';
 
 const IDIOMA_DEFECTO = 'de';
 
@@ -21,6 +23,8 @@ const CLAVES_PERFIL = [
   CLAVE_REPASO_PREVIO,
   CLAVE_GRAMATICA,
   CLAVE_IDIOMA,
+  CLAVE_MAZOS,
+  CLAVE_MAS,
 ];
 
 function cargarArray(clave) {
@@ -96,6 +100,24 @@ export function cargarGramaticaCompletados() {
 
 export function guardarGramaticaCompletados(claves) {
   guardar(CLAVE_GRAMATICA, claves);
+}
+
+/** Mapa clave de ficha (`mazo:ficha`) → estado SM-2 de los mazos de «Más contenidos». */
+export function cargarMazos() {
+  return cargarObjeto(CLAVE_MAZOS);
+}
+
+export function guardarMazos(estados) {
+  guardar(CLAVE_MAZOS, estados);
+}
+
+/** Claves `tema|tanda` de tandas de ejercicios de «Más contenidos» hechas sin fallos. */
+export function cargarMasCompletados() {
+  return cargarArray(CLAVE_MAS);
+}
+
+export function guardarMasCompletados(claves) {
+  guardar(CLAVE_MAS, claves);
 }
 
 /** Idioma de estudio activo (gobierna Repaso, Bolsa y la Biblioteca). */

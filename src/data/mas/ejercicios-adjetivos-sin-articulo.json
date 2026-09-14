@@ -1,0 +1,62 @@
+{
+  "tema": "adjetivos-sin-articulo",
+  "titulo": "Adjetivos sin artículo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 105, 8c; Intensivtrainer S. 47, 8), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "anuncios",
+      "titulo": "Anuncios: nominativo y acusativo",
+      "instruccion": "Completa los anuncios con la terminación correcta.",
+      "modelo": "Kursbuch S. 105, 8c · Intensivtrainer S. 47, 8",
+      "ejercicios": [
+        { "id": "an1", "partes": ["", " Gitarrist sucht Band."], "respuesta": "Erfahrener", "distractores": ["Erfahrene", "Erfahrenen", "Erfahrenes"], "pista": "Masculino nominativo (der Gitarrist) → -er." },
+        { "id": "an2", "partes": ["Suche ", " Fahrrad für meine Tochter."], "respuesta": "gebrauchtes", "distractores": ["gebrauchter", "gebrauchte", "gebrauchten"], "pista": "Neutro acusativo (das Fahrrad) → -es." },
+        { "id": "an3", "partes": ["Verkaufe ", " Sofa, fast neu."], "respuesta": "rotes", "distractores": ["roter", "rote", "roten"], "pista": "Neutro acusativo (das Sofa) → -es." },
+        { "id": "an4", "partes": ["", " Sängerin für Chor gesucht."], "respuesta": "Talentierte", "distractores": ["Talentierter", "Talentiertes", "Talentierten"], "pista": "Femenino nominativo (die Sängerin) → -e." },
+        { "id": "an5", "partes": ["Wir suchen ", " Tisch für die Küche."], "respuesta": "runden", "distractores": ["runder", "rundes", "runde"], "pista": "Masculino acusativo (den Tisch) → -en." },
+        { "id": "an6", "partes": ["", " Leute für unser Theaterprojekt gesucht!"], "respuesta": "Nette", "distractores": ["Netter", "Netten", "Nettes"], "pista": "Plural nominativo (die Leute) → -e." }
+      ]
+    },
+    {
+      "id": "dativo",
+      "titulo": "Dativo (con preposición)",
+      "instruccion": "Completa con la terminación de dativo.",
+      "modelo": "Kursbuch S. 105, 8b",
+      "ejercicios": [
+        { "id": "da1", "partes": ["Wir malen mit ", " Farben."], "respuesta": "bunten", "distractores": ["bunte", "bunter", "buntem"], "pista": "Plural dativo (den Farben) → -en." },
+        { "id": "da2", "partes": ["Ein Stuhl aus ", " Holz."], "respuesta": "altem", "distractores": ["alten", "altes", "alter"], "pista": "Neutro dativo (dem Holz) → -em." },
+        { "id": "da3", "partes": ["Kaffee mit ", " Milch, bitte."], "respuesta": "warmer", "distractores": ["warme", "warmen", "warmem"], "pista": "Femenino dativo (der Milch) → -er." },
+        { "id": "da4", "partes": ["Das Fest endete mit ", " Applaus."], "respuesta": "großem", "distractores": ["großen", "großer", "großes"], "pista": "Masculino dativo (dem Applaus) → -em." },
+        { "id": "da5", "partes": ["Ich schreibe am liebsten mit ", " Kuli."], "respuesta": "blauem", "distractores": ["blauen", "blauer", "blaues"], "pista": "Masculino dativo (dem Kuli) → -em." },
+        { "id": "da6", "partes": ["Sie arbeitet gern mit ", " Menschen."], "respuesta": "kreativen", "distractores": ["kreative", "kreativem", "kreativer"], "pista": "Plural dativo (den Menschen) → -en." }
+      ]
+    },
+    {
+      "id": "genitivo",
+      "titulo": "Genitivo con wegen y trotz",
+      "instruccion": "Completa. Recuerda la excepción del masculino y el neutro.",
+      "modelo": "Kursbuch S. 109",
+      "ejercicios": [
+        { "id": "ge1", "partes": ["Wegen ", " Regens fällt das Konzert aus."], "respuesta": "starken", "distractores": ["starkes", "starker", "starkem"], "pista": "Genitivo masculino (des Regens) → -en: el sustantivo ya lleva -s." },
+        { "id": "ge2", "partes": ["Trotz ", " Fiebers ging er zur Probe."], "respuesta": "hohen", "distractores": ["hohes", "hoher", "hohem"], "pista": "Genitivo neutro (des Fiebers) → -en." },
+        { "id": "ge3", "partes": ["Wegen ", " Interesses gibt es eine zweite Vorstellung."], "respuesta": "großen", "distractores": ["großes", "großer", "großem"], "pista": "Genitivo neutro (des Interesses) → -en." },
+        { "id": "ge4", "partes": ["Trotz ", " Kälte spielten die Musiker draußen."], "respuesta": "großer", "distractores": ["große", "großen", "großem"], "pista": "Genitivo femenino (der Kälte) → -er." },
+        { "id": "ge5", "partes": ["Wegen ", " Probleme wurde die Premiere verschoben."], "respuesta": "technischer", "distractores": ["technische", "technischen", "technisches"], "pista": "Genitivo plural (der Probleme) → -er." }
+      ]
+    },
+    {
+      "id": "contraste",
+      "titulo": "¿Con o sin artículo?",
+      "instruccion": "Fíjate si hay artículo delante y elige la terminación.",
+      "modelo": "Kursbuch S. 104, 7c y S. 109",
+      "ejercicios": [
+        { "id": "ct1", "partes": ["Ich trinke gern ", " Tee."], "respuesta": "kalten", "distractores": ["kalter", "kalte"], "pista": "Sin artículo, masculino acusativo → -en (como den)." },
+        { "id": "ct2", "partes": ["Der ", " Tee schmeckt gut."], "respuesta": "kalte", "distractores": ["kalter", "kalten"], "pista": "Con der, el artículo ya lleva la marca → -e." },
+        { "id": "ct3", "partes": ["Das ist ", " Wasser."], "respuesta": "frisches", "distractores": ["frische", "frischen"], "pista": "Sin artículo, neutro nominativo → -es (como das)." },
+        { "id": "ct4", "partes": ["Das ", " Wasser ist sehr gut."], "respuesta": "frische", "distractores": ["frisches", "frischen"], "pista": "Con das → -e." },
+        { "id": "ct5", "partes": ["Mit ", " Grüßen"], "respuesta": "freundlichen", "distractores": ["freundliche", "freundlicher"], "pista": "Sin artículo, plural dativo → -en (como den)." },
+        { "id": "ct6", "partes": ["Mit den ", " Grüßen"], "respuesta": "besten", "distractores": ["beste", "bester"], "pista": "Con den (dativo plural) → -en." }
+      ]
+    }
+  ]
+}

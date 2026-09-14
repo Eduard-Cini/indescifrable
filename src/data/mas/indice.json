@@ -1,0 +1,18 @@
+{
+  "libro": "Netzwerk neu B1",
+  "nota": "Cada tema tiene tres archivos por convención: mazo-<id>.json (fichas), leccion-<id>.json y ejercicios-<id>.json. Los mazos de capítulo son mazo-k<N>-vocabulario.json y mazo-k<N>-verbos.json.",
+  "capitulos": [
+    {
+      "numero": 9,
+      "titulo": "Kunststücke",
+      "temas": ["nicht", "adjetivos-sin-articulo", "adjetivos-compuestos"],
+      "mazos": ["k9-vocabulario", "k9-verbos"]
+    },
+    {
+      "numero": 10,
+      "titulo": "Miteinander",
+      "temas": ["valores", "pasiva", "adjetivos-los-bar"],
+      "mazos": ["k10-vocabulario", "k10-verbos"]
+    }
+  ]
+}

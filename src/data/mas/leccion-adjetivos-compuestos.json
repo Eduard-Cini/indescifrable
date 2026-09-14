@@ -1,0 +1,62 @@
+{
+  "id": "adjetivos-compuestos",
+  "titulo": "Adjetivos compuestos",
+  "descripcion": "Formación de palabras del capítulo 9: adjetivos nuevos a partir de un sustantivo (himmelblau) o de otro adjetivo (hellbraun, grauweiß).",
+  "fuente": "Netzwerk neu B1, Kapitel 9: Übungsbuch S. 110 (Wortbildung) · Intensivtrainer S. 48",
+  "libro": {
+    "referencia": "Übungsbuch S. 110 (recuadro W) e Intensivtrainer S. 48",
+    "puntos": [
+      "Con un sustantivo y un adjetivo se forma un adjetivo nuevo, y la descripción se vuelve más gráfica: en vez de «ojos azules», «ojos azul cielo».",
+      "El Übungsbuch practica colores (Schnee, Himmel, Sonne, Rabe, Feuer, Gras, Kastanie + un color) y comparaciones del tipo «X wie Y» (weich wie Butter → butterweich).",
+      "El Intensivtrainer añade colores con hell- y dunkel-, mezclas de dos colores y adjetivos como mittelgroß o halblang, y los usa declinados."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Sustantivo + adjetivo: una comparación en una palabra",
+      "texto": [
+        "«Adjetivo wie sustantivo» se convierte en «sustantivo+adjetivo»: el sustantivo va delante y el adjetivo cierra la palabra. Se escribe junto y en minúscula."
+      ],
+      "tabla": {
+        "cabecera": ["Comparación", "Adjetivo compuesto", "Significado"],
+        "filas": [
+          ["blau wie der Himmel", "himmelblau", "azul cielo"],
+          ["schnell wie der Blitz", "blitzschnell", "rapidísimo"],
+          ["kalt wie Eis", "eiskalt", "helado"],
+          ["leicht wie eine Feder", "federleicht", "ligerísimo"],
+          ["glatt wie ein Spiegel", "spiegelglatt", "muy liso o resbaladizo"]
+        ]
+      },
+      "notas": [
+        "A veces aparece un elemento de unión: sonnengelb, rabenschwarz, kastanienbraun, kinderleicht."
+      ]
+    },
+    {
+      "titulo": "Colores: hell-, dunkel- y mezclas",
+      "texto": [
+        "hell- aclara y dunkel- oscurece un color. Si se juntan dos colores, el segundo es el principal y el primero lo matiza: blaugrün es un verde azulado."
+      ],
+      "ejemplos": [
+        { "de": "hellblau · dunkelrot", "es": "azul claro · rojo oscuro" },
+        { "de": "grauweiß · blaugrün", "es": "blanco grisáceo · verde azulado" }
+      ]
+    },
+    {
+      "titulo": "Otros primeros elementos",
+      "texto": [
+        "mittel- y halb- combinan con adjetivos de tamaño o longitud: mittelgroß (de tamaño medio), halblang (semilargo). Otros refuerzan el significado: todmüde, steinalt, bildschön."
+      ]
+    },
+    {
+      "titulo": "Se declinan como cualquier adjetivo",
+      "texto": [
+        "Delante de un sustantivo, el compuesto lleva la terminación normal (con o sin artículo)."
+      ],
+      "ejemplos": [
+        { "de": "ein himmelblaues Kleid", "es": "un vestido azul cielo" },
+        { "de": "mit eiskaltem Wasser", "es": "con agua helada" },
+        { "de": "das hellbraune Sofa", "es": "el sofá marrón claro" }
+      ]
+    }
+  ]
+}

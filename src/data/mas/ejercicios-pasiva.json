@@ -1,0 +1,139 @@
+{
+  "tema": "pasiva",
+  "titulo": "Voz pasiva",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (mismo tipo de ejercicio y mismos puntos gramaticales) con frases nuevas. Las soluciones oficiales del Intensivtrainer están en su página 73.",
+  "tandas": [
+    {
+      "id": "participio",
+      "titulo": "Partizip II: ¿cómo se forma?",
+      "instruccion": "Elige el Partizip II correcto. Todos son verbos del capítulo 10.",
+      "modelo": "Übungsbuch S. 117, 4a",
+      "ejercicios": [
+        { "id": "pa1", "partes": ["verteilen → ", ""], "respuesta": "verteilt", "distractores": ["geverteilt", "verteilen", "vergeteilt"], "pista": "ver- es inseparable: sin ge-." },
+        { "id": "pa2", "partes": ["weg|werfen → ", ""], "respuesta": "weggeworfen", "distractores": ["gewegwerft", "weggewerft", "weggeworft"], "pista": "Separable e irregular: weg + ge + worfen." },
+        { "id": "pa3", "partes": ["ab|holen → ", ""], "respuesta": "abgeholt", "distractores": ["geabholt", "abgeholen", "abholt"], "pista": "Separable y regular: ab + ge + holt." },
+        { "id": "pa4", "partes": ["finanzieren → ", ""], "respuesta": "finanziert", "distractores": ["gefinanziert", "finanzieren", "gefinanzieren"], "pista": "-ieren: sin ge- y termina en -t." },
+        { "id": "pa5", "partes": ["ein|nehmen → ", ""], "respuesta": "eingenommen", "distractores": ["geeinnehmt", "eingenehmt", "eingenommt"], "pista": "Separable e irregular: ein + ge + nommen (nehmen → genommen)." },
+        { "id": "pa6", "partes": ["gründen → ", ""], "respuesta": "gegründet", "distractores": ["gegründt", "gegründen", "gründet"], "pista": "Raíz terminada en -d: se añade -et → gegründet." },
+        { "id": "pa7", "partes": ["übernehmen → ", ""], "respuesta": "übernommen", "distractores": ["geübernommen", "übergenommen", "übernehmt"], "pista": "Aquí über- es inseparable (el acento cae en -neh-): sin ge-." },
+        { "id": "pa8", "partes": ["zu|lassen → ", ""], "respuesta": "zugelassen", "distractores": ["gezulassen", "zugelasst", "zugeließen"], "pista": "Separable e irregular: zu + ge + lassen." },
+        { "id": "pa9", "partes": ["gießen → ", ""], "respuesta": "gegossen", "distractores": ["gegießt", "gegießen", "gegoßt"], "pista": "Irregular con cambio de vocal: gießen – goss – gegossen." },
+        { "id": "pa10", "partes": ["unterstützen → ", ""], "respuesta": "unterstützt", "distractores": ["geunterstützt", "untergestützt", "unterstützen"], "pista": "Aquí unter- es inseparable: sin ge-." },
+        { "id": "pa11", "partes": ["treffen → ", ""], "respuesta": "getroffen", "distractores": ["getreffen", "getrefft", "getroffet"], "pista": "Irregular: treffen – traf – getroffen." },
+        { "id": "pa12", "partes": ["vermitteln → ", ""], "respuesta": "vermittelt", "distractores": ["gevermittelt", "vermitteln", "vergemittelt"], "pista": "ver- es inseparable: sin ge-." }
+      ]
+    },
+    {
+      "id": "presente",
+      "titulo": "El programa de la semana (Präsens)",
+      "instruccion": "El vecindario prepara su fiesta de verano. ¿Qué se hace cada día? Elige la forma pasiva correcta.",
+      "modelo": "Intensivtrainer S. 50, Nr. 4",
+      "ejercicios": [
+        { "id": "pr1", "partes": ["Am Montag ", " der Gemeinschaftsraum ", "."], "respuesta": "wird … aufgeräumt", "distractores": ["werden … aufgeräumt", "wird … geaufräumt", "hat … aufgeräumt"], "pista": "Sujeto singular (der Gemeinschaftsraum) → wird. aufräumen es separable: auf + ge + räumt." },
+        { "id": "pr2", "partes": ["Am Dienstag ", " Plakate für das Fest ", "."], "respuesta": "werden … gedruckt", "distractores": ["wird … gedruckt", "werden … gedrucken", "haben … gedruckt"], "pista": "Plakate es plural → werden. drucken es regular: ge-druck-t." },
+        { "id": "pr3", "partes": ["Am Mittwoch ", " alle Nachbarn ", "."], "respuesta": "werden … eingeladen", "distractores": ["wird … eingeladen", "werden … geeinladen", "werden … eingeladet"], "pista": "ein|laden es separable e irregular: ein + ge + laden." },
+        { "id": "pr4", "partes": ["Am Donnerstag ", " ein großer Kuchen ", "."], "respuesta": "wird … gebacken", "distractores": ["werden … gebacken", "wird … gebackt", "wird … gebäckt"], "pista": "backen tiene participio irregular: gebacken." },
+        { "id": "pr5", "partes": ["Am Freitag ", " die Tische im Hof ", "."], "respuesta": "werden … aufgestellt", "distractores": ["wird … aufgestellt", "werden … geaufstellt", "werden … aufstellt"], "pista": "auf|stellen es separable: auf + ge + stellt. Sujeto plural (die Tische) → werden." },
+        { "id": "pr6", "partes": ["Am Samstag ", " endlich ", "!"], "respuesta": "wird … gefeiert", "distractores": ["werden … gefeiert", "wird … gefeiern", "hat … gefeiert"], "pista": "Pasiva impersonal (sin sujeto): el verbo va siempre en singular → wird." }
+      ]
+    },
+    {
+      "id": "activa",
+      "titulo": "De activa a pasiva",
+      "instruccion": "¿Cuál es la versión pasiva correcta de la frase activa?",
+      "modelo": "Kursbuch S. 119, 4a · Übungsbuch S. 117, 4c",
+      "ejercicios": [
+        { "id": "ac1", "partes": null, "pregunta": "Die Nachbarn organisieren ein Straßenfest.", "respuesta": "Ein Straßenfest wird von den Nachbarn organisiert.", "distractores": ["Ein Straßenfest werden von den Nachbarn organisiert.", "Die Nachbarn werden ein Straßenfest organisiert.", "Ein Straßenfest wird von den Nachbarn organisieren."], "pista": "El acusativo (ein Straßenfest) pasa a ser el sujeto; el agente va con von + dativo." },
+        { "id": "ac2", "partes": null, "pregunta": "Viele Bäckereien spenden Brot.", "respuesta": "Brot wird von vielen Bäckereien gespendet.", "distractores": ["Brot werden von vielen Bäckereien gespendet.", "Brot wird von viele Bäckereien gespendet.", "Brot wird von vielen Bäckereien spenden."], "pista": "von exige dativo: von vielen Bäckereien. Brot es singular → wird." },
+        { "id": "ac3", "partes": null, "pregunta": "Die Feuerwehr rettet die Katze.", "respuesta": "Die Katze wird von der Feuerwehr gerettet.", "distractores": ["Die Katze wird von die Feuerwehr gerettet.", "Die Katze wird von der Feuerwehr retten.", "Die Feuerwehr wird die Katze gerettet."], "pista": "von + dativo → von der Feuerwehr." },
+        { "id": "ac4", "partes": null, "pregunta": "Die Stadt baute 2020 eine neue Brücke.", "respuesta": "2020 wurde von der Stadt eine neue Brücke gebaut.", "distractores": ["2020 wird von der Stadt eine neue Brücke gebaut.", "2020 wurde von der Stadt eine neue Brücke gebaut worden.", "2020 wurden von der Stadt eine neue Brücke gebaut."], "pista": "La activa está en Präteritum (baute) → la pasiva también: wurde … gebaut. Se conserva el tiempo." },
+        { "id": "ac5", "partes": null, "pregunta": "Man muss die Rechnungen bis Freitag bezahlen.", "respuesta": "Die Rechnungen müssen bis Freitag bezahlt werden.", "distractores": ["Die Rechnungen muss bis Freitag bezahlt werden.", "Die Rechnungen müssen bis Freitag bezahlen werden.", "Die Rechnungen müssen bis Freitag bezahlt worden."], "pista": "«man» desaparece en la pasiva. Modal + Partizip II + werden." },
+        { "id": "ac6", "partes": null, "pregunta": "Ehrenamtliche Paten betreuen die Kinder.", "respuesta": "Die Kinder werden von ehrenamtlichen Paten betreut.", "distractores": ["Die Kinder wird von ehrenamtlichen Paten betreut.", "Die Kinder werden von ehrenamtliche Paten betreut.", "Die Kinder werden von ehrenamtlichen Paten gebetreut."], "pista": "Plural → werden; von + dativo plural: von ehrenamtlichen Paten; be- es inseparable: betreut." }
+      ]
+    },
+    {
+      "id": "werden",
+      "titulo": "¿Qué «werden» es este?",
+      "instruccion": "Solo una de las dos frases está en pasiva. ¿Cuál?",
+      "modelo": "Intensivtrainer S. 51, Nr. 5a",
+      "ejercicios": [
+        { "id": "we1", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "In der Schule wird ein neues Projekt vorgestellt.", "distractores": ["Mein Bruder wird nächstes Jahr Lehrer."], "pista": "werden + Partizip II (vorgestellt) = pasiva. werden + sustantivo (Lehrer) = llegar a ser." },
+        { "id": "we2", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "Die Lebensmittel werden jeden Morgen abgeholt.", "distractores": ["Morgen werden wir bei der Tafel helfen."], "pista": "werden + infinitivo (helfen) = futuro. werden + Partizip II (abgeholt) = pasiva." },
+        { "id": "we3", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "Die Straßen werden jede Woche gereinigt.", "distractores": ["Im Herbst wird es früh dunkel."], "pista": "werden + adjetivo (dunkel) = ponerse. werden + Partizip II (gereinigt) = pasiva." },
+        { "id": "we4", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "Der Brief ist gestern abgeschickt worden.", "distractores": ["Das Wetter ist endlich schön geworden."], "pista": "Perfekt de la pasiva: ist + Partizip II + worden. «geworden» es el Perfekt de werden como verbo pleno." },
+        { "id": "we5", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "Sie wird oft um Hilfe gebeten.", "distractores": ["Sie wird sicher bald anrufen."], "pista": "gebeten es el Partizip II de bitten → pasiva. anrufen es infinitivo → futuro o suposición." },
+        { "id": "we6", "partes": null, "pregunta": "¿Cuál está en pasiva?", "respuesta": "Der Verein wurde 1998 gegründet.", "distractores": ["Das Kind wurde plötzlich ganz still."], "pista": "wurde + Partizip II (gegründet) = pasiva en Präteritum. wurde + adjetivo (still) = se quedó, se puso." }
+      ]
+    },
+    {
+      "id": "preterito",
+      "titulo": "¿Qué pasó en la escuela? (Präteritum)",
+      "instruccion": "Durante el verano renovaron la escuela. Completa con wurde/wurden + Partizip II.",
+      "modelo": "Intensivtrainer S. 51, Nr. 5b",
+      "ejercicios": [
+        { "id": "pt1", "partes": ["Letzten Sommer ", " unsere Schule ", "."], "respuesta": "wurde … modernisiert", "distractores": ["wurden … modernisiert", "wurde … gemodernisiert", "wurde … modernisieren"], "pista": "Los verbos en -ieren no llevan ge-: modernisiert." },
+        { "id": "pt2", "partes": ["Zuerst ", " alle Klassenzimmer neu ", "."], "respuesta": "wurden … gestrichen", "distractores": ["wurde … gestrichen", "wurden … gestreicht", "wurden … gestreichen"], "pista": "streichen es irregular: strich – gestrichen. Klassenzimmer (plural) → wurden." },
+        { "id": "pt3", "partes": ["Dann ", " die alten Fenster ", "."], "respuesta": "wurden … ausgetauscht", "distractores": ["wurde … ausgetauscht", "wurden … geaustauscht", "wurden … austauscht"], "pista": "aus|tauschen es separable: aus + ge + tauscht." },
+        { "id": "pt4", "partes": ["Im Schulhof ", " ein Baum ", "."], "respuesta": "wurde … gepflanzt", "distractores": ["wurden … gepflanzt", "wurde … gepflanzen", "wurde … pflanzt"], "pista": "pflanzen es regular: ge-pflanz-t. Sujeto singular → wurde." },
+        { "id": "pt5", "partes": ["Die neuen Computer ", " im August ", "."], "respuesta": "wurden … geliefert", "distractores": ["wurde … geliefert", "wurden … gelieft", "wurden … geliefern"], "pista": "liefern es regular: ge-liefer-t. Die Computer (plural) → wurden." },
+        { "id": "pt6", "partes": ["Leider ", " beim Umzug ein Tisch ", "."], "respuesta": "wurde … beschädigt", "distractores": ["wurden … beschädigt", "wurde … gebeschädigt", "wurde … beschädigen"], "pista": "be- es inseparable: sin ge- → beschädigt." },
+        { "id": "pt7", "partes": ["Im September ", " die Schule feierlich ", "."], "respuesta": "wurde … eröffnet", "distractores": ["wurden … eröffnet", "wurde … geeröffnet", "wurde … eröffnen"], "pista": "er- es inseparable: eröffnet, sin ge-." }
+      ]
+    },
+    {
+      "id": "pasado",
+      "titulo": "¿wurde, wurden, worden o geworden?",
+      "instruccion": "Pasiva en pasado. ¡Cuidado! Una de las frases no es pasiva.",
+      "modelo": "Übungsbuch S. 118, 5a",
+      "ejercicios": [
+        { "id": "ps1", "partes": ["Die Bibliothek ", " 1965 eröffnet."], "respuesta": "wurde", "distractores": ["wird", "wurden"], "pista": "Pasado y sujeto singular → wurde." },
+        { "id": "ps2", "partes": ["Seitdem sind viele Bücher gespendet ", "."], "respuesta": "worden", "distractores": ["geworden", "werden"], "pista": "Perfekt de la pasiva: sind + Partizip II + worden." },
+        { "id": "ps3", "partes": ["Im letzten Jahr ", " zwei neue Räume gebaut."], "respuesta": "wurden", "distractores": ["wurde", "werden"], "pista": "Sujeto plural (zwei neue Räume) → wurden." },
+        { "id": "ps4", "partes": ["Letzte Woche ", " ein Lesefest für Kinder organisiert."], "respuesta": "wurde", "distractores": ["wird", "wurden"], "pista": "«Letzte Woche» → pasado; sujeto singular → wurde." },
+        { "id": "ps5", "partes": ["Die Leiterin ist gestern krank ", "."], "respuesta": "geworden", "distractores": ["worden", "wurde"], "pista": "Aquí no hay pasiva: werden es verbo pleno (ponerse enfermo) → Perfekt con «geworden»." },
+        { "id": "ps6", "partes": ["Ist das Buch schon zurückgegeben ", "?"], "respuesta": "worden", "distractores": ["geworden", "wurde"], "pista": "Pasiva en Perfekt: ist + Partizip II + worden." }
+      ]
+    },
+    {
+      "id": "tiempos",
+      "titulo": "Una organización solidaria: ¿presente o pasado?",
+      "instruccion": "Fíjate en las marcas de tiempo (fechas, «heute», «im letzten Jahr») y elige la forma pasiva correcta.",
+      "modelo": "Intensivtrainer S. 51, Nr. 6",
+      "ejercicios": [
+        { "id": "ti1", "partes": ["Der Verein „Essen für alle“ ", " 2005 in Köln ", "."], "respuesta": "wurde … gegründet", "distractores": ["wurden … gegründet", "wurde … gegründen", "hat … gegründet"], "pista": "2005 → pasado: wurde + Partizip II. «hat … gegründet» sería activa y le faltaría el objeto." },
+        { "id": "ti2", "partes": ["Heute ", " jeden Tag Lebensmittel an Familien ", "."], "respuesta": "werden … verteilt", "distractores": ["wird … verteilt", "werden … geverteilt", "haben … verteilt"], "pista": "Lebensmittel es plural → werden. ver- es inseparable: verteilt." },
+        { "id": "ti3", "partes": ["Die Arbeit ", " zum größten Teil aus Spenden ", "."], "respuesta": "wird … finanziert", "distractores": ["werden … finanziert", "wird … gefinanziert", "hat … finanziert"], "pista": "Hecho general → presente; sujeto singular → wird. -ieren: sin ge-." },
+        { "id": "ti4", "partes": ["Im letzten Jahr ", " mehr als 5.000 Menschen ", "."], "respuesta": "wurden … unterstützt", "distractores": ["wurde … unterstützt", "wurden … geunterstützt", "wurden … unterstützen"], "pista": "«Im letzten Jahr» → Präteritum; sujeto plural → wurden. unter- aquí es inseparable." },
+        { "id": "ti5", "partes": ["Neue Helferinnen und Helfer ", " vor ihrem ersten Einsatz ", "."], "respuesta": "werden … geschult", "distractores": ["wird … geschult", "werden … geschulen", "werden … geschulet"], "pista": "Norma general → presente; sujeto plural → werden. schulen (formar) es regular: geschult." },
+        { "id": "ti6", "partes": ["2019 ", " der Verein mit einem Preis ", "."], "respuesta": "wurde … ausgezeichnet", "distractores": ["wurden … ausgezeichnet", "wurde … geauszeichnet", "wurde … auszeichnet"], "pista": "2019 → Präteritum. aus|zeichnen es separable: aus + ge + zeichnet." }
+      ]
+    },
+    {
+      "id": "modal",
+      "titulo": "Normas de la casa (con verbo modal)",
+      "instruccion": "Completa las normas del edificio: modal + Partizip II + werden.",
+      "modelo": "Intensivtrainer S. 52, Nr. 8",
+      "ejercicios": [
+        { "id": "mo1", "partes": ["Die Mülltonnen ", " jeden Dienstag an die Straße ", "."], "respuesta": "müssen … gestellt werden", "distractores": ["muss … gestellt werden", "müssen … gestellt worden", "müssen … stellen werden"], "pista": "Modal conjugado en posición 2; al final Partizip II + werden (infinitivo). Sujeto plural → müssen." },
+        { "id": "mo2", "partes": ["Im Treppenhaus ", " nicht ", "."], "respuesta": "darf … geraucht werden", "distractores": ["dürfen … geraucht werden", "darf … geraucht worden", "darf … rauchen werden"], "pista": "Pasiva impersonal: sin sujeto → singular (darf)." },
+        { "id": "mo3", "partes": ["Fahrräder ", " im Keller ", "."], "respuesta": "können … abgestellt werden", "distractores": ["kann … abgestellt werden", "können … abgestellt worden", "können … geabstellt werden"], "pista": "ab|stellen es separable: ab + ge + stellt. Fahrräder (plural) → können." },
+        { "id": "mo4", "partes": ["Nach 22 Uhr ", " keine laute Musik mehr ", "."], "respuesta": "darf … gespielt werden", "distractores": ["dürfen … gespielt werden", "darf … gespielt worden", "darf … spielen werden"], "pista": "Musik es singular → darf. Con modal, al final va «werden» (infinitivo), no «worden»." },
+        { "id": "mo5", "partes": ["Die Waschküche ", " nach jeder Benutzung ", "."], "respuesta": "muss … geputzt werden", "distractores": ["müssen … geputzt werden", "muss … geputzt worden", "muss … geputzt wird"], "pista": "Sujeto singular → muss; al final Partizip II + werden." },
+        { "id": "mo6", "partes": ["Glas und Papier ", " getrennt ", "."], "respuesta": "müssen … entsorgt werden", "distractores": ["muss … entsorgt werden", "müssen … entsorgt worden", "müssen … geentsorgt werden"], "pista": "Dos sujetos unidos con «und» → plural (müssen). ent- es inseparable: entsorgt." }
+      ]
+    },
+    {
+      "id": "europa",
+      "titulo": "Europa sin fronteras (Partizip II + werden)",
+      "instruccion": "Completa con la pasiva del verbo entre paréntesis, detrás del verbo modal.",
+      "modelo": "Intensivtrainer S. 53, Nr. 10",
+      "ejercicios": [
+        { "id": "eu1", "partes": ["An vielen Grenzen muss der Ausweis nicht mehr ", " (kontrollieren)."], "respuesta": "kontrolliert werden", "distractores": ["kontrolliert worden", "kontrollieren werden", "gekontrolliert werden"], "pista": "Detrás de un modal: Partizip II + werden. -ieren sin ge-." },
+        { "id": "eu2", "partes": ["In vielen Ländern kann mit derselben Währung ", " (bezahlen)."], "respuesta": "bezahlt werden", "distractores": ["bezahlt worden", "bezahlen werden", "gebezahlt werden"], "pista": "Pasiva impersonal con modal. be- es inseparable: bezahlt." },
+        { "id": "eu3", "partes": ["Die Regeln der EU müssen in allen Mitgliedsstaaten ", " (einhalten)."], "respuesta": "eingehalten werden", "distractores": ["eingehalten worden", "einhalten werden", "geeinhalten werden"], "pista": "ein|halten (cumplir) es separable e irregular: ein + ge + halten." },
+        { "id": "eu4", "partes": ["Wichtige Gesetze müssen im Parlament ", " (beschließen)."], "respuesta": "beschlossen werden", "distractores": ["beschlossen worden", "beschließen werden", "gebeschlossen werden"], "pista": "beschließen: be- inseparable e irregular → beschlossen." },
+        { "id": "eu5", "partes": ["Ein Teil des Studiums kann auch in einem anderen EU-Land ", " (machen)."], "respuesta": "gemacht werden", "distractores": ["gemacht worden", "machen werden", "gemachen werden"], "pista": "machen es regular: gemacht. Al final, werden en infinitivo." }
+      ]
+    }
+  ]
+}

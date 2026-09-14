@@ -1,0 +1,72 @@
+{
+  "id": "nicht",
+  "titulo": "La posición de «nicht»",
+  "descripcion": "Dónde va nicht cuando se niega toda la frase o solo una parte, cuándo se usa kein y cómo se sigue con sondern. Además: reforzar o suavizar una opinión.",
+  "fuente": "Netzwerk neu B1, Kapitel 9: Kursbuch S. 103 y 109 · Übungsbuch S. 111 (R1) · Intensivtrainer S. 45",
+  "libro": {
+    "referencia": "Kursbuch S. 103 (recuadro G) y S. 109 («kurz und klar»)",
+    "puntos": [
+      "Si nicht niega la frase entera, se coloca lo más al final posible.",
+      "Pero en la negación de toda la frase, nicht va delante de: la segunda parte del verbo, los adjetivos y adverbios, los complementos con preposición y las indicaciones de lugar.",
+      "Si nicht niega solo una palabra, va justo delante de esa palabra.",
+      "Cuando algo se ha negado con nicht o kein, la frase sigue con sondern para dar la información correcta.",
+      "Para opinar sobre algo, el libro reúne palabras que refuerzan (total, wirklich, besonders, richtig) y que relativizan (ziemlich, eher, eigentlich, relativ)."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Negar toda la frase",
+      "texto": [
+        "Por defecto, nicht se va al final de la frase: Ich kenne den Künstler nicht. Pero se coloca DELANTE de estos elementos, que suelen ir al final:"
+      ],
+      "tabla": {
+        "cabecera": ["nicht va delante de…", "Ejemplo"],
+        "filas": [
+          ["la 2.ª parte del verbo (participio, infinitivo, prefijo separable)", "Ich habe das Bild nicht gekauft. · Sie will nicht mitkommen. · Er ruft nicht an."],
+          ["adjetivos y adverbios", "Das Konzert war nicht laut. · Sie singt nicht gut."],
+          ["complementos con preposición", "Er wartet nicht auf den Bus."],
+          ["indicaciones de lugar o dirección", "Wir wohnen nicht in Berlin. · Ich gehe nicht ins Kino."]
+        ]
+      }
+    },
+    {
+      "titulo": "Negar solo una parte",
+      "texto": [
+        "Si solo se niega una palabra o un grupo, nicht va justo delante, y normalmente se añade la alternativa con sondern."
+      ],
+      "ejemplos": [
+        { "de": "Nicht ich habe das Bild gemalt, sondern mein Bruder.", "es": "No lo pinté yo, sino mi hermano." },
+        { "de": "Wir fahren nicht heute, sondern morgen.", "es": "No nos vamos hoy, sino mañana." }
+      ]
+    },
+    {
+      "titulo": "¿nicht o kein?",
+      "texto": [
+        "kein niega sustantivos que llevarían ein o que van sin artículo, y se declina como ein: ein Auto → kein Auto; Kaffee → keinen Kaffee.",
+        "nicht niega todo lo demás, también los sustantivos con artículo determinado o posesivo: Ich kenne den Mann nicht. · Das ist nicht mein Buch."
+      ]
+    },
+    {
+      "titulo": "nicht …, sondern …",
+      "texto": [
+        "Después de una negación, la información correcta se introduce con sondern (no con aber). aber une un contraste sin corregir nada."
+      ],
+      "ejemplos": [
+        { "de": "Ich trinke keinen Tee, sondern Kaffee.", "es": "No tomo té, sino café." },
+        { "de": "Das Bild ist nicht teuer, aber es gefällt mir nicht.", "es": "El cuadro no es caro, pero no me gusta." }
+      ]
+    },
+    {
+      "titulo": "Reforzar o suavizar una opinión",
+      "tabla": {
+        "cabecera": ["Refuerzan", "Relativizan"],
+        "filas": [
+          ["total: Das war total spannend.", "ziemlich: Das Buch ist ziemlich lang."],
+          ["wirklich: Die Musik ist wirklich schön.", "eher: Der Film war eher traurig."],
+          ["besonders: Die Farben sind besonders schön.", "eigentlich: Eigentlich mag ich Jazz."],
+          ["richtig: Das Konzert war richtig toll.", "relativ: Die Karten waren relativ teuer."]
+        ]
+      }
+    }
+  ]
+}

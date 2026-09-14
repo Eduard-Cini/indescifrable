@@ -1,0 +1,32 @@
+{
+  "id": "adjetivos-compuestos",
+  "titulo": "Adjetivos compuestos",
+  "descripcion": "Adjetivos formados con un sustantivo o con otro adjetivo (himmelblau, blitzschnell, hellbraun): cada ficha con sus partes y su significado.",
+  "fuente": "Netzwerk neu B1, Kapitel 9: Wortbildung del Übungsbuch S. 110 e Intensivtrainer S. 48",
+  "tarjetas": [
+    { "id": "himmelblau", "tipo": "otro", "categoria": "adjetivo", "palabra": "himmelblau", "base": "der Himmel + blau", "es": "azul cielo", "ejemplo": "Sie trägt ein himmelblaues Kleid.", "ejemploEs": "Lleva un vestido azul cielo." },
+    { "id": "sonnengelb", "tipo": "otro", "categoria": "adjetivo", "palabra": "sonnengelb", "base": "die Sonne + -n- + gelb", "es": "amarillo sol", "ejemplo": "Die Küche ist sonnengelb gestrichen.", "ejemploEs": "La cocina está pintada de amarillo sol." },
+    { "id": "schneeweiss", "tipo": "otro", "categoria": "adjetivo", "palabra": "schneeweiß", "base": "der Schnee + weiß", "es": "blanco como la nieve", "ejemplo": "Er hat schneeweiße Haare.", "ejemploEs": "Tiene el pelo blanquísimo." },
+    { "id": "rabenschwarz", "tipo": "otro", "categoria": "adjetivo", "palabra": "rabenschwarz", "base": "der Rabe + -n- + schwarz", "es": "negro azabache", "ejemplo": "Die Nacht war rabenschwarz.", "ejemploEs": "La noche era negra como boca de lobo." },
+    { "id": "grasgruen", "tipo": "otro", "categoria": "adjetivo", "palabra": "grasgrün", "base": "das Gras + grün", "es": "verde hierba", "ejemplo": "Ich habe mir eine grasgrüne Jacke gekauft.", "ejemploEs": "Me he comprado una chaqueta verde hierba." },
+    { "id": "feuerrot", "tipo": "otro", "categoria": "adjetivo", "palabra": "feuerrot", "base": "das Feuer + rot", "es": "rojo fuego", "ejemplo": "Vor Scham wurde er feuerrot.", "ejemploEs": "De la vergüenza se puso rojo como un tomate." },
+    { "id": "kastanienbraun", "tipo": "otro", "categoria": "adjetivo", "palabra": "kastanienbraun", "base": "die Kastanie + -n- + braun", "es": "castaño", "ejemplo": "Sie hat kastanienbraune Augen.", "ejemploEs": "Tiene los ojos castaños." },
+    { "id": "butterweich", "tipo": "otro", "categoria": "adjetivo", "palabra": "butterweich", "base": "die Butter + weich", "es": "blandísimo, muy tierno", "ejemplo": "Das Fleisch ist butterweich.", "ejemploEs": "La carne está tiernísima." },
+    { "id": "blitzschnell", "tipo": "otro", "categoria": "adjetivo", "palabra": "blitzschnell", "base": "der Blitz + schnell", "es": "rapidísimo, como un rayo", "ejemplo": "Die Katze war blitzschnell weg.", "ejemploEs": "El gato desapareció como un rayo." },
+    { "id": "bildschoen", "tipo": "otro", "categoria": "adjetivo", "palabra": "bildschön", "base": "das Bild + schön", "es": "precioso, guapísimo", "ejemplo": "Die Braut sah bildschön aus.", "ejemploEs": "La novia estaba preciosa." },
+    { "id": "steinalt", "tipo": "otro", "categoria": "adjetivo", "palabra": "steinalt", "base": "der Stein + alt", "es": "viejísimo", "ejemplo": "Mein Großvater ist steinalt, aber topfit.", "ejemploEs": "Mi abuelo es viejísimo, pero está en plena forma." },
+    { "id": "spiegelglatt", "tipo": "otro", "categoria": "adjetivo", "palabra": "spiegelglatt", "base": "der Spiegel + glatt", "es": "liso como un espejo; muy resbaladizo", "ejemplo": "Im Winter sind die Straßen oft spiegelglatt.", "ejemploEs": "En invierno las calles suelen estar muy resbaladizas." },
+    { "id": "zuckersuess", "tipo": "otro", "categoria": "adjetivo", "palabra": "zuckersüß", "base": "der Zucker + süß", "es": "dulcísimo", "ejemplo": "Die Erdbeeren sind zuckersüß.", "ejemploEs": "Las fresas están dulcísimas." },
+    { "id": "eiskalt", "tipo": "otro", "categoria": "adjetivo", "palabra": "eiskalt", "base": "das Eis + kalt", "es": "helado, gélido", "ejemplo": "Das Wasser im See ist eiskalt.", "ejemploEs": "El agua del lago está helada." },
+    { "id": "federleicht", "tipo": "otro", "categoria": "adjetivo", "palabra": "federleicht", "base": "die Feder + leicht", "es": "ligero como una pluma", "ejemplo": "Der neue Koffer ist federleicht.", "ejemploEs": "La maleta nueva pesa como una pluma." },
+    { "id": "kinderleicht", "tipo": "otro", "categoria": "adjetivo", "palabra": "kinderleicht", "base": "das Kind + -er- + leicht", "es": "facilísimo", "ejemplo": "Das Rezept ist kinderleicht.", "ejemploEs": "La receta es facilísima." },
+    { "id": "todmuede", "tipo": "otro", "categoria": "adjetivo", "palabra": "todmüde", "base": "der Tod + müde", "es": "muerto de cansancio", "ejemplo": "Nach der Probe war ich todmüde.", "ejemploEs": "Después del ensayo estaba muerto de cansancio." },
+    { "id": "dunkelblau", "tipo": "otro", "categoria": "adjetivo", "palabra": "dunkelblau", "base": "dunkel + blau", "es": "azul oscuro", "ejemplo": "Er trägt einen dunkelblauen Anzug.", "ejemploEs": "Lleva un traje azul oscuro." },
+    { "id": "hellbraun", "tipo": "otro", "categoria": "adjetivo", "palabra": "hellbraun", "base": "hell + braun", "es": "marrón claro", "ejemplo": "Wir haben ein hellbraunes Sofa.", "ejemploEs": "Tenemos un sofá marrón claro." },
+    { "id": "hellrot", "tipo": "otro", "categoria": "adjetivo", "palabra": "hellrot", "base": "hell + rot", "es": "rojo claro", "ejemplo": "Die Rosen sind hellrot.", "ejemploEs": "Las rosas son de un rojo claro." },
+    { "id": "grauweiss", "tipo": "otro", "categoria": "adjetivo", "palabra": "grauweiß", "base": "grau + weiß", "es": "blanco grisáceo", "ejemplo": "Der Himmel war grauweiß.", "ejemploEs": "El cielo era de un blanco grisáceo." },
+    { "id": "graublau", "tipo": "otro", "categoria": "adjetivo", "palabra": "graublau", "base": "grau + blau", "es": "azul grisáceo", "ejemplo": "Sie hat graublaue Augen.", "ejemploEs": "Tiene los ojos azul grisáceo." },
+    { "id": "mittelgross", "tipo": "otro", "categoria": "adjetivo", "palabra": "mittelgroß", "base": "mittel + groß", "es": "de tamaño mediano; de estatura media", "ejemplo": "Der Täter ist mittelgroß und schlank.", "ejemploEs": "El autor es de estatura media y delgado." },
+    { "id": "halblang", "tipo": "otro", "categoria": "adjetivo", "palabra": "halblang", "base": "halb + lang", "es": "semilargo, a media melena", "ejemplo": "Sie trägt ihre Haare halblang.", "ejemploEs": "Lleva el pelo a media melena." }
+  ]
+}

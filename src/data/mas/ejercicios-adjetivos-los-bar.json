@@ -1,0 +1,51 @@
+{
+  "tema": "adjetivos-los-bar",
+  "titulo": "Adjetivos con -los y -bar",
+  "nota": "Ejercicios propios que siguen el modelo de la Wortbildung del libro, con frases nuevas.",
+  "tandas": [
+    {
+      "id": "sufijo",
+      "titulo": "-voll, -los o -bar",
+      "instruccion": "Completa con el adjetivo que encaja.",
+      "modelo": "Übungsbuch S. 122 · Intensivtrainer S. 53",
+      "ejercicios": [
+        { "id": "ad1", "partes": ["Er denkt immer an die Gefühle der anderen. Er ist sehr ", "."], "respuesta": "rücksichtsvoll", "distractores": ["rücksichtslos", "rücksichtbar", "rücksichtig"], "pista": "-voll = con mucho: con mucha consideración." },
+        { "id": "ad2", "partes": ["Sie hat keine Arbeit, sie ist ", "."], "respuesta": "arbeitslos", "distractores": ["arbeitsvoll", "arbeitbar", "arbeitlos"], "pista": "-los = sin. Ojo con la -s- de unión: arbeit-s-los." },
+        { "id": "ad3", "partes": ["Das Konzert kostet nichts, der Eintritt ist ", "."], "respuesta": "kostenlos", "distractores": ["kostbar", "kostenvoll", "kostenbar"], "pista": "kostenlos = sin coste. kostbar significa «valioso»." },
+        { "id": "ad4", "partes": ["Diesen Pilz kann man essen, er ist ", "."], "respuesta": "essbar", "distractores": ["esslos", "essvoll", "gegessen"], "pista": "Verbo + -bar = que se puede: essbar = comestible." },
+        { "id": "ad5", "partes": ["Er spricht mit allen freundlich und höflich, er ist sehr ", "."], "respuesta": "respektvoll", "distractores": ["respektlos", "respektbar", "respektiert"], "pista": "-voll: lleno de respeto." },
+        { "id": "ad6", "partes": ["Man kann das Material wiederverwerten, es ist ", "."], "respuesta": "recycelbar", "distractores": ["recyclelos", "recycelvoll", "recycelnbar"], "pista": "recyceln + -bar = que se puede reciclar." },
+        { "id": "ad7", "partes": ["Ohne Hilfe kann das Tier nicht überleben, es ist völlig ", "."], "respuesta": "hilflos", "distractores": ["hilfsvoll", "hilfbar", "hilfsbereit"], "pista": "hilflos = sin ayuda, indefenso. hilfsbereit = servicial." },
+        { "id": "ad8", "partes": ["Wir haben keine Probleme, das geht ganz ", "."], "respuesta": "problemlos", "distractores": ["problemvoll", "problembar", "problematisch"], "pista": "-los = sin problemas." }
+      ]
+    },
+    {
+      "id": "significado",
+      "titulo": "¿Qué significa?",
+      "instruccion": "Elige el significado de la frase.",
+      "modelo": "Intensivtrainer S. 53",
+      "ejercicios": [
+        { "id": "si1", "partes": null, "pregunta": "«Der Plan ist machbar.»", "respuesta": "El plan se puede realizar.", "distractores": ["El plan ya está hecho.", "El plan no tiene sentido."], "pista": "machen + -bar: que se puede hacer." },
+        { "id": "si2", "partes": null, "pregunta": "«Die Uhr ist sehr kostbar.»", "respuesta": "El reloj es muy valioso.", "distractores": ["El reloj es gratis.", "El reloj cuesta poco."], "pista": "kostbar = valioso; gratis sería kostenlos." },
+        { "id": "si3", "partes": null, "pregunta": "«Der Joghurt ist noch zwei Wochen haltbar.»", "respuesta": "El yogur se conserva dos semanas más.", "distractores": ["El yogur caducó hace dos semanas.", "El yogur cuesta más durante dos semanas."], "pista": "halten + -bar: que aguanta, que se conserva." },
+        { "id": "si4", "partes": null, "pregunta": "«Am Wochenende bin ich nicht erreichbar.»", "respuesta": "El fin de semana no se me puede localizar.", "distractores": ["El fin de semana no puedo llegar.", "El fin de semana no consigo mis objetivos."], "pista": "erreichen + -bar: se me puede contactar." },
+        { "id": "si5", "partes": null, "pregunta": "«Er hat das Geld gedankenlos ausgegeben.»", "respuesta": "Gastó el dinero sin pensar.", "distractores": ["Gastó el dinero pensándolo mucho.", "Gastó el dinero en ideas."], "pista": "der Gedanke + -los: sin pensar." },
+        { "id": "si6", "partes": null, "pregunta": "«Das Lied ist zeitlos.»", "respuesta": "La canción no pasa de moda.", "distractores": ["La canción no tiene ritmo.", "La canción dura muy poco."], "pista": "die Zeit + -los: atemporal." }
+      ]
+    },
+    {
+      "id": "contrario",
+      "titulo": "El contrario: -voll ↔ -los",
+      "instruccion": "¿Cuál es el contrario de cada adjetivo?",
+      "modelo": "Übungsbuch S. 122",
+      "ejercicios": [
+        { "id": "co1", "partes": ["respektvoll ↔ ", ""], "respuesta": "respektlos", "distractores": ["respektbar", "respektiert"], "pista": "Con -voll → con -los." },
+        { "id": "co2", "partes": ["rücksichtsvoll ↔ ", ""], "respuesta": "rücksichtslos", "distractores": ["rücksichtbar", "rücksichtlich"], "pista": "Se mantiene la -s- de unión: rücksicht-s-los." },
+        { "id": "co3", "partes": ["wertvoll ↔ ", ""], "respuesta": "wertlos", "distractores": ["wertbar", "entwertet"], "pista": "der Wert: wertvoll ↔ wertlos." },
+        { "id": "co4", "partes": ["fantasievoll ↔ ", ""], "respuesta": "fantasielos", "distractores": ["fantasiebar", "fantastisch"], "pista": "fantastisch existe, pero significa «fantástico»." },
+        { "id": "co5", "partes": ["sinnvoll ↔ ", ""], "respuesta": "sinnlos", "distractores": ["sinnbar", "besinnlich"], "pista": "der Sinn (el sentido): sinnvoll ↔ sinnlos." },
+        { "id": "co6", "partes": ["humorvoll ↔ ", ""], "respuesta": "humorlos", "distractores": ["humorbar", "humoristisch"], "pista": "der Humor: humorvoll ↔ humorlos." }
+      ]
+    }
+  ]
+}

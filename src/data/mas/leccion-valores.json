@@ -1,0 +1,91 @@
+{
+  "id": "valores",
+  "titulo": "Valores: formación de palabras",
+  "descripcion": "El género y el plural de los valores se deducen de su terminación. Además: los compuestos y las familias de palabras (adjetivo → sustantivo).",
+  "fuente": "Netzwerk neu B1, Kapitel 10: Kursbuch S. 116-117 · Übungsbuch S. 114 y 125",
+  "libro": {
+    "referencia": "Kursbuch S. 116-117 (1a-2c), Übungsbuch S. 114 (1a-b) y S. 125",
+    "puntos": [
+      "El libro no trae un recuadro de gramática para este tema: presenta los valores como vocabulario (una lista de valores para comentar y ordenar por importancia) y los trabaja con definiciones.",
+      "En el Übungsbuch se practica pasar del sustantivo al adjetivo (die Rücksicht → rücksichtsvoll) y completar familias de palabras (ehrlich, gerecht, tolerant, fair → sus sustantivos).",
+      "En el Lernwortschatz, los valores abstractos aparecen marcados con (Sg.): se usan solo en singular."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "El género se ve en la terminación",
+      "texto": [
+        "Casi todos los valores son sustantivos abstractos formados con un sufijo, y varios sufijos fijan el género: con -heit, -keit, -schaft, -ung, -ität, -ion, -ie y -anz el sustantivo es siempre femenino (die)."
+      ],
+      "tabla": {
+        "cabecera": ["Terminación", "Género", "Ejemplos del capítulo"],
+        "filas": [
+          ["-heit", "die", "die Freiheit · die Gesundheit · die Sicherheit · die Minderheit"],
+          ["-keit", "die", "die Gerechtigkeit · die Ehrlichkeit"],
+          ["-schaft", "die", "die Gesellschaft · die Gemeinschaft · die Hilfsbereitschaft"],
+          ["-ung", "die", "die Bildung · die Erziehung · die Gleichberechtigung"],
+          ["-ität", "die", "die Solidarität"],
+          ["-ion", "die", "die Religion"],
+          ["-ie", "die", "die Demokratie"],
+          ["-anz", "die", "die Toleranz"],
+          ["infinitivo sustantivado", "das", "das Zusammenleben"]
+        ]
+      },
+      "notas": [
+        "Sin sufijo hay que aprender el artículo de memoria: der Wert, der Respekt, der Frieden, das Recht, das Vorurteil. Lo mismo con los préstamos: die Fairness, die Zivilcourage."
+      ]
+    },
+    {
+      "titulo": "Los compuestos: manda la última palabra",
+      "texto": [
+        "En un sustantivo compuesto, el género y el plural los decide la última palabra."
+      ],
+      "ejemplos": [
+        { "de": "die Meinung + die Freiheit → die Meinungsfreiheit", "es": "libertad de expresión" },
+        { "de": "der Mensch + das Recht → das Menschenrecht, die Menschenrechte", "es": "derecho humano" },
+        { "de": "die Hilfe + die Bereitschaft → die Hilfsbereitschaft", "es": "disposición a ayudar" }
+      ],
+      "notas": [
+        "La -s- de Meinungsfreiheit o Hilfsbereitschaft es un elemento de unión (Fugen-s): no cambia el género."
+      ]
+    },
+    {
+      "titulo": "El plural de los valores",
+      "texto": [
+        "Los valores abstractos se usan casi siempre en singular; el libro los marca con (Sg.): die Gerechtigkeit, die Toleranz, der Respekt…",
+        "Cuando sí son contables tienen plural, y con los sufijos femeninos es regular: -heit, -keit, -schaft, -ung, -ion → -en; -ie → -n."
+      ],
+      "tabla": {
+        "cabecera": ["Singular", "Plural"],
+        "filas": [
+          ["der Wert", "die Werte"],
+          ["das Recht", "die Rechte"],
+          ["das Vorurteil", "die Vorurteile"],
+          ["die Gesellschaft", "die Gesellschaften"],
+          ["die Minderheit", "die Minderheiten"],
+          ["die Religion", "die Religionen"],
+          ["die Demokratie", "die Demokratien"]
+        ]
+      }
+    },
+    {
+      "titulo": "Familias de palabras",
+      "texto": [
+        "Muchos valores salen de un adjetivo o de un verbo. Conocer la familia ayuda a recordar el sustantivo y su género. Los adjetivos con -voll, -los y -bar tienen su propio tema: «Adjetivos con -los y -bar»."
+      ],
+      "tabla": {
+        "cabecera": ["Base", "Sustantivo", "Regla"],
+        "filas": [
+          ["frei · gesund · sicher", "die Freiheit · die Gesundheit · die Sicherheit", "adjetivo + -heit"],
+          ["ehrlich", "die Ehrlichkeit", "-keit detrás de -lich, -ig, -bar, -sam"],
+          ["gerecht", "die Gerechtigkeit", "-igkeit"],
+          ["hilfsbereit", "die Hilfsbereitschaft", "-schaft"],
+          ["tolerant · solidarisch", "die Toleranz · die Solidarität", "préstamos: -anz, -ität"],
+          ["fair", "die Fairness", "préstamo del inglés"],
+          ["erziehen · bilden", "die Erziehung · die Bildung", "verbo + -ung"],
+          ["zusammen|leben", "das Zusammenleben", "infinitivo → das"]
+        ]
+      }
+    }
+  ]
+}

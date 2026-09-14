@@ -1,0 +1,78 @@
+{
+  "id": "adjetivos-los-bar",
+  "titulo": "Adjetivos con -los y -bar",
+  "descripcion": "Formación de palabras del capítulo 10: adjetivos que significan «sin algo» (-los), «que se puede hacer» (-bar) y «lleno de algo» (-voll).",
+  "fuente": "Netzwerk neu B1, Kapitel 10: Übungsbuch S. 122 (Wortbildung) · Intensivtrainer S. 53",
+  "libro": {
+    "referencia": "Übungsbuch S. 122 (recuadros de Wortbildung) e Intensivtrainer S. 53",
+    "puntos": [
+      "Los adjetivos con -bar se forman a partir de un verbo y suelen expresar que algo se puede hacer: lo que se puede comer es essbar.",
+      "Los adjetivos con -los se forman a partir de un sustantivo y expresan que falta lo que el sustantivo nombra (-los equivale a «sin»).",
+      "El Intensivtrainer practica pares que se confunden, como wählbar / wahllos o kostbar / kostenlos."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "-los: «sin»",
+      "texto": [
+        "Sustantivo + -los = sin eso. A veces aparece un elemento de unión (-s-, -n-, -en-)."
+      ],
+      "tabla": {
+        "cabecera": ["Base", "Adjetivo", "Significado"],
+        "filas": [
+          ["die Hilfe", "hilflos", "sin ayuda, indefenso"],
+          ["die Kosten", "kostenlos", "gratis"],
+          ["die Arbeit", "arbeitslos", "sin trabajo"],
+          ["das Problem", "problemlos", "sin problemas"],
+          ["der Gedanke", "gedankenlos", "sin pensar"],
+          ["die Zeit", "zeitlos", "atemporal"]
+        ]
+      }
+    },
+    {
+      "titulo": "-bar: «que se puede»",
+      "texto": [
+        "Raíz de un verbo + -bar = que se puede hacer. Es otra forma de decir una pasiva con können: Das kann man machen = Das kann gemacht werden = Das ist machbar."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Adjetivo", "Significado"],
+        "filas": [
+          ["essen", "essbar", "comestible"],
+          ["machen", "machbar", "factible"],
+          ["erreichen", "erreichbar", "localizable, accesible"],
+          ["lesen", "lesbar", "legible"],
+          ["recyceln", "recycelbar", "reciclable"],
+          ["halten", "haltbar", "que se conserva"]
+        ]
+      }
+    },
+    {
+      "titulo": "-voll: «lleno de»",
+      "texto": [
+        "Sustantivo + -voll = con mucho de eso. Muchos tienen su contrario con -los."
+      ],
+      "tabla": {
+        "cabecera": ["Con -voll", "Contrario con -los"],
+        "filas": [
+          ["respektvoll", "respektlos"],
+          ["rücksichtsvoll", "rücksichtslos"],
+          ["wertvoll", "wertlos"],
+          ["fantasievoll", "fantasielos"],
+          ["sinnvoll", "sinnlos"]
+        ]
+      }
+    },
+    {
+      "titulo": "Cuidado con estos",
+      "texto": [
+        "Algunos adjetivos parecen seguir la regla pero significan otra cosa, o se forman distinto."
+      ],
+      "ejemplos": [
+        { "de": "kostbar ≠ kostenlos", "es": "kostbar = valioso; kostenlos = gratis" },
+        { "de": "wählbar ≠ wahllos", "es": "wählbar = que se puede elegir; wahllos = al azar" },
+        { "de": "der Dank → dankbar", "es": "agradecido: aquí -bar va con un sustantivo" },
+        { "de": "gehörlos ≠ hörbar", "es": "gehörlos = sordo; hörbar = que se oye" }
+      ]
+    }
+  ]
+}

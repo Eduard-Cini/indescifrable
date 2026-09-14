@@ -1,0 +1,51 @@
+{
+  "tema": "adjetivos-compuestos",
+  "titulo": "Adjetivos compuestos",
+  "nota": "Ejercicios propios que siguen el modelo de la Wortbildung del libro (Übungsbuch S. 110, Intensivtrainer S. 48), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "comparacion",
+      "titulo": "De la comparación al adjetivo",
+      "instruccion": "¿Qué adjetivo compuesto corresponde?",
+      "modelo": "Übungsbuch S. 110, B",
+      "ejercicios": [
+        { "id": "cp1", "partes": ["kalt wie Eis → ", ""], "respuesta": "eiskalt", "distractores": ["kalteis", "eisenkalt"], "pista": "El sustantivo va delante; el adjetivo cierra la palabra." },
+        { "id": "cp2", "partes": ["leicht wie eine Feder → ", ""], "respuesta": "federleicht", "distractores": ["leichtfeder", "federnleicht"], "pista": "die Feder + leicht." },
+        { "id": "cp3", "partes": ["weiß wie Schnee → ", ""], "respuesta": "schneeweiß", "distractores": ["weißschnee", "schneenweiß"], "pista": "der Schnee + weiß, sin elemento de unión." },
+        { "id": "cp4", "partes": ["rot wie Feuer → ", ""], "respuesta": "feuerrot", "distractores": ["rotfeuer", "feuernrot"], "pista": "das Feuer + rot." },
+        { "id": "cp5", "partes": ["grün wie Gras → ", ""], "respuesta": "grasgrün", "distractores": ["grüngras", "grasengrün"], "pista": "das Gras + grün." },
+        { "id": "cp6", "partes": ["glatt wie ein Spiegel → ", ""], "respuesta": "spiegelglatt", "distractores": ["glattspiegel", "spiegelsglatt"], "pista": "der Spiegel + glatt." },
+        { "id": "cp7", "partes": ["blau wie der Himmel → ", ""], "respuesta": "himmelblau", "distractores": ["blauhimmel", "himmelnblau"], "pista": "der Himmel + blau." },
+        { "id": "cp8", "partes": ["tan fácil que lo hace un niño → ", ""], "respuesta": "kinderleicht", "distractores": ["leichtkind", "kindleicht"], "pista": "das Kind + -er- + leicht." }
+      ]
+    },
+    {
+      "id": "significado",
+      "titulo": "Claro, oscuro, mezcla",
+      "instruccion": "¿Qué significa cada adjetivo?",
+      "modelo": "Intensivtrainer S. 48, Wortbildung a",
+      "ejercicios": [
+        { "id": "sg1", "partes": null, "pregunta": "hellblau", "respuesta": "azul claro", "distractores": ["azul oscuro", "azul brillante"], "pista": "hell- aclara el color." },
+        { "id": "sg2", "partes": null, "pregunta": "dunkelgrün", "respuesta": "verde oscuro", "distractores": ["verde claro", "verde brillante"], "pista": "dunkel- oscurece el color." },
+        { "id": "sg3", "partes": null, "pregunta": "grauweiß", "respuesta": "blanco grisáceo", "distractores": ["gris con puntos blancos", "gris muy oscuro"], "pista": "El segundo color (weiß) es el principal." },
+        { "id": "sg4", "partes": null, "pregunta": "blaugrün", "respuesta": "verde azulado", "distractores": ["azul verdoso", "azul y verde a rayas"], "pista": "El segundo color (grün) es el principal: verde con un toque de azul." },
+        { "id": "sg5", "partes": null, "pregunta": "mittelgroß", "respuesta": "de tamaño medio", "distractores": ["muy grande", "demasiado grande"], "pista": "mittel- = medio." },
+        { "id": "sg6", "partes": null, "pregunta": "halblang", "respuesta": "semilargo", "distractores": ["muy largo", "cortísimo"], "pista": "halb- = a medias." }
+      ]
+    },
+    {
+      "id": "terminacion",
+      "titulo": "Con la terminación correcta",
+      "instruccion": "Completa con el adjetivo compuesto declinado.",
+      "modelo": "Intensivtrainer S. 48, Wortbildung b",
+      "ejercicios": [
+        { "id": "te1", "partes": ["Sie trägt ein ", " Kleid."], "respuesta": "himmelblaues", "distractores": ["himmelblauer", "himmelblaue", "himmelblauen"], "pista": "ein + neutro acusativo → -es." },
+        { "id": "te2", "partes": ["Er hat ", " Haare."], "respuesta": "kastanienbraune", "distractores": ["kastanienbrauner", "kastanienbraunes", "kastanienbraunem"], "pista": "Sin artículo, plural acusativo → -e." },
+        { "id": "te3", "partes": ["Das ", " Sofa steht im Wohnzimmer."], "respuesta": "hellbraune", "distractores": ["hellbrauner", "hellbraunes", "hellbraunen"], "pista": "Con das → -e." },
+        { "id": "te4", "partes": ["Wir baden im ", " Wasser."], "respuesta": "eiskalten", "distractores": ["eiskaltem", "eiskaltes", "eiskalter"], "pista": "im = in dem (dativo con artículo) → -en." },
+        { "id": "te5", "partes": ["Ich suche einen ", " Hund."], "respuesta": "mittelgroßen", "distractores": ["mittelgroßer", "mittelgroßes", "mittelgroße"], "pista": "einen + masculino acusativo → -en." },
+        { "id": "te6", "partes": ["Sie hat ", " Haare."], "respuesta": "halblange", "distractores": ["halblangen", "halblanger", "halblanges"], "pista": "Sin artículo, plural acusativo → -e." }
+      ]
+    }
+  ]
+}

@@ -15,6 +15,11 @@ import Repaso from './secciones/repaso/Repaso';
 import Gramatica from './secciones/gramatica/Gramatica';
 import TemasDeLectura from './secciones/gramatica/TemasDeLectura';
 import Ejercicios from './secciones/gramatica/Ejercicios';
+import MasContenidos from './secciones/mas/MasContenidos';
+import Mazo from './secciones/mas/Mazo';
+import LeccionMas from './secciones/mas/LeccionMas';
+import TandasMas from './secciones/mas/TandasMas';
+import TandaMas from './secciones/mas/TandaMas';
 import { IdiomaEstudioProvider } from './contexto/idiomaEstudio';
 import Favicon from './componentes/Favicon';
 import './App.css';
@@ -45,6 +50,11 @@ function App() {
         <Route path="/gramatica" element={<Gramatica />} />
         <Route path="/gramatica/:lectura" element={<TemasDeLectura />} />
         <Route path="/gramatica/:lectura/:tema" element={<Ejercicios />} />
+        <Route path="/mas" element={<MasContenidos />} />
+        <Route path="/mas/vocabulario/:mazo" element={<Mazo />} />
+        <Route path="/mas/gramatica/:tema" element={<LeccionMas />} />
+        <Route path="/mas/gramatica/:tema/ejercicios" element={<TandasMas />} />
+        <Route path="/mas/gramatica/:tema/ejercicios/:tanda" element={<TandaMas />} />
         </Routes>
       </BrowserRouter>
     </IdiomaEstudioProvider>

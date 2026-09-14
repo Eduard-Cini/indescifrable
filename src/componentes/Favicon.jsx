@@ -21,6 +21,7 @@ const ICONOS = [
   ['/bolsa', '🎒'],
   ['/repaso', '🗂️'],
   ['/gramatica', '✍️'],
+  ['/mas', '📚'],
 ];
 
 function dataUri(emoji) {

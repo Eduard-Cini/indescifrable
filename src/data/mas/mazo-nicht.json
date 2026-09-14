@@ -1,0 +1,29 @@
+{
+  "id": "nicht",
+  "titulo": "Negar y matizar",
+  "descripcion": "Las palabras para negar (nicht, kein, nie, niemand…) y las que refuerzan o suavizan una opinión (total, ziemlich, eher…).",
+  "fuente": "Netzwerk neu B1, Kapitel 9: Kursbuch S. 103 y 109 (etwas verneinen; sagen, wie einem etwas gefällt) · Lernwortschatz del Übungsbuch S. 113",
+  "tarjetas": [
+    { "id": "nicht", "tipo": "otro", "categoria": "negación", "palabra": "nicht", "es": "no (niega verbos, adjetivos, adverbios y sustantivos con artículo determinado)", "ejemplo": "Der Film hat mir nicht gefallen.", "ejemploEs": "La película no me gustó." },
+    { "id": "kein", "tipo": "otro", "categoria": "negación", "palabra": "kein / keine", "es": "ningún, ninguna; no (niega sustantivos sin artículo o con ein)", "ejemplo": "Ich habe heute keine Zeit.", "ejemploEs": "Hoy no tengo tiempo." },
+    { "id": "nichts", "tipo": "otro", "categoria": "negación", "palabra": "nichts", "es": "nada", "ejemplo": "Im Kühlschrank ist nichts mehr.", "ejemploEs": "En la nevera ya no queda nada." },
+    { "id": "niemand", "tipo": "otro", "categoria": "negación", "palabra": "niemand", "es": "nadie", "ejemplo": "Niemand hat das Bild erkannt.", "ejemploEs": "Nadie reconoció el cuadro." },
+    { "id": "nie", "tipo": "otro", "categoria": "negación", "palabra": "nie / niemals", "es": "nunca", "ejemplo": "Ich war noch nie in einer Oper.", "ejemploEs": "Nunca he estado en una ópera." },
+    { "id": "nirgends", "tipo": "otro", "categoria": "negación", "palabra": "nirgends / nirgendwo", "es": "en ninguna parte", "ejemplo": "Ich finde meinen Schlüssel nirgends.", "ejemploEs": "No encuentro mi llave por ninguna parte." },
+    { "id": "noch-nicht", "tipo": "otro", "categoria": "negación", "palabra": "noch nicht", "es": "todavía no", "ejemplo": "Die Ausstellung ist noch nicht geöffnet.", "ejemploEs": "La exposición todavía no está abierta." },
+    { "id": "nicht-mehr", "tipo": "otro", "categoria": "negación", "palabra": "nicht mehr", "es": "ya no", "ejemplo": "Er spielt nicht mehr im Orchester.", "ejemploEs": "Ya no toca en la orquesta." },
+    { "id": "kein-mehr", "tipo": "otro", "categoria": "negación", "palabra": "kein … mehr", "es": "ya no (con sustantivo)", "ejemplo": "Wir haben kein Brot mehr.", "ejemploEs": "Ya no nos queda pan." },
+    { "id": "gar-nicht", "tipo": "otro", "categoria": "negación", "palabra": "gar nicht / überhaupt nicht", "es": "en absoluto, nada de nada", "ejemplo": "Das finde ich gar nicht lustig.", "ejemploEs": "Eso no me hace ninguna gracia." },
+    { "id": "nicht-sondern", "tipo": "otro", "categoria": "negación", "palabra": "nicht …, sondern …", "es": "no …, sino …", "ejemplo": "Wir fahren nicht mit dem Auto, sondern mit dem Zug.", "ejemploEs": "No vamos en coche, sino en tren.", "lws": true },
+    { "id": "weder-noch", "tipo": "otro", "categoria": "negación", "palabra": "weder … noch", "es": "ni … ni", "ejemplo": "Ich trinke weder Kaffee noch Tee.", "ejemploEs": "No bebo ni café ni té." },
+    { "id": "total", "tipo": "otro", "categoria": "refuerzo", "palabra": "total", "es": "totalmente, súper (refuerza)", "ejemplo": "Der Film war total spannend.", "ejemploEs": "La película fue súper emocionante." },
+    { "id": "wirklich", "tipo": "otro", "categoria": "refuerzo", "palabra": "wirklich", "es": "de verdad, realmente (refuerza)", "ejemplo": "Die Musik ist wirklich schön.", "ejemploEs": "La música es realmente bonita." },
+    { "id": "besonders", "tipo": "otro", "categoria": "refuerzo", "palabra": "besonders", "es": "especialmente (refuerza)", "ejemplo": "Die Farben finde ich besonders schön.", "ejemploEs": "Los colores me parecen especialmente bonitos." },
+    { "id": "richtig", "tipo": "otro", "categoria": "refuerzo", "palabra": "richtig", "es": "muy, de verdad (coloquial, refuerza)", "ejemplo": "Das Konzert war richtig toll.", "ejemploEs": "El concierto estuvo genial de verdad." },
+    { "id": "ziemlich", "tipo": "otro", "categoria": "atenuación", "palabra": "ziemlich", "es": "bastante (relativiza)", "ejemplo": "Das Buch ist ziemlich lang.", "ejemploEs": "El libro es bastante largo." },
+    { "id": "eher", "tipo": "otro", "categoria": "atenuación", "palabra": "eher", "es": "más bien (relativiza)", "ejemplo": "Der Film war eher traurig.", "ejemploEs": "La película fue más bien triste." },
+    { "id": "eigentlich", "tipo": "otro", "categoria": "atenuación", "palabra": "eigentlich", "es": "en realidad (relativiza)", "ejemplo": "Eigentlich mag ich moderne Kunst.", "ejemploEs": "En realidad, me gusta el arte moderno." },
+    { "id": "relativ", "tipo": "otro", "categoria": "atenuación", "palabra": "relativ", "es": "relativamente (relativiza)", "ejemplo": "Die Karten waren relativ teuer.", "ejemploEs": "Las entradas eran relativamente caras." },
+    { "id": "nicht-so", "tipo": "otro", "categoria": "atenuación", "palabra": "nicht so", "es": "no tan (suaviza una crítica)", "ejemplo": "Das Bild spricht mich nicht so an.", "ejemploEs": "El cuadro no me dice gran cosa." }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "tema": "nicht",
+  "titulo": "La posición de «nicht»",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 103, Intensivtrainer S. 45), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "posicion",
+      "titulo": "¿Dónde va nicht?",
+      "instruccion": "Niega toda la frase. Elige la versión correcta.",
+      "modelo": "Kursbuch S. 103, 4b · Intensivtrainer S. 45, 4",
+      "ejercicios": [
+        { "id": "po1", "partes": null, "pregunta": "Ich habe den Film gesehen.", "respuesta": "Ich habe den Film nicht gesehen.", "distractores": ["Ich nicht habe den Film gesehen.", "Ich habe den Film gesehen nicht."], "pista": "nicht va delante de la 2.ª parte del verbo (gesehen)." },
+        { "id": "po2", "partes": null, "pregunta": "Sie kann gut malen.", "respuesta": "Sie kann nicht gut malen.", "distractores": ["Sie kann gut nicht malen.", "Sie kann gut malen nicht."], "pista": "nicht va delante del adverbio (gut), que va delante del infinitivo." },
+        { "id": "po3", "partes": null, "pregunta": "Er interessiert sich für Theater.", "respuesta": "Er interessiert sich nicht für Theater.", "distractores": ["Er nicht interessiert sich für Theater.", "Er interessiert nicht sich für Theater."], "pista": "nicht va delante del complemento con preposición (für Theater)." },
+        { "id": "po4", "partes": null, "pregunta": "Wir gehen heute ins Konzert.", "respuesta": "Wir gehen heute nicht ins Konzert.", "distractores": ["Wir nicht gehen heute ins Konzert.", "Wir gehen heute ins Konzert nicht."], "pista": "nicht va delante de la dirección (ins Konzert)." },
+        { "id": "po5", "partes": null, "pregunta": "Das Museum ist groß.", "respuesta": "Das Museum ist nicht groß.", "distractores": ["Das Museum nicht ist groß.", "Das Museum ist groß nicht."], "pista": "nicht va delante del adjetivo (groß)." },
+        { "id": "po6", "partes": null, "pregunta": "Ich rufe dich morgen an.", "respuesta": "Ich rufe dich morgen nicht an.", "distractores": ["Ich nicht rufe dich morgen an.", "Ich rufe dich morgen an nicht."], "pista": "nicht va delante del prefijo separable (an), al final." },
+        { "id": "po7", "partes": null, "pregunta": "Die Ausstellung hat mir gefallen.", "respuesta": "Die Ausstellung hat mir nicht gefallen.", "distractores": ["Die Ausstellung nicht hat mir gefallen.", "Die Ausstellung hat mir gefallen nicht."], "pista": "nicht va delante del participio (gefallen)." },
+        { "id": "po8", "partes": null, "pregunta": "Wir wohnen in Innsbruck.", "respuesta": "Wir wohnen nicht in Innsbruck.", "distractores": ["Wir nicht wohnen in Innsbruck.", "Wir wohnen in Innsbruck nicht."], "pista": "nicht va delante de la indicación de lugar (in Innsbruck)." }
+      ]
+    },
+    {
+      "id": "kein",
+      "titulo": "¿nicht o kein?",
+      "instruccion": "Completa con nicht o con la forma correcta de kein.",
+      "modelo": "Kursbuch S. 109",
+      "ejercicios": [
+        { "id": "ke1", "partes": ["Ich habe heute ", " Zeit."], "respuesta": "keine", "distractores": ["nicht", "kein"], "pista": "Zeit sin artículo → kein-; femenino acusativo: keine." },
+        { "id": "ke2", "partes": ["Das ist ", " mein Fahrrad."], "respuesta": "nicht", "distractores": ["kein", "keins"], "pista": "Con posesivo (mein) se niega con nicht." },
+        { "id": "ke3", "partes": ["Er trinkt ", " Kaffee."], "respuesta": "keinen", "distractores": ["nicht", "kein"], "pista": "Kaffee sin artículo, masculino acusativo → keinen." },
+        { "id": "ke4", "partes": ["Ich kenne den Künstler ", "."], "respuesta": "nicht", "distractores": ["keinen", "kein"], "pista": "Con artículo determinado (den) → nicht, al final." },
+        { "id": "ke5", "partes": ["Wir haben ", " Auto."], "respuesta": "kein", "distractores": ["keine", "nicht"], "pista": "ein Auto → kein Auto (neutro)." },
+        { "id": "ke6", "partes": ["Im Museum gibt es heute ", " Führung."], "respuesta": "keine", "distractores": ["nicht", "kein"], "pista": "eine Führung → keine Führung." },
+        { "id": "ke7", "partes": ["Das Bild gefällt mir ", "."], "respuesta": "nicht", "distractores": ["kein", "keins"], "pista": "Se niega el verbo: nicht al final." },
+        { "id": "ke8", "partes": ["Ich habe ", " Lust auf Theater."], "respuesta": "keine", "distractores": ["nicht", "keinen"], "pista": "Lust (femenino) sin artículo → keine." }
+      ]
+    },
+    {
+      "id": "sondern",
+      "titulo": "sondern o aber",
+      "instruccion": "¿sondern, aber u oder?",
+      "modelo": "Kursbuch S. 109 · Intensivtrainer S. 45, 4a",
+      "ejercicios": [
+        { "id": "so1", "partes": ["Wir fahren nicht heute, ", " morgen."], "respuesta": "sondern", "distractores": ["aber", "oder"], "pista": "Tras una negación, la corrección va con sondern." },
+        { "id": "so2", "partes": ["Das Bild ist nicht teuer, ", " es gefällt mir nicht."], "respuesta": "aber", "distractores": ["sondern", "oder"], "pista": "No se corrige nada: se añade un contraste → aber." },
+        { "id": "so3", "partes": ["Ich trinke keinen Tee, ", " Kaffee."], "respuesta": "sondern", "distractores": ["aber", "und"], "pista": "kein Tee → la alternativa correcta, con sondern." },
+        { "id": "so4", "partes": ["Ich habe wenig Zeit, ", " ich komme mit."], "respuesta": "aber", "distractores": ["sondern", "oder"], "pista": "Sin negación no puede haber sondern." },
+        { "id": "so5", "partes": ["Nicht ich habe das Bild gemalt, ", " meine Schwester."], "respuesta": "sondern", "distractores": ["aber", "oder"], "pista": "Se niega una sola parte (ich) y se corrige con sondern." },
+        { "id": "so6", "partes": ["Wir gehen nicht ins Kino, ", " ins Theater."], "respuesta": "sondern", "distractores": ["aber", "oder"], "pista": "nicht ins Kino → sondern ins Theater." }
+      ]
+    },
+    {
+      "id": "matices",
+      "titulo": "¿Refuerza o relativiza?",
+      "instruccion": "¿Qué hace la palabra señalada con la opinión?",
+      "modelo": "Kursbuch S. 103, 5c-d · Intensivtrainer S. 45, 5",
+      "ejercicios": [
+        { "id": "ma1", "partes": null, "pregunta": "«Der Film war ziemlich gut.» → ziemlich", "respuesta": "Relativiza la opinión.", "distractores": ["Refuerza la opinión."], "pista": "ziemlich = bastante: suaviza." },
+        { "id": "ma2", "partes": null, "pregunta": "«Die Musik ist total schön.» → total", "respuesta": "Refuerza la opinión.", "distractores": ["Relativiza la opinión."], "pista": "total = totalmente: intensifica." },
+        { "id": "ma3", "partes": null, "pregunta": "«Das Theaterstück war eher kurz.» → eher", "respuesta": "Relativiza la opinión.", "distractores": ["Refuerza la opinión."], "pista": "eher = más bien: suaviza." },
+        { "id": "ma4", "partes": null, "pregunta": "«Die Stadt gefällt mir wirklich gut.» → wirklich", "respuesta": "Refuerza la opinión.", "distractores": ["Relativiza la opinión."], "pista": "wirklich = de verdad: intensifica." },
+        { "id": "ma5", "partes": null, "pregunta": "«Eigentlich mag ich keine Opern.» → eigentlich", "respuesta": "Relativiza la opinión.", "distractores": ["Refuerza la opinión."], "pista": "eigentlich = en realidad: matiza." },
+        { "id": "ma6", "partes": null, "pregunta": "«Das Konzert war besonders laut.» → besonders", "respuesta": "Refuerza la opinión.", "distractores": ["Relativiza la opinión."], "pista": "besonders = especialmente: intensifica." },
+        { "id": "ma7", "partes": null, "pregunta": "«Die Karten waren relativ günstig.» → relativ", "respuesta": "Relativiza la opinión.", "distractores": ["Refuerza la opinión."], "pista": "relativ = relativamente: suaviza." },
+        { "id": "ma8", "partes": null, "pregunta": "«Die Party war richtig toll.» → richtig", "respuesta": "Refuerza la opinión.", "distractores": ["Relativiza la opinión."], "pista": "richtig (coloquial) = de verdad: intensifica." }
+      ]
+    }
+  ]
+}
