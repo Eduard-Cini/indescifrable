@@ -108,9 +108,11 @@ function LeccionMas() {
         <Link to={`/mas/gramatica/${tema}/ejercicios`} className="gram-boton">
           Ir a los ejercicios
         </Link>
-        <Link to={`/mas/vocabulario/${tema}`} className="gram-boton gram-boton-sec">
-          Fichas de vocabulario
-        </Link>
+        {leccion.mazo && (
+          <Link to={`/mas/vocabulario/${leccion.mazo}`} className="gram-boton gram-boton-sec">
+            Fichas de vocabulario
+          </Link>
+        )}
       </div>
       <p className="mas-fuente">{leccion.fuente}</p>
     </div>

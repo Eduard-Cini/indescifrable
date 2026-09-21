@@ -1,0 +1,48 @@
+{
+  "tema": "reflexivos",
+  "titulo": "Pronombres reflexivos",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 93, 4a-b; Intensivtrainer S. 41, 4), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "mich-mir",
+      "titulo": "¿mich o mir?",
+      "instruccion": "Completa con el pronombre reflexivo correcto.",
+      "modelo": "Kursbuch S. 93, 4a",
+      "ejercicios": [
+        { "id": "mm1", "partes": ["Ich ziehe ", " an."], "respuesta": "mich", "distractores": ["mir", "mein"], "pista": "Sin otro complemento en acusativo: el reflexivo va en acusativo." },
+        { "id": "mm2", "partes": ["Ich ziehe ", " den Pullover an."], "respuesta": "mir", "distractores": ["mich", "mein"], "pista": "«den Pullover» ya es acusativo → el reflexivo pasa al dativo." },
+        { "id": "mm3", "partes": ["Wäschst du ", " die Haare?"], "respuesta": "dir", "distractores": ["dich", "dein"], "pista": "«die Haare» es el acusativo → dativo: dir." },
+        { "id": "mm4", "partes": ["Duschst du ", " jeden Morgen?"], "respuesta": "dich", "distractores": ["dir", "dein"], "pista": "sich duschen no lleva otro complemento → acusativo." },
+        { "id": "mm5", "partes": ["Ich muss ", " das Wort merken."], "respuesta": "mir", "distractores": ["mich", "mein"], "pista": "sich etwas merken: con «das Wort» en acusativo → dativo." },
+        { "id": "mm6", "partes": ["Ich kann ", " nicht an den Namen erinnern."], "respuesta": "mich", "distractores": ["mir", "mein"], "pista": "sich an etwas erinnern: el reflexivo es el único complemento → acusativo." }
+      ]
+    },
+    {
+      "id": "personas",
+      "titulo": "Las demás personas",
+      "instruccion": "Completa con el pronombre reflexivo.",
+      "modelo": "Intensivtrainer S. 41, 4",
+      "ejercicios": [
+        { "id": "pe1", "partes": ["Er cremt ", " mit Sonnencreme ein."], "respuesta": "sich", "distractores": ["ihn", "ihm"], "pista": "3.ª persona: sich en los dos casos." },
+        { "id": "pe2", "partes": ["Wir entspannen ", " am Wochenende."], "respuesta": "uns", "distractores": ["sich", "unser"], "pista": "wir → uns." },
+        { "id": "pe3", "partes": ["Putzt ihr ", " die Zähne?"], "respuesta": "euch", "distractores": ["euer", "ihr"], "pista": "ihr → euch (aquí, dativo: hay «die Zähne»)." },
+        { "id": "pe4", "partes": ["Die Kinder waschen ", " die Hände."], "respuesta": "sich", "distractores": ["ihnen", "ihre"], "pista": "3.ª persona plural: sich." },
+        { "id": "pe5", "partes": ["Ich strenge ", " im Kurs an."], "respuesta": "mich", "distractores": ["mir", "mein"], "pista": "sich anstrengen: solo el reflexivo → acusativo." },
+        { "id": "pe6", "partes": ["Wunderst du ", " über das Ergebnis?"], "respuesta": "dich", "distractores": ["dir", "dein"], "pista": "sich wundern über + acusativo: el reflexivo va en acusativo." }
+      ]
+    },
+    {
+      "id": "frases",
+      "titulo": "¿Cuál es correcta?",
+      "instruccion": "Elige la frase bien construida.",
+      "modelo": "Kursbuch S. 93, 4b",
+      "ejercicios": [
+        { "id": "fr1", "partes": null, "pregunta": "Peinarse nada más levantarse", "respuesta": "Kämmst du dich gleich nach dem Aufstehen?", "distractores": ["Kämmst du dir gleich nach dem Aufstehen?", "Kämmst dich du gleich nach dem Aufstehen?"], "pista": "Sin otro complemento → acusativo, y el pronombre va detrás del sujeto en la pregunta." },
+        { "id": "fr2", "partes": null, "pregunta": "Lavarse el pelo (Perfekt)", "respuesta": "Ich habe mir die Haare gewaschen.", "distractores": ["Ich habe mich die Haare gewaschen.", "Ich habe die Haare mir gewaschen."], "pista": "Con «die Haare» → mir, y el pronombre va justo detrás del verbo conjugado." },
+        { "id": "fr3", "partes": null, "pregunta": "Hacerse daño en la mano (Perfekt)", "respuesta": "Er hat sich die Hand verletzt.", "distractores": ["Er hat ihn die Hand verletzt.", "Er hat sich die Hand verletzen."], "pista": "3.ª persona: sich; y el Partizip II es verletzt." },
+        { "id": "fr4", "partes": null, "pregunta": "Deberíamos relajarnos más", "respuesta": "Wir sollten uns mehr entspannen.", "distractores": ["Wir sollten sich mehr entspannen.", "Wir sollten uns mehr entspannt."], "pista": "wir → uns; detrás del modal va el infinitivo." },
+        { "id": "fr5", "partes": null, "pregunta": "Ponerse crema todos los días", "respuesta": "Ich creme mich jeden Tag ein.", "distractores": ["Ich creme mir jeden Tag ein.", "Ich creme jeden Tag mich ein."], "pista": "Sin otro complemento → mich, y el pronombre va antes de la indicación de tiempo." }
+      ]
+    }
+  ]
+}

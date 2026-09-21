@@ -1,0 +1,48 @@
+{
+  "tema": "brauchen-zu",
+  "titulo": "brauchen + zu",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 92, 3a-b; Intensivtrainer S. 40, 3), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "de-muessen",
+      "titulo": "De müssen a brauchen",
+      "instruccion": "Di lo mismo con brauchen + zu. ¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 92, 3a",
+      "ejercicios": [
+        { "id": "bm1", "partes": null, "pregunta": "Du musst nicht warten.", "respuesta": "Du brauchst nicht zu warten.", "distractores": ["Du brauchst nicht warten.", "Du brauchst zu nicht warten.", "Du brauchst nicht zu wartest."], "pista": "brauchen conjugado + nicht + zu + infinitivo." },
+        { "id": "bm2", "partes": null, "pregunta": "Sie müssen keine Angst haben.", "respuesta": "Sie brauchen keine Angst zu haben.", "distractores": ["Sie brauchen keine Angst haben.", "Sie brauchen zu keine Angst haben.", "Sie brauchen keine Angst zu hat."], "pista": "Con kein, el infinitivo con zu va al final." },
+        { "id": "bm3", "partes": null, "pregunta": "Ihr müsst nur anrufen.", "respuesta": "Ihr braucht nur anzurufen.", "distractores": ["Ihr braucht nur zu anrufen.", "Ihr braucht nur anrufen.", "Ihr braucht nur anrufen zu."], "pista": "an|rufen es separable: zu va en medio, anzurufen." },
+        { "id": "bm4", "partes": null, "pregunta": "Er muss nicht früh aufstehen.", "respuesta": "Er braucht nicht früh aufzustehen.", "distractores": ["Er braucht nicht früh aufstehen.", "Er braucht nicht früh zu aufstehen.", "Er braucht nicht früh aufsteht."], "pista": "auf|stehen es separable: aufzustehen." },
+        { "id": "bm5", "partes": null, "pregunta": "Wir müssen die Pflegerin nur fragen.", "respuesta": "Wir brauchen die Pflegerin nur zu fragen.", "distractores": ["Wir brauchen die Pflegerin nur fragen.", "Wir brauchen nur die Pflegerin zu fragt.", "Wir brauchen die Pflegerin nur fragen zu."], "pista": "nur + zu + infinitivo: basta con preguntar." },
+        { "id": "bm6", "partes": null, "pregunta": "Du musst das Formular nicht ausfüllen.", "respuesta": "Du brauchst das Formular nicht auszufüllen.", "distractores": ["Du brauchst das Formular nicht ausfüllen.", "Du brauchst das Formular nicht zu ausfüllen.", "Du brauchst das Formular nicht ausfüllst."], "pista": "aus|füllen es separable: auszufüllen." }
+      ]
+    },
+    {
+      "id": "infinitivo",
+      "titulo": "El infinitivo con zu",
+      "instruccion": "Completa el final de la frase.",
+      "modelo": "Intensivtrainer S. 40, 3",
+      "ejercicios": [
+        { "id": "in1", "partes": ["Du brauchst heute nicht ", "."], "respuesta": "zu kommen", "distractores": ["kommen", "zu kommst", "zu gekommen"], "pista": "brauchen + zu + infinitivo." },
+        { "id": "in2", "partes": ["Sie brauchen mich nur ", "."], "respuesta": "zu rufen", "distractores": ["rufen", "zu ruft", "gerufen"], "pista": "Con nur: basta con llamarme." },
+        { "id": "in3", "partes": ["Ich brauche keine Tabletten ", "."], "respuesta": "zu nehmen", "distractores": ["nehmen", "zu nimmt", "genommen"], "pista": "El infinitivo no se conjuga." },
+        { "id": "in4", "partes": ["Du brauchst den Pullover nicht ", "."], "respuesta": "anzuziehen", "distractores": ["anziehen", "zu anziehen", "anzieht"], "pista": "an|ziehen: zu va entre el prefijo y el verbo." },
+        { "id": "in5", "partes": ["Ihr braucht nur früher ", "."], "respuesta": "aufzustehen", "distractores": ["aufstehen", "zu aufstehen", "aufsteht"], "pista": "auf|stehen es separable." },
+        { "id": "in6", "partes": ["Er braucht das Fieber nicht ", "."], "respuesta": "zu messen", "distractores": ["messen", "zu misst", "gemessen"], "pista": "messen no es separable: zu va delante." }
+      ]
+    },
+    {
+      "id": "significado",
+      "titulo": "¿Qué significa?",
+      "instruccion": "Elige la traducción correcta.",
+      "modelo": "Kursbuch S. 92, 3a",
+      "ejercicios": [
+        { "id": "sg1", "partes": null, "pregunta": "«Du brauchst nicht zu kommen.»", "respuesta": "No hace falta que vengas.", "distractores": ["No puedes venir.", "Tienes que venir."], "pista": "brauchen + nicht + zu = no es necesario." },
+        { "id": "sg2", "partes": null, "pregunta": "«Sie brauchen mich nur zu rufen.»", "respuesta": "Basta con que me llame.", "distractores": ["No debe llamarme.", "Tiene que llamarme varias veces."], "pista": "nur = basta con eso." },
+        { "id": "sg3", "partes": null, "pregunta": "«Ich brauche Hilfe.»", "respuesta": "Necesito ayuda.", "distractores": ["No hace falta ayuda.", "Solo hace falta ayudar."], "pista": "Sin nicht, kein ni nur, brauchen significa «necesitar»." },
+        { "id": "sg4", "partes": null, "pregunta": "«Er braucht kein Fieber zu messen.»", "respuesta": "No hace falta que se tome la temperatura.", "distractores": ["No puede tomarse la temperatura.", "Tiene que tomarse la temperatura."], "pista": "kein + brauchen + zu = no es necesario." },
+        { "id": "sg5", "partes": null, "pregunta": "«Danke, aber du brauchst mir nicht zu helfen.»", "respuesta": "Gracias, pero no hace falta que me ayudes.", "distractores": ["Gracias, pero no quiero que me ayudes.", "Gracias, pero tienes que ayudarme."], "pista": "Así se rechaza la ayuda con cortesía." }
+      ]
+    }
+  ]
+}

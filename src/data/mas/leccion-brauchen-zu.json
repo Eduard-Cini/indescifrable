@@ -1,0 +1,53 @@
+{
+  "id": "brauchen-zu",
+  "mazo": "k8-verbos",
+  "titulo": "brauchen + zu + infinitivo",
+  "descripcion": "Cómo decir «no hace falta que…» y «basta con que…» con brauchen + zu, en lugar de müssen.",
+  "fuente": "Netzwerk neu B1, Kapitel 8: Kursbuch S. 92 y 99 · Intensivtrainer S. 40",
+  "libro": {
+    "referencia": "Kursbuch S. 92 (recuadro G) y S. 99 («kurz und klar»)",
+    "puntos": [
+      "brauchen + zu + infinitivo aparece con nicht, kein o nur, y equivale a müssen: «Das brauchst du nicht zu machen» = «Das musst du nicht machen».",
+      "Con kein: «Er braucht kein Fieber zu messen» = «Er muss kein Fieber messen».",
+      "Con nur significa que basta con eso: «Sie brauchen mich nur zu rufen» = «Sie müssen mich nur rufen».",
+      "El libro lo presenta en el hospital, para ofrecer ayuda y para rechazarla con cortesía."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "¿Para qué sirve?",
+      "texto": [
+        "Es la forma habitual de decir que algo no es necesario, o que basta con una sola cosa. Solo se usa con nicht, kein o nur; en los demás casos se emplea müssen."
+      ],
+      "tabla": {
+        "cabecera": ["Con brauchen", "Equivale a", "Significado"],
+        "filas": [
+          ["Du brauchst nicht zu warten.", "Du musst nicht warten.", "no hace falta que esperes"],
+          ["Er braucht keine Tabletten zu nehmen.", "Er muss keine Tabletten nehmen.", "no hace falta que tome pastillas"],
+          ["Sie brauchen nur zu klingeln.", "Sie müssen nur klingeln.", "basta con que llame al timbre"]
+        ]
+      }
+    },
+    {
+      "titulo": "Cómo se construye",
+      "texto": [
+        "brauchen se conjuga y ocupa la posición 2; al final de la frase van zu + infinitivo. Si el verbo es separable, zu se coloca entre el prefijo y el verbo."
+      ],
+      "ejemplos": [
+        { "de": "Du brauchst mich nicht anzurufen.", "es": "No hace falta que me llames." },
+        { "de": "Ihr braucht nur früher aufzustehen.", "es": "Basta con que os levantéis antes." },
+        { "de": "Sie brauchen das Formular nicht auszufüllen.", "es": "No hace falta que rellene el formulario." }
+      ]
+    },
+    {
+      "titulo": "Cuidado con estos puntos",
+      "texto": [
+        "Sin nicht, kein ni nur, brauchen significa simplemente «necesitar»: Ich brauche Hilfe."
+      ],
+      "notas": [
+        "«Du brauchst nicht zu kommen» (no hace falta) no es lo mismo que «Du darfst nicht kommen» (no puedes venir).",
+        "En la lengua hablada se oye a veces sin zu, pero la forma correcta lleva zu."
+      ]
+    }
+  ]
+}

@@ -8,8 +8,8 @@ import '../lectura/lectura.css';
 import '../gramatica/gramatica.css';
 import './mas.css';
 
-// Todo lo que resume la portada: por capítulo (indice.json), sus temas con
-// mazo, lección y ejercicios, y sus mazos de vocabulario y verbos.
+// Lo que resume la portada: por capítulo (indice.json), sus temas de gramática
+// (lección + ejercicios) y sus dos mazos, vocabulario y verbos.
 async function cargarPortada() {
   const indice = await cargarIndice();
   const capitulos = await Promise.all(
@@ -17,12 +17,8 @@ async function cargarPortada() {
       ...cap,
       temas: await Promise.all(
         cap.temas.map(async (id) => {
-          const [mazo, leccion, banco] = await Promise.all([
-            cargarMazo(id),
-            cargarLeccion(id),
-            cargarEjercicios(id),
-          ]);
-          return { id, mazo, leccion, banco };
+          const [leccion, banco] = await Promise.all([cargarLeccion(id), cargarEjercicios(id)]);
+          return { id, leccion, banco };
         })
       ),
       mazosCapitulo: await Promise.all(
@@ -34,8 +30,8 @@ async function cargarPortada() {
 }
 
 // Portada de «Más contenidos»: material de alemán del curso (Netzwerk neu B1)
-// en tres bloques — vocabulario por tema, gramática (lección + ejercicios) y
-// vocabulario/verbos de cada capítulo —, agrupados por capítulo.
+// en dos bloques — gramática con sus ejercicios, y vocabulario con verbos —,
+// agrupados por capítulo.
 function MasContenidos() {
   const [portada, setPortada] = useState(null);
   const [estados, setEstados] = useState({});
@@ -108,31 +104,24 @@ function MasContenidos() {
         <span />
       </header>
       <p className="lectura-subtitulo">
-        Alemán · {portada?.libro ?? 'Netzwerk neu B1'}, capítulos 9 y 10. Ordenado por
-        vocabulario y por gramática; al final, el vocabulario y los verbos de cada capítulo.
+        Alemán · {portada?.libro ?? 'Netzwerk neu B1'}, capítulos 8, 9 y 10. Dos bloques:
+        la gramática con sus ejercicios, y el vocabulario con los verbos de cada capítulo.
       </p>
 
       <section className="mas-bloque">
-        <h2 className="mas-bloque-titulo">Vocabulario por tema</h2>
+        <h2 className="mas-bloque-titulo">Gramática y ejercicios</h2>
         <p className="mas-bloque-sub">
-          Fichas con repetición espaciada (el mismo modelo SM-2 de Repaso). Si una
-          palabra está en varios mazos, su progreso se comparte.
-        </p>
-        {porCapitulo((cap) => cap.temas.map((t) => tarjetaMazo(t.id, t.mazo)))}
-      </section>
-
-      <section className="mas-bloque">
-        <h2 className="mas-bloque-titulo">Gramática</h2>
-        <p className="mas-bloque-sub">
-          Lección (con lo que explica el libro) y una subsección de ejercicios.
+          Cada tema trae la lección (con lo que explica el libro) y sus tandas de ejercicios.
         </p>
         {porCapitulo((cap) => cap.temas.map(tarjetaGramatica))}
       </section>
 
       <section className="mas-bloque">
-        <h2 className="mas-bloque-titulo">Vocabulario y verbos del capítulo</h2>
+        <h2 className="mas-bloque-titulo">Vocabulario y verbos</h2>
         <p className="mas-bloque-sub">
-          El Lernwortschatz completo de cada capítulo y todos sus verbos, con sus formas.
+          Fichas con repetición espaciada (el mismo modelo SM-2 de Repaso): el Lernwortschatz
+          del capítulo y todos sus verbos, con sus formas y su preposición. Si una palabra está
+          en varios mazos, su progreso se comparte.
         </p>
         {porCapitulo((cap) => cap.mazosCapitulo.map((m) => tarjetaMazo(m.id, m.mazo)))}
       </section>

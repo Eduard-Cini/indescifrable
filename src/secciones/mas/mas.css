@@ -80,6 +80,7 @@
   white-space: nowrap;
 }
 .mazo-formas td { color: #f0f0f0; text-align: left; padding: 0.15rem 0.7rem; }
+.mazo-preposicion { color: #b7a86a; }
 .mazo-significado { font-size: 1.25rem; color: #8fbf9f; text-align: center; }
 .mazo-familia { font-size: 0.85rem; color: #aaa; text-align: center; margin: 0; }
 .mazo-pasiva { font-size: 0.85rem; color: #9ad; text-align: center; margin: 0; }

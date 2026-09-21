@@ -1,0 +1,56 @@
+{
+  "id": "verbos-prefijos",
+  "mazo": "k8-verbos",
+  "titulo": "Verbos con mit-, vorbei-, weg-, weiter-, zusammen- y zurück-",
+  "descripcion": "Formación de palabras del capítulo 8: prefijos separables que conservan su significado dentro del verbo.",
+  "fuente": "Netzwerk neu B1, Kapitel 8: Wortbildung del Übungsbuch S. 98 · Intensivtrainer S. 43",
+  "libro": {
+    "referencia": "Übungsbuch S. 98 (recuadro W) e Intensivtrainer S. 43",
+    "puntos": [
+      "mit-, vorbei-, weg-, weiter-, zusammen- y zurück- mantienen su significado también cuando se unen a un verbo.",
+      "Ejemplos del libro: «Kannst du schnell bei Pia vorbeigehen?», «Willst du auch mitgehen?», «Wir müssen noch mal zurückgehen».",
+      "El Übungsbuch practica elegir el verbo correcto según el contexto y completar el prefijo que falta."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué aporta cada prefijo",
+      "tabla": {
+        "cabecera": ["Prefijo", "Significado", "Verbos del capítulo"],
+        "filas": [
+          ["mit-", "con otra persona, participar", "mit|gehen · mit|nehmen · mit|machen"],
+          ["vorbei-", "pasar por delante, pasarse a ver", "vorbei|gehen · vorbei|kommen"],
+          ["weg-", "irse, quitar de en medio", "weg|gehen · weg|fahren · weg|werfen"],
+          ["weiter-", "seguir haciendo algo", "weiter|arbeiten · weiter|machen"],
+          ["zusammen-", "juntos, en común", "zusammen|arbeiten · zusammen|passen · zusammen|leben"],
+          ["zurück-", "volver, devolver", "zurück|gehen · zurück|kommen · zurück|fahren"]
+        ]
+      }
+    },
+    {
+      "titulo": "Todos son separables",
+      "texto": [
+        "En presente y en Präteritum el prefijo se va al final; en el Partizip II, el ge- se coloca entre el prefijo y el verbo."
+      ],
+      "ejemplos": [
+        { "de": "Ich gehe heute mit. → Ich bin gestern mitgegangen.", "es": "Hoy voy con vosotros. → Ayer fui con ellos." },
+        { "de": "Wir arbeiten noch weiter. → Wir haben bis acht weitergearbeitet.", "es": "Seguimos trabajando. → Trabajamos hasta las ocho." }
+      ],
+      "notas": [
+        "Excepción: si el verbo base ya es inseparable, no hay ge-: auf|bewahren → aufbewahrt."
+      ]
+    },
+    {
+      "titulo": "¿haben o sein?",
+      "texto": [
+        "Los verbos de movimiento forman el Perfekt con sein: mitgehen, weggehen, zurückkommen, vorbeikommen, wegfahren, zurückfahren. Los demás, con haben: mitnehmen, weitermachen, zusammenarbeiten, zusammenpassen."
+      ]
+    },
+    {
+      "titulo": "Con zu y con modales",
+      "texto": [
+        "Con un infinitivo con zu, el zu va entre el prefijo y el verbo: mitzugehen, weiterzuarbeiten. Con un verbo modal, el infinitivo va entero al final: Ich muss noch mal zurückgehen."
+      ]
+    }
+  ]
+}

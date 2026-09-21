@@ -1,0 +1,64 @@
+{
+  "id": "konnektoren",
+  "mazo": "k8-vocabulario",
+  "titulo": "Conectores de dos partes",
+  "descripcion": "sowohl … als auch, nicht nur …, sondern auch, entweder … oder, weder … noch, zwar …, aber y einerseits …, andererseits.",
+  "fuente": "Netzwerk neu B1, Kapitel 8: Kursbuch S. 95 y 99 · Intensivtrainer S. 42",
+  "libro": {
+    "referencia": "Kursbuch S. 95 (recuadro G) y S. 99 («kurz und klar»)",
+    "puntos": [
+      "sowohl … als auch y nicht nur …, sondern auch expresan que valen las dos cosas.",
+      "entweder … oder expresa que vale una u otra.",
+      "weder … noch expresa que no vale ninguna de las dos.",
+      "zwar …, aber acepta algo pero con restricciones.",
+      "einerseits …, andererseits presenta las dos caras de un mismo asunto.",
+      "Estos conectores pueden unir partes de la frase o frases enteras."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué expresa cada uno",
+      "tabla": {
+        "cabecera": ["Conector", "Significado", "Ejemplo"],
+        "filas": [
+          ["sowohl … als auch", "las dos cosas", "Ich höre sowohl Klassik als auch Jazz."],
+          ["nicht nur …, sondern auch", "las dos, subrayando la segunda", "Er spielt nicht nur Gitarre, sondern auch Klavier."],
+          ["entweder … oder", "una u otra", "Wir gehen entweder ins Kino oder ins Theater."],
+          ["weder … noch", "ninguna de las dos", "Ich trinke weder Kaffee noch Tee."],
+          ["zwar …, aber", "se acepta algo, pero con pegas", "Der Film ist zwar lang, aber sehr gut."],
+          ["einerseits …, andererseits", "las dos caras de un asunto", "Einerseits entspannt Musik, andererseits hilft sie beim Lernen."]
+        ]
+      }
+    },
+    {
+      "titulo": "Qué pueden unir",
+      "texto": [
+        "Pueden unir solo partes de la frase (sustantivos, adjetivos, verbos) o dos frases completas."
+      ],
+      "ejemplos": [
+        { "de": "Ella spielt nicht nur Flöte, sondern auch Klavier.", "es": "Toca no solo la flauta, sino también el piano. (partes de la frase)" },
+        { "de": "Brian spielt nicht nur Gitarre, sondern er singt auch gut.", "es": "Brian no solo toca la guitarra, sino que además canta bien. (dos frases)" }
+      ]
+    },
+    {
+      "titulo": "Cuidado con la negación",
+      "texto": [
+        "weder … noch ya es negativo: no se añade nicht ni kein. En cambio, nicht nur …, sondern auch lleva la negación en la primera parte."
+      ],
+      "ejemplos": [
+        { "de": "Ich trinke weder Kaffee noch Tee.", "es": "No bebo ni café ni té. (no: weder keinen Kaffee…)" },
+        { "de": "Er ist nicht nur Arzt, sondern auch Musiker.", "es": "No solo es médico, sino también músico." }
+      ]
+    },
+    {
+      "titulo": "El orden de la frase",
+      "texto": [
+        "Si entweder, weder, einerseits o andererseits abren la frase, el verbo conjugado va en la posición 2, justo después."
+      ],
+      "ejemplos": [
+        { "de": "Entweder gehen wir ins Kino oder wir bleiben zu Hause.", "es": "O vamos al cine o nos quedamos en casa." },
+        { "de": "Einerseits ist Musik Unterhaltung, andererseits hilft sie kranken Menschen.", "es": "Por un lado la música es entretenimiento, por otro ayuda a los enfermos." }
+      ]
+    }
+  ]
+}

@@ -82,6 +82,9 @@ export function estadoTarjeta(srs, ahora) {
  */
 export function formasPasiva(tarjeta) {
   if (tarjeta.tipo !== 'verbo' || tarjeta.pasiva === false) return null;
+  // Sin pasiva personal: los reflexivos (sich anstrengen) y los verbos que
+  // forman el Perfekt con sein (intransitivos: gelangen, zurückkommen…).
+  if (tarjeta.infinitivo.startsWith('sich ') || tarjeta.auxiliar === 'ist') return null;
   const p = tarjeta.participio;
   return {
     presente: `wird ${p}`,

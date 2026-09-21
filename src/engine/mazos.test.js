@@ -133,6 +133,11 @@ describe('formasPasiva / textoPlural / textoPerfecto', () => {
     expect(formasPasiva({ ...mazo.tarjetas[0], pasiva: false })).toBeNull();
   });
 
+  it('tampoco para reflexivos ni para verbos con sein', () => {
+    expect(formasPasiva({ ...mazo.tarjetas[0], infinitivo: 'sich anstrengen' })).toBeNull();
+    expect(formasPasiva({ ...mazo.tarjetas[0], auxiliar: 'ist' })).toBeNull();
+  });
+
   it('el plural null se muestra como «solo singular»', () => {
     expect(textoPlural(mazo.tarjetas[1])).toBe('die Werte');
     expect(textoPlural(mazo.tarjetas[2])).toBe('solo singular (Sg.)');
@@ -220,5 +225,15 @@ describe('mazos reales de «Más contenidos»', () => {
       return !t.participio.startsWith(sinGe ? prefijo : `${prefijo}ge`);
     });
     expect(mal.map((t) => t.id)).toEqual([]);
+  });
+
+  it('la preposición, cuando la hay, se escribe «preposición + caso»', () => {
+    const conPreposicion = lista.flatMap(([, m]) => m.tarjetas).filter((t) => t.preposicion);
+    expect(conPreposicion.length).toBeGreaterThan(10);
+    const mal = conPreposicion.filter(
+      (t) => !/^[a-zäöüß]+ \+ (acusativo|dativo|genitivo)$/.test(t.preposicion)
+    );
+    expect(mal.map((t) => `${t.id}: ${t.preposicion}`)).toEqual([]);
+    expect(conPreposicion.every((t) => t.tipo === 'verbo' || t.tipo === 'otro')).toBe(true);
   });
 });

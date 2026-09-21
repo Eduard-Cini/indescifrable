@@ -1,0 +1,62 @@
+{
+  "id": "reflexivos",
+  "mazo": "k8-verbos",
+  "titulo": "Pronombres reflexivos: acusativo y dativo",
+  "descripcion": "Cuándo el pronombre reflexivo va en acusativo (Ich ziehe mich an) y cuándo en dativo (Ich ziehe mir den Pullover an).",
+  "fuente": "Netzwerk neu B1, Kapitel 8: Kursbuch S. 93 y 99 · Intensivtrainer S. 41",
+  "libro": {
+    "referencia": "Kursbuch S. 93 (recuadro G) y S. 99 («kurz und klar»)",
+    "puntos": [
+      "Los verbos reflexivos llevan el pronombre en acusativo: «Ich ziehe mich an».",
+      "Si en la frase hay además un complemento en acusativo, el pronombre reflexivo pasa al dativo: «Ich ziehe mir den Pullover an».",
+      "La tabla del libro recoge las dos series completas; solo se diferencian en la 1.ª y la 2.ª persona del singular (mich/mir, dich/dir).",
+      "El libro practica la regla con la rutina diaria: peinarse, lavarse los dientes, lavarse el pelo, ducharse, ponerse el zapato."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Las dos series",
+      "tabla": {
+        "cabecera": ["", "ich", "du", "er/es/sie", "wir", "ihr", "sie/Sie"],
+        "filas": [
+          ["Akkusativ", "mich", "dich", "sich", "uns", "euch", "sich"],
+          ["Dativ", "mir", "dir", "sich", "uns", "euch", "sich"]
+        ]
+      },
+      "notas": [
+        "Solo cambian ich y du: en las demás personas la forma es la misma en los dos casos."
+      ]
+    },
+    {
+      "titulo": "¿Acusativo o dativo?",
+      "texto": [
+        "Si el pronombre reflexivo es el único complemento, va en acusativo. Si aparece otro complemento en acusativo (una parte del cuerpo, una prenda, una cosa), el reflexivo pasa al dativo."
+      ],
+      "ejemplos": [
+        { "de": "Ich wasche mich. → Ich wasche mir die Haare.", "es": "Me lavo. → Me lavo el pelo." },
+        { "de": "Er zieht sich an. → Er zieht sich die Jacke an.", "es": "Se viste. → Se pone la chaqueta." },
+        { "de": "Putzt du dich? → Putzt du dir die Zähne?", "es": "(raro) → ¿Te lavas los dientes?" }
+      ]
+    },
+    {
+      "titulo": "Dónde va el pronombre",
+      "texto": [
+        "El pronombre reflexivo va justo detrás del verbo conjugado; en las preguntas y en la subordinada, detrás del sujeto."
+      ],
+      "ejemplos": [
+        { "de": "Ich habe mir heute die Haare gewaschen.", "es": "Hoy me he lavado el pelo." },
+        { "de": "Kämmst du dich gleich nach dem Aufstehen?", "es": "¿Te peinas nada más levantarte?" },
+        { "de": "…, weil ich mich nicht wohlfühle.", "es": "…, porque no me encuentro bien." }
+      ]
+    },
+    {
+      "titulo": "Verbos reflexivos del capítulo",
+      "texto": [
+        "sich anstrengen (esforzarse) · sich eincremen (ponerse crema) · sich kämmen (peinarse) · sich duschen (ducharse) · sich legen (tumbarse) · sich entspannen (relajarse) · sich verletzen (hacerse daño) · sich wundern über + A. (asombrarse) · sich erinnern an + A. (acordarse) · sich merken (memorizar) · sich ernähren von + D. (alimentarse)."
+      ],
+      "notas": [
+        "sich merken y sich waschen/putzen/anziehen suelen llevar un complemento en acusativo: por eso aparecen con el reflexivo en dativo."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "tema": "verbos-prefijos",
+  "titulo": "Verbos con prefijo",
+  "nota": "Ejercicios propios que siguen el modelo de la Wortbildung del libro (Übungsbuch S. 98, A-B; Intensivtrainer S. 43), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual-verbo",
+      "titulo": "¿Qué verbo encaja?",
+      "instruccion": "Elige el verbo que corresponde a la situación.",
+      "modelo": "Übungsbuch S. 98, A",
+      "ejercicios": [
+        { "id": "cv1", "partes": ["Wir gehen ins Kino. Willst du ", "?"], "respuesta": "mitgehen", "distractores": ["weggehen", "zurückgehen", "vorbeigehen"], "pista": "mit- = venir con nosotros." },
+        { "id": "cv2", "partes": ["Ich habe meinen Schlüssel vergessen. Ich muss noch mal nach Hause ", "."], "respuesta": "zurückgehen", "distractores": ["mitgehen", "weitergehen", "vorbeigehen"], "pista": "zurück- = volver al punto de partida." },
+        { "id": "cv3", "partes": ["Kannst du auf dem Heimweg kurz bei mir ", "?"], "respuesta": "vorbeikommen", "distractores": ["mitkommen", "wegkommen", "weiterkommen"], "pista": "vorbei- = pasarse a ver a alguien." },
+        { "id": "cv4", "partes": ["Die Party war langweilig, deshalb sind wir früh ", "."], "respuesta": "weggegangen", "distractores": ["mitgegangen", "zurückgegangen", "weitergegangen"], "pista": "weg- = marcharse. Perfekt con sein." },
+        { "id": "cv5", "partes": ["Wir sind müde, aber wir müssen noch zwei Stunden ", "."], "respuesta": "weiterarbeiten", "distractores": ["zusammenarbeiten", "wegarbeiten", "zurückarbeiten"], "pista": "weiter- = seguir haciendo algo." },
+        { "id": "cv6", "partes": ["Meine Kollegin und ich ", " sehr gut ", "."], "respuesta": "arbeiten … zusammen", "distractores": ["arbeiten … weiter", "arbeiten … mit", "arbeiten … zurück"], "pista": "zusammen- = en equipo. En presente, el prefijo se va al final." }
+      ]
+    },
+    {
+      "id": "participio",
+      "titulo": "El Partizip II",
+      "instruccion": "Completa con el Partizip II.",
+      "modelo": "Übungsbuch S. 98, B",
+      "ejercicios": [
+        { "id": "vp1", "partes": ["mit|nehmen → Er hat den Schirm ", "."], "respuesta": "mitgenommen", "distractores": ["genommenmit", "mitnehmt", "gemitnommen"], "pista": "Prefijo + ge + participio: mit-ge-nommen." },
+        { "id": "vp2", "partes": ["weiter|machen → Wir haben nach der Pause ", "."], "respuesta": "weitergemacht", "distractores": ["gemachtweiter", "weitermacht", "geweitermacht"], "pista": "weiter-ge-macht." },
+        { "id": "vp3", "partes": ["zurück|kommen → Sie ist spät ", "."], "respuesta": "zurückgekommen", "distractores": ["zurückkommen", "gezurückkommen", "zurückgekommt"], "pista": "zurück-ge-kommen (irregular, con sein)." },
+        { "id": "vp4", "partes": ["weg|fahren → Wir sind gestern ", "."], "respuesta": "weggefahren", "distractores": ["wegfahren", "gewegfahren", "weggefahrt"], "pista": "weg-ge-fahren." },
+        { "id": "vp5", "partes": ["zusammen|passen → Die Farben haben gut ", "."], "respuesta": "zusammengepasst", "distractores": ["zusammenpasst", "gezusammenpasst", "zusammengepassen"], "pista": "zusammen-ge-passt (regular)." },
+        { "id": "vp6", "partes": ["auf|bewahren → Ich habe die Karte gut ", "."], "respuesta": "aufbewahrt", "distractores": ["aufgebewahrt", "aufbewahren", "gebewahrt"], "pista": "El verbo base (bewahren) es inseparable: sin ge-." }
+      ]
+    },
+    {
+      "id": "haben-sein",
+      "titulo": "¿haben o sein?",
+      "instruccion": "Elige el auxiliar del Perfekt.",
+      "modelo": "Intensivtrainer S. 43",
+      "ejercicios": [
+        { "id": "hs1", "partes": ["Ich ", " gestern mit meinen Freunden weggegangen."], "respuesta": "bin", "distractores": ["habe", "war"], "pista": "Verbo de movimiento → sein." },
+        { "id": "hs2", "partes": ["Wir ", " den ganzen Tag zusammengearbeitet."], "respuesta": "haben", "distractores": ["sind", "waren"], "pista": "arbeiten no es de movimiento → haben." },
+        { "id": "hs3", "partes": ["Er ", " um Mitternacht zurückgekommen."], "respuesta": "ist", "distractores": ["hat", "war"], "pista": "kommen → sein." },
+        { "id": "hs4", "partes": ["Sie ", " den Kuchen mitgebracht."], "respuesta": "hat", "distractores": ["ist", "war"], "pista": "bringen → haben." },
+        { "id": "hs5", "partes": ["Wann ", " ihr weitergefahren?"], "respuesta": "seid", "distractores": ["habt", "wart"], "pista": "fahren (movimiento) → sein; para «ihr», seid." },
+        { "id": "hs6", "partes": ["Ich ", " noch kurz bei Oma vorbeigekommen."], "respuesta": "bin", "distractores": ["habe", "war"], "pista": "vorbeikommen → sein." }
+      ]
+    }
+  ]
+}

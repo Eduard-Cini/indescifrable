@@ -1,0 +1,47 @@
+{
+  "tema": "konnektoren",
+  "titulo": "Conectores de dos partes",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 95, 7b; Intensivtrainer S. 42, 7), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Qué conector encaja?",
+      "instruccion": "Elige el conector que corresponde al significado de la frase.",
+      "modelo": "Kursbuch S. 95, 7b",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["Ich spiele ", " Klavier ", " Gitarre."], "respuesta": "sowohl … als auch", "distractores": ["entweder … oder", "weder … noch", "nicht nur … sondern auch"], "pista": "Las dos cosas a la vez: sowohl … als auch." },
+        { "id": "cu2", "partes": ["Ich trinke ", " Kaffee ", " Tee, nur Wasser."], "respuesta": "weder … noch", "distractores": ["sowohl … als auch", "entweder … oder", "nicht nur … sondern auch"], "pista": "Ninguna de las dos: weder … noch (ya es negativo)." },
+        { "id": "cu3", "partes": ["Wir gehen ", " ins Kino ", " ins Theater. Entscheide du!"], "respuesta": "entweder … oder", "distractores": ["weder … noch", "sowohl … als auch", "zwar … aber"], "pista": "Una u otra: entweder … oder." },
+        { "id": "cu4", "partes": ["Der Film ist ", " lang, ", " er ist sehr spannend."], "respuesta": "zwar … aber", "distractores": ["weder … noch", "entweder … oder", "sowohl … als auch"], "pista": "Se acepta algo con una pega: zwar …, aber." },
+        { "id": "cu5", "partes": ["Sie spielt ", " Klavier, ", " sie singt auch."], "respuesta": "nicht nur … sondern", "distractores": ["sowohl … als auch", "weder … noch", "entweder … oder"], "pista": "nicht nur …, sondern (auch): lo uno y además lo otro." },
+        { "id": "cu6", "partes": ["", " ist Musik Unterhaltung, ", " hilft sie beim Lernen."], "respuesta": "Einerseits … andererseits", "distractores": ["Entweder … oder", "Weder … noch", "Sowohl … als auch"], "pista": "Dos caras del mismo asunto." }
+      ]
+    },
+    {
+      "id": "unir",
+      "titulo": "Une las dos ideas",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Intensivtrainer S. 42, 7",
+      "ejercicios": [
+        { "id": "un1", "partes": null, "pregunta": "Ich mag Klassik. Ich mag Jazz. (las dos)", "respuesta": "Ich mag sowohl Klassik als auch Jazz.", "distractores": ["Ich mag sowohl Klassik als Jazz.", "Ich mag sowohl Klassik oder Jazz."], "pista": "La segunda parte es «als auch»." },
+        { "id": "un2", "partes": null, "pregunta": "Ich trinke keinen Kaffee. Ich trinke keinen Tee.", "respuesta": "Ich trinke weder Kaffee noch Tee.", "distractores": ["Ich trinke weder keinen Kaffee noch keinen Tee.", "Ich trinke nicht Kaffee noch Tee."], "pista": "weder … noch ya niega: fuera kein." },
+        { "id": "un3", "partes": null, "pregunta": "Podemos ir al concierto o quedarnos en casa.", "respuesta": "Wir können entweder ins Konzert gehen oder zu Hause bleiben.", "distractores": ["Wir können entweder ins Konzert gehen und zu Hause bleiben.", "Wir können weder ins Konzert gehen oder zu Hause bleiben."], "pista": "entweder va con oder." },
+        { "id": "un4", "partes": null, "pregunta": "La habitación es pequeña, pero acogedora.", "respuesta": "Das Zimmer ist zwar klein, aber gemütlich.", "distractores": ["Das Zimmer ist zwar klein, sondern gemütlich.", "Das Zimmer ist zwar klein und aber gemütlich."], "pista": "zwar va con aber, no con sondern." },
+        { "id": "un5", "partes": null, "pregunta": "La música relaja; además ayuda a estudiar. (dos caras)", "respuesta": "Einerseits entspannt Musik, andererseits hilft sie beim Lernen.", "distractores": ["Einerseits Musik entspannt, andererseits sie hilft beim Lernen.", "Einerseits entspannt Musik, andererseits sie hilft beim Lernen."], "pista": "Einerseits y andererseits abren la frase: el verbo va en la posición 2." }
+      ]
+    },
+    {
+      "id": "significado",
+      "titulo": "¿Qué significa?",
+      "instruccion": "Elige la traducción correcta.",
+      "modelo": "Kursbuch S. 94-95, 6b-7a",
+      "ejercicios": [
+        { "id": "ks1", "partes": null, "pregunta": "«Ich esse weder Fleisch noch Fisch.»", "respuesta": "No como ni carne ni pescado.", "distractores": ["Como carne y pescado.", "Como o carne o pescado."], "pista": "weder … noch = ni … ni." },
+        { "id": "ks2", "partes": null, "pregunta": "«Er spielt nicht nur Klavier, sondern auch Gitarre.»", "respuesta": "Toca el piano y además la guitarra.", "distractores": ["Solo toca el piano.", "No toca ni el piano ni la guitarra."], "pista": "nicht nur …, sondern auch = las dos cosas." },
+        { "id": "ks3", "partes": null, "pregunta": "«Der Kurs ist zwar teuer, aber gut.»", "respuesta": "El curso es caro, pero bueno.", "distractores": ["El curso no es ni caro ni bueno.", "El curso es caro o bueno."], "pista": "zwar …, aber admite algo con una pega." },
+        { "id": "ks4", "partes": null, "pregunta": "«Entweder du kommst mit oder du bleibst hier.»", "respuesta": "O vienes o te quedas aquí.", "distractores": ["Vienes y además te quedas aquí.", "Ni vienes ni te quedas aquí."], "pista": "entweder … oder = una u otra." },
+        { "id": "ks5", "partes": null, "pregunta": "«Sowohl meine Schwester als auch ich singen im Chor.»", "respuesta": "Tanto mi hermana como yo cantamos en el coro.", "distractores": ["O mi hermana o yo cantamos en el coro.", "Ni mi hermana ni yo cantamos en el coro."], "pista": "sowohl … als auch = tanto … como." }
+      ]
+    }
+  ]
+}

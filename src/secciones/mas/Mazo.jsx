@@ -103,6 +103,12 @@ function Reverso({ t }) {
               <td>{t.base}</td>
             </tr>
           )}
+          {t.preposicion && (
+            <tr>
+              <th>Preposición</th>
+              <td className="mazo-preposicion">{t.preposicion}</td>
+            </tr>
+          )}
         </tbody>
       </table>
       <span className="mazo-significado">{t.es}</span>
@@ -135,6 +141,7 @@ function ListaMazo({ mazo, estados, ahora }) {
                 <th>Präsens</th>
                 <th>Präteritum</th>
                 <th>Partizip II</th>
+                <th>Preposición</th>
                 <th>Significado</th>
                 <th>Repaso</th>
               </tr>
@@ -157,6 +164,7 @@ function ListaMazo({ mazo, estados, ahora }) {
                     <td>{t.presente}</td>
                     <td>{t.preterito}</td>
                     <td>{textoPerfecto(t)}</td>
+                    <td className="mazo-preposicion">{t.preposicion ?? '—'}</td>
                     <td>{t.es}</td>
                     <td className="mazo-estado">{estado}</td>
                   </tr>
