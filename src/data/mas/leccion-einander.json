@@ -1,0 +1,83 @@
+{
+  "id": "einander",
+  "mazo": "k11-vocabulario",
+  "titulo": "Adverbios con -einander",
+  "descripcion": "miteinander, voneinander, nebeneinander: preposición + einander para decir «el uno al otro» sin repetir la frase.",
+  "fuente": "Netzwerk neu B1, Kapitel 11: Übungsbuch S. 134 (Wortbildung) · Intensivtrainer S. 58",
+  "libro": {
+    "referencia": "Übungsbuch S. 134 («Wortbildung – Adverbien mit -einander», A-B) e Intensivtrainer S. 58 (Wortbildung, a-b)",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro hace marcar la preposición en dos frases («Felix redet gern mit Mia, Mia redet auch gern mit ihm») y luego las junta en una sola palabra: Sie reden gern miteinander.",
+      "El recuadro W dice que einander se usa casi siempre con una preposición delante, pegada: neben dem Tisch → nebeneinander; mit Diego → miteinander.",
+      "El segundo ejercicio los practica con dibujos: platos uno encima de otro, zapatos revueltos, casas pegadas unas a otras.",
+      "El Intensivtrainer insiste en übereinander, voneinander, miteinander, füreinander, auseinander y nebeneinander."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué sustituye",
+      "texto": [
+        "einander significa «el uno al otro» y siempre es recíproco: las dos partes hacen lo mismo. Sirve para no repetir dos frases seguidas.",
+        "La preposición se coloca delante y se escribe todo junto, en una sola palabra."
+      ],
+      "ejemplos": [
+        { "de": "Felix redet gern mit Mia, und Mia redet gern mit ihm. → Sie reden gern miteinander.", "es": "Felix habla a gusto con Mia y Mia con él. → Hablan a gusto entre ellos." },
+        { "de": "Ich lerne viel von meiner Freundin und sie von mir. → Wir lernen viel voneinander.", "es": "Aprendo mucho de mi amiga y ella de mí. → Aprendemos mucho el uno del otro." }
+      ],
+      "notas": [
+        "einander es invariable: no cambia con el género, el número ni el caso."
+      ]
+    },
+    {
+      "titulo": "Los más usados",
+      "tabla": {
+        "cabecera": ["Palabra", "Preposición", "Significado"],
+        "filas": [
+          ["miteinander", "mit", "entre ellos, juntos"],
+          ["voneinander", "von", "el uno del otro (aprender, separarse)"],
+          ["füreinander", "für", "el uno para el otro"],
+          ["übereinander", "über", "el uno del otro (hablar, saber); uno encima de otro"],
+          ["aneinander", "an", "el uno en el otro (denken an)"],
+          ["aufeinander", "auf", "uno sobre otro; warten auf → esperarse"],
+          ["nebeneinander", "neben", "uno al lado del otro"],
+          ["hintereinander", "hinter", "uno detrás de otro, seguidos"],
+          ["auseinander", "aus", "separados, el uno del otro"],
+          ["durcheinander", "durch", "revueltos, en desorden"],
+          ["ineinander", "in", "uno dentro de otro"],
+          ["zueinander", "zu", "el uno con el otro (freundlich sein)"],
+          ["umeinander", "um", "el uno por el otro (sich kümmern um)"],
+          ["beieinander", "bei", "juntos, unos con otros"]
+        ]
+      },
+      "notas": [
+        "hintereinander y durcheinander también se usan sin idea recíproca: dreimal hintereinander (tres veces seguidas), alles durcheinander (todo revuelto)."
+      ]
+    },
+    {
+      "titulo": "La preposición la manda el verbo",
+      "texto": [
+        "La preposición que se pega no se elige al azar: es la que rige el verbo o la que se usaría con el complemento."
+      ],
+      "ejemplos": [
+        { "de": "an jemanden denken → Sie denken oft aneinander.", "es": "pensar en alguien → Piensan a menudo el uno en el otro." },
+        { "de": "über jemanden sprechen → Sie sprechen übereinander.", "es": "hablar de alguien → Hablan el uno del otro." },
+        { "de": "sich um jemanden kümmern → Sie kümmern sich umeinander.", "es": "cuidar de alguien → Se cuidan mutuamente." },
+        { "de": "weit von jemandem wohnen → Wir wohnen nicht weit auseinander.", "es": "vivir lejos de alguien → No vivimos lejos el uno del otro." }
+      ]
+    },
+    {
+      "titulo": "No confundir con sich",
+      "texto": [
+        "Muchos verbos recíprocos también admiten sich. La diferencia: con -einander la reciprocidad queda clara; con sich la frase puede ser reflexiva («a sí mismos») o recíproca («el uno al otro»)."
+      ],
+      "ejemplos": [
+        { "de": "Sie sehen sich selten. / Sie sehen einander selten.", "es": "Se ven poco (los dos sentidos) / Se ven poco el uno al otro (solo recíproco)." },
+        { "de": "Die Häuser stehen eng nebeneinander.", "es": "Las casas están muy juntas, una al lado de la otra." }
+      ],
+      "notas": [
+        "Si hay preposición, sich no vale: no se dice «Sie reden mit sich», sino Sie reden miteinander.",
+        "Sin preposición, einander va solo: Wir helfen einander (helfen rige dativo sin preposición)."
+      ]
+    }
+  ]
+}

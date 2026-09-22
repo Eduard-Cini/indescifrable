@@ -1,0 +1,53 @@
+{
+  "tema": "relativos-was-wo",
+  "titulo": "Relativas con was y wo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 131, 9c; Übungsbuch S. 131, 9b; Intensivtrainer S. 57, 9), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "was-o-wo",
+      "titulo": "¿was o wo?",
+      "instruccion": "Completa con el relativo. Mira qué hay justo antes de la coma.",
+      "modelo": "Übungsbuch S. 131, 9b · Intensivtrainer S. 57, 9",
+      "ejercicios": [
+        { "id": "ww1", "partes": ["Mein Viertel hat viele Grünflächen, ", " mir sehr gefällt."], "respuesta": "was", "distractores": ["wo", "das", "der"], "pista": "Se refiere a toda la frase anterior → was." },
+        { "id": "ww2", "partes": ["Alles, ", " ich für den Alltag brauche, finde ich zu Fuß."], "respuesta": "was", "distractores": ["wo", "das", "die"], "pista": "Detrás de alles siempre va was." },
+        { "id": "ww3", "partes": ["Ich möchte in einem Stadtteil leben, ", " es viele kleine Läden gibt."], "respuesta": "wo", "distractores": ["was", "dem", "den"], "pista": "der Stadtteil es un lugar → wo (= in dem)." },
+        { "id": "ww4", "partes": ["Der Park, ", " wir uns immer treffen, liegt direkt am Fluss."], "respuesta": "wo", "distractores": ["was", "den", "dem"], "pista": "Lugar del encuentro → wo (= in dem)." },
+        { "id": "ww5", "partes": ["In meinem Dorf gibt es nichts, ", " abends geöffnet hat."], "respuesta": "was", "distractores": ["wo", "das", "die"], "pista": "Detrás de nichts va was." },
+        { "id": "ww6", "partes": ["Das, ", " mich hier am meisten stört, ist der Lärm."], "respuesta": "was", "distractores": ["wo", "das", "der"], "pista": "Detrás de das (pronombre) va was." },
+        { "id": "ww7", "partes": ["Zürich ist eine Stadt, ", " man sogar im Fluss schwimmen kann."], "respuesta": "wo", "distractores": ["was", "die", "der"], "pista": "Nombre de ciudad y lugar → wo." },
+        { "id": "ww8", "partes": ["Die Mieten steigen jedes Jahr, ", " für viele Familien ein Problem ist."], "respuesta": "was", "distractores": ["wo", "das", "die"], "pista": "Comenta la frase entera → was." }
+      ]
+    },
+    {
+      "id": "relativo",
+      "titulo": "was, wo o der/die/das",
+      "instruccion": "Elige el relativo correcto. Ahora también entran der, die y das.",
+      "modelo": "Kursbuch S. 131, 9b-c · Übungsbuch S. 130, 9a",
+      "ejercicios": [
+        { "id": "re1", "partes": ["Mein Nachbar, ", " meine Blumen gießt, ist sehr nett."], "respuesta": "der", "distractores": ["was", "wo", "den"], "pista": "Persona concreta y sujeto de la relativa → der." },
+        { "id": "re2", "partes": ["Die Stadt, in ", " ich wohne, hat 400.000 Einwohner."], "respuesta": "der", "distractores": ["die", "dem", "was"], "pista": "in + dativo femenino → in der (es lo mismo que wo)." },
+        { "id": "re3", "partes": ["Die Stadt, ", " ich wohne, hat 400.000 Einwohner."], "respuesta": "wo", "distractores": ["die", "der", "was"], "pista": "Sin preposición, el lugar se dice con wo." },
+        { "id": "re4", "partes": ["Die Mieten sind hier niedrig, ", " mich überrascht hat."], "respuesta": "was", "distractores": ["die", "das", "wo"], "pista": "Comenta toda la frase → was." },
+        { "id": "re5", "partes": ["Das Café, ", " direkt an der Ecke liegt, ist immer voll."], "respuesta": "das", "distractores": ["was", "wo", "dem"], "pista": "Cosa concreta y sujeto de la relativa → das." },
+        { "id": "re6", "partes": ["Das Café, ", " wir uns gestern getroffen haben, ist immer voll."], "respuesta": "wo", "distractores": ["das", "was", "den"], "pista": "Aquí el café es el lugar del encuentro → wo (= in dem)." },
+        { "id": "re7", "partes": ["Etwas, ", " eine Stadt lebenswert macht, ist die Sicherheit."], "respuesta": "was", "distractores": ["das", "wo", "die"], "pista": "Detrás de etwas va was." },
+        { "id": "re8", "partes": ["Die Kollegin, mit ", " ich zusammenarbeite, wohnt auf dem Land."], "respuesta": "der", "distractores": ["die", "was", "wo"], "pista": "mit + dativo femenino → mit der." }
+      ]
+    },
+    {
+      "id": "frases",
+      "titulo": "Di lo mismo en alemán",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 135 · Übungsbuch S. 131, 9c",
+      "ejercicios": [
+        { "id": "fr1", "partes": null, "pregunta": "«Aquí hay muchos museos, cosa que me encanta.»", "respuesta": "Hier gibt es viele Museen, was ich toll finde.", "distractores": ["Hier gibt es viele Museen, das ich toll finde.", "Hier gibt es viele Museen, wo ich toll finde.", "Hier gibt es viele Museen, was finde ich toll."], "pista": "«cosa que» comenta la frase entera → was, y el verbo al final." },
+        { "id": "fr2", "partes": null, "pregunta": "«Es una ciudad donde me gustaría vivir.»", "respuesta": "Es ist eine Stadt, wo ich gerne wohnen würde.", "distractores": ["Es ist eine Stadt, was ich gerne wohnen würde.", "Es ist eine Stadt, die ich gerne wohnen würde.", "Es ist eine Stadt, wo ich würde gerne wohnen."], "pista": "Lugar → wo; el verbo conjugado (würde) va al final." },
+        { "id": "fr3", "partes": null, "pregunta": "«Todo lo que necesito está cerca.»", "respuesta": "Alles, was ich brauche, ist in der Nähe.", "distractores": ["Alles, das ich brauche, ist in der Nähe.", "Alles, wo ich brauche, ist in der Nähe.", "Alles, was ich brauche, in der Nähe ist."], "pista": "alles + was; después de la relativa vuelve el verbo principal." },
+        { "id": "fr4", "partes": null, "pregunta": "«Aquí no hay nada que me moleste.»", "respuesta": "Es gibt hier nichts, was mich stört.", "distractores": ["Es gibt hier nichts, das mich stört.", "Es gibt hier nichts, wo mich stört.", "Es gibt hier nichts, was stört mich."], "pista": "nichts + was." },
+        { "id": "fr5", "partes": null, "pregunta": "«El barrio en el que crecí ha cambiado mucho.»", "respuesta": "Der Stadtteil, wo ich aufgewachsen bin, hat sich sehr verändert.", "distractores": ["Der Stadtteil, was ich aufgewachsen bin, hat sich sehr verändert.", "Der Stadtteil, den ich aufgewachsen bin, hat sich sehr verändert.", "Der Stadtteil, wo bin ich aufgewachsen, hat sich sehr verändert."], "pista": "Lugar → wo (= in dem)." },
+        { "id": "fr6", "partes": null, "pregunta": "«Lo que más me gusta es el río.»", "respuesta": "Das, was mir am besten gefällt, ist der Fluss.", "distractores": ["Das, das mir am besten gefällt, ist der Fluss.", "Das, wo mir am besten gefällt, ist der Fluss.", "Was, das mir am besten gefällt, ist der Fluss."], "pista": "das + was: «lo que»." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "adjetivos-nombre",
+  "titulo": "Personas a partir de adjetivos",
+  "descripcion": "Los nombres de persona formados con un adjetivo o un participio (der/die Obdachlose, der/die Angestellte). Todos llevan la indicación der/die y se declinan como adjetivos.",
+  "fuente": "Netzwerk neu B1, Kapitel 11: Kursbuch S. 129 y 135, Lernwortschatz del Übungsbuch S. 136-137 e Intensivtrainer S. 56",
+  "tarjetas": [
+    { "id": "obdachlose", "tipo": "sustantivo", "articulo": "der", "palabra": "Obdachlose", "plural": "die Obdachlosen", "es": "persona sin hogar", "nota": "der/die Obdachlose. Con ein: ein Obdachloser, eine Obdachlose. De obdachlos.", "lws": true },
+    { "id": "verletzte", "tipo": "sustantivo", "articulo": "der", "palabra": "Verletzte", "plural": "die Verletzten", "es": "herido, herida", "nota": "der/die Verletzte. Con ein: ein Verletzter, eine Verletzte. De verletzt (participio de verletzen).", "lws": true },
+    { "id": "einheimische", "tipo": "sustantivo", "articulo": "der", "palabra": "Einheimische", "plural": "die Einheimischen", "es": "lugareño, persona del lugar", "nota": "der/die Einheimische. Con ein: ein Einheimischer, eine Einheimische. De einheimisch.", "lws": true },
+    { "id": "angestellte", "tipo": "sustantivo", "articulo": "der", "palabra": "Angestellte", "plural": "die Angestellten", "es": "empleado, empleada", "nota": "der/die Angestellte. Con ein: ein Angestellter, eine Angestellte. De angestellt (participio de an|stellen)." },
+    { "id": "bekannte", "tipo": "sustantivo", "articulo": "der", "palabra": "Bekannte", "plural": "die Bekannten", "es": "conocido, conocida (persona)", "nota": "der/die Bekannte. Con ein: ein Bekannter, eine Bekannte. De bekannt." },
+    { "id": "verwandte", "tipo": "sustantivo", "articulo": "der", "palabra": "Verwandte", "plural": "die Verwandten", "es": "pariente, familiar", "nota": "der/die Verwandte. Con ein: ein Verwandter, eine Verwandte. De verwandt." },
+    { "id": "jugendliche", "tipo": "sustantivo", "articulo": "der", "palabra": "Jugendliche", "plural": "die Jugendlichen", "es": "joven, adolescente", "nota": "der/die Jugendliche. Con ein: ein Jugendlicher, eine Jugendliche. De jugendlich." },
+    { "id": "erwachsene", "tipo": "sustantivo", "articulo": "der", "palabra": "Erwachsene", "plural": "die Erwachsenen", "es": "adulto, adulta", "nota": "der/die Erwachsene. Con ein: ein Erwachsener, eine Erwachsene. De erwachsen." },
+    { "id": "arbeitslose", "tipo": "sustantivo", "articulo": "der", "palabra": "Arbeitslose", "plural": "die Arbeitslosen", "es": "persona en paro, desempleado", "nota": "der/die Arbeitslose. Con ein: ein Arbeitsloser, eine Arbeitslose. De arbeitslos." },
+    { "id": "kranke", "tipo": "sustantivo", "articulo": "der", "palabra": "Kranke", "plural": "die Kranken", "es": "enfermo, enferma", "nota": "der/die Kranke. Con ein: ein Kranker, eine Kranke. De krank." },
+    { "id": "angehoerige", "tipo": "sustantivo", "articulo": "der", "palabra": "Angehörige", "plural": "die Angehörigen", "es": "familiar, allegado (a quien se avisa)", "nota": "der/die Angehörige. Con ein: ein Angehöriger, eine Angehörige. De angehörig." },
+    { "id": "auszubildende", "tipo": "sustantivo", "articulo": "der", "palabra": "Auszubildende", "plural": "die Auszubildenden", "es": "aprendiz (en formación dual)", "nota": "der/die Auszubildende, abreviado Azubi. Con ein: ein Auszubildender, eine Auszubildende." },
+    { "id": "studierende", "tipo": "sustantivo", "articulo": "der", "palabra": "Studierende", "plural": "die Studierenden", "es": "estudiante universitario", "nota": "der/die Studierende. Con ein: ein Studierender, eine Studierende. Del participio de studieren." },
+    { "id": "reisende", "tipo": "sustantivo", "articulo": "der", "palabra": "Reisende", "plural": "die Reisenden", "es": "viajero, viajera", "nota": "der/die Reisende. Con ein: ein Reisender, eine Reisende. Del participio de reisen." },
+    { "id": "deutsche", "tipo": "sustantivo", "articulo": "der", "palabra": "Deutsche", "plural": "die Deutschen", "es": "alemán, alemana (persona)", "nota": "der/die Deutsche. Con ein: ein Deutscher, eine Deutsche. Es el caso más frecuente de esta regla." },
+    { "id": "fremde", "tipo": "sustantivo", "articulo": "der", "palabra": "Fremde", "plural": "die Fremden", "es": "desconocido; forastero", "nota": "der/die Fremde. Con ein: ein Fremder, eine Fremde. De fremd." },
+    { "id": "freiwillige", "tipo": "sustantivo", "articulo": "der", "palabra": "Freiwillige", "plural": "die Freiwilligen", "es": "voluntario, voluntaria", "nota": "der/die Freiwillige. Con ein: ein Freiwilliger, eine Freiwillige. De freiwillig." },
+    { "id": "berufstaetige", "tipo": "sustantivo", "articulo": "der", "palabra": "Berufstätige", "plural": "die Berufstätigen", "es": "persona con empleo, población activa", "nota": "der/die Berufstätige. Con ein: ein Berufstätiger, eine Berufstätige. De berufstätig." },
+    { "id": "beschaeftigte", "tipo": "sustantivo", "articulo": "der", "palabra": "Beschäftigte", "plural": "die Beschäftigten", "es": "trabajador, empleado (de una empresa)", "nota": "der/die Beschäftigte. Con ein: ein Beschäftigter, eine Beschäftigte. Del participio de beschäftigen." },
+    { "id": "selbststaendige", "tipo": "sustantivo", "articulo": "der", "palabra": "Selbstständige", "plural": "die Selbstständigen", "es": "autónomo, trabajador por cuenta propia", "nota": "der/die Selbstständige. Con ein: ein Selbstständiger, eine Selbstständige. De selbstständig." },
+    { "id": "vorgesetzte", "tipo": "sustantivo", "articulo": "der", "palabra": "Vorgesetzte", "plural": "die Vorgesetzten", "es": "superior, jefe directo", "nota": "der/die Vorgesetzte. Con ein: ein Vorgesetzter, eine Vorgesetzte." },
+    { "id": "betroffene", "tipo": "sustantivo", "articulo": "der", "palabra": "Betroffene", "plural": "die Betroffenen", "es": "persona afectada", "nota": "der/die Betroffene. Con ein: ein Betroffener, eine Betroffene. Del participio de betreffen." }
+  ]
+}

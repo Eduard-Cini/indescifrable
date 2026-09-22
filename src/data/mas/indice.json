@@ -19,6 +19,12 @@
       "titulo": "Miteinander",
       "temas": ["valores", "pasiva", "adjetivos-los-bar"],
       "mazos": ["k10-vocabulario", "k10-verbos"]
+    },
+    {
+      "numero": 11,
+      "titulo": "Stadt, Land, Fluss",
+      "temas": ["articulos-pronombres", "adjetivos-nombre", "relativos-was-wo", "einander"],
+      "mazos": ["k11-vocabulario", "k11-verbos"]
     }
   ]
 }

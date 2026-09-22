@@ -1,0 +1,97 @@
+{
+  "id": "adjetivos-nombre",
+  "mazo": "adjetivos-nombre",
+  "titulo": "Adjetivos usados como nombres",
+  "descripcion": "der Obdachlose, die Angestellte, ein Verletzter: adjetivos y participios que nombran personas y que, por dentro, siguen declinándose como adjetivos.",
+  "fuente": "Netzwerk neu B1, Kapitel 11: Kursbuch S. 129 y 135 · Übungsbuch S. 129 · Intensivtrainer S. 56",
+  "libro": {
+    "referencia": "Kursbuch S. 129 (6d, recuadro G) y S. 135 («kurz und klar»), Übungsbuch S. 129 (6a-b) e Intensivtrainer S. 56 (6b-c)",
+    "puntos": [
+      "El libro los saca del reportaje «Morgens um fünf», donde aparecen der Obdachlose, fünf Angestellte y mehrere Verletzte, y después pide completar las terminaciones.",
+      "La regla del recuadro G cabe en una frase: los adjetivos usados como nombres llevan la MISMA terminación que llevarían delante de un sustantivo.",
+      "Añade que en el diccionario aparecen con la indicación der/die: der/die Bekannte.",
+      "El Übungsbuch avisa de que hay que fijarse en el caso; el Intensivtrainer los practica con carteles y avisos de un hospital (Angehörige, Erwachsene, Jugendliche…)."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "De adjetivo a nombre",
+      "texto": [
+        "Un adjetivo o un participio puede nombrar a la persona que tiene esa cualidad. Se escribe con mayúscula, pero por dentro sigue siendo un adjetivo y conserva su terminación.",
+        "La receta es quitar el sustantivo y dejar el adjetivo tal cual estaba: der obdachlose Mann → der Obdachlose."
+      ],
+      "ejemplos": [
+        { "de": "der Obdachlose (Mann) · die Angestellte (Bäckerin) · die Verletzten (Menschen)", "es": "el hombre sin hogar · la empleada · los heridos" },
+        { "de": "ein Obdachloser · eine Angestellte · mehrere Verletzte", "es": "un hombre sin hogar · una empleada · varios heridos" }
+      ],
+      "notas": [
+        "Casi todos nombran personas. Con cosas también funciona, pero entonces es neutro: das Neueste (lo más nuevo), das Beste (lo mejor)."
+      ]
+    },
+    {
+      "titulo": "Las terminaciones son las del adjetivo",
+      "texto": [
+        "No hay que aprender nada nuevo: es la declinación del adjetivo de siempre. Con der/die el adjetivo se apoya en el artículo; con ein hay que marcar el género; sin artículo, la terminación es la del artículo que falta."
+      ],
+      "tabla": {
+        "cabecera": ["", "con der/die", "con ein/eine", "sin artículo"],
+        "filas": [
+          ["Masculino (él)", "der Angestellte", "ein Angestellter", "Angestellter"],
+          ["Femenino (ella)", "die Angestellte", "eine Angestellte", "Angestellte"],
+          ["Plural (ellos/ellas)", "die Angestellten", "meine Angestellten", "Angestellte"]
+        ]
+      },
+      "notas": [
+        "El caso que más se falla es el masculino con ein: ein Angestellter, no «ein Angestellte»."
+      ]
+    },
+    {
+      "titulo": "También cambian con el caso",
+      "texto": [
+        "Como cualquier adjetivo, la terminación cambia con el caso: en acusativo masculino, en dativo y en todo el plural con artículo aparece -en."
+      ],
+      "tabla": {
+        "cabecera": ["Caso", "con artículo determinado", "con artículo indefinido"],
+        "filas": [
+          ["Nominativo", "der Verletzte", "ein Verletzter"],
+          ["Acusativo", "den Verletzten", "einen Verletzten"],
+          ["Dativo", "dem Verletzten", "einem Verletzten"],
+          ["Plural (nom. y ac.)", "die Verletzten", "keine Verletzten"],
+          ["Plural (dativo)", "den Verletzten", "vielen Verletzten"]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Der Arzt spricht mit einem Verletzten.", "es": "El médico habla con un herido." },
+        { "de": "Gestern habe ich mit einer Verwandten gesprochen.", "es": "Ayer hablé con una parienta." },
+        { "de": "Er ist Sozialarbeiter und betreut Jugendliche.", "es": "Es trabajador social y atiende a jóvenes." }
+      ]
+    },
+    {
+      "titulo": "Los del capítulo",
+      "texto": [
+        "Muchos vienen de un participio (angestellt de anstellen, verletzt de verletzen, studierend de studieren) y otros de un adjetivo normal (obdachlos, krank, bekannt)."
+      ],
+      "tabla": {
+        "cabecera": ["Base", "Persona", "Significado"],
+        "filas": [
+          ["obdachlos", "der/die Obdachlose", "persona sin hogar"],
+          ["angestellt", "der/die Angestellte", "empleado/a"],
+          ["verletzt", "der/die Verletzte", "herido/a"],
+          ["bekannt", "der/die Bekannte", "conocido/a"],
+          ["verwandt", "der/die Verwandte", "pariente"],
+          ["jugendlich", "der/die Jugendliche", "joven, adolescente"],
+          ["erwachsen", "der/die Erwachsene", "adulto/a"],
+          ["arbeitslos", "der/die Arbeitslose", "persona en paro"],
+          ["krank", "der/die Kranke", "enfermo/a"],
+          ["einheimisch", "der/die Einheimische", "lugareño/a"],
+          ["angehörig", "der/die Angehörige", "familiar, allegado/a"],
+          ["auszubildend", "der/die Auszubildende", "aprendiz"]
+        ]
+      },
+      "notas": [
+        "Con deutsch pasa exactamente lo mismo: ein Deutscher, eine Deutsche, die Deutschen.",
+        "Cuidado: der Beamte (funcionario) sigue esta regla, pero su femenino es die Beamtin, un sustantivo normal."
+      ]
+    }
+  ]
+}

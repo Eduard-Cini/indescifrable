@@ -1,0 +1,51 @@
+{
+  "tema": "einander",
+  "titulo": "Adverbios con -einander",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 134, A-B; Intensivtrainer S. 58, a-b), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Cuál encaja?",
+      "instruccion": "Elige el adverbio con -einander que corresponde.",
+      "modelo": "Übungsbuch S. 134, A",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["Mara und ihre Eltern sehen sich selten, aber sie denken oft ", "."], "respuesta": "aneinander", "distractores": ["übereinander", "auseinander", "nebeneinander"], "pista": "an jemanden denken → aneinander." },
+        { "id": "cu2", "partes": ["Meine Freundin und ich lachen viel, wir haben viel Spaß ", "."], "respuesta": "miteinander", "distractores": ["voneinander", "füreinander", "übereinander"], "pista": "Spaß mit jemandem haben → miteinander." },
+        { "id": "cu3", "partes": ["Unser Team ist super: Alle haben gute Ideen und wir lernen viel ", "."], "respuesta": "voneinander", "distractores": ["miteinander", "übereinander", "beieinander"], "pista": "von jemandem lernen → voneinander." },
+        { "id": "cu4", "partes": ["Meine Großeltern führen eine gute Beziehung: Sie sind immer ", " da."], "respuesta": "füreinander", "distractores": ["voneinander", "aneinander", "hintereinander"], "pista": "für jemanden da sein → füreinander." },
+        { "id": "cu5", "partes": ["Wir wohnen nicht weit ", ", nur zwei Straßen weiter."], "respuesta": "auseinander", "distractores": ["ineinander", "nebeneinander", "zueinander"], "pista": "weit von jemandem weg wohnen → auseinander." },
+        { "id": "cu6", "partes": ["In der Altstadt stehen die Häuser eng ", "."], "respuesta": "nebeneinander", "distractores": ["übereinander", "hintereinander", "auseinander"], "pista": "neben dem Haus → nebeneinander." },
+        { "id": "cu7", "partes": ["Nach dem Umzug lagen alle Sachen ", " im Flur."], "respuesta": "durcheinander", "distractores": ["nebeneinander", "aufeinander", "voneinander"], "pista": "durcheinander = revueltos, en desorden." },
+        { "id": "cu8", "partes": ["Die Kollegen sind immer freundlich ", "."], "respuesta": "zueinander", "distractores": ["miteinander", "aneinander", "übereinander"], "pista": "freundlich zu jemandem sein → zueinander." }
+      ]
+    },
+    {
+      "id": "de-dos-frases",
+      "titulo": "Dos frases en una",
+      "instruccion": "Di lo mismo con una sola frase.",
+      "modelo": "Übungsbuch S. 134 (recuadro W) · Intensivtrainer S. 58, a",
+      "ejercicios": [
+        { "id": "df1", "partes": null, "pregunta": "Ich helfe meinem Nachbarn und mein Nachbar hilft mir.", "respuesta": "Wir helfen einander.", "distractores": ["Wir helfen miteinander.", "Wir helfen voneinander.", "Wir helfen uns einander."], "pista": "helfen rige dativo sin preposición: einander va solo." },
+        { "id": "df2", "partes": null, "pregunta": "Ich rede gern mit Diego und Diego redet gern mit mir.", "respuesta": "Wir reden gern miteinander.", "distractores": ["Wir reden gern voneinander.", "Wir reden gern übereinander.", "Wir reden gern mit einander."], "pista": "mit + einander se escribe junto: miteinander." },
+        { "id": "df3", "partes": null, "pregunta": "Sie erzählt von ihm und er erzählt von ihr.", "respuesta": "Sie erzählen voneinander.", "distractores": ["Sie erzählen miteinander.", "Sie erzählen füreinander.", "Sie erzählen aneinander."], "pista": "von jemandem erzählen → voneinander." },
+        { "id": "df4", "partes": null, "pregunta": "Lena wartet auf Tim und Tim wartet auf Lena.", "respuesta": "Sie warten aufeinander.", "distractores": ["Sie warten miteinander.", "Sie warten nebeneinander.", "Sie warten übereinander."], "pista": "auf jemanden warten → aufeinander." },
+        { "id": "df5", "partes": null, "pregunta": "Die Kinder spielen nicht allein: Jedes spielt mit den anderen.", "respuesta": "Die Kinder spielen miteinander.", "distractores": ["Die Kinder spielen nebeneinander.", "Die Kinder spielen durcheinander.", "Die Kinder spielen auseinander."], "pista": "mit jemandem spielen → miteinander." },
+        { "id": "df6", "partes": null, "pregunta": "Der Stuhl steht neben dem Tisch und der Tisch neben dem Stuhl.", "respuesta": "Stuhl und Tisch stehen nebeneinander.", "distractores": ["Stuhl und Tisch stehen aufeinander.", "Stuhl und Tisch stehen ineinander.", "Stuhl und Tisch stehen auseinander."], "pista": "neben dem Tisch → nebeneinander." }
+      ]
+    },
+    {
+      "id": "preposicion",
+      "titulo": "La preposición que rige el verbo",
+      "instruccion": "Completa la preposición que se pega a -einander.",
+      "modelo": "Intensivtrainer S. 58, b",
+      "ejercicios": [
+        { "id": "pp1", "partes": ["Die Nachbarn kümmern sich ", "einander."], "respuesta": "um", "distractores": ["mit", "für", "von"], "pista": "sich um jemanden kümmern → umeinander." },
+        { "id": "pp2", "partes": ["Im Team sind alle freundlich ", "einander."], "respuesta": "zu", "distractores": ["mit", "für", "an"], "pista": "freundlich zu jemandem sein → zueinander." },
+        { "id": "pp3", "partes": ["Seit dem Umzug denken sie viel ", "einander."], "respuesta": "an", "distractores": ["über", "auf", "von"], "pista": "an jemanden denken → aneinander." },
+        { "id": "pp4", "partes": ["Wir haben gestern lange ", "einander telefoniert."], "respuesta": "mit", "distractores": ["von", "zu", "an"], "pista": "mit jemandem telefonieren → miteinander." },
+        { "id": "pp5", "partes": ["Die Läufer kamen ", "einander ins Ziel."], "respuesta": "hinter", "distractores": ["neben", "auf", "in"], "pista": "hintereinander = uno detrás de otro." },
+        { "id": "pp6", "partes": ["Die beiden wissen viel ", "einander."], "respuesta": "über", "distractores": ["an", "auf", "aus"], "pista": "über jemanden wissen → übereinander." }
+      ]
+    }
+  ]
+}

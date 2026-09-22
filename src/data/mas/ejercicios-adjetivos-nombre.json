@@ -1,0 +1,54 @@
+{
+  "tema": "adjetivos-nombre",
+  "titulo": "Adjetivos usados como nombres",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 129, 6d; Übungsbuch S. 129, 6a-b; Intensivtrainer S. 56, 6b-c), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "terminaciones",
+      "titulo": "La terminación que falta",
+      "instruccion": "Completa la palabra con la terminación correcta.",
+      "modelo": "Kursbuch S. 129, 6d · Übungsbuch S. 129, 6a",
+      "ejercicios": [
+        { "id": "te1", "partes": ["Ferdy ist ", " im Krankenhaus und arbeitet oft nachts."], "respuesta": "Angestellter", "distractores": ["Angestellte", "Angestellten", "Angestelltes"], "pista": "Sin artículo, masculino nominativo → -er, como der." },
+        { "id": "te2", "partes": ["Die vier ", " der Bäckerei sind schon um zwei Uhr da."], "respuesta": "Angestellten", "distractores": ["Angestellte", "Angestellter", "Angestelltem"], "pista": "Plural con die → -en." },
+        { "id": "te3", "partes": ["Nick, ein ", " von mir, arbeitet bei der Stadt."], "respuesta": "Bekannter", "distractores": ["Bekannte", "Bekannten", "Bekanntes"], "pista": "Con ein hay que marcar el masculino → -er." },
+        { "id": "te4", "partes": ["Gestern habe ich mit einer ", " telefoniert."], "respuesta": "Verwandten", "distractores": ["Verwandte", "Verwandter", "Verwandtem"], "pista": "Dativo femenino (einer) → -en." },
+        { "id": "te5", "partes": ["Er ist Sozialarbeiter und betreut ", " im Viertel."], "respuesta": "Jugendliche", "distractores": ["Jugendlichen", "Jugendlicher", "Jugendliches"], "pista": "Plural sin artículo, acusativo → -e, como die." },
+        { "id": "te6", "partes": ["Sie arbeitet auch mit ", " aus anderen Stadtteilen."], "respuesta": "Jugendlichen", "distractores": ["Jugendliche", "Jugendlicher", "Jugendlichem"], "pista": "Dativo plural → -en, como den." },
+        { "id": "te7", "partes": ["In der Nacht wurden mehrere ", " eingeliefert."], "respuesta": "Verletzte", "distractores": ["Verletzten", "Verletzter", "Verletztes"], "pista": "Detrás de mehrere el plural se comporta como sin artículo → -e." },
+        { "id": "te8", "partes": ["Der Pfleger kümmert sich um den ", " auf Zimmer 12."], "respuesta": "Kranken", "distractores": ["Kranke", "Kranker", "Krankes"], "pista": "Acusativo masculino (den) → -en." }
+      ]
+    },
+    {
+      "id": "formas",
+      "titulo": "Elige la forma",
+      "instruccion": "¿Cómo se dice? Elige la forma correcta.",
+      "modelo": "Kursbuch S. 135 · Intensivtrainer S. 56, 6c",
+      "ejercicios": [
+        { "id": "fo1", "partes": null, "pregunta": "un empleado (nominativo)", "respuesta": "ein Angestellter", "distractores": ["ein Angestellte", "ein Angestellten", "einer Angestellter"], "pista": "Con ein, el masculino se marca con -er." },
+        { "id": "fo2", "partes": null, "pregunta": "la empleada (nominativo)", "respuesta": "die Angestellte", "distractores": ["die Angestellten", "die Angestellter", "eine Angestellten"], "pista": "Con die, femenino singular → -e." },
+        { "id": "fo3", "partes": null, "pregunta": "los empleados (nominativo)", "respuesta": "die Angestellten", "distractores": ["die Angestellte", "die Angestellter", "den Angestellte"], "pista": "Plural con die → -en." },
+        { "id": "fo4", "partes": null, "pregunta": "a un herido (acusativo)", "respuesta": "einen Verletzten", "distractores": ["einen Verletzter", "ein Verletzten", "einem Verletzten"], "pista": "Acusativo masculino → einen + -en." },
+        { "id": "fo5", "partes": null, "pregunta": "con una conocida (dativo)", "respuesta": "mit einer Bekannten", "distractores": ["mit einer Bekannte", "mit eine Bekannten", "mit einem Bekannten"], "pista": "Dativo femenino → einer + -en." },
+        { "id": "fo6", "partes": null, "pregunta": "heridos (plural, sin artículo)", "respuesta": "Verletzte", "distractores": ["Verletzten", "Verletzter", "Verletztes"], "pista": "Sin artículo, plural nominativo → -e." },
+        { "id": "fo7", "partes": null, "pregunta": "un alemán (nominativo)", "respuesta": "ein Deutscher", "distractores": ["ein Deutsche", "ein Deutschen", "einer Deutsche"], "pista": "deutsch se comporta igual: ein Deutscher, eine Deutsche, die Deutschen." }
+      ]
+    },
+    {
+      "id": "personas",
+      "titulo": "¿Quién es quién?",
+      "instruccion": "Elige la palabra que encaja en la definición.",
+      "modelo": "Intensivtrainer S. 56, 6b-c",
+      "ejercicios": [
+        { "id": "pe1", "partes": ["Menschen ohne Wohnung nennt man ", "."], "respuesta": "Obdachlose", "distractores": ["Angestellte", "Verwandte", "Einheimische"], "pista": "obdachlos = sin techo." },
+        { "id": "pe2", "partes": ["Menschen, die keine Arbeit haben, sind ", "."], "respuesta": "Arbeitslose", "distractores": ["Auszubildende", "Berufstätige", "Reisende"], "pista": "arbeitslos = en paro." },
+        { "id": "pe3", "partes": ["Die Leute, die schon immer hier leben, sind die ", "."], "respuesta": "Einheimischen", "distractores": ["Reisenden", "Fremden", "Auszubildenden"], "pista": "einheimisch = del lugar." },
+        { "id": "pe4", "partes": ["Ein junger Mensch zwischen 14 und 17 ist ", "."], "respuesta": "ein Jugendlicher", "distractores": ["ein Erwachsener", "ein Verwandter", "ein Angehöriger"], "pista": "jugendlich = adolescente; con ein, masculino → -er." },
+        { "id": "pe5", "partes": ["Kinder unter 16 dürfen nur in Begleitung ", " hinein."], "respuesta": "eines Erwachsenen", "distractores": ["ein Erwachsener", "einen Erwachsenen", "einem Erwachsenen"], "pista": "in Begleitung + genitivo masculino → eines Erwachsenen." },
+        { "id": "pe6", "partes": ["Im Krankenhaus kümmert man sich um die ", "."], "respuesta": "Kranken", "distractores": ["Bekannten", "Einheimischen", "Reisenden"], "pista": "krank = enfermo; plural con die → -en." },
+        { "id": "pe7", "partes": ["Wer eine Ausbildung im Betrieb macht, ist ", "."], "respuesta": "ein Auszubildender", "distractores": ["ein Angestellter", "ein Studierender", "ein Berufstätiger"], "pista": "die Ausbildung → der/die Auszubildende." },
+        { "id": "pe8", "partes": ["Name und Telefonnummer ", ", der im Notfall verständigt werden soll:"], "respuesta": "des Angehörigen", "distractores": ["der Angehörige", "den Angehörigen", "dem Angehörigen"], "pista": "Genitivo masculino con der → des …-en." }
+      ]
+    }
+  ]
+}

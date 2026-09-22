@@ -1,0 +1,84 @@
+{
+  "id": "articulos-pronombres",
+  "mazo": "k11-vocabulario",
+  "titulo": "Artículos como pronombres",
+  "descripcion": "einer, keiner, meiner, eins, welche: cuando el artículo sustituye al sustantivo en vez de acompañarlo. Y las formas con irgend-.",
+  "fuente": "Netzwerk neu B1, Kapitel 11: Kursbuch S. 128 y 135 · Übungsbuch S. 128 · Intensivtrainer S. 55",
+  "libro": {
+    "referencia": "Kursbuch S. 128 (4c-5, recuadros G) y S. 135 («kurz und klar»), Übungsbuch S. 128 (4a-d) e Intensivtrainer S. 55 (4-5)",
+    "puntos": [
+      "El libro parte de un foro sobre vivir en la ciudad o en el campo y pide marcar en los comentarios los artículos que funcionan como pronombres.",
+      "La tabla del recuadro G compara el artículo delante del sustantivo con el pronombre que lo sustituye: solo se apartan el masculino nominativo (einer) y el neutro (eins).",
+      "Los ejemplos que da son: «Bin ich ein Landmensch? Ja, ich bin einer.», «Ist das dein Haus? Ja, das ist meins.» e «Interessante Leute? Hier trifft man immer welche.»",
+      "El segundo recuadro G añade irgendein/irgendeine como artículo, irgendwelche para el plural e irgendeins como pronombre."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Cuando el artículo se queda solo",
+      "texto": [
+        "En alemán, ein, kein y los posesivos (mein, dein, sein…) también pueden ir SIN sustantivo, cuando ya se sabe de qué se habla. Entonces dejan de ser artículos y pasan a ser pronombres.",
+        "El cambio es pequeño pero obligatorio: el pronombre tiene que mostrar el género, porque el sustantivo que lo mostraba ya no está."
+      ],
+      "ejemplos": [
+        { "de": "Bin ich ein Landmensch? – Ja, ich bin einer.", "es": "¿Soy de campo? – Sí, lo soy." },
+        { "de": "Ist das dein Haus? – Ja, das ist meins.", "es": "¿Es tu casa? – Sí, es la mía." },
+        { "de": "Interessante Leute? Hier trifft man immer welche.", "es": "¿Gente interesante? Aquí siempre te encuentras a alguien." }
+      ]
+    },
+    {
+      "titulo": "La tabla",
+      "texto": [
+        "Las formas son las del artículo, con dos retoques. Compara la primera fila con der Mann / das Haus y verás dónde está la diferencia."
+      ],
+      "tabla": {
+        "cabecera": ["Caso", "der (masculino)", "das (neutro)", "die (femenino)", "die (plural)"],
+        "filas": [
+          ["Nominativo", "einer / keiner / meiner", "eins / keins / meins", "eine / keine / meine", "welche / keine / meine"],
+          ["Acusativo", "einen / keinen / meinen", "eins / keins / meins", "eine / keine / meine", "welche / keine / meine"],
+          ["Dativo", "einem / keinem / meinem", "einem / keinem / meinem", "einer / keiner / meiner", "welchen / keinen / meinen"]
+        ]
+      },
+      "notas": [
+        "Solo dos casillas se apartan del artículo: el masculino nominativo (ein Mann → einer) y el neutro en nominativo y acusativo (ein Haus → eins). Todo lo demás se escribe igual que delante del sustantivo.",
+        "La marca que aparece (-er, -s) es justo la del artículo determinado: der → einer, das → eins."
+      ]
+    },
+    {
+      "titulo": "El plural: welche",
+      "texto": [
+        "ein no tiene plural, así que en plural el pronombre indefinido es welche («algunos, unos cuantos»). En dativo, welchen."
+      ],
+      "ejemplos": [
+        { "de": "Gibt es hier Cafés? – Ja, da drüben sind welche.", "es": "¿Hay cafeterías por aquí? – Sí, ahí enfrente hay algunas." },
+        { "de": "Brauchst du Stifte? – Danke, ich habe schon welche.", "es": "¿Necesitas bolis? – Gracias, ya tengo algunos." },
+        { "de": "Nette Nachbarn? Ich rede jeden Tag mit welchen.", "es": "¿Vecinos simpáticos? Hablo con algunos todos los días." }
+      ],
+      "notas": [
+        "En negativo no se usa welche: el plural de kein es keine. Hier gibt es keine."
+      ]
+    },
+    {
+      "titulo": "irgendein, irgendeine, irgendwelche",
+      "texto": [
+        "irgend- delante del artículo significa «uno cualquiera», sin importar cuál. Se declina exactamente como ein/eine, y en plural se usa irgendwelche."
+      ],
+      "tabla": {
+        "cabecera": ["Función", "Singular", "Plural"],
+        "filas": [
+          ["Como artículo (con sustantivo)", "irgendein Café · irgendeine Bar · irgendeinen Freund", "irgendwelche Cafés"],
+          ["Como pronombre (sin sustantivo)", "irgendeiner · irgendeine · irgendeins", "irgendwelche"]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Wir finden irgendein Café.", "es": "Ya encontraremos alguna cafetería, cualquiera." },
+        { "de": "Café? Wir finden irgendeins.", "es": "¿Cafetería? Ya encontraremos alguna." },
+        { "de": "Gibt es hier irgendwelche Cafés?", "es": "¿Hay alguna cafetería por aquí?" }
+      ],
+      "notas": [
+        "irgend- también se pega a otras palabras: irgendjemand (alguien), irgendwas (algo), irgendwo (en algún sitio), irgendwann (alguna vez).",
+        "irgendein solo existe en singular; para el plural no hay «irgendeine Cafés», sino irgendwelche Cafés."
+      ]
+    }
+  ]
+}

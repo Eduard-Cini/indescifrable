@@ -1,0 +1,65 @@
+{
+  "tema": "articulos-pronombres",
+  "titulo": "Artículos como pronombres",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 128, 4d; Übungsbuch S. 128, 4c-d; Intensivtrainer S. 55, 4-5), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "pronombre",
+      "titulo": "einer, eins, eine, welche",
+      "instruccion": "Completa la respuesta con el pronombre. Fíjate en el género y en el caso.",
+      "modelo": "Kursbuch S. 128, 4d · Übungsbuch S. 128, 4c",
+      "ejercicios": [
+        { "id": "pr1", "partes": ["Gibt es hier in der Nähe eine Bank? – Ja, dort drüben ist ", "."], "respuesta": "eine", "distractores": ["einer", "eins", "welche"], "pista": "die Bank, nominativo femenino → eine (igual que el artículo)." },
+        { "id": "pr2", "partes": ["Ich brauche noch einen Stadtplan. – Schau mal, hier ist ", "."], "respuesta": "einer", "distractores": ["ein", "eine", "eins"], "pista": "der Stadtplan, nominativo masculino → einer (el pronombre sí marca el género)." },
+        { "id": "pr3", "partes": ["Habt ihr ein Schwimmbad im Viertel? – Nein, wir haben leider ", "."], "respuesta": "keins", "distractores": ["keinen", "keine", "keiner"], "pista": "das Schwimmbad, acusativo neutro → keins." },
+        { "id": "pr4", "partes": ["Wo finde ich hier ein Café? – Im Zentrum gibt es natürlich ", "."], "respuesta": "eins", "distractores": ["einen", "eine", "einer"], "pista": "es gibt + acusativo; das Café es neutro → eins." },
+        { "id": "pr5", "partes": ["In welchem Park kann man gut joggen? – Es gibt nur ", ", den Stadtgarten."], "respuesta": "einen", "distractores": ["einer", "ein", "eins"], "pista": "der Park, acusativo masculino → einen (igual que el artículo)." },
+        { "id": "pr6", "partes": ["Gibt es hier Geschäfte für Sportsachen? – Ja, im Zentrum sind ", "."], "respuesta": "welche", "distractores": ["welchen", "eine", "einer"], "pista": "Plural indefinido → welche; ein no tiene plural." },
+        { "id": "pr7", "partes": ["Im Dorf ist es ruhig. Hier ist ", ", der mich stört."], "respuesta": "keiner", "distractores": ["keinen", "keins", "keine"], "pista": "Nominativo masculino: keiner = «no hay nadie que…»." }
+      ]
+    },
+    {
+      "id": "posesivos",
+      "titulo": "meiner, deins, ihrer",
+      "instruccion": "Completa con el posesivo usado como pronombre.",
+      "modelo": "Übungsbuch S. 128, 4d",
+      "ejercicios": [
+        { "id": "po1", "partes": ["Wem gehört dieser Schlüssel? Ist das ", ", David?"], "respuesta": "deiner", "distractores": ["deins", "deine", "deinen"], "pista": "der Schlüssel, nominativo masculino → deiner." },
+        { "id": "po2", "partes": ["Hast du meine Jacke gesehen? – Ist das da hinten nicht ", "?"], "respuesta": "deine", "distractores": ["deiner", "deins", "deinen"], "pista": "die Jacke, nominativo femenino → deine." },
+        { "id": "po3", "partes": ["Ist das hier der Rucksack von Ben? – Ja, das ist ", "."], "respuesta": "seiner", "distractores": ["seins", "seine", "seinen"], "pista": "der Rucksack, nominativo masculino → seiner." },
+        { "id": "po4", "partes": ["Der Kalender gehört doch Mama, oder? – Ja, das ist ", "."], "respuesta": "ihrer", "distractores": ["ihres", "ihre", "ihren"], "pista": "der Kalender + posesivo de ella (ihr) → ihrer." },
+        { "id": "po5", "partes": ["Mein Handy ist kaputt. Kann ich mal kurz ", " benutzen?"], "respuesta": "deins", "distractores": ["deiner", "deinen", "deine"], "pista": "das Handy, acusativo neutro → deins." },
+        { "id": "po6", "partes": ["Ben, leg bitte deinen Pullover in den Schrank. – Das ist nicht ", ". Der gehört David."], "respuesta": "meiner", "distractores": ["meins", "meine", "meinen"], "pista": "der Pullover, nominativo masculino → meiner." },
+        { "id": "po7", "partes": ["Sind das eure Sachen? – Nein, das sind nicht ", "."], "respuesta": "unsere", "distractores": ["unserer", "unseres", "unseren"], "pista": "Plural nominativo → unsere (igual que el artículo)." }
+      ]
+    },
+    {
+      "id": "irgend",
+      "titulo": "irgendein, irgendeine, irgendwelche",
+      "instruccion": "Completa con la forma de irgend- que toca.",
+      "modelo": "Kursbuch S. 128, 5 · Intensivtrainer S. 55, 5",
+      "ejercicios": [
+        { "id": "ir1", "partes": ["Kennst du hier ", " gutes Restaurant?"], "respuesta": "irgendein", "distractores": ["irgendeinen", "irgendeine", "irgendeins"], "pista": "das Restaurant, acusativo neutro, con sustantivo → irgendein." },
+        { "id": "ir2", "partes": ["Gibt es in diesem Viertel ", " Cafés?"], "respuesta": "irgendwelche", "distractores": ["irgendein", "irgendeine", "irgendeinen"], "pista": "En plural no hay irgendein: se usa irgendwelche." },
+        { "id": "ir3", "partes": ["Ein Café? Keine Sorge, wir finden schon ", "."], "respuesta": "irgendeins", "distractores": ["irgendein", "irgendeiner", "irgendwelche"], "pista": "Sin sustantivo y en neutro → irgendeins." },
+        { "id": "ir4", "partes": ["Ruf einfach ", " Freund an, der hilft dir bestimmt."], "respuesta": "irgendeinen", "distractores": ["irgendein", "irgendeiner", "irgendeins"], "pista": "der Freund, acusativo masculino → irgendeinen." },
+        { "id": "ir5", "partes": ["Ich möchte nicht in ", " kleinen Wohnung im Zentrum leben."], "respuesta": "irgendeiner", "distractores": ["irgendeine", "irgendeinem", "irgendeinen"], "pista": "in + dativo, die Wohnung → irgendeiner." },
+        { "id": "ir6", "partes": ["Wer war das? – ", " Angestellte aus der Firma. Ich weiß nicht, wie sie heißt."], "respuesta": "Irgendeine", "distractores": ["Irgendein", "Irgendeiner", "Irgendwelche"], "pista": "die Angestellte, nominativo femenino → irgendeine." }
+      ]
+    },
+    {
+      "id": "articulo-o-pronombre",
+      "titulo": "¿Artículo o pronombre?",
+      "instruccion": "Fíjate en si detrás hay sustantivo o no.",
+      "modelo": "Kursbuch S. 128, 4c · S. 135",
+      "ejercicios": [
+        { "id": "ap1", "partes": ["Bin ich ", " Landmensch? Ich glaube schon."], "respuesta": "ein", "distractores": ["einer", "einen", "eins"], "pista": "Va delante del sustantivo → artículo normal: ein Landmensch." },
+        { "id": "ap2", "partes": ["Bist du ein Landmensch? – Anscheinend bin ich ", "."], "respuesta": "einer", "distractores": ["ein", "einen", "eins"], "pista": "Sin sustantivo, masculino nominativo → einer." },
+        { "id": "ap3", "partes": ["Hier in der Stadt brauche ich ", " Auto."], "respuesta": "kein", "distractores": ["keins", "keiner", "keine"], "pista": "Delante del sustantivo el neutro no lleva marca: kein Auto." },
+        { "id": "ap4", "partes": ["Auf dem Land braucht man ein Auto. Hier brauche ich ", "."], "respuesta": "keins", "distractores": ["kein", "keinen", "keine"], "pista": "Sin sustantivo, el neutro sí se marca: keins." },
+        { "id": "ap5", "partes": ["Ist das ", " Haus?"], "respuesta": "dein", "distractores": ["deins", "deiner", "deine"], "pista": "Con sustantivo → posesivo sin terminación: dein Haus." },
+        { "id": "ap6", "partes": ["Ja, das ist ", "."], "respuesta": "meins", "distractores": ["mein", "meiner", "meine"], "pista": "Sin sustantivo, neutro → meins." }
+      ]
+    }
+  ]
+}

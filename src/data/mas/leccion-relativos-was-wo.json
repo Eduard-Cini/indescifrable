@@ -1,0 +1,85 @@
+{
+  "id": "relativos-was-wo",
+  "mazo": "k11-vocabulario",
+  "titulo": "Relativas con was y wo",
+  "descripcion": "Cuándo la relativa no empieza por der/die/das: was si se refiere a una frase entera o a alles, etwas, nichts, vieles o das; wo si se refiere a un lugar.",
+  "fuente": "Netzwerk neu B1, Kapitel 11: Kursbuch S. 131 y 135 · Übungsbuch S. 130-131 · Intensivtrainer S. 57",
+  "libro": {
+    "referencia": "Kursbuch S. 131 (9b-c, recuadro G) y S. 135 («kurz und klar»), Übungsbuch S. 130-131 (9a-d) e Intensivtrainer S. 57 (9)",
+    "puntos": [
+      "El recuadro G resume la regla en dos líneas: was se refiere a frases enteras o a pronombres como alles, etwas, nichts o das; wo se refiere a indicaciones de lugar.",
+      "Los ejemplos del «kurz und klar» son del tema del capítulo: parques, cultura, el tiempo y las ciudades donde a uno le gustaría vivir.",
+      "El Übungsbuch enseña la equivalencia que más ayuda: «die Stadt, in der ich wohne» = «die Stadt, wo ich wohne».",
+      "Antes de was y de wo hay coma, como en cualquier relativa; el verbo conjugado va al final."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "was: se refiere a toda la frase",
+      "texto": [
+        "Cuando el relativo no sustituye a un sustantivo sino a TODO lo que se acaba de decir, se usa was. En español sería «lo cual» o «cosa que»."
+      ],
+      "ejemplos": [
+        { "de": "Hier gibt es viele Parks, was ich toll finde.", "es": "Aquí hay muchos parques, cosa que me parece genial." },
+        { "de": "Die Stadt tut auch etwas für ärmere Menschen, was ich sehr wichtig finde.", "es": "La ciudad también hace algo por la gente con menos recursos, lo cual me parece muy importante." },
+        { "de": "Die Mieten steigen jedes Jahr, was für viele Familien ein Problem ist.", "es": "Los alquileres suben cada año, lo cual es un problema para muchas familias." }
+      ],
+      "notas": [
+        "Aquí nunca se usa das: «Hier gibt es viele Parks, das ich toll finde» es un error clásico."
+      ]
+    },
+    {
+      "titulo": "was: detrás de alles, etwas, nichts, vieles y das",
+      "texto": [
+        "was es también el relativo de los pronombres indefinidos y de das, porque ninguno de ellos tiene género."
+      ],
+      "tabla": {
+        "cabecera": ["Palabra anterior", "Ejemplo"],
+        "filas": [
+          ["alles", "Alles, was man zum Leben braucht, gibt es hier."],
+          ["etwas", "Viel Kultur ist etwas, was eine Stadt attraktiv macht."],
+          ["nichts", "Das Wetter ist nichts, was für Rankings wichtig ist."],
+          ["vieles", "Mir gefällt vieles, was sich im Viertel verändert hat."],
+          ["das", "Das, was mir am besten gefällt, ist der Fluss."]
+        ]
+      },
+      "notas": [
+        "Con un superlativo en neutro pasa lo mismo: das Beste, was mir passiert ist."
+      ]
+    },
+    {
+      "titulo": "wo: se refiere a un lugar",
+      "texto": [
+        "Si lo anterior es un lugar (die Stadt, der Park, das Dorf, der Ort, der Stadtteil…), la relativa puede empezar por wo. Es la versión corta de «preposición + relativo»."
+      ],
+      "ejemplos": [
+        { "de": "Die Stadt, in der ich wohne. = Die Stadt, wo ich wohne.", "es": "La ciudad en la que vivo." },
+        { "de": "Hamburg ist eine Stadt, wo ich gerne wohnen würde.", "es": "Hamburgo es una ciudad en la que viviría a gusto." },
+        { "de": "Ich lebe gern in einer Stadt, wo der Arbeitstag nicht so früh beginnt.", "es": "Me gusta vivir en una ciudad donde la jornada no empieza tan pronto." }
+      ],
+      "notas": [
+        "wo vale para el lugar, no para personas ni cosas: der Nachbar, der meine Blumen gießt (no «wo meine Blumen gießt»).",
+        "Con nombres de ciudad o de país, wo es casi obligatorio: Zürich, wo ich studiert habe."
+      ]
+    },
+    {
+      "titulo": "Cómo elegir",
+      "texto": [
+        "Basta con mirar la palabra que va justo antes de la coma."
+      ],
+      "tabla": {
+        "cabecera": ["Antes de la coma hay…", "Relativo"],
+        "filas": [
+          ["una frase entera", "was"],
+          ["alles, etwas, nichts, vieles, das", "was"],
+          ["un lugar (Stadt, Park, Ort, Dorf…)", "wo (o «preposición + der/die/das»)"],
+          ["una persona o una cosa concreta", "der / die / das, con el caso que pida el verbo"]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Das Café, das an der Ecke liegt, ist immer voll.", "es": "La cafetería que está en la esquina siempre está llena. (cosa concreta)" },
+        { "de": "Das Café, wo wir uns getroffen haben, ist immer voll.", "es": "La cafetería donde quedamos siempre está llena. (lugar)" }
+      ]
+    }
+  ]
+}
