@@ -1,0 +1,54 @@
+{
+  "tema": "adjetivos-ig-lich",
+  "titulo": "Adjetivos con -ig y -lich",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 86, A-B; Intensivtrainer S. 38, Wortbildung), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "sufijo",
+      "titulo": "¿-ig o -lich?",
+      "instruccion": "Completa la frase con el adjetivo bien formado.",
+      "modelo": "Übungsbuch S. 86, A",
+      "ejercicios": [
+        { "id": "su1", "partes": ["Lena hat Angst vor der Reise. Sie ist einfach sehr ", "."], "respuesta": "ängstlich", "distractores": ["ängstig", "angstlich", "angstig"], "pista": "die Angst → ängstlich (a → ä)." },
+        { "id": "su2", "partes": ["Nach dem Sport war er ", " wie ein Löwe."], "respuesta": "hungrig", "distractores": ["hungerig", "hungerlich", "hunglich"], "pista": "der Hunger → hungrig: se pierde la -e-." },
+        { "id": "su3", "partes": ["Die Suppe hat zu viel Salz, sie ist mir zu ", "."], "respuesta": "salzig", "distractores": ["salzlich", "salzerig", "sälzig"], "pista": "das Salz → salzig." },
+        { "id": "su4", "partes": ["Elli hat Sorgen und denkt viel nach. Sie ist zurzeit sehr ", "."], "respuesta": "nachdenklich", "distractores": ["nachdenkig", "nachdenkerlich", "nachdenkend"], "pista": "nach|denken → nachdenklich." },
+        { "id": "su5", "partes": ["Die Prüfung ist nicht mündlich, sondern ", "."], "respuesta": "schriftlich", "distractores": ["schriftig", "schreiblich", "schriftend"], "pista": "die Schrift → schriftlich." },
+        { "id": "su6", "partes": ["Das ist keine Firmensache, das ist ganz ", "."], "respuesta": "persönlich", "distractores": ["personig", "personlich", "persönig"], "pista": "die Person → persönlich (o → ö)." },
+        { "id": "su7", "partes": ["Unsere Nachbarn grüßen immer. Sie sind sehr ", "."], "respuesta": "freundlich", "distractores": ["freundig", "freundend", "freundschaftig"], "pista": "der Freund → freundlich." },
+        { "id": "su8", "partes": ["Nach dem Streit war sie wieder ", " und hat viel gelacht."], "respuesta": "fröhlich", "distractores": ["frohig", "frohlich", "fröhig"], "pista": "froh → fröhlich (o → ö)." },
+        { "id": "su9", "partes": ["Er stellt tausend Fragen: Er ist wirklich sehr ", "."], "respuesta": "neugierig", "distractores": ["neugierlich", "neugierend", "neugierisch"], "pista": "die Neugier → neugierig." }
+      ]
+    },
+    {
+      "id": "terminacion",
+      "titulo": "Con su terminación",
+      "instruccion": "Pon el adjetivo con la terminación de declinación correcta.",
+      "modelo": "Intensivtrainer S. 38, Wortbildung",
+      "ejercicios": [
+        { "id": "tr1", "partes": ["Die Sonne scheint, es ist ein ", " Tag."], "respuesta": "sonniger", "distractores": ["sonnige", "sonnigen", "sonniges"], "pista": "ein + masculino nominativo → -er: ein sonniger Tag." },
+        { "id": "tr2", "partes": ["Lena ist einfach ein ", " Typ."], "respuesta": "ängstlicher", "distractores": ["ängstliche", "ängstlichen", "ängstliches"], "pista": "ein + masculino nominativo → -er." },
+        { "id": "tr3", "partes": ["Maria hasste die ", " Tage im November."], "respuesta": "nebligen", "distractores": ["neblige", "nebliger", "nebliges"], "pista": "die + plural → -en." },
+        { "id": "tr4", "partes": ["Michael mag ", " Prüfungen überhaupt nicht."], "respuesta": "schriftliche", "distractores": ["schriftlichen", "schriftlicher", "schriftliches"], "pista": "Plural sin artículo, acusativo → -e." },
+        { "id": "tr5", "partes": ["Wir hatten gestern ein sehr ", " Gespräch."], "respuesta": "persönliches", "distractores": ["persönliche", "persönlicher", "persönlichen"], "pista": "ein + neutro → -es." },
+        { "id": "tr6", "partes": ["Sie hat mir mit einem ", " Lächeln geantwortet."], "respuesta": "freundlichen", "distractores": ["freundliche", "freundlicher", "freundliches"], "pista": "mit + dativo neutro → -en." }
+      ]
+    },
+    {
+      "id": "familia",
+      "titulo": "La familia de palabras",
+      "instruccion": "¿De dónde viene o qué sale de cada palabra?",
+      "modelo": "Übungsbuch S. 86, B",
+      "ejercicios": [
+        { "id": "fa1", "partes": null, "pregunta": "¿De qué palabra viene fröhlich?", "respuesta": "froh", "distractores": ["die Freude", "der Freund", "frei"], "pista": "froh (contento) → fröhlich, con o → ö." },
+        { "id": "fa2", "partes": null, "pregunta": "¿De qué palabra viene ängstlich?", "respuesta": "die Angst", "distractores": ["der Anfang", "eng", "der Ansatz"], "pista": "die Angst → ängstlich." },
+        { "id": "fa3", "partes": null, "pregunta": "¿De qué palabra viene beruflich?", "respuesta": "der Beruf", "distractores": ["die Arbeit", "die Stelle", "der Betrieb"], "pista": "der Beruf (la profesión) → beruflich." },
+        { "id": "fa4", "partes": null, "pregunta": "¿De qué palabra viene glücklich?", "respuesta": "das Glück", "distractores": ["gleich", "die Gleichheit", "glatt"], "pista": "das Glück (la suerte, la felicidad) → glücklich." },
+        { "id": "fa5", "partes": null, "pregunta": "¿Qué sustantivo sale de freundlich?", "respuesta": "die Freundlichkeit", "distractores": ["die Freundschaft", "die Freundheit", "der Freundlich"], "pista": "adjetivo en -lich + -keit → die Freundlichkeit (die Freundschaft sale de der Freund)." },
+        { "id": "fa6", "partes": null, "pregunta": "¿Qué sustantivo sale de ehrlich?", "respuesta": "die Ehrlichkeit", "distractores": ["die Ehre", "die Ehrheit", "die Ehrung"], "pista": "-lich + -keit → die Ehrlichkeit." },
+        { "id": "fa7", "partes": null, "pregunta": "¿Qué adjetivo sale de der Tag?", "respuesta": "täglich", "distractores": ["tagig", "taglich", "tägig"], "pista": "der Tag → täglich (a → ä)." },
+        { "id": "fa8", "partes": null, "pregunta": "¿Qué adjetivo sale de die Gefahr?", "respuesta": "gefährlich", "distractores": ["gefahrig", "gefahrlich", "gefährig"], "pista": "die Gefahr → gefährlich (a → ä)." }
+      ]
+    }
+  ]
+}

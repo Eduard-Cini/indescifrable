@@ -1,0 +1,97 @@
+{
+  "id": "adjetivos-ig-lich",
+  "mazo": "adjetivos-ig-lich",
+  "titulo": "Adjetivos con -ig y -lich",
+  "descripcion": "Formación de palabras del capítulo 7: adjetivos a partir de un sustantivo, un verbo u otro adjetivo con los sufijos -ig y -lich, con sus cambios de vocal (die Angst → ängstlich).",
+  "fuente": "Netzwerk neu B1, Kapitel 7: Übungsbuch S. 86 (Wortbildung) · Intensivtrainer S. 38",
+  "libro": {
+    "referencia": "Übungsbuch S. 86 («Wortbildung – Adjektive mit -ig und -lich», A-B) e Intensivtrainer S. 38 (Wortbildung)",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro da doce palabras a medias (fröh…, salz…, nebl…, glück…, ängst…, schrift…) y pide completar con -ig o con -lich.",
+      "El recuadro W solo habla de pronunciación: -ig al final de palabra se pronuncia «-ich» en el norte de Alemania y «-ik» en el sur, en Suiza y en Austria.",
+      "El segundo ejercicio pide buscar otra palabra de la misma familia (fröhlich → froh).",
+      "El Intensivtrainer lo practica montando el adjetivo por trozos (ÄNGST + LICH) y metiéndolo en una frase con la terminación de declinación correcta."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Dos sufijos para lo mismo",
+      "texto": [
+        "-ig y -lich convierten un sustantivo (a veces un verbo o un adjetivo) en adjetivo. No hay una regla cerrada que diga cuál toca en cada caso: hay que aprenderlos, aunque algunos indicios ayudan."
+      ],
+      "tabla": {
+        "cabecera": ["Base", "Adjetivo", "Significado"],
+        "filas": [
+          ["die Angst", "ängstlich", "miedoso"],
+          ["der Hunger", "hungrig", "hambriento"],
+          ["der Durst", "durstig", "sediento"],
+          ["die Ruhe", "ruhig", "tranquilo"],
+          ["der Nebel", "neblig", "con niebla"],
+          ["das Salz", "salzig", "salado"],
+          ["die Farbe", "farbig", "de colores"],
+          ["die Neugier", "neugierig", "curioso"],
+          ["die Person", "persönlich", "personal"],
+          ["der Beruf", "beruflich", "profesional, laboral"],
+          ["die Schrift", "schriftlich", "por escrito"],
+          ["der Freund", "freundlich", "amable"],
+          ["das Glück", "glücklich", "feliz"],
+          ["froh", "fröhlich", "alegre"],
+          ["nach|denken", "nachdenklich", "pensativo"]
+        ]
+      }
+    },
+    {
+      "titulo": "Indicios que ayudan",
+      "texto": [
+        "No es una regla, pero sí una tendencia que funciona a menudo."
+      ],
+      "tabla": {
+        "cabecera": ["Tiende a llevar…", "Casos"],
+        "filas": [
+          ["-ig", "estados del cuerpo y sensaciones: hungrig, durstig, schläfrig, schwindelig"],
+          ["-ig", "cualidades físicas y del tiempo: salzig, farbig, sonnig, windig, neblig, eisig"],
+          ["-lich", "el trato con la gente: freundlich, höflich, ehrlich, persönlich, menschlich"],
+          ["-lich", "ámbitos y periodicidad: beruflich, schriftlich, mündlich, täglich, wöchentlich"]
+        ]
+      },
+      "notas": [
+        "Hay parejas que existen con los dos sufijos y no significan lo mismo: geistig (mental) frente a geistlich (religioso)."
+      ]
+    },
+    {
+      "titulo": "Cuidado con la vocal",
+      "texto": [
+        "Muchos cambian la vocal de la base (Umlaut) o pierden una letra por el camino. Es lo que más se falla."
+      ],
+      "tabla": {
+        "cabecera": ["Base", "Adjetivo", "Qué cambia"],
+        "filas": [
+          ["die Angst", "ängstlich", "a → ä"],
+          ["froh", "fröhlich", "o → ö"],
+          ["die Person", "persönlich", "o → ö"],
+          ["der Tag", "täglich", "a → ä"],
+          ["die Gefahr", "gefährlich", "a → ä"],
+          ["der Hunger", "hungrig", "se pierde la -e-"],
+          ["der Nebel", "neblig", "se pierde la -e-"],
+          ["die Woche", "wöchentlich", "o → ö y aparece -ent-"]
+        ]
+      }
+    },
+    {
+      "titulo": "Familias de palabras",
+      "texto": [
+        "Conocer la base ayuda a recordar el adjetivo y a entender palabras nuevas. Y del adjetivo se puede volver a sacar un sustantivo con -keit."
+      ],
+      "ejemplos": [
+        { "de": "froh → fröhlich → die Fröhlichkeit", "es": "contento → alegre → la alegría" },
+        { "de": "die Angst → ängstlich → die Ängstlichkeit", "es": "el miedo → miedoso → el carácter miedoso" },
+        { "de": "der Freund → freundlich → die Freundlichkeit", "es": "el amigo → amable → la amabilidad" },
+        { "de": "nach|denken → nachdenklich → die Nachdenklichkeit", "es": "reflexionar → pensativo → el ensimismamiento" }
+      ],
+      "notas": [
+        "El sufijo del sustantivo es -keit detrás de -lich y de -ig: ehrlich → die Ehrlichkeit, neugierig → die Neugierigkeit.",
+        "Pronunciación: -ig final suena «-ich» en el norte de Alemania y «-ik» en el sur, en Suiza y en Austria."
+      ]
+    }
+  ]
+}

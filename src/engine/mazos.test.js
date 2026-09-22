@@ -207,10 +207,15 @@ describe('mazos reales de «Más contenidos»', () => {
   const verbos = lista.flatMap(([, m]) => m.tarjetas.filter((t) => t.tipo === 'verbo'));
   const sinSich = (t) => t.infinitivo.replace(/^sich /, '');
   const INSEPARABLE = /^(be|emp|ent|er|miss|ver|zer)/;
+  // Verbos donde esas letras iniciales NO son un prefijo, sino parte de la raíz:
+  // su Partizip II sí lleva ge- (beißen → gebissen, erben → geerbt).
+  const RAIZ_NO_PREFIJO = new Set(['beissen', 'erben', 'enden', 'essen']);
 
   it('prefijo inseparable o -ieren → Partizip II sin ge-', () => {
     const sinGe = verbos.filter(
-      (t) => (!sinSich(t).includes('|') && INSEPARABLE.test(sinSich(t))) || sinSich(t).endsWith('ieren')
+      (t) =>
+        !RAIZ_NO_PREFIJO.has(t.id) &&
+        ((!sinSich(t).includes('|') && INSEPARABLE.test(sinSich(t))) || sinSich(t).endsWith('ieren'))
     );
     expect(sinGe.length).toBeGreaterThan(20);
     expect(sinGe.filter((t) => t.participio.startsWith('ge')).map((t) => t.id)).toEqual([]);

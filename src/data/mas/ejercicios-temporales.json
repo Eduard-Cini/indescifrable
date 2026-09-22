@@ -1,0 +1,52 @@
+{
+  "tema": "temporales",
+  "titulo": "Oraciones temporales",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 84, 6c-d; Übungsbuch S. 82, 6c-d; Intensivtrainer S. 36, 6b-7), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Qué conector encaja?",
+      "instruccion": "Elige el conector temporal que corresponde.",
+      "modelo": "Kursbuch S. 84, 6c · Übungsbuch S. 82, 6d",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["", " ich koche, deckst du bitte den Tisch."], "respuesta": "Während", "distractores": ["Bevor", "Nachdem", "Bis"], "pista": "Las dos cosas pasan a la vez → während." },
+        { "id": "cu2", "partes": ["Wir warten hier, ", " der Regen aufhört."], "respuesta": "bis", "distractores": ["seit", "während", "nachdem"], "pista": "Hasta ese momento → bis." },
+        { "id": "cu3", "partes": ["", " du umgezogen bist, sehen wir uns viel seltener."], "respuesta": "Seitdem", "distractores": ["Bevor", "Während", "Bis"], "pista": "Desde ese momento hasta hoy → seit/seitdem." },
+        { "id": "cu4", "partes": ["", " wir uns gestritten hatten, entschuldigte ich mich sofort."], "respuesta": "Nachdem", "distractores": ["Bevor", "Während", "Seit"], "pista": "Primero la pelea, después la disculpa → nachdem." },
+        { "id": "cu5", "partes": ["Ruf mich bitte an, ", " du losfährst."], "respuesta": "bevor", "distractores": ["nachdem", "seit", "während"], "pista": "Llamar antes de salir → bevor." },
+        { "id": "cu6", "partes": ["Ich passe auf die Kinder auf, ", " du einkaufen gehst."], "respuesta": "während", "distractores": ["bevor", "bis", "seit"], "pista": "Las dos cosas a la vez → während." },
+        { "id": "cu7", "partes": ["Wir haben uns nicht mehr gesehen, ", " sie nach Berlin gezogen ist."], "respuesta": "seit", "distractores": ["bis", "bevor", "während"], "pista": "Desde que se mudó → seit." },
+        { "id": "cu8", "partes": ["Ich konnte nicht einschlafen, ", " ich mit ihr gesprochen hatte."], "respuesta": "bevor", "distractores": ["nachdem", "seit", "während"], "pista": "No podía dormir ANTES de hablar con ella → bevor." }
+      ]
+    },
+    {
+      "id": "orden",
+      "titulo": "El verbo, en su sitio",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 84, 6d · Intensivtrainer S. 36, 7",
+      "ejercicios": [
+        { "id": "or1", "partes": null, "pregunta": "«Antes de limpiar, hago un café.»", "respuesta": "Bevor ich putze, koche ich einen Kaffee.", "distractores": ["Bevor ich putze, ich koche einen Kaffee.", "Bevor putze ich, koche ich einen Kaffee.", "Bevor ich putze, koche einen Kaffee ich."], "pista": "El verbo de la subordinada va al final; la principal empieza entonces por su verbo." },
+        { "id": "or2", "partes": null, "pregunta": "«Esperamos hasta que vuelvas.»", "respuesta": "Wir warten, bis du zurückkommst.", "distractores": ["Wir warten, bis kommst du zurück.", "Wir warten, bis du kommst zurück.", "Wir warten, bis zurückkommst du."], "pista": "zurück|kommen es separable: en la subordinada se junta al final." },
+        { "id": "or3", "partes": null, "pregunta": "«Desde que trabajas, estás estresado.»", "respuesta": "Seit du arbeitest, bist du gestresst.", "distractores": ["Seit du arbeitest, du bist gestresst.", "Seit arbeitest du, bist du gestresst.", "Seit du bist gestresst, arbeitest du."], "pista": "La subordinada ocupa la posición 1 → el verbo de la principal va justo detrás de la coma." },
+        { "id": "or4", "partes": null, "pregunta": "«Mientras yo recojo, tú cocinas.»", "respuesta": "Während ich aufräume, kochst du.", "distractores": ["Während ich aufräume, du kochst.", "Während räume ich auf, kochst du.", "Während ich räume auf, kochst du."], "pista": "auf|räumen se junta al final de la subordinada." },
+        { "id": "or5", "partes": null, "pregunta": "«Después de mudarse, se sentía sola a menudo.»", "respuesta": "Nachdem sie umgezogen war, fühlte sie sich oft einsam.", "distractores": ["Nachdem sie war umgezogen, fühlte sie sich oft einsam.", "Nachdem sie umgezogen war, sie fühlte sich oft einsam.", "Nachdem war sie umgezogen, fühlte sie sich oft einsam."], "pista": "En la subordinada el auxiliar cierra: umgezogen war." },
+        { "id": "or6", "partes": null, "pregunta": "«Te llamo antes de salir de casa.»", "respuesta": "Ich rufe dich an, bevor ich aus dem Haus gehe.", "distractores": ["Ich rufe dich an, bevor ich gehe aus dem Haus.", "Ich rufe an dich, bevor ich aus dem Haus gehe.", "Ich rufe dich an, bevor aus dem Haus ich gehe."], "pista": "En la principal el prefijo an va al final; en la subordinada, el verbo entero." }
+      ]
+    },
+    {
+      "id": "preposicion-o-conector",
+      "titulo": "¿Preposición o conector?",
+      "instruccion": "Fíjate en si detrás viene un sustantivo o una frase entera.",
+      "modelo": "Übungsbuch S. 82, 6b y 6d (recuadro)",
+      "ejercicios": [
+        { "id": "pc1", "partes": null, "pregunta": "«Desde hace dos meses tiene el nuevo puesto.»", "respuesta": "Seit zwei Monaten hat sie die neue Stelle.", "distractores": ["Seitdem zwei Monaten hat sie die neue Stelle.", "Seit sie zwei Monate hat, hat sie die neue Stelle.", "Während zwei Monaten hat sie die neue Stelle."], "pista": "Con un sustantivo detrás, seit es preposición (+ dativo)." },
+        { "id": "pc2", "partes": null, "pregunta": "«Desde que tiene el nuevo puesto, disfruta del trabajo.»", "respuesta": "Seitdem sie die neue Stelle hat, macht ihr die Arbeit Spaß.", "distractores": ["Seit zwei Monaten macht ihr die Arbeit Spaß.", "Seitdem die neue Stelle sie hat, macht ihr die Arbeit Spaß.", "Seitdem sie hat die neue Stelle, macht ihr die Arbeit Spaß."], "pista": "Con una frase detrás es conector y el verbo va al final." },
+        { "id": "pc3", "partes": null, "pregunta": "«Nos quedamos hasta el lunes.»", "respuesta": "Wir bleiben bis Montag.", "distractores": ["Wir bleiben bis es Montag.", "Wir bleiben, bis Montag ist es.", "Wir bleiben bis dem Montag."], "pista": "bis + nombre de día, sin artículo: preposición." },
+        { "id": "pc4", "partes": null, "pregunta": "«Nos quedamos hasta que vuelvas.»", "respuesta": "Wir bleiben, bis du zurückkommst.", "distractores": ["Wir bleiben bis deine Rückkehr.", "Wir bleiben, bis kommst du zurück.", "Wir bleiben, bis du kommst zurück."], "pista": "Con una frase detrás, bis es conector: verbo al final." },
+        { "id": "pc5", "partes": null, "pregunta": "«Mientras comemos no hablamos.»", "respuesta": "Während wir essen, reden wir nicht.", "distractores": ["Während des Essens reden wir nicht.", "Während wir essen, wir reden nicht.", "Während essen wir, reden wir nicht."], "pista": "«mientras comemos» es una frase → conector. Con sustantivo sería «während des Essens»." },
+        { "id": "pc6", "partes": null, "pregunta": "«Antes del viaje tengo que hablar con ella.»", "respuesta": "Vor der Reise muss ich mit ihr sprechen.", "distractores": ["Bevor der Reise muss ich mit ihr sprechen.", "Bevor die Reise muss ich mit ihr sprechen.", "Bevor ich der Reise muss mit ihr sprechen."], "pista": "bevor solo une frases; con un sustantivo se usa la preposición vor." },
+        { "id": "pc7", "partes": null, "pregunta": "«Antes de irme tengo que hablar con ella.»", "respuesta": "Bevor ich gehe, muss ich mit ihr sprechen.", "distractores": ["Vor ich gehe, muss ich mit ihr sprechen.", "Bevor ich gehe, ich muss mit ihr sprechen.", "Bevor gehe ich, muss ich mit ihr sprechen."], "pista": "Con una frase detrás hace falta bevor, no vor." }
+      ]
+    }
+  ]
+}

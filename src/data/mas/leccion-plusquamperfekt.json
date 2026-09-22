@@ -1,0 +1,80 @@
+{
+  "id": "plusquamperfekt",
+  "mazo": "k7-verbos",
+  "titulo": "Plusquamperfekt",
+  "descripcion": "El pasado del pasado: hatte/war + Partizip II para contar lo que había ocurrido ANTES de otro hecho ya pasado.",
+  "fuente": "Netzwerk neu B1, Kapitel 7: Kursbuch S. 83 y 89 · Übungsbuch S. 80-81 · Intensivtrainer S. 34-35",
+  "libro": {
+    "referencia": "Kursbuch S. 83 (3a-b, recuadro G) y S. 89 («kurz und klar»), Übungsbuch S. 80-81 (3d-e, 5a-b) e Intensivtrainer S. 34-35 (3-5)",
+    "puntos": [
+      "El recuadro G ordena tres niveles de tiempo: ahora → Präsens; antes → Präteritum o Perfekt; y aún antes (Vorvergangenheit) → Plusquamperfekt.",
+      "La formación se deduce del propio ejemplo y el libro la hace escribir al alumno: haben o sein en Präteritum (hatte, war) + Partizip II.",
+      "Los ejemplos del recuadro son de una amistad: «Wir hatten uns fast jeden Tag getroffen» y «Wir waren viel zusammen gereist».",
+      "El Übungsbuch lo practica preguntando «¿qué había pasado antes?» y el Intensivtrainer con una biografía por etapas."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Tres niveles de pasado",
+      "texto": [
+        "El Plusquamperfekt casi nunca va solo: aparece cuando ya se está contando algo en pasado y hace falta decir qué había ocurrido ANTES de eso."
+      ],
+      "tabla": {
+        "cabecera": ["Cuándo", "Tiempo", "Ejemplo"],
+        "filas": [
+          ["ahora", "Präsens", "Wir fahren gemeinsam an die Ostsee."],
+          ["antes", "Präteritum / Perfekt", "Wir verloren uns aus den Augen. · Wir haben beschlossen, etwas zu ändern."],
+          ["aún antes", "Plusquamperfekt", "Wir hatten uns fast jeden Tag getroffen."]
+        ]
+      },
+      "notas": [
+        "En español es lo mismo que la diferencia entre «nos vimos» y «nos habíamos visto»."
+      ]
+    },
+    {
+      "titulo": "Cómo se forma",
+      "texto": [
+        "haben o sein en Präteritum (hatte, war) + Partizip II. El auxiliar es el MISMO que en el Perfekt: si el Perfekt es «ist gefahren», el Plusquamperfekt es «war gefahren»."
+      ],
+      "tabla": {
+        "cabecera": ["", "Perfekt", "Plusquamperfekt"],
+        "filas": [
+          ["con haben", "hat getroffen", "hatte getroffen"],
+          ["con sein", "ist gereist", "war gereist"],
+          ["ejemplo", "Ich habe sie kennengelernt.", "Ich hatte sie kennengelernt."],
+          ["ejemplo", "Sie ist umgezogen.", "Sie war umgezogen."]
+        ]
+      },
+      "notas": [
+        "hatte: ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten.",
+        "war: ich war, du warst, er war, wir waren, ihr wart, sie waren.",
+        "El Partizip II no cambia nunca: lo único que cambia respecto al Perfekt es el auxiliar."
+      ]
+    },
+    {
+      "titulo": "Dónde va el verbo",
+      "texto": [
+        "En la frase principal el auxiliar ocupa la posición 2 y el Partizip II se va al final. En una subordinada los dos verbos van al final y el auxiliar cierra la frase."
+      ],
+      "ejemplos": [
+        { "de": "Elena hatte in Frankfurt noch niemanden kennengelernt.", "es": "Elena todavía no había conocido a nadie en Fráncfort." },
+        { "de": "…, weil sie noch niemanden kennengelernt hatte.", "es": "…porque todavía no había conocido a nadie." },
+        { "de": "Vorher hatten wir uns fast jeden Tag getroffen.", "es": "Antes nos habíamos visto casi a diario." }
+      ]
+    },
+    {
+      "titulo": "Cuándo se usa de verdad",
+      "texto": [
+        "Sobre todo con nachdem y con expresiones como vorher, davor, früher o bis dahin. Fuera de esos contextos, el alemán prefiere el Perfekt o el Präteritum."
+      ],
+      "ejemplos": [
+        { "de": "Nachdem Matilda umgezogen war, fühlte sie sich oft einsam.", "es": "Después de mudarse, Matilda se sentía sola a menudo." },
+        { "de": "Antoni lud seine Freunde ein. Er hatte eine wichtige Prüfung bestanden.", "es": "Antoni invitó a sus amigos. Había aprobado un examen importante." },
+        { "de": "Vorher hatten wir uns nie über den Weg laufen sehen.", "es": "Antes nunca nos habíamos cruzado." }
+      ],
+      "notas": [
+        "En lengua hablada y en mensajes privados se oye también la mezcla: «Ich habe Maja kennengelernt, nachdem ich nach Frankfurt gezogen war.»"
+      ]
+    }
+  ]
+}

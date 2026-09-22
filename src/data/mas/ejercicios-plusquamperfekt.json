@@ -1,0 +1,50 @@
+{
+  "tema": "plusquamperfekt",
+  "titulo": "Plusquamperfekt",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 83, 3b; Übungsbuch S. 81, 3d-e y 5a; Intensivtrainer S. 35, 3b y 5), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "auxiliar",
+      "titulo": "¿hatte o war?",
+      "instruccion": "Completa con el auxiliar en Präteritum. Piensa en el auxiliar del Perfekt.",
+      "modelo": "Kursbuch S. 83, 3a · Übungsbuch S. 81, 3d",
+      "ejercicios": [
+        { "id": "au1", "partes": ["Antoni lud seine Freunde ein. Er ", " eine wichtige Prüfung bestanden."], "respuesta": "hatte", "distractores": ["war", "hat", "ist"], "pista": "bestehen forma el Perfekt con haben → hatte bestanden." },
+        { "id": "au2", "partes": ["Matilda fühlte sich einsam. Sie ", " gerade nach Freiburg umgezogen."], "respuesta": "war", "distractores": ["hatte", "ist", "hat"], "pista": "um|ziehen es cambio de lugar: Perfekt con sein → war umgezogen." },
+        { "id": "au3", "partes": ["Emilia kam spät und war müde: Sie ", " den ganzen Tag gearbeitet."], "respuesta": "hatte", "distractores": ["war", "hat", "ist"], "pista": "arbeiten → haben." },
+        { "id": "au4", "partes": ["Wir sahen uns nur noch selten. Früher ", " wir viel zusammen gereist."], "respuesta": "waren", "distractores": ["hatten", "sind", "haben"], "pista": "reisen es movimiento → sein." },
+        { "id": "au5", "partes": ["Karim und Valentin stritten oft. Vorher ", " sie zwei Jahre zusammengewohnt."], "respuesta": "hatten", "distractores": ["waren", "haben", "sind"], "pista": "wohnen → haben, aunque hable de un lugar." },
+        { "id": "au6", "partes": ["Bevor ich nach Berlin kam, ", " ich nie in einer Großstadt gewesen."], "respuesta": "war", "distractores": ["hatte", "bin", "habe"], "pista": "sein forma el Perfekt con sein → war gewesen." },
+        { "id": "au7", "partes": ["Sie war enttäuscht: Ihre Freundin ", " sie wieder einmal angelogen."], "respuesta": "hatte", "distractores": ["war", "hat", "ist"], "pista": "an|lügen → haben." }
+      ]
+    },
+    {
+      "id": "vorher",
+      "titulo": "¿Qué había pasado antes?",
+      "instruccion": "Pon entre paréntesis lo que había pasado antes, en Plusquamperfekt.",
+      "modelo": "Übungsbuch S. 81, 3d-e",
+      "ejercicios": [
+        { "id": "vo1", "partes": null, "pregunta": "Ich war sauer. (sich mit der Freundin streiten)", "respuesta": "Ich hatte mich mit meiner Freundin gestritten.", "distractores": ["Ich habe mich mit meiner Freundin gestritten.", "Ich war mich mit meiner Freundin gestritten.", "Ich hatte mich mit meiner Freundin streiten."], "pista": "sich streiten → haben: hatte … gestritten." },
+        { "id": "vo2", "partes": null, "pregunta": "Ich konnte nicht schlafen. (zu viel Kaffee trinken)", "respuesta": "Ich hatte zu viel Kaffee getrunken.", "distractores": ["Ich war zu viel Kaffee getrunken.", "Ich hatte zu viel Kaffee trinken.", "Ich habe zu viel Kaffee getrunken."], "pista": "El Partizip II va al final y el auxiliar es hatte." },
+        { "id": "vo3", "partes": null, "pregunta": "Ich war total überrascht. (meine Freunde eine Party organisieren)", "respuesta": "Meine Freunde hatten eine Party organisiert.", "distractores": ["Meine Freunde waren eine Party organisiert.", "Meine Freunde hatten eine Party organisieren.", "Meine Freunde haben eine Party organisiert."], "pista": "organisieren → haben; el participio no lleva ge-." },
+        { "id": "vo4", "partes": null, "pregunta": "Ich war glücklich. (eine neue Stelle finden)", "respuesta": "Ich hatte eine neue Stelle gefunden.", "distractores": ["Ich war eine neue Stelle gefunden.", "Ich hatte eine neue Stelle finden.", "Ich bin eine neue Stelle gefunden."], "pista": "finden → haben." },
+        { "id": "vo5", "partes": null, "pregunta": "Elena kannte niemanden in der Stadt. (vor ein paar Tagen nach Frankfurt ziehen)", "respuesta": "Sie war vor ein paar Tagen nach Frankfurt gezogen.", "distractores": ["Sie hatte vor ein paar Tagen nach Frankfurt gezogen.", "Sie war vor ein paar Tagen nach Frankfurt ziehen.", "Sie ist vor ein paar Tagen nach Frankfurt gezogen."], "pista": "ziehen con dirección → sein: war gezogen." },
+        { "id": "vo6", "partes": null, "pregunta": "Die Freunde verloren sich aus den Augen. (alle beruflich sehr eingespannt sein)", "respuesta": "Alle waren beruflich sehr eingespannt gewesen.", "distractores": ["Alle hatten beruflich sehr eingespannt gewesen.", "Alle waren beruflich sehr eingespannt sein.", "Alle sind beruflich sehr eingespannt gewesen."], "pista": "sein → war gewesen." }
+      ]
+    },
+    {
+      "id": "nachdem",
+      "titulo": "Después de nachdem",
+      "instruccion": "Mira el tiempo de la frase principal y elige el auxiliar de la subordinada.",
+      "modelo": "Kursbuch S. 83, 5a · Übungsbuch S. 81, 5a · Intensivtrainer S. 35, 5",
+      "ejercicios": [
+        { "id": "na1", "partes": ["Nachdem Matilda ihr Studium abgeschlossen ", ", fand sie eine Stelle in Freiburg."], "respuesta": "hatte", "distractores": ["hat", "war", "ist"], "pista": "Principal en Präteritum (fand) → subordinada en Plusquamperfekt." },
+        { "id": "na2", "partes": ["Nachdem sie dort neue Freunde gefunden ", ", gefällt es ihr sehr gut."], "respuesta": "hat", "distractores": ["hatte", "ist", "war"], "pista": "Principal en Präsens (gefällt) → subordinada en Perfekt." },
+        { "id": "na3", "partes": ["Nachdem Karim und Valentin eine WG gegründet ", ", stritten sie oft."], "respuesta": "hatten", "distractores": ["haben", "waren", "sind"], "pista": "Principal en Präteritum (stritten) → Plusquamperfekt." },
+        { "id": "na4", "partes": ["Yannik sucht eine andere Stelle, nachdem er umgezogen ", "."], "respuesta": "ist", "distractores": ["war", "hat", "hatte"], "pista": "Principal en Präsens → Perfekt; um|ziehen va con sein." },
+        { "id": "na5", "partes": ["Nachdem Alessia geheiratet ", ", traf sie ihre Freunde nicht mehr so oft."], "respuesta": "hatte", "distractores": ["hat", "war", "ist"], "pista": "Principal en Präteritum (traf) → Plusquamperfekt." },
+        { "id": "na6", "partes": ["Sie fühlt sich viel wohler, nachdem sie in die WG gezogen ", "."], "respuesta": "ist", "distractores": ["hat", "war", "hatte"], "pista": "Principal en Präsens → Perfekt; ziehen con dirección va con sein." }
+      ]
+    }
+  ]
+}

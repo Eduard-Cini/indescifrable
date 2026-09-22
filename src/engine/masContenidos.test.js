@@ -9,8 +9,8 @@ const ARCHIVOS = import.meta.glob('../data/mas/*.json', { eager: true, import: '
 const archivo = (nombre) => ARCHIVOS[`../data/mas/${nombre}.json`];
 
 describe('indice.json', () => {
-  it('declara los capítulos 8, 9, 10 y 11', () => {
-    expect(indice.capitulos.map((c) => c.numero)).toEqual([8, 9, 10, 11]);
+  it('declara los capítulos 7, 8, 9, 10 y 11', () => {
+    expect(indice.capitulos.map((c) => c.numero)).toEqual([7, 8, 9, 10, 11]);
   });
 
   for (const cap of indice.capitulos) {

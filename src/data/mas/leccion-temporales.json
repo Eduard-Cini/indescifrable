@@ -1,0 +1,90 @@
+{
+  "id": "temporales",
+  "mazo": "k7-vocabulario",
+  "titulo": "Oraciones temporales: nachdem, bevor, bis, seit, während",
+  "descripcion": "Los conectores que ordenan dos hechos en el tiempo, la posición del verbo, la combinación de tiempos con nachdem y la trampa de bis, seit y während (que también son preposiciones).",
+  "fuente": "Netzwerk neu B1, Kapitel 7: Kursbuch S. 83-84 y 89 · Übungsbuch S. 81-82 · Intensivtrainer S. 36",
+  "libro": {
+    "referencia": "Kursbuch S. 83 (5a, recuadro G de nachdem) y S. 84 (6d, recuadro G), S. 89 («kurz und klar»), Übungsbuch S. 81-82 (5a-b, 6c-d) e Intensivtrainer S. 36 (6b, 7)",
+    "puntos": [
+      "El recuadro G de la S. 84 reúne los cuatro conectores con un ejemplo cada uno: seit/seitdem, während, bis y bevor.",
+      "nachdem va en un recuadro aparte (S. 83), porque obliga a cambiar de tiempo verbal entre las dos oraciones.",
+      "El «kurz und klar» resume esa combinación: Präsens en la principal → Perfekt con nachdem; Präteritum en la principal → Plusquamperfekt; y en lengua hablada, Perfekt → Plusquamperfekt.",
+      "El Übungsbuch avisa de que bis, seit y während también pueden ser preposiciones: «Seit zwei Monaten hat sie die neue Stelle» frente a «Seit sie die neue Stelle hat, …»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué ordena cada conector",
+      "tabla": {
+        "cabecera": ["Conector", "Relación", "Ejemplo"],
+        "filas": [
+          ["bevor", "lo de la principal pasa ANTES", "Sie trinken Kaffee, bevor Julia telefoniert."],
+          ["nachdem", "lo de la principal pasa DESPUÉS", "Nachdem Matilda umgezogen war, fühlte sie sich einsam."],
+          ["während", "las dos cosas, a la vez", "Während ich aufräume, kochst du für uns."],
+          ["bis", "hasta ese momento", "Wir warten, bis du zurückkommst."],
+          ["seit / seitdem", "desde ese momento", "Seit du arbeitest, bist du gestresst."]
+        ]
+      },
+      "notas": [
+        "seit y seitdem significan exactamente lo mismo como conectores; seitdem suena algo más marcado."
+      ]
+    },
+    {
+      "titulo": "La posición del verbo",
+      "texto": [
+        "Los cinco introducen una subordinada (Nebensatz): el verbo conjugado se va al FINAL. Si la subordinada abre la frase, cuenta como primer elemento y detrás viene directamente el verbo de la principal."
+      ],
+      "ejemplos": [
+        { "de": "Wir warten, bis du zurückkommst.", "es": "Esperamos hasta que vuelvas." },
+        { "de": "Bevor ich putze, koche ich einen Kaffee für uns.", "es": "Antes de limpiar, hago un café para los dos." },
+        { "de": "Seitdem du den Job gewechselt hast, bist du ständig erschöpft.", "es": "Desde que cambiaste de trabajo, estás siempre agotado." }
+      ],
+      "notas": [
+        "Con la subordinada delante se forma el par verbo-coma-verbo: «…, koche ich …», «…, bist du …».",
+        "Los verbos separables se vuelven a juntar al final: «…, bis du zurückkommst», no «zurück kommst»."
+      ]
+    },
+    {
+      "titulo": "nachdem: hay que cambiar de tiempo",
+      "texto": [
+        "nachdem es el único que obliga a usar tiempos distintos en las dos oraciones: lo que pasa primero va un escalón más atrás."
+      ],
+      "tabla": {
+        "cabecera": ["Frase principal", "Subordinada con nachdem"],
+        "filas": [
+          ["Präsens", "Perfekt"],
+          ["Präteritum", "Plusquamperfekt"],
+          ["Perfekt (lengua hablada)", "Plusquamperfekt"]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Es gefällt ihr gut, nachdem sie neue Freunde gefunden hat.", "es": "Está a gusto, ahora que ha hecho nuevos amigos." },
+        { "de": "Nachdem Matilda umgezogen war, fühlte sie sich oft einsam.", "es": "Después de mudarse, Matilda se sentía sola a menudo." }
+      ],
+      "notas": [
+        "bevor funciona al revés y es más fácil: normalmente lleva el MISMO tiempo que la principal."
+      ]
+    },
+    {
+      "titulo": "bis, seit y während también son preposiciones",
+      "texto": [
+        "Con un sustantivo detrás son preposiciones; con una frase entera (sujeto + verbo) son conectores. bevor y nachdem, en cambio, solo pueden unir frases: con un sustantivo se usan vor y nach."
+      ],
+      "tabla": {
+        "cabecera": ["Como preposición", "Como conector"],
+        "filas": [
+          ["Seit zwei Monaten hat sie die neue Stelle.", "Seit sie die neue Stelle hat, macht ihr die Arbeit Spaß."],
+          ["Wir bleiben bis Montag.", "Wir warten, bis du zurückkommst."],
+          ["Während des Essens reden wir nicht.", "Während wir essen, reden wir nicht."],
+          ["Vor der Reise rufe ich dich an.", "Bevor ich losfahre, rufe ich dich an."],
+          ["Nach dem Studium zog sie nach Freiburg.", "Nachdem sie das Studium beendet hatte, zog sie nach Freiburg."]
+        ]
+      },
+      "notas": [
+        "während como preposición rige genitivo: während des Essens, während der Arbeit (en lengua hablada se oye también el dativo).",
+        "seit y bis como preposiciones rigen dativo: seit zwei Monaten, bis zum Montag."
+      ]
+    }
+  ]
+}
