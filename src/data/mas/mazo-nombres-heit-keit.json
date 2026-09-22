@@ -1,0 +1,32 @@
+{
+  "id": "nombres-heit-keit",
+  "titulo": "Sustantivos con -heit y -keit",
+  "descripcion": "Sustantivos abstractos formados a partir de un adjetivo. Todos son femeninos; la nota de cada ficha recuerda el adjetivo del que salen.",
+  "fuente": "Netzwerk neu B1, Kapitel 6: Wortbildung del Übungsbuch S. 74 e Intensivtrainer S. 33; algunos aparecen también en el Lernwortschatz de otros capítulos",
+  "tarjetas": [
+    { "id": "moeglichkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Möglichkeit", "plural": "die Möglichkeiten", "es": "posibilidad, opción", "nota": "möglich → -lich pide -keit." },
+    { "id": "faehigkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Fähigkeit", "plural": "die Fähigkeiten", "es": "capacidad, aptitud", "nota": "fähig → -ig pide -keit." },
+    { "id": "wirklichkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Wirklichkeit", "plural": "die Wirklichkeiten", "es": "realidad", "nota": "wirklich → -keit. In Wirklichkeit = en realidad." },
+    { "id": "aufmerksamkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Aufmerksamkeit", "plural": "die Aufmerksamkeiten", "es": "atención", "nota": "aufmerksam → -sam pide -keit." },
+    { "id": "schwierigkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Schwierigkeit", "plural": "die Schwierigkeiten", "es": "dificultad", "nota": "schwierig → -ig pide -keit." },
+    { "id": "fluessigkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Flüssigkeit", "plural": "die Flüssigkeiten", "es": "líquido", "nota": "flüssig → -ig pide -keit.", "lws": true },
+    { "id": "aehnlichkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Ähnlichkeit", "plural": "die Ähnlichkeiten", "es": "parecido, semejanza", "nota": "ähnlich → -lich pide -keit." },
+    { "id": "puenktlichkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Pünktlichkeit", "plural": null, "es": "puntualidad", "nota": "pünktlich → -lich pide -keit." },
+    { "id": "dankbarkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Dankbarkeit", "plural": null, "es": "gratitud", "nota": "dankbar → -bar pide -keit." },
+    { "id": "einsamkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Einsamkeit", "plural": null, "es": "soledad", "nota": "einsam → -sam pide -keit." },
+    { "id": "gerechtigkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Gerechtigkeit", "plural": null, "es": "justicia", "nota": "gerecht → se cuela una -ig-: Gerecht-ig-keit." },
+    { "id": "ehrlichkeit", "tipo": "sustantivo", "articulo": "die", "palabra": "Ehrlichkeit", "plural": null, "es": "honestidad, sinceridad", "nota": "ehrlich → -lich pide -keit." },
+    { "id": "schoenheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Schönheit", "plural": "die Schönheiten", "es": "belleza", "nota": "schön → -heit." },
+    { "id": "krankheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Krankheit", "plural": "die Krankheiten", "es": "enfermedad", "nota": "krank → -heit." },
+    { "id": "sicherheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Sicherheit", "plural": null, "es": "seguridad", "nota": "sicher → -heit." },
+    { "id": "zufriedenheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Zufriedenheit", "plural": null, "es": "satisfacción", "nota": "zufrieden → -heit." },
+    { "id": "gesundheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Gesundheit", "plural": null, "es": "salud", "nota": "gesund → -heit." },
+    { "id": "wahrheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Wahrheit", "plural": "die Wahrheiten", "es": "verdad", "nota": "wahr → -heit.", "lws": true },
+    { "id": "freiheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Freiheit", "plural": "die Freiheiten", "es": "libertad", "nota": "frei → -heit." },
+    { "id": "gewohnheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Gewohnheit", "plural": "die Gewohnheiten", "es": "costumbre, hábito", "nota": "gewohnt → -heit. El verbo es sich gewöhnen an + acusativo.", "lws": true },
+    { "id": "vergangenheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Vergangenheit", "plural": null, "es": "pasado", "nota": "vergangen → -heit. Lo contrario: die Gegenwart y die Zukunft." },
+    { "id": "kindheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Kindheit", "plural": null, "es": "infancia", "nota": "Excepción útil: sale de das Kind, no de un adjetivo." },
+    { "id": "minderheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Minderheit", "plural": "die Minderheiten", "es": "minoría", "nota": "Lo contrario: die Mehrheit (mayoría)." },
+    { "id": "mehrheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Mehrheit", "plural": "die Mehrheiten", "es": "mayoría", "nota": "Lo contrario: die Minderheit." }
+  ]
+}

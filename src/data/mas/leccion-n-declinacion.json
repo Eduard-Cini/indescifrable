@@ -1,0 +1,86 @@
+{
+  "id": "n-declinacion",
+  "mazo": "n-declinacion",
+  "titulo": "Declinación n (sustantivos masculinos)",
+  "descripcion": "Los masculinos que añaden -(e)n en todos los casos menos el nominativo singular: der Junge → den Jungen, dem Jungen, des Jungen.",
+  "fuente": "Netzwerk neu B1, Kapitel 6: Kursbuch S. 67 y 73 · Übungsbuch S. 71-72 · Intensivtrainer S. 30-31",
+  "libro": {
+    "referencia": "Kursbuch S. 67 (5a-b, recuadro G) y S. 73 («kurz und klar»), Übungsbuch S. 71-72 (5-6) e Intensivtrainer S. 30-31 (5a-b)",
+    "puntos": [
+      "El libro parte de dos citas de un programa de radio («den neuen Praktikanten», «Herrn Takis», «einen Freund, Kollegen oder Nachbarn») y hace deducir la regla.",
+      "El recuadro G la deja en una frase con dos huecos: «Bestimmte maskuline Nomen haben außer im Nominativ Singular immer die Endung -n oder -en».",
+      "El «kurz und klar» los agrupa en tres: los terminados en -e, muchos nombres de personas, profesiones y animales, y los internacionalismos en -and, -ant, -at, -ent, -graf, -ist y -oge.",
+      "La actividad 5b es un juego por escrito: cada persona escribe una frase con al menos una de esas palabras y pasa el papel a la siguiente."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La regla, en una línea",
+      "texto": [
+        "Un grupo de sustantivos MASCULINOS añade -n o -en en todos los casos menos en el nominativo singular. El artículo no cambia nada: lo que cambia es la palabra."
+      ],
+      "tabla": {
+        "cabecera": ["Caso", "Singular", "Plural"],
+        "filas": [
+          ["Nominativo", "der Junge", "die Jungen"],
+          ["Acusativo", "den Jungen", "die Jungen"],
+          ["Dativo", "dem Jungen", "den Jungen"],
+          ["Genitivo", "des Jungen", "der Jungen"]
+        ]
+      },
+      "notas": [
+        "Solo la casilla de arriba a la izquierda se queda sin -n. De ahí el nombre: declinación n."
+      ]
+    },
+    {
+      "titulo": "Quiénes son",
+      "tabla": {
+        "cabecera": ["Grupo", "Ejemplos"],
+        "filas": [
+          ["masculinos terminados en -e", "der Kollege · der Junge · der Kunde · der Experte · der Name · der Löwe · der Affe · der Pädagoge"],
+          ["personas, profesiones y animales", "der Mensch · der Herr · der Nachbar · der Architekt · der Bauer · der Bär · der Elefant"],
+          ["internacionalismos en -and, -ant, -at, -ent, -graf, -ist, -oge", "der Doktorand · der Praktikant · der Automat · der Student · der Konsument · der Fotograf · der Journalist · der Polizist"]
+        ]
+      },
+      "notas": [
+        "Casi todos designan personas o animales. Las excepciones que hay que aprender aparte son der Name, der Planet y der Automat."
+      ]
+    },
+    {
+      "titulo": "¿-n o -en?",
+      "texto": [
+        "Los que ya terminan en -e añaden solo -n; el resto añade -en."
+      ],
+      "tabla": {
+        "cabecera": ["Nominativo singular", "Los demás casos"],
+        "filas": [
+          ["der Kollege", "den / dem / des Kollegen (-n)"],
+          ["der Löwe", "den / dem / des Löwen (-n)"],
+          ["der Student", "den / dem / des Studenten (-en)"],
+          ["der Mensch", "den / dem / des Menschen (-en)"],
+          ["der Herr", "den / dem / des Herrn (singular) · die Herren (plural)"],
+          ["der Name", "den / dem Namen · des Namens"]
+        ]
+      },
+      "notas": [
+        "der Herr es irregular: -n en singular y -en en plural.",
+        "der Name añade además una -s en genitivo (des Namens). Lo mismo le pasa a der Gedanke → des Gedankens."
+      ]
+    },
+    {
+      "titulo": "Dónde se nota",
+      "texto": [
+        "Se nota en cuanto el sustantivo deja de ser el sujeto: detrás de un verbo con acusativo, detrás de una preposición o en un genitivo."
+      ],
+      "ejemplos": [
+        { "de": "Siehst du den Elefanten?", "es": "¿Ves al elefante? (acusativo)" },
+        { "de": "Das ist das Auto vom Nachbarn.", "es": "Ese es el coche del vecino. (von + dativo)" },
+        { "de": "Ich habe eine Mail an Herrn Miller geschrieben.", "es": "Le he escrito un correo al señor Miller. (an + acusativo)" },
+        { "de": "Den Namen des Studenten kenne ich nicht.", "es": "No sé el nombre del estudiante. (acusativo + genitivo)" }
+      ],
+      "notas": [
+        "Cuidado con Herr en las cartas: el encabezamiento es «Sehr geehrter Herr Müller» (nominativo), pero el sobre va «an Herrn Müller»."
+      ]
+    }
+  ]
+}

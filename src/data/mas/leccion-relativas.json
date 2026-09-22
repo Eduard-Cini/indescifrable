@@ -1,0 +1,76 @@
+{
+  "id": "relativas",
+  "mazo": "k6-vocabulario",
+  "titulo": "Oraciones de relativo",
+  "descripcion": "der, den, dem, denen: el relativo toma el género del sustantivo anterior y el caso del verbo de su propia frase. Con preposición delante, manda la preposición.",
+  "fuente": "Netzwerk neu B1, Kapitel 6: Kursbuch S. 69 y 73 · Übungsbuch S. 72-73 · Intensivtrainer S. 31-32",
+  "libro": {
+    "referencia": "Kursbuch S. 69 (8a-c, dos recuadros G) y S. 73 («kurz und klar»), Übungsbuch S. 72-73 (7-8e) e Intensivtrainer S. 31-32 (8a-b)",
+    "puntos": [
+      "El libro las saca del artículo «Stadt der Zukunft» y pide subrayar el sustantivo al que se refiere cada relativo.",
+      "El primer recuadro G cubre nominativo y acusativo y remata con la observación clave: el pronombre relativo es igual que el artículo determinado.",
+      "El segundo recuadro G trata el dativo —y marca en amarillo la única forma que NO coincide con el artículo, el plural denen— y las relativas con preposición.",
+      "La regla que añade sobre la preposición es: «Die Präposition steht vor dem Relativpronomen und bestimmt den Kasus»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Dos preguntas para acertar",
+      "texto": [
+        "El relativo se decide con dos preguntas, y en este orden:",
+        "1) ¿A qué sustantivo se refiere? De ahí salen el GÉNERO y el NÚMERO.",
+        "2) ¿Qué papel tiene dentro de su propia frase? De ahí sale el CASO."
+      ],
+      "ejemplos": [
+        { "de": "2050 gibt es sehr viele Menschen, die in Städten leben.", "es": "En 2050 habrá mucha gente que vivirá en ciudades. (plural + sujeto → die)" },
+        { "de": "Der Strom, den die Hausbewohner brauchen, entsteht durch Solarzellen.", "es": "La electricidad que necesitan los vecinos se genera con placas solares. (masculino + complemento directo → den)" }
+      ],
+      "notas": [
+        "El género lo manda el sustantivo de FUERA; el caso, el verbo de DENTRO. Mezclarlos es el error típico."
+      ]
+    },
+    {
+      "titulo": "Las formas",
+      "tabla": {
+        "cabecera": ["Caso", "der (masculino)", "das (neutro)", "die (femenino)", "die (plural)"],
+        "filas": [
+          ["Nominativo", "der", "das", "die", "die"],
+          ["Acusativo", "den", "das", "die", "die"],
+          ["Dativo", "dem", "dem", "der", "denen"]
+        ]
+      },
+      "notas": [
+        "Son exactamente las formas del artículo determinado, con UNA excepción: el dativo plural es denen, no den.",
+        "El genitivo (dessen, deren) no entra en este capítulo."
+      ]
+    },
+    {
+      "titulo": "Dónde va cada cosa",
+      "texto": [
+        "La relativa va entre comas, pegada al sustantivo al que se refiere, y su verbo conjugado se coloca al final."
+      ],
+      "ejemplos": [
+        { "de": "Zu Menschen, denen man oft begegnet, hat man eine engere Beziehung.", "es": "Con la gente con la que te cruzas a menudo tienes una relación más estrecha." },
+        { "de": "Die Flächen, die so frei geworden sind, können die Städte für Wohnungen nutzen.", "es": "Las superficies que quedan libres así, las ciudades pueden usarlas para viviendas." }
+      ],
+      "notas": [
+        "Si el verbo lleva prefijo separable, se junta al final: …, auf die man im Alltag nicht verzichten kann."
+      ]
+    },
+    {
+      "titulo": "Con preposición",
+      "texto": [
+        "Si el verbo de la relativa rige preposición, la preposición se pone DELANTE del relativo y es ella la que decide el caso."
+      ],
+      "ejemplos": [
+        { "de": "Man trifft andere Bewohner, mit denen man sich unterhalten kann.", "es": "Te encuentras con otros vecinos con los que puedes charlar. (sich unterhalten mit + dativo)" },
+        { "de": "Alle Dinge, auf die man im Alltag nicht verzichten kann, findet man in der Nähe.", "es": "Todo aquello a lo que no puedes renunciar en el día a día lo tienes cerca. (verzichten auf + acusativo)" },
+        { "de": "In meiner Stadt gibt es Sportvereine, bei denen sich jeder anmelden kann.", "es": "En mi ciudad hay clubes deportivos en los que cualquiera puede apuntarse. (sich anmelden bei + dativo)" }
+      ],
+      "notas": [
+        "La preposición nunca se queda suelta al final, como en inglés: no se dice «die Vereine, die man sich anmelden kann bei».",
+        "Si lo anterior es un LUGAR, se puede usar wo en lugar de «preposición + relativo». Eso lo trabaja el capítulo 11, junto con was."
+      ]
+    }
+  ]
+}

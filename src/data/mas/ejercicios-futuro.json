@@ -1,0 +1,50 @@
+{
+  "tema": "futuro",
+  "titulo": "Futur I",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 66, 3d-e; Übungsbuch S. 68-70, 2-4; Intensivtrainer S. 30, 3b-4), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "forma",
+      "titulo": "werden + infinitivo",
+      "instruccion": "Completa con la forma de werden que toca.",
+      "modelo": "Kursbuch S. 66, 3d · Übungsbuch S. 68, 2",
+      "ejercicios": [
+        { "id": "fo1", "partes": ["Ich ", " mich dieses Jahr früher auf die Prüfungen vorbereiten."], "respuesta": "werde", "distractores": ["wirst", "wird", "werdet"], "pista": "ich → werde." },
+        { "id": "fo2", "partes": ["Angelo ", " in der Mittagspause einen Spaziergang machen."], "respuesta": "wird", "distractores": ["werde", "werden", "wirst"], "pista": "er/sie/es → wird." },
+        { "id": "fo3", "partes": ["2050 ", " 70 Prozent der Menschen in Städten wohnen."], "respuesta": "werden", "distractores": ["wird", "werde", "werdet"], "pista": "El sujeto es plural (70 Prozent der Menschen) → werden." },
+        { "id": "fo4", "partes": ["Was ", " du im nächsten Jahr anders machen?"], "respuesta": "wirst", "distractores": ["wird", "werdet", "werde"], "pista": "du → wirst." },
+        { "id": "fo5", "partes": ["Ihr ", " das bestimmt schaffen."], "respuesta": "werdet", "distractores": ["werden", "wirst", "wird"], "pista": "ihr → werdet." },
+        { "id": "fo6", "partes": ["Wir ", " uns öfter mit unseren Freunden treffen."], "respuesta": "werden", "distractores": ["werdet", "wird", "werde"], "pista": "wir → werden." },
+        { "id": "fo7", "partes": ["Die Städte werden insgesamt grüner und ruhiger ", "."], "respuesta": "sein", "distractores": ["ist", "sind", "gewesen"], "pista": "Futur I = werden + INFINITIVO al final." }
+      ]
+    },
+    {
+      "id": "frases",
+      "titulo": "Escribe el propósito",
+      "instruccion": "Pon las palabras en orden en Futur I.",
+      "modelo": "Intensivtrainer S. 30, 3b",
+      "ejercicios": [
+        { "id": "fr1", "partes": null, "pregunta": "Jakob ist Schüler und hat schlechte Noten. (für die Prüfungen / mehr / lernen / er)", "respuesta": "Er wird mehr für die Prüfungen lernen.", "distractores": ["Er wird mehr für die Prüfungen lernt.", "Er wird mehr für die Prüfungen zu lernen.", "Er mehr für die Prüfungen lernen wird."], "pista": "werden en la posición 2 e infinitivo al final." },
+        { "id": "fr2", "partes": null, "pregunta": "Lisa arbeitet zu viel und hat kaum Freizeit. (die Zeit / besser / planen / sie)", "respuesta": "Sie wird die Zeit besser planen.", "distractores": ["Sie wird die Zeit besser plant.", "Sie wird die Zeit besser zu planen.", "Sie die Zeit besser planen wird."], "pista": "El infinitivo no se conjuga y no lleva zu." },
+        { "id": "fr3", "partes": null, "pregunta": "Herr und Frau Berger trinken zu viel Kaffee. (weniger / sie / trinken / Kaffee)", "respuesta": "Sie werden weniger Kaffee trinken.", "distractores": ["Sie werden weniger Kaffee trinkt.", "Sie wird weniger Kaffee trinken.", "Sie werden weniger Kaffee zu trinken."], "pista": "Sujeto plural → werden." },
+        { "id": "fr4", "partes": null, "pregunta": "Meine Freunde und ich spielen Fußball. (im nächsten Jahr / wir / öfter / trainieren)", "respuesta": "Wir werden im nächsten Jahr öfter trainieren.", "distractores": ["Wir werden im nächsten Jahr öfter trainiert.", "Wir werdet im nächsten Jahr öfter trainieren.", "Wir im nächsten Jahr öfter trainieren werden."], "pista": "wir → werden; el infinitivo, al final." },
+        { "id": "fr5", "partes": null, "pregunta": "Was hast du vor? (du / im nächsten Jahr / machen / anders)", "respuesta": "Was wirst du im nächsten Jahr anders machen?", "distractores": ["Was wird du im nächsten Jahr anders machen?", "Was wirst du im nächsten Jahr anders machst?", "Was du wirst im nächsten Jahr anders machen?"], "pista": "En la pregunta con Was, werden va también en la posición 2." },
+        { "id": "fr6", "partes": null, "pregunta": "Ich glaube: (wir / weniger Parkplätze / brauchen)", "respuesta": "Wir werden weniger Parkplätze brauchen.", "distractores": ["Wir werden weniger Parkplätze gebraucht.", "Wir werden weniger Parkplätze zu brauchen.", "Wir weniger Parkplätze brauchen werden."], "pista": "Infinitivo, no participio." }
+      ]
+    },
+    {
+      "id": "otras-formas",
+      "titulo": "Otras formas de decir el futuro",
+      "instruccion": "Di lo mismo sin Futur I, como pide la indicación.",
+      "modelo": "Kursbuch S. 66 (recuadro «!») · Intensivtrainer S. 30, 4",
+      "ejercicios": [
+        { "id": "ot1", "partes": null, "pregunta": "«Mañana le llevo algo dulce a mi hija.» (indicación de tiempo + presente)", "respuesta": "Morgen bringe ich meiner Tochter etwas Süßes mit.", "distractores": ["Morgen ich bringe meiner Tochter etwas Süßes mit.", "Morgen bringe ich mit meiner Tochter etwas Süßes.", "Morgen mitbringe ich meiner Tochter etwas Süßes."], "pista": "Con una indicación de tiempo basta el presente; mit|bringen es separable." },
+        { "id": "ot2", "partes": null, "pregunta": "«Ya no quiero hacerlo todo en el último momento.» (verbo modal)", "respuesta": "Ich will nicht mehr alles im letzten Moment machen.", "distractores": ["Ich will nicht mehr alles im letzten Moment zu machen.", "Ich will nicht mehr alles im letzten Moment gemacht.", "Ich will nicht mehr alles im letzten Moment mache."], "pista": "wollen + infinitivo al final, sin zu." },
+        { "id": "ot3", "partes": null, "pregunta": "«Tengo pensado disfrutar de la tranquilidad.» (vor|haben)", "respuesta": "Ich habe vor, die Ruhe zu genießen.", "distractores": ["Ich habe vor, die Ruhe genießen.", "Ich vorhabe, die Ruhe zu genießen.", "Ich habe vor, zu die Ruhe genießen."], "pista": "vor|haben + oración de infinitivo con zu." },
+        { "id": "ot4", "partes": ["Ich ", " gleich übermorgen damit an."], "respuesta": "fange", "distractores": ["fangt", "fängst", "anfange"], "pista": "an|fangen: el prefijo an se queda al final de la frase." },
+        { "id": "ot5", "partes": ["Hanna und José ", " sich vorgenommen, öfter Sport zu machen."], "respuesta": "haben", "distractores": ["sind", "werden", "hatten"], "pista": "sich vor|nehmen forma el Perfekt con haben." },
+        { "id": "ot6", "partes": ["Nächstes Jahr ", " Tom weniger essen und gesünder leben."], "respuesta": "wird", "distractores": ["werden", "werde", "wirst"], "pista": "Tom es 3.ª persona del singular." }
+      ]
+    }
+  ]
+}

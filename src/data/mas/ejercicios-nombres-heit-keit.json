@@ -1,0 +1,54 @@
+{
+  "tema": "nombres-heit-keit",
+  "titulo": "Sustantivos con -heit y -keit",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 74, A-B; Intensivtrainer S. 33, Wortbildung), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "en-la-frase",
+      "titulo": "El sustantivo que falta",
+      "instruccion": "Completa la frase con el sustantivo del adjetivo marcado.",
+      "modelo": "Übungsbuch S. 74, B · Intensivtrainer S. 33",
+      "ejercicios": [
+        { "id": "fr1", "partes": ["Das Projekt ist schwierig. Ich habe nicht gedacht, dass es so viele ", " gibt."], "respuesta": "Schwierigkeiten", "distractores": ["Schwierigheiten", "Schwierigkeits", "Schwierigungen"], "pista": "schwierig termina en -ig → -keit." },
+        { "id": "fr2", "partes": ["Sie sollten viel trinken. Nehmen Sie viel ", " zu sich."], "respuesta": "Flüssigkeit", "distractores": ["Flüssigheit", "Flüssige", "Flüssigung"], "pista": "flüssig → -ig → -keit." },
+        { "id": "fr3", "partes": ["Nach der Schule machen sie eine Reise, um ihre ", " zu genießen."], "respuesta": "Freiheit", "distractores": ["Freikeit", "Freiung", "Freiigkeit"], "pista": "frei no acaba en -ig, -lich ni -bar → -heit." },
+        { "id": "fr4", "partes": ["Laura steht immer früh auf, das ist eine ", " von ihr."], "respuesta": "Gewohnheit", "distractores": ["Gewohnkeit", "Gewöhnkeit", "Gewohnung"], "pista": "gewohnt → -heit." },
+        { "id": "fr5", "partes": ["Das stimmt wirklich, er hat die ", " gesagt."], "respuesta": "Wahrheit", "distractores": ["Wahrkeit", "Wahrigkeit", "Wahrung"], "pista": "wahr → -heit." },
+        { "id": "fr6", "partes": ["Das Kind hat große ", " mit seiner Mutter."], "respuesta": "Ähnlichkeit", "distractores": ["Ähnlichheit", "Ähnligkeit", "Ähnlung"], "pista": "ähnlich termina en -lich → -keit." },
+        { "id": "fr7", "partes": ["Ich wünsche mir, dass ich gesund bleibe. ", " ist das Wichtigste."], "respuesta": "Gesundheit", "distractores": ["Gesundkeit", "Gesundigkeit", "Gesundung"], "pista": "gesund → -heit." },
+        { "id": "fr8", "partes": ["Ab jetzt komme ich immer pünktlich. ", " ist wirklich wichtig."], "respuesta": "Pünktlichkeit", "distractores": ["Pünktlichheit", "Pünktligkeit", "Pünktlung"], "pista": "pünktlich → -lich → -keit." },
+        { "id": "fr9", "partes": ["Du schaffst das! In dem Projekt gibt es viele ", "."], "respuesta": "Möglichkeiten", "distractores": ["Möglichheiten", "Möglighkeiten", "Möglichungen"], "pista": "möglich → -lich → -keit." }
+      ]
+    },
+    {
+      "id": "sufijo",
+      "titulo": "¿-heit o -keit?",
+      "instruccion": "¿Qué sustantivo sale de este adjetivo?",
+      "modelo": "Übungsbuch S. 74, A (recuadro W)",
+      "ejercicios": [
+        { "id": "su1", "partes": null, "pregunta": "fähig", "respuesta": "die Fähigkeit", "distractores": ["die Fähigheit", "die Fähigung", "die Fähigschaft"], "pista": "-ig → -keit." },
+        { "id": "su2", "partes": null, "pregunta": "schön", "respuesta": "die Schönheit", "distractores": ["die Schönkeit", "die Schönigkeit", "die Schönung"], "pista": "No acaba en -ig/-lich/-bar → -heit." },
+        { "id": "su3", "partes": null, "pregunta": "aufmerksam", "respuesta": "die Aufmerksamkeit", "distractores": ["die Aufmerksamheit", "die Aufmerksamschaft", "die Aufmerkung"], "pista": "-sam también pide -keit." },
+        { "id": "su4", "partes": null, "pregunta": "zufrieden", "respuesta": "die Zufriedenheit", "distractores": ["die Zufriedenkeit", "die Zufriedigkeit", "die Zufriedung"], "pista": "-heit." },
+        { "id": "su5", "partes": null, "pregunta": "sicher", "respuesta": "die Sicherheit", "distractores": ["die Sicherkeit", "die Sicherigkeit", "die Sicherschaft"], "pista": "-heit." },
+        { "id": "su6", "partes": null, "pregunta": "krank", "respuesta": "die Krankheit", "distractores": ["die Krankkeit", "die Krankigkeit", "die Krankschaft"], "pista": "-heit." },
+        { "id": "su7", "partes": null, "pregunta": "wirklich", "respuesta": "die Wirklichkeit", "distractores": ["die Wirklichheit", "die Wirklichung", "die Wirklichschaft"], "pista": "-lich → -keit." },
+        { "id": "su8", "partes": null, "pregunta": "gerecht", "respuesta": "die Gerechtigkeit", "distractores": ["die Gerechtheit", "die Gerechtkeit", "die Gerechtung"], "pista": "Aquí se cuela una -ig-: gerecht → Gerecht-ig-keit." }
+      ]
+    },
+    {
+      "id": "al-reves",
+      "titulo": "Del sustantivo al adjetivo",
+      "instruccion": "¿De qué adjetivo viene cada palabra?",
+      "modelo": "Übungsbuch S. 74, A",
+      "ejercicios": [
+        { "id": "ar1", "partes": null, "pregunta": "die Gerechtigkeit", "respuesta": "gerecht", "distractores": ["gerichtet", "gerade", "gering"], "pista": "justicia → justo." },
+        { "id": "ar2", "partes": null, "pregunta": "die Einsamkeit", "respuesta": "einsam", "distractores": ["eins", "einzig", "einfach"], "pista": "soledad → solitario." },
+        { "id": "ar3", "partes": null, "pregunta": "die Freiheit", "respuesta": "frei", "distractores": ["freundlich", "freiwillig", "froh"], "pista": "libertad → libre." },
+        { "id": "ar4", "partes": null, "pregunta": "die Zufriedenheit", "respuesta": "zufrieden", "distractores": ["friedlich", "zufällig", "zuverlässig"], "pista": "satisfacción → satisfecho." },
+        { "id": "ar5", "partes": null, "pregunta": "die Schwierigkeit", "respuesta": "schwierig", "distractores": ["schwer", "schwach", "schwarz"], "pista": "dificultad → difícil, complicado." },
+        { "id": "ar6", "partes": null, "pregunta": "die Aufmerksamkeit", "respuesta": "aufmerksam", "distractores": ["aufregend", "auffällig", "aufrichtig"], "pista": "atención → atento." }
+      ]
+    }
+  ]
+}

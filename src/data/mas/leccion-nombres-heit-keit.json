@@ -1,0 +1,88 @@
+{
+  "id": "nombres-heit-keit",
+  "mazo": "nombres-heit-keit",
+  "titulo": "Sustantivos con -heit y -keit",
+  "descripcion": "Formación de palabras del capítulo 6: del adjetivo al sustantivo abstracto. Siempre femeninos, y -keit detrás de -ig, -lich y -bar.",
+  "fuente": "Netzwerk neu B1, Kapitel 6: Übungsbuch S. 74 (Wortbildung) · Intensivtrainer S. 33",
+  "libro": {
+    "referencia": "Übungsbuch S. 74 («Wortbildung – Nomen mit -heit und -keit», A-B) e Intensivtrainer S. 33 (Wortbildung)",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro pide emparejar ocho adjetivos con el sustantivo de su misma familia (möglich → die Möglichkeit, krank → die Krankheit).",
+      "El recuadro W dice dos cosas: con -heit y -keit se forman sustantivos a partir de adjetivos, y el artículo es SIEMPRE die.",
+      "Añade la regla de reparto: detrás de adjetivos en -ig y -lich se usa -keit, y lo marca en la propia palabra: die Fähigkeit.",
+      "El Intensivtrainer lo practica al revés: da el adjetivo y pide completar la frase con el sustantivo (flüssig → die Flüssigkeit)."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "El artículo es siempre die",
+      "texto": [
+        "-heit y -keit convierten un adjetivo en un sustantivo abstracto. No hay que aprender el género: todos son femeninos, y el plural, cuando existe, es en -en."
+      ],
+      "ejemplos": [
+        { "de": "krank → die Krankheit, die Krankheiten", "es": "enfermo → la enfermedad" },
+        { "de": "möglich → die Möglichkeit, die Möglichkeiten", "es": "posible → la posibilidad" }
+      ],
+      "notas": [
+        "Muchos se usan sobre todo en singular: die Gesundheit, die Sicherheit, die Wahrheit, die Ehrlichkeit."
+      ]
+    },
+    {
+      "titulo": "¿Cuándo -heit y cuándo -keit?",
+      "texto": [
+        "La regla del libro cubre casi todos los casos: si el adjetivo termina en -ig, -lich o -bar, el sustantivo lleva -keit; si no, -heit."
+      ],
+      "tabla": {
+        "cabecera": ["Final del adjetivo", "Sufijo", "Ejemplos"],
+        "filas": [
+          ["-ig", "-keit", "fähig → die Fähigkeit · schwierig → die Schwierigkeit · flüssig → die Flüssigkeit"],
+          ["-lich", "-keit", "möglich → die Möglichkeit · wirklich → die Wirklichkeit · pünktlich → die Pünktlichkeit"],
+          ["-bar", "-keit", "dankbar → die Dankbarkeit · haltbar → die Haltbarkeit"],
+          ["-sam", "-keit", "aufmerksam → die Aufmerksamkeit · einsam → die Einsamkeit · langsam → die Langsamkeit"],
+          ["cualquier otro final", "-heit", "krank → die Krankheit · frei → die Freiheit · schön → die Schönheit · sicher → die Sicherheit"]
+        ]
+      },
+      "notas": [
+        "gerecht hace die Gerechtigkeit: se cuela una -ig- antes de -keit. Pasa también con schnell → die Schnelligkeit."
+      ]
+    },
+    {
+      "titulo": "Los del capítulo",
+      "tabla": {
+        "cabecera": ["Adjetivo", "Sustantivo", "Significado"],
+        "filas": [
+          ["möglich", "die Möglichkeit", "posibilidad"],
+          ["fähig", "die Fähigkeit", "capacidad"],
+          ["wirklich", "die Wirklichkeit", "realidad"],
+          ["aufmerksam", "die Aufmerksamkeit", "atención"],
+          ["schwierig", "die Schwierigkeit", "dificultad"],
+          ["flüssig", "die Flüssigkeit", "líquido"],
+          ["ähnlich", "die Ähnlichkeit", "parecido"],
+          ["pünktlich", "die Pünktlichkeit", "puntualidad"],
+          ["schön", "die Schönheit", "belleza"],
+          ["krank", "die Krankheit", "enfermedad"],
+          ["sicher", "die Sicherheit", "seguridad"],
+          ["zufrieden", "die Zufriedenheit", "satisfacción"],
+          ["gesund", "die Gesundheit", "salud"],
+          ["wahr", "die Wahrheit", "verdad"],
+          ["frei", "die Freiheit", "libertad"],
+          ["gewohnt", "die Gewohnheit", "costumbre, hábito"]
+        ]
+      }
+    },
+    {
+      "titulo": "Y al revés",
+      "texto": [
+        "Reconocer el sufijo sirve para dos cosas: acertar el artículo sin pensarlo (siempre die) y deducir el adjetivo que hay detrás."
+      ],
+      "ejemplos": [
+        { "de": "die Gerechtigkeit → gerecht", "es": "la justicia → justo" },
+        { "de": "die Einsamkeit → einsam", "es": "la soledad → solitario" },
+        { "de": "die Vergangenheit → vergangen", "es": "el pasado → pasado" }
+      ],
+      "notas": [
+        "Con -schaft y -ung pasa lo mismo con el género (siempre die), pero esos salen de sustantivos y de verbos: die Freundschaft, die Bildung. El capítulo 10 los trabaja con los valores."
+      ]
+    }
+  ]
+}

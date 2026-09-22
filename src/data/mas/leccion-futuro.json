@@ -1,0 +1,86 @@
+{
+  "id": "futuro",
+  "mazo": "k6-verbos",
+  "titulo": "Futur I y otras formas de hablar del futuro",
+  "descripcion": "werden + infinitivo para hacer pronósticos y anunciar propósitos, y los tres recursos que el alemán usa mucho más a menudo para el futuro.",
+  "fuente": "Netzwerk neu B1, Kapitel 6: Kursbuch S. 66 y 73 · Übungsbuch S. 67-70 · Intensivtrainer S. 29-30",
+  "libro": {
+    "referencia": "Kursbuch S. 66 (3d, recuadro G y recuadro «!») y S. 73 («kurz und klar»), Übungsbuch S. 67-70 (1-4) e Intensivtrainer S. 29-30 (3a-b, 4)",
+    "puntos": [
+      "El recuadro G es un esquema con dos huecos que rellena el alumno: werden conjugado en la posición 2 y el infinitivo al final.",
+      "Justo debajo hay un recuadro «!» titulado «So kann man auch Zukunft ausdrücken»: indicación de tiempo + presente, verbo modal wollen o möchten, y verbos como vorhaben o anfangen.",
+      "Los textos de partida son propósitos de Año Nuevo («Vorsätze fürs neue Jahr») y un artículo con pronósticos sobre la ciudad de 2050.",
+      "El «kurz und klar» añade los Redemittel para conjeturar: Es wird wahrscheinlich …, Ich kann mir vorstellen, dass …, Möglicherweise …"
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Cómo se forma",
+      "texto": [
+        "werden conjugado + infinitivo al final de la frase. Es el mismo esquema que el de un verbo modal."
+      ],
+      "tabla": {
+        "cabecera": ["Posición 1", "Posición 2: werden", "…", "Final: infinitivo"],
+        "filas": [
+          ["Ich", "werde", "oft in der Bibliothek", "sein."],
+          ["Angelo", "wird", "einen Spaziergang", "machen."],
+          ["2050", "werden", "70 Prozent der Menschen in Städten", "wohnen."]
+        ]
+      },
+      "notas": [
+        "werden: ich werde, du wirst, er/sie wird, wir werden, ihr werdet, sie/Sie werden.",
+        "En una subordinada, werden se coloca al final, detrás del infinitivo: …, dass wir weniger Parkplätze brauchen werden."
+      ]
+    },
+    {
+      "titulo": "Para qué se usa",
+      "tabla": {
+        "cabecera": ["Uso", "Ejemplo"],
+        "filas": [
+          ["pronóstico sobre el futuro", "2050 werden die Städte grüner und ruhiger sein."],
+          ["propósito, intención firme", "Ich werde mich dieses Jahr früher auf die Prüfungen vorbereiten."],
+          ["suposición sobre el PRESENTE", "Er wird wohl noch im Büro sein. (= seguramente está)"]
+        ]
+      },
+      "notas": [
+        "En la suposición sobre el presente casi siempre aparece además wohl, sicher o wahrscheinlich."
+      ]
+    },
+    {
+      "titulo": "Casi siempre basta el presente",
+      "texto": [
+        "En alemán hablado, el futuro se dice muchas veces en presente con una indicación de tiempo. El Futur I se reserva para pronósticos y propósitos."
+      ],
+      "tabla": {
+        "cabecera": ["Recurso", "Ejemplo"],
+        "filas": [
+          ["indicación de tiempo + presente", "Morgen bringe ich meiner Tochter etwas Süßes mit."],
+          ["verbo modal wollen o möchten", "Ich will nicht mehr alles im letzten Moment machen."],
+          ["verbos como vor|haben, an|fangen", "Ich habe vor, die Ruhe zu genießen. · Ich fange gleich übermorgen damit an."]
+        ]
+      },
+      "notas": [
+        "sich etwas vor|nehmen es el verbo del capítulo para los propósitos: Hanna hat sich vorgenommen, öfter Sport zu machen."
+      ]
+    },
+    {
+      "titulo": "Con más o menos seguridad",
+      "texto": [
+        "El capítulo trae los adverbios para graduar cuánto te crees el pronóstico."
+      ],
+      "tabla": {
+        "cabecera": ["Seguridad", "Palabras"],
+        "filas": [
+          ["alta", "sicher · bestimmt · auf jeden Fall"],
+          ["media", "wahrscheinlich · voraussichtlich · wohl"],
+          ["baja", "möglicherweise · eventuell · vielleicht · irgendwann"]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Es wird wahrscheinlich nur noch wenige Autos geben.", "es": "Probablemente ya solo quedarán unos pocos coches." },
+        { "de": "Möglicherweise werden wir 150 Jahre alt.", "es": "Puede que lleguemos a los 150 años." },
+        { "de": "Ich kann mir vorstellen, dass die Städte grüner werden.", "es": "Me imagino que las ciudades se volverán más verdes." }
+      ]
+    }
+  ]
+}

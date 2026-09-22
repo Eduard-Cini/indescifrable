@@ -1,0 +1,53 @@
+{
+  "tema": "n-declinacion",
+  "titulo": "Declinación n",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 67, 5a-b; Übungsbuch S. 71-72, 5-6; Intensivtrainer S. 30-31, 5a-b), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "forma",
+      "titulo": "¿Con -n o sin -n?",
+      "instruccion": "Elige la forma correcta. Pregúntate primero si la palabra es el sujeto.",
+      "modelo": "Intensivtrainer S. 30, 5a",
+      "ejercicios": [
+        { "id": "fm1", "partes": ["Im Haus ist eine Familie mit einem ", " neu eingezogen."], "respuesta": "Jungen", "distractores": ["Junge", "Jungens", "Jungs"], "pista": "mit + dativo → einem Jungen." },
+        { "id": "fm2", "partes": ["Wo hast du die Fahrkarte gekauft? – Bei dem ", " da drüben."], "respuesta": "Automaten", "distractores": ["Automat", "Automats", "Automate"], "pista": "bei + dativo; der Automat es de declinación n." },
+        { "id": "fm3", "partes": ["Lisa hat einen neuen Freund, einen ", "."], "respuesta": "Franzosen", "distractores": ["Franzose", "Franzoses", "Französen"], "pista": "Acusativo → einen Franzosen." },
+        { "id": "fm4", "partes": ["Ich habe im Zoo einen ", " beobachtet."], "respuesta": "Affen", "distractores": ["Affe", "Affes", "Äffen"], "pista": "Acusativo masculino → einen Affen." },
+        { "id": "fm5", "partes": ["Das ist eine leichte Arbeit, die kann der neue ", " machen."], "respuesta": "Praktikant", "distractores": ["Praktikanten", "Praktikants", "Praktikante"], "pista": "Aquí es el SUJETO: nominativo singular, sin -en." },
+        { "id": "fm6", "partes": ["Ich glaube, dass der ", " mehr Macht hat, als er denkt."], "respuesta": "Konsument", "distractores": ["Konsumenten", "Konsuments", "Konsumente"], "pista": "Sujeto de la subordinada → nominativo singular." },
+        { "id": "fm7", "partes": ["Entschuldigen Sie bitte, ich habe Ihren ", " nicht verstanden."], "respuesta": "Namen", "distractores": ["Name", "Names", "Namens"], "pista": "Acusativo → den/Ihren Namen (el genitivo sí sería des Namens)." },
+        { "id": "fm8", "partes": ["Ich habe mich auf der Party allein gefühlt: Ich habe keinen ", " gekannt."], "respuesta": "Menschen", "distractores": ["Mensch", "Menschs", "Mensche"], "pista": "Acusativo → keinen Menschen." }
+      ]
+    },
+    {
+      "id": "caso",
+      "titulo": "Detrás de una preposición",
+      "instruccion": "Completa con la forma que pide el caso.",
+      "modelo": "Intensivtrainer S. 31, 5b · Übungsbuch S. 72, 6",
+      "ejercicios": [
+        { "id": "ca1", "partes": ["Von wem sind diese Fotos? Sind sie von einem ", "?"], "respuesta": "Fotografen", "distractores": ["Fotograf", "Fotografs", "Fotografe"], "pista": "von + dativo → -en." },
+        { "id": "ca2", "partes": ["Weißt du, von welchem ", " der Artikel in der Zeitung ist?"], "respuesta": "Journalisten", "distractores": ["Journalist", "Journalists", "Journaliste"], "pista": "von + dativo → -en." },
+        { "id": "ca3", "partes": ["Ich bin total geschafft. Ich hatte heute so viele ", " im Geschäft."], "respuesta": "Kunden", "distractores": ["Kunde", "Kundes", "Kunds"], "pista": "Plural: die Kunden." },
+        { "id": "ca4", "partes": ["Der Chef in der Firma nervt, aber ich habe nette ", "."], "respuesta": "Kollegen", "distractores": ["Kollege", "Kolleges", "Kollegs"], "pista": "Plural: die Kollegen." },
+        { "id": "ca5", "partes": ["Wir wohnen auf dem Land, Milch und Butter kaufen wir direkt beim ", "."], "respuesta": "Bauern", "distractores": ["Bauer", "Bauers", "Bauere"], "pista": "bei dem = beim + dativo → -n." },
+        { "id": "ca6", "partes": ["Ich habe eine Mail an ", " Miller geschrieben, aber er antwortet nicht."], "respuesta": "Herrn", "distractores": ["Herr", "Herren", "Herrs"], "pista": "an + acusativo; Herr es irregular: Herrn en singular." },
+        { "id": "ca7", "partes": ["Das ist das Auto vom ", "."], "respuesta": "Nachbarn", "distractores": ["Nachbar", "Nachbars", "Nachbaren"], "pista": "von dem = vom + dativo → -n." }
+      ]
+    },
+    {
+      "id": "cual",
+      "titulo": "¿Quién es quién?",
+      "instruccion": "Elige la palabra que encaja con la definición.",
+      "modelo": "Kursbuch S. 67, 5b",
+      "ejercicios": [
+        { "id": "cl1", "partes": ["Wer beruflich Fotos macht, ist ", "."], "respuesta": "ein Fotograf", "distractores": ["ein Journalist", "ein Pädagoge", "ein Architekt"], "pista": "das Foto → der Fotograf." },
+        { "id": "cl2", "partes": ["Wer Häuser plant, ist ", "."], "respuesta": "ein Architekt", "distractores": ["ein Bauer", "ein Polizist", "ein Praktikant"], "pista": "der Architekt también es de declinación n." },
+        { "id": "cl3", "partes": ["Wer nach dem Studium eine Doktorarbeit schreibt, ist ", "."], "respuesta": "ein Doktorand", "distractores": ["ein Student", "ein Praktikant", "ein Kunde"], "pista": "Internacionalismo en -and." },
+        { "id": "cl4", "partes": ["Wer in einer Firma ein Praktikum macht, ist ", "."], "respuesta": "ein Praktikant", "distractores": ["ein Kollege", "ein Kunde", "ein Experte"], "pista": "das Praktikum → der Praktikant." },
+        { "id": "cl5", "partes": ["Wer in einem Geschäft etwas kauft, ist ", "."], "respuesta": "ein Kunde", "distractores": ["ein Kollege", "ein Bauer", "ein Tourist"], "pista": "Masculino en -e." },
+        { "id": "cl6", "partes": ["Wer sehr viel über ein Thema weiß, ist ", "."], "respuesta": "ein Experte", "distractores": ["ein Tourist", "ein Kunde", "ein Junge"], "pista": "Masculino en -e: der Experte, den Experten." },
+        { "id": "cl7", "partes": ["Wer eine Stadt besucht und sie sich ansieht, ist ", "."], "respuesta": "ein Tourist", "distractores": ["ein Bauer", "ein Nachbar", "ein Polizist"], "pista": "Internacionalismo en -ist." }
+      ]
+    }
+  ]
+}

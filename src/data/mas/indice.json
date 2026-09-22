@@ -3,6 +3,12 @@
   "nota": "Cada tema de gramática tiene leccion-<id>.json y ejercicios-<id>.json (y, si lo hay, un mazo-<id>.json de fichas del tema). Cada capítulo tiene además mazo-k<N>-vocabulario.json y mazo-k<N>-verbos.json.",
   "capitulos": [
     {
+      "numero": 6,
+      "titulo": "Blick nach vorn",
+      "temas": ["futuro", "n-declinacion", "relativas", "nombres-heit-keit"],
+      "mazos": ["k6-vocabulario", "k6-verbos"]
+    },
+    {
       "numero": 7,
       "titulo": "Zwischenmenschliches",
       "temas": ["plusquamperfekt", "temporales", "adjetivos-ig-lich"],

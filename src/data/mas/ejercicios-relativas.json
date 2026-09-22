@@ -1,0 +1,53 @@
+{
+  "tema": "relativas",
+  "titulo": "Oraciones de relativo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 69, 8a-c; Übungsbuch S. 72-73, 8a-e; Intensivtrainer S. 31-32, 8a-b), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "nominativo-acusativo",
+      "titulo": "Nominativo y acusativo",
+      "instruccion": "Completa el relativo. Mira el género fuera y el caso dentro.",
+      "modelo": "Kursbuch S. 69, 8a",
+      "ejercicios": [
+        { "id": "na1", "partes": ["In der Zukunft gibt es nur noch wenige Autos, ", " auf den Straßen fahren."], "respuesta": "die", "distractores": ["den", "denen", "das"], "pista": "Plural + sujeto de la relativa → die." },
+        { "id": "na2", "partes": ["So entsteht viel Platz, ", " die Städte für Wohnungen nutzen können."], "respuesta": "den", "distractores": ["der", "dem", "die"], "pista": "der Platz + complemento directo de nutzen → den." },
+        { "id": "na3", "partes": ["Große Wohnungen sind die Ausnahme, ", " viel Platz für eine Person bietet."], "respuesta": "die", "distractores": ["der", "den", "denen"], "pista": "die Ausnahme (femenino) + sujeto → die." },
+        { "id": "na4", "partes": ["Die Küche ist ein zentraler Raum, ", " die Bewohner sich teilen werden."], "respuesta": "den", "distractores": ["der", "dem", "das"], "pista": "der Raum + complemento directo → den." },
+        { "id": "na5", "partes": ["Teilen ist ein Konzept, ", " in der Zukunft immer wichtiger wird."], "respuesta": "das", "distractores": ["der", "den", "dem"], "pista": "das Konzept + sujeto → das (igual que el artículo)." },
+        { "id": "na6", "partes": ["Der Strom, ", " die Hausbewohner brauchen, entsteht durch Solarzellen."], "respuesta": "den", "distractores": ["der", "dem", "die"], "pista": "der Strom + complemento directo de brauchen → den." },
+        { "id": "na7", "partes": ["Wir brauchen Politiker, ", " ehrlich sind."], "respuesta": "die", "distractores": ["der", "den", "denen"], "pista": "Plural + sujeto → die." }
+      ]
+    },
+    {
+      "id": "dativo",
+      "titulo": "Dativo (y el famoso denen)",
+      "instruccion": "Completa. Fíjate en qué caso rige el verbo de la relativa.",
+      "modelo": "Kursbuch S. 69, 8b · Intensivtrainer S. 32, 8a",
+      "ejercicios": [
+        { "id": "da1", "partes": ["Man trifft vielleicht einen Nachbarn, ", " man bei etwas helfen kann."], "respuesta": "dem", "distractores": ["den", "der", "denen"], "pista": "helfen rige dativo; masculino → dem." },
+        { "id": "da2", "partes": ["Zu Menschen, ", " man oft begegnet, hat man eine engere Beziehung."], "respuesta": "denen", "distractores": ["den", "dem", "die"], "pista": "begegnen rige dativo; plural → denen, la única forma distinta del artículo." },
+        { "id": "da3", "partes": ["Wir brauchen Politiker, ", " man vertrauen kann."], "respuesta": "denen", "distractores": ["den", "dem", "die"], "pista": "vertrauen rige dativo; plural → denen." },
+        { "id": "da4", "partes": ["Das ist die Kollegin, ", " ich das Buch geliehen habe."], "respuesta": "der", "distractores": ["die", "den", "denen"], "pista": "leihen + dativo de persona; femenino → der." },
+        { "id": "da5", "partes": ["Kennst du den netten Herrn, ", " das Haus da hinten gehört?"], "respuesta": "dem", "distractores": ["der", "den", "denen"], "pista": "gehören rige dativo; masculino → dem." },
+        { "id": "da6", "partes": ["Wer ist denn der große Junge, ", " du gerade gratuliert hast?"], "respuesta": "dem", "distractores": ["den", "der", "denen"], "pista": "gratulieren rige dativo; masculino → dem." },
+        { "id": "da7", "partes": ["Wer sind die beiden Frauen, ", " die Kellnerin Kaffee gebracht hat?"], "respuesta": "denen", "distractores": ["den", "der", "die"], "pista": "bringen + dativo de persona; plural → denen." }
+      ]
+    },
+    {
+      "id": "preposicion",
+      "titulo": "Con preposición delante",
+      "instruccion": "Elige la preposición y el relativo. La preposición manda el caso.",
+      "modelo": "Kursbuch S. 69, 8c · Übungsbuch S. 73, 8e",
+      "ejercicios": [
+        { "id": "pr1", "partes": ["Wir brauchen Verkehrsmittel, ", " wir schnell von A nach B kommen."], "respuesta": "mit denen", "distractores": ["mit den", "in dem", "für die"], "pista": "kommen mit + dativo; plural → mit denen." },
+        { "id": "pr2", "partes": ["Wir brauchen Wohnungen, ", " man nicht viel Miete zahlen muss."], "respuesta": "für die", "distractores": ["für denen", "für der", "für das"], "pista": "zahlen für + acusativo; plural → für die." },
+        { "id": "pr3", "partes": ["Wir brauchen Schulen, ", " unsere Kinder gern gehen."], "respuesta": "in die", "distractores": ["in denen", "in der", "in das"], "pista": "gehen in + acusativo (dirección); plural → in die." },
+        { "id": "pr4", "partes": ["Wir brauchen einen großen Park, ", " man sich erholen kann."], "respuesta": "in dem", "distractores": ["in den", "in denen", "in der"], "pista": "sich erholen in + dativo (lugar); masculino → in dem." },
+        { "id": "pr5", "partes": ["Wir brauchen Veranstaltungen, ", " viele Einwohner teilnehmen wollen."], "respuesta": "an denen", "distractores": ["an den", "an die", "an dem"], "pista": "teil|nehmen an + dativo; plural → an denen." },
+        { "id": "pr6", "partes": ["Wir brauchen einen Bürgermeister, ", " wir von unseren Problemen berichten können."], "respuesta": "dem", "distractores": ["den", "denen", "der"], "pista": "berichten + dativo de persona, sin preposición; masculino → dem." },
+        { "id": "pr7", "partes": ["In meiner Stadt gibt es Sportvereine, ", " sich jeder anmelden kann."], "respuesta": "bei denen", "distractores": ["bei den", "bei der", "bei die"], "pista": "sich anmelden bei + dativo; plural → bei denen." },
+        { "id": "pr8", "partes": ["Jedes Jahr gibt es ein großes Stadtfest, ", " sich alle Leute freuen."], "respuesta": "auf das", "distractores": ["auf dem", "auf die", "auf den"], "pista": "sich freuen auf + acusativo; neutro → auf das." }
+      ]
+    }
+  ]
+}

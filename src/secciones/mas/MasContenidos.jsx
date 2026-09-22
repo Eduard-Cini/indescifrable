@@ -104,7 +104,7 @@ function MasContenidos() {
         <span />
       </header>
       <p className="lectura-subtitulo">
-        Alemán · {portada?.libro ?? 'Netzwerk neu B1'}, capítulos 7 a 11. Dos bloques:
+        Alemán · {portada?.libro ?? 'Netzwerk neu B1'}, capítulos 6 a 11. Dos bloques:
         la gramática con sus ejercicios, y el vocabulario con los verbos de cada capítulo.
       </p>
 
