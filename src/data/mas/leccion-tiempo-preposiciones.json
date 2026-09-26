@@ -1,0 +1,82 @@
+{
+  "id": "tiempo-preposiciones",
+  "mazo": "k3-vocabulario",
+  "titulo": "Indicaciones de tiempo: preposiciones con dativo y genitivo",
+  "descripcion": "ab, an, bis zu, in, nach, seit y vor rigen dativo; außerhalb, innerhalb y während rigen genitivo.",
+  "fuente": "Netzwerk neu B1, Kapitel 3: Kursbuch S. 33 y 37 · Übungsbuch S. 35-36 · Intensivtrainer S. 18",
+  "libro": {
+    "referencia": "Kursbuch S. 33 (recuadro G) y S. 37 («kurz und klar»), Übungsbuch S. 35-36 e Intensivtrainer S. 18",
+    "puntos": [
+      "El recuadro se titula «Zeitangaben: Präpositionen mit Dativ und Genitiv» y tiene solo dos filas.",
+      "Dativo: ab, an, bis zu, in, nach, seit, vor. Los ejemplos son ab der nächsten Woche, am Wochenende, bis zum Urlaub, im Urlaub, nach der Arbeit, seit dem Umzug, vor der Arbeit.",
+      "Genitivo: außerhalb, innerhalb, während, con außerhalb des Urlaubs, innerhalb einer Stunde y während eines Konzerts.",
+      "El capítulo las usa para contar cambios en la vida: qué pasó antes, durante y después de una mudanza o de un trabajo nuevo."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Las de dativo",
+      "tabla": {
+        "cabecera": ["Preposición", "Significado", "Ejemplo"],
+        "filas": [
+          ["ab", "a partir de", "ab der nächsten Woche"],
+          ["an (am)", "en (día, fin de semana)", "am Wochenende · am Montag"],
+          ["bis zu (bis zum)", "hasta", "bis zum Urlaub"],
+          ["in (im)", "en (mes, año, estación)", "im Urlaub · im Mai"],
+          ["nach", "después de", "nach der Arbeit"],
+          ["seit", "desde hace", "seit dem Umzug"],
+          ["vor", "antes de; hace", "vor der Arbeit · vor zwei Jahren"]
+        ]
+      },
+      "notas": [
+        "Las contracciones son obligatorias en la lengua normal: an dem = am, in dem = im, bis zu dem = bis zum, zu der = zur.",
+        "vor tiene dos sentidos: «antes de» (vor der Arbeit) y «hace» (vor zwei Jahren)."
+      ]
+    },
+    {
+      "titulo": "Las de genitivo",
+      "tabla": {
+        "cabecera": ["Preposición", "Significado", "Ejemplo"],
+        "filas": [
+          ["während", "durante", "während eines Konzerts"],
+          ["innerhalb", "dentro de (un plazo)", "innerhalb einer Stunde"],
+          ["außerhalb", "fuera de (un periodo)", "außerhalb des Urlaubs"]
+        ]
+      },
+      "notas": [
+        "Recuerda el genitivo: masculino y neutro des + -(e)s en el sustantivo, femenino der/einer sin cambio.",
+        "innerhalb y außerhalb también valen para el espacio: innerhalb der Stadt, außerhalb des Gebäudes."
+      ]
+    },
+    {
+      "titulo": "Sin preposición",
+      "texto": [
+        "Algunas indicaciones de tiempo no llevan preposición: van en acusativo o son adverbios sueltos."
+      ],
+      "tabla": {
+        "cabecera": ["Tipo", "Ejemplos"],
+        "filas": [
+          ["acusativo (duración o momento)", "jeden Tag · nächste Woche · letztes Jahr · einen Monat lang"],
+          ["adverbios", "gestern · heute · morgen · damals · früher · mittlerweile · schließlich"],
+          ["con -lang", "jahrelang · stundenlang · monatelang"]
+        ]
+      },
+      "notas": [
+        "No confundas seit (preposición, con dativo) con seitdem (conector, con el verbo al final): Seit dem Umzug… / Seitdem wir umgezogen sind, …"
+      ]
+    },
+    {
+      "titulo": "während: preposición y conector",
+      "texto": [
+        "Con un sustantivo detrás es preposición y rige genitivo; con una frase entera es conector y manda el verbo al final."
+      ],
+      "ejemplos": [
+        { "de": "Während des Konzerts habe ich mein Handy stumm geschaltet.", "es": "Durante el concierto silencié el móvil." },
+        { "de": "Während ich arbeitete, passte meine Mutter auf die Kinder auf.", "es": "Mientras yo trabajaba, mi madre cuidaba de los niños." }
+      ],
+      "notas": [
+        "Lo mismo les pasa a bis y seit; el capítulo 7 lo trabaja con todos los conectores temporales."
+      ]
+    }
+  ]
+}

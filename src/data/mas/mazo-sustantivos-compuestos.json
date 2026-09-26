@@ -1,0 +1,32 @@
+{
+  "id": "sustantivos-compuestos",
+  "titulo": "Sustantivos compuestos",
+  "descripcion": "Palabras formadas juntando dos o más sustantivos. La nota de cada ficha descompone la palabra y recuerda de dónde sale el artículo.",
+  "fuente": "Netzwerk neu B1, Kapitel 3: Wortbildung del Übungsbuch S. 38 e Intensivtrainer S. 20",
+  "tarjetas": [
+    { "id": "autoschluessel", "tipo": "sustantivo", "articulo": "der", "palabra": "Autoschlüssel", "plural": "die Autoschlüssel", "es": "llave del coche", "nota": "das Auto + der Schlüssel → manda der Schlüssel." },
+    { "id": "haustuer", "tipo": "sustantivo", "articulo": "die", "palabra": "Haustür", "plural": "die Haustüren", "es": "puerta de la calle", "nota": "das Haus + die Tür → manda die Tür." },
+    { "id": "haustuerschluessel", "tipo": "sustantivo", "articulo": "der", "palabra": "Haustürschlüssel", "plural": "die Haustürschlüssel", "es": "llave de la puerta de casa", "nota": "die Haustür + der Schlüssel: se pueden encadenar tres palabras." },
+    { "id": "geburtstag", "tipo": "sustantivo", "articulo": "der", "palabra": "Geburtstag", "plural": "die Geburtstage", "es": "cumpleaños", "nota": "die Geburt + s + der Tag → manda der Tag." },
+    { "id": "geburtstagstorte", "tipo": "sustantivo", "articulo": "die", "palabra": "Geburtstagstorte", "plural": "die Geburtstagstorten", "es": "tarta de cumpleaños", "nota": "der Geburtstag + s + die Torte." },
+    { "id": "urlaubsreise", "tipo": "sustantivo", "articulo": "die", "palabra": "Urlaubsreise", "plural": "die Urlaubsreisen", "es": "viaje de vacaciones", "nota": "der Urlaub + s + die Reise." },
+    { "id": "gluecksgefuehl", "tipo": "sustantivo", "articulo": "das", "palabra": "Glücksgefühl", "plural": "die Glücksgefühle", "es": "sensación de felicidad", "nota": "das Glück + s + das Gefühl." },
+    { "id": "bundesrepublik", "tipo": "sustantivo", "articulo": "die", "palabra": "Bundesrepublik", "plural": "die Bundesrepubliken", "es": "República Federal", "nota": "der Bund + es + die Republik." },
+    { "id": "sonnenbrille", "tipo": "sustantivo", "articulo": "die", "palabra": "Sonnenbrille", "plural": "die Sonnenbrillen", "es": "gafas de sol", "nota": "die Sonne + n + die Brille: aquí la unión es -n-." },
+    { "id": "hochhaus", "tipo": "sustantivo", "articulo": "das", "palabra": "Hochhaus", "plural": "die Hochhäuser", "es": "edificio alto, torre de viviendas", "nota": "hoch (adjetivo) + das Haus." },
+    { "id": "grossstadt", "tipo": "sustantivo", "articulo": "die", "palabra": "Großstadt", "plural": "die Großstädte", "es": "gran ciudad", "nota": "groß (adjetivo) + die Stadt." },
+    { "id": "schlafzimmer", "tipo": "sustantivo", "articulo": "das", "palabra": "Schlafzimmer", "plural": "die Schlafzimmer", "es": "dormitorio", "nota": "schlafen (raíz del verbo) + das Zimmer." },
+    { "id": "kinderzimmer", "tipo": "sustantivo", "articulo": "das", "palabra": "Kinderzimmer", "plural": "die Kinderzimmer", "es": "habitación de los niños", "nota": "die Kinder (plural) + das Zimmer." },
+    { "id": "waschmaschine", "tipo": "sustantivo", "articulo": "die", "palabra": "Waschmaschine", "plural": "die Waschmaschinen", "es": "lavadora", "nota": "waschen (raíz del verbo) + die Maschine." },
+    { "id": "vorname", "tipo": "sustantivo", "articulo": "der", "palabra": "Vorname", "plural": "die Vornamen", "es": "nombre de pila", "nota": "vor (preposición) + der Name; como der Name: des Vornamens." },
+    { "id": "nachtisch", "tipo": "sustantivo", "articulo": "der", "palabra": "Nachtisch", "plural": "die Nachtische", "es": "postre", "nota": "nach + der Tisch → literalmente «después de la mesa».", "lws": true },
+    { "id": "kinderkrankenhaus", "tipo": "sustantivo", "articulo": "das", "palabra": "Kinderkrankenhaus", "plural": "die Kinderkrankenhäuser", "es": "hospital infantil", "nota": "die Kinder + das Krankenhaus." },
+    { "id": "krankenhausaerztin", "tipo": "sustantivo", "articulo": "die", "palabra": "Krankenhausärztin", "plural": "die Krankenhausärztinnen", "es": "médica de hospital", "nota": "das Krankenhaus + die Ärztin." },
+    { "id": "universitaetsbibliothek", "tipo": "sustantivo", "articulo": "die", "palabra": "Universitätsbibliothek", "plural": "die Universitätsbibliotheken", "es": "biblioteca universitaria", "nota": "die Universität + s + die Bibliothek: los sustantivos en -tät llevan -s-." },
+    { "id": "kellerschluessel", "tipo": "sustantivo", "articulo": "der", "palabra": "Kellerschlüssel", "plural": "die Kellerschlüssel", "es": "llave del sótano", "nota": "der Keller + der Schlüssel." },
+    { "id": "nahrungsmittel", "tipo": "sustantivo", "articulo": "das", "palabra": "Nahrungsmittel", "plural": "die Nahrungsmittel", "es": "alimento", "nota": "die Nahrung + s + das Mittel: los sustantivos en -ung llevan -s-.", "lws": true },
+    { "id": "reisepass", "tipo": "sustantivo", "articulo": "der", "palabra": "Reisepass", "plural": "die Reisepässe", "es": "pasaporte", "nota": "die Reise + der Pass.", "lws": true },
+    { "id": "schulbildung", "tipo": "sustantivo", "articulo": "die", "palabra": "Schulbildung", "plural": null, "es": "formación escolar", "nota": "die Schule + die Bildung; se usa en singular.", "lws": true },
+    { "id": "wirbelsaeule", "tipo": "sustantivo", "articulo": "die", "palabra": "Wirbelsäule", "plural": "die Wirbelsäulen", "es": "columna vertebral", "nota": "der Wirbel + die Säule.", "lws": true }
+  ]
+}

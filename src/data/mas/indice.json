@@ -15,6 +15,12 @@
       "mazos": ["k2-vocabulario", "k2-verbos"]
     },
     {
+      "numero": 3,
+      "titulo": "Veränderungen",
+      "temas": ["preterito", "tiempo-preposiciones", "sustantivos-compuestos"],
+      "mazos": ["k3-vocabulario", "k3-verbos"]
+    },
+    {
       "numero": 6,
       "titulo": "Blick nach vorn",
       "temas": ["futuro", "n-declinacion", "relativas", "nombres-heit-keit"],

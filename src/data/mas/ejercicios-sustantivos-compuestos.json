@@ -1,0 +1,53 @@
+{
+  "tema": "sustantivos-compuestos",
+  "titulo": "Sustantivos compuestos",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 38, A-B; Intensivtrainer S. 20), con palabras nuevas.",
+  "tandas": [
+    {
+      "id": "formar",
+      "titulo": "Forma la palabra",
+      "instruccion": "¿Cómo se dice en una sola palabra?",
+      "modelo": "Übungsbuch S. 38, A",
+      "ejercicios": [
+        { "id": "fo1", "partes": null, "pregunta": "der Schlüssel für das Auto", "respuesta": "der Autoschlüssel", "distractores": ["das Autoschlüssel", "der Schlüsselauto", "die Autoschlüssel"], "pista": "La última palabra manda: der Schlüssel." },
+        { "id": "fo2", "partes": null, "pregunta": "die Tür ins Haus", "respuesta": "die Haustür", "distractores": ["das Haustür", "der Türhaus", "die Türhaus"], "pista": "die Tür → die Haustür." },
+        { "id": "fo3", "partes": null, "pregunta": "der Tag der Geburt", "respuesta": "der Geburtstag", "distractores": ["die Geburtstag", "der Taggeburt", "das Geburtstag"], "pista": "der Tag manda, y se cuela una -s-." },
+        { "id": "fo4", "partes": null, "pregunta": "die Reise in den Urlaub", "respuesta": "die Urlaubsreise", "distractores": ["der Urlaubsreise", "die Reiseurlaub", "das Urlaubsreise"], "pista": "die Reise manda; Urlaub+s+Reise." },
+        { "id": "fo5", "partes": null, "pregunta": "die Ärztin, die im Krankenhaus arbeitet", "respuesta": "die Krankenhausärztin", "distractores": ["der Krankenhausärztin", "die Ärztinkrankenhaus", "das Krankenhausärztin"], "pista": "die Ärztin manda." },
+        { "id": "fo6", "partes": null, "pregunta": "das Krankenhaus für Kinder", "respuesta": "das Kinderkrankenhaus", "distractores": ["die Kinderkrankenhaus", "das Krankenhauskinder", "der Kinderkrankenhaus"], "pista": "das Krankenhaus manda." },
+        { "id": "fo7", "partes": null, "pregunta": "die Torte, die man zum Geburtstag bekommt", "respuesta": "die Geburtstagstorte", "distractores": ["der Geburtstagstorte", "die Tortengeburtstag", "das Geburtstagstorte"], "pista": "die Torte manda; Geburtstag + s + Torte." },
+        { "id": "fo8", "partes": null, "pregunta": "der Schlüssel für die Haustür", "respuesta": "der Haustürschlüssel", "distractores": ["die Haustürschlüssel", "der Schlüsselhaustür", "das Haustürschlüssel"], "pista": "Se pueden encadenar tres palabras: la última sigue mandando." }
+      ]
+    },
+    {
+      "id": "articulo",
+      "titulo": "¿Qué artículo lleva?",
+      "instruccion": "Elige el artículo del compuesto.",
+      "modelo": "Übungsbuch S. 38 (recuadro W)",
+      "ejercicios": [
+        { "id": "ar1", "partes": ["", " Waschmaschine"], "respuesta": "die", "distractores": ["der", "das", "den"], "pista": "die Maschine manda." },
+        { "id": "ar2", "partes": ["", " Hochhaus"], "respuesta": "das", "distractores": ["der", "die", "dem"], "pista": "das Haus manda." },
+        { "id": "ar3", "partes": ["", " Schlafzimmer"], "respuesta": "das", "distractores": ["der", "die", "den"], "pista": "das Zimmer manda." },
+        { "id": "ar4", "partes": ["", " Vorname"], "respuesta": "der", "distractores": ["die", "das", "dem"], "pista": "der Name manda." },
+        { "id": "ar5", "partes": ["", " Glücksgefühl"], "respuesta": "das", "distractores": ["der", "die", "des"], "pista": "das Gefühl manda; la -s- es solo de unión." },
+        { "id": "ar6", "partes": ["", " Bundesrepublik"], "respuesta": "die", "distractores": ["der", "das", "den"], "pista": "die Republik manda." },
+        { "id": "ar7", "partes": ["", " Sonnenbrille"], "respuesta": "die", "distractores": ["der", "das", "dem"], "pista": "die Brille manda; aquí la unión es -n-." },
+        { "id": "ar8", "partes": ["", " Nachtisch"], "respuesta": "der", "distractores": ["die", "das", "dem"], "pista": "der Tisch manda (aunque signifique «postre»)." }
+      ]
+    },
+    {
+      "id": "union",
+      "titulo": "¿Lleva -s- de unión?",
+      "instruccion": "Elige la forma correcta.",
+      "modelo": "Übungsbuch S. 38 (recuadro W)",
+      "ejercicios": [
+        { "id": "un1", "partes": null, "pregunta": "das Glück + das Gefühl", "respuesta": "das Glücksgefühl", "distractores": ["das Glückgefühl", "das Glückesgefühl", "das Glückengefühl"], "pista": "Con -s-." },
+        { "id": "un2", "partes": null, "pregunta": "das Auto + der Schlüssel", "respuesta": "der Autoschlüssel", "distractores": ["der Autosschlüssel", "der Autosschlussel", "der Autoesschlüssel"], "pista": "Sin unión." },
+        { "id": "un3", "partes": null, "pregunta": "die Meinung + die Freiheit", "respuesta": "die Meinungsfreiheit", "distractores": ["die Meinungfreiheit", "die Meinungenfreiheit", "die Meinungesfreiheit"], "pista": "Los sustantivos en -ung llevan -s-." },
+        { "id": "un4", "partes": null, "pregunta": "die Sonne + die Brille", "respuesta": "die Sonnenbrille", "distractores": ["die Sonnebrille", "die Sonnesbrille", "die Sonnbrille"], "pista": "Aquí la unión es -n-." },
+        { "id": "un5", "partes": null, "pregunta": "die Universität + die Bibliothek", "respuesta": "die Universitätsbibliothek", "distractores": ["die Universitätbibliothek", "die Universitätenbibliothek", "die Universitätesbibliothek"], "pista": "Los sustantivos en -tät llevan -s-." },
+        { "id": "un6", "partes": null, "pregunta": "das Kind + das Zimmer", "respuesta": "das Kinderzimmer", "distractores": ["das Kindzimmer", "das Kindszimmer", "das Kindeszimmer"], "pista": "Aquí se usa el plural: Kinder + Zimmer." }
+      ]
+    }
+  ]
+}

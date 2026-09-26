@@ -1,0 +1,52 @@
+{
+  "tema": "tiempo-preposiciones",
+  "titulo": "Preposiciones de tiempo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 33; Übungsbuch S. 35-36; Intensivtrainer S. 18), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Qué preposición?",
+      "instruccion": "Completa con la preposición que encaja.",
+      "modelo": "Kursbuch S. 33 (recuadro G)",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["", " der Arbeit gehe ich immer schwimmen."], "respuesta": "Nach", "distractores": ["Seit", "Während", "Innerhalb"], "pista": "Primero el trabajo, después la piscina → nach." },
+        { "id": "cu2", "partes": ["", " dem Umzug sehen wir uns viel seltener."], "respuesta": "Seit", "distractores": ["Nach", "Während", "Ab"], "pista": "Desde entonces hasta hoy → seit." },
+        { "id": "cu3", "partes": ["", " der nächsten Woche arbeite ich nur noch vier Tage."], "respuesta": "Ab", "distractores": ["Seit", "Vor", "Während"], "pista": "A partir de un momento futuro → ab." },
+        { "id": "cu4", "partes": ["Wir müssen die Antwort ", " einer Woche schicken."], "respuesta": "innerhalb", "distractores": ["außerhalb", "seit", "ab"], "pista": "Dentro de un plazo → innerhalb + genitivo." },
+        { "id": "cu5", "partes": ["", " des Konzerts darf man nicht fotografieren."], "respuesta": "Während", "distractores": ["Innerhalb", "Nach", "Seit"], "pista": "Durante → während + genitivo." },
+        { "id": "cu6", "partes": ["", " zwei Jahren habe ich in Hamburg gewohnt."], "respuesta": "Vor", "distractores": ["Seit", "Ab", "Nach"], "pista": "«Hace dos años» → vor + dativo." },
+        { "id": "cu7", "partes": ["Wir bleiben ", " zum Sonntag."], "respuesta": "bis", "distractores": ["seit", "ab", "nach"], "pista": "Hasta un momento → bis zu." },
+        { "id": "cu8", "partes": ["", " des Urlaubs arbeite ich jeden Tag."], "respuesta": "Außerhalb", "distractores": ["Innerhalb", "Während", "Seit"], "pista": "Fuera de ese periodo → außerhalb + genitivo." }
+      ]
+    },
+    {
+      "id": "caso",
+      "titulo": "Dativo o genitivo",
+      "instruccion": "Completa el artículo.",
+      "modelo": "Kursbuch S. 37 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "ca1", "partes": ["nach ", " Arbeit"], "respuesta": "der", "distractores": ["die", "des", "dem"], "pista": "nach + dativo; die Arbeit es femenino → der." },
+        { "id": "ca2", "partes": ["während ", " Konzerts"], "respuesta": "eines", "distractores": ["einem", "einer", "ein"], "pista": "während + genitivo; das Konzert es neutro → eines Konzerts." },
+        { "id": "ca3", "partes": ["seit ", " Umzug"], "respuesta": "dem", "distractores": ["des", "der", "den"], "pista": "seit + dativo; der Umzug es masculino → dem." },
+        { "id": "ca4", "partes": ["innerhalb ", " Stunde"], "respuesta": "einer", "distractores": ["eine", "einem", "eines"], "pista": "innerhalb + genitivo; die Stunde es femenino → einer." },
+        { "id": "ca5", "partes": ["ab ", " nächsten Woche"], "respuesta": "der", "distractores": ["die", "den", "des"], "pista": "ab + dativo; die Woche es femenino → der." },
+        { "id": "ca6", "partes": ["außerhalb ", " Urlaubs"], "respuesta": "des", "distractores": ["dem", "der", "den"], "pista": "außerhalb + genitivo; der Urlaub es masculino → des Urlaubs." },
+        { "id": "ca7", "partes": ["vor ", " Prüfung"], "respuesta": "der", "distractores": ["die", "des", "dem"], "pista": "vor + dativo; die Prüfung es femenino." }
+      ]
+    },
+    {
+      "id": "contraccion",
+      "titulo": "Con contracción",
+      "instruccion": "Elige la forma correcta.",
+      "modelo": "Übungsbuch S. 35",
+      "ejercicios": [
+        { "id": "cn1", "partes": null, "pregunta": "«el fin de semana»", "respuesta": "am Wochenende", "distractores": ["an Wochenende", "im Wochenende", "an dem Wochenendes"], "pista": "an + dem = am." },
+        { "id": "cn2", "partes": null, "pregunta": "«en las vacaciones»", "respuesta": "im Urlaub", "distractores": ["am Urlaub", "in Urlaub", "in dem Urlaubs"], "pista": "in + dem = im." },
+        { "id": "cn3", "partes": null, "pregunta": "«hasta las vacaciones»", "respuesta": "bis zum Urlaub", "distractores": ["bis zu Urlaub", "bis im Urlaub", "bis des Urlaubs"], "pista": "bis zu + dem = bis zum." },
+        { "id": "cn4", "partes": null, "pregunta": "«antes del trabajo»", "respuesta": "vor der Arbeit", "distractores": ["vor die Arbeit", "vor des Arbeits", "vor dem Arbeit"], "pista": "vor + dativo femenino → der." },
+        { "id": "cn5", "partes": null, "pregunta": "«todos los días» (sin preposición)", "respuesta": "jeden Tag", "distractores": ["jedem Tag", "jedes Tages", "an jeden Tag"], "pista": "Duración y frecuencia sin preposición → acusativo." },
+        { "id": "cn6", "partes": null, "pregunta": "«durante años»", "respuesta": "jahrelang", "distractores": ["während Jahre", "seit jahrelang", "in Jahren lang"], "pista": "Con -lang se forma un adverbio: jahrelang, stundenlang." }
+      ]
+    }
+  ]
+}

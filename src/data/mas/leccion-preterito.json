@@ -1,0 +1,90 @@
+{
+  "id": "preterito",
+  "mazo": "k3-verbos",
+  "titulo": "Präteritum: formas y uso",
+  "descripcion": "El pasado de los textos escritos: -(e)t- en los regulares, cambio de vocal en los irregulares. Y cuándo se usa en vez del Perfekt.",
+  "fuente": "Netzwerk neu B1, Kapitel 3: Kursbuch S. 30-31 y 37 · Übungsbuch S. 32-34 · Intensivtrainer S. 16-17",
+  "libro": {
+    "referencia": "Kursbuch S. 30-31 (recuadros G) y S. 37 («kurz und klar»), Übungsbuch S. 32-34 e Intensivtrainer S. 16-17",
+    "puntos": [
+      "El «kurz und klar» pone las dos conjugaciones en paralelo: «regelmäßige Verben: -(e)t- + Endung» y «unregelmäßige Verben: Vokaländerung».",
+      "Debajo de cada tabla añade la nota que hace falta: los verbos acabados en d o t meten una -e- (arbeitete), y en los irregulares ich y er/es/sie no llevan terminación.",
+      "Marca aparte los verbos mixtos: denken – er dachte, wissen – er wusste, bringen – er brachte, mögen – er mochte, kennen – er kannte, nennen – er nannte.",
+      "Y separa tres usos: al hablar y en textos personales se usa el Perfekt; en textos oficiales, periodísticos y literarios, el Präteritum; y sein, haben y los modales van casi siempre en Präteritum."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Verbos regulares: -(e)t- + terminación",
+      "texto": [
+        "Se añade -te- a la raíz y encima la terminación de persona. Los verbos cuya raíz acaba en d o t meten una -e- para poder pronunciarlo."
+      ],
+      "tabla": {
+        "cabecera": ["Persona", "machen", "arbeiten", "aus|probieren"],
+        "filas": [
+          ["ich", "machte", "arbeitete", "probierte aus"],
+          ["du", "machtest", "arbeitetest", "probiertest aus"],
+          ["er/es/sie", "machte", "arbeitete", "probierte aus"],
+          ["wir", "machten", "arbeiteten", "probierten aus"],
+          ["ihr", "machtet", "arbeitetet", "probiertet aus"],
+          ["sie/Sie", "machten", "arbeiteten", "probierten aus"]
+        ]
+      },
+      "notas": [
+        "ich y er/es/sie son iguales: los dos terminan en -e.",
+        "Los separables siguen separándose: Er probierte das Rezept aus."
+      ]
+    },
+    {
+      "titulo": "Verbos irregulares: cambia la vocal",
+      "texto": [
+        "No llevan -t-: cambian la vocal de la raíz y, en ich y er/es/sie, NO llevan ninguna terminación."
+      ],
+      "tabla": {
+        "cabecera": ["Persona", "sehen", "gefallen", "Terminación"],
+        "filas": [
+          ["ich", "sah", "gefiel", "—"],
+          ["du", "sahst", "gefielst", "-st"],
+          ["er/es/sie", "sah", "gefiel", "—"],
+          ["wir", "sahen", "gefielen", "-en"],
+          ["ihr", "saht", "gefielt", "-t"],
+          ["sie/Sie", "sahen", "gefielen", "-en"]
+        ]
+      },
+      "notas": [
+        "La forma de ich y er/es/sie es la que aparece en las listas de verbos: gehen – ging, kommen – kam, schreiben – schrieb."
+      ]
+    },
+    {
+      "titulo": "Los mixtos: cambian la vocal Y llevan -te-",
+      "texto": [
+        "Un grupo pequeño hace las dos cosas a la vez. Son muy frecuentes, así que vale la pena aprenderlos de memoria."
+      ],
+      "tabla": {
+        "cabecera": ["Infinitivo", "Präteritum", "Infinitivo", "Präteritum"],
+        "filas": [
+          ["denken", "dachte", "kennen", "kannte"],
+          ["wissen", "wusste", "nennen", "nannte"],
+          ["bringen", "brachte", "mögen", "mochte"]
+        ]
+      }
+    },
+    {
+      "titulo": "¿Perfekt o Präteritum?",
+      "texto": [
+        "Los dos significan lo mismo. Lo que cambia es dónde se usa cada uno."
+      ],
+      "tabla": {
+        "cabecera": ["Situación", "Tiempo", "Ejemplo"],
+        "filas": [
+          ["hablando y en textos personales (correos, chats)", "Perfekt", "Ich bin gestern ins Kino gegangen."],
+          ["textos oficiales, periodísticos y literarios", "Präteritum", "Sebastian Hilpert war zwölf Jahre lang Berufssoldat."],
+          ["sein, haben y los verbos modales: siempre", "Präteritum", "Ich war im Kino. Ich hatte keine Lust, aber dann wollte ich den Film doch sehen."]
+        ]
+      },
+      "notas": [
+        "Por eso, al contar algo hablando, lo normal es mezclar: Perfekt para casi todo y Präteritum para war, hatte, konnte, wollte…"
+      ]
+    }
+  ]
+}

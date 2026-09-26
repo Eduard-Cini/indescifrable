@@ -7,7 +7,7 @@
   "tarjetas": [
     { "id": "winterurlaub", "tipo": "sustantivo", "articulo": "der", "palabra": "Winterurlaub", "plural": "die Winterurlaube", "es": "vacaciones de invierno", "lws": true },
     { "id": "skigebiet", "tipo": "sustantivo", "articulo": "das", "palabra": "Skigebiet", "plural": "die Skigebiete", "es": "estación de esquí", "lws": true },
-    { "id": "lift", "tipo": "sustantivo", "articulo": "der", "palabra": "(Ski-)Lift", "plural": "die Lifte", "es": "telesilla, remonte", "lws": true },
+    { "id": "lift", "tipo": "sustantivo", "articulo": "der", "palabra": "Lift", "plural": "die Lifte", "es": "ascensor; telesilla", "nota": "En este capítulo, der Skilift (el remonte de la estación).", "lws": true },
     { "id": "strandurlaub", "tipo": "sustantivo", "articulo": "der", "palabra": "Strandurlaub", "plural": "die Strandurlaube", "es": "vacaciones de playa", "lws": true },
     { "id": "kueste", "tipo": "sustantivo", "articulo": "die", "palabra": "Küste", "plural": "die Küsten", "es": "costa", "lws": true },
     { "id": "sand", "tipo": "sustantivo", "articulo": "der", "palabra": "Sand", "plural": null, "es": "arena", "lws": true },

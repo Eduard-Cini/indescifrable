@@ -1,0 +1,88 @@
+{
+  "id": "sustantivos-compuestos",
+  "mazo": "sustantivos-compuestos",
+  "titulo": "Sustantivos compuestos (Komposita)",
+  "descripcion": "Formación de palabras del capítulo 3: dos o más sustantivos juntos forman uno nuevo. La ÚLTIMA palabra manda el artículo; la PRIMERA lleva el acento.",
+  "fuente": "Netzwerk neu B1, Kapitel 3: Übungsbuch S. 38 (Wortbildung) · Intensivtrainer S. 20",
+  "libro": {
+    "referencia": "Übungsbuch S. 38 («Wortbildung – Komposita I», A-B) e Intensivtrainer S. 20",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro da definiciones con de («der Schlüssel für das Auto») y pide escribir la palabra compuesta (der Autoschlüssel).",
+      "El recuadro W dice tres cosas: se pueden juntar dos o más sustantivos; la ÚLTIMA palabra decide el artículo; y el acento va siempre en la primera parte.",
+      "El ejemplo encadenado que da es das Haus + die Tür = die Haustür, y die Haustür + der Schlüssel = der Haustürschlüssel.",
+      "Y avisa de que a veces aparece un -(e)s- entre las dos palabras: das Glücksgefühl, die Bundesrepublik."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La regla, en una línea",
+      "texto": [
+        "Se pegan dos sustantivos y sale uno nuevo. El primero explica o concreta; el segundo es lo que la cosa ES."
+      ],
+      "tabla": {
+        "cabecera": ["Definición", "Palabra compuesta", "Artículo"],
+        "filas": [
+          ["der Schlüssel für das Auto", "der Autoschlüssel", "de der Schlüssel"],
+          ["die Tür ins Haus", "die Haustür", "de die Tür"],
+          ["der Tag der Geburt", "der Geburtstag", "de der Tag"],
+          ["die Reise in den Urlaub", "die Urlaubsreise", "de die Reise"]
+        ]
+      },
+      "notas": [
+        "Para adivinar el artículo basta con mirar la última palabra. Por eso die Tür + der Schlüssel = der Haustürschlüssel."
+      ]
+    },
+    {
+      "titulo": "La -(e)s- de unión",
+      "texto": [
+        "A veces se cuela una -s- o una -es- entre las dos palabras (la Fugen-s). No cambia nada del género: solo hace la palabra más fácil de pronunciar."
+      ],
+      "tabla": {
+        "cabecera": ["Partes", "Compuesto", "Unión"],
+        "filas": [
+          ["das Glück + das Gefühl", "das Glücksgefühl", "-s-"],
+          ["der Bund + die Republik", "die Bundesrepublik", "-es-"],
+          ["der Urlaub + die Reise", "die Urlaubsreise", "-s-"],
+          ["die Geburt + der Tag", "der Geburtstag", "-s-"],
+          ["das Auto + der Schlüssel", "der Autoschlüssel", "sin unión"]
+        ]
+      },
+      "notas": [
+        "Los sustantivos que acaban en -ung, -heit, -keit, -schaft, -ion y -tät casi siempre llevan -s-: die Meinungsfreiheit, die Gesundheitskarte, die Universitätsbibliothek.",
+        "Algunos femeninos meten -n- en vez de -s-: die Sonne + die Brille = die Sonnenbrille."
+      ]
+    },
+    {
+      "titulo": "El acento",
+      "texto": [
+        "En un compuesto, el acento va SIEMPRE en la primera parte. Eso ayuda a oír dónde empieza y dónde acaba cada palabra."
+      ],
+      "ejemplos": [
+        { "de": "der HAUStürschlüssel", "es": "la llave de la puerta de casa" },
+        { "de": "die URlaubsreise", "es": "el viaje de vacaciones" },
+        { "de": "das GLÜCKSgefühl", "es": "la sensación de felicidad" }
+      ],
+      "notas": [
+        "Por eso «ein BLAUes Auto» y «ein BLAUlicht» (la luz azul del coche de policía) no suenan igual: lo segundo es una palabra sola."
+      ]
+    },
+    {
+      "titulo": "No solo sustantivo + sustantivo",
+      "texto": [
+        "La primera parte también puede ser un adjetivo, un verbo o una preposición. La última sigue siendo la que manda."
+      ],
+      "tabla": {
+        "cabecera": ["Primera parte", "Compuesto", "Significado"],
+        "filas": [
+          ["adjetivo", "die Großstadt · das Hochhaus", "la gran ciudad · el edificio alto"],
+          ["verbo (raíz)", "das Schlafzimmer · die Waschmaschine", "el dormitorio · la lavadora"],
+          ["preposición", "der Vorname · die Nachspeise", "el nombre de pila · el postre"],
+          ["varias palabras", "der Haustürschlüssel · die Krankenhausverwaltung", "la llave de la puerta · la administración del hospital"]
+        ]
+      },
+      "notas": [
+        "Los adjetivos también se pueden componer (himmelblau, bildschön): eso lo trabaja el capítulo 9."
+      ]
+    }
+  ]
+}

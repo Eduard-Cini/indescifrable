@@ -1,0 +1,52 @@
+{
+  "tema": "preterito",
+  "titulo": "Präteritum",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 30-31; Übungsbuch S. 32-34; Intensivtrainer S. 16-17), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "regulares",
+      "titulo": "Verbos regulares",
+      "instruccion": "Pon el verbo en Präteritum.",
+      "modelo": "Kursbuch S. 30 · Übungsbuch S. 32",
+      "ejercicios": [
+        { "id": "re1", "partes": ["Früher ", " er in einer kleinen Firma. (arbeiten)"], "respuesta": "arbeitete", "distractores": ["arbeitte", "arbeitet", "arbeitetet"], "pista": "La raíz acaba en -t → se mete una -e-: arbeit-e-te." },
+        { "id": "re2", "partes": ["Wir ", " jeden Sommer auf einem Campingplatz. (übernachten)"], "respuesta": "übernachteten", "distractores": ["übernachten", "übernachtetet", "übernachtete"], "pista": "wir → -en, y la raíz en -t pide la -e-." },
+        { "id": "re3", "partes": ["Sie ", " das neue Rezept aus. (aus|probieren)"], "respuesta": "probierte", "distractores": ["ausprobierte", "probiertete", "probierten"], "pista": "Separable: el prefijo aus se queda al final." },
+        { "id": "re4", "partes": ["Damals ", " ich noch in Hamburg. (wohnen)"], "respuesta": "wohnte", "distractores": ["wohnete", "wohnt", "wohnten"], "pista": "Raíz normal → -te." },
+        { "id": "re5", "partes": ["Das Konzert ", " drei Stunden. (dauern)"], "respuesta": "dauerte", "distractores": ["dauerete", "dauert", "dauerten"], "pista": "er/es/sie → -te, igual que ich." },
+        { "id": "re6", "partes": ["", " ihr damals viel Sport? (machen)"], "respuesta": "Machtet", "distractores": ["Machten", "Machte", "Machtest"], "pista": "ihr → -tet." },
+        { "id": "re7", "partes": ["Der Unfall ", " eine lange Pause. (verursachen)"], "respuesta": "verursachte", "distractores": ["verursachete", "verursacht", "verursachten"], "pista": "er/es/sie → -te." }
+      ]
+    },
+    {
+      "id": "irregulares",
+      "titulo": "Verbos irregulares y mixtos",
+      "instruccion": "Pon el verbo en Präteritum.",
+      "modelo": "Kursbuch S. 31 · Intensivtrainer S. 17",
+      "ejercicios": [
+        { "id": "ir1", "partes": ["Ich ", " den Film schon als Kind. (sehen)"], "respuesta": "sah", "distractores": ["sahte", "sahe", "sehte"], "pista": "Irregular: sehen – sah, sin terminación en ich." },
+        { "id": "ir2", "partes": ["Die Ausstellung ", " mir sehr gut. (gefallen)"], "respuesta": "gefiel", "distractores": ["gefielte", "gefallte", "gefiele"], "pista": "gefallen – gefiel; er/es/sie sin terminación." },
+        { "id": "ir3", "partes": ["Wir ", " damals viel zusammen. (unternehmen)"], "respuesta": "unternahmen", "distractores": ["unternahmten", "unternehmten", "unternahm"], "pista": "unternehmen – unternahm; wir → -en." },
+        { "id": "ir4", "partes": ["Er ", " lange an eine Rückkehr. (denken)"], "respuesta": "dachte", "distractores": ["denkte", "dachtete", "dochte"], "pista": "Mixto: cambia la vocal Y lleva -te." },
+        { "id": "ir5", "partes": ["Ich ", " damals nicht, was ich wollte. (wissen)"], "respuesta": "wusste", "distractores": ["wisste", "wusst", "wisstete"], "pista": "Mixto: wissen – wusste." },
+        { "id": "ir6", "partes": ["Sie ", " mir jeden Tag einen Kaffee. (bringen)"], "respuesta": "brachte", "distractores": ["bringte", "brachtete", "brang"], "pista": "Mixto: bringen – brachte." },
+        { "id": "ir7", "partes": ["", " du ihn schon damals? (kennen)"], "respuesta": "Kanntest", "distractores": ["Kenntest", "Kanntst", "Kanntet"], "pista": "Mixto: kennen – kannte; du → -st." },
+        { "id": "ir8", "partes": ["Nach dem Sturz ", " sie nicht mehr laufen. (können)"], "respuesta": "konnte", "distractores": ["könnte", "konnt", "kannte"], "pista": "Modal en Präteritum: können – konnte, SIN Umlaut (könnte es Konjunktiv II)." }
+      ]
+    },
+    {
+      "id": "cual-tiempo",
+      "titulo": "¿Perfekt o Präteritum?",
+      "instruccion": "Elige la versión que encaja con la situación.",
+      "modelo": "Kursbuch S. 37 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "ct1", "partes": null, "pregunta": "Se lo cuentas a un amigo por chat: «Ayer fui al cine.»", "respuesta": "Ich bin gestern ins Kino gegangen.", "distractores": ["Ich ging gestern ins Kino.", "Ich bin gestern ins Kino gehen.", "Ich war gestern ins Kino gegangen."], "pista": "Hablando y en textos personales se usa el Perfekt." },
+        { "id": "ct2", "partes": null, "pregunta": "Es la frase de un artículo de periódico: «Hilpert fue militar profesional doce años.»", "respuesta": "Hilpert war zwölf Jahre lang Berufssoldat.", "distractores": ["Hilpert ist zwölf Jahre lang Berufssoldat gewesen.", "Hilpert wurde zwölf Jahre lang Berufssoldat.", "Hilpert hatte zwölf Jahre lang Berufssoldat."], "pista": "En textos periodísticos, Präteritum; además sein va casi siempre en Präteritum." },
+        { "id": "ct3", "partes": null, "pregunta": "Hablando: «No tenía ganas, pero al final quise ver la película.»", "respuesta": "Ich hatte keine Lust, aber dann wollte ich den Film doch sehen.", "distractores": ["Ich habe keine Lust gehabt, aber dann habe ich den Film doch sehen gewollt.", "Ich hatte keine Lust, aber dann habe ich den Film doch sehen wollen.", "Ich habe keine Lust gehabt, aber dann wollte ich den Film doch sehen."], "pista": "haben y los modales van en Präteritum incluso al hablar." },
+        { "id": "ct4", "partes": null, "pregunta": "Se lo cuentas a un compañero: «Me he mudado a Leipzig.»", "respuesta": "Ich bin nach Leipzig gezogen.", "distractores": ["Ich zog nach Leipzig.", "Ich habe nach Leipzig gezogen.", "Ich war nach Leipzig gezogen."], "pista": "Perfekt al hablar; ziehen con dirección va con sein." },
+        { "id": "ct5", "partes": null, "pregunta": "Empieza un relato literario: «Era una mañana fría de noviembre.»", "respuesta": "Es war ein kalter Novembermorgen.", "distractores": ["Es ist ein kalter Novembermorgen gewesen.", "Es hat ein kalter Novembermorgen gewesen.", "Es wurde ein kalter Novembermorgen."], "pista": "Texto literario → Präteritum." },
+        { "id": "ct6", "partes": null, "pregunta": "Hablando: «Ayer estuve en el médico.»", "respuesta": "Ich war gestern beim Arzt.", "distractores": ["Ich bin gestern beim Arzt gewesen.", "Ich habe gestern beim Arzt gewesen.", "Ich wurde gestern beim Arzt."], "pista": "sein: Präteritum también al hablar (war, no «bin gewesen»)." }
+      ]
+    }
+  ]
+}
