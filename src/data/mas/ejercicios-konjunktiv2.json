@@ -1,0 +1,50 @@
+{
+  "tema": "konjunktiv2",
+  "titulo": "Konjunktiv II",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 45-46; Übungsbuch S. 44-46; Intensivtrainer S. 22-23), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "formas",
+      "titulo": "Las formas",
+      "instruccion": "Completa con el Konjunktiv II del verbo.",
+      "modelo": "Kursbuch S. 45 (recuadro G)",
+      "ejercicios": [
+        { "id": "fo1", "partes": ["Wenn ich mehr Zeit ", ", würde ich eine Fortbildung machen. (haben)"], "respuesta": "hätte", "distractores": ["hatte", "hätt", "hättete"], "pista": "haben → hätte, con Umlaut." },
+        { "id": "fo2", "partes": ["", " Sie mir bitte helfen? (können)"], "respuesta": "Könnten", "distractores": ["Konnten", "Könnte", "Könntet"], "pista": "Sie → könnten, con Umlaut." },
+        { "id": "fo3", "partes": ["Ich ", " froh, wenn das Gespräch gut läuft. (sein)"], "respuesta": "wäre", "distractores": ["war", "wärte", "würde sein"], "pista": "sein → wäre; con sein no se usa würde." },
+        { "id": "fo4", "partes": ["Du ", " dich unbedingt bewerben. (sollen)"], "respuesta": "solltest", "distractores": ["söllst", "sölltest", "sollst"], "pista": "sollen → sollte, SIN Umlaut." },
+        { "id": "fo5", "partes": ["Wir ", " nicht so lange arbeiten. (müssen)"], "respuesta": "müssten", "distractores": ["mussten", "müsstet", "müsste"], "pista": "wir → müssten, con Umlaut." },
+        { "id": "fo6", "partes": ["Ich ", " gern in Teilzeit arbeiten. (werden + arbeiten)"], "respuesta": "würde", "distractores": ["wurde", "würd", "werde"], "pista": "Verbo normal → würde + infinitivo al final." },
+        { "id": "fo7", "partes": ["", " ihr uns eure Unterlagen schicken? (können)"], "respuesta": "Könntet", "distractores": ["Konntet", "Könnten", "Könntest"], "pista": "ihr → könntet." }
+      ]
+    },
+    {
+      "id": "cortesia",
+      "titulo": "Con más cortesía",
+      "instruccion": "Di lo mismo de forma más cortés o más suave.",
+      "modelo": "Kursbuch S. 53 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "co1", "partes": null, "pregunta": "Helfen Sie mir!", "respuesta": "Könnten Sie mir bitte helfen?", "distractores": ["Konnten Sie mir bitte helfen?", "Würden Sie mir bitte helfen können?", "Hätten Sie mir bitte geholfen?"], "pista": "könnten + infinitivo al final." },
+        { "id": "co2", "partes": null, "pregunta": "Ich habe noch eine Frage.", "respuesta": "Ich hätte da noch eine Frage.", "distractores": ["Ich würde da noch eine Frage haben.", "Ich hatte da noch eine Frage.", "Ich wäre da noch eine Frage."], "pista": "haben → hätte; no se dice «würde haben»." },
+        { "id": "co3", "partes": null, "pregunta": "Ich will wissen, wann das Gespräch ist.", "respuesta": "Ich würde gern wissen, wann das Gespräch ist.", "distractores": ["Ich wollte gern wissen, wann ist das Gespräch.", "Ich würde gern zu wissen, wann das Gespräch ist.", "Ich hätte gern wissen, wann das Gespräch ist."], "pista": "wissen es un verbo normal → würde + infinitivo." },
+        { "id": "co4", "partes": null, "pregunta": "Kommen Sie am Montag vorbei.", "respuesta": "Ich würde vorschlagen, dass Sie am Montag vorbeikommen.", "distractores": ["Ich würde vorschlagen, Sie kommen am Montag vorbei zu.", "Ich hätte vorschlagen, dass Sie am Montag vorbeikommen.", "Ich wäre vorschlagen, dass Sie am Montag vorbeikommen."], "pista": "würde + infinitivo en la principal; dass manda el verbo al final." },
+        { "id": "co5", "partes": null, "pregunta": "Du musst dich besser vorbereiten.", "respuesta": "Du solltest dich besser vorbereiten.", "distractores": ["Du müsstest dich besser vorbereiten sollen.", "Du wärst dich besser vorbereiten.", "Du hättest dich besser vorbereiten."], "pista": "Para un consejo, sollte." },
+        { "id": "co6", "partes": null, "pregunta": "Ich mache das an deiner Stelle anders.", "respuesta": "An deiner Stelle würde ich das anders machen.", "distractores": ["An deiner Stelle ich würde das anders machen.", "An deiner Stelle hätte ich das anders machen.", "An deiner Stelle würde ich das anders zu machen."], "pista": "An deiner Stelle ocupa la posición 1 → würde detrás." }
+      ]
+    },
+    {
+      "id": "irreales",
+      "titulo": "Condicionales con wenn",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 46 · Übungsbuch S. 46",
+      "ejercicios": [
+        { "id": "ir1", "partes": null, "pregunta": "«Si tuviera tiempo, me tomaría otro café.»", "respuesta": "Wenn ich Zeit hätte, würde ich noch einen Kaffee trinken.", "distractores": ["Wenn ich hätte Zeit, würde ich noch einen Kaffee trinken.", "Wenn ich Zeit hätte, ich würde noch einen Kaffee trinken.", "Wenn ich Zeit habe, würde ich noch einen Kaffee trinken."], "pista": "hätte cierra la subordinada; después de la coma, würde." },
+        { "id": "ir2", "partes": null, "pregunta": "«Si Boris no estuviera tan estresado, la pausa sería más divertida.»", "respuesta": "Wenn Boris nicht so gestresst wäre, wäre die Pause lustiger.", "distractores": ["Wenn Boris nicht so gestresst wäre, die Pause wäre lustiger.", "Wenn Boris wäre nicht so gestresst, wäre die Pause lustiger.", "Wenn Boris nicht so gestresst ist, wäre die Pause lustiger."], "pista": "Las dos partes en Konjunktiv II; el verbo de la principal detrás de la coma." },
+        { "id": "ir3", "partes": null, "pregunta": "«Si no tuviera que trabajar tanto, iría con vosotros.»", "respuesta": "Wenn ich nicht so lange arbeiten müsste, würde ich gern mitkommen.", "distractores": ["Wenn ich nicht so lange arbeiten müsste, ich würde gern mitkommen.", "Wenn ich müsste nicht so lange arbeiten, würde ich gern mitkommen.", "Wenn ich nicht so lange arbeiten muss, würde ich gern mitkommen."], "pista": "El modal cierra la subordinada, detrás del infinitivo." },
+        { "id": "ir4", "partes": null, "pregunta": "«Me presentaría si el puesto todavía estuviera libre.»", "respuesta": "Ich würde mich bewerben, wenn die Stelle noch frei wäre.", "distractores": ["Ich würde mich bewerben, wenn die Stelle noch frei ist.", "Ich würde mich bewerben, wenn wäre die Stelle noch frei.", "Ich mich würde bewerben, wenn die Stelle noch frei wäre."], "pista": "Las dos partes en Konjunktiv II; wäre al final." },
+        { "id": "ir5", "partes": null, "pregunta": "«Si supiera alemán, tendría más posibilidades.»", "respuesta": "Wenn ich Deutsch könnte, hätte ich mehr Möglichkeiten.", "distractores": ["Wenn ich Deutsch könnte, ich hätte mehr Möglichkeiten.", "Wenn ich könnte Deutsch, hätte ich mehr Möglichkeiten.", "Wenn ich Deutsch kann, hätte ich mehr Möglichkeiten."], "pista": "könnte cierra la subordinada; hätte abre la principal." },
+        { "id": "ir6", "partes": null, "pregunta": "«¡Ojalá ya hubiera terminado!» (deseo)", "respuesta": "Wenn ich doch schon fertig wäre!", "distractores": ["Wenn ich doch schon fertig bin!", "Wenn ich wäre doch schon fertig!", "Wenn ich doch schon fertig würde sein!"], "pista": "Un deseo se dice con wenn + Konjunktiv II y doch; el verbo, al final." }
+      ]
+    }
+  ]
+}

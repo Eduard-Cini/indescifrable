@@ -1,0 +1,90 @@
+{
+  "id": "verbos-preposicion",
+  "mazo": "k4-verbos",
+  "titulo": "Verbos con preposición y subordinada",
+  "descripcion": "Cuando lo que sigue al verbo no es un sustantivo sino una frase entera: Er wartet darauf, dass … o Er wartet darauf, … zu …",
+  "fuente": "Netzwerk neu B1, Kapitel 4: Kursbuch S. 50 y 53 · Übungsbuch S. 49-50 · Intensivtrainer S. 26",
+  "libro": {
+    "referencia": "Kursbuch S. 50 (recuadro G) y S. 53 («kurz und klar»), Übungsbuch S. 49-50 e Intensivtrainer S. 26",
+    "puntos": [
+      "El recuadro pone las tres versiones de la misma idea, una debajo de otra: «Worauf wartet er? – Er wartet auf eine Antwort», «Er wartet darauf, dass er eine Antwort bekommt» y «Er wartet darauf, eine Antwort zu bekommen».",
+      "La flecha del recuadro señala que darauf anuncia lo que viene después: es un «hueco» que se rellena con la subordinada.",
+      "Y marca con un corchete que la tercera versión, la de infinitivo con zu, solo vale cuando el sujeto es el mismo en las dos partes.",
+      "El capítulo lo practica con el vocabulario de la búsqueda de trabajo: sich bewerben um, sich freuen über, sich erkundigen nach, überzeugen von, zweifeln an."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Las tres versiones",
+      "texto": [
+        "Muchos verbos van siempre con una preposición fija. Lo que cambia es qué se pone detrás."
+      ],
+      "tabla": {
+        "cabecera": ["Detrás viene…", "Cómo se dice", "Ejemplo"],
+        "filas": [
+          ["un sustantivo", "preposición + sustantivo", "Er wartet auf eine Antwort."],
+          ["una frase con otro sujeto", "da(r) + preposición, dass …", "Er wartet darauf, dass die Firma antwortet."],
+          ["una frase con el mismo sujeto", "da(r) + preposición, … zu …", "Er wartet darauf, eine Antwort zu bekommen."]
+        ]
+      },
+      "notas": [
+        "El da(r)- no se puede quitar: anuncia la subordinada. No se dice «Er wartet, dass …», sino «Er wartet darauf, dass …».",
+        "La versión con zu solo vale si el sujeto es el mismo en las dos partes."
+      ]
+    },
+    {
+      "titulo": "Los verbos del capítulo",
+      "tabla": {
+        "cabecera": ["Verbo", "Preposición", "Adverbio pronominal"],
+        "filas": [
+          ["warten", "auf + acusativo", "darauf"],
+          ["sich bewerben", "um + acusativo", "darum"],
+          ["sich freuen", "über / auf + acusativo", "darüber / darauf"],
+          ["sich erkundigen", "nach + dativo", "danach"],
+          ["überzeugen", "von + dativo", "davon"],
+          ["zweifeln", "an + dativo", "daran"],
+          ["sich beziehen", "auf + acusativo", "darauf"],
+          ["sich eignen", "für + acusativo", "dafür"],
+          ["sich beschäftigen", "mit + dativo", "damit"],
+          ["zählen", "zu + dativo", "dazu"],
+          ["sich irren", "in + dativo", "darin"]
+        ]
+      },
+      "notas": [
+        "La preposición hay que aprenderla con el verbo, como el género con el sustantivo. Por eso las fichas de los mazos traen el campo «preposición»."
+      ]
+    },
+    {
+      "titulo": "El orden dentro de la subordinada",
+      "texto": [
+        "Con dass, el verbo conjugado va al final. Con el infinitivo con zu, el infinitivo cierra la frase; si el verbo es separable, zu va en medio."
+      ],
+      "ejemplos": [
+        { "de": "Ich freue mich darüber, dass Sie mir geantwortet haben.", "es": "Me alegro de que me haya contestado." },
+        { "de": "Ich freue mich darauf, Sie kennenzulernen.", "es": "Tengo ganas de conocerle." },
+        { "de": "Sie erkundigt sich danach, wann das Gespräch stattfindet.", "es": "Pregunta cuándo es la entrevista." }
+      ],
+      "notas": [
+        "Con una pregunta indirecta (wann, wo, wie, ob) se usa también da(r)-: Sie erkundigt sich danach, ob die Stelle noch frei ist."
+      ]
+    },
+    {
+      "titulo": "Cuidado con el caso",
+      "texto": [
+        "Cuando detrás va un sustantivo, la preposición decide el caso. Es el mismo caso que en cualquier otra frase."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo + preposición", "Caso", "Ejemplo"],
+        "filas": [
+          ["warten auf", "acusativo", "Ich warte auf den Anruf."],
+          ["sich erkundigen nach", "dativo", "Ich erkundige mich nach dem Termin."],
+          ["überzeugen von", "dativo", "Er überzeugt mich von seiner Idee."],
+          ["zweifeln an", "dativo", "Ich zweifle an dem Ergebnis."]
+        ]
+      },
+      "notas": [
+        "auf, über, um y für piden acusativo; nach, von, an, mit, zu y bei piden dativo."
+      ]
+    }
+  ]
+}

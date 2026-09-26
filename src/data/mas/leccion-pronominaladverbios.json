@@ -1,0 +1,82 @@
+{
+  "id": "pronominaladverbios",
+  "mazo": "k4-vocabulario",
+  "titulo": "Pronombres y adverbios pronominales",
+  "descripcion": "Para no repetir: con personas, preposición + pronombre (mit ihm); con cosas y hechos, da(r) + preposición (damit, daran, darauf).",
+  "fuente": "Netzwerk neu B1, Kapitel 4: Kursbuch S. 50 y 53 · Übungsbuch S. 48-49 · Intensivtrainer S. 25",
+  "libro": {
+    "referencia": "Kursbuch S. 50 (recuadro G) y S. 53 («kurz und klar»), Übungsbuch S. 48-49 e Intensivtrainer S. 25",
+    "puntos": [
+      "El recuadro tiene dos filas y marca en amarillo la palabra que se sustituye.",
+      "«Personen: Präposition + Pronomen» — «Rufen Sie den Personalchef an. Mit ihm können Sie sprechen, wenn Sie Fragen haben.»",
+      "«Dinge und Ereignisse: da(r) + Präposition» — «Viele Institutionen bieten Bewerbungstrainings an. Daran kann jeder teilnehmen.»",
+      "Y debajo, la única regla de forma que hay que recordar: «Die Präposition beginnt mit einem Vokal: dar-» (daran, darauf, darüber …)."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La pregunta que lo decide todo",
+      "texto": [
+        "Antes de sustituir, pregúntate si lo que repites es una PERSONA o una COSA / un hecho. De eso depende la forma."
+      ],
+      "tabla": {
+        "cabecera": ["Se refiere a…", "Forma", "Ejemplo"],
+        "filas": [
+          ["una persona", "preposición + pronombre", "Rufen Sie den Personalchef an. Mit ihm können Sie sprechen."],
+          ["una cosa o un hecho", "da(r) + preposición", "Es gibt Bewerbungstrainings. Daran kann jeder teilnehmen."]
+        ]
+      },
+      "notas": [
+        "El pronombre va en el caso que pida la preposición: mit ihm (dativo), für ihn (acusativo), von ihr (dativo)."
+      ]
+    },
+    {
+      "titulo": "da- o dar-",
+      "texto": [
+        "Se pega da- a la preposición. Si la preposición empieza por vocal, se mete una -r- para que se pueda pronunciar."
+      ],
+      "tabla": {
+        "cabecera": ["Preposición", "Forma", "Preposición", "Forma"],
+        "filas": [
+          ["mit", "damit", "an", "daran"],
+          ["von", "davon", "auf", "darauf"],
+          ["für", "dafür", "über", "darüber"],
+          ["nach", "danach", "in", "darin"],
+          ["zu", "dazu", "um", "darum"],
+          ["bei", "dabei", "aus", "daraus"]
+        ]
+      },
+      "notas": [
+        "No funciona con todas: ohne, außer, seit y gegenüber no forman adverbio pronominal."
+      ]
+    },
+    {
+      "titulo": "Preguntar: wo(r) + preposición",
+      "texto": [
+        "Para preguntar por una cosa se usa wo(r) + preposición, con la misma regla de la -r-. Para preguntar por una persona, preposición + wem / wen."
+      ],
+      "tabla": {
+        "cabecera": ["Se pregunta por…", "Pregunta", "Respuesta"],
+        "filas": [
+          ["una cosa", "Worauf wartest du?", "Auf eine Antwort. / Darauf."],
+          ["una persona", "Auf wen wartest du?", "Auf meinen Chef. / Auf ihn."],
+          ["una cosa", "Womit arbeitest du?", "Mit dem Rechner. / Damit."],
+          ["una persona", "Mit wem arbeitest du?", "Mit meiner Kollegin. / Mit ihr."]
+        ]
+      }
+    },
+    {
+      "titulo": "hier- y wo- en textos formales",
+      "texto": [
+        "En cartas y textos oficiales aparece también hier(r)- con el mismo valor: hiermit, hierfür, hierzu."
+      ],
+      "ejemplos": [
+        { "de": "Hiermit bewerbe ich mich um die Stelle als Assistent.", "es": "Por la presente me presento a la plaza de asistente." },
+        { "de": "Vielen Dank für Ihre Anzeige. Hierzu hätte ich noch eine Frage.", "es": "Gracias por su anuncio. Sobre eso tendría una pregunta más." }
+      ],
+      "notas": [
+        "En la lengua hablada basta con damit, dafür o dazu."
+      ]
+    }
+  ]
+}

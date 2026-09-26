@@ -93,8 +93,8 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   `.js` (los usa node).
 - **Más contenidos** (`/mas`, `src/secciones/mas/`): material de alemán del curso del usuario
   (Netzwerk neu B1, caps. 1 «Gute Reise!», 2 «Das ist ja praktisch!», 3 «Veränderungen»,
-  6 «Blick nach vorn», 7 «Zwischenmenschliches», 8 «Rund um Körper und Geist»,
-  9 «Kunststücke», 10 «Miteinander» y 11 «Stadt, Land, Fluss»).
+  4 «Arbeitswelt», 6 «Blick nach vorn», 7 «Zwischenmenschliches», 8 «Rund um Körper und
+  Geist», 9 «Kunststücke», 10 «Miteinander» y 11 «Stadt, Land, Fluss»).
   Portada en DOS bloques (decisión del usuario, 2026-09-21; sin emojis en las subsecciones):
   **Gramática y ejercicios** (por capítulo: cada tema = lección + tandas) y **Vocabulario y
   verbos** (por capítulo: `mazo-kN-vocabulario` y `mazo-kN-verbos`). Catálogo en
@@ -115,7 +115,7 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   huecos múltiples («wird … gebaut», `src/engine/ejercicios.js`) con frases PROPIAS modeladas
   sobre el Intensivtrainer/Übungsbuch (no copiar el libro: copyright y sitio público); ✓ por tanda
   en `mas.completados.v1`. Los PDF son escaneos: página PDF = página del libro + 1.
-- **Motor puro + Vitest** (308 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad, mazos, ejercicios).
+- **Motor puro + Vitest** (318 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad, mazos, ejercicios).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:

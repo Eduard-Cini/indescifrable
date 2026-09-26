@@ -1,0 +1,51 @@
+{
+  "tema": "verbos-preposicion",
+  "titulo": "Verbos con preposición",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 50; Übungsbuch S. 49-50; Intensivtrainer S. 26), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "preposicion",
+      "titulo": "¿Qué preposición rige?",
+      "instruccion": "Completa con la preposición del verbo.",
+      "modelo": "Kursbuch S. 53 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "pp1", "partes": ["Ich warte ", " eine Antwort."], "respuesta": "auf", "distractores": ["für", "an", "nach"], "pista": "warten auf + acusativo." },
+        { "id": "pp2", "partes": ["Er bewirbt sich ", " die Stelle als Assistent."], "respuesta": "um", "distractores": ["für", "auf", "nach"], "pista": "sich bewerben um + acusativo." },
+        { "id": "pp3", "partes": ["Sie erkundigt sich ", " dem Arbeitsbeginn."], "respuesta": "nach", "distractores": ["über", "um", "von"], "pista": "sich erkundigen nach + dativo." },
+        { "id": "pp4", "partes": ["Der Bewerber überzeugt uns ", " seinen Fähigkeiten."], "respuesta": "von", "distractores": ["über", "mit", "an"], "pista": "überzeugen von + dativo." },
+        { "id": "pp5", "partes": ["Ich zweifle ", " dem Ergebnis."], "respuesta": "an", "distractores": ["auf", "über", "von"], "pista": "zweifeln an + dativo." },
+        { "id": "pp6", "partes": ["Diese Stelle eignet sich gut ", " Berufsanfänger."], "respuesta": "für", "distractores": ["zu", "auf", "an"], "pista": "sich eignen für + acusativo." },
+        { "id": "pp7", "partes": ["Pünktlichkeit zählt ", " den wichtigsten Eigenschaften."], "respuesta": "zu", "distractores": ["an", "auf", "für"], "pista": "zählen zu + dativo." },
+        { "id": "pp8", "partes": ["Ich beziehe mich ", " Ihre Anzeige auf der Webseite."], "respuesta": "auf", "distractores": ["an", "über", "zu"], "pista": "sich beziehen auf + acusativo." }
+      ]
+    },
+    {
+      "id": "con-dass",
+      "titulo": "Con dass",
+      "instruccion": "Di lo mismo con una frase con dass.",
+      "modelo": "Kursbuch S. 50 (recuadro G)",
+      "ejercicios": [
+        { "id": "cd1", "partes": null, "pregunta": "Er wartet auf eine Antwort der Firma.", "respuesta": "Er wartet darauf, dass die Firma antwortet.", "distractores": ["Er wartet, dass die Firma antwortet.", "Er wartet darauf, dass die Firma antwortet zu.", "Er wartet auf, dass die Firma antwortet."], "pista": "El da(r)- anuncia la subordinada y no se puede quitar." },
+        { "id": "cd2", "partes": null, "pregunta": "Ich freue mich über Ihre schnelle Antwort.", "respuesta": "Ich freue mich darüber, dass Sie so schnell geantwortet haben.", "distractores": ["Ich freue mich, dass Sie so schnell geantwortet haben über.", "Ich freue mich darüber, dass Sie haben so schnell geantwortet.", "Ich freue mich über, dass Sie so schnell geantwortet haben."], "pista": "über → darüber; en la subordinada, el auxiliar al final." },
+        { "id": "cd3", "partes": null, "pregunta": "Sie erkundigt sich nach dem Termin des Gesprächs.", "respuesta": "Sie erkundigt sich danach, wann das Gespräch stattfindet.", "distractores": ["Sie erkundigt sich, wann das Gespräch stattfindet nach.", "Sie erkundigt sich danach, wann findet das Gespräch statt.", "Sie erkundigt sich nach, wann das Gespräch stattfindet."], "pista": "Con una pregunta indirecta también hace falta danach." },
+        { "id": "cd4", "partes": null, "pregunta": "Der Chef zweifelt an meiner Pünktlichkeit.", "respuesta": "Der Chef zweifelt daran, dass ich pünktlich bin.", "distractores": ["Der Chef zweifelt, dass ich pünktlich bin.", "Der Chef zweifelt an, dass ich pünktlich bin.", "Der Chef zweifelt daran, dass bin ich pünktlich."], "pista": "an + vocal → daran." },
+        { "id": "cd5", "partes": null, "pregunta": "Wir überzeugen ihn von unserem Plan.", "respuesta": "Wir überzeugen ihn davon, dass unser Plan gut ist.", "distractores": ["Wir überzeugen ihn, dass unser Plan gut ist.", "Wir überzeugen ihn von, dass unser Plan gut ist.", "Wir überzeugen ihn davon, dass ist unser Plan gut."], "pista": "von → davon." },
+        { "id": "cd6", "partes": null, "pregunta": "Ich rechne mit einer Absage.", "respuesta": "Ich rechne damit, dass ich eine Absage bekomme.", "distractores": ["Ich rechne, dass ich eine Absage bekomme.", "Ich rechne mit, dass ich eine Absage bekomme.", "Ich rechne damit, dass bekomme ich eine Absage."], "pista": "rechnen mit → damit." }
+      ]
+    },
+    {
+      "id": "con-zu",
+      "titulo": "¿dass o infinitivo con zu?",
+      "instruccion": "Fíjate en si el sujeto es el mismo en las dos partes.",
+      "modelo": "Kursbuch S. 50 · Übungsbuch S. 50",
+      "ejercicios": [
+        { "id": "cz1", "partes": null, "pregunta": "Er wartet. + Er bekommt eine Antwort. (mismo sujeto)", "respuesta": "Er wartet darauf, eine Antwort zu bekommen.", "distractores": ["Er wartet darauf, dass er eine Antwort zu bekommen.", "Er wartet darauf, eine Antwort bekommen.", "Er wartet, eine Antwort zu bekommen."], "pista": "Mismo sujeto → infinitivo con zu, y el da(r)- se queda." },
+        { "id": "cz2", "partes": null, "pregunta": "Er wartet. + Die Firma antwortet. (sujetos distintos)", "respuesta": "Er wartet darauf, dass die Firma antwortet.", "distractores": ["Er wartet darauf, die Firma zu antworten.", "Er wartet darauf, dass antwortet die Firma.", "Er wartet, dass die Firma antwortet."], "pista": "Sujetos distintos → hace falta dass." },
+        { "id": "cz3", "partes": null, "pregunta": "Ich freue mich. + Ich lerne Sie kennen. (mismo sujeto)", "respuesta": "Ich freue mich darauf, Sie kennenzulernen.", "distractores": ["Ich freue mich darauf, Sie kennen zu lernen.", "Ich freue mich darauf, dass ich Sie kennenzulernen.", "Ich freue mich, Sie kennenzulernen."], "pista": "kennen|lernen es separable: zu va en medio y todo junto." },
+        { "id": "cz4", "partes": null, "pregunta": "Sie beschäftigt sich. + Sie schreibt den Lebenslauf. (mismo sujeto)", "respuesta": "Sie beschäftigt sich damit, den Lebenslauf zu schreiben.", "distractores": ["Sie beschäftigt sich damit, dass den Lebenslauf zu schreiben.", "Sie beschäftigt sich damit, den Lebenslauf schreiben.", "Sie beschäftigt sich, den Lebenslauf zu schreiben."], "pista": "mit → damit; mismo sujeto → zu." },
+        { "id": "cz5", "partes": null, "pregunta": "Ich bewerbe mich. + Ich arbeite in dieser Branche. (mismo sujeto)", "respuesta": "Ich bewerbe mich darum, in dieser Branche zu arbeiten.", "distractores": ["Ich bewerbe mich darum, dass ich in dieser Branche zu arbeiten.", "Ich bewerbe mich um, in dieser Branche zu arbeiten.", "Ich bewerbe mich, in dieser Branche zu arbeiten."], "pista": "um → darum." },
+        { "id": "cz6", "partes": null, "pregunta": "Wir freuen uns. + Sie kommen am Montag vorbei. (sujetos distintos)", "respuesta": "Wir freuen uns darüber, dass Sie am Montag vorbeikommen.", "distractores": ["Wir freuen uns darüber, am Montag vorbeizukommen.", "Wir freuen uns darüber, dass Sie am Montag vorbei kommen zu.", "Wir freuen uns, dass Sie am Montag vorbeikommen."], "pista": "Sujetos distintos → dass; vorbei|kommen se junta al final." }
+      ]
+    }
+  ]
+}

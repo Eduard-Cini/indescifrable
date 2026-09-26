@@ -3,14 +3,15 @@
   "mazo": "sustantivos-compuestos",
   "titulo": "Sustantivos compuestos (Komposita)",
   "descripcion": "Formación de palabras del capítulo 3: dos o más sustantivos juntos forman uno nuevo. La ÚLTIMA palabra manda el artículo; la PRIMERA lleva el acento.",
-  "fuente": "Netzwerk neu B1, Kapitel 3: Übungsbuch S. 38 (Wortbildung) · Intensivtrainer S. 20",
+  "fuente": "Netzwerk neu B1, Kapitel 3: Übungsbuch S. 38 (Wortbildung) · Intensivtrainer S. 20; continúa en el Kapitel 4: Übungsbuch S. 50 («Komposita II»)",
   "libro": {
     "referencia": "Übungsbuch S. 38 («Wortbildung – Komposita I», A-B) e Intensivtrainer S. 20",
     "puntos": [
       "Es un apartado de Wortbildung: el libro da definiciones con de («der Schlüssel für das Auto») y pide escribir la palabra compuesta (der Autoschlüssel).",
       "El recuadro W dice tres cosas: se pueden juntar dos o más sustantivos; la ÚLTIMA palabra decide el artículo; y el acento va siempre en la primera parte.",
       "El ejemplo encadenado que da es das Haus + die Tür = die Haustür, y die Haustür + der Schlüssel = der Haustürschlüssel.",
-      "Y avisa de que a veces aparece un -(e)s- entre las dos palabras: das Glücksgefühl, die Bundesrepublik."
+      "Y avisa de que a veces aparece un -(e)s- entre las dos palabras: das Glücksgefühl, die Bundesrepublik.",
+      "El capítulo 4 lo continúa («Komposita II», Übungsbuch S. 50): la primera parte (Bestimmungswort) puede ser un sustantivo, un verbo o un adjetivo, y el significado no siempre se deduce (hoch + die Schule = die Hochschule)."
     ]
   },
   "secciones": [

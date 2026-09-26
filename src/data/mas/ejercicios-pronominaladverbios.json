@@ -1,0 +1,51 @@
+{
+  "tema": "pronominaladverbios",
+  "titulo": "Adverbios pronominales",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 50; Übungsbuch S. 48-49; Intensivtrainer S. 25), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "persona-o-cosa",
+      "titulo": "¿Persona o cosa?",
+      "instruccion": "Sustituye lo subrayado sin repetirlo.",
+      "modelo": "Kursbuch S. 50 (recuadro G)",
+      "ejercicios": [
+        { "id": "pc1", "partes": ["Rufen Sie den Personalchef an. ", " können Sie über alles sprechen."], "respuesta": "Mit ihm", "distractores": ["Damit", "Mit ihn", "Darüber"], "pista": "Es una persona → preposición + pronombre en dativo." },
+        { "id": "pc2", "partes": ["Es gibt viele Bewerbungstrainings. ", " kann jeder teilnehmen."], "respuesta": "Daran", "distractores": ["An ihnen", "Dazu", "Darauf"], "pista": "teil|nehmen an + una cosa → daran." },
+        { "id": "pc3", "partes": ["Ich warte auf eine Antwort. Ich warte schon seit zwei Wochen ", "."], "respuesta": "darauf", "distractores": ["auf sie", "davon", "daran"], "pista": "warten auf + una cosa → darauf." },
+        { "id": "pc4", "partes": ["Meine Kollegin hilft mir viel. Ohne ", " würde ich das nicht schaffen."], "respuesta": "sie", "distractores": ["dafür", "davon", "ihr"], "pista": "ohne + acusativo y es una persona → ohne sie." },
+        { "id": "pc5", "partes": ["Die Stelle klingt interessant. Ich interessiere mich sehr ", "."], "respuesta": "dafür", "distractores": ["für sie", "darauf", "damit"], "pista": "sich interessieren für + una cosa → dafür." },
+        { "id": "pc6", "partes": ["Frau Schäfer ist die Chefin. Ich habe gestern ", " gesprochen."], "respuesta": "mit ihr", "distractores": ["damit", "mit sie", "darüber"], "pista": "Persona femenina en dativo → mit ihr." },
+        { "id": "pc7", "partes": ["Das Gespräch war gut. Ich denke immer noch ", "."], "respuesta": "daran", "distractores": ["an es", "darüber", "davon"], "pista": "denken an + una cosa → daran." }
+      ]
+    },
+    {
+      "id": "forma",
+      "titulo": "¿da- o dar-?",
+      "instruccion": "Elige la forma correcta.",
+      "modelo": "Kursbuch S. 53 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "fm1", "partes": null, "pregunta": "mit", "respuesta": "damit", "distractores": ["darmit", "damid", "dermit"], "pista": "mit empieza por consonante → da-." },
+        { "id": "fm2", "partes": null, "pregunta": "auf", "respuesta": "darauf", "distractores": ["daauf", "daraup", "dauf"], "pista": "auf empieza por vocal → dar-." },
+        { "id": "fm3", "partes": null, "pregunta": "über", "respuesta": "darüber", "distractores": ["daüber", "darubär", "dauber"], "pista": "über empieza por vocal → dar-." },
+        { "id": "fm4", "partes": null, "pregunta": "von", "respuesta": "davon", "distractores": ["darvon", "davron", "dervon"], "pista": "Consonante → da-." },
+        { "id": "fm5", "partes": null, "pregunta": "an", "respuesta": "daran", "distractores": ["daan", "daran't", "dran"], "pista": "Vocal → dar-." },
+        { "id": "fm6", "partes": null, "pregunta": "für", "respuesta": "dafür", "distractores": ["darfür", "dafuer", "derfür"], "pista": "Consonante → da-." },
+        { "id": "fm7", "partes": null, "pregunta": "in", "respuesta": "darin", "distractores": ["dain", "darinn", "drin"], "pista": "Vocal → dar-." }
+      ]
+    },
+    {
+      "id": "preguntar",
+      "titulo": "La pregunta",
+      "instruccion": "Elige la pregunta que corresponde a la respuesta.",
+      "modelo": "Übungsbuch S. 49 · Intensivtrainer S. 25",
+      "ejercicios": [
+        { "id": "pr1", "partes": null, "pregunta": "Ich warte auf eine Antwort.", "respuesta": "Worauf wartest du?", "distractores": ["Auf wen wartest du?", "Wofür wartest du?", "Woran wartest du?"], "pista": "Es una cosa → wo(r) + la preposición del verbo: warten auf → worauf." },
+        { "id": "pr2", "partes": null, "pregunta": "Ich warte auf meinen Chef.", "respuesta": "Auf wen wartest du?", "distractores": ["Worauf wartest du?", "Wem wartest du?", "Woran wartest du?"], "pista": "Es una persona → preposición + wen (acusativo)." },
+        { "id": "pr3", "partes": null, "pregunta": "Ich arbeite mit dem Rechner.", "respuesta": "Womit arbeitest du?", "distractores": ["Mit wem arbeitest du?", "Wodurch arbeitest du?", "Woran arbeitest du?"], "pista": "Cosa → womit." },
+        { "id": "pr4", "partes": null, "pregunta": "Ich arbeite mit meiner Kollegin.", "respuesta": "Mit wem arbeitest du?", "distractores": ["Womit arbeitest du?", "Mit wen arbeitest du?", "Wem arbeitest du?"], "pista": "Persona; mit rige dativo → mit wem." },
+        { "id": "pr5", "partes": null, "pregunta": "Ich freue mich über die Zusage.", "respuesta": "Worüber freust du dich?", "distractores": ["Über wen freust du dich?", "Worauf freust du dich?", "Wovon freust du dich?"], "pista": "sich freuen über + cosa → worüber." },
+        { "id": "pr6", "partes": null, "pregunta": "Ich habe mich bei der Firma beworben.", "respuesta": "Wo hast du dich beworben?", "distractores": ["Wobei hast du dich beworben?", "Bei wem hast du dich beworben?", "Worauf hast du dich beworben?"], "pista": "Aquí se pregunta por el lugar: wo." }
+      ]
+    }
+  ]
+}

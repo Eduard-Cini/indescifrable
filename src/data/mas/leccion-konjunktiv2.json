@@ -1,0 +1,86 @@
+{
+  "id": "konjunktiv2",
+  "mazo": "k4-verbos",
+  "titulo": "Konjunktiv II y condicionales irreales",
+  "descripcion": "wäre, hätte, könnte, würde: para lo que no es real, para pedir algo con cortesía y para las frases con wenn.",
+  "fuente": "Netzwerk neu B1, Kapitel 4: Kursbuch S. 45-46 y 53 · Übungsbuch S. 44-46 · Intensivtrainer S. 22-23",
+  "libro": {
+    "referencia": "Kursbuch S. 45-46 (recuadros G) y S. 53 («kurz und klar»), Übungsbuch S. 44-46 e Intensivtrainer S. 22-23",
+    "puntos": [
+      "El «kurz und klar» pone una sola tabla con tres bloques: los verbos modales (könnte, müsste, dürfte, wollte, sollte), sein y haben (wäre, hätte), y «andere Verben: würde + Infinitiv».",
+      "En la tabla se ve que wollte y sollte NO llevan Umlaut, a diferencia de könnte, müsste y dürfte.",
+      "Debajo hay un recuadro aparte para las condicionales irreales, con los tres órdenes posibles: «Ich würde noch einen Kaffee trinken, wenn ich Zeit hätte», «Wenn Boris nicht so gestresst wäre, wäre die Pause lustiger» y «Wenn ich nicht so lange arbeiten müsste, würde ich gern mitkommen».",
+      "El capítulo lo usa para hablar de situaciones en el trabajo y para pedir información por teléfono con cortesía: «Ich hätte da noch eine Frage», «Ich würde gern wissen …»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Las formas que hay que saber",
+      "texto": [
+        "En la práctica solo se usan de memoria seis verbos. Todos los demás forman el Konjunktiv II con würde + infinitivo."
+      ],
+      "tabla": {
+        "cabecera": ["Persona", "sein", "haben", "können", "müssen", "werden"],
+        "filas": [
+          ["ich", "wäre", "hätte", "könnte", "müsste", "würde"],
+          ["du", "wärst", "hättest", "könntest", "müsstest", "würdest"],
+          ["er/es/sie", "wäre", "hätte", "könnte", "müsste", "würde"],
+          ["wir", "wären", "hätten", "könnten", "müssten", "würden"],
+          ["ihr", "wärt", "hättet", "könntet", "müsstet", "würdet"],
+          ["sie/Sie", "wären", "hätten", "könnten", "müssten", "würden"]
+        ]
+      },
+      "notas": [
+        "Los otros modales: dürfte (con Umlaut), wollte y sollte (SIN Umlaut, iguales que el Präteritum).",
+        "El Konjunktiv II sale del Präteritum: war → wäre, hatte → hätte, konnte → könnte."
+      ]
+    },
+    {
+      "titulo": "würde + infinitivo para todo lo demás",
+      "texto": [
+        "Con los verbos normales no se usan las formas antiguas (ginge, käme, träfe): se dice würde + infinitivo, igual que en el futuro con werden."
+      ],
+      "ejemplos": [
+        { "de": "Ich würde gern in Teilzeit arbeiten.", "es": "Me gustaría trabajar a tiempo parcial." },
+        { "de": "Wir würden uns über eine Antwort freuen.", "es": "Nos alegraría recibir una respuesta." },
+        { "de": "Was würdest du an meiner Stelle machen?", "es": "¿Qué harías tú en mi lugar?" }
+      ],
+      "notas": [
+        "Con sein, haben y los modales NO se usa würde: se dice «Ich wäre froh», no «Ich würde froh sein»."
+      ]
+    },
+    {
+      "titulo": "Para qué se usa",
+      "tabla": {
+        "cabecera": ["Uso", "Ejemplo"],
+        "filas": [
+          ["pedir algo con cortesía", "Könnten Sie mir bitte helfen? · Ich hätte da noch eine Frage."],
+          ["dar un consejo", "An deiner Stelle würde ich mich bewerben. · Du solltest pünktlich sein."],
+          ["hablar de lo irreal", "Wenn ich mehr Zeit hätte, würde ich eine Fortbildung machen."],
+          ["expresar un deseo", "Wenn ich doch schon fertig wäre!"]
+        ]
+      },
+      "notas": [
+        "Para la cortesía, las formas más frecuentes son könnte, hätte, würde y wäre."
+      ]
+    },
+    {
+      "titulo": "Las condicionales con wenn",
+      "texto": [
+        "Las dos partes van en Konjunktiv II. wenn abre una subordinada, así que su verbo va al final; y la principal puede ir delante o detrás."
+      ],
+      "tabla": {
+        "cabecera": ["Orden", "Ejemplo"],
+        "filas": [
+          ["principal + wenn", "Ich würde noch einen Kaffee trinken, wenn ich Zeit hätte."],
+          ["wenn + principal", "Wenn Boris nicht so gestresst wäre, wäre die Pause lustiger."],
+          ["wenn + principal (con modal)", "Wenn ich nicht so lange arbeiten müsste, würde ich gern mitkommen."]
+        ]
+      },
+      "notas": [
+        "Si la subordinada va delante, el verbo de la principal viene justo detrás de la coma: Wenn …, würde ich …",
+        "No hace falta poner würde dos veces: si un lado ya lleva hätte, wäre o un modal, ese lado se queda así."
+      ]
+    }
+  ]
+}

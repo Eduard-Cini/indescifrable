@@ -21,6 +21,12 @@
       "mazos": ["k3-vocabulario", "k3-verbos"]
     },
     {
+      "numero": 4,
+      "titulo": "Arbeitswelt",
+      "temas": ["konjunktiv2", "pronominaladverbios", "verbos-preposicion"],
+      "mazos": ["k4-vocabulario", "k4-verbos"]
+    },
+    {
       "numero": 6,
       "titulo": "Blick nach vorn",
       "temas": ["futuro", "n-declinacion", "relativas", "nombres-heit-keit"],
