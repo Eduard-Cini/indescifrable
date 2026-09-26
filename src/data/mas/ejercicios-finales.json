@@ -1,0 +1,51 @@
+{
+  "tema": "finales",
+  "titulo": "damit y um … zu",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 58; Übungsbuch S. 59-60; Intensivtrainer S. 30), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿damit o um … zu?",
+      "instruccion": "Mira si el sujeto es el mismo en las dos partes.",
+      "modelo": "Kursbuch S. 58 (recuadro G)",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["Ich fahre Rad, ", " fit zu bleiben."], "respuesta": "um", "distractores": ["damit", "weil", "dass"], "pista": "Un solo sujeto (ich) → um … zu." },
+        { "id": "cu2", "partes": ["Es gibt Pfand, ", " nicht so viel Müll entsteht."], "respuesta": "damit", "distractores": ["um", "weil", "dass"], "pista": "Dos sujetos distintos (es / Müll) → damit." },
+        { "id": "cu3", "partes": ["Wir trennen den Müll, ", " man ihn recyceln kann."], "respuesta": "damit", "distractores": ["um", "weil", "sodass"], "pista": "El sujeto cambia (wir / man) → damit." },
+        { "id": "cu4", "partes": ["Wir trennen den Müll, ", " die Umwelt zu schützen."], "respuesta": "um", "distractores": ["damit", "weil", "dass"], "pista": "Mismo sujeto (wir) → um … zu." },
+        { "id": "cu5", "partes": ["Die Stadt baut neue Radwege, ", " mehr Leute Rad fahren."], "respuesta": "damit", "distractores": ["um", "weil", "denn"], "pista": "Sujetos distintos (die Stadt / mehr Leute) → damit." },
+        { "id": "cu6", "partes": ["Ich stehe früher auf, ", " den Bus nicht zu verpassen."], "respuesta": "um", "distractores": ["damit", "weil", "sodass"], "pista": "Mismo sujeto (ich) → um … zu." },
+        { "id": "cu7", "partes": ["Er erklärt alles noch einmal, ", " es wirklich jeder versteht."], "respuesta": "damit", "distractores": ["um", "weil", "dass"], "pista": "Sujetos distintos (er / jeder) → damit." },
+        { "id": "cu8", "partes": ["Sie kauft regional ein, ", " weniger Abgase zu verursachen."], "respuesta": "um", "distractores": ["damit", "weil", "obwohl"], "pista": "Mismo sujeto (sie) → um … zu." }
+      ]
+    },
+    {
+      "id": "orden",
+      "titulo": "El verbo, en su sitio",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Übungsbuch S. 59 · Intensivtrainer S. 30",
+      "ejercicios": [
+        { "id": "or1", "partes": null, "pregunta": "«Voy en bici para mantenerme en forma.»", "respuesta": "Ich fahre Rad, um fit zu bleiben.", "distractores": ["Ich fahre Rad, um fit bleiben.", "Ich fahre Rad, um zu fit bleiben.", "Ich fahre Rad, um ich fit zu bleiben."], "pista": "La oración de infinitivo no lleva sujeto y acaba en zu + infinitivo." },
+        { "id": "or2", "partes": null, "pregunta": "«Hay depósito para que no se genere tanta basura.»", "respuesta": "Es gibt Pfand, damit nicht so viel Müll entsteht.", "distractores": ["Es gibt Pfand, damit entsteht nicht so viel Müll.", "Es gibt Pfand, damit nicht so viel Müll zu entstehen.", "Es gibt Pfand, damit nicht so viel Müll entstehen."], "pista": "damit manda el verbo conjugado al final." },
+        { "id": "or3", "partes": null, "pregunta": "«Me levanto antes para llegar puntual.»", "respuesta": "Ich stehe früher auf, um pünktlich anzukommen.", "distractores": ["Ich stehe früher auf, um pünktlich ankommen.", "Ich stehe früher auf, um pünktlich zu ankommen.", "Ich stehe früher auf, um pünktlich ankommen zu."], "pista": "an|kommen es separable: zu va en medio y todo junto." },
+        { "id": "or4", "partes": null, "pregunta": "«Para mantenerme en forma, voy en bici.» (empezando por la finalidad)", "respuesta": "Um fit zu bleiben, fahre ich Rad.", "distractores": ["Um fit zu bleiben, ich fahre Rad.", "Um fit bleiben zu, fahre ich Rad.", "Um zu fit bleiben, fahre ich Rad."], "pista": "La subordinada ocupa la posición 1 → el verbo de la principal va detrás de la coma." },
+        { "id": "or5", "partes": null, "pregunta": "«Apago la luz para ahorrar electricidad.»", "respuesta": "Ich mache das Licht aus, um Strom zu sparen.", "distractores": ["Ich mache das Licht aus, um Strom sparen.", "Ich mache aus das Licht, um Strom zu sparen.", "Ich mache das Licht aus, um zu Strom sparen."], "pista": "aus|machen se separa en la principal; zu + infinitivo al final de la subordinada." },
+        { "id": "or6", "partes": null, "pregunta": "«Te lo escribo para que no se te olvide.»", "respuesta": "Ich schreibe es dir auf, damit du es nicht vergisst.", "distractores": ["Ich schreibe es dir auf, damit du es nicht vergessen.", "Ich schreibe es dir auf, damit vergisst du es nicht.", "Ich schreibe es dir auf, um es nicht zu vergessen."], "pista": "Sujetos distintos (ich / du) → damit, con el verbo al final." }
+      ]
+    },
+    {
+      "id": "motivo-o-finalidad",
+      "titulo": "¿Motivo o finalidad?",
+      "instruccion": "Elige el conector según el sentido.",
+      "modelo": "Kursbuch S. 63 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "mf1", "partes": ["Ich fahre Rad, ", " mein Auto kaputt ist."], "respuesta": "weil", "distractores": ["um", "damit", "sodass"], "pista": "Es el motivo (por qué) → weil." },
+        { "id": "mf2", "partes": ["Ich fahre Rad, ", " Geld zu sparen."], "respuesta": "um", "distractores": ["weil", "damit", "dass"], "pista": "Es la finalidad (para qué) → um … zu." },
+        { "id": "mf3", "partes": ["Wir pflanzen Bäume, ", " die Luft besser wird."], "respuesta": "damit", "distractores": ["weil", "um", "obwohl"], "pista": "Finalidad con otro sujeto → damit." },
+        { "id": "mf4", "partes": ["Wir pflanzen Bäume, ", " die Luft schlecht ist."], "respuesta": "weil", "distractores": ["damit", "um", "sodass"], "pista": "Aquí se da el motivo → weil." },
+        { "id": "mf5", "partes": ["Sie engagiert sich, ", " sie etwas verändern will."], "respuesta": "weil", "distractores": ["damit", "um", "dass"], "pista": "Motivo → weil." },
+        { "id": "mf6", "partes": ["Sie engagiert sich, ", " etwas zu verändern."], "respuesta": "um", "distractores": ["weil", "damit", "dass"], "pista": "Finalidad y un solo sujeto → um … zu." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "tema": "nombres-ung",
+  "titulo": "Sustantivos con -ung",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 62, A-B; Intensivtrainer S. 32), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "del-verbo",
+      "titulo": "¿De qué verbo viene?",
+      "instruccion": "Elige el verbo del que sale el sustantivo.",
+      "modelo": "Übungsbuch S. 62, A",
+      "ejercicios": [
+        { "id": "dv1", "partes": null, "pregunta": "die Verschwendung", "respuesta": "verschwenden", "distractores": ["verschwinden", "verschmutzen", "verwenden"], "pista": "verschwenden = derrochar." },
+        { "id": "dv2", "partes": null, "pregunta": "die Meinung", "respuesta": "meinen", "distractores": ["meiden", "mieten", "melden"], "pista": "meinen = opinar." },
+        { "id": "dv3", "partes": null, "pregunta": "die Rettung", "respuesta": "retten", "distractores": ["reden", "richten", "reichen"], "pista": "retten = salvar." },
+        { "id": "dv4", "partes": null, "pregunta": "die Benutzung", "respuesta": "benutzen", "distractores": ["nutzen", "benötigen", "bedienen"], "pista": "El prefijo se queda: benutzen → die Benutzung." },
+        { "id": "dv5", "partes": null, "pregunta": "die Bedeutung", "respuesta": "bedeuten", "distractores": ["bedienen", "beobachten", "bedanken"], "pista": "bedeuten = significar." },
+        { "id": "dv6", "partes": null, "pregunta": "die Handlung", "respuesta": "handeln", "distractores": ["halten", "haltbar machen", "hageln"], "pista": "handeln → se pierde la -e-: Handlung." },
+        { "id": "dv7", "partes": null, "pregunta": "die Sammlung", "respuesta": "sammeln", "distractores": ["sammen", "samen", "sämtlich sein"], "pista": "Verbo en -eln → se pierde la -e-." },
+        { "id": "dv8", "partes": null, "pregunta": "die Verschmutzung", "respuesta": "verschmutzen", "distractores": ["schmutzig sein", "verschwenden", "verschwinden"], "pista": "verschmutzen = contaminar." }
+      ]
+    },
+    {
+      "id": "formar",
+      "titulo": "Forma el sustantivo",
+      "instruccion": "¿Cómo se dice el sustantivo del verbo?",
+      "modelo": "Übungsbuch S. 62 (recuadro W)",
+      "ejercicios": [
+        { "id": "fm1", "partes": null, "pregunta": "lösen", "respuesta": "die Lösung", "distractores": ["der Lösung", "das Lösung", "die Lösen"], "pista": "Los sustantivos en -ung son siempre die." },
+        { "id": "fm2", "partes": null, "pregunta": "wandern", "respuesta": "die Wanderung", "distractores": ["die Wandrung", "der Wanderung", "die Wandern"], "pista": "Con -ern la -e- se queda: Wanderung." },
+        { "id": "fm3", "partes": null, "pregunta": "sammeln", "respuesta": "die Sammlung", "distractores": ["die Sammelung", "der Sammlung", "die Sammeln"], "pista": "Con -eln la -e- se pierde: Sammlung." },
+        { "id": "fm4", "partes": null, "pregunta": "verändern", "respuesta": "die Veränderung", "distractores": ["die Verändrung", "der Veränderung", "die Veränderheit"], "pista": "Con -ern la -e- se queda." },
+        { "id": "fm5", "partes": null, "pregunta": "entwickeln", "respuesta": "die Entwicklung", "distractores": ["die Entwickelung", "der Entwicklung", "die Entwickeln"], "pista": "-eln → se pierde la -e-." },
+        { "id": "fm6", "partes": null, "pregunta": "ein|laden", "respuesta": "die Einladung", "distractores": ["die Ladungein", "der Einladung", "die Einladen"], "pista": "En los separables el prefijo se pega delante." },
+        { "id": "fm7", "partes": null, "pregunta": "auf|klären", "respuesta": "die Aufklärung", "distractores": ["die Klärungauf", "der Aufklärung", "die Aufkläring"], "pista": "auf + Klärung." },
+        { "id": "fm8", "partes": null, "pregunta": "erfahren", "respuesta": "die Erfahrung", "distractores": ["die Fahrung", "der Erfahrung", "die Erfahrheit"], "pista": "El prefijo er- se queda." }
+      ]
+    },
+    {
+      "id": "en-la-frase",
+      "titulo": "En la frase",
+      "instruccion": "Completa con el sustantivo del verbo marcado. Fíjate en el singular y el plural.",
+      "modelo": "Übungsbuch S. 62, B · Intensivtrainer S. 32",
+      "ejercicios": [
+        { "id": "ef1", "partes": ["Ron macht bei einer zweitägigen ", " durch ein Naturschutzgebiet mit. (wandern)"], "respuesta": "Wanderung", "distractores": ["Wandrung", "Wanderungen", "Wandern"], "pista": "einer + singular femenino." },
+        { "id": "ef2", "partes": ["Auf der Tour lernt er viel über die ", " in der Natur. (verändern)"], "respuesta": "Veränderungen", "distractores": ["Veränderung", "Verändrungen", "Veränderheit"], "pista": "«los cambios», en plural → -ungen." },
+        { "id": "ef3", "partes": ["Die ", " der Umwelt ist schuld daran. (verschmutzen)"], "respuesta": "Verschmutzung", "distractores": ["Verschmutzungen", "Verschmutzheit", "Schmutzung"], "pista": "Se usa en singular: die Verschmutzung." },
+        { "id": "ef4", "partes": ["Nach der Tour suchen die Teilnehmer nach ", " für die Natur. (lösen)"], "respuesta": "Lösungen", "distractores": ["Lösung", "Losungen", "Lösen"], "pista": "«soluciones», en plural." },
+        { "id": "ef5", "partes": ["Für Ron war die Tour eine sehr interessante ", ". (erfahren)"], "respuesta": "Erfahrung", "distractores": ["Erfahrungen", "Fahrung", "Erfahrheit"], "pista": "eine + singular femenino." },
+        { "id": "ef6", "partes": ["Die ", " von Lebensmitteln ist ein großes Problem. (verschwenden)"], "respuesta": "Verschwendung", "distractores": ["Verschwendungen", "Verschwindung", "Schwendung"], "pista": "die Verschwendung, en singular." }
+      ]
+    }
+  ]
+}

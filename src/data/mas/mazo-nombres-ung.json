@@ -1,0 +1,32 @@
+{
+  "id": "nombres-ung",
+  "titulo": "Sustantivos con -ung",
+  "descripcion": "Sustantivos formados a partir de un verbo con la terminación -ung. Todos son femeninos; la nota recuerda el verbo del que salen.",
+  "fuente": "Netzwerk neu B1, Kapitel 5: Wortbildung del Übungsbuch S. 62 e Intensivtrainer S. 32; algunos aparecen también en el Lernwortschatz de otros capítulos",
+  "tarjetas": [
+    { "id": "bedeutung", "tipo": "sustantivo", "articulo": "die", "palabra": "Bedeutung", "plural": "die Bedeutungen", "es": "significado, importancia", "nota": "bedeuten → die Bedeutung." },
+    { "id": "meinung", "tipo": "sustantivo", "articulo": "die", "palabra": "Meinung", "plural": "die Meinungen", "es": "opinión", "nota": "meinen → die Meinung." },
+    { "id": "rettung", "tipo": "sustantivo", "articulo": "die", "palabra": "Rettung", "plural": "die Rettungen", "es": "rescate, salvamento", "nota": "retten → die Rettung." },
+    { "id": "benutzung", "tipo": "sustantivo", "articulo": "die", "palabra": "Benutzung", "plural": null, "es": "uso, utilización", "nota": "benutzen → die Benutzung; el prefijo se queda." },
+    { "id": "handlung", "tipo": "sustantivo", "articulo": "die", "palabra": "Handlung", "plural": "die Handlungen", "es": "acción; trama (de una historia)", "nota": "handeln → die Handlung: con -eln se pierde la -e-." },
+    { "id": "verschwendung", "tipo": "sustantivo", "articulo": "die", "palabra": "Verschwendung", "plural": null, "es": "derroche, despilfarro", "nota": "verschwenden → die Verschwendung.", "lws": true },
+    { "id": "verschmutzung", "tipo": "sustantivo", "articulo": "die", "palabra": "Verschmutzung", "plural": null, "es": "contaminación", "nota": "verschmutzen → die Verschmutzung; en el capítulo: die Umweltverschmutzung.", "lws": true },
+    { "id": "sammlung", "tipo": "sustantivo", "articulo": "die", "palabra": "Sammlung", "plural": "die Sammlungen", "es": "colección; recogida", "nota": "sammeln → die Sammlung: con -eln se pierde la -e-." },
+    { "id": "wanderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Wanderung", "plural": "die Wanderungen", "es": "excursión a pie, caminata", "nota": "wandern → die Wanderung: con -ern la -e- se queda." },
+    { "id": "aenderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Änderung", "plural": "die Änderungen", "es": "modificación, cambio", "nota": "ändern → die Änderung." },
+    { "id": "veraenderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Veränderung", "plural": "die Veränderungen", "es": "cambio", "nota": "verändern → die Veränderung." },
+    { "id": "loesung", "tipo": "sustantivo", "articulo": "die", "palabra": "Lösung", "plural": "die Lösungen", "es": "solución", "nota": "lösen → die Lösung." },
+    { "id": "entwicklung", "tipo": "sustantivo", "articulo": "die", "palabra": "Entwicklung", "plural": "die Entwicklungen", "es": "desarrollo, evolución", "nota": "entwickeln → die Entwicklung: con -eln se pierde la -e-." },
+    { "id": "einladung", "tipo": "sustantivo", "articulo": "die", "palabra": "Einladung", "plural": "die Einladungen", "es": "invitación", "nota": "ein|laden → die Einladung: el prefijo se pega delante." },
+    { "id": "aufklaerung", "tipo": "sustantivo", "articulo": "die", "palabra": "Aufklärung", "plural": null, "es": "esclarecimiento; información, sensibilización", "nota": "auf|klären → die Aufklärung." },
+    { "id": "ausbildung", "tipo": "sustantivo", "articulo": "die", "palabra": "Ausbildung", "plural": "die Ausbildungen", "es": "formación profesional", "nota": "aus|bilden → die Ausbildung." },
+    { "id": "vorbereitung", "tipo": "sustantivo", "articulo": "die", "palabra": "Vorbereitung", "plural": "die Vorbereitungen", "es": "preparación", "nota": "vor|bereiten → die Vorbereitung." },
+    { "id": "erfahrung", "tipo": "sustantivo", "articulo": "die", "palabra": "Erfahrung", "plural": "die Erfahrungen", "es": "experiencia", "nota": "erfahren → die Erfahrung." },
+    { "id": "erinnerung", "tipo": "sustantivo", "articulo": "die", "palabra": "Erinnerung", "plural": "die Erinnerungen", "es": "recuerdo", "nota": "sich erinnern → die Erinnerung." },
+    { "id": "bedingung", "tipo": "sustantivo", "articulo": "die", "palabra": "Bedingung", "plural": "die Bedingungen", "es": "condición", "nota": "bedingen → die Bedingung." },
+    { "id": "planung", "tipo": "sustantivo", "articulo": "die", "palabra": "Planung", "plural": "die Planungen", "es": "planificación", "nota": "planen → die Planung." },
+    { "id": "wirkung", "tipo": "sustantivo", "articulo": "die", "palabra": "Wirkung", "plural": "die Wirkungen", "es": "efecto", "nota": "wirken → die Wirkung." },
+    { "id": "bildung", "tipo": "sustantivo", "articulo": "die", "palabra": "Bildung", "plural": null, "es": "educación, formación", "nota": "bilden → die Bildung." },
+    { "id": "uebung", "tipo": "sustantivo", "articulo": "die", "palabra": "Übung", "plural": "die Übungen", "es": "ejercicio, práctica", "nota": "üben → die Übung." }
+  ]
+}

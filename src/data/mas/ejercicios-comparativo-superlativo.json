@@ -1,0 +1,52 @@
+{
+  "tema": "comparativo-superlativo",
+  "titulo": "Comparativo y superlativo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 55; Übungsbuch S. 56-57; Intensivtrainer S. 28), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "formas",
+      "titulo": "Las formas",
+      "instruccion": "Elige el comparativo o el superlativo que se pide.",
+      "modelo": "Kursbuch S. 63 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "fo1", "partes": null, "pregunta": "gut, comparativo", "respuesta": "besser", "distractores": ["guter", "gutter", "am besten"], "pista": "Irregular: gut – besser – am besten." },
+        { "id": "fo2", "partes": null, "pregunta": "viel, superlativo (solo)", "respuesta": "am meisten", "distractores": ["am vielsten", "mehrsten", "am mehrsten"], "pista": "viel – mehr – am meisten." },
+        { "id": "fo3", "partes": null, "pregunta": "kalt, superlativo (solo)", "respuesta": "am kältesten", "distractores": ["am kaltsten", "am kältsten", "am kaltesten"], "pista": "Umlaut y -e- antes de -st porque acaba en -t." },
+        { "id": "fo4", "partes": null, "pregunta": "hoch, comparativo", "respuesta": "höher", "distractores": ["hocher", "höcher", "hoheren"], "pista": "hoch – höher – am höchsten: se pierde la -c-." },
+        { "id": "fo5", "partes": null, "pregunta": "gern, comparativo", "respuesta": "lieber", "distractores": ["gerner", "gernner", "am liebsten"], "pista": "gern – lieber – am liebsten." },
+        { "id": "fo6", "partes": null, "pregunta": "kurz, superlativo (solo)", "respuesta": "am kürzesten", "distractores": ["am kurzsten", "am kürzsten", "am kurzesten"], "pista": "Umlaut y -e- antes de -st porque acaba en -z." },
+        { "id": "fo7", "partes": null, "pregunta": "nah, superlativo (solo)", "respuesta": "am nächsten", "distractores": ["am nahsten", "am nähesten", "am nahesten"], "pista": "nah – näher – am nächsten." }
+      ]
+    },
+    {
+      "id": "delante",
+      "titulo": "Delante del sustantivo",
+      "instruccion": "Completa con la forma declinada.",
+      "modelo": "Kursbuch S. 55 · Übungsbuch S. 56",
+      "ejercicios": [
+        { "id": "de1", "partes": ["Bio-Gemüse hat oft ein ", " Ergebnis in der Ökobilanz."], "respuesta": "besseres", "distractores": ["besser", "beste", "am besten"], "pista": "ein + neutro → -es: ein besseres Ergebnis." },
+        { "id": "de2", "partes": ["Das Fahrrad ist die ", " Lösung für kurze Wege."], "respuesta": "beste", "distractores": ["bessere", "am besten", "bestes"], "pista": "Superlativo con die → sin am y con -e." },
+        { "id": "de3", "partes": ["Wir fahren mit dem ", " Zug."], "respuesta": "schnellsten", "distractores": ["schnellste", "am schnellsten", "schnellerem"], "pista": "mit dem + superlativo → -en." },
+        { "id": "de4", "partes": ["Das war der ", " Winter seit Jahren."], "respuesta": "kälteste", "distractores": ["kältesten", "am kältesten", "kälter"], "pista": "der + superlativo masculino nominativo → -e." },
+        { "id": "de5", "partes": ["Ich suche eine ", " Alternative zu Plastik."], "respuesta": "billigere", "distractores": ["billiger", "billigste", "am billigsten"], "pista": "eine + femenino → -e sobre el comparativo billiger." },
+        { "id": "de6", "partes": ["Die ", " Menschen trennen ihren Müll."], "respuesta": "meisten", "distractores": ["meiste", "mehr", "am meisten"], "pista": "die + plural → -en: die meisten Menschen." },
+        { "id": "de7", "partes": ["Wo ist der ", " Supermarkt?"], "respuesta": "nächste", "distractores": ["nächsten", "am nächsten", "näher"], "pista": "der + superlativo nominativo → -e." },
+        { "id": "de8", "partes": ["Wir brauchen ", " Abfall, nicht mehr."], "respuesta": "weniger", "distractores": ["wenigeren", "wenigers", "am wenigsten"], "pista": "mehr y weniger son invariables: no llevan terminación." }
+      ]
+    },
+    {
+      "id": "comparar",
+      "titulo": "Comparar dos cosas",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 55 · Intensivtrainer S. 28",
+      "ejercicios": [
+        { "id": "cp1", "partes": null, "pregunta": "«La bici es más barata que el coche.»", "respuesta": "Das Fahrrad ist billiger als das Auto.", "distractores": ["Das Fahrrad ist billiger wie das Auto.", "Das Fahrrad ist billiger das Auto.", "Das Fahrrad ist am billigsten als das Auto."], "pista": "Comparativo + als." },
+        { "id": "cp2", "partes": null, "pregunta": "«El autobús es tan rápido como el tren.»", "respuesta": "Der Bus ist so schnell wie die Bahn.", "distractores": ["Der Bus ist so schnell als die Bahn.", "Der Bus ist schneller wie die Bahn.", "Der Bus ist so schneller wie die Bahn."], "pista": "Igualdad: so + positivo + wie." },
+        { "id": "cp3", "partes": null, "pregunta": "«Ir a pie es lo más barato de todo.»", "respuesta": "Zu Fuß gehen ist am billigsten.", "distractores": ["Zu Fuß gehen ist der billigste.", "Zu Fuß gehen ist billigste.", "Zu Fuß gehen ist am billigste."], "pista": "Sin sustantivo detrás → am …-sten." },
+        { "id": "cp4", "partes": null, "pregunta": "«Es la solución más barata.»", "respuesta": "Das ist die billigste Lösung.", "distractores": ["Das ist die am billigsten Lösung.", "Das ist die billigere Lösung.", "Das ist am billigsten Lösung."], "pista": "Delante del sustantivo el superlativo pierde el am y se declina." },
+        { "id": "cp5", "partes": null, "pregunta": "«Cuanta menos carne comemos, mejor para el clima.»", "respuesta": "Je weniger Fleisch wir essen, desto besser für das Klima.", "distractores": ["Je wenigeres Fleisch wir essen, desto besser für das Klima.", "Je weniger Fleisch wir essen, desto bessere für das Klima.", "Je weniger Fleisch essen wir, desto besser für das Klima."], "pista": "weniger y besser aquí van sin terminación; el verbo cierra la parte del je." },
+        { "id": "cp6", "partes": null, "pregunta": "«El consumo de electricidad más alto es en invierno.»", "respuesta": "Der höchste Stromverbrauch ist im Winter.", "distractores": ["Der am höchsten Stromverbrauch ist im Winter.", "Der hoheste Stromverbrauch ist im Winter.", "Der höhere Stromverbrauch ist im Winter."], "pista": "hoch → höchst-; delante del sustantivo, con terminación." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "nombres-ung",
+  "mazo": "nombres-ung",
+  "titulo": "Sustantivos con -ung",
+  "descripcion": "Formación de palabras del capítulo 5: del verbo al sustantivo. bedeuten → die Bedeutung. El artículo es siempre die.",
+  "fuente": "Netzwerk neu B1, Kapitel 5: Übungsbuch S. 62 (Wortbildung) · Intensivtrainer S. 32",
+  "libro": {
+    "referencia": "Übungsbuch S. 62 («Wortbildung – Nomen mit -ung», A-B) e Intensivtrainer S. 32",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro da seis sustantivos (Verschwendung, Meinung, Rettung, Benutzung, Bedeutung, Handlung) y pide anotar de qué verbo salen.",
+      "El recuadro W dice dos cosas: de muchos verbos se pueden formar sustantivos con la terminación -ung, y el artículo es SIEMPRE die.",
+      "Y añade la única irregularidad: en los verbos acabados en -eln se pierde la -e- (sammeln → die Sammlung).",
+      "El segundo ejercicio los mete en un texto sobre una excursión por la naturaleza: verändern, wandern, erfahren, verschmutzen y lösen."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La regla, en una línea",
+      "texto": [
+        "Se quita la terminación -en del infinitivo y se añade -ung. El resultado es siempre femenino y su plural es -en."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Sustantivo", "Significado"],
+        "filas": [
+          ["bedeuten", "die Bedeutung, -en", "el significado"],
+          ["meinen", "die Meinung, -en", "la opinión"],
+          ["retten", "die Rettung, -en", "el rescate"],
+          ["benutzen", "die Benutzung", "el uso"],
+          ["handeln", "die Handlung, -en", "la acción, la trama"],
+          ["verschwenden", "die Verschwendung", "el derroche"]
+        ]
+      },
+      "notas": [
+        "No hace falta aprender el género: todos los sustantivos en -ung son die.",
+        "El sustantivo nombra la acción o su resultado, como el infinitivo sustantivado del capítulo 1, pero suena más formal: das Retten / die Rettung."
+      ]
+    },
+    {
+      "titulo": "Los verbos en -eln y -ern",
+      "texto": [
+        "Si el verbo acaba en -eln (o en -ern), se pierde la -e- para no repetir la sílaba."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Sustantivo", "Qué pasa"],
+        "filas": [
+          ["sammeln", "die Sammlung", "se pierde la -e-"],
+          ["wandeln", "die Wandlung", "se pierde la -e-"],
+          ["ändern", "die Änderung", "se mantiene"],
+          ["verändern", "die Veränderung", "se mantiene"],
+          ["wandern", "die Wanderung", "se mantiene"]
+        ]
+      },
+      "notas": [
+        "Con -ern lo normal es que la -e- se quede: die Änderung, die Wanderung, die Erinnerung."
+      ]
+    },
+    {
+      "titulo": "Con prefijo, el prefijo se queda",
+      "texto": [
+        "Los verbos con prefijo forman el sustantivo igual, y el prefijo va delante, incluso el de los separables."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Sustantivo"],
+        "filas": [
+          ["verschmutzen", "die Verschmutzung"],
+          ["entwickeln", "die Entwicklung"],
+          ["erziehen", "die Erziehung"],
+          ["auf|klären", "die Aufklärung"],
+          ["ein|laden", "die Einladung"],
+          ["aus|bilden", "die Ausbildung"]
+        ]
+      },
+      "notas": [
+        "En los separables, el prefijo se pega: einladen → die Einladung, no «die Ladungein»."
+      ]
+    },
+    {
+      "titulo": "Otras terminaciones que también dan die",
+      "texto": [
+        "-ung se junta a la lista de sufijos femeninos que ya conoces. Saberlos ahorra aprender el artículo."
+      ],
+      "tabla": {
+        "cabecera": ["Sufijo", "Sale de…", "Ejemplo"],
+        "filas": [
+          ["-ung", "un verbo", "die Lösung (lösen)"],
+          ["-heit / -keit", "un adjetivo", "die Freiheit (frei) · die Möglichkeit (möglich)"],
+          ["-schaft", "un sustantivo o un adjetivo", "die Freundschaft (der Freund)"],
+          ["-ion / -tät", "préstamos", "die Aktion · die Qualität"]
+        ]
+      },
+      "notas": [
+        "Los de -heit y -keit los trabaja el capítulo 6; los valores con -schaft y -ität, el capítulo 10.",
+        "Cuidado: un sustantivo en -ung casi siempre lleva -s- de unión en los compuestos: die Meinungsfreiheit, das Nahrungsmittel."
+      ]
+    }
+  ]
+}

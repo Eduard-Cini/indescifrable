@@ -1,0 +1,77 @@
+{
+  "id": "finales",
+  "mazo": "k5-vocabulario",
+  "titulo": "Finalidad: damit y um … zu",
+  "descripcion": "Para decir para qué se hace algo. um … zu cuando el sujeto es el mismo; damit cuando hay dos sujetos distintos.",
+  "fuente": "Netzwerk neu B1, Kapitel 5: Kursbuch S. 58 y 63 · Übungsbuch S. 59-60 · Intensivtrainer S. 30",
+  "libro": {
+    "referencia": "Kursbuch S. 58 (recuadro G) y S. 63 («kurz und klar»), Übungsbuch S. 59-60 e Intensivtrainer S. 30",
+    "puntos": [
+      "El recuadro del «kurz und klar» se titula «Nebensatz mit damit und um … zu: Finalsatz» y presenta las dos formas una debajo de la otra.",
+      "La regla que separa las dos es la del sujeto: con un solo sujeto vale um … zu; con dos sujetos distintos hace falta damit.",
+      "Los dos ejemplos que trae el Lernwortschatz son «Ich fahre Rad, um fit zu bleiben» y «Es gibt Pfand, damit nicht so viel Müll entsteht».",
+      "El capítulo lo usa para hablar de medidas y de ideas ecológicas: para qué sirve el depósito de los envases, para qué se organiza una acción."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La pregunta es wozu?",
+      "texto": [
+        "Las dos construcciones responden a la misma pregunta: ¿para qué? La diferencia es solo gramatical."
+      ],
+      "ejemplos": [
+        { "de": "Ich fahre Rad, um fit zu bleiben.", "es": "Voy en bici para mantenerme en forma." },
+        { "de": "Es gibt Pfand, damit nicht so viel Müll entsteht.", "es": "Hay depósito para que no se genere tanta basura." }
+      ],
+      "notas": [
+        "No confundas damit (conector de finalidad) con damit (adverbio pronominal = «con eso», capítulo 4). Se distinguen por la posición del verbo y por la coma."
+      ]
+    },
+    {
+      "titulo": "La regla del sujeto",
+      "tabla": {
+        "cabecera": ["Sujetos", "Forma", "Ejemplo"],
+        "filas": [
+          ["el mismo en las dos partes", "um … zu + infinitivo", "Ich fahre Rad, um fit zu bleiben."],
+          ["distintos", "damit + frase completa", "Es gibt Pfand, damit nicht so viel Müll entsteht."],
+          ["el mismo (pero también vale damit)", "damit", "Ich fahre Rad, damit ich fit bleibe."]
+        ]
+      },
+      "notas": [
+        "Con un solo sujeto se puede usar damit, pero lo natural es um … zu.",
+        "Con dos sujetos NO se puede usar um … zu: la oración de infinitivo no tiene sujeto propio."
+      ]
+    },
+    {
+      "titulo": "Dónde va el verbo",
+      "texto": [
+        "Las dos abren una subordinada y van detrás de una coma. Con damit, el verbo conjugado cierra la frase; con um … zu, la cierra el infinitivo con zu."
+      ],
+      "ejemplos": [
+        { "de": "Wir trennen den Müll, damit man ihn recyceln kann.", "es": "Separamos la basura para que se pueda reciclar." },
+        { "de": "Wir trennen den Müll, um die Umwelt zu schützen.", "es": "Separamos la basura para proteger el medio ambiente." },
+        { "de": "Ich stehe früher auf, um den Bus nicht zu verpassen.", "es": "Me levanto antes para no perder el autobús." }
+      ],
+      "notas": [
+        "Con un verbo separable, zu va en medio: um rechtzeitig anzukommen, um den Müll wegzuwerfen.",
+        "La subordinada con um … zu también puede ir delante: Um fit zu bleiben, fahre ich Rad."
+      ]
+    },
+    {
+      "titulo": "No confundir con weil",
+      "texto": [
+        "weil da el MOTIVO (por qué); damit y um … zu dan la FINALIDAD (para qué). En español la diferencia es «porque» frente a «para»."
+      ],
+      "tabla": {
+        "cabecera": ["Pregunta", "Conector", "Ejemplo"],
+        "filas": [
+          ["Warum? (motivo)", "weil / da", "Ich fahre Rad, weil das Auto kaputt ist."],
+          ["Wozu? (finalidad)", "um … zu / damit", "Ich fahre Rad, um Geld zu sparen."]
+        ]
+      },
+      "notas": [
+        "Truco: si en español cabe «para», es finalidad; si cabe «porque», es motivo."
+      ]
+    }
+  ]
+}

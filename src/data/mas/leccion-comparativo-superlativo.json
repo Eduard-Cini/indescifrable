@@ -1,0 +1,86 @@
+{
+  "id": "comparativo-superlativo",
+  "mazo": "k5-vocabulario",
+  "titulo": "Comparativo y superlativo delante del sustantivo",
+  "descripcion": "ein besseres Ergebnis, die beste Lösung: el comparativo y el superlativo también se declinan cuando acompañan a un sustantivo.",
+  "fuente": "Netzwerk neu B1, Kapitel 5: Kursbuch S. 55 y 63 · Übungsbuch S. 56-57 · Intensivtrainer S. 28",
+  "libro": {
+    "referencia": "Kursbuch S. 55 (recuadro G) y S. 63 («kurz und klar»), Übungsbuch S. 56-57 e Intensivtrainer S. 28",
+    "puntos": [
+      "El recuadro del «kurz und klar» se titula «Komparativ und Superlativ vor Nomen» y parte de lo que ya se sabe de A2: el comparativo con -er y el superlativo con am …-sten.",
+      "Lo nuevo es que, delante de un sustantivo, esas formas llevan ADEMÁS la terminación normal del adjetivo, y el superlativo pierde el am.",
+      "El capítulo lo usa para comparar productos y formas de vida: qué alimento tiene mejor balance ecológico, qué medio de transporte es el más rápido.",
+      "Los adjetivos irregulares que hay que saber de memoria son gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten y hoch – höher – am höchsten."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Lo que ya sabías",
+      "texto": [
+        "Cuando el adjetivo va solo (detrás del verbo), el comparativo lleva -er y el superlativo va con am …-sten. Ahí no hay terminación de declinación."
+      ],
+      "tabla": {
+        "cabecera": ["Grado", "Forma", "Ejemplo"],
+        "filas": [
+          ["positivo", "billig", "Der Zug ist billig."],
+          ["comparativo", "billiger", "Das Fahrrad ist billiger."],
+          ["superlativo", "am billigsten", "Zu Fuß ist am billigsten."]
+        ]
+      },
+      "notas": [
+        "Muchos adjetivos cortos añaden Umlaut en el comparativo y el superlativo: alt – älter – am ältesten, groß – größer – am größten, warm – wärmer – am wärmsten."
+      ]
+    },
+    {
+      "titulo": "Delante del sustantivo se declinan",
+      "texto": [
+        "Si el adjetivo acompaña a un sustantivo, primero se forma el comparativo o el superlativo y ENCIMA se añade la terminación de siempre. El superlativo pierde el am y necesita artículo."
+      ],
+      "tabla": {
+        "cabecera": ["Grado", "Solo", "Delante del sustantivo"],
+        "filas": [
+          ["positivo", "Das Ergebnis ist gut.", "ein gutes Ergebnis · das gute Ergebnis"],
+          ["comparativo", "Das Ergebnis ist besser.", "ein besseres Ergebnis · das bessere Ergebnis"],
+          ["superlativo", "Das Ergebnis ist am besten.", "das beste Ergebnis · unser bestes Ergebnis"]
+        ]
+      },
+      "notas": [
+        "El orden es siempre el mismo: raíz + -er / -st + terminación. besser + es = besseres; best + e = beste.",
+        "El superlativo casi siempre va con artículo determinado, porque solo hay uno: die beste Lösung, der schnellste Zug."
+      ]
+    },
+    {
+      "titulo": "Cómo se forma el superlativo",
+      "texto": [
+        "Se añade -st- a la raíz. Los adjetivos que acaban en -d, -t, -s, -ß, -sch o -z meten una -e- para poder pronunciarlo."
+      ],
+      "tabla": {
+        "cabecera": ["Adjetivo", "Superlativo solo", "Delante del sustantivo"],
+        "filas": [
+          ["billig", "am billigsten", "der billigste Weg"],
+          ["schnell", "am schnellsten", "mit dem schnellsten Zug"],
+          ["kalt", "am kältesten", "der kälteste Winter"],
+          ["kurz", "am kürzesten", "die kürzeste Strecke"],
+          ["frisch", "am frischesten", "das frischeste Gemüse"]
+        ]
+      }
+    },
+    {
+      "titulo": "Los irregulares",
+      "tabla": {
+        "cabecera": ["Positivo", "Comparativo", "Superlativo", "Delante del sustantivo"],
+        "filas": [
+          ["gut", "besser", "am besten", "die beste Lösung"],
+          ["viel", "mehr", "am meisten", "die meisten Menschen"],
+          ["gern", "lieber", "am liebsten", "mein liebstes Getränk"],
+          ["hoch", "höher", "am höchsten", "der höchste Verbrauch"],
+          ["nah", "näher", "am nächsten", "der nächste Supermarkt"]
+        ]
+      },
+      "notas": [
+        "mehr y weniger son invariables: no llevan terminación. Se dice mehr Menschen, weniger Abfall.",
+        "Para comparar dos cosas se usa als: Das Fahrrad ist billiger ALS das Auto. Para decir que son iguales, so … wie: Der Bus ist so schnell wie die Bahn."
+      ]
+    }
+  ]
+}

@@ -27,6 +27,12 @@
       "mazos": ["k4-vocabulario", "k4-verbos"]
     },
     {
+      "numero": 5,
+      "titulo": "Umweltfreundlich?",
+      "temas": ["comparativo-superlativo", "finales", "nombres-ung"],
+      "mazos": ["k5-vocabulario", "k5-verbos"]
+    },
+    {
       "numero": 6,
       "titulo": "Blick nach vorn",
       "temas": ["futuro", "n-declinacion", "relativas", "nombres-heit-keit"],
