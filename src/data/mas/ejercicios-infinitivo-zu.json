@@ -1,0 +1,51 @@
+{
+  "tema": "infinitivo-zu",
+  "titulo": "Infinitivo con zu",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 10 y S. 17; Übungsbuch S. 8-9; Intensivtrainer S. 4-5), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "con-o-sin",
+      "titulo": "¿Con zu o sin zu?",
+      "instruccion": "Completa el final de la frase.",
+      "modelo": "Kursbuch S. 10 · Übungsbuch S. 8",
+      "ejercicios": [
+        { "id": "cz1", "partes": ["Ich habe vor, im Urlaub richtig ", "."], "respuesta": "zu faulenzen", "distractores": ["faulenzen", "zu faulenze", "gefaulenzt"], "pista": "vor|haben pide infinitivo con zu." },
+        { "id": "cz2", "partes": ["Ich will im Urlaub richtig ", "."], "respuesta": "faulenzen", "distractores": ["zu faulenzen", "faulenze", "gefaulenzt"], "pista": "Los verbos modales van con infinitivo SIN zu." },
+        { "id": "cz3", "partes": ["Es ist anstrengend, jeden Tag ", "."], "respuesta": "zu wandern", "distractores": ["wandern", "zu wandere", "gewandert"], "pista": "Adjetivo + sein → infinitivo con zu." },
+        { "id": "cz4", "partes": ["Hast du Lust, heute Abend ", "?"], "respuesta": "zu grillen", "distractores": ["grillen", "zu grillst", "gegrillt"], "pista": "Lust haben + zu + infinitivo." },
+        { "id": "cz5", "partes": ["Wir haben angefangen, das Zelt ", "."], "respuesta": "aufzubauen", "distractores": ["aufbauen", "zu aufbauen", "aufbaut"], "pista": "auf|bauen es separable: zu va en medio." },
+        { "id": "cz6", "partes": ["Ich versuche, jeden Tag ", "."], "respuesta": "auszuschlafen", "distractores": ["ausschlafen", "zu ausschlafen", "ausschläft"], "pista": "aus|schlafen es separable: auszuschlafen." },
+        { "id": "cz7", "partes": ["Nach dem Frühstück gehen wir immer ", "."], "respuesta": "spazieren", "distractores": ["zu spazieren", "spaziert", "spazierend"], "pista": "gehen + infinitivo, sin zu." },
+        { "id": "cz8", "partes": ["Ich habe vergessen, das Hotel ", "."], "respuesta": "zu buchen", "distractores": ["buchen", "zu buche", "gebucht"], "pista": "vergessen pide infinitivo con zu." }
+      ]
+    },
+    {
+      "id": "que-lo-pide",
+      "titulo": "¿Quién pide el zu?",
+      "instruccion": "Elige la frase correcta.",
+      "modelo": "Kursbuch S. 17 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "ql1", "partes": null, "pregunta": "«Es interesante visitar una ciudad.»", "respuesta": "Es ist interessant, eine Stadt zu besichtigen.", "distractores": ["Es ist interessant, eine Stadt besichtigen.", "Es ist interessant, zu eine Stadt besichtigen.", "Es ist interessant, eine Stadt besichtigt."], "pista": "Adjetivo + sein → zu + infinitivo al final." },
+        { "id": "ql2", "partes": null, "pregunta": "«No tengo tiempo de ir a la agencia de viajes.»", "respuesta": "Ich habe keine Zeit, ins Reisebüro zu gehen.", "distractores": ["Ich habe keine Zeit, ins Reisebüro gehen.", "Ich habe keine Zeit, zu ins Reisebüro gehen.", "Ich habe keine Zeit, ins Reisebüro zu gehe."], "pista": "Zeit haben + zu + infinitivo." },
+        { "id": "ql3", "partes": null, "pregunta": "«He decidido pasar el invierno en la montaña.»", "respuesta": "Ich habe mich entschieden, den Winter in den Bergen zu verbringen.", "distractores": ["Ich habe mich entschieden, den Winter in den Bergen verbringen.", "Ich habe mich entschieden, zu den Winter in den Bergen verbringen.", "Ich habe mich entschieden, den Winter in den Bergen verbracht."], "pista": "sich entscheiden pide zu + infinitivo." },
+        { "id": "ql4", "partes": null, "pregunta": "«Quiero pasar el invierno en la montaña.»", "respuesta": "Ich will den Winter in den Bergen verbringen.", "distractores": ["Ich will den Winter in den Bergen zu verbringen.", "Ich will, den Winter in den Bergen zu verbringen.", "Ich will den Winter in den Bergen verbracht."], "pista": "wollen es modal: infinitivo sin zu y sin coma." },
+        { "id": "ql5", "partes": null, "pregunta": "«Hacer la maleta no me divierte nada.»", "respuesta": "Es macht mir keinen Spaß, den Koffer zu packen.", "distractores": ["Es macht mir keinen Spaß, den Koffer packen.", "Es macht mir keinen Spaß, zu den Koffer packen.", "Es macht mir keinen Spaß, den Koffer gepackt."], "pista": "Spaß machen + zu + infinitivo." },
+        { "id": "ql6", "partes": null, "pregunta": "«¿Tienes pensado llamar a Sara?»", "respuesta": "Hast du vor, Sara anzurufen?", "distractores": ["Hast du vor, Sara anrufen?", "Hast du vor, Sara zu anrufen?", "Hast du vor, Sara ruft an?"], "pista": "an|rufen es separable: anzurufen." }
+      ]
+    },
+    {
+      "id": "unir",
+      "titulo": "Una sola frase",
+      "instruccion": "Junta las dos ideas en una frase con infinitivo + zu.",
+      "modelo": "Übungsbuch S. 9 · Intensivtrainer S. 5",
+      "ejercicios": [
+        { "id": "un1", "partes": null, "pregunta": "Ich habe keine Lust. + Ich suche lange eine Unterkunft.", "respuesta": "Ich habe keine Lust, lange eine Unterkunft zu suchen.", "distractores": ["Ich habe keine Lust, lange eine Unterkunft suchen.", "Ich habe keine Lust zu, lange eine Unterkunft suchen.", "Ich habe keine Lust, lange suche ich eine Unterkunft."], "pista": "La oración de infinitivo no repite el sujeto." },
+        { "id": "un2", "partes": null, "pregunta": "Wir haben aufgehört. + Wir fahren jedes Jahr an denselben Ort.", "respuesta": "Wir haben aufgehört, jedes Jahr an denselben Ort zu fahren.", "distractores": ["Wir haben aufgehört, jedes Jahr an denselben Ort fahren.", "Wir haben aufgehört, wir fahren jedes Jahr an denselben Ort.", "Wir haben aufgehört, jedes Jahr an denselben Ort gefahren."], "pista": "auf|hören pide zu + infinitivo." },
+        { "id": "un3", "partes": null, "pregunta": "Es ist schön. + Man übernachtet im Freien.", "respuesta": "Es ist schön, im Freien zu übernachten.", "distractores": ["Es ist schön, im Freien übernachten.", "Es ist schön, man übernachtet im Freien.", "Es ist schön, im Freien zu übernachtet."], "pista": "El man desaparece: la oración de infinitivo no lleva sujeto." },
+        { "id": "un4", "partes": null, "pregunta": "Ich schlage vor. + Wir mieten ein Ferienhaus.", "respuesta": "Ich schlage vor, ein Ferienhaus zu mieten.", "distractores": ["Ich schlage vor, ein Ferienhaus mieten.", "Ich schlage vor, wir mieten ein Ferienhaus zu.", "Ich vorschlage, ein Ferienhaus zu mieten."], "pista": "vor|schlagen es separable en la principal: Ich schlage vor, …" },
+        { "id": "un5", "partes": null, "pregunta": "Es ist wichtig. + Man bucht rechtzeitig.", "respuesta": "Es ist wichtig, rechtzeitig zu buchen.", "distractores": ["Es ist wichtig, rechtzeitig buchen.", "Es ist wichtig, man bucht rechtzeitig zu.", "Es ist wichtig, rechtzeitig gebucht."], "pista": "wichtig + sein → zu + infinitivo." },
+        { "id": "un6", "partes": null, "pregunta": "Ich habe geplant. + Ich packe heute Abend ein.", "respuesta": "Ich habe geplant, heute Abend einzupacken.", "distractores": ["Ich habe geplant, heute Abend einpacken.", "Ich habe geplant, heute Abend zu einpacken.", "Ich habe geplant, heute Abend packe ich ein."], "pista": "ein|packen es separable: einzupacken." }
+      ]
+    }
+  ]
+}

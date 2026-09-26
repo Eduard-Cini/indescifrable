@@ -1,0 +1,82 @@
+{
+  "id": "infinitivo-nombre",
+  "mazo": "infinitivo-nombre",
+  "titulo": "El infinitivo como sustantivo",
+  "descripcion": "Formación de palabras del capítulo 1: reisen → das Reisen. El infinitivo se escribe con mayúscula, es siempre neutro y aparece mucho con beim y zum.",
+  "fuente": "Netzwerk neu B1, Kapitel 1: Übungsbuch S. 14 (Wortbildung) · Intensivtrainer S. 8",
+  "libro": {
+    "referencia": "Übungsbuch S. 14 («Wortbildung – Infinitiv als Nomen», A-B) e Intensivtrainer S. 8",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro da dos mensajes de chat y pide marcar qué les pasa a los verbos (zelten, erholen, fliegen, grillen, kochen, reisen).",
+      "El recuadro W dice tres cosas: los infinitivos se pueden usar como sustantivos, esos sustantivos son SIEMPRE neutros (das), y suelen aparecer con bei (beim Fliegen = wenn ich fliege) o con zu (zum Erholen = weil ich mich erholen will).",
+      "El segundo ejercicio pide transformar: «er will entspannen» → «Henning geht zum Entspannen am liebsten schwimmen».",
+      "Las frases de ejemplo son «Mir macht das Reisen einfach keinen Spaß» y «Ich habe so viel Spaß beim Zelten»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La regla, en una línea",
+      "texto": [
+        "Cualquier infinitivo puede funcionar como sustantivo. Se escribe con mayúscula, no cambia de forma y su artículo es siempre das."
+      ],
+      "ejemplos": [
+        { "de": "reisen → das Reisen", "es": "viajar → el viajar, los viajes" },
+        { "de": "zelten → das Zelten", "es": "acampar → el acampar" },
+        { "de": "Mir macht das Reisen einfach keinen Spaß.", "es": "A mí viajar no me hace ninguna gracia." }
+      ],
+      "notas": [
+        "No tiene plural: es un nombre de actividad, como el infinitivo español usado como sustantivo («el viajar»).",
+        "Funciona también con verbos separables, que se escriben en una sola palabra: das Aufräumen, das Einkaufen."
+      ]
+    },
+    {
+      "titulo": "beim y zum: los dos usos frecuentes",
+      "texto": [
+        "Casi siempre aparece detrás de una preposición contraída, y cada una equivale a una subordinada distinta."
+      ],
+      "tabla": {
+        "cabecera": ["Forma", "Equivale a", "Ejemplo"],
+        "filas": [
+          ["beim + infinitivo", "wenn / während (mientras)", "Beim Fliegen habe ich ein bisschen Angst. = … wenn ich fliege."],
+          ["zum + infinitivo", "um … zu (para)", "Zum Erholen bleibe ich lieber zu Hause. = … um mich zu erholen."],
+          ["vor dem / nach dem", "bevor / nachdem", "Nach dem Essen gehen wir spazieren."]
+        ]
+      },
+      "notas": [
+        "beim = bei dem y zum = zu dem: la contracción ya lleva el das del infinitivo sustantivado."
+      ]
+    },
+    {
+      "titulo": "Con artículo, sin artículo y con complementos",
+      "texto": [
+        "Puede llevar das delante o ir sin artículo, y admite los mismos complementos que el verbo, colocados delante."
+      ],
+      "ejemplos": [
+        { "de": "Das Kochen macht mir Spaß.", "es": "Cocinar me gusta." },
+        { "de": "Kochen macht mir Spaß.", "es": "Cocinar me gusta. (sin artículo, también vale)" },
+        { "de": "Das Zelten im Freien ist ein Abenteuer.", "es": "Acampar al aire libre es toda una aventura." },
+        { "de": "Beim Pilzesammeln muss man vorsichtig sein.", "es": "Al recoger setas hay que tener cuidado." }
+      ],
+      "notas": [
+        "Si el complemento se pega al verbo, todo se escribe junto: das Pilzesammeln, das Autofahren, das Deutschlernen."
+      ]
+    },
+    {
+      "titulo": "No confundir con el infinitivo con zu",
+      "texto": [
+        "zum Erholen y um sich zu erholen significan lo mismo, pero se construyen distinto: el primero es un sustantivo detrás de una preposición; el segundo, una oración de infinitivo."
+      ],
+      "tabla": {
+        "cabecera": ["Infinitivo sustantivado", "Oración de infinitivo"],
+        "filas": [
+          ["Zum Entspannen geht er schwimmen.", "Um zu entspannen, geht er schwimmen."],
+          ["Beim Kochen hört er Musik.", "Während er kocht, hört er Musik."],
+          ["Ich habe keine Zeit zum Lesen.", "Ich habe keine Zeit zu lesen."]
+        ]
+      },
+      "notas": [
+        "Detrás de zum va el sustantivo con mayúscula; detrás de zu suelto, el infinitivo con minúscula."
+      ]
+    }
+  ]
+}

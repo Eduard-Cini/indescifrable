@@ -1,0 +1,85 @@
+{
+  "id": "infinitivo-zu",
+  "mazo": "k1-verbos",
+  "titulo": "Infinitivo con zu",
+  "descripcion": "Cuándo el segundo verbo de la frase va con zu: detrás de ciertos verbos, detrás de adjetivo + sein/finden y detrás de sustantivo + haben/machen.",
+  "fuente": "Netzwerk neu B1, Kapitel 1: Kursbuch S. 10 y 17 · Übungsbuch S. 8-9 · Intensivtrainer S. 4-5",
+  "libro": {
+    "referencia": "Kursbuch S. 10 (recuadro G) y S. 17 («kurz und klar»), Übungsbuch S. 8-9 e Intensivtrainer S. 4-5",
+    "puntos": [
+      "El «kurz und klar» reparte los casos en tres filas: «nach bestimmten Verben», «nach Adjektiven + sein/finden» y «nach Nomen + haben/machen».",
+      "La lista de verbos que da es: anfangen, aufhören, sich entscheiden, planen, vergessen, versuchen, vorhaben, vorschlagen.",
+      "La de adjetivos: anstrengend, gut, interessant, langweilig, schön, spannend, wichtig.",
+      "Y la de sustantivos: (keine) Lust haben, (keine) Zeit haben, (keinen) Spaß machen.",
+      "El ejemplo con verbo separable es «Ich habe vergessen, dich anzurufen»: zu se mete entre el prefijo y el verbo."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Tres sitios donde aparece",
+      "texto": [
+        "El infinitivo con zu es el segundo verbo de la frase y se va al final. Lo pide una de estas tres cosas."
+      ],
+      "tabla": {
+        "cabecera": ["Lo pide…", "Ejemplos de la lista", "Frase"],
+        "filas": [
+          ["ciertos verbos", "anfangen, aufhören, sich entscheiden, planen, vergessen, versuchen, vorhaben, vorschlagen", "Ich habe vergessen, dich anzurufen."],
+          ["adjetivo + sein / finden", "anstrengend, gut, interessant, langweilig, schön, spannend, wichtig", "Es ist langweilig, den ganzen Tag am Strand zu sein."],
+          ["sustantivo + haben / machen", "(keine) Lust haben, (keine) Zeit haben, (keinen) Spaß machen", "Ich habe keine Zeit, ins Reisebüro zu gehen."]
+        ]
+      },
+      "notas": [
+        "Con los adjetivos, la frase suele empezar por es: Es ist anstrengend, jeden Tag zu wandern. Ese es desaparece si la oración de infinitivo va delante: Jeden Tag zu wandern ist anstrengend."
+      ]
+    },
+    {
+      "titulo": "Dónde se coloca zu",
+      "texto": [
+        "Delante del infinitivo… salvo en los verbos separables, donde se mete DENTRO, entre el prefijo y el verbo."
+      ],
+      "tabla": {
+        "cabecera": ["Tipo de verbo", "Infinitivo con zu", "Ejemplo"],
+        "filas": [
+          ["normal", "zu + infinitivo", "Ich versuche, jeden Tag zu schwimmen."],
+          ["separable", "prefijo + zu + verbo (una palabra)", "Ich versuche, jeden Tag auszuschlafen."],
+          ["con verbo modal", "sin zu", "Ich will jeden Tag ausschlafen."]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Hast du vor, jeden Tag auszuschlafen?", "es": "¿Tienes pensado dormir hasta tarde todos los días?" },
+        { "de": "Ich habe angefangen, Deutsch zu lernen.", "es": "He empezado a aprender alemán." }
+      ]
+    },
+    {
+      "titulo": "La coma y el orden",
+      "texto": [
+        "La oración de infinitivo se separa con coma y el infinitivo con zu cierra la frase. Todo lo demás (complementos, adverbios) va en medio."
+      ],
+      "ejemplos": [
+        { "de": "Ich habe keine Lust, lange nach einer Unterkunft zu suchen.", "es": "No tengo ganas de pasarme mucho rato buscando alojamiento." },
+        { "de": "Macht es dir Spaß, eine Stadt zu besichtigen?", "es": "¿Te apetece visitar una ciudad?" },
+        { "de": "Versuchst du, viel mit deiner Familie zusammen zu sein?", "es": "¿Intentas pasar mucho tiempo con tu familia?" }
+      ],
+      "notas": [
+        "La oración de infinitivo no tiene sujeto propio: el sujeto es el de la frase principal. Si los sujetos son distintos hace falta dass: Ich habe keine Lust, dass du mitkommst."
+      ]
+    },
+    {
+      "titulo": "Verbos que NO llevan zu",
+      "texto": [
+        "Los verbos modales (können, müssen, wollen, dürfen, sollen, möchten) y unos pocos más se juntan con el infinitivo SIN zu."
+      ],
+      "tabla": {
+        "cabecera": ["Con zu", "Sin zu"],
+        "filas": [
+          ["Ich habe vor, im Urlaub zu faulenzen.", "Ich will im Urlaub faulenzen."],
+          ["Ich habe angefangen, Ski zu fahren.", "Ich kann Ski fahren."],
+          ["Es ist schön, am Strand zu liegen.", "Ich bleibe am Strand liegen."]
+        ]
+      },
+      "notas": [
+        "Sin zu van también gehen, bleiben, lassen, sehen y hören: Ich gehe schwimmen. Wir lassen das Auto reparieren (eso es el tema del capítulo 2)."
+      ]
+    }
+  ]
+}

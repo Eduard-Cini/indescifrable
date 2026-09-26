@@ -1,0 +1,77 @@
+{
+  "id": "causales-concesivas",
+  "mazo": "k1-vocabulario",
+  "titulo": "Causales y concesivas: da, weil, obwohl",
+  "descripcion": "Dar el motivo (da, weil) y decir lo contrario de lo esperado (obwohl). Todas son subordinadas: el verbo se va al final.",
+  "fuente": "Netzwerk neu B1, Kapitel 1: Kursbuch S. 12 y 17 · Übungsbuch S. 12-13 · Intensivtrainer S. 6",
+  "libro": {
+    "referencia": "Kursbuch S. 12 (8c-e, recuadro G) y S. 17 («kurz und klar»), Übungsbuch S. 12-13 e Intensivtrainer S. 6",
+    "puntos": [
+      "El libro las presenta juntas, en un solo recuadro G con dos etiquetas: «Grund» para da/weil y «Widerspruch/Kontrast» para obwohl.",
+      "Los ejemplos salen de un foro sobre destinos: «Da/Weil Rothenburg sehr bekannt ist, kommen viele Touristen in die Stadt» y «Melina hatte schöne Tage in Heringsdorf, obwohl das Wetter schlecht war».",
+      "El «kurz und klar» añade la versión con la subordinada detrás: «Melina gefällt Heringsdorf, weil die Strände schön sind».",
+      "La actividad 8e pide completar «Was machen Sie, obwohl …?» con motivos como «Es macht keinen Spaß» o «Das Wetter ist schlecht»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué expresa cada una",
+      "tabla": {
+        "cabecera": ["Conector", "Expresa", "Ejemplo"],
+        "filas": [
+          ["weil", "el motivo (respuesta a warum?)", "Melina gefällt Heringsdorf, weil die Strände schön sind."],
+          ["da", "el motivo, ya conocido o evidente", "Da Rothenburg sehr bekannt ist, kommen viele Touristen in die Stadt."],
+          ["obwohl", "lo contrario de lo esperado", "Melina hatte schöne Tage in Heringsdorf, obwohl das Wetter schlecht war."]
+        ]
+      },
+      "notas": [
+        "da y weil significan lo mismo. La diferencia es de uso: da suele abrir la frase y presenta el motivo como algo que ya se sabe; weil suele ir detrás y es la respuesta normal a warum."
+      ]
+    },
+    {
+      "titulo": "El verbo, al final",
+      "texto": [
+        "Las tres introducen una subordinada (Nebensatz): el verbo conjugado se coloca al final. Si la subordinada abre la frase, cuenta como primer elemento y el verbo de la principal va justo detrás de la coma."
+      ],
+      "ejemplos": [
+        { "de": "Ich fahre nicht weg, weil ich keine Zeit habe.", "es": "No me voy de viaje porque no tengo tiempo." },
+        { "de": "Da die Stadt sehr bekannt ist, gibt es viele Touristen.", "es": "Como la ciudad es muy conocida, hay muchos turistas." },
+        { "de": "Obwohl es geregnet hat, waren wir gut gelaunt.", "es": "Aunque llovió, estábamos de buen humor." }
+      ],
+      "notas": [
+        "Con tiempos compuestos, el auxiliar cierra la frase: …, weil es viel geregnet hat.",
+        "Con verbo modal, el modal cierra y el infinitivo va delante: …, obwohl ich nicht mitkommen konnte."
+      ]
+    },
+    {
+      "titulo": "weil / da frente a denn y deshalb",
+      "texto": [
+        "El mismo motivo se puede decir de tres maneras, y cada una coloca el verbo en un sitio distinto. Solo weil y da mandan el verbo al final."
+      ],
+      "tabla": {
+        "cabecera": ["Palabra", "Tipo", "Ejemplo"],
+        "filas": [
+          ["weil / da", "subordinada: verbo al FINAL", "Ich bleibe zu Hause, weil ich krank bin."],
+          ["denn", "principal: orden normal", "Ich bleibe zu Hause, denn ich bin krank."],
+          ["deshalb", "principal: verbo en posición 2", "Ich bin krank, deshalb bleibe ich zu Hause."]
+        ]
+      },
+      "notas": [
+        "deshalb, deswegen, darum y daher introducen la CONSECUENCIA, no el motivo. Es el tema del capítulo 2."
+      ]
+    },
+    {
+      "titulo": "obwohl frente a trotzdem",
+      "texto": [
+        "obwohl abre una subordinada; trotzdem va en una frase principal y ocupa la posición 1."
+      ],
+      "ejemplos": [
+        { "de": "Obwohl das Wetter schlecht war, waren wir zufrieden.", "es": "Aunque hacía mal tiempo, estábamos contentos." },
+        { "de": "Das Wetter war schlecht. Trotzdem waren wir zufrieden.", "es": "Hacía mal tiempo. Aun así estábamos contentos." }
+      ],
+      "notas": [
+        "Con un sustantivo detrás se usa trotz + genitivo: trotz des schlechten Wetters. Eso lo trabaja el capítulo 2."
+      ]
+    }
+  ]
+}

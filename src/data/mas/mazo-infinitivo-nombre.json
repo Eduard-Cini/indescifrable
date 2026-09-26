@@ -1,0 +1,31 @@
+{
+  "id": "infinitivo-nombre",
+  "titulo": "Infinitivos usados como sustantivos",
+  "descripcion": "Los infinitivos que el capítulo 1 convierte en sustantivos. Todos son neutros y no tienen plural; la nota recuerda el verbo del que salen y la construcción con beim o zum.",
+  "fuente": "Netzwerk neu B1, Kapitel 1: Wortbildung del Übungsbuch S. 14 e Intensivtrainer S. 8",
+  "tarjetas": [
+    { "id": "reisen", "tipo": "sustantivo", "articulo": "das", "palabra": "Reisen", "plural": null, "es": "el viajar, los viajes", "nota": "De reisen. Mir macht das Reisen keinen Spaß.", "lws": true },
+    { "id": "zelten", "tipo": "sustantivo", "articulo": "das", "palabra": "Zelten", "plural": null, "es": "el acampar", "nota": "De zelten. Ich habe viel Spaß beim Zelten.", "lws": true },
+    { "id": "fliegen", "tipo": "sustantivo", "articulo": "das", "palabra": "Fliegen", "plural": null, "es": "el volar, volar en avión", "nota": "De fliegen. Beim Fliegen habe ich Angst.", "lws": true },
+    { "id": "kochen", "tipo": "sustantivo", "articulo": "das", "palabra": "Kochen", "plural": null, "es": "el cocinar", "nota": "De kochen. Das Kochen macht mir Spaß.", "lws": true },
+    { "id": "grillen", "tipo": "sustantivo", "articulo": "das", "palabra": "Grillen", "plural": null, "es": "el hacer barbacoa", "nota": "De grillen.", "lws": true },
+    { "id": "erholen", "tipo": "sustantivo", "articulo": "das", "palabra": "Erholen", "plural": null, "es": "el descansar, reponerse", "nota": "De sich erholen; el sich se pierde: zum Erholen.", "lws": true },
+    { "id": "entspannen", "tipo": "sustantivo", "articulo": "das", "palabra": "Entspannen", "plural": null, "es": "el relajarse", "nota": "De sich entspannen. Zum Entspannen geht er schwimmen." },
+    { "id": "essen", "tipo": "sustantivo", "articulo": "das", "palabra": "Essen", "plural": null, "es": "el comer; la comida", "nota": "De essen. Nach dem Essen gehen wir spazieren." },
+    { "id": "wandern", "tipo": "sustantivo", "articulo": "das", "palabra": "Wandern", "plural": null, "es": "el senderismo", "nota": "De wandern." },
+    { "id": "schwimmen", "tipo": "sustantivo", "articulo": "das", "palabra": "Schwimmen", "plural": null, "es": "la natación, el nadar", "nota": "De schwimmen." },
+    { "id": "lesen", "tipo": "sustantivo", "articulo": "das", "palabra": "Lesen", "plural": null, "es": "la lectura, el leer", "nota": "De lesen. Ich habe keine Zeit zum Lesen." },
+    { "id": "lernen", "tipo": "sustantivo", "articulo": "das", "palabra": "Lernen", "plural": null, "es": "el estudiar, el aprendizaje", "nota": "De lernen." },
+    { "id": "einkaufen", "tipo": "sustantivo", "articulo": "das", "palabra": "Einkaufen", "plural": null, "es": "el hacer la compra", "nota": "De ein|kaufen; los separables se escriben en una sola palabra." },
+    { "id": "aufraeumen", "tipo": "sustantivo", "articulo": "das", "palabra": "Aufräumen", "plural": null, "es": "el recoger, el ordenar", "nota": "De auf|räumen." },
+    { "id": "uebernachten", "tipo": "sustantivo", "articulo": "das", "palabra": "Übernachten", "plural": null, "es": "el pernoctar", "nota": "De übernachten. Das Übernachten im Freien ist ein Abenteuer." },
+    { "id": "ankommen", "tipo": "sustantivo", "articulo": "das", "palabra": "Ankommen", "plural": null, "es": "la llegada, el llegar", "nota": "De an|kommen. Beim Ankommen hat es geregnet." },
+    { "id": "warten", "tipo": "sustantivo", "articulo": "das", "palabra": "Warten", "plural": null, "es": "la espera, el esperar", "nota": "De warten." },
+    { "id": "faulenzen", "tipo": "sustantivo", "articulo": "das", "palabra": "Faulenzen", "plural": null, "es": "el no hacer nada, el holgazanear", "nota": "De faulenzen." },
+    { "id": "arbeiten", "tipo": "sustantivo", "articulo": "das", "palabra": "Arbeiten", "plural": null, "es": "el trabajar", "nota": "De arbeiten. No confundir con die Arbeit (el trabajo)." },
+    { "id": "schlafen", "tipo": "sustantivo", "articulo": "das", "palabra": "Schlafen", "plural": null, "es": "el dormir", "nota": "De schlafen." },
+    { "id": "autofahren", "tipo": "sustantivo", "articulo": "das", "palabra": "Autofahren", "plural": null, "es": "el conducir", "nota": "De Auto fahren; con el complemento pegado se escribe todo junto." },
+    { "id": "pilzesammeln", "tipo": "sustantivo", "articulo": "das", "palabra": "Pilzesammeln", "plural": null, "es": "el recoger setas", "nota": "De Pilze sammeln; todo junto." },
+    { "id": "deutschlernen", "tipo": "sustantivo", "articulo": "das", "palabra": "Deutschlernen", "plural": null, "es": "el aprender alemán", "nota": "De Deutsch lernen; todo junto." }
+  ]
+}

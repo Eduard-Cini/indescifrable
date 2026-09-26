@@ -1,0 +1,51 @@
+{
+  "tema": "infinitivo-nombre",
+  "titulo": "El infinitivo como sustantivo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 14, A-B; Intensivtrainer S. 8), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "del-verbo",
+      "titulo": "Del verbo al sustantivo",
+      "instruccion": "Completa con el infinitivo usado como sustantivo.",
+      "modelo": "Übungsbuch S. 14, B",
+      "ejercicios": [
+        { "id": "dv1", "partes": ["Mir macht ", " einfach keinen Spaß."], "respuesta": "das Reisen", "distractores": ["der Reisen", "die Reisen", "das Reise"], "pista": "Infinitivo sustantivado → siempre das, con mayúscula." },
+        { "id": "dv2", "partes": ["Ich habe so viel Spaß beim ", "!"], "respuesta": "Zelten", "distractores": ["zelten", "Zelte", "Zeltung"], "pista": "beim + infinitivo sustantivado, con mayúscula." },
+        { "id": "dv3", "partes": ["Zum ", " bleibe ich lieber zu Hause."], "respuesta": "Erholen", "distractores": ["erholen", "Erholung zu", "sich Erholen"], "pista": "zum + infinitivo; el sich se pierde." },
+        { "id": "dv4", "partes": ["Beim ", " habe ich ein bisschen Angst."], "respuesta": "Fliegen", "distractores": ["fliegen", "Flug", "Fliege"], "pista": "beim Fliegen = wenn ich fliege." },
+        { "id": "dv5", "partes": ["Nach der Arbeit geht Henning zum ", " schwimmen."], "respuesta": "Entspannen", "distractores": ["entspannen", "Entspannung", "sich entspannen"], "pista": "zum + infinitivo sustantivado = «para relajarse»." },
+        { "id": "dv6", "partes": ["", " im Freien ist ein echtes Abenteuer."], "respuesta": "Das Übernachten", "distractores": ["Der Übernachten", "Die Übernachten", "Das Übernachtung"], "pista": "Neutro y con mayúscula." },
+        { "id": "dv7", "partes": ["Beim ", " muss man vorsichtig sein: Nicht jeder Pilz ist essbar."], "respuesta": "Pilzesammeln", "distractores": ["Pilze sammeln", "Pilzensammeln", "Pilzesammlung"], "pista": "El complemento se pega al verbo y se escribe todo junto." },
+        { "id": "dv8", "partes": ["Ich habe keine Zeit zum ", "."], "respuesta": "Lesen", "distractores": ["lesen", "Lesung", "zu lesen"], "pista": "Detrás de zum va el sustantivo, con mayúscula." }
+      ]
+    },
+    {
+      "id": "equivale",
+      "titulo": "¿Qué significa?",
+      "instruccion": "Elige la frase que dice lo mismo.",
+      "modelo": "Übungsbuch S. 14, A (recuadro W)",
+      "ejercicios": [
+        { "id": "eq1", "partes": null, "pregunta": "«Beim Fliegen habe ich ein bisschen Angst.»", "respuesta": "Wenn ich fliege, habe ich ein bisschen Angst.", "distractores": ["Um zu fliegen, habe ich ein bisschen Angst.", "Weil ich fliege, habe ich ein bisschen Angst.", "Obwohl ich fliege, habe ich ein bisschen Angst."], "pista": "beim + infinitivo = wenn / während." },
+        { "id": "eq2", "partes": null, "pregunta": "«Zum Erholen bleibe ich lieber zu Hause.»", "respuesta": "Um mich zu erholen, bleibe ich lieber zu Hause.", "distractores": ["Wenn ich mich erhole, bleibe ich lieber zu Hause.", "Weil ich mich erhole, bleibe ich lieber zu Hause.", "Obwohl ich mich erhole, bleibe ich lieber zu Hause."], "pista": "zum + infinitivo = um … zu (finalidad)." },
+        { "id": "eq3", "partes": null, "pregunta": "«Beim Kochen hört er immer Musik.»", "respuesta": "Während er kocht, hört er immer Musik.", "distractores": ["Um zu kochen, hört er immer Musik.", "Weil er kocht, hört er immer Musik.", "Bevor er kocht, hört er immer Musik."], "pista": "beim = mientras." },
+        { "id": "eq4", "partes": null, "pregunta": "«Zum Einkaufen nehme ich das Rad.»", "respuesta": "Um einzukaufen, nehme ich das Rad.", "distractores": ["Wenn ich einkaufe, nehme ich das Rad.", "Weil ich einkaufe, nehme ich das Rad.", "Nachdem ich eingekauft habe, nehme ich das Rad."], "pista": "zum = para; ein|kaufen es separable → einzukaufen." },
+        { "id": "eq5", "partes": null, "pregunta": "«Nach dem Essen gehen wir spazieren.»", "respuesta": "Nachdem wir gegessen haben, gehen wir spazieren.", "distractores": ["Bevor wir essen, gehen wir spazieren.", "Während wir essen, gehen wir spazieren.", "Weil wir essen, gehen wir spazieren."], "pista": "nach dem + infinitivo sustantivado = nachdem." },
+        { "id": "eq6", "partes": null, "pregunta": "«Das Wandern macht mir Spaß.»", "respuesta": "Ich wandere gern.", "distractores": ["Ich muss wandern.", "Ich wandere nie.", "Ich habe keine Lust zu wandern."], "pista": "… macht mir Spaß = me gusta hacerlo." }
+      ]
+    },
+    {
+      "id": "articulo",
+      "titulo": "Artículo y mayúscula",
+      "instruccion": "Elige la forma bien escrita.",
+      "modelo": "Übungsbuch S. 14 (recuadro W)",
+      "ejercicios": [
+        { "id": "ar1", "partes": null, "pregunta": "«cocinar» como sustantivo", "respuesta": "das Kochen", "distractores": ["der Kochen", "die Kochen", "das kochen"], "pista": "Siempre neutro y con mayúscula." },
+        { "id": "ar2", "partes": null, "pregunta": "«conducir» como sustantivo", "respuesta": "das Autofahren", "distractores": ["der Autofahren", "das Auto fahren", "die Autofahren"], "pista": "El complemento se pega: Autofahren." },
+        { "id": "ar3", "partes": null, "pregunta": "«recoger, ordenar» como sustantivo", "respuesta": "das Aufräumen", "distractores": ["das auf Räumen", "der Aufräumen", "das Aufräumung"], "pista": "Los separables se escriben en una sola palabra." },
+        { "id": "ar4", "partes": null, "pregunta": "«aprender alemán» como sustantivo", "respuesta": "das Deutschlernen", "distractores": ["das Deutsch lernen", "der Deutschlernen", "die Deutschlernung"], "pista": "Todo junto y neutro." },
+        { "id": "ar5", "partes": null, "pregunta": "«al llegar» (= cuando llegamos)", "respuesta": "beim Ankommen", "distractores": ["bei dem ankommen", "zum Ankommen", "beim ankommen"], "pista": "beim + sustantivo con mayúscula; beim = mientras/al." },
+        { "id": "ar6", "partes": null, "pregunta": "«para hacer la maleta» (= um einzupacken)", "respuesta": "zum Einpacken", "distractores": ["beim Einpacken", "zum einpacken", "zu dem einpacken"], "pista": "zum expresa finalidad." }
+      ]
+    }
+  ]
+}

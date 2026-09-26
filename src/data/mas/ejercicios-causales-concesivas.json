@@ -1,0 +1,51 @@
+{
+  "tema": "causales-concesivas",
+  "titulo": "da, weil, obwohl",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 12, 8c-e; Übungsbuch S. 12-13; Intensivtrainer S. 6), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Motivo o contraste?",
+      "instruccion": "Elige el conector que encaja con el sentido.",
+      "modelo": "Kursbuch S. 12, 8c",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["Wir fahren im Winter in die Berge, ", " wir gern Ski fahren."], "respuesta": "weil", "distractores": ["obwohl", "trotzdem", "deshalb"], "pista": "Es el motivo → weil." },
+        { "id": "cu2", "partes": ["Wir hatten schöne Tage an der Küste, ", " es fast immer geregnet hat."], "respuesta": "obwohl", "distractores": ["weil", "da", "deshalb"], "pista": "Lo contrario de lo esperado → obwohl." },
+        { "id": "cu3", "partes": ["", " der Ort sehr bekannt ist, sind die Hotels teuer."], "respuesta": "Da", "distractores": ["Obwohl", "Trotzdem", "Deshalb"], "pista": "Motivo conocido al principio de la frase → da." },
+        { "id": "cu4", "partes": ["Ich schlafe im Zelt, ", " ich kein Ferienhaus gefunden habe."], "respuesta": "weil", "distractores": ["obwohl", "trotzdem", "denn"], "pista": "El verbo está al final (habe) → hace falta un conector de subordinada." },
+        { "id": "cu5", "partes": ["Er geht jeden Tag schwimmen, ", " das Wasser ziemlich kalt ist."], "respuesta": "obwohl", "distractores": ["weil", "da", "denn"], "pista": "El agua fría no le frena → contraste." },
+        { "id": "cu6", "partes": ["", " wir rechtzeitig gebucht haben, war das Hotel nicht teuer."], "respuesta": "Da", "distractores": ["Obwohl", "Deshalb", "Trotzdem"], "pista": "Motivo, y abre la frase → da." },
+        { "id": "cu7", "partes": ["Ich habe keine Lust zu kochen, ", " ich im Urlaub bin."], "respuesta": "weil", "distractores": ["obwohl", "trotzdem", "deshalb"], "pista": "Estar de vacaciones es el motivo." },
+        { "id": "cu8", "partes": ["Sie hatte Heimweh, ", " der Aufenthalt schön war."], "respuesta": "obwohl", "distractores": ["weil", "da", "denn"], "pista": "Sentir morriña a pesar de que fue bonito → contraste." }
+      ]
+    },
+    {
+      "id": "orden",
+      "titulo": "El verbo, en su sitio",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 12, 8d · Übungsbuch S. 13",
+      "ejercicios": [
+        { "id": "or1", "partes": null, "pregunta": "«Como la ciudad es pequeña, se puede ir a todas partes a pie.»", "respuesta": "Da die Stadt klein ist, kann man überall zu Fuß hingehen.", "distractores": ["Da die Stadt ist klein, kann man überall zu Fuß hingehen.", "Da die Stadt klein ist, man kann überall zu Fuß hingehen.", "Da ist die Stadt klein, kann man überall zu Fuß hingehen."], "pista": "Verbo al final de la subordinada; después de la coma, el verbo de la principal." },
+        { "id": "or2", "partes": null, "pregunta": "«Me gusta el sitio porque las playas son bonitas.»", "respuesta": "Der Ort gefällt mir, weil die Strände schön sind.", "distractores": ["Der Ort gefällt mir, weil die Strände sind schön.", "Der Ort gefällt mir, weil sind die Strände schön.", "Der Ort mir gefällt, weil die Strände schön sind."], "pista": "sind cierra la subordinada." },
+        { "id": "or3", "partes": null, "pregunta": "«Aunque llovió mucho, lo pasamos bien.»", "respuesta": "Obwohl es viel geregnet hat, hatten wir Spaß.", "distractores": ["Obwohl es viel geregnet hat, wir hatten Spaß.", "Obwohl es hat viel geregnet, hatten wir Spaß.", "Obwohl viel geregnet es hat, hatten wir Spaß."], "pista": "Con Perfekt, el auxiliar (hat) cierra la subordinada." },
+        { "id": "or4", "partes": null, "pregunta": "«No pude ir aunque quería.»", "respuesta": "Ich konnte nicht mitfahren, obwohl ich wollte.", "distractores": ["Ich konnte nicht mitfahren, obwohl wollte ich.", "Ich konnte nicht mitfahren, obwohl ich wollen.", "Ich nicht mitfahren konnte, obwohl ich wollte."], "pista": "El verbo conjugado de la subordinada va al final." },
+        { "id": "or5", "partes": null, "pregunta": "«Como no teníamos tiempo, no reservamos nada.»", "respuesta": "Da wir keine Zeit hatten, haben wir nichts gebucht.", "distractores": ["Da wir hatten keine Zeit, haben wir nichts gebucht.", "Da wir keine Zeit hatten, wir haben nichts gebucht.", "Da hatten wir keine Zeit, haben wir nichts gebucht."], "pista": "hatten al final; después de la coma, haben." },
+        { "id": "or6", "partes": null, "pregunta": "«Aunque el hotel era caro, volveríamos.»", "respuesta": "Obwohl das Hotel teuer war, würden wir wiederkommen.", "distractores": ["Obwohl das Hotel war teuer, würden wir wiederkommen.", "Obwohl das Hotel teuer war, wir würden wiederkommen.", "Obwohl war das Hotel teuer, würden wir wiederkommen."], "pista": "war cierra la subordinada." }
+      ]
+    },
+    {
+      "id": "otros",
+      "titulo": "weil, denn o deshalb",
+      "instruccion": "Fíjate en dónde está el verbo y elige la palabra que encaja.",
+      "modelo": "Kursbuch S. 17 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "ot1", "partes": ["Ich bleibe zu Hause, ", " ich krank bin."], "respuesta": "weil", "distractores": ["denn", "deshalb", "trotzdem"], "pista": "bin está al final → subordinada → weil." },
+        { "id": "ot2", "partes": ["Ich bleibe zu Hause, ", " ich bin krank."], "respuesta": "denn", "distractores": ["weil", "deshalb", "obwohl"], "pista": "Orden normal detrás de la coma → denn." },
+        { "id": "ot3", "partes": ["Ich bin krank, ", " bleibe ich zu Hause."], "respuesta": "deshalb", "distractores": ["weil", "denn", "obwohl"], "pista": "El verbo va justo detrás → deshalb ocupa la posición 1." },
+        { "id": "ot4", "partes": ["Das Wetter war schlecht. ", " sind wir viel spazieren gegangen."], "respuesta": "Trotzdem", "distractores": ["Obwohl", "Weil", "Da"], "pista": "Frase principal con el verbo detrás → trotzdem." },
+        { "id": "ot5", "partes": ["", " das Wetter schlecht war, sind wir viel spazieren gegangen."], "respuesta": "Obwohl", "distractores": ["Trotzdem", "Deshalb", "Denn"], "pista": "war está al final → subordinada → obwohl." },
+        { "id": "ot6", "partes": ["Der Zug hatte Verspätung, ", " habe ich den Anschluss verpasst."], "respuesta": "deshalb", "distractores": ["weil", "obwohl", "da"], "pista": "Es la consecuencia, no el motivo → deshalb." }
+      ]
+    }
+  ]
+}
