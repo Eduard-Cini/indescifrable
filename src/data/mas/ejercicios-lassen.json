@@ -1,0 +1,49 @@
+{
+  "tema": "lassen",
+  "titulo": "lassen + infinitivo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 20; Übungsbuch S. 21-22; Intensivtrainer S. 10), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "conjugacion",
+      "titulo": "La forma de lassen",
+      "instruccion": "Completa con la forma correcta de lassen.",
+      "modelo": "Kursbuch S. 20 (recuadro G)",
+      "ejercicios": [
+        { "id": "co1", "partes": ["Ich ", " mein Fahrrad reparieren."], "respuesta": "lasse", "distractores": ["lässt", "lasst", "lassen"], "pista": "ich → lasse." },
+        { "id": "co2", "partes": ["", " du dir die Haare schneiden?"], "respuesta": "Lässt", "distractores": ["Lasst", "Lasse", "Lassen"], "pista": "du → lässt, con Umlaut." },
+        { "id": "co3", "partes": ["Tarik ", " seinen Kopfhörer im Geschäft testen."], "respuesta": "lässt", "distractores": ["lasst", "lasse", "lassen"], "pista": "er → lässt." },
+        { "id": "co4", "partes": ["Wir ", " die Wohnung streichen."], "respuesta": "lassen", "distractores": ["lasst", "lässt", "lasse"], "pista": "wir → lassen." },
+        { "id": "co5", "partes": ["", " ihr das Auto auch waschen?"], "respuesta": "Lasst", "distractores": ["Lässt", "Lassen", "Lasse"], "pista": "ihr → lasst, sin Umlaut." },
+        { "id": "co6", "partes": ["Meine Eltern ", " die Heizung reparieren."], "respuesta": "lassen", "distractores": ["lässt", "lasst", "lasse"], "pista": "Sujeto plural → lassen." }
+      ]
+    },
+    {
+      "id": "quien-lo-hace",
+      "titulo": "¿Lo hace él o se lo hacen?",
+      "instruccion": "Elige la frase que corresponde a la situación.",
+      "modelo": "Kursbuch S. 20 · Übungsbuch S. 21",
+      "ejercicios": [
+        { "id": "qh1", "partes": null, "pregunta": "Jan no sabe arreglar el móvil: lo lleva a la tienda.", "respuesta": "Jan lässt sein Handy reparieren.", "distractores": ["Jan repariert sein Handy.", "Jan lässt sein Handy zu reparieren.", "Jan lässt reparieren sein Handy."], "pista": "Lo hace otra persona → lassen + infinitivo al final." },
+        { "id": "qh2", "partes": null, "pregunta": "Jan es técnico y lo arregla él mismo.", "respuesta": "Jan repariert sein Handy.", "distractores": ["Jan lässt sein Handy reparieren.", "Jan hat sein Handy reparieren lassen.", "Jan lässt sein Handy repariert."], "pista": "Sin lassen: lo hace él." },
+        { "id": "qh3", "partes": null, "pregunta": "Vamos a la peluquería.", "respuesta": "Wir lassen uns die Haare schneiden.", "distractores": ["Wir schneiden uns die Haare.", "Wir lassen uns die Haare zu schneiden.", "Wir lassen die Haare uns schneiden."], "pista": "La persona afectada va en dativo: uns." },
+        { "id": "qh4", "partes": null, "pregunta": "Una empresa nos va a pintar el piso.", "respuesta": "Wir lassen die Wohnung streichen.", "distractores": ["Wir streichen die Wohnung.", "Wir lassen die Wohnung gestrichen.", "Wir lassen streichen die Wohnung."], "pista": "lassen + infinitivo, sin zu y al final." },
+        { "id": "qh5", "partes": null, "pregunta": "Me dejé el móvil en casa (no lo llevé).", "respuesta": "Ich habe mein Handy zu Hause gelassen.", "distractores": ["Ich habe mein Handy zu Hause lassen.", "Ich lasse mein Handy zu Hause reparieren.", "Ich habe mein Handy zu Hause lassen gehabt."], "pista": "Aquí lassen va SOLO → el participio sí es gelassen." },
+        { "id": "qh6", "partes": null, "pregunta": "Déjame terminar de hablar, por favor.", "respuesta": "Lass mich bitte ausreden.", "distractores": ["Lässt mich bitte ausreden.", "Lass mich bitte auszureden.", "Lasse mich bitte ausgeredet."], "pista": "Aquí lassen significa «dejar, permitir»; imperativo de du: Lass." }
+      ]
+    },
+    {
+      "id": "perfekt",
+      "titulo": "En Perfekt",
+      "instruccion": "Pon la frase en Perfekt.",
+      "modelo": "Kursbuch S. 27 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "pe1", "partes": null, "pregunta": "Sie lässt ihr Handy reparieren.", "respuesta": "Sie hat ihr Handy reparieren lassen.", "distractores": ["Sie hat ihr Handy reparieren gelassen.", "Sie hat ihr Handy repariert lassen.", "Sie ist ihr Handy reparieren lassen."], "pista": "Con otro verbo, lassen se queda en infinitivo y cierra la frase." },
+        { "id": "pe2", "partes": null, "pregunta": "Ich lasse mir die Haare schneiden.", "respuesta": "Ich habe mir die Haare schneiden lassen.", "distractores": ["Ich habe mir die Haare schneiden gelassen.", "Ich habe mir die Haare geschnitten lassen.", "Ich bin mir die Haare schneiden lassen."], "pista": "Dos infinitivos al final: schneiden lassen." },
+        { "id": "pe3", "partes": null, "pregunta": "Wir lassen das Auto waschen.", "respuesta": "Wir haben das Auto waschen lassen.", "distractores": ["Wir haben das Auto waschen gelassen.", "Wir haben das Auto gewaschen lassen.", "Wir sind das Auto waschen lassen."], "pista": "Nunca gelassen cuando hay otro verbo." },
+        { "id": "pe4", "partes": null, "pregunta": "Er lässt den Computer installieren.", "respuesta": "Er hat den Computer installieren lassen.", "distractores": ["Er hat den Computer installieren gelassen.", "Er hat den Computer installiert lassen.", "Er hat den Computer zu installieren lassen."], "pista": "installieren + lassen, los dos en infinitivo." },
+        { "id": "pe5", "partes": null, "pregunta": "Ich lasse mein Handy zu Hause.", "respuesta": "Ich habe mein Handy zu Hause gelassen.", "distractores": ["Ich habe mein Handy zu Hause lassen.", "Ich bin mein Handy zu Hause gelassen.", "Ich habe mein Handy zu Hause lassen gehabt."], "pista": "Aquí lassen va solo → participio normal: gelassen." },
+        { "id": "pe6", "partes": null, "pregunta": "Sie lassen die Alarmanlage einbauen.", "respuesta": "Sie haben die Alarmanlage einbauen lassen.", "distractores": ["Sie haben die Alarmanlage eingebaut lassen.", "Sie haben die Alarmanlage einbauen gelassen.", "Sie sind die Alarmanlage einbauen lassen."], "pista": "ein|bauen se junta en infinitivo: einbauen lassen." }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "lassen",
+  "mazo": "k2-verbos",
+  "titulo": "lassen + infinitivo",
+  "descripcion": "Mandar hacer algo en vez de hacerlo uno mismo: Sie lässt ihr Handy reparieren. Y el Perfekt con dos infinitivos: hat reparieren lassen.",
+  "fuente": "Netzwerk neu B1, Kapitel 2: Kursbuch S. 20 y 27 · Übungsbuch S. 21-22 · Intensivtrainer S. 10",
+  "libro": {
+    "referencia": "Kursbuch S. 20 (recuadro G) y S. 27 («kurz und klar»), Übungsbuch S. 21-22 e Intensivtrainer S. 10",
+    "puntos": [
+      "El recuadro G pone primero la conjugación completa de lassen y marca en color el cambio de vocal de du lässt y er/es/sie lässt.",
+      "Al lado compara tres frases con el mismo contenido: «Sie repariert ihr Handy», «Sie lässt ihr Handy reparieren» y «Sie hat ihr Handy reparieren lassen».",
+      "La tercera frase es la clave del Perfekt: el participio no es gelassen, sino lassen, y va detrás del otro infinitivo.",
+      "El capítulo lo practica con el Repair Café y con aparatos que se llevan a arreglar."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Qué cambia con lassen",
+      "texto": [
+        "Con lassen, la acción la hace OTRA persona, por encargo del sujeto. El sujeto solo lo manda."
+      ],
+      "tabla": {
+        "cabecera": ["Frase", "Quién lo hace"],
+        "filas": [
+          ["Sie repariert ihr Handy.", "ella misma"],
+          ["Sie lässt ihr Handy reparieren.", "otra persona, por encargo suyo"],
+          ["Ich schneide mir die Haare.", "yo mismo"],
+          ["Ich lasse mir die Haare schneiden.", "el peluquero"]
+        ]
+      },
+      "notas": [
+        "lassen tiene otros dos sentidos que ya conoces: «dejar, permitir» (Lass mich bitte ausreden) y «dejarse algo en un sitio» (Ich habe mein Handy zu Hause gelassen)."
+      ]
+    },
+    {
+      "titulo": "La conjugación",
+      "tabla": {
+        "cabecera": ["Persona", "Forma", "Persona", "Forma"],
+        "filas": [
+          ["ich", "lasse", "wir", "lassen"],
+          ["du", "lässt", "ihr", "lasst"],
+          ["er/es/sie", "lässt", "sie/Sie", "lassen"]
+        ]
+      },
+      "notas": [
+        "Cambio de vocal a → ä en du y er/es/sie, como en fahren o schlafen.",
+        "du lässt y er lässt se escriben igual: la -t de la terminación se funde con la -ss del verbo."
+      ]
+    },
+    {
+      "titulo": "El orden de la frase",
+      "texto": [
+        "lassen se conjuga y ocupa la posición 2; el otro verbo va en infinitivo al final, SIN zu. Es el mismo esquema que con un verbo modal."
+      ],
+      "ejemplos": [
+        { "de": "Ich lasse mein Fahrrad reparieren.", "es": "Llevo la bici a arreglar." },
+        { "de": "Wir lassen die Wohnung streichen.", "es": "Vamos a mandar pintar el piso." },
+        { "de": "Lässt du dir die Haare schneiden?", "es": "¿Te vas a cortar el pelo?" }
+      ],
+      "notas": [
+        "A quién le afecta la acción se marca con dativo: Ich lasse mir die Haare schneiden."
+      ]
+    },
+    {
+      "titulo": "El Perfekt: dos infinitivos",
+      "texto": [
+        "Cuando lassen lleva otro verbo, en Perfekt NO hace gelassen: se queda en infinitivo y cierra la frase, detrás del otro infinitivo."
+      ],
+      "tabla": {
+        "cabecera": ["Tiempo", "Frase"],
+        "filas": [
+          ["Präsens", "Sie lässt ihr Handy reparieren."],
+          ["Perfekt", "Sie hat ihr Handy reparieren lassen."],
+          ["Präteritum", "Sie ließ ihr Handy reparieren."]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Ich habe mir die Haare schneiden lassen.", "es": "Me he cortado el pelo (me lo han cortado)." },
+        { "de": "Wir haben das Auto waschen lassen.", "es": "Hemos mandado lavar el coche." }
+      ],
+      "notas": [
+        "gelassen solo aparece cuando lassen va SOLO: Ich habe mein Handy zu Hause gelassen.",
+        "Lo mismo les pasa a los modales: Ich habe arbeiten müssen (no «gemusst»)."
+      ]
+    }
+  ]
+}

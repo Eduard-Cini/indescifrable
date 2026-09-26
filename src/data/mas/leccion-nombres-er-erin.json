@@ -1,0 +1,86 @@
+{
+  "id": "nombres-er-erin",
+  "mazo": "nombres-er-erin",
+  "titulo": "Sustantivos con -er y -erin",
+  "descripcion": "Formación de palabras del capítulo 2: del verbo a la persona que lo hace. fahren → der Fahrer / die Fahrerin, con Umlaut en algunos casos.",
+  "fuente": "Netzwerk neu B1, Kapitel 2: Übungsbuch S. 26 (Wortbildung) · Intensivtrainer S. 14",
+  "libro": {
+    "referencia": "Übungsbuch S. 26 («Wortbildung – Nomen mit -er und -erin», A-B) e Intensivtrainer S. 14",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro da cuatro palabras (Käufer, Leser*innen, Besucher/innen, Fahrerin) y hay que colocarlas en las frases.",
+      "El recuadro W dice tres cosas: con -er/-erin se nombra a la persona que hace la acción; algunas llevan Umlaut (kaufen → der Käufer / die Käuferin); y en los textos se escriben también en forma neutra.",
+      "Las formas neutras que da son Fahrer*in, Fahrer/in y FahrerIn.",
+      "El segundo ejercicio va al revés: se marca el verbo de la frase y hay que escribir la persona (Er berät Kunden bei der Bank, er ist …)."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Del verbo a la persona",
+      "texto": [
+        "Se quita la terminación -en del infinitivo y se añade -er para el masculino y -erin para el femenino. El plural es -er y -erinnen."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Él", "Ella", "Plural"],
+        "filas": [
+          ["fahren", "der Fahrer", "die Fahrerin", "die Fahrer / die Fahrerinnen"],
+          ["lesen", "der Leser", "die Leserin", "die Leser / die Leserinnen"],
+          ["besuchen", "der Besucher", "die Besucherin", "die Besucher / die Besucherinnen"],
+          ["arbeiten", "der Arbeiter", "die Arbeiterin", "die Arbeiter / die Arbeiterinnen"]
+        ]
+      },
+      "notas": [
+        "El masculino en -er no cambia en plural: ein Fahrer, zwei Fahrer. El femenino duplica la n: zwei Fahrerinnen.",
+        "Estos sustantivos son masculinos normales: den Fahrer, dem Fahrer, des Fahrers. No son de declinación n."
+      ]
+    },
+    {
+      "titulo": "Algunos llevan Umlaut",
+      "texto": [
+        "Si la raíz tiene a, o o u, muchas veces aparece el Umlaut. No hay regla: se aprende con la palabra."
+      ],
+      "tabla": {
+        "cabecera": ["Verbo", "Persona", "¿Umlaut?"],
+        "filas": [
+          ["kaufen", "der Käufer / die Käuferin", "sí: a → ä"],
+          ["verkaufen", "der Verkäufer / die Verkäuferin", "sí: a → ä"],
+          ["tanzen", "der Tänzer / die Tänzerin", "sí: a → ä"],
+          ["fahren", "der Fahrer / die Fahrerin", "no"],
+          ["malen", "der Maler / die Malerin", "no"],
+          ["laufen", "der Läufer / die Läuferin", "sí: au → äu"]
+        ]
+      }
+    },
+    {
+      "titulo": "Cuando la raíz ya termina en -er",
+      "texto": [
+        "Si el verbo acaba en -ern o -eln, se pierde la -e- para no repetir la sílaba."
+      ],
+      "ejemplos": [
+        { "de": "wandern → der Wanderer / die Wanderin", "es": "hacer senderismo → el senderista" },
+        { "de": "sammeln → der Sammler / die Sammlerin", "es": "coleccionar → el coleccionista" },
+        { "de": "handeln → der Händler / die Händlerin", "es": "comerciar → el comerciante" }
+      ],
+      "notas": [
+        "No todos los oficios se forman así: der Koch (kochen), der Arzt, der Pilot. Y los internacionalismos usan otros sufijos: der Journalist, der Praktikant, der Fotograf (capítulo 6)."
+      ]
+    },
+    {
+      "titulo": "Formas neutras en los textos",
+      "texto": [
+        "Para nombrar a hombres y mujeres a la vez, los textos actuales usan una de estas tres escrituras. Se leen como el femenino en plural."
+      ],
+      "tabla": {
+        "cabecera": ["Escritura", "Ejemplo"],
+        "filas": [
+          ["con asterisco", "Fahrer*in · die Leser*innen"],
+          ["con barra", "Fahrer/in · die Besucher/innen"],
+          ["con I mayúscula", "FahrerIn · die LeserInnen"],
+          ["con las dos palabras", "die Fahrerinnen und Fahrer"]
+        ]
+      },
+      "notas": [
+        "En este capítulo aparecen sobre todo las dos primeras: Leser*innen y Besucher/innen."
+      ]
+    }
+  ]
+}

@@ -92,16 +92,18 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   (antes helper privado de gramatica.js) y los imports internos del engine llevan extensión
   `.js` (los usa node).
 - **Más contenidos** (`/mas`, `src/secciones/mas/`): material de alemán del curso del usuario
-  (Netzwerk neu B1, caps. 1 «Gute Reise!», 6 «Blick nach vorn», 7 «Zwischenmenschliches»,
-  8 «Rund um Körper und Geist», 9 «Kunststücke», 10 «Miteinander» y 11 «Stadt, Land, Fluss»).
+  (Netzwerk neu B1, caps. 1 «Gute Reise!», 2 «Das ist ja praktisch!», 6 «Blick nach vorn»,
+  7 «Zwischenmenschliches», 8 «Rund um Körper und Geist», 9 «Kunststücke», 10 «Miteinander»
+  y 11 «Stadt, Land, Fluss»).
   Portada en DOS bloques (decisión del usuario, 2026-09-21; sin emojis en las subsecciones):
   **Gramática y ejercicios** (por capítulo: cada tema = lección + tandas) y **Vocabulario y
   verbos** (por capítulo: `mazo-kN-vocabulario` y `mazo-kN-verbos`). Catálogo en
   `src/data/mas/indice.json`; por tema `leccion-<id>` + `ejercicios-<id>`, y `mazo-<id>` solo si
   el tema tiene fichas propias (la lección lo enlaza con su campo `mazo`). El mazo de verbos de
   cada capítulo lleva TODOS sus verbos —los de la pasiva del cap. 10 entran vía `incluye`, y el
-  vocabulario incluye así `infinitivo-nombre` (cap. 1), `n-declinacion` y `nombres-heit-keit`
-  (cap. 6), `adjetivos-ig-lich` (cap. 7) y `adjetivos-nombre` (cap. 11)— con
+  vocabulario incluye así `infinitivo-nombre` (cap. 1), `nombres-er-erin` (cap. 2),
+  `n-declinacion` y `nombres-heit-keit` (cap. 6), `adjetivos-ig-lich` (cap. 7) y
+  `adjetivos-nombre` (cap. 11)— con
   presente, Präteritum, Partizip II, auxiliar y la PREPOSICIÓN que rigen (`preposicion`, formato
   «an + dativo», con test). Fichas sobre el MISMO SM-2 (`src/engine/mazos.js`); el estado
   (`mazos.srs.v1`) va por PALABRA (`tipo:id`), compartido entre mazos y fuera de la bolsa.
@@ -113,7 +115,7 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   huecos múltiples («wird … gebaut», `src/engine/ejercicios.js`) con frases PROPIAS modeladas
   sobre el Intensivtrainer/Übungsbuch (no copiar el libro: copyright y sitio público); ✓ por tanda
   en `mas.completados.v1`. Los PDF son escaneos: página PDF = página del libro + 1.
-- **Motor puro + Vitest** (284 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad, mazos, ejercicios).
+- **Motor puro + Vitest** (297 tests): `src/engine/` (board LCG, bolsa, progreso, srs, conocimiento, leitner, gramatica, escalera, crucigrama, wordle, sopa, sudoku, juegos ← pools/disponibilidad, mazos, ejercicios).
 - **Docs** en `docs/*.pdf` — REGLA: cada sección lleva SIEMPRE tres documentos con la sección
   en el nombre (`documentacion-seccionN`, `metricas-seccionN`, `autoaprendizaje-seccionN`),
   cada uno con su `generar_*.py` homónimo y la portada rotulada con la sección:

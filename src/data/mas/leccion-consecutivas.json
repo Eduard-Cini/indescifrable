@@ -1,0 +1,84 @@
+{
+  "id": "consecutivas",
+  "mazo": "k2-vocabulario",
+  "titulo": "Consecuencias: deshalb, sodass, so … dass",
+  "descripcion": "Cómo se dice «por eso» y dónde va el verbo con cada palabra: deshalb, deswegen, darum y daher abren una principal; sodass y so … dass, una subordinada.",
+  "fuente": "Netzwerk neu B1, Kapitel 2: Kursbuch S. 21 y 27 · Übungsbuch S. 22-23 · Intensivtrainer S. 11",
+  "libro": {
+    "referencia": "Kursbuch S. 21 (recuadro G) y S. 27 («kurz und klar»), Übungsbuch S. 22-23 e Intensivtrainer S. 11",
+    "puntos": [
+      "El recuadro se titula «Folgen ausdrücken: Konsekutivsatz» y separa las palabras en dos filas según el tipo de frase que abren.",
+      "Primera fila, deshalb/deswegen/darum/daher: dos frases principales, «Tarik ist viel unterwegs, darum braucht er eine Powerbank».",
+      "Segunda fila, sodass / so … dass: principal + subordinada, «Online gibt es keine Beratung, sodass Tarik lieber ins Geschäft geht».",
+      "Y añade la regla del so: «Wenn im Hauptsatz ein Adjektiv oder Adverb steht, steht so meistens davor» — «Der Kopfhörer war so teuer, dass sie lange sparen musste»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Primero el motivo, después la consecuencia",
+      "texto": [
+        "Todas estas palabras introducen la CONSECUENCIA. El motivo va delante, en la primera frase."
+      ],
+      "ejemplos": [
+        { "de": "Tarik ist viel unterwegs, darum braucht er eine Powerbank.", "es": "Tarik viaja mucho, por eso necesita una batería externa." },
+        { "de": "Online gibt es keine Beratung, sodass Tarik lieber ins Geschäft geht.", "es": "Por internet no hay asesoramiento, así que Tarik prefiere ir a la tienda." }
+      ],
+      "notas": [
+        "Ojo con el orden: weil y da introducen el MOTIVO; deshalb y sodass, la CONSECUENCIA. Con las mismas dos ideas, cambia cuál va delante."
+      ]
+    },
+    {
+      "titulo": "deshalb, deswegen, darum, daher",
+      "texto": [
+        "Los cuatro significan lo mismo («por eso») y abren una frase PRINCIPAL: ocupan la posición 1, así que el verbo conjugado viene justo detrás y el sujeto después."
+      ],
+      "tabla": {
+        "cabecera": ["Posición 1", "Posición 2 (verbo)", "Sujeto", "Resto"],
+        "filas": [
+          ["Darum", "braucht", "er", "eine Powerbank."],
+          ["Deshalb", "kaufe", "ich", "das Gerät im Geschäft."],
+          ["Deswegen", "haben", "wir", "die Alarmanlage einbauen lassen."]
+        ]
+      },
+      "notas": [
+        "También pueden ir detrás del verbo, en medio de la frase: Er braucht darum eine Powerbank. Pero lo normal en B1 es ponerlos al principio."
+      ]
+    },
+    {
+      "titulo": "sodass y so … dass",
+      "texto": [
+        "Los dos abren una SUBORDINADA: el verbo conjugado se va al final. La diferencia está en dónde se coloca el so."
+      ],
+      "tabla": {
+        "cabecera": ["Forma", "Cuándo se usa", "Ejemplo"],
+        "filas": [
+          ["sodass", "sin adjetivo ni adverbio en la principal", "Online gibt es keine Beratung, sodass Tarik lieber ins Geschäft geht."],
+          ["so … dass", "cuando la principal lleva adjetivo o adverbio", "Der Kopfhörer war so teuer, dass sie lange sparen musste."]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Das Handy war so alt, dass sich die Reparatur nicht gelohnt hat.", "es": "El móvil era tan viejo que no valía la pena repararlo." },
+        { "de": "Der Akku ist leer, sodass ich dich nicht anrufen kann.", "es": "La batería está vacía, así que no te puedo llamar." }
+      ],
+      "notas": [
+        "so va DELANTE del adjetivo, en la primera frase: so teuer, so alt, so schnell.",
+        "sodass se escribe en una palabra; también se admite so dass."
+      ]
+    },
+    {
+      "titulo": "Las cuatro maneras, en una tabla",
+      "texto": [
+        "Con las mismas dos ideas —«el aparato es caro» y «ahorro»— se ve la diferencia de orden."
+      ],
+      "tabla": {
+        "cabecera": ["Palabra", "Qué frase abre", "Ejemplo"],
+        "filas": [
+          ["weil / da", "subordinada con el MOTIVO", "Ich spare, weil das Gerät teuer ist."],
+          ["denn", "principal con el MOTIVO", "Ich spare, denn das Gerät ist teuer."],
+          ["deshalb", "principal con la CONSECUENCIA", "Das Gerät ist teuer, deshalb spare ich."],
+          ["sodass", "subordinada con la CONSECUENCIA", "Das Gerät ist teuer, sodass ich sparen muss."]
+        ]
+      }
+    }
+  ]
+}

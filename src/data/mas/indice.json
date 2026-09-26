@@ -9,6 +9,12 @@
       "mazos": ["k1-vocabulario", "k1-verbos"]
     },
     {
+      "numero": 2,
+      "titulo": "Das ist ja praktisch!",
+      "temas": ["lassen", "consecutivas", "genitivo", "nombres-er-erin"],
+      "mazos": ["k2-vocabulario", "k2-verbos"]
+    },
+    {
       "numero": 6,
       "titulo": "Blick nach vorn",
       "temas": ["futuro", "n-declinacion", "relativas", "nombres-heit-keit"],

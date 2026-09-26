@@ -1,0 +1,51 @@
+{
+  "tema": "consecutivas",
+  "titulo": "Consecuencias",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 21; Übungsbuch S. 22-23; Intensivtrainer S. 11), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Qué palabra encaja?",
+      "instruccion": "Fíjate en dónde está el verbo y elige la palabra correcta.",
+      "modelo": "Kursbuch S. 21 (recuadro G)",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["Mein Akku ist leer, ", " kann ich dich nicht anrufen."], "respuesta": "deshalb", "distractores": ["sodass", "weil", "obwohl"], "pista": "El verbo va justo detrás → principal → deshalb." },
+        { "id": "cu2", "partes": ["Mein Akku ist leer, ", " ich dich nicht anrufen kann."], "respuesta": "sodass", "distractores": ["deshalb", "darum", "daher"], "pista": "kann está al final → subordinada → sodass." },
+        { "id": "cu3", "partes": ["Der Kopfhörer war ", " teuer, dass ich lange sparen musste."], "respuesta": "so", "distractores": ["sodass", "deshalb", "darum"], "pista": "Con adjetivo en la principal, so va delante del adjetivo." },
+        { "id": "cu4", "partes": ["Online gibt es keine Beratung, ", " gehe ich lieber ins Geschäft."], "respuesta": "darum", "distractores": ["sodass", "weil", "dass"], "pista": "gehe está justo detrás → principal." },
+        { "id": "cu5", "partes": ["Die Waschmaschine ist kaputt, ", " muss ich in den Waschsalon."], "respuesta": "deswegen", "distractores": ["sodass", "obwohl", "damit"], "pista": "muss va detrás → principal → deswegen." },
+        { "id": "cu6", "partes": ["Das Handy war so alt, ", " sich die Reparatur nicht gelohnt hat."], "respuesta": "dass", "distractores": ["sodass", "deshalb", "weil"], "pista": "Ya hay un so delante del adjetivo → el conector es dass." },
+        { "id": "cu7", "partes": ["Ich habe die Quittung verloren, ", " konnte ich nichts umtauschen."], "respuesta": "daher", "distractores": ["sodass", "dass", "weil"], "pista": "konnte va detrás → principal." },
+        { "id": "cu8", "partes": ["Die Anleitung war sehr kompliziert, ", " ich das Gerät nicht installieren konnte."], "respuesta": "sodass", "distractores": ["deshalb", "darum", "daher"], "pista": "konnte cierra la frase → subordinada." }
+      ]
+    },
+    {
+      "id": "orden",
+      "titulo": "El verbo, en su sitio",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Übungsbuch S. 22 · Intensivtrainer S. 11",
+      "ejercicios": [
+        { "id": "or1", "partes": null, "pregunta": "«Viajo mucho, por eso necesito una batería externa.»", "respuesta": "Ich bin viel unterwegs, darum brauche ich eine Powerbank.", "distractores": ["Ich bin viel unterwegs, darum ich brauche eine Powerbank.", "Ich bin viel unterwegs, darum eine Powerbank ich brauche.", "Ich bin viel unterwegs, darum brauche eine Powerbank ich."], "pista": "darum ocupa la posición 1 → verbo, después sujeto." },
+        { "id": "or2", "partes": null, "pregunta": "«No hay asesoramiento, así que prefiero ir a la tienda.»", "respuesta": "Es gibt keine Beratung, sodass ich lieber ins Geschäft gehe.", "distractores": ["Es gibt keine Beratung, sodass ich gehe lieber ins Geschäft.", "Es gibt keine Beratung, sodass gehe ich lieber ins Geschäft.", "Es gibt keine Beratung, sodass ich lieber gehe ins Geschäft."], "pista": "sodass manda el verbo al final." },
+        { "id": "or3", "partes": null, "pregunta": "«El aparato era tan caro que tuve que ahorrar.»", "respuesta": "Das Gerät war so teuer, dass ich sparen musste.", "distractores": ["Das Gerät war so teuer, dass ich musste sparen.", "Das Gerät war sodass teuer, ich sparen musste.", "Das Gerät war so teuer, dass musste ich sparen."], "pista": "En la subordinada, el verbo conjugado (musste) cierra la frase." },
+        { "id": "or4", "partes": null, "pregunta": "«El móvil se cayó, por eso está roto.»", "respuesta": "Das Handy ist gefallen, deshalb ist es kaputt.", "distractores": ["Das Handy ist gefallen, deshalb es ist kaputt.", "Das Handy ist gefallen, deshalb kaputt ist es.", "Das Handy ist gefallen, deshalb ist kaputt es."], "pista": "deshalb + verbo + sujeto." },
+        { "id": "or5", "partes": null, "pregunta": "«Llovía tanto que nos quedamos en casa.»", "respuesta": "Es hat so stark geregnet, dass wir zu Hause geblieben sind.", "distractores": ["Es hat so stark geregnet, dass wir sind zu Hause geblieben.", "Es hat sodass stark geregnet, wir zu Hause geblieben sind.", "Es hat so stark geregnet, dass sind wir zu Hause geblieben."], "pista": "En la subordinada, el auxiliar (sind) va al final del todo." },
+        { "id": "or6", "partes": null, "pregunta": "«Perdí el tique, así que no me lo pudieron cambiar.»", "respuesta": "Ich habe die Quittung verloren, sodass sie es nicht umtauschen konnten.", "distractores": ["Ich habe die Quittung verloren, sodass sie konnten es nicht umtauschen.", "Ich habe die Quittung verloren, sodass konnten sie es nicht umtauschen.", "Ich habe die Quittung verloren, sodass sie es nicht konnten umtauschen."], "pista": "konnten cierra la subordinada, detrás del infinitivo." }
+      ]
+    },
+    {
+      "id": "motivo-o-consecuencia",
+      "titulo": "¿Motivo o consecuencia?",
+      "instruccion": "Las dos ideas son las mismas. Elige la frase que dice lo que se pide.",
+      "modelo": "Kursbuch S. 27 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "mc1", "partes": null, "pregunta": "Di el MOTIVO con weil: «El aparato es caro» + «ahorro».", "respuesta": "Ich spare, weil das Gerät teuer ist.", "distractores": ["Das Gerät ist teuer, weil ich spare.", "Ich spare, weil ist das Gerät teuer.", "Das Gerät ist teuer, deshalb spare ich."], "pista": "weil introduce el motivo, que va detrás." },
+        { "id": "mc2", "partes": null, "pregunta": "Di la CONSECUENCIA con deshalb: «El aparato es caro» + «ahorro».", "respuesta": "Das Gerät ist teuer, deshalb spare ich.", "distractores": ["Ich spare, deshalb ist das Gerät teuer.", "Das Gerät ist teuer, deshalb ich spare.", "Ich spare, weil das Gerät teuer ist."], "pista": "El motivo va primero; deshalb introduce lo que pasa por eso." },
+        { "id": "mc3", "partes": null, "pregunta": "Di el MOTIVO con denn: «No tengo cobertura» + «no te escribo».", "respuesta": "Ich schreibe dir nicht, denn ich habe keinen Empfang.", "distractores": ["Ich schreibe dir nicht, denn habe ich keinen Empfang.", "Ich habe keinen Empfang, denn schreibe ich dir nicht.", "Ich schreibe dir nicht, sodass ich keinen Empfang habe."], "pista": "Detrás de denn, orden normal: sujeto + verbo." },
+        { "id": "mc4", "partes": null, "pregunta": "Di la CONSECUENCIA con sodass: «No tengo cobertura» + «no te escribo».", "respuesta": "Ich habe keinen Empfang, sodass ich dir nicht schreibe.", "distractores": ["Ich schreibe dir nicht, sodass ich keinen Empfang habe.", "Ich habe keinen Empfang, sodass schreibe ich dir nicht.", "Ich habe keinen Empfang, sodass ich schreibe dir nicht."], "pista": "El motivo va primero; sodass + verbo al final." },
+        { "id": "mc5", "partes": null, "pregunta": "Di el MOTIVO con da: «La tienda estaba cerrada» + «pedí por internet».", "respuesta": "Da das Geschäft geschlossen war, habe ich online bestellt.", "distractores": ["Da das Geschäft geschlossen war, ich habe online bestellt.", "Das Geschäft war geschlossen, da habe ich online bestellt.", "Da war das Geschäft geschlossen, habe ich online bestellt."], "pista": "da abre la subordinada; war al final; después de la coma, habe." },
+        { "id": "mc6", "partes": null, "pregunta": "Di la CONSECUENCIA con daher: «La tienda estaba cerrada» + «pedí por internet».", "respuesta": "Das Geschäft war geschlossen, daher habe ich online bestellt.", "distractores": ["Das Geschäft war geschlossen, daher ich habe online bestellt.", "Daher war das Geschäft geschlossen, habe ich online bestellt.", "Das Geschäft war geschlossen, daher online bestellt ich habe."], "pista": "daher + verbo + sujeto." }
+      ]
+    }
+  ]
+}

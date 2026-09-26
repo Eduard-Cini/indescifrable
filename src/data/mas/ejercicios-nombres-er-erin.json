@@ -1,0 +1,51 @@
+{
+  "tema": "nombres-er-erin",
+  "titulo": "Sustantivos con -er y -erin",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 26, A-B; Intensivtrainer S. 14), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "del-verbo",
+      "titulo": "¿Quién hace eso?",
+      "instruccion": "Forma la persona a partir del verbo marcado.",
+      "modelo": "Übungsbuch S. 26, B",
+      "ejercicios": [
+        { "id": "dv1", "partes": ["Er berät Kunden bei der Bank. Er ist ", "."], "respuesta": "Berater", "distractores": ["Beraterer", "Beratender", "Beratist"], "pista": "beraten → der Berater." },
+        { "id": "dv2", "partes": ["Jana schwimmt gern. Sie ist eine sehr gute ", "."], "respuesta": "Schwimmerin", "distractores": ["Schwimmerein", "Schwimmenin", "Schwimmin"], "pista": "schwimmen → die Schwimmerin." },
+        { "id": "dv3", "partes": ["Hannes läuft oft. Er ist ein schneller ", "."], "respuesta": "Läufer", "distractores": ["Laufer", "Laufender", "Läufender"], "pista": "laufen → der Läufer, con Umlaut au → äu." },
+        { "id": "dv4", "partes": ["Sie verkauft Sachen in einem Geschäft. Ihr Beruf ist ", "."], "respuesta": "Verkäuferin", "distractores": ["Verkauferin", "Verkäufein", "Verkaufin"], "pista": "verkaufen → die Verkäuferin, con Umlaut." },
+        { "id": "dv5", "partes": ["Wer das Magazin liest, ist ein ", "."], "respuesta": "Leser", "distractores": ["Lesender", "Leserer", "Lesist"], "pista": "lesen → der Leser." },
+        { "id": "dv6", "partes": ["Zu der Messe sind eine Million ", " gekommen."], "respuesta": "Besucher", "distractores": ["Besuchener", "Besuchers", "Besuchende"], "pista": "besuchen → der Besucher; el masculino plural no cambia." },
+        { "id": "dv7", "partes": ["Sie sammelt alte Radios: Sie ist ", "."], "respuesta": "Sammlerin", "distractores": ["Sammelerin", "Sammelnin", "Sammlein"], "pista": "sammeln → die Sammlerin: se pierde la -e-." },
+        { "id": "dv8", "partes": ["Wir haben am Bahnhof ein Taxi genommen. Die ", " hat uns direkt zum Hotel gebracht."], "respuesta": "Fahrerin", "distractores": ["Fährerin", "Fahrenin", "Fahrin"], "pista": "fahren → die Fahrerin, sin Umlaut." }
+      ]
+    },
+    {
+      "id": "umlaut",
+      "titulo": "¿Con Umlaut o sin él?",
+      "instruccion": "Elige la forma correcta.",
+      "modelo": "Übungsbuch S. 26, A (recuadro W)",
+      "ejercicios": [
+        { "id": "um1", "partes": null, "pregunta": "kaufen (él)", "respuesta": "der Käufer", "distractores": ["der Kaufer", "der Kaufender", "der Käufender"], "pista": "kaufen lleva Umlaut: a → ä." },
+        { "id": "um2", "partes": null, "pregunta": "fahren (ella)", "respuesta": "die Fahrerin", "distractores": ["die Fährerin", "die Fahrenin", "die Fahrein"], "pista": "fahren NO lleva Umlaut." },
+        { "id": "um3", "partes": null, "pregunta": "tanzen (ella)", "respuesta": "die Tänzerin", "distractores": ["die Tanzerin", "die Tanzenin", "die Tänzein"], "pista": "tanzen lleva Umlaut: a → ä." },
+        { "id": "um4", "partes": null, "pregunta": "malen (él)", "respuesta": "der Maler", "distractores": ["der Mäler", "der Malerer", "der Malender"], "pista": "malen no lleva Umlaut." },
+        { "id": "um5", "partes": null, "pregunta": "arbeiten (ella)", "respuesta": "die Arbeiterin", "distractores": ["die Ärbeiterin", "die Arbeitin", "die Arbeitenin"], "pista": "arbeiten no lleva Umlaut." },
+        { "id": "um6", "partes": null, "pregunta": "verkaufen (él)", "respuesta": "der Verkäufer", "distractores": ["der Verkaufer", "der Verkäufender", "der Verkaufender"], "pista": "Como kaufen: a → ä." }
+      ]
+    },
+    {
+      "id": "plural",
+      "titulo": "Plural y formas neutras",
+      "instruccion": "Elige la forma que se pide.",
+      "modelo": "Übungsbuch S. 26 (recuadro W)",
+      "ejercicios": [
+        { "id": "pl1", "partes": null, "pregunta": "plural de der Fahrer", "respuesta": "die Fahrer", "distractores": ["die Fahrern", "die Fahrers", "die Fahrere"], "pista": "El masculino en -er no cambia en plural." },
+        { "id": "pl2", "partes": null, "pregunta": "plural de die Fahrerin", "respuesta": "die Fahrerinnen", "distractores": ["die Fahrerins", "die Fahrerine", "die Fahrerinen"], "pista": "-in → -innen, con dos enes." },
+        { "id": "pl3", "partes": null, "pregunta": "plural de die Leserin", "respuesta": "die Leserinnen", "distractores": ["die Leserins", "die Leserine", "die Leserinen"], "pista": "Siempre -innen." },
+        { "id": "pl4", "partes": null, "pregunta": "forma neutra con asterisco, en plural", "respuesta": "die Leser*innen", "distractores": ["die Leser*in", "die Leser*innens", "die Leser*inen"], "pista": "El asterisco va antes de -innen." },
+        { "id": "pl5", "partes": null, "pregunta": "forma neutra con barra, en plural", "respuesta": "die Besucher/innen", "distractores": ["die Besucher/in", "die Besucherin/nen", "die Besucher/inen"], "pista": "La barra va antes de -innen." },
+        { "id": "pl6", "partes": null, "pregunta": "genitivo de der Verkäufer", "respuesta": "des Verkäufers", "distractores": ["des Verkäufern", "der Verkäufers", "des Verkäuferes"], "pista": "Es un masculino normal, no de declinación n: des Verkäufers." }
+      ]
+    }
+  ]
+}

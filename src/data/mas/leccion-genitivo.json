@@ -1,0 +1,89 @@
+{
+  "id": "genitivo",
+  "mazo": "k2-vocabulario",
+  "titulo": "Genitivo (y las preposiciones wegen y trotz)",
+  "descripcion": "El caso del «de quién»: des/eines + -(e)s en masculino y neutro, der/einer en femenino y plural. Y las dos preposiciones del capítulo que lo rigen.",
+  "fuente": "Netzwerk neu B1, Kapitel 2: Kursbuch S. 24 y 27 · Übungsbuch S. 25-26 · Intensivtrainer S. 13",
+  "libro": {
+    "referencia": "Kursbuch S. 24 (recuadro G) y S. 27 («kurz und klar»), Übungsbuch S. 25-26 e Intensivtrainer S. 13",
+    "puntos": [
+      "El recuadro pone la tabla de los artículos en genitivo (des/eines/keines/meines, der/einer/keiner/meiner) al lado de la pregunta Wessen?",
+      "Da también la alternativa de la lengua hablada: «Das ist das Haus der/meiner Eltern» = «das Haus von den/meinen Eltern».",
+      "Debajo de la tabla añade la regla de la -s: «Maskuline und neutrale Nomen mit nur einer Silbe haben die Endung -es: des Raumes, des Hauses».",
+      "El segundo recuadro trata wegen y trotz, transformando frases con weil y obwohl: «Wir haben kein Smart Home, weil die Kosten hoch sind» → «Wir haben wegen der hohen Kosten kein Smart Home».",
+      "Y cierra con la regla del adjetivo: «Adjektive haben nach Artikelwörtern im Genitiv immer die Endung -en»."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Para qué sirve",
+      "texto": [
+        "El genitivo dice de quién o de qué es algo. Responde a la pregunta Wessen? y el sustantivo que «posee» va DETRÁS."
+      ],
+      "ejemplos": [
+        { "de": "Wessen Haus ist das? – Das ist das Haus meiner Eltern.", "es": "¿De quién es esa casa? – Es la casa de mis padres." },
+        { "de": "die Wirkung der Werbung", "es": "el efecto de la publicidad" }
+      ],
+      "notas": [
+        "En la lengua hablada se usa muchísimo von + dativo: das Haus von meinen Eltern. El genitivo es más de lengua escrita y de textos formales."
+      ]
+    },
+    {
+      "titulo": "La tabla",
+      "tabla": {
+        "cabecera": ["Género", "determinado", "indefinido / posesivo", "Ejemplo"],
+        "filas": [
+          ["der (masculino)", "des", "eines · keines · meines", "des Raumes"],
+          ["das (neutro)", "des", "eines · keines · meines", "des Zimmers"],
+          ["die (femenino)", "der", "einer · keiner · meiner", "der Familie"],
+          ["die (plural)", "der", "— · keiner · meiner", "der Gäste"]
+        ]
+      },
+      "notas": [
+        "Masculino y neutro añaden además -(e)s al SUSTANTIVO: des Zimmers, des Hauses.",
+        "Femenino y plural no cambian el sustantivo: solo el artículo (der).",
+        "En plural no hay artículo indefinido: se dice der Gäste o meiner Gäste."
+      ]
+    },
+    {
+      "titulo": "-s o -es",
+      "texto": [
+        "Los masculinos y neutros de UNA sílaba llevan -es; el resto, solo -s."
+      ],
+      "tabla": {
+        "cabecera": ["Sustantivo", "Genitivo", "Por qué"],
+        "filas": [
+          ["das Haus", "des Hauses", "una sílaba → -es"],
+          ["der Raum", "des Raumes", "una sílaba → -es"],
+          ["das Zimmer", "des Zimmers", "dos sílabas → -s"],
+          ["der Computer", "des Computers", "más de una sílaba → -s"],
+          ["der Preis", "des Preises", "termina en -s → siempre -es"]
+        ]
+      },
+      "notas": [
+        "Los masculinos de declinación n hacen otra cosa: des Kunden, des Studenten (capítulo 6)."
+      ]
+    },
+    {
+      "titulo": "wegen y trotz",
+      "texto": [
+        "Son dos preposiciones que rigen genitivo. Dicen con un sustantivo lo mismo que weil y obwohl dicen con una frase entera."
+      ],
+      "tabla": {
+        "cabecera": ["Con frase", "Con preposición + genitivo"],
+        "filas": [
+          ["Wir haben kein Smart Home, weil die Kosten hoch sind.", "Wir haben wegen der hohen Kosten kein Smart Home."],
+          ["Die Wohnung ist gemütlich, obwohl es smarte Technik gibt.", "Die Wohnung ist trotz der smarten Technik gemütlich."]
+        ]
+      },
+      "ejemplos": [
+        { "de": "Wegen des schlechten Wetters bleiben wir zu Hause.", "es": "Por el mal tiempo nos quedamos en casa." },
+        { "de": "Trotz der Garantie wollte er nichts reparieren.", "es": "A pesar de la garantía no quiso reparar nada." }
+      ],
+      "notas": [
+        "Detrás de un artículo, el adjetivo en genitivo lleva SIEMPRE -en: der hohen Kosten, des schlechten Wetters.",
+        "En lengua hablada también se oye wegen + dativo (wegen dem Wetter), pero en el examen se escribe con genitivo."
+      ]
+    }
+  ]
+}

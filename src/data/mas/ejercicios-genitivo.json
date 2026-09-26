@@ -1,0 +1,51 @@
+{
+  "tema": "genitivo",
+  "titulo": "Genitivo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 24; Übungsbuch S. 25-26; Intensivtrainer S. 13), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "articulo",
+      "titulo": "El artículo en genitivo",
+      "instruccion": "Completa con el artículo que toca.",
+      "modelo": "Kursbuch S. 24 (recuadro G)",
+      "ejercicios": [
+        { "id": "ar1", "partes": ["Das ist das Haus ", " Eltern."], "respuesta": "meiner", "distractores": ["meines", "meinem", "meine"], "pista": "Plural en genitivo → -er." },
+        { "id": "ar2", "partes": ["Die Wirkung ", " Werbung ist groß."], "respuesta": "der", "distractores": ["des", "dem", "die"], "pista": "die Werbung es femenino → der." },
+        { "id": "ar3", "partes": ["Der Preis ", " Geräts war zu hoch."], "respuesta": "des", "distractores": ["der", "dem", "das"], "pista": "das Gerät es neutro → des + -s en el sustantivo." },
+        { "id": "ar4", "partes": ["Die Farbe ", " Zimmers gefällt mir nicht."], "respuesta": "des", "distractores": ["der", "dem", "das"], "pista": "das Zimmer → des Zimmers." },
+        { "id": "ar5", "partes": ["Das ist die Powerbank ", " Freundes."], "respuesta": "eines", "distractores": ["einer", "einem", "ein"], "pista": "der Freund es masculino → eines Freundes." },
+        { "id": "ar6", "partes": ["Wegen ", " Garantie war die Reparatur gratis."], "respuesta": "der", "distractores": ["des", "dem", "die"], "pista": "wegen + genitivo; die Garantie es femenino." },
+        { "id": "ar7", "partes": ["Trotz ", " Rabatts war mir das zu teuer."], "respuesta": "des", "distractores": ["der", "dem", "den"], "pista": "der Rabatt es masculino → des Rabatts." }
+      ]
+    },
+    {
+      "id": "terminacion",
+      "titulo": "¿-s o -es?",
+      "instruccion": "Completa la terminación del sustantivo.",
+      "modelo": "Kursbuch S. 27 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "te1", "partes": null, "pregunta": "das Haus", "respuesta": "des Hauses", "distractores": ["des Haus", "des Hauss", "der Hauses"], "pista": "Una sílaba → -es." },
+        { "id": "te2", "partes": null, "pregunta": "das Zimmer", "respuesta": "des Zimmers", "distractores": ["des Zimmeres", "des Zimmer", "der Zimmers"], "pista": "Más de una sílaba → -s." },
+        { "id": "te3", "partes": null, "pregunta": "der Raum", "respuesta": "des Raumes", "distractores": ["des Raums", "des Raum", "der Raumes"], "pista": "Una sílaba → -es (también se admite des Raums)." },
+        { "id": "te4", "partes": null, "pregunta": "der Computer", "respuesta": "des Computers", "distractores": ["des Computeres", "des Computer", "der Computers"], "pista": "Palabra larga → -s." },
+        { "id": "te5", "partes": null, "pregunta": "die Werbung", "respuesta": "der Werbung", "distractores": ["der Werbungs", "des Werbung", "der Werbunges"], "pista": "Femenino: solo cambia el artículo." },
+        { "id": "te6", "partes": null, "pregunta": "die Kunden (plural)", "respuesta": "der Kunden", "distractores": ["der Kundens", "des Kunden", "den Kunden"], "pista": "Plural: solo cambia el artículo." },
+        { "id": "te7", "partes": null, "pregunta": "der Preis", "respuesta": "des Preises", "distractores": ["des Preis", "des Preiss", "der Preises"], "pista": "Termina en -s → siempre -es." }
+      ]
+    },
+    {
+      "id": "wegen-trotz",
+      "titulo": "wegen o trotz",
+      "instruccion": "Di lo mismo con una preposición + genitivo.",
+      "modelo": "Kursbuch S. 24 (segundo recuadro G) · Übungsbuch S. 26",
+      "ejercicios": [
+        { "id": "wt1", "partes": null, "pregunta": "Wir haben kein Smart Home, weil die Kosten hoch sind.", "respuesta": "Wegen der hohen Kosten haben wir kein Smart Home.", "distractores": ["Trotz der hohen Kosten haben wir kein Smart Home.", "Wegen die hohen Kosten haben wir kein Smart Home.", "Wegen der hohe Kosten haben wir kein Smart Home."], "pista": "weil → wegen; el adjetivo en genitivo lleva -en." },
+        { "id": "wt2", "partes": null, "pregunta": "Die Wohnung ist gemütlich, obwohl es smarte Technik gibt.", "respuesta": "Trotz der smarten Technik ist die Wohnung gemütlich.", "distractores": ["Wegen der smarten Technik ist die Wohnung gemütlich.", "Trotz die smarte Technik ist die Wohnung gemütlich.", "Trotz der smarte Technik ist die Wohnung gemütlich."], "pista": "obwohl → trotz; adjetivo con -en." },
+        { "id": "wt3", "partes": null, "pregunta": "Wir bleiben zu Hause, weil das Wetter schlecht ist.", "respuesta": "Wegen des schlechten Wetters bleiben wir zu Hause.", "distractores": ["Trotz des schlechten Wetters bleiben wir zu Hause.", "Wegen dem schlechten Wetter bleiben wir zu Hause.", "Wegen des schlechte Wetters bleiben wir zu Hause."], "pista": "das Wetter → des Wetters, con -en en el adjetivo." },
+        { "id": "wt4", "partes": null, "pregunta": "Er kaufte das Gerät, obwohl der Preis hoch war.", "respuesta": "Trotz des hohen Preises kaufte er das Gerät.", "distractores": ["Wegen des hohen Preises kaufte er das Gerät.", "Trotz dem hohen Preis kaufte er das Gerät.", "Trotz des hohe Preises kaufte er das Gerät."], "pista": "der Preis → des Preises." },
+        { "id": "wt5", "partes": null, "pregunta": "Das Gerät wurde repariert, weil es noch Garantie gab.", "respuesta": "Wegen der Garantie wurde das Gerät repariert.", "distractores": ["Trotz der Garantie wurde das Gerät repariert.", "Wegen die Garantie wurde das Gerät repariert.", "Wegen der Garanties wurde das Gerät repariert."], "pista": "die Garantie es femenino: der Garantie." },
+        { "id": "wt6", "partes": null, "pregunta": "Ich konnte nichts umtauschen, obwohl ich die Quittung hatte.", "respuesta": "Trotz der Quittung konnte ich nichts umtauschen.", "distractores": ["Wegen der Quittung konnte ich nichts umtauschen.", "Trotz die Quittung konnte ich nichts umtauschen.", "Trotz der Quittunges konnte ich nichts umtauschen."], "pista": "Contraste → trotz." }
+      ]
+    }
+  ]
+}
