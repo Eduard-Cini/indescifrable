@@ -67,6 +67,12 @@
       "titulo": "Stadt, Land, Fluss",
       "temas": ["articulos-pronombres", "adjetivos-nombre", "relativos-was-wo", "einander"],
       "mazos": ["k11-vocabulario", "k11-verbos"]
+    },
+    {
+      "numero": 12,
+      "titulo": "Geld regiert die Welt?",
+      "temas": ["je-desto", "participio-adjetivo", "verbos-her-hin"],
+      "mazos": ["k12-vocabulario", "k12-verbos"]
     }
   ]
 }

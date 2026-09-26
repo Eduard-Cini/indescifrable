@@ -209,7 +209,7 @@ describe('mazos reales de «Más contenidos»', () => {
   const INSEPARABLE = /^(be|emp|ent|er|miss|ver|zer)/;
   // Verbos donde esas letras iniciales NO son un prefijo, sino parte de la raíz:
   // su Partizip II sí lleva ge- (beißen → gebissen, erben → geerbt).
-  const RAIZ_NO_PREFIJO = new Set(['beissen', 'erben', 'enden', 'essen']);
+  const RAIZ_NO_PREFIJO = new Set(['beissen', 'beten', 'erben', 'enden', 'essen']);
 
   it('prefijo inseparable o -ieren → Partizip II sin ge-', () => {
     const sinGe = verbos.filter(

@@ -1,0 +1,50 @@
+{
+  "tema": "verbos-her-hin",
+  "titulo": "Verbos con her- y hin-",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Übungsbuch S. 146, A-B; Intensivtrainer S. 65), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "quien-habla",
+      "titulo": "¿Quién lo dice?",
+      "instruccion": "Elige el prefijo según dónde está quien habla.",
+      "modelo": "Übungsbuch S. 146, A",
+      "ejercicios": [
+        { "id": "qh1", "partes": ["(Desde la ventana, al de la calle) Komm doch ", "auf!"], "respuesta": "her", "distractores": ["hin", "rüber", "hinaus"], "pista": "El movimiento es hacia quien habla → her-." },
+        { "id": "qh2", "partes": ["(Desde la calle, a la de la ventana) Ich kann leider nicht ", "aufkommen."], "respuesta": "hin", "distractores": ["her", "rein", "heraus"], "pista": "El movimiento se aleja de quien habla → hin-." },
+        { "id": "qh3", "partes": ["(Desde la calle, a la de la ventana) Willst du nicht ", "unterkommen?"], "respuesta": "her", "distractores": ["hin", "rein", "hinaus"], "pista": "Ella bajaría hasta donde está quien habla → her-." },
+        { "id": "qh4", "partes": ["(Desde la ventana, al de la calle) Ich kann jetzt nicht ", "unterkommen, ich arbeite gerade."], "respuesta": "hin", "distractores": ["her", "rein", "heraus"], "pista": "Quien habla se alejaría de donde está → hin-." },
+        { "id": "qh5", "partes": ["(Desde dentro, al que llama) Einen Moment, ich lasse dich gleich ", "ein."], "respuesta": "her", "distractores": ["hin", "aus", "hinaus"], "pista": "El otro entra hacia donde está quien habla → herein." },
+        { "id": "qh6", "partes": ["(Desde la calle) Machst du bitte auf? Ich kann nicht ins Haus ", "ein."], "respuesta": "hin", "distractores": ["her", "aus", "heraus"], "pista": "Quien habla se movería hacia dentro, lejos de donde está → hinein." }
+      ]
+    },
+    {
+      "id": "direccion",
+      "titulo": "La preposición",
+      "instruccion": "Elige la palabra que expresa esa dirección.",
+      "modelo": "Übungsbuch S. 146 (recuadro W)",
+      "ejercicios": [
+        { "id": "di1", "partes": null, "pregunta": "hacia arriba, alejándose de mí", "respuesta": "hinauf", "distractores": ["herauf", "hinunter", "herunter"], "pista": "hin- = lejos de mí; auf = arriba." },
+        { "id": "di2", "partes": null, "pregunta": "hacia abajo, hacia mí", "respuesta": "herunter", "distractores": ["hinunter", "herauf", "hinauf"], "pista": "her- = hacia mí; unter = abajo." },
+        { "id": "di3", "partes": null, "pregunta": "hacia dentro, hacia mí", "respuesta": "herein", "distractores": ["hinein", "heraus", "hinaus"], "pista": "her- + ein." },
+        { "id": "di4", "partes": null, "pregunta": "hacia fuera, alejándose de mí", "respuesta": "hinaus", "distractores": ["heraus", "hinein", "herein"], "pista": "hin- + aus." },
+        { "id": "di5", "partes": null, "pregunta": "al otro lado, hacia mí", "respuesta": "herüber", "distractores": ["hinüber", "herauf", "hinaus"], "pista": "her- + über." },
+        { "id": "di6", "partes": null, "pregunta": "forma coloquial de herauf / hinauf", "respuesta": "rauf", "distractores": ["runter", "rein", "raus"], "pista": "Hablando se dice solo rauf." },
+        { "id": "di7", "partes": null, "pregunta": "forma coloquial de herein / hinein", "respuesta": "rein", "distractores": ["raus", "rauf", "runter"], "pista": "Hablando se dice solo rein." }
+      ]
+    },
+    {
+      "id": "en-la-frase",
+      "titulo": "En la frase",
+      "instruccion": "Completa la frase con el verbo en la forma correcta.",
+      "modelo": "Intensivtrainer S. 65",
+      "ejercicios": [
+        { "id": "ef1", "partes": ["Komm bitte ", "! Der Kaffee ist fertig. (herauf|kommen, imperativo de du)"], "respuesta": "herauf", "distractores": ["heraufkommen", "heraufgekommen", "hinauf"], "pista": "En el imperativo el prefijo se va al final: Komm herauf!" },
+        { "id": "ef2", "partes": ["Er ist gerade die Treppe ", ". (herunter|kommen, Perfekt)"], "respuesta": "heruntergekommen", "distractores": ["heruntergekommt", "herunterkommen", "hinuntergekommen"], "pista": "El -ge- va entre el prefijo y el verbo." },
+        { "id": "ef3", "partes": ["Sie ", " gleich ins Haus hinein. (gehen)"], "respuesta": "geht", "distractores": ["gehen", "gegangen", "ging"], "pista": "sie (ella) en presente → geht; hinein se queda al final." },
+        { "id": "ef4", "partes": ["Wir sind gestern auf den Turm ", ". (hinauf|steigen, Perfekt)"], "respuesta": "hinaufgestiegen", "distractores": ["hinaufsteigen", "hinaufgesteigt", "heraufgestiegen"], "pista": "steigen es irregular: gestiegen, con el prefijo delante." },
+        { "id": "ef5", "partes": ["Wo kommst du eigentlich ", "?"], "respuesta": "her", "distractores": ["hin", "rein", "raus"], "pista": "«¿De dónde vienes?» → woher, separado al hablar." },
+        { "id": "ef6", "partes": ["Wo gehst du so spät noch ", "?"], "respuesta": "hin", "distractores": ["her", "rein", "rauf"], "pista": "«¿Adónde vas?» → wohin, separado al hablar." }
+      ]
+    }
+  ]
+}

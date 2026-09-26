@@ -1,0 +1,30 @@
+{
+  "id": "verbos-her-hin",
+  "titulo": "Verbos con her- y hin-",
+  "descripcion": "Los verbos de dirección del capítulo 12. her- = el movimiento va hacia quien habla; hin- = se aleja de quien habla. La nota recuerda la forma coloquial.",
+  "fuente": "Netzwerk neu B1, Kapitel 12: Wortbildung del Übungsbuch S. 146 e Intensivtrainer S. 65",
+  "tarjetas": [
+    { "id": "heraufkommen", "tipo": "verbo", "infinitivo": "herauf|kommen", "presente": "kommt herauf", "preterito": "kam herauf", "participio": "heraufgekommen", "auxiliar": "ist", "es": "subir (hacia quien habla)", "nota": "Coloquial: raufkommen. Komm herauf!" },
+    { "id": "hinaufkommen", "tipo": "verbo", "infinitivo": "hinauf|kommen", "presente": "kommt hinauf", "preterito": "kam hinauf", "participio": "hinaufgekommen", "auxiliar": "ist", "es": "subir (alejándose de quien habla)", "nota": "Coloquial: raufkommen." },
+    { "id": "herunterkommen", "tipo": "verbo", "infinitivo": "herunter|kommen", "presente": "kommt herunter", "preterito": "kam herunter", "participio": "heruntergekommen", "auxiliar": "ist", "es": "bajar (hacia quien habla)", "nota": "Coloquial: runterkommen. Willst du nicht herunterkommen?" },
+    { "id": "hinunterkommen", "tipo": "verbo", "infinitivo": "hinunter|kommen", "presente": "kommt hinunter", "preterito": "kam hinunter", "participio": "hinuntergekommen", "auxiliar": "ist", "es": "bajar (alejándose de quien habla)", "nota": "Coloquial: runterkommen." },
+    { "id": "hereinkommen", "tipo": "verbo", "infinitivo": "herein|kommen", "presente": "kommt herein", "preterito": "kam herein", "participio": "hereingekommen", "auxiliar": "ist", "es": "entrar (hacia quien habla)", "nota": "Coloquial: reinkommen. Kommen Sie herein!" },
+    { "id": "hereinlassen", "tipo": "verbo", "infinitivo": "herein|lassen", "presente": "lässt herein", "preterito": "ließ herein", "participio": "hereingelassen", "auxiliar": "hat", "es": "dejar entrar", "nota": "Ich lasse dich gleich herein." },
+    { "id": "hineingehen", "tipo": "verbo", "infinitivo": "hinein|gehen", "presente": "geht hinein", "preterito": "ging hinein", "participio": "hineingegangen", "auxiliar": "ist", "es": "entrar (en un sitio)", "nota": "Coloquial: reingehen." },
+    { "id": "herauskommen", "tipo": "verbo", "infinitivo": "heraus|kommen", "presente": "kommt heraus", "preterito": "kam heraus", "participio": "herausgekommen", "auxiliar": "ist", "es": "salir (hacia quien habla)", "nota": "Coloquial: rauskommen." },
+    { "id": "hinausgehen", "tipo": "verbo", "infinitivo": "hinaus|gehen", "presente": "geht hinaus", "preterito": "ging hinaus", "participio": "hinausgegangen", "auxiliar": "ist", "es": "salir (alejándose de quien habla)", "nota": "Coloquial: rausgehen." },
+    { "id": "herueberkommen", "tipo": "verbo", "infinitivo": "herüber|kommen", "presente": "kommt herüber", "preterito": "kam herüber", "participio": "herübergekommen", "auxiliar": "ist", "es": "venir al otro lado (hacia quien habla)", "nota": "Coloquial: rüberkommen." },
+    { "id": "hinueberfahren", "tipo": "verbo", "infinitivo": "hinüber|fahren", "presente": "fährt hinüber", "preterito": "fuhr hinüber", "participio": "hinübergefahren", "auxiliar": "ist", "es": "cruzar al otro lado (en vehículo)", "nota": "Coloquial: rüberfahren." },
+    { "id": "hinaufsteigen", "tipo": "verbo", "infinitivo": "hinauf|steigen", "presente": "steigt hinauf", "preterito": "stieg hinauf", "participio": "hinaufgestiegen", "auxiliar": "ist", "es": "subir (a pie, a una torre)", "nota": "steigen es irregular: stieg, gestiegen." },
+    { "id": "herunterfahren", "tipo": "verbo", "infinitivo": "herunter|fahren", "presente": "fährt herunter", "preterito": "fuhr herunter", "participio": "heruntergefahren", "auxiliar": "ist", "es": "bajar (una puerta automática, un coche por la cuesta)", "nota": "Coloquial: runterfahren." },
+    { "id": "rauffahren", "tipo": "verbo", "infinitivo": "rauf|fahren", "presente": "fährt rauf", "preterito": "fuhr rauf", "participio": "raufgefahren", "auxiliar": "ist", "es": "subir (en un vehículo)", "nota": "Forma coloquial de herauf|fahren / hinauf|fahren." },
+    { "id": "herausfinden", "tipo": "verbo", "infinitivo": "heraus|finden", "presente": "findet heraus", "preterito": "fand heraus", "participio": "herausgefunden", "auxiliar": "hat", "es": "averiguar, descubrir", "nota": "Aquí her- ya no marca dirección física." },
+    { "id": "herstellen", "tipo": "verbo", "infinitivo": "her|stellen", "presente": "stellt her", "preterito": "stellte her", "participio": "hergestellt", "auxiliar": "hat", "es": "fabricar, producir", "nota": "her- sin preposición y sin sentido de dirección." },
+    { "id": "herkommen", "tipo": "verbo", "infinitivo": "her|kommen", "presente": "kommt her", "preterito": "kam her", "participio": "hergekommen", "auxiliar": "ist", "es": "venir aquí", "nota": "Komm her! · Wo kommst du her? (= woher)" },
+    { "id": "hingehen", "tipo": "verbo", "infinitivo": "hin|gehen", "presente": "geht hin", "preterito": "ging hin", "participio": "hingegangen", "auxiliar": "ist", "es": "ir allí", "nota": "Wo gehst du hin? (= wohin)" },
+    { "id": "hinfahren", "tipo": "verbo", "infinitivo": "hin|fahren", "presente": "fährt hin", "preterito": "fuhr hin", "participio": "hingefahren", "auxiliar": "ist", "es": "ir allí (en vehículo)" },
+    { "id": "hinlegen", "tipo": "verbo", "infinitivo": "hin|legen", "presente": "legt hin", "preterito": "legte hin", "participio": "hingelegt", "auxiliar": "hat", "es": "dejar, poner (tumbado en un sitio)", "nota": "sich hinlegen = tumbarse." },
+    { "id": "hinsetzen", "tipo": "verbo", "infinitivo": "hin|setzen", "presente": "setzt hin", "preterito": "setzte hin", "participio": "hingesetzt", "auxiliar": "hat", "es": "sentar (a alguien) en un sitio", "nota": "sich hinsetzen = sentarse." },
+    { "id": "hinschauen", "tipo": "verbo", "infinitivo": "hin|schauen", "presente": "schaut hin", "preterito": "schaute hin", "participio": "hingeschaut", "auxiliar": "hat", "es": "mirar hacia allí", "nota": "Schau mal hin!" }
+  ]
+}

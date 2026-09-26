@@ -1,0 +1,75 @@
+{
+  "id": "je-desto",
+  "mazo": "k12-vocabulario",
+  "titulo": "je …, desto/umso …",
+  "descripcion": "«Cuanto más …, más …»: dos comparativos que van juntos, uno en la subordinada y otro en la principal.",
+  "fuente": "Netzwerk neu B1, Kapitel 12: Kursbuch S. 139 y 145 · Übungsbuch S. 142-143 · Intensivtrainer S. 62",
+  "libro": {
+    "referencia": "Kursbuch S. 139 (recuadro G) y S. 145 («kurz und klar»), Übungsbuch S. 142-143 e Intensivtrainer S. 62",
+    "puntos": [
+      "El recuadro del «kurz und klar» se titula «Sätze mit je …, desto/umso …» y marca en color los dos comparativos.",
+      "Lo que hay que recordar es el orden: la parte con je es una SUBORDINADA (verbo al final) y la parte con desto o umso es la principal (verbo justo detrás del comparativo).",
+      "desto y umso significan exactamente lo mismo y se pueden intercambiar.",
+      "El capítulo lo usa para hablar de dinero y de globalización: cuanto más alto es el crédito, más altos son los intereses."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Para qué sirve",
+      "texto": [
+        "Relaciona dos cosas que cambian a la vez: si una sube, la otra sube (o baja). En español es «cuanto más …, más …»."
+      ],
+      "ejemplos": [
+        { "de": "Je höher der Kredit ist, desto höher sind die Zinsen.", "es": "Cuanto más alto es el crédito, más altos son los intereses." },
+        { "de": "Je mehr wir konsumieren, umso mehr Müll entsteht.", "es": "Cuanto más consumimos, más basura se genera." },
+        { "de": "Je länger ich warte, desto teurer wird es.", "es": "Cuanto más espero, más caro sale." }
+      ],
+      "notas": [
+        "desto y umso son intercambiables: je …, desto … = je …, umso …"
+      ]
+    },
+    {
+      "titulo": "El orden de las dos partes",
+      "texto": [
+        "La parte con je es la subordinada: su verbo se va al FINAL. La parte con desto/umso es la principal: el verbo va justo detrás del comparativo, antes del sujeto."
+      ],
+      "tabla": {
+        "cabecera": ["Parte", "Estructura", "Ejemplo"],
+        "filas": [
+          ["je (subordinada)", "je + comparativo + … + VERBO", "Je höher der Kredit ist,"],
+          ["desto (principal)", "desto + comparativo + VERBO + sujeto", "desto höher sind die Zinsen."]
+        ]
+      },
+      "notas": [
+        "La parte con je va SIEMPRE delante; no se puede empezar por desto.",
+        "Entre las dos partes va coma."
+      ]
+    },
+    {
+      "titulo": "El comparativo va pegado a je y a desto",
+      "texto": [
+        "El comparativo no se queda suelto: va inmediatamente detrás de je y de desto/umso, aunque le acompañe un sustantivo."
+      ],
+      "ejemplos": [
+        { "de": "Je mehr Geld man hat, desto mehr Probleme hat man.", "es": "Cuanto más dinero se tiene, más problemas se tienen." },
+        { "de": "Je weniger Bargeld ich dabeihabe, desto weniger gebe ich aus.", "es": "Cuanto menos efectivo llevo encima, menos gasto." },
+        { "de": "Je besser du dich vorbereitest, desto ruhiger bist du.", "es": "Cuanto mejor te prepares, más tranquilo estarás." }
+      ],
+      "notas": [
+        "mehr y weniger no llevan terminación, y los demás comparativos aquí tampoco: desto höher, desto teurer, desto ruhiger.",
+        "Si el comparativo acompaña a un sustantivo, los dos van juntos detrás de je / desto: je mehr Geld …, desto mehr Probleme …"
+      ]
+    },
+    {
+      "titulo": "La versión corta",
+      "texto": [
+        "En expresiones hechas se usa mucho la forma reducida, sin verbos."
+      ],
+      "ejemplos": [
+        { "de": "Je mehr, desto besser.", "es": "Cuanto más, mejor." },
+        { "de": "Je früher, desto besser.", "es": "Cuanto antes, mejor." },
+        { "de": "Umso besser!", "es": "¡Mejor todavía!" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "tema": "participio-adjetivo",
+  "titulo": "El participio como adjetivo",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 141; Übungsbuch S. 144-145; Intensivtrainer S. 63), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "cual",
+      "titulo": "¿Partizip I o Partizip II?",
+      "instruccion": "¿El sustantivo hace la acción o la recibe?",
+      "modelo": "Kursbuch S. 145 («kurz und klar»)",
+      "ejercicios": [
+        { "id": "cu1", "partes": ["die ", " Wirtschaft (wachsen)"], "respuesta": "wachsende", "distractores": ["gewachsene", "wachsend", "wachsene"], "pista": "La economía crece ella misma → Partizip I: wachsend + -e." },
+        { "id": "cu2", "partes": ["das ", " Geld (sparen)"], "respuesta": "gesparte", "distractores": ["sparende", "gespart", "sparte"], "pista": "El dinero no ahorra: lo ahorran → Partizip II." },
+        { "id": "cu3", "partes": ["die ", " Preise (steigen)"], "respuesta": "steigenden", "distractores": ["gestiegene", "steigend", "steigende"], "pista": "Los precios suben solos → Partizip I; die + plural → -en." },
+        { "id": "cu4", "partes": ["der ", " Kredit (überziehen)"], "respuesta": "überzogene", "distractores": ["überziehende", "überzogen", "überziehend"], "pista": "El crédito lo han sobregirado → Partizip II." },
+        { "id": "cu5", "partes": ["die ", " Kinder (lachen)"], "respuesta": "lachenden", "distractores": ["gelachten", "lachend", "gelachte"], "pista": "Los niños ríen → Partizip I; die + plural → -en." },
+        { "id": "cu6", "partes": ["das ", " Handy (reparieren)"], "respuesta": "reparierte", "distractores": ["reparierende", "repariert", "reparierend"], "pista": "El móvil lo han reparado → Partizip II." },
+        { "id": "cu7", "partes": ["die ", " Gebühren (an|fallen)"], "respuesta": "anfallenden", "distractores": ["angefallenen", "anfallend", "fallenden an"], "pista": "Las comisiones se generan solas → Partizip I; el prefijo se queda delante." },
+        { "id": "cu8", "partes": ["das ", " Geld (ein|zahlen)"], "respuesta": "eingezahlte", "distractores": ["einzahlende", "eingezahlt", "zahlende ein"], "pista": "El dinero lo han ingresado → Partizip II, con el prefijo delante." }
+      ]
+    },
+    {
+      "id": "terminacion",
+      "titulo": "La terminación",
+      "instruccion": "Completa la terminación del participio.",
+      "modelo": "Kursbuch S. 141 · Übungsbuch S. 144",
+      "ejercicios": [
+        { "id": "te1", "partes": ["Wir leben in einer ", " Wirtschaft. (wachsend)"], "respuesta": "wachsenden", "distractores": ["wachsende", "wachsender", "wachsendes"], "pista": "in einer + dativo femenino → -en." },
+        { "id": "te2", "partes": ["Das ist ein ", " Problem. (wachsend)"], "respuesta": "wachsendes", "distractores": ["wachsende", "wachsenden", "wachsender"], "pista": "ein + neutro nominativo → -es." },
+        { "id": "te3", "partes": ["Mit dem ", " Geld kaufe ich mir ein Fahrrad. (gespart)"], "respuesta": "gesparten", "distractores": ["gesparte", "gespartes", "gesparter"], "pista": "mit dem + dativo neutro → -en." },
+        { "id": "te4", "partes": ["", " Kosten sind ein Problem für viele Familien. (steigend)"], "respuesta": "Steigende", "distractores": ["Steigenden", "Steigendes", "Steigender"], "pista": "Plural sin artículo, nominativo → -e." },
+        { "id": "te5", "partes": ["Er hat mir den ", " Betrag zurückgezahlt. (geliehen)"], "respuesta": "geliehenen", "distractores": ["geliehene", "geliehenes", "geliehener"], "pista": "den + acusativo masculino → -en." },
+        { "id": "te6", "partes": ["Das ist eine ", " Frage. (offen geblieben)"], "respuesta": "offengebliebene", "distractores": ["offengeblieben", "offenbleibende", "offengebliebenen"], "pista": "eine + femenino nominativo → -e." },
+        { "id": "te7", "partes": ["Wir sprechen über die ", " Globalisierung. (fortschreitend)"], "respuesta": "fortschreitende", "distractores": ["fortschreitenden", "fortgeschrittene", "fortschreitend"], "pista": "über die + acusativo femenino → -e." }
+      ]
+    },
+    {
+      "id": "relativa",
+      "titulo": "Lo mismo con una relativa",
+      "instruccion": "Di lo mismo con una oración de relativo.",
+      "modelo": "Kursbuch S. 141 · Intensivtrainer S. 63",
+      "ejercicios": [
+        { "id": "re1", "partes": null, "pregunta": "die wachsende Wirtschaft", "respuesta": "die Wirtschaft, die wächst", "distractores": ["die Wirtschaft, die gewachsen ist", "die Wirtschaft, die man wächst", "die Wirtschaft, die wachsen wird"], "pista": "Partizip I = la acción está pasando ahora." },
+        { "id": "re2", "partes": null, "pregunta": "das gesparte Geld", "respuesta": "das Geld, das man gespart hat", "distractores": ["das Geld, das spart", "das Geld, das sparen wird", "das Geld, das sich spart"], "pista": "Partizip II = ya está hecho, y aquí con sentido pasivo." },
+        { "id": "re3", "partes": null, "pregunta": "die steigenden Preise", "respuesta": "die Preise, die steigen", "distractores": ["die Preise, die gestiegen sind", "die Preise, die man steigt", "die Preise, die steigen werden"], "pista": "Partizip I." },
+        { "id": "re4", "partes": null, "pregunta": "der überzogene Kredit", "respuesta": "der Kredit, den man überzogen hat", "distractores": ["der Kredit, der überzieht", "der Kredit, der überzogen wird immer", "der Kredit, der sich überzogen hat"], "pista": "Partizip II con sentido pasivo → den … überzogen hat." },
+        { "id": "re5", "partes": null, "pregunta": "die anfallenden Gebühren", "respuesta": "die Gebühren, die anfallen", "distractores": ["die Gebühren, die angefallen sind", "die Gebühren, die man anfällt", "die Gebühren, die anfallen werden"], "pista": "Partizip I de un verbo separable: an|fallen." },
+        { "id": "re6", "partes": null, "pregunta": "das eingezahlte Geld", "respuesta": "das Geld, das man eingezahlt hat", "distractores": ["das Geld, das einzahlt", "das Geld, das einzahlen wird", "das Geld, das sich eingezahlt hat"], "pista": "Partizip II de ein|zahlen." }
+      ]
+    }
+  ]
+}

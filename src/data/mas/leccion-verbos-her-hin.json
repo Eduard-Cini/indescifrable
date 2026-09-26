@@ -1,0 +1,91 @@
+{
+  "id": "verbos-her-hin",
+  "mazo": "verbos-her-hin",
+  "titulo": "Verbos con her- y hin-",
+  "descripcion": "Formación de palabras del capítulo 12: los prefijos que marcan la dirección. her- = hacia quien habla; hin- = alejándose de quien habla.",
+  "fuente": "Netzwerk neu B1, Kapitel 12: Übungsbuch S. 146 (Wortbildung) · Intensivtrainer S. 65",
+  "libro": {
+    "referencia": "Übungsbuch S. 146 («Wortbildung – Verben mit her- und hin-», A-B) e Intensivtrainer S. 65",
+    "puntos": [
+      "Es un apartado de Wortbildung: el libro dibuja a una mujer en una ventana y a un hombre en la calle, y hay que decidir quién dice cada frase.",
+      "El recuadro W lo resume en tres líneas: «Die Präfixe hin- und her- zeigen die Richtung an», que muchas veces se les añade una preposición (herauf, hinunter), y que en la lengua hablada se dice solo rauf, runter, rein.",
+      "Las frases del ejercicio son las típicas de un portal: «Komm herauf», «Ich kann nicht hinaufkommen», «Willst du nicht heruntekommen?», «Ich lasse dich gleich herein».",
+      "El dibujo del recuadro es la mejor regla: la flecha de hin apunta hacia fuera del que habla y la de her, hacia él."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "La regla, en una imagen",
+      "texto": [
+        "Los dos prefijos indican una dirección, y la referencia es SIEMPRE quien habla."
+      ],
+      "tabla": {
+        "cabecera": ["Prefijo", "Dirección", "Ejemplo", "Quién lo dice"],
+        "filas": [
+          ["her-", "hacia quien habla", "Komm herauf!", "la que está arriba"],
+          ["hin-", "alejándose de quien habla", "Ich kann nicht hinaufkommen.", "el que está abajo"],
+          ["her-", "hacia quien habla", "Ich lasse dich gleich herein.", "el que está dentro"],
+          ["hin-", "alejándose de quien habla", "Ich kann nicht ins Haus hinein.", "el que está fuera"]
+        ]
+      },
+      "notas": [
+        "Por eso la misma escalera se sube «herauf» o «hinauf» según dónde esté quien habla."
+      ]
+    },
+    {
+      "titulo": "Con preposición pegada",
+      "texto": [
+        "Casi siempre se le añade una preposición que precisa el movimiento: auf, unter, ein, aus, über."
+      ],
+      "tabla": {
+        "cabecera": ["Movimiento", "Hacia mí (her-)", "Alejándose (hin-)"],
+        "filas": [
+          ["hacia arriba", "herauf", "hinauf"],
+          ["hacia abajo", "herunter", "hinunter"],
+          ["hacia dentro", "herein", "hinein"],
+          ["hacia fuera", "heraus", "hinaus"],
+          ["al otro lado", "herüber", "hinüber"]
+        ]
+      },
+      "notas": [
+        "El conjunto funciona como un prefijo separable: Er kommt herauf. Er ist heraufgekommen.",
+        "En el Partizip II el -ge- va entre el prefijo y el verbo: heraufgekommen, hinuntergegangen."
+      ]
+    },
+    {
+      "titulo": "En la lengua hablada: rauf, runter, rein, raus",
+      "texto": [
+        "Hablando casi nadie distingue her- y hin-: se usa una forma corta que vale para las dos."
+      ],
+      "tabla": {
+        "cabecera": ["Formal", "Coloquial", "Significado"],
+        "filas": [
+          ["herauf / hinauf", "rauf", "hacia arriba"],
+          ["herunter / hinunter", "runter", "hacia abajo"],
+          ["herein / hinein", "rein", "hacia dentro"],
+          ["heraus / hinaus", "raus", "hacia fuera"],
+          ["herüber / hinüber", "rüber", "al otro lado"]
+        ]
+      },
+      "notas": [
+        "Estas formas ya han aparecido en otros capítulos: rauf|fahren y rum|fahren en el 11, raus en el 3."
+      ]
+    },
+    {
+      "titulo": "her- y hin- sin preposición",
+      "texto": [
+        "Solos también funcionan, y aparecen en preguntas muy frecuentes."
+      ],
+      "ejemplos": [
+        { "de": "Komm her!", "es": "¡Ven aquí!" },
+        { "de": "Wo kommst du her?", "es": "¿De dónde vienes?" },
+        { "de": "Wo gehst du hin?", "es": "¿Adónde vas?" },
+        { "de": "Das ist schon lange her.", "es": "De eso hace ya mucho." }
+      ],
+      "notas": [
+        "En woher y wohin se ve la misma lógica: woher = ¿de dónde? (hacia mí), wohin = ¿adónde? (lejos de mí).",
+        "En la lengua hablada se separan: Wo kommst du her? Wo gehst du hin?"
+      ]
+    }
+  ]
+}

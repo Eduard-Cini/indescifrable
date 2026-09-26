@@ -1,0 +1,87 @@
+{
+  "id": "participio-adjetivo",
+  "mazo": "k12-vocabulario",
+  "titulo": "El participio como adjetivo",
+  "descripcion": "die wachsende Wirtschaft, das gesparte Geld: el Partizip I y el Partizip II delante del sustantivo, con terminación de adjetivo.",
+  "fuente": "Netzwerk neu B1, Kapitel 12: Kursbuch S. 141 y 145 · Übungsbuch S. 144-145 · Intensivtrainer S. 63",
+  "libro": {
+    "referencia": "Kursbuch S. 141 (recuadro G) y S. 145 («kurz und klar»), Übungsbuch S. 144-145 e Intensivtrainer S. 63",
+    "puntos": [
+      "El recuadro del «kurz und klar» se titula «Partizip als Adjektiv» y separa las dos formas: Partizip I y Partizip II.",
+      "El Partizip I se forma con el infinitivo + -d (wachsen → wachsend) y expresa que la acción está pasando.",
+      "El Partizip II es el de siempre (sparen → gespart) y expresa que la acción ya está hecha.",
+      "Y subraya lo esencial: delante de un sustantivo los dos se declinan como cualquier adjetivo.",
+      "El capítulo lo usa para describir personas, cosas y situaciones con más detalle, y para escribir y comentar una historia."
+    ]
+  },
+  "secciones": [
+    {
+      "titulo": "Dos participios, dos significados",
+      "tabla": {
+        "cabecera": ["Forma", "Cómo se hace", "Qué dice", "Ejemplo"],
+        "filas": [
+          ["Partizip I", "infinitivo + -d", "la acción está pasando", "wachsen → die wachsende Wirtschaft"],
+          ["Partizip II", "el participio normal", "la acción ya está hecha", "sparen → das gesparte Geld"]
+        ]
+      },
+      "notas": [
+        "Partizip I = activo y en curso: die lachenden Kinder = los niños que ríen.",
+        "Partizip II = resultado, muchas veces pasivo: das reparierte Handy = el móvil que han reparado."
+      ]
+    },
+    {
+      "titulo": "Se declinan como cualquier adjetivo",
+      "texto": [
+        "Primero se forma el participio y ENCIMA se pone la terminación de siempre, la que pida el artículo, el género y el caso."
+      ],
+      "tabla": {
+        "cabecera": ["Con artículo", "Partizip I", "Partizip II"],
+        "filas": [
+          ["der / die / das", "die wachsende Wirtschaft", "das gesparte Geld"],
+          ["ein / eine", "ein wachsendes Problem", "ein gespartes Vermögen"],
+          ["sin artículo", "wachsende Kosten", "gesparte Euros"],
+          ["en dativo", "mit wachsenden Kosten", "mit gespartem Geld"]
+        ]
+      },
+      "notas": [
+        "El participio solo cambia si va DELANTE del sustantivo. Detrás del verbo se queda sin terminación: Die Wirtschaft ist wachsend (poco frecuente) · Das Geld ist gespart."
+      ]
+    },
+    {
+      "titulo": "Equivale a una relativa",
+      "texto": [
+        "Un participio delante del sustantivo dice lo mismo que una oración de relativo, pero en una sola palabra. Por eso es típico de los textos escritos."
+      ],
+      "tabla": {
+        "cabecera": ["Con participio", "Con relativa"],
+        "filas": [
+          ["die wachsende Wirtschaft", "die Wirtschaft, die wächst"],
+          ["das gesparte Geld", "das Geld, das man gespart hat"],
+          ["die steigenden Preise", "die Preise, die steigen"],
+          ["der überzogene Kredit", "der Kredit, den man überzogen hat"]
+        ]
+      },
+      "notas": [
+        "Truco para elegir: si el sustantivo HACE la acción, Partizip I; si la RECIBE, Partizip II."
+      ]
+    },
+    {
+      "titulo": "Casos especiales",
+      "texto": [
+        "Dos detalles que conviene tener claros."
+      ],
+      "tabla": {
+        "cabecera": ["Caso", "Regla", "Ejemplo"],
+        "filas": [
+          ["verbos separables", "el prefijo se queda delante", "die anfallenden Gebühren · das eingezahlte Geld"],
+          ["verbos con sein", "el Partizip II sí se puede usar de adjetivo", "der angekommene Brief · die gestiegenen Preise"],
+          ["Partizip II ya lexicalizado", "funciona como un adjetivo normal", "geöffnet, geschlossen, bekannt, begeistert"]
+        ]
+      },
+      "notas": [
+        "Muchos participios se han convertido en adjetivos de pleno derecho y aparecen así en el diccionario: interessiert, begeistert, geregelt, qualifiziert.",
+        "Y algunos se han convertido en sustantivos: der/die Angestellte, der/die Studierende (capítulo 11)."
+      ]
+    }
+  ]
+}

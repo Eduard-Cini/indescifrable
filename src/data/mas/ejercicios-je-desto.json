@@ -1,0 +1,50 @@
+{
+  "tema": "je-desto",
+  "titulo": "je …, desto/umso …",
+  "nota": "Ejercicios propios que siguen el modelo de los del libro (Kursbuch S. 139; Übungsbuch S. 142-143; Intensivtrainer S. 62), con frases nuevas.",
+  "tandas": [
+    {
+      "id": "orden",
+      "titulo": "El verbo, en su sitio",
+      "instruccion": "¿Cuál es la frase correcta?",
+      "modelo": "Kursbuch S. 139 (recuadro G)",
+      "ejercicios": [
+        { "id": "or1", "partes": null, "pregunta": "«Cuanto más alto es el crédito, más altos son los intereses.»", "respuesta": "Je höher der Kredit ist, desto höher sind die Zinsen.", "distractores": ["Je höher ist der Kredit, desto höher sind die Zinsen.", "Je höher der Kredit ist, desto höher die Zinsen sind.", "Desto höher der Kredit ist, je höher sind die Zinsen."], "pista": "En la parte con je el verbo va al final; en la de desto, justo detrás del comparativo." },
+        { "id": "or2", "partes": null, "pregunta": "«Cuanto más consumimos, más basura se genera.»", "respuesta": "Je mehr wir konsumieren, umso mehr Müll entsteht.", "distractores": ["Je mehr konsumieren wir, umso mehr Müll entsteht.", "Je mehr wir konsumieren, umso mehr entsteht Müll nicht.", "Umso mehr wir konsumieren, je mehr Müll entsteht."], "pista": "umso vale igual que desto; la parte con je va siempre delante." },
+        { "id": "or3", "partes": null, "pregunta": "«Cuanto más espero, más caro sale.»", "respuesta": "Je länger ich warte, desto teurer wird es.", "distractores": ["Je länger warte ich, desto teurer wird es.", "Je länger ich warte, desto teurer es wird.", "Desto länger ich warte, je teurer wird es."], "pista": "warte cierra la subordinada; wird va detrás de teurer." },
+        { "id": "or4", "partes": null, "pregunta": "«Cuanto mejor te prepares, más tranquilo estarás.»", "respuesta": "Je besser du dich vorbereitest, desto ruhiger bist du.", "distractores": ["Je besser bereitest du dich vor, desto ruhiger bist du.", "Je besser du dich vorbereitest, desto ruhiger du bist.", "Je besser du dich vorbereitest, bist du desto ruhiger."], "pista": "vor|bereiten se junta al final de la subordinada." },
+        { "id": "or5", "partes": null, "pregunta": "«Cuanto menos efectivo llevo encima, menos gasto.»", "respuesta": "Je weniger Bargeld ich dabeihabe, desto weniger gebe ich aus.", "distractores": ["Je weniger Bargeld habe ich dabei, desto weniger gebe ich aus.", "Je weniger Bargeld ich dabeihabe, desto weniger ich ausgebe.", "Je weniger Bargeld ich dabeihabe, desto weniger ich gebe aus."], "pista": "En la principal, aus|geben sí se separa: gebe … aus." },
+        { "id": "or6", "partes": null, "pregunta": "«Cuanto antes pagues, menos intereses te salen.»", "respuesta": "Je früher du zahlst, desto weniger Zinsen fallen an.", "distractores": ["Je früher zahlst du, desto weniger Zinsen fallen an.", "Je früher du zahlst, desto weniger Zinsen an fallen.", "Desto früher du zahlst, je weniger Zinsen fallen an."], "pista": "an|fallen se separa en la principal." }
+      ]
+    },
+    {
+      "id": "comparativo",
+      "titulo": "El comparativo",
+      "instruccion": "Completa con el comparativo que toca.",
+      "modelo": "Übungsbuch S. 142",
+      "ejercicios": [
+        { "id": "cm1", "partes": ["Je ", " Geld man hat, desto mehr Probleme hat man."], "respuesta": "mehr", "distractores": ["viel", "mehrere", "meisten"], "pista": "viel → mehr, sin terminación." },
+        { "id": "cm2", "partes": ["Je mehr man spart, desto ", " kann man sich leisten."], "respuesta": "mehr", "distractores": ["viel", "meist", "mehrere"], "pista": "También en la segunda parte el comparativo va pegado a desto." },
+        { "id": "cm3", "partes": ["Je ", " die Rate ist, desto länger zahlt man."], "respuesta": "kleiner", "distractores": ["klein", "kleinste", "am kleinsten"], "pista": "Hace falta el comparativo: klein → kleiner." },
+        { "id": "cm4", "partes": ["Je später du kommst, desto ", " ist der Platz."], "respuesta": "schlechter", "distractores": ["schlecht", "schlechteste", "am schlechtesten"], "pista": "schlecht → schlechter." },
+        { "id": "cm5", "partes": ["Je ", " ich schlafe, desto besser arbeite ich."], "respuesta": "länger", "distractores": ["lang", "längste", "am längsten"], "pista": "lang → länger, con Umlaut." },
+        { "id": "cm6", "partes": ["Je weniger wir wegwerfen, desto ", " für die Umwelt."], "respuesta": "besser", "distractores": ["gut", "beste", "am besten"], "pista": "gut → besser." },
+        { "id": "cm7", "partes": ["Je ", " die Zinsen sind, desto teurer wird der Kredit."], "respuesta": "höher", "distractores": ["hoch", "höchste", "am höchsten"], "pista": "hoch → höher: se pierde la -c-." }
+      ]
+    },
+    {
+      "id": "unir",
+      "titulo": "Junta las dos ideas",
+      "instruccion": "Forma una frase con je …, desto …",
+      "modelo": "Übungsbuch S. 143 · Intensivtrainer S. 62",
+      "ejercicios": [
+        { "id": "un1", "partes": null, "pregunta": "Man verdient viel. + Man zahlt viele Steuern.", "respuesta": "Je mehr man verdient, desto mehr Steuern zahlt man.", "distractores": ["Je mehr verdient man, desto mehr Steuern zahlt man.", "Je mehr man verdient, desto mehr Steuern man zahlt.", "Je viel man verdient, desto viel Steuern zahlt man."], "pista": "viel → mehr en las dos partes." },
+        { "id": "un2", "partes": null, "pregunta": "Das Produkt ist billig. + Die Qualität ist schlecht.", "respuesta": "Je billiger das Produkt ist, desto schlechter ist die Qualität.", "distractores": ["Je billiger ist das Produkt, desto schlechter ist die Qualität.", "Je billiger das Produkt ist, desto schlechter die Qualität ist.", "Je billig das Produkt ist, desto schlecht ist die Qualität."], "pista": "Los dos adjetivos van en comparativo." },
+        { "id": "un3", "partes": null, "pregunta": "Wir warten lange. + Es wird teuer.", "respuesta": "Je länger wir warten, desto teurer wird es.", "distractores": ["Je länger warten wir, desto teurer wird es.", "Je länger wir warten, desto teurer es wird.", "Je lang wir warten, desto teuer wird es."], "pista": "lang → länger; teuer → teurer (se pierde la -e-)." },
+        { "id": "un4", "partes": null, "pregunta": "Man liest die Bedingungen genau. + Man hat wenige Probleme.", "respuesta": "Je genauer man die Bedingungen liest, desto weniger Probleme hat man.", "distractores": ["Je genauer liest man die Bedingungen, desto weniger Probleme hat man.", "Je genauer man die Bedingungen liest, desto weniger Probleme man hat.", "Je genau man die Bedingungen liest, desto wenig Probleme hat man."], "pista": "wenig → weniger; el sustantivo va pegado al comparativo." },
+        { "id": "un5", "partes": null, "pregunta": "Die Firma ist groß. + Der Einfluss ist stark.", "respuesta": "Je größer die Firma ist, desto stärker ist der Einfluss.", "distractores": ["Je größer ist die Firma, desto stärker ist der Einfluss.", "Je größer die Firma ist, desto stärker der Einfluss ist.", "Je groß die Firma ist, desto stark ist der Einfluss."], "pista": "groß → größer; stark → stärker, los dos con Umlaut." },
+        { "id": "un6", "partes": null, "pregunta": "Du fängst früh an. + Du bist früh fertig.", "respuesta": "Je früher du anfängst, desto früher bist du fertig.", "distractores": ["Je früher fängst du an, desto früher bist du fertig.", "Je früher du anfängst, desto früher du fertig bist.", "Je früher du an fängst, desto früher bist du fertig."], "pista": "an|fangen se junta al final de la subordinada: anfängst." }
+      ]
+    }
+  ]
+}
