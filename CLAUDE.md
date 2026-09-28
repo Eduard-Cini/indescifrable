@@ -118,6 +118,11 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   - **Sección 2 — Repaso**: `documentacion-seccion2`, `metricas-seccion2` (simulación + Markov + modelo de conocimiento), `autoaprendizaje-seccion2`.
   - **Sección 3 — Gramática**: `documentacion-seccion3`, `metricas-seccion3` (distractores híbridos, filtros de unicidad, conteos del corpus), `autoaprendizaje-seccion3`.
   - **Sección 4 — Juegos**: `documentacion-seccion4`, `metricas-seccion4` (grafo de Hamming del corpus, éxito del backtracking, entropía del Wordle, disponibilidad por lectura; lee `docs/datos-juegos.json` → correr antes `npm run simular-juegos`), `autoaprendizaje-seccion4`.
+- **Material de estudio** (`material/`, fuera del sitio): `aleman-tecnico-openmp-cap1.pdf`
+  (`python material/generar_aleman_tecnico_openmp.py`), cuaderno bilingüe alemán | español de
+  alemán técnico sobre los temas del cap. 1 de Hoffmann/Lienhart, *OpenMP* (Springer 2008).
+  Texto PROPIO (el libro tiene copyright: no se traduce ni se reproduce) + glosario con la
+  página del libro + estructuras típicas del alemán técnico.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
