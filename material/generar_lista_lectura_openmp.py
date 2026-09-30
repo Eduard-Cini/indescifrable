@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Genera material/lista-lectura-openmp-cap1.pdf: lista de lectura PÁGINA A PÁGINA para leer
-el capítulo 1 («Einführung», pp. 1-21) de S. Hoffmann y R. Lienhart, «OpenMP. Eine Einführung
-in die parallele Programmierung mit C/C++» (Springer 2008) con nivel B1−.
+el prólogo («Vorwort», pp. V-VI) y el capítulo 1 («Einführung», pp. 1-21) de S. Hoffmann y
+R. Lienhart, «OpenMP. Eine Einführung in die parallele Programmierung mit C/C++» (Springer 2008)
+con nivel B1−. El orden es el de lectura: lo que aparece ya en el Vorwort se explica allí.
 
 Por cada página del libro: el vocabulario por encima de B1 en orden de aparición (solo la
 primera vez; sustantivos con género y plural, verbos con presente, Präteritum, Partizip II y
@@ -95,6 +96,130 @@ TIPOS = {
 # ================================================================ PÁGINA A PÁGINA
 # (página del libro, apartado, vocabulario en orden de aparición, gramática)
 PAGINAS = [
+    ("V", "Vorwort", [
+        N("die", "Einführung", "Einführungen", "introducción; aquí: lanzamiento (de una tecnología)"),
+        N("der", "Arbeitsplatzrechner", "Arbeitsplatzrechner", "ordenador de escritorio"),
+        N("die", "Fähigkeit", "Fähigkeiten", "capacidad"),
+        X("echt", "Adj./Adv.", "aquí: realmente (echt gleichzeitig = realmente a la vez)"),
+        N("der", "Rechner", "Rechner", "ordenador, computadora"),
+        V("ausführen", "führt aus", "führte aus", "hat ausgeführt", None, "téc. ejecutar"),
+        V("sich verfestigen", "verfestigt sich", "verfestigte sich", "hat sich verfestigt", None,
+          "consolidarse"),
+        X("derartig", "Adj.", "semejante, de este tipo (derartige Prozessoren)"),
+        V("ausnutzen", "nutzt aus", "nutzte aus", "hat ausgenutzt", None, "aprovechar (al máximo)"),
+        X("zwingend", "Adj./Adv.", "obligatorio (zwingend notwendig = absolutamente necesario)"),
+        N("die", "Anwendung", "Anwendungen", "téc. aplicación, programa (normalmente: uso, empleo)"),
+        V("parallelisieren", "parallelisiert", "parallelisierte", "hat parallelisiert", None,
+          "paralelizar"),
+        V("verstehen", "versteht", "verstand", "hat verstanden", "unter + D",
+          "entender por (unter X versteht man Y)"),
+        N("die", "Parallelisierung", "Parallelisierungen", "paralelización"),
+        X("nebeneinander", "Adv.", "uno al lado del otro; aquí: en paralelo"),
+        N("die", "Gesamtaufgabe", "Gesamtaufgaben", "tarea completa, tarea global"),
+        X("seriell", "Adj.", "serial, secuencial (= sequenziell)"),
+        N("die", "Verarbeitung", "Verarbeitungen", "procesamiento"),
+        X("dabei", "Adv.", "en ello, al respecto; aquí: y es que"),
+        V("zwingen", "zwingt", "zwang", "hat gezwungen", "A + zu + Inf.",
+          "obligar a alguien a hacer algo"),
+        N("der", "Entwurf", "Entwürfe", "diseño; también: borrador"),
+        X("langfristig", "Adj./Adv.", "a largo plazo"),
+        V("sich befassen", "befasst sich", "befasste sich", "hat sich befasst", "mit + D",
+          "ocuparse de"),
+        V("sich verdoppeln", "verdoppelt sich", "verdoppelte sich", "hat sich verdoppelt", None,
+          "duplicarse"),
+        N("der", "Zuwachs", "Zuwächse", "aumento (Produktivitätszuwachs = aumento de productividad)"),
+        N("das", "Entwurfswerkzeug", "Entwurfswerkzeuge", "herramienta de diseño"),
+        X("zur Verfügung stehen / stellen", "Ausdruck",
+          "estar disponible / poner a disposición (stand, hat gestanden · stellte, hat gestellt)"),
+        N("das", "Bauteil", "Bauteile", "componente, pieza"),
+    ], [
+        G("infzu", "Seit der Einführung … haben … die Fähigkeit, … auszuführen",
+          "**seit + presente**: algo que empezó y sigue: «desde la introducción… tienen». Y "
+          "**sustantivo + infinitivo con zu**: *die Fähigkeit, … auszuführen* = «la capacidad de "
+          "ejecutar…» (el infinitivo llega dos líneas después)."),
+        G("guion", "mit den aktuellen Dualcore- und Quadcore-CPUs",
+          "**Guion de ahorro**: el guion sustituye a la parte repetida (*Dualcore-* = "
+          "*Dualcore-CPUs*). Igual: *an- und ausschalten* (p. 2), *Daten- und Kontrollflüsse* "
+          "(p. 11), *Ein- und Ausgabe* (p. 18)."),
+        G("infzu", "Um … ausnutzen zu können, ist es zwingend notwendig, … zu parallelisieren",
+          "**um … zu** con modal (*ausnutzen zu können* = «para poder aprovechar») + **es ist "
+          "notwendig, … zu** = «es imprescindible paralelizar…»."),
+        G("otros", "Unter der Parallelisierung … versteht man, dass …",
+          "**Definición**: *unter X versteht man Y* = «por X se entiende Y»."),
+        G("infzu", "zwingen … jeden Programmierer, sich … zu befassen",
+          "**zwingen + acusativo + zu + infinitivo** con verbo reflexivo (el *sich* va delante): "
+          "«obligan a todo programador a ocuparse…»."),
+        G("otros", "Die Produktivitätzuwächse … steigt …",
+          "**¡Dos erratas!** El compuesto lleva *s* de unión (*Produktivitätszuwächse*) y, como "
+          "el sujeto es plural, el verbo también: *steigen*."),
+        G("part", "die Anzahl der zur Verfügung stehenden Bauteile",
+          "**Atributo participial** (participio I de *zur Verfügung stehen*): «el número de "
+          "componentes disponibles». Truco: artículo → sustantivo → vuelve atrás."),
+    ]),
+    ("VI", "Vorwort", [
+        V("verplanen", "verplant", "verplante", "hat verplant", None,
+          "aquí: planificar el uso de (normalmente: comprometer tiempo o dinero)"),
+        N("der", "Ausweg", "Auswege", "salida, solución"),
+        N("die", "Funktionseinheit", "Funktionseinheiten", "unidad funcional"),
+        V("schwerfallen", "fällt schwer", "fiel schwer", "ist schwergefallen", "+ D",
+          "resultar difícil (es fällt schwer, … zu …)"),
+        N("die", "Einhaltung", None, "cumplimiento, respeto (unter Einhaltung + G = respetando)"),
+        X("gegeben", "Adj.", "dado (eine gegebene Leistungsaufnahme; ein Problem gegebener Größe)"),
+        N("die", "Leistungsaufnahme", None, "consumo de potencia (eléctrica)"),
+        V("verarbeiten", "verarbeitet", "verarbeitete", "hat verarbeitet", None, "procesar"),
+        V("erhöhen", "erhöht", "erhöhte", "hat erhöht", None, "aumentar"),
+        N("die", "Taktrate", "Taktraten", "frecuencia de reloj (= die Taktfrequenz)"),
+        N("die", "Transistorstruktur", "Transistorstrukturen", "estructura de transistores"),
+        X("sogenannt", "Adj.", "llamado, denominado"),
+        N("der", "Leckstrom", "Leckströme", "corriente de fuga"),
+        V("zunehmen", "nimmt zu", "nahm zu", "hat zugenommen", None,
+          "aumentar, crecer (también: engordar)"),
+        N("der", "Informatiker", "Informatiker", "informático"),
+        N("das", "Erlernen", None, "aprendizaje (de erlernen = aprender a fondo)"),
+        X("unabdingbar", "Adj.", "imprescindible"),
+        X("verständlich", "Adj.", "comprensible"),
+        V("durchführen", "führt durch", "führte durch", "hat durchgeführt", None,
+          "llevar a cabo, realizar"),
+        X("vorliegend", "Adj.", "presente (das vorliegende Buch = este libro)"),
+        V("berücksichtigen", "berücksichtigt", "berücksichtigte", "hat berücksichtigt", None,
+          "tener en cuenta"),
+        N("die", "Öffentlichkeit", None, "el público, la opinión pública"),
+        X("zugänglich", "Adj.", "accesible (zugänglich machen = hacer público)"),
+        N("der", "Helfer", "Helfer", "ayudante, colaborador"),
+        N("der", "Dank", None, "agradecimiento (unser Dank gilt + D = agradecemos a)"),
+        N("das", "Korrekturlesen", None, "corrección de pruebas"),
+        N("der", "Verlag", "Verlage", "editorial"),
+        N("die", "Zusammenarbeit", None, "colaboración"),
+        N("die", "Unterstützung", "Unterstützungen", "apoyo (technische Unterstützung = soporte técnico)"),
+        N("die", "Zeitersparnis", "Zeitersparnisse", "ahorro de tiempo"),
+    ], [
+        G("infzu", "Ein „einfacher“ Ausweg ist es, … zu replizieren",
+          "**es + infinitivo con zu** como sujeto: «una salida “fácil” es replicar…». Las "
+          "comillas indican ironía."),
+        G("otros", "fällt es immer schwerer, … zu erhöhen",
+          "**es fällt schwer, … zu** = «resulta difícil…»; **immer + comparativo** = «cada vez "
+          "más»: «cada vez resulta más difícil aumentar…»."),
+        G("otros", "unter Einhaltung einer … Leistungsaufnahme",
+          "**Estilo nominal**: *unter* + sustantivo en *-ung* + genitivo = «respetando un "
+          "consumo…». Igual: *unter Vernachlässigung* (p. 15)."),
+        G("rel", "die Geschwindigkeit, mit der … verarbeitet werden",
+          "**Relativo con preposición** + pasiva: «la velocidad con la que se procesan…»."),
+        G("otros", "das Erlernen der parallelen Programmierung",
+          "**Infinitivo sustantivado** (*das Erlernen*, neutro) + genitivo: «el aprendizaje de la "
+          "programación paralela»."),
+        G("infzu", "eine Programmiertechnik, diese … durchführen zu können",
+          "**Infinitivo con zu + modal** que completa al sustantivo: «una técnica para poder "
+          "llevarla a cabo…» (*diese* = la programación paralela)."),
+        G("infzu", "Das Ziel des vorliegenden Buches ist es, … vorzustellen",
+          "**es** anticipa el infinitivo con *zu*: «el objetivo de este libro es presentar…». En "
+          "los separables, *zu* va dentro: *vor·zu·stellen*."),
+        G("pasmod", "wird der … Entwurf …, die … gemacht worden ist, berücksichtigt",
+          "**Pasiva** *wird … berücksichtigt* («se tiene en cuenta») que encierra una relativa "
+          "en **perfecto pasivo** (*gemacht worden ist* = «ha sido hecha»); *die* se refiere a "
+          "*Spezifikation*."),
+        G("otros", "Unser Dank gilt … für …",
+          "**Fórmula de agradecimiento**: *unser Dank gilt + dativo* = «agradecemos a…»."),
+    ]),
     (1, "Kap. 1 · Einführung", [
         N("die", "Programmierschnittstelle", "Programmierschnittstellen", "interfaz de programación (API)"),
         N("die", "Parallelität", None, "paralelismo"),
@@ -102,7 +227,6 @@ PAGINAS = [
           "especificar, definir con precisión"),
         X("konkurrierend", "Adj.", "que compite, alternativo", "konkurrierende Ansätze"),
         N("der", "Ansatz", "Ansätze", "enfoque, planteamiento"),
-        N("die", "Parallelisierung", "Parallelisierungen", "paralelización"),
         V("erfordern", "erfordert", "erforderte", "hat erfordert", None, "requerir, exigir"),
         X("ursprünglich", "Adj./Adv.", "original(mente)"),
         X("sequenziell", "Adj.", "secuencial (también se escribe sequentiell)"),
@@ -121,8 +245,6 @@ PAGINAS = [
         N("die", "Spezifizierung", "Spezifizierungen", "especificación"),
         X("kaum", "Adv.", "apenas, casi no (kaum einen schnelleren Weg = casi ningún camino más "
                           "rápido)"),
-        V("parallelisieren", "parallelisiert", "parallelisierte", "hat parallelisiert", None,
-          "paralelizar"),
         V("sich zusammensetzen", "setzt sich zusammen", "setzte sich zusammen",
           "hat sich zusammengesetzt", "aus + D", "componerse de"),
         N("die", "Menge", "Mengen", "téc. conjunto (en matemáticas; normalmente: cantidad)"),
@@ -132,7 +254,6 @@ PAGINAS = [
         X("portabel", "Adj.", "portable (funciona en distintas plataformas)", "ein portables Modell"),
         N("das", "Programmiermodell", "Programmiermodelle", "modelo de programación"),
         N("der", "Hersteller", "Hersteller", "fabricante"),
-        X("zur Verfügung stellen", "Ausdruck", "poner a disposición, ofrecer (stellte, hat gestellt)"),
         V("erweitern", "erweitert", "erweiterte", "hat erweitert", "mit + D / um + A",
           "ampliar, extender (con)"),
         V("zugrunde liegen", "liegt zugrunde", "lag zugrunde", "hat zugrunde gelegen", None,
@@ -155,7 +276,7 @@ PAGINAS = [
           "**Pasiva con modal**: modal conjugado + participio II + *werden* al final: «solo hay "
           "que insertar… instrucciones»."),
         G("infzu", "Das Ziel … ist es, … zur Verfügung zu stellen",
-          "**es** anticipa un infinitivo con *zu*: «el objetivo es ofrecer…»."),
+          "Como en p. VI: **es** anticipa el infinitivo con *zu*: «el objetivo es ofrecer…»."),
     ]),
     (2, "Einführung → 1.1 Merkmale von OpenMP", [
         X("gemeinsam", "Adj.", "téc. compartido (normalmente: común, juntos)",
@@ -202,8 +323,7 @@ PAGINAS = [
         G("lassen", "… an- und ausschalten lässt",
           "**sich lassen + infinitivo** = «se puede»: «con la cual se puede activar y desactivar…»."),
         G("guion", "an- und ausschalten",
-          "**Guion de ahorro**: el guion sustituye a la parte repetida (*an-* = *anschalten*). "
-          "Igual: *Daten- und Kontrollflüsse* (p. 11), *Ein- und Ausgabe* (p. 18)."),
+          "**Guion de ahorro** (ver p. V): *an-* = *anschalten*."),
         G("otros", "Wie das „Open“ … vermuten lässt",
           "**vermuten lassen** (sin *sich*) = «dejar suponer»: «como ya deja suponer el “Open”…»."),
         G("part", "die – … ausgezeichnet lesbare – … Spezifikation",
@@ -218,7 +338,6 @@ PAGINAS = [
         V("bewirken", "bewirkt", "bewirkte", "hat bewirkt", None, "provocar, hacer que"),
         X("folgend", "Adj.", "siguiente"),
         N("die", "Schleife", "Schleifen", "téc. bucle (normalmente: lazo)"),
-        V("ausführen", "führt aus", "führte aus", "hat ausgeführt", None, "téc. ejecutar"),
         N("der", "Schleifenkörper", "Schleifenkörper", "cuerpo del bucle"),
         V("zuweisen", "weist zu", "wies zu", "hat zugewiesen", "D + A", "asignar algo a"),
         X("zum Einsatz kommen", "Ausdruck", "emplearse, utilizarse (kam, ist gekommen)",
@@ -273,7 +392,6 @@ PAGINAS = [
           "corrección»."),
     ]),
     (4, "1.1 Merkmale von OpenMP", [
-        X("seriell", "Adj.", "serial, secuencial (= sequenziell)"),
         N("der", "Vergleichszweck", "Vergleichszwecke",
           "fin comparativo (zu Vergleichszwecken = para comparar)"),
         X("begrenzt", "Adj.", "limitado (lokal begrenzt = limitado a una zona)"),
@@ -295,7 +413,6 @@ PAGINAS = [
           "existir, estar disponible (in Version 2.5 vorliegen = estar en la versión 2.5)"),
         X("vor der Tür stehen", "Redewendung", "ser inminente, estar a la vuelta de la esquina"),
         N("die", "Umsetzung", "Umsetzungen", "implementación, puesta en práctica"),
-        V("verarbeiten", "verarbeitet", "verarbeitete", "hat verarbeitet", None, "procesar"),
         V("anweisen", "weist an", "wies an", "hat angewiesen", "A + zu + Inf.",
           "ordenar a alguien que haga algo"),
         N("der", "Codeabschnitt", "Codeabschnitte", "sección de código"),
@@ -417,15 +534,11 @@ PAGINAS = [
         N("der", "Zeitpunkt", "Zeitpunkte", "momento"),
         N("die", "Abfassung", "Abfassungen",
           "redacción (zum Zeitpunkt der Abfassung = cuando se escribió)"),
-        N("der", "Entwurf", "Entwürfe", "borrador; diseño"),
-        N("die", "Öffentlichkeit", None, "el público, la opinión pública"),
-        X("zugänglich", "Adj.", "accesible (zugänglich machen = hacer público)"),
         X("demnach", "Adv.", "según esto, por consiguiente"),
         X("zum Teil", "Adv.", "en parte"),
         X("vorab", "Adv.", "de antemano, previamente"),
         N("die", "Berücksichtigung", None,
           "consideración (Berücksichtigung finden = tenerse en cuenta)"),
-        X("vorliegend", "Adj.", "presente (im vorliegenden Buch = en este libro)"),
         X("verbleibend", "Adj.", "restante"),
         X("einführend", "Adj.", "introductorio"),
         N("der", "Überblick", "Überblicke", "visión general, panorama"),
@@ -507,7 +620,6 @@ PAGINAS = [
         V("sichern", "sichert", "sicherte", "hat gesichert", None,
           "téc. guardar (una copia) (normalmente: asegurar)"),
         X("indem", "Konj.", "modo → gerundio en español («guardando…»)"),
-        X("sogenannt", "Adj.", "llamado, denominado"),
         N("der", "Prozesskontrollblock", "Prozesskontrollblöcke", "bloque de control de proceso"),
         V("wiederherstellen", "stellt wieder her", "stellte wieder her", "hat wiederhergestellt",
           None, "restaurar"),
@@ -520,7 +632,6 @@ PAGINAS = [
         V("sich (D) etw. teilen", "teilt sich", "teilte sich", "hat sich geteilt", "mit + D",
           "compartir algo con"),
         X("auf einmal", "Adv.", "a la vez (también: de repente)"),
-        V("erhöhen", "erhöht", "erhöhte", "hat erhöht", None, "aumentar"),
         N("die", "Reaktionsgeschwindigkeit", "Reaktionsgeschwindigkeiten", "velocidad de respuesta"),
         N("die", "Benutzereingabe", "Benutzereingaben", "entrada del usuario"),
         N("die", "Oberfläche", "Oberflächen",
@@ -548,7 +659,6 @@ PAGINAS = [
         V("vollziehen", "vollzieht", "vollzog", "hat vollzogen", None, "realizar, llevar a cabo"),
         X("statt", "Präp./Konj.", "en lugar de (statt … zu + Inf.)"),
         X("tatsächlich", "Adj./Adv.", "real(mente), efectivamente"),
-        V("ausnutzen", "nutzt aus", "nutzte aus", "hat ausgenutzt", None, "aprovechar (al máximo)"),
         N("die", "Parallelausführung", "Parallelausführungen", "ejecución en paralelo"),
         X("eine Rolle spielen", "Ausdruck",
           "importar, tener importancia (keine Rolle spielen = dar igual)"),
@@ -561,8 +671,6 @@ PAGINAS = [
         N("die", "Faustregel", "Faustregeln", "regla empírica, regla general"),
         X("wonach", "Relativadverb", "según el / la cual"),
         X("handelsüblich", "Adj.", "corriente, de los que se venden normalmente"),
-        V("sich verdoppeln", "verdoppelt sich", "verdoppelte sich", "hat sich verdoppelt", None,
-          "duplicarse"),
         N("die", "Beobachtung", "Beobachtungen", "observación"),
         X("erstmals", "Adv.", "por primera vez"),
         V("erfahren", "erfährt", "erfuhr", "hat erfahren", None,
@@ -574,7 +682,6 @@ PAGINAS = [
           "ir acompañado de, conllevar"),
         N("die", "Erhöhung", "Erhöhungen", "aumento"),
         N("die", "Leistungssteigerung", "Leistungssteigerungen", "aumento del rendimiento"),
-        N("die", "Taktrate", "Taktraten", "frecuencia de reloj (= die Taktfrequenz)"),
         V("erzielen", "erzielt", "erzielte", "hat erzielt", None, "lograr, obtener"),
         N("die", "Gültigkeitsdauer", None, "período de validez"),
         V("vorhersagen", "sagt vorher", "sagte vorher", "hat vorhergesagt", None,
@@ -626,7 +733,6 @@ PAGINAS = [
         V("darstellen", "stellt dar", "stellte dar", "hat dargestellt", None,
           "téc. suponer, constituir (normalmente: representar)"),
         V("einordnen", "ordnet ein", "ordnete ein", "hat eingeordnet", "in + A", "clasificar en"),
-        N("der", "Rechner", "Rechner", "ordenador, computadora"),
         X("weder … noch", "Konj.", "ni … ni"),
         N("der", "Datenstrom", "Datenströme", "flujo de datos"),
     ], [
@@ -824,7 +930,6 @@ PAGINAS = [
         X("höchstens", "Adv.", "como mucho, a lo sumo"),
         N("der", "Forschungszweck", "Forschungszwecke",
           "fin de investigación (zu Forschungszwecken)"),
-        X("gegeben", "Adj.", "dado (ein Problem gegebener Größe = de tamaño dado)"),
         X("verschieden viele", "Ausdruck", "distintas cantidades de"),
         X("stattdessen", "Adv.", "en su lugar, en cambio"),
     ], [
@@ -1167,10 +1272,10 @@ def portada(story, n_voc, n_gram):
     story.append(Spacer(1, 2.4 * cm))
     story.append(P("Lista de lectura", STIT))
     story.append(Spacer(1, 0.25 * cm))
-    story.append(P("OpenMP · Kapitel 1 «Einführung»", St(
+    story.append(P("OpenMP · Vorwort y Kapitel 1", St(
         "t2", parent=STIT, fontSize=17, leading=22, textColor=AZUL2)))
     story.append(Spacer(1, 0.45 * cm))
-    story.append(P(f"Página a página (pp. 1–21) · {n_voc} palabras y expresiones · "
+    story.append(P(f"Página a página (pp. V–VI y 1–21) · {n_voc} palabras y expresiones · "
                    f"{n_gram} notas de gramática · nivel B1−", SSUB))
     story.append(Spacer(1, 1.0 * cm))
     caja = [
@@ -1179,6 +1284,8 @@ def portada(story, n_voc, n_gram):
           "el orden en que aparece, y después la **gramática** que va más allá de B1.", SCAJA),
         P("• Cada palabra se explica **solo la primera vez**. Si más adelante no la recuerdas, "
           "búscala en el **índice alfabético** del final (con la página).", SCAJA),
+        P("• El prólogo (**Vorwort**, pp. V–VI) va primero, como en el libro: las palabras que "
+          "ya salen allí se explican allí y no se repiten en el capítulo 1.", SCAJA),
         P("• Se ha dejado fuera lo que un nivel B1− ya conoce y los **internacionalismos** "
           "transparentes (Prozessor, Simulation…), que van al final solo con su género y plural. "
           "Sí están las palabras de B1 que aquí tienen un **sentido técnico** distinto (marca "
@@ -1202,7 +1309,7 @@ def pie(canvas, doc):
     canvas.saveState()
     canvas.setFont(SANS, 7.8)
     canvas.setFillColor(GRIS)
-    canvas.drawString(MARGEN, 1.05 * cm, "Lista de lectura · OpenMP, cap. 1 · nivel B1−")
+    canvas.drawString(MARGEN, 1.05 * cm, "Lista de lectura · OpenMP, Vorwort y cap. 1 · nivel B1−")
     canvas.drawRightString(A4[0] - MARGEN, 1.05 * cm, f"{doc.page}")
     canvas.setStrokeColor(LINEA)
     canvas.setLineWidth(0.5)
@@ -1258,17 +1365,18 @@ def construir():
 
     doc = SimpleDocTemplate(str(SALIDA), pagesize=A4, leftMargin=MARGEN, rightMargin=MARGEN,
                             topMargin=1.6 * cm, bottomMargin=1.9 * cm,
-                            title="Lista de lectura: OpenMP, capítulo 1 (nivel B1−)",
+                            title="Lista de lectura: OpenMP, Vorwort y capítulo 1 (nivel B1−)",
                             author="indescifrable · material de estudio",
                             subject="Vocabulario y gramática página a página para leer el "
-                                    "capítulo 1 de OpenMP (Hoffmann/Lienhart) en alemán")
+                                    "Vorwort y el capítulo 1 de OpenMP (Hoffmann/Lienhart) "
+                                    "en alemán")
     doc.build(story, onLaterPages=pie)
 
 
 def verificar():
     tipos = {t for _p, _t, _v, g in PAGINAS for t, *_r in g}
     assert tipos <= set(TIPOS), tipos - set(TIPOS)
-    assert [p for p, *_r in PAGINAS] == list(range(1, 22)), "faltan páginas"
+    assert [p for p, *_r in PAGINAS] == ["V", "VI", *range(1, 22)], "faltan páginas"
     # sin palabras repetidas: cada entrada se explica una sola vez
     vistas = {}
     for pag, _t, voc, _g in PAGINAS:
