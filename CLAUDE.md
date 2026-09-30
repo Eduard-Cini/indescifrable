@@ -124,11 +124,16 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   Texto PROPIO (el libro tiene copyright: no se traduce ni se reproduce) + glosario con la
   página del libro + estructuras típicas del alemán técnico. Compañero para leer el ORIGINAL:
   `lista-lectura-openmp-cap1.pdf` (`generar_lista_lectura_openmp.py`, reutiliza fuentes/estilos
-  del anterior): página a página en orden de lectura (Vorwort pp. V–VI + cap. 1 pp. 1–21; lo
-  que sale ya en el Vorwort se explica allí) el vocabulario por encima de B1− (solo la 1.ª vez;
-  sustantivo con género y plural, verbo con sus formas y régimen, marca TÉC. si el sentido es
-  técnico) y la gramática localizada con citas BREVES; + mapa de gramática, conectores,
-  internacionalismos e índice alfabético paginado. `verificar()` exige pp. V, VI, 1–21 y sin repetidas.
+  del anterior), en tres partes: (1) **Gramática explicada**: 22 estructuras desde cero (qué es,
+  cómo se forma, cómo reconocerla, cómo traducirla, ejemplos PROPIOS; lista `GRAMATICA`, su orden
+  fija el §); (2) **página a página** en orden de lectura (Vorwort pp. V–VI + cap. 1 pp. 1–21; lo
+  que sale ya en el Vorwort se explica allí): «de qué habla cada párrafo» (`PARRAFOS`, resumen
+  PROPIO, no traducción), vocabulario por encima de B1− (solo la 1.ª vez; sustantivo con género y
+  plural, verbo con sus formas y régimen, marca TÉC. si el sentido es técnico) y gramática en el
+  texto (`NOTAS`: cita BREVE + análisis pieza a pieza con remisión a su §); (3) conectores,
+  internacionalismos e índice alfabético paginado. Petición del usuario: la gramática NO debe ir
+  resumida ni dar por sabida la estructura. `verificar()` exige pp. V, VI, 1–21 con párrafos y
+  notas, cada nota con el § de su tipo y sin palabras repetidas.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
