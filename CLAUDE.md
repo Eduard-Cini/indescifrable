@@ -122,7 +122,12 @@ backtracking + Wordle entropía + sopa de letras + sudoku de palabras).
   (`python material/generar_aleman_tecnico_openmp.py`), cuaderno bilingüe alemán | español de
   alemán técnico sobre los temas del cap. 1 de Hoffmann/Lienhart, *OpenMP* (Springer 2008).
   Texto PROPIO (el libro tiene copyright: no se traduce ni se reproduce) + glosario con la
-  página del libro + estructuras típicas del alemán técnico.
+  página del libro + estructuras típicas del alemán técnico. Compañero para leer el ORIGINAL:
+  `lista-lectura-openmp-cap1.pdf` (`generar_lista_lectura_openmp.py`, reutiliza fuentes/estilos
+  del anterior): página a página (pp. 1–21) el vocabulario por encima de B1− (solo la 1.ª vez;
+  sustantivo con género y plural, verbo con sus formas y régimen, marca TÉC. si el sentido es
+  técnico) y la gramática localizada con citas BREVES; + mapa de gramática, conectores,
+  internacionalismos e índice alfabético paginado. `verificar()` exige pp. 1–21 y sin repetidas.
 
 ## Arquitectura (3 piezas separadas)
 1. `pipeline/` Python (offline, una vez) → escribe JSON en `src/data/`.
