@@ -60,7 +60,7 @@ function Home() {
         {/* Material de alemán propio (Netzwerk neu B1): no depende del idioma de estudio. */}
         <Link to="/mas" className="seccion-card mas">
           <h2>📚 Más contenidos</h2>
-          <p>Alemán · Netzwerk neu B1, capítulo 10: valores y voz pasiva, por vocabulario (fichas SM-2) y por gramática (lección y ejercicios).</p>
+          <p>Alemán · Netzwerk neu B1, los 12 capítulos: gramática con sus ejercicios, y vocabulario y verbos en fichas SM-2.</p>
         </Link>
       </main>
     </div>
