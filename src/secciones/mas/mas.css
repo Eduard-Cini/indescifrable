@@ -130,3 +130,45 @@
 .mas-pregunta { font-size: 1.2rem; color: #f0f0f0; margin: 1rem 0 1.2rem; }
 .gram-opciones.frases { grid-template-columns: 1fr; }
 .gram-opcion.frase { text-align: left; font-size: 0.98rem; }
+
+/* Examen escrito sobre un mazo (/mas/vocabulario/:mazo/examen) */
+.mazo-examen-link {
+  color: #9ad;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid #2a2a2a;
+}
+.mazo-examen-link:hover { color: #cfe6ff; border-color: #6a8cff; }
+
+.examen-enunciado { font-size: 0.85rem; color: #9a9a9a; text-align: center; }
+
+.examen-form {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+.examen-campo {
+  background: #0e0e0e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #f0f0f0;
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.8rem;
+  min-width: 15rem;
+}
+.examen-campo:focus { outline: none; border-color: #6a8cff; }
+.examen-campo::placeholder { color: #666; font-size: 0.9rem; }
+
+.examen-juicio { font-size: 1.05rem; margin: 0.2rem 0; text-align: center; }
+.examen-juicio.ok { color: #8fbf9f; }
+.examen-juicio.mal { color: #e07a8a; }
+.examen-correccion { font-size: 0.9rem; color: #ccc; text-align: center; margin: 0; }
+.examen-correccion em { color: #b7a86a; font-style: normal; }
+.examen-correccion strong { color: #f0f0f0; }
+.examen-separador { width: 60%; border: 0; border-top: 1px solid #262626; margin: 0.9rem auto 0.2rem; }
+
+.examen-siguiente { display: block; margin: 1rem auto 0; }
+.examen-marcador { text-align: center; color: #888; font-size: 0.85rem; margin-top: 1rem; }

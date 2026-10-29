@@ -94,6 +94,14 @@ export function formasPasiva(tarjeta) {
   };
 }
 
+/**
+ * La palabra tal como hay que recordarla, sin artículo ni formas: lo que se ve
+ * en el anverso de la ficha y en la lista del mazo.
+ */
+export function textoAnverso(tarjeta) {
+  return tarjeta.tipo === 'verbo' ? tarjeta.infinitivo : tarjeta.palabra;
+}
+
 /** Plural para la UI: la forma plural o «solo singular (Sg.)». */
 export function textoPlural(tarjeta) {
   return tarjeta.plural ?? 'solo singular (Sg.)';

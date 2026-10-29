@@ -8,6 +8,7 @@ import {
   resumenDeMazo,
   estadoTarjeta,
   formasPasiva,
+  textoAnverso,
   textoPlural,
   textoPerfecto,
   rasgosGramaticales,
@@ -136,6 +137,11 @@ describe('formasPasiva / textoPlural / textoPerfecto', () => {
   it('tampoco para reflexivos ni para verbos con sein', () => {
     expect(formasPasiva({ ...mazo.tarjetas[0], infinitivo: 'sich anstrengen' })).toBeNull();
     expect(formasPasiva({ ...mazo.tarjetas[0], auxiliar: 'ist' })).toBeNull();
+  });
+
+  it('el anverso esconde el artículo y las formas', () => {
+    expect(textoAnverso(mazo.tarjetas[0])).toBe('bauen'); // el verbo, en infinitivo
+    expect(textoAnverso(mazo.tarjetas[1])).toBe('Wert'); // el sustantivo, sin «der»
   });
 
   it('el plural null se muestra como «solo singular»', () => {

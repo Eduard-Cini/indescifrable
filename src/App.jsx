@@ -17,6 +17,7 @@ import TemasDeLectura from './secciones/gramatica/TemasDeLectura';
 import Ejercicios from './secciones/gramatica/Ejercicios';
 import MasContenidos from './secciones/mas/MasContenidos';
 import Mazo from './secciones/mas/Mazo';
+import ExamenMazo from './secciones/mas/ExamenMazo';
 import LeccionMas from './secciones/mas/LeccionMas';
 import TandasMas from './secciones/mas/TandasMas';
 import TandaMas from './secciones/mas/TandaMas';
@@ -52,6 +53,7 @@ function App() {
         <Route path="/gramatica/:lectura/:tema" element={<Ejercicios />} />
         <Route path="/mas" element={<MasContenidos />} />
         <Route path="/mas/vocabulario/:mazo" element={<Mazo />} />
+        <Route path="/mas/vocabulario/:mazo/examen" element={<ExamenMazo />} />
         <Route path="/mas/gramatica/:tema" element={<LeccionMas />} />
         <Route path="/mas/gramatica/:tema/ejercicios" element={<TandasMas />} />
         <Route path="/mas/gramatica/:tema/ejercicios/:tanda" element={<TandaMas />} />

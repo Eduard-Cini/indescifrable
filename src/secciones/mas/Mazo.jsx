@@ -7,11 +7,12 @@ import {
   sesionDeMazo,
   calificarTarjeta,
   estadoTarjeta,
-  formasPasiva,
+  textoAnverso,
   textoPlural,
   textoPerfecto,
 } from '../../engine/mazos';
 import BotonesCalificacion from '../repaso/BotonesCalificacion';
+import { Reverso } from './FichaReverso';
 import { cargarMazo } from './datos';
 import '../lectura/lectura.css';
 import '../repaso/repaso.css';
@@ -40,90 +41,6 @@ function textoEstado(srs, ahora) {
   if (e.tipo === 'nueva') return 'nueva';
   if (e.tipo === 'pendiente') return 'para hoy';
   return `en ${e.dias} día(s)`;
-}
-
-// La palabra tal como se recuerda: el anverso esconde el artículo.
-function textoAnverso(t) {
-  if (t.tipo === 'verbo') return t.infinitivo;
-  return t.palabra;
-}
-
-function Encabezado({ t }) {
-  if (t.tipo === 'sustantivo') {
-    return (
-      <span className="repaso-anverso">
-        <span className={`genero ${t.articulo}`}>{t.articulo}</span> {t.palabra}
-      </span>
-    );
-  }
-  return <span className="repaso-anverso">{textoAnverso(t)}</span>;
-}
-
-// Reverso: todas las formas (la regla de los mazos) + significado y ejemplo.
-function Reverso({ t }) {
-  const pasiva = formasPasiva(t);
-  return (
-    <>
-      <Encabezado t={t} />
-      <table className="mazo-formas">
-        <tbody>
-          {t.tipo === 'sustantivo' && (
-            <tr>
-              <th>Plural</th>
-              <td>{textoPlural(t)}</td>
-            </tr>
-          )}
-          {t.tipo === 'verbo' && (
-            <>
-              <tr>
-                <th>Präsens</th>
-                <td>er/sie/es {t.presente}</td>
-              </tr>
-              <tr>
-                <th>Präteritum</th>
-                <td>er/sie/es {t.preterito}</td>
-              </tr>
-              <tr>
-                <th>Partizip II</th>
-                <td>
-                  <strong>{t.participio}</strong> ({textoPerfecto(t)})
-                </td>
-              </tr>
-            </>
-          )}
-          {t.tipo === 'otro' && t.categoria && (
-            <tr>
-              <th>Tipo</th>
-              <td>{t.categoria}</td>
-            </tr>
-          )}
-          {t.base && (
-            <tr>
-              <th>Se forma con</th>
-              <td>{t.base}</td>
-            </tr>
-          )}
-          {t.preposicion && (
-            <tr>
-              <th>Preposición</th>
-              <td className="mazo-preposicion">{t.preposicion}</td>
-            </tr>
-          )}
-        </tbody>
-      </table>
-      <span className="mazo-significado">{t.es}</span>
-      {t.familia && <p className="mazo-familia">Familia: {t.familia}</p>}
-      {pasiva && (
-        <p className="mazo-pasiva">
-          Pasiva: {pasiva.presente} · {pasiva.preterito} · {pasiva.perfecto}
-        </p>
-      )}
-      {t.nota && <p className="mazo-nota">{t.nota}</p>}
-      {t.ejemplo && <p className="mazo-ejemplo">{t.ejemplo}</p>}
-      {t.ejemploEs && <p className="mazo-ejemplo-es">{t.ejemploEs}</p>}
-      {t.fuente && <p className="mazo-fuente">{t.fuente}</p>}
-    </>
-  );
 }
 
 // Lista completa del mazo con el estado de repaso de cada ficha.
@@ -289,6 +206,9 @@ function Mazo() {
           <option value="todas">todas</option>
         </select>
       </label>
+      <Link to={`/mas/vocabulario/${idMazo}/examen`} className="mazo-examen-link">
+        Examen escrito →
+      </Link>
     </div>
   );
 
