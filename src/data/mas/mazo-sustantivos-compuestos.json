@@ -13,7 +13,7 @@
     { "id": "gluecksgefuehl", "tipo": "sustantivo", "articulo": "das", "palabra": "Glücksgefühl", "plural": "die Glücksgefühle", "es": "sensación de felicidad", "nota": "das Glück + s + das Gefühl." },
     { "id": "bundesrepublik", "tipo": "sustantivo", "articulo": "die", "palabra": "Bundesrepublik", "plural": "die Bundesrepubliken", "es": "República Federal", "nota": "der Bund + es + die Republik." },
     { "id": "sonnenbrille", "tipo": "sustantivo", "articulo": "die", "palabra": "Sonnenbrille", "plural": "die Sonnenbrillen", "es": "gafas de sol", "nota": "die Sonne + n + die Brille: aquí la unión es -n-." },
-    { "id": "hochhaus", "tipo": "sustantivo", "articulo": "das", "palabra": "Hochhaus", "plural": "die Hochhäuser", "es": "edificio alto, torre de viviendas", "nota": "hoch (adjetivo) + das Haus." },
+    { "id": "hochhaus", "tipo": "sustantivo", "articulo": "das", "palabra": "Hochhaus", "plural": "die Hochhäuser", "es": "edificio alto, torre de viviendas", "ejemplo": "Das Hochhaus hat zwanzig Etagen.", "ejemploEs": "La torre de viviendas tiene veinte plantas.", "nota": "hoch (adjetivo) + das Haus." },
     { "id": "grossstadt", "tipo": "sustantivo", "articulo": "die", "palabra": "Großstadt", "plural": "die Großstädte", "es": "gran ciudad", "nota": "groß (adjetivo) + die Stadt." },
     { "id": "schlafzimmer", "tipo": "sustantivo", "articulo": "das", "palabra": "Schlafzimmer", "plural": "die Schlafzimmer", "es": "dormitorio", "nota": "schlafen (raíz del verbo) + das Zimmer." },
     { "id": "kinderzimmer", "tipo": "sustantivo", "articulo": "das", "palabra": "Kinderzimmer", "plural": "die Kinderzimmer", "es": "habitación de los niños", "nota": "die Kinder (plural) + das Zimmer." },

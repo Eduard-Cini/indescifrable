@@ -14,7 +14,7 @@
     { "id": "paedagoge", "tipo": "sustantivo", "articulo": "der", "palabra": "Pädagoge", "plural": "die Pädagogen", "es": "pedagogo, educador", "nota": "Declinación n: den/dem/des Pädagogen. Femenino: die Pädagogin." },
     { "id": "mensch", "tipo": "sustantivo", "articulo": "der", "palabra": "Mensch", "plural": "die Menschen", "es": "persona, ser humano", "nota": "Declinación n: den/dem/des Menschen." },
     { "id": "herr", "tipo": "sustantivo", "articulo": "der", "palabra": "Herr", "plural": "die Herren", "es": "señor", "nota": "Irregular: den/dem/des Herrn en singular, die Herren en plural." },
-    { "id": "nachbar", "tipo": "sustantivo", "articulo": "der", "palabra": "Nachbar", "plural": "die Nachbarn", "es": "vecino", "nota": "Declinación n: den/dem/des Nachbarn." },
+    { "id": "nachbar", "tipo": "sustantivo", "articulo": "der", "palabra": "Nachbar", "plural": "die Nachbarn", "es": "vecino", "ejemplo": "Der Nachbar grüßt jeden Morgen freundlich.", "ejemploEs": "El vecino saluda amablemente cada mañana.", "nota": "Declinación n: den/dem/des Nachbarn." },
     { "id": "architekt", "tipo": "sustantivo", "articulo": "der", "palabra": "Architekt", "plural": "die Architekten", "es": "arquitecto", "nota": "Declinación n: den/dem/des Architekten. Femenino: die Architektin." },
     { "id": "bauer", "tipo": "sustantivo", "articulo": "der", "palabra": "Bauer", "plural": "die Bauern", "es": "campesino, agricultor", "nota": "Declinación n: den/dem/des Bauern. Femenino: die Bäuerin." },
     { "id": "baer", "tipo": "sustantivo", "articulo": "der", "palabra": "Bär", "plural": "die Bären", "es": "oso", "nota": "Declinación n: den/dem/des Bären." },

@@ -199,6 +199,34 @@ describe('mazos reales de «Más contenidos»', () => {
     expect(choques).toEqual([]);
   });
 
+  it('toda frase de ejemplo trae su traducción al español', () => {
+    const mal = lista.flatMap(([id, m]) =>
+      m.tarjetas
+        .filter((t) => Boolean(t.ejemplo) !== Boolean(t.ejemploEs))
+        .map((t) => `${id}/${t.id}`)
+    );
+    expect(mal).toEqual([]);
+  });
+
+  // Entre mazos DE CAPÍTULO el ejemplo es de la palabra: si «empfehlen» está en
+  // el k1 y en el k11, la frase es la misma en los dos. Los mazos temáticos
+  // quedan fuera a propósito: el de pasiva, por ejemplo, ilustra «vermitteln»
+  // con una frase en pasiva porque ese es justamente su tema.
+  it('la misma palabra tiene el mismo ejemplo en todos los mazos de capítulo', () => {
+    const vistos = new Map();
+    const choques = [];
+    for (const [id, m] of lista.filter(([x]) => /^k\d+-(vocabulario|verbos)$/.test(x))) {
+      for (const t of m.tarjetas) {
+        if (!t.ejemplo) continue;
+        const clave = claveTarjeta(t);
+        const previo = vistos.get(clave);
+        if (previo && previo.ejemplo !== t.ejemplo) choques.push(`${clave}: ${previo.id} ≠ ${id}`);
+        else if (!previo) vistos.set(clave, { id, ejemplo: t.ejemplo });
+      }
+    }
+    expect(choques).toEqual([]);
+  });
+
   it('el mazo de pasiva solo tiene verbos y el de valores solo sustantivos', () => {
     expect(MAZOS.pasiva.tarjetas.every((t) => t.tipo === 'verbo')).toBe(true);
     expect(MAZOS.valores.tarjetas.every((t) => t.tipo === 'sustantivo')).toBe(true);

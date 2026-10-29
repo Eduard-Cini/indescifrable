@@ -96,9 +96,9 @@
     { "id": "abitur", "tipo": "sustantivo", "articulo": "das", "palabra": "Abitur", "plural": null, "es": "bachillerato alemán (examen final)" },
     { "id": "studienplatz", "tipo": "sustantivo", "articulo": "der", "palabra": "Studienplatz", "plural": "die Studienplätze", "es": "plaza universitaria" },
     { "id": "feierabend", "tipo": "sustantivo", "articulo": "der", "palabra": "Feierabend", "plural": "die Feierabende", "es": "fin de la jornada laboral (Feierabend machen)" },
-    { "id": "einsam", "tipo": "otro", "categoria": "adjetivo", "palabra": "einsam", "es": "solo, solitario" },
+    { "id": "einsam", "tipo": "otro", "categoria": "adjetivo", "palabra": "einsam", "es": "solo, solitario", "ejemplo": "Wir haben an einem einsamen See gezeltet.", "ejemploEs": "Acampamos junto a un lago solitario." },
     { "id": "gemeinsam", "tipo": "otro", "categoria": "adjetivo", "palabra": "gemeinsam", "es": "común; juntos (viel gemeinsam erleben)" },
-    { "id": "gegenseitig", "tipo": "otro", "categoria": "adjetivo", "palabra": "gegenseitig", "es": "mutuo, mutuamente (wir helfen uns gegenseitig)" },
+    { "id": "gegenseitig", "tipo": "otro", "categoria": "adjetivo", "palabra": "gegenseitig", "es": "mutuo, mutuamente (wir helfen uns gegenseitig)", "ejemplo": "Im Dorf helfen wir uns gegenseitig.", "ejemploEs": "En el pueblo nos ayudamos mutuamente." },
     { "id": "vorher", "tipo": "otro", "categoria": "adverbio", "palabra": "vorher", "es": "antes, previamente (pide Plusquamperfekt)" },
     { "id": "mittlerweile", "tipo": "otro", "categoria": "adverbio", "palabra": "mittlerweile", "es": "mientras tanto, a estas alturas" },
     { "id": "trotzdem", "tipo": "otro", "categoria": "conector", "palabra": "trotzdem", "es": "aun así, a pesar de ello" }

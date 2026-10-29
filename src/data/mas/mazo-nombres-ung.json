@@ -15,7 +15,7 @@
     { "id": "wanderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Wanderung", "plural": "die Wanderungen", "es": "excursión a pie, caminata", "nota": "wandern → die Wanderung: con -ern la -e- se queda." },
     { "id": "aenderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Änderung", "plural": "die Änderungen", "es": "modificación, cambio", "nota": "ändern → die Änderung." },
     { "id": "veraenderung", "tipo": "sustantivo", "articulo": "die", "palabra": "Veränderung", "plural": "die Veränderungen", "es": "cambio", "nota": "verändern → die Veränderung." },
-    { "id": "loesung", "tipo": "sustantivo", "articulo": "die", "palabra": "Lösung", "plural": "die Lösungen", "es": "solución", "nota": "lösen → die Lösung." },
+    { "id": "loesung", "tipo": "sustantivo", "articulo": "die", "palabra": "Lösung", "plural": "die Lösungen", "es": "solución", "ejemplo": "Die Lösung ist einfacher, als wir gedacht haben.", "ejemploEs": "La solución es más simple de lo que pensábamos.", "nota": "lösen → die Lösung." },
     { "id": "entwicklung", "tipo": "sustantivo", "articulo": "die", "palabra": "Entwicklung", "plural": "die Entwicklungen", "es": "desarrollo, evolución", "nota": "entwickeln → die Entwicklung: con -eln se pierde la -e-." },
     { "id": "einladung", "tipo": "sustantivo", "articulo": "die", "palabra": "Einladung", "plural": "die Einladungen", "es": "invitación", "nota": "ein|laden → die Einladung: el prefijo se pega delante." },
     { "id": "aufklaerung", "tipo": "sustantivo", "articulo": "die", "palabra": "Aufklärung", "plural": null, "es": "esclarecimiento; información, sensibilización", "nota": "auf|klären → die Aufklärung." },
