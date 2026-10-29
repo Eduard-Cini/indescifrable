@@ -43,6 +43,21 @@
         { "id": "fr4", "partes": null, "pregunta": "Deberíamos relajarnos más", "respuesta": "Wir sollten uns mehr entspannen.", "distractores": ["Wir sollten sich mehr entspannen.", "Wir sollten uns mehr entspannt."], "pista": "wir → uns; detrás del modal va el infinitivo." },
         { "id": "fr5", "partes": null, "pregunta": "Ponerse crema todos los días", "respuesta": "Ich creme mich jeden Tag ein.", "distractores": ["Ich creme mir jeden Tag ein.", "Ich creme jeden Tag mich ein."], "pista": "Sin otro complemento → mich, y el pronombre va antes de la indicación de tiempo." }
       ]
+    },
+    {
+      "id": "posicion",
+      "titulo": "¿Dónde va el pronombre?",
+      "instruccion": "El reflexivo va lo antes posible: detrás del verbo conjugado, y antes del sujeto si este es un sustantivo.",
+      "modelo": "Kursbuch S. 94 · Übungsbuch S. 95",
+      "ejercicios": [
+        { "id": "po1", "partes": ["Heute hat ", " mein Bruder rasiert."], "respuesta": "sich", "distractores": ["ihn", "ihm", "selbst"], "pista": "El reflexivo se adelanta al sujeto cuando este es un sustantivo." },
+        { "id": "po2", "partes": ["Warum hast du ", " nicht gemeldet?"], "respuesta": "dich", "distractores": ["dir", "sich", "euch"], "pista": "sich melden lleva acusativo → dich." },
+        { "id": "po3", "partes": ["Ich kann ", " das wirklich nicht vorstellen."], "respuesta": "mir", "distractores": ["mich", "mein", "sich"], "pista": "Hay otro objeto (das) → el reflexivo va en dativo." },
+        { "id": "po4", "partes": ["Wir müssen ", " beeilen, der Zug fährt gleich."], "respuesta": "uns", "distractores": ["sich", "euch", "unser"], "pista": "wir → uns." },
+        { "id": "po5", "partes": ["Gestern habe ", " sehr gefreut."], "respuesta": "ich mich", "distractores": ["mich ich", "ich mir", "mir ich"], "pista": "Primero el sujeto pronombre, luego el reflexivo." },
+        { "id": "po6", "partes": null, "pregunta": "«¿Ya os conocéis?»", "respuesta": "Habt ihr euch schon kennengelernt?", "distractores": ["Habt ihr sich schon kennengelernt?", "Habt euch ihr schon kennengelernt?", "Habt ihr euch schon kennenlernen?"], "pista": "ihr → euch, y detrás del sujeto." },
+        { "id": "po7", "partes": null, "pregunta": "«Me lavo las manos.»", "respuesta": "Ich wasche mir die Hände.", "distractores": ["Ich wasche mich die Hände.", "Ich wasche mir den Händen.", "Ich wasche meine Hände mir."], "pista": "Con una parte del cuerpo como objeto, el reflexivo va en dativo." }
+      ]
     }
   ]
 }

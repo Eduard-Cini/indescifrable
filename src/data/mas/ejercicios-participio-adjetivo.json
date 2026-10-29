@@ -47,6 +47,21 @@
         { "id": "re5", "partes": null, "pregunta": "die anfallenden Gebühren", "respuesta": "die Gebühren, die anfallen", "distractores": ["die Gebühren, die angefallen sind", "die Gebühren, die man anfällt", "die Gebühren, die anfallen werden"], "pista": "Partizip I de un verbo separable: an|fallen." },
         { "id": "re6", "partes": null, "pregunta": "das eingezahlte Geld", "respuesta": "das Geld, das man eingezahlt hat", "distractores": ["das Geld, das einzahlt", "das Geld, das einzahlen wird", "das Geld, das sich eingezahlt hat"], "pista": "Partizip II de ein|zahlen." }
       ]
+    },
+    {
+      "id": "formar",
+      "titulo": "Cómo se forma cada participio",
+      "instruccion": "El Partizip I es el infinitivo + d. El Partizip II es el de siempre. Elige.",
+      "modelo": "Kursbuch S. 142 · Übungsbuch S. 143",
+      "ejercicios": [
+        { "id": "fo1", "partes": ["lachen → Partizip I: ", ""], "respuesta": "lachend", "distractores": ["gelacht", "lachet", "lachenend"], "pista": "Infinitivo + d." },
+        { "id": "fo2", "partes": ["arbeiten → Partizip I: ", ""], "respuesta": "arbeitend", "distractores": ["gearbeitet", "arbeitet", "arbeitenend"], "pista": "arbeiten + d." },
+        { "id": "fo3", "partes": ["das ", " Kind (lachen)"], "respuesta": "lachende", "distractores": ["lachend", "gelachte", "lachenden"], "pista": "Delante del sustantivo también se declina: das + -e." },
+        { "id": "fo4", "partes": ["die ", " Tür (schließen: la recibe)"], "respuesta": "geschlossene", "distractores": ["schließende", "geschlossen", "schließend"], "pista": "La puerta no cierra, la cierran → Partizip II." },
+        { "id": "fo5", "partes": ["der ", " Zug (ankommen: lo hace él)"], "respuesta": "ankommende", "distractores": ["angekommene", "ankommend", "ankommenden"], "pista": "El tren llega por sí mismo → Partizip I." },
+        { "id": "fo6", "partes": null, "pregunta": "«el niño que llora», con participio", "respuesta": "das weinende Kind", "distractores": ["das geweinte Kind", "das weinend Kind", "das weinenden Kind"], "pista": "El niño hace la acción → Partizip I declinado." },
+        { "id": "fo7", "partes": null, "pregunta": "«la carta escrita»", "respuesta": "der geschriebene Brief", "distractores": ["der schreibende Brief", "der geschrieben Brief", "der geschriebenen Brief"], "pista": "La carta recibe la acción → Partizip II declinado." }
+      ]
     }
   ]
 }

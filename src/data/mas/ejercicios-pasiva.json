@@ -134,6 +134,21 @@
         { "id": "eu4", "partes": ["Wichtige Gesetze müssen im Parlament ", " (beschließen)."], "respuesta": "beschlossen werden", "distractores": ["beschlossen worden", "beschließen werden", "gebeschlossen werden"], "pista": "beschließen: be- inseparable e irregular → beschlossen." },
         { "id": "eu5", "partes": ["Ein Teil des Studiums kann auch in einem anderen EU-Land ", " (machen)."], "respuesta": "gemacht werden", "distractores": ["gemacht worden", "machen werden", "gemachen werden"], "pista": "machen es regular: gemacht. Al final, werden en infinitivo." }
       ]
+    },
+    {
+      "id": "zustand",
+      "titulo": "¿Acción o resultado?",
+      "instruccion": "werden + Partizip II es la acción; sein + Partizip II es el estado en que queda. Elige.",
+      "modelo": "Kursbuch S. 121 · Übungsbuch S. 122",
+      "ejercicios": [
+        { "id": "zu1", "partes": ["Warte kurz, das Fenster ", " gerade geöffnet."], "respuesta": "wird", "distractores": ["ist", "war", "hat"], "pista": "Está ocurriendo ahora → werden." },
+        { "id": "zu2", "partes": ["Du kannst rein, das Fenster ", " schon geöffnet."], "respuesta": "ist", "distractores": ["wird", "werden", "hat"], "pista": "El resultado, ya hecho → sein." },
+        { "id": "zu3", "partes": ["Die Tür ", " um acht Uhr abgeschlossen worden."], "respuesta": "ist", "distractores": ["wird", "war", "hat"], "pista": "Perfekt de la pasiva de acción: ist … worden." },
+        { "id": "zu4", "partes": ["Die Geschäfte ", " sonntags geschlossen."], "respuesta": "sind", "distractores": ["werden", "wird", "haben"], "pista": "Describe cómo están los domingos → estado." },
+        { "id": "zu5", "partes": ["Das Problem ", " gestern gelöst."], "respuesta": "wurde", "distractores": ["ist", "war", "hat"], "pista": "«Ayer» marca la acción → wurde." },
+        { "id": "zu6", "partes": null, "pregunta": "¿Cuál describe el RESULTADO y no la acción?", "respuesta": "Der Brief ist geschrieben.", "distractores": ["Der Brief wird geschrieben.", "Der Brief wurde geschrieben.", "Der Brief ist geschrieben worden."], "pista": "sein + Partizip II, sin worden." },
+        { "id": "zu7", "partes": null, "pregunta": "«La tienda está cerrada» (así está, no quién la cierra).", "respuesta": "Das Geschäft ist geschlossen.", "distractores": ["Das Geschäft wird geschlossen.", "Das Geschäft ist geschlossen worden.", "Das Geschäft ist schließen."], "pista": "Estado → ist + Partizip II." }
+      ]
     }
   ]
 }

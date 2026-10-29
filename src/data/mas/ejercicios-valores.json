@@ -38,6 +38,21 @@
         { "id": "fa7", "partes": ["gesund → die ", ""], "respuesta": "Gesundheit", "distractores": ["Gesundkeit", "Gesundschaft", "Gesundtum"], "pista": "gesund + -heit." },
         { "id": "fa8", "partes": ["hilfsbereit → die ", ""], "respuesta": "Hilfsbereitschaft", "distractores": ["Hilfsbereitheit", "Hilfsbereitung", "Hilfsbereitkeit"], "pista": "bereit → die Bereitschaft; hilfsbereit → die Hilfsbereitschaft." }
       ]
+    },
+    {
+      "id": "definicion",
+      "titulo": "¿De qué valor hablamos?",
+      "instruccion": "Lee la descripción y elige el valor que corresponde.",
+      "modelo": "Kursbuch S. 116 · Übungsbuch S. 117",
+      "ejercicios": [
+        { "id": "df1", "partes": null, "pregunta": "Frauen und Männer sollen die gleichen Rechte haben.", "respuesta": "die Gleichberechtigung", "distractores": ["die Gerechtigkeit", "die Freiheit", "die Sicherheit"], "pista": "gleich + Recht: los mismos derechos." },
+        { "id": "df2", "partes": null, "pregunta": "Man sagt immer die Wahrheit, auch wenn es schwer ist.", "respuesta": "die Ehrlichkeit", "distractores": ["die Höflichkeit", "die Pünktlichkeit", "die Bildung"], "pista": "ehrlich → die Ehrlichkeit." },
+        { "id": "df3", "partes": null, "pregunta": "Man hilft anderen gern, ohne etwas dafür zu wollen.", "respuesta": "die Hilfsbereitschaft", "distractores": ["die Rücksicht", "die Toleranz", "die Erziehung"], "pista": "hilfsbereit → die Hilfsbereitschaft." },
+        { "id": "df4", "partes": null, "pregunta": "Im Zug telefoniert man leise, um die anderen nicht zu stören.", "respuesta": "die Rücksicht", "distractores": ["die Fairness", "die Sicherheit", "die Gerechtigkeit"], "pista": "Rücksicht nehmen auf = tener consideración." },
+        { "id": "df5", "partes": null, "pregunta": "Man akzeptiert andere Meinungen und andere Lebensformen.", "respuesta": "die Toleranz", "distractores": ["die Ehrlichkeit", "die Freiheit", "die Demokratie"], "pista": "tolerieren → die Toleranz." },
+        { "id": "df6", "partes": null, "pregunta": "Man traut sich, gegen eine Ungerechtigkeit etwas zu sagen.", "respuesta": "die Zivilcourage", "distractores": ["die Hilfsbereitschaft", "die Fairness", "die Bildung"], "pista": "Es el valor de atreverse en público." },
+        { "id": "df7", "partes": null, "pregunta": "«Para mí la sinceridad es lo más importante.»", "respuesta": "Für mich ist Ehrlichkeit am wichtigsten.", "distractores": ["Für mich ist Ehrlichkeit die wichtigste.", "Für mich ist Ehrlichkeit am wichtigste.", "Für mich ist die Ehrlichkeit wichtigsten."], "pista": "Sin sustantivo detrás → am wichtigsten." }
+      ]
     }
   ]
 }

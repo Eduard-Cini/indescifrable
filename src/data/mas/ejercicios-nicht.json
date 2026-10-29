@@ -64,6 +64,21 @@
         { "id": "ma7", "partes": null, "pregunta": "«Die Karten waren relativ günstig.» → relativ", "respuesta": "Relativiza la opinión.", "distractores": ["Refuerza la opinión."], "pista": "relativ = relativamente: suaviza." },
         { "id": "ma8", "partes": null, "pregunta": "«Die Party war richtig toll.» → richtig", "respuesta": "Refuerza la opinión.", "distractores": ["Relativiza la opinión."], "pista": "richtig (coloquial) = de verdad: intensifica." }
       ]
+    },
+    {
+      "id": "mehr-noch",
+      "titulo": "nicht mehr, noch nicht, gar nicht",
+      "instruccion": "«Ya no», «todavía no» y «en absoluto» se dicen con combinaciones fijas. Completa.",
+      "modelo": "Kursbuch S. 104 · Übungsbuch S. 105",
+      "ejercicios": [
+        { "id": "mn1", "partes": ["Ich wohne ", " in Berlin, ich bin umgezogen."], "respuesta": "nicht mehr", "distractores": ["noch nicht", "nicht noch", "mehr nicht"], "pista": "Antes sí, ahora no → nicht mehr." },
+        { "id": "mn2", "partes": ["Der Zug ist ", " angekommen, wir warten noch."], "respuesta": "noch nicht", "distractores": ["nicht mehr", "schon nicht", "nicht noch"], "pista": "Aún no ha pasado, pero pasará → noch nicht." },
+        { "id": "mn3", "partes": ["Das verstehe ich ", "."], "respuesta": "gar nicht", "distractores": ["nicht gar", "überhaupt", "nicht überhaupt"], "pista": "gar nicht / überhaupt nicht = en absoluto." },
+        { "id": "mn4", "partes": ["Ich habe ", " Geld ", "."], "respuesta": "kein … mehr", "distractores": ["kein … noch", "nicht … mehr", "keins … mehr"], "pista": "Con un sustantivo se parte: kein … mehr." },
+        { "id": "mn5", "partes": ["Hast du ", " gegessen oder soll ich kochen?"], "respuesta": "schon", "distractores": ["noch", "noch nicht", "nicht mehr"], "pista": "schon = ya." },
+        { "id": "mn6", "partes": null, "pregunta": "«Ya no fumo.»", "respuesta": "Ich rauche nicht mehr.", "distractores": ["Ich rauche noch nicht.", "Ich rauche mehr nicht.", "Ich rauche kein mehr."], "pista": "nicht mehr va detrás del verbo." },
+        { "id": "mn7", "partes": null, "pregunta": "«Todavía no he terminado.»", "respuesta": "Ich bin noch nicht fertig.", "distractores": ["Ich bin nicht mehr fertig.", "Ich bin nicht noch fertig.", "Ich bin noch fertig nicht."], "pista": "noch nicht, en ese orden." }
+      ]
     }
   ]
 }

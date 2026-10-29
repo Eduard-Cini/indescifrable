@@ -46,6 +46,21 @@
         { "id": "pl5", "partes": null, "pregunta": "forma neutra con barra, en plural", "respuesta": "die Besucher/innen", "distractores": ["die Besucher/in", "die Besucherin/nen", "die Besucher/inen"], "pista": "La barra va antes de -innen." },
         { "id": "pl6", "partes": null, "pregunta": "genitivo de der Verkäufer", "respuesta": "des Verkäufers", "distractores": ["des Verkäufern", "der Verkäufers", "des Verkäuferes"], "pista": "Es un masculino normal, no de declinación n: des Verkäufers." }
       ]
+    },
+    {
+      "id": "lugares",
+      "titulo": "De la ciudad o el país a la persona",
+      "instruccion": "El sufijo -er también forma gentilicios. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 27 · Übungsbuch S. 28",
+      "ejercicios": [
+        { "id": "lu1", "partes": ["Sie kommt aus Berlin, sie ist ", "."], "respuesta": "Berlinerin", "distractores": ["Berliner", "Berlinin", "Berlinerine"], "pista": "Mujer → -erin." },
+        { "id": "lu2", "partes": ["Er wohnt in Wien, er ist ", "."], "respuesta": "Wiener", "distractores": ["Wienerin", "Wiene", "Wienier"], "pista": "Hombre → -er, sin más." },
+        { "id": "lu3", "partes": ["Sie kommt aus Italien, sie ist ", "."], "respuesta": "Italienerin", "distractores": ["Italienin", "Italienerine", "Italiener"], "pista": "Italien → Italiener / Italienerin." },
+        { "id": "lu4", "partes": ["Mein Kollege kommt aus der Schweiz, er ist ", "."], "respuesta": "Schweizer", "distractores": ["Schweizerer", "Schweizerin", "Schweize"], "pista": "die Schweiz → der Schweizer (sin -er extra)." },
+        { "id": "lu5", "partes": ["Wir essen heute ", " Würstchen."], "respuesta": "Frankfurter", "distractores": ["Frankfurtere", "Frankfurters", "Frankfurterne"], "pista": "De ciudad + sustantivo: invariable, siempre -er y mayúscula." },
+        { "id": "lu6", "partes": null, "pregunta": "¿Cuál es correcta?", "respuesta": "Die Hamburger Hafenrundfahrt dauert eine Stunde.", "distractores": ["Die Hamburgere Hafenrundfahrt dauert eine Stunde.", "Die hamburger Hafenrundfahrt dauert eine Stunde.", "Die Hamburgern Hafenrundfahrt dauert eine Stunde."], "pista": "No se declina y va en mayúscula." },
+        { "id": "lu7", "partes": null, "pregunta": "«Es española» (mujer, de España).", "respuesta": "Sie ist Spanierin.", "distractores": ["Sie ist eine Spanierin Frau.", "Sie ist Spanier.", "Sie ist Spanische."], "pista": "La profesión y la nacionalidad van sin artículo." }
+      ]
     }
   ]
 }

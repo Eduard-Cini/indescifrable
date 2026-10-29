@@ -46,6 +46,21 @@
         { "id": "pr5", "partes": null, "pregunta": "Ich freue mich über die Zusage.", "respuesta": "Worüber freust du dich?", "distractores": ["Über wen freust du dich?", "Worauf freust du dich?", "Wovon freust du dich?"], "pista": "sich freuen über + cosa → worüber." },
         { "id": "pr6", "partes": null, "pregunta": "Ich habe mich bei der Firma beworben.", "respuesta": "Wo hast du dich beworben?", "distractores": ["Wobei hast du dich beworben?", "Bei wem hast du dich beworben?", "Worauf hast du dich beworben?"], "pista": "Aquí se pregunta por el lugar: wo." }
       ]
+    },
+    {
+      "id": "anticipa",
+      "titulo": "El da- que anuncia la frase",
+      "instruccion": "Cuando detrás viene una frase con dass o un infinitivo con zu, el verbo necesita su da(r)- delante. Completa.",
+      "modelo": "Kursbuch S. 47 · Übungsbuch S. 48",
+      "ejercicios": [
+        { "id": "an1", "partes": ["Ich freue mich ", ", dass du kommst."], "respuesta": "darauf", "distractores": ["auf das", "worauf", "davon"], "pista": "sich freuen auf → darauf, dass …" },
+        { "id": "an2", "partes": ["Wir haben ", " gesprochen, wie teuer die Miete ist."], "respuesta": "darüber", "distractores": ["über das", "worüber", "davor"], "pista": "sprechen über → darüber." },
+        { "id": "an3", "partes": ["Denk bitte ", ", die Rechnung zu bezahlen!"], "respuesta": "daran", "distractores": ["an das", "woran", "darauf"], "pista": "denken an → daran, … zu …" },
+        { "id": "an4", "partes": ["", " hast du Angst?"], "respuesta": "Wovor", "distractores": ["Davor", "Worauf", "Wofür"], "pista": "Angst haben vor → la pregunta por una cosa es wovor." },
+        { "id": "an5", "partes": ["Ich warte nur noch ", ", dass er anruft."], "respuesta": "darauf", "distractores": ["auf das", "davor", "worauf"], "pista": "warten auf → darauf." },
+        { "id": "an6", "partes": null, "pregunta": "«Me acuerdo de que vivía allí.»", "respuesta": "Ich erinnere mich daran, dass er dort gewohnt hat.", "distractores": ["Ich erinnere mich an das, dass er dort gewohnt hat.", "Ich erinnere mich daran, er dort gewohnt hat.", "Ich erinnere mich darauf, dass er dort gewohnt hat."], "pista": "sich erinnern AN → daran, dass …" },
+        { "id": "an7", "partes": null, "pregunta": "«¿De qué habéis hablado?» (sprechen über)", "respuesta": "Worüber habt ihr gesprochen?", "distractores": ["Darüber habt ihr gesprochen?", "Worüber habt ihr über gesprochen?", "Über worüber habt ihr gesprochen?"], "pista": "Para preguntar por una cosa: wo(r)- + preposición, y la preposición NO se repite." }
+      ]
     }
   ]
 }

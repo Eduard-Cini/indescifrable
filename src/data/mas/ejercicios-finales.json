@@ -46,6 +46,21 @@
         { "id": "mf5", "partes": ["Sie engagiert sich, ", " sie etwas verändern will."], "respuesta": "weil", "distractores": ["damit", "um", "dass"], "pista": "Motivo → weil." },
         { "id": "mf6", "partes": ["Sie engagiert sich, ", " etwas zu verändern."], "respuesta": "um", "distractores": ["weil", "damit", "dass"], "pista": "Finalidad y un solo sujeto → um … zu." }
       ]
+    },
+    {
+      "id": "otras-formas",
+      "titulo": "Decir la finalidad de otra manera",
+      "instruccion": "Además de damit y um … zu, la finalidad se dice con zum + infinitivo sustantivado o con zu + sustantivo.",
+      "modelo": "Kursbuch S. 58 · Übungsbuch S. 59",
+      "ejercicios": [
+        { "id": "of1", "partes": ["Ich lerne Deutsch, ", " in Österreich zu studieren."], "respuesta": "um", "distractores": ["damit", "für", "zum"], "pista": "Mismo sujeto → um … zu." },
+        { "id": "of2", "partes": ["Diese Creme ist ", " Schutz vor der Sonne."], "respuesta": "zum", "distractores": ["um", "damit", "für zu"], "pista": "zu + dem Schutz = zum Schutz." },
+        { "id": "of3", "partes": ["Ich habe ihr Geld gegeben, ", " sie ein Ticket kaufen kann."], "respuesta": "damit", "distractores": ["um", "für", "zum"], "pista": "El sujeto cambia (ella) → damit." },
+        { "id": "of4", "partes": ["Diese Schuhe sind ", " Wandern."], "respuesta": "zum", "distractores": ["zur", "um", "für zu"], "pista": "zum + infinitivo sustantivado (das Wandern)." },
+        { "id": "of5", "partes": ["Er spart, ", " ein Auto zu kaufen."], "respuesta": "um", "distractores": ["damit", "zum", "für"], "pista": "Él ahorra y él compra: mismo sujeto." },
+        { "id": "of6", "partes": null, "pregunta": "«Te llamo para preguntarte una cosa.»", "respuesta": "Ich rufe dich an, um dich etwas zu fragen.", "distractores": ["Ich rufe dich an, um dich etwas fragen.", "Ich rufe dich an, damit dich etwas zu fragen.", "Ich rufe dich an, um dass ich dich etwas frage."], "pista": "um … zu + infinitivo al final." },
+        { "id": "of7", "partes": null, "pregunta": "«Abre la ventana para que entre aire fresco.»", "respuesta": "Mach das Fenster auf, damit frische Luft hereinkommt.", "distractores": ["Mach das Fenster auf, um frische Luft hereinzukommen.", "Mach das Fenster auf, damit frische Luft hereinkommen.", "Mach das Fenster auf, um dass frische Luft hereinkommt."], "pista": "El que entra es el aire, no tú → sujetos distintos → damit." }
+      ]
     }
   ]
 }

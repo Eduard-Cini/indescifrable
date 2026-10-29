@@ -46,6 +46,21 @@
         { "id": "ot5", "partes": ["", " das Wetter schlecht war, sind wir viel spazieren gegangen."], "respuesta": "Obwohl", "distractores": ["Trotzdem", "Deshalb", "Denn"], "pista": "war está al final → subordinada → obwohl." },
         { "id": "ot6", "partes": ["Der Zug hatte Verspätung, ", " habe ich den Anschluss verpasst."], "respuesta": "deshalb", "distractores": ["weil", "obwohl", "da"], "pista": "Es la consecuencia, no el motivo → deshalb." }
       ]
+    },
+    {
+      "id": "concesivas",
+      "titulo": "obwohl, trotzdem o trotz",
+      "instruccion": "Las tres dicen contraste, pero se construyen distinto. Mira lo que viene detrás y dónde queda el verbo.",
+      "modelo": "Kursbuch S. 13 · Übungsbuch S. 14",
+      "ejercicios": [
+        { "id": "cc1", "partes": ["", " es regnete, sind wir gewandert."], "respuesta": "Obwohl", "distractores": ["Trotzdem", "Trotz", "Deshalb"], "pista": "Detrás viene una frase con el verbo al final → obwohl." },
+        { "id": "cc2", "partes": ["Es regnete. ", " sind wir gewandert."], "respuesta": "Trotzdem", "distractores": ["Obwohl", "Trotz", "Weil"], "pista": "Va en la posición 1 y el verbo detrás → trotzdem." },
+        { "id": "cc3", "partes": ["", " des Regens sind wir gewandert."], "respuesta": "Trotz", "distractores": ["Trotzdem", "Obwohl", "Weil"], "pista": "Detrás hay un sustantivo en genitivo → trotz." },
+        { "id": "cc4", "partes": ["Wir sind gewandert, ", " das Wetter schlecht war."], "respuesta": "obwohl", "distractores": ["trotzdem", "trotz", "deshalb"], "pista": "Subordinada detrás de la coma, verbo al final." },
+        { "id": "cc5", "partes": ["", " der Kälte hat sie nur eine Jacke an."], "respuesta": "Trotz", "distractores": ["Obwohl", "Trotzdem", "Denn"], "pista": "der Kälte es un sustantivo: toca la preposición." },
+        { "id": "cc6", "partes": null, "pregunta": "«Aunque el tren iba lleno, encontramos sitio.»", "respuesta": "Obwohl der Zug voll war, haben wir einen Platz gefunden.", "distractores": ["Obwohl war der Zug voll, haben wir einen Platz gefunden.", "Trotz der Zug voll war, haben wir einen Platz gefunden.", "Trotzdem der Zug voll war, haben wir einen Platz gefunden."], "pista": "obwohl manda el verbo al final de su frase." },
+        { "id": "cc7", "partes": null, "pregunta": "«El hotel era caro. Aun así, lo reservamos.»", "respuesta": "Das Hotel war teuer. Trotzdem haben wir es gebucht.", "distractores": ["Das Hotel war teuer. Trotzdem wir haben es gebucht.", "Das Hotel war teuer. Obwohl haben wir es gebucht.", "Das Hotel war teuer. Trotz haben wir es gebucht."], "pista": "trotzdem ocupa la posición 1 → el verbo va justo detrás." }
+      ]
     }
   ]
 }

@@ -47,6 +47,21 @@
         { "id": "cp5", "partes": null, "pregunta": "«Cuanta menos carne comemos, mejor para el clima.»", "respuesta": "Je weniger Fleisch wir essen, desto besser für das Klima.", "distractores": ["Je wenigeres Fleisch wir essen, desto besser für das Klima.", "Je weniger Fleisch wir essen, desto bessere für das Klima.", "Je weniger Fleisch essen wir, desto besser für das Klima."], "pista": "weniger y besser aquí van sin terminación; el verbo cierra la parte del je." },
         { "id": "cp6", "partes": null, "pregunta": "«El consumo de electricidad más alto es en invierno.»", "respuesta": "Der höchste Stromverbrauch ist im Winter.", "distractores": ["Der am höchsten Stromverbrauch ist im Winter.", "Der hoheste Stromverbrauch ist im Winter.", "Der höhere Stromverbrauch ist im Winter."], "pista": "hoch → höchst-; delante del sustantivo, con terminación." }
       ]
+    },
+    {
+      "id": "irregulares",
+      "titulo": "Los irregulares y el am …sten",
+      "instruccion": "Unos pocos cambian del todo, y el superlativo tiene dos formas según lleve sustantivo detrás o no.",
+      "modelo": "Kursbuch S. 56 · Übungsbuch S. 57",
+      "ejercicios": [
+        { "id": "ir1", "partes": ["gut – ", " – am besten"], "respuesta": "besser", "distractores": ["guter", "gutter", "mehr gut"], "pista": "gut cambia de raíz: gut – besser – am besten." },
+        { "id": "ir2", "partes": ["viel – mehr – ", ""], "respuesta": "am meisten", "distractores": ["am mehrsten", "am vielsten", "am meiste"], "pista": "viel – mehr – am meisten." },
+        { "id": "ir3", "partes": ["gern – lieber – ", ""], "respuesta": "am liebsten", "distractores": ["am gernsten", "am liebesten", "am lieber"], "pista": "gern – lieber – am liebsten." },
+        { "id": "ir4", "partes": ["hoch – ", " – am höchsten"], "respuesta": "höher", "distractores": ["hocher", "höcher", "hoher"], "pista": "hoch pierde la c: höher." },
+        { "id": "ir5", "partes": ["Im Winter ist der Strom ", "."], "respuesta": "am teuersten", "distractores": ["der teuerste", "am teuerste", "teuerer"], "pista": "Sin sustantivo detrás → am …sten." },
+        { "id": "ir6", "partes": ["Das ist ", " Film des Jahres."], "respuesta": "der beste", "distractores": ["am besten", "der besste", "der gutste"], "pista": "Con sustantivo detrás → artículo + …ste." },
+        { "id": "ir7", "partes": null, "pregunta": "«Prefiero el té al café.»", "respuesta": "Ich trinke lieber Tee als Kaffee.", "distractores": ["Ich trinke besser Tee als Kaffee.", "Ich trinke am liebsten Tee als Kaffee.", "Ich trinke lieber Tee wie Kaffee."], "pista": "gern → lieber, y el comparativo se compara con als." }
+      ]
     }
   ]
 }

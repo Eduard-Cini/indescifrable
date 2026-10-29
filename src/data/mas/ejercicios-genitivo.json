@@ -46,6 +46,21 @@
         { "id": "wt5", "partes": null, "pregunta": "Das Gerät wurde repariert, weil es noch Garantie gab.", "respuesta": "Wegen der Garantie wurde das Gerät repariert.", "distractores": ["Trotz der Garantie wurde das Gerät repariert.", "Wegen die Garantie wurde das Gerät repariert.", "Wegen der Garanties wurde das Gerät repariert."], "pista": "die Garantie es femenino: der Garantie." },
         { "id": "wt6", "partes": null, "pregunta": "Ich konnte nichts umtauschen, obwohl ich die Quittung hatte.", "respuesta": "Trotz der Quittung konnte ich nichts umtauschen.", "distractores": ["Wegen der Quittung konnte ich nichts umtauschen.", "Trotz die Quittung konnte ich nichts umtauschen.", "Trotz der Quittunges konnte ich nichts umtauschen."], "pista": "Contraste → trotz." }
       ]
+    },
+    {
+      "id": "von-o-genitivo",
+      "titulo": "¿Genitivo o von + dativo?",
+      "instruccion": "Con nombres propios se usa -s sin apóstrofo; al hablar se prefiere von + dativo. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 25 · Übungsbuch S. 26",
+      "ejercicios": [
+        { "id": "vg1", "partes": ["Das ist ", " Fahrrad."], "respuesta": "Annas", "distractores": ["Anna's", "Anna", "der Anna"], "pista": "Nombre propio + s, sin apóstrofo." },
+        { "id": "vg2", "partes": ["Das ist das Fahrrad ", " Nachbarin."], "respuesta": "von meiner", "distractores": ["von meine", "meiner", "von meinem"], "pista": "von + dativo: von meiner Nachbarin." },
+        { "id": "vg3", "partes": ["Wie heißt der Bruder ", "?"], "respuesta": "von Tarik", "distractores": ["Tariks von", "von Tariks", "des Tarik"], "pista": "Con nombre propio detrás se usa von, sin -s." },
+        { "id": "vg4", "partes": ["Die Farbe ", " Autos gefällt mir."], "respuesta": "des", "distractores": ["der", "dem", "den"], "pista": "Genitivo masculino/neutro: des + -s." },
+        { "id": "vg5", "partes": ["Der Titel ", " Buches ist lang."], "respuesta": "dieses", "distractores": ["diesem", "dieser", "diesen"], "pista": "dieses Buches, genitivo neutro." },
+        { "id": "vg6", "partes": null, "pregunta": "«Es el coche de mis padres» (lenguaje hablado).", "respuesta": "Das ist das Auto von meinen Eltern.", "distractores": ["Das ist das Auto von meine Eltern.", "Das ist das Auto meinen Eltern.", "Das ist das Auto von meiner Eltern."], "pista": "von + dativo plural: von meinen Eltern." },
+        { "id": "vg7", "partes": null, "pregunta": "¿Cuál es correcta?", "respuesta": "Das Handy meines Bruders ist kaputt.", "distractores": ["Das Handy meines Bruder ist kaputt.", "Das Handy meiner Bruders ist kaputt.", "Das Handy mein Bruders ist kaputt."], "pista": "El genitivo marca DOS veces: meines y Bruders." }
+      ]
     }
   ]
 }

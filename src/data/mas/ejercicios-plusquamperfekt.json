@@ -45,6 +45,21 @@
         { "id": "na5", "partes": ["Nachdem Alessia geheiratet ", ", traf sie ihre Freunde nicht mehr so oft."], "respuesta": "hatte", "distractores": ["hat", "war", "ist"], "pista": "Principal en Präteritum (traf) → Plusquamperfekt." },
         { "id": "na6", "partes": ["Sie fühlt sich viel wohler, nachdem sie in die WG gezogen ", "."], "respuesta": "ist", "distractores": ["hat", "war", "hatte"], "pista": "Principal en Präsens → Perfekt; ziehen con dirección va con sein." }
       ]
+    },
+    {
+      "id": "bevor",
+      "titulo": "bevor o nachdem",
+      "instruccion": "Los dos ordenan el tiempo, pero solo uno pide Plusquamperfekt. Elige.",
+      "modelo": "Kursbuch S. 81 · Übungsbuch S. 82",
+      "ejercicios": [
+        { "id": "bv1", "partes": ["", " ich zur Arbeit fuhr, hatte ich schon gefrühstückt."], "respuesta": "Bevor", "distractores": ["Nachdem", "Während", "Seitdem"], "pista": "Lo de la subordinada pasa DESPUÉS → bevor." },
+        { "id": "bv2", "partes": ["", " wir gegessen hatten, gingen wir spazieren."], "respuesta": "Nachdem", "distractores": ["Bevor", "Während", "Obwohl"], "pista": "Lo de la subordinada pasa ANTES → nachdem." },
+        { "id": "bv3", "partes": ["Nachdem er die Prüfung ", ", feierte er mit Freunden."], "respuesta": "bestanden hatte", "distractores": ["bestanden hat", "bestand", "bestanden war"], "pista": "Principal en Präteritum → subordinada en Plusquamperfekt con hatte." },
+        { "id": "bv4", "partes": ["Nachdem sie angekommen ", ", rief sie sofort an."], "respuesta": "war", "distractores": ["hatte", "ist", "hat"], "pista": "an|kommen va con sein → war angekommen." },
+        { "id": "bv5", "partes": ["Bevor du ", ", mach bitte das Licht aus."], "respuesta": "gehst", "distractores": ["gegangen bist", "gingst", "gegangen warst"], "pista": "Con bevor NO se usa Plusquamperfekt." },
+        { "id": "bv6", "partes": null, "pregunta": "¿Cuál está bien construida?", "respuesta": "Nachdem wir gegessen hatten, sind wir ins Kino gegangen.", "distractores": ["Nachdem wir hatten gegessen, sind wir ins Kino gegangen.", "Nachdem wir gegessen hatten, wir sind ins Kino gegangen.", "Nachdem hatten wir gegessen, sind wir ins Kino gegangen."], "pista": "El auxiliar cierra la subordinada, y detrás de la coma el verbo va el primero." },
+        { "id": "bv7", "partes": null, "pregunta": "«Después de que saliera el tren, me di cuenta de que había olvidado la maleta.»", "respuesta": "Nachdem der Zug abgefahren war, merkte ich, dass ich den Koffer vergessen hatte.", "distractores": ["Nachdem der Zug abgefahren hatte, merkte ich, dass ich den Koffer vergessen hatte.", "Nachdem der Zug abgefahren war, merkte ich, dass ich den Koffer vergessen war.", "Nachdem der Zug abfahren war, merkte ich, dass ich den Koffer vergessen hatte."], "pista": "ab|fahren con sein (war), vergessen con haben (hatte)." }
+      ]
     }
   ]
 }

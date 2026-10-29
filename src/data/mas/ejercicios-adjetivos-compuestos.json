@@ -46,6 +46,21 @@
         { "id": "te5", "partes": ["Ich suche einen ", " Hund."], "respuesta": "mittelgroßen", "distractores": ["mittelgroßer", "mittelgroßes", "mittelgroße"], "pista": "einen + masculino acusativo → -en." },
         { "id": "te6", "partes": ["Sie hat ", " Haare."], "respuesta": "halblange", "distractores": ["halblangen", "halblanger", "halblanges"], "pista": "Sin artículo, plural acusativo → -e." }
       ]
+    },
+    {
+      "id": "participio",
+      "titulo": "Compuestos con participio",
+      "instruccion": "hand-, selbst-, frisch-, neu- se pegan a un Partizip II. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 108 · Übungsbuch S. 109",
+      "ejercicios": [
+        { "id": "pc1", "partes": ["Brot, das man selbst backt, ist ", " Brot."], "respuesta": "selbstgebackenes", "distractores": ["selbstgebacken", "selbstbackendes", "selbstgebackene"], "pista": "Neutro sin artículo, nominativo → -es." },
+        { "id": "pc2", "partes": ["Eine Tasche, die mit der Hand gemacht ist, ist eine ", " Tasche."], "respuesta": "handgemachte", "distractores": ["handgemacht", "handmachende", "handgemachtes"], "pista": "eine + femenino → -e." },
+        { "id": "pc3", "partes": ["Ein Haus, das neu gebaut wurde, ist ein ", " Haus."], "respuesta": "neugebautes", "distractores": ["neugebaut", "neubauendes", "neugebaute"], "pista": "ein + neutro → -es." },
+        { "id": "pc4", "partes": ["selbst + machen → ", ""], "respuesta": "selbstgemacht", "distractores": ["selbstmachend", "selbstgemachen", "selbermacht"], "pista": "El participio va entero detrás del primer elemento." },
+        { "id": "pc5", "partes": ["Ich trinke am liebsten ", " Orangensaft."], "respuesta": "frischgepressten", "distractores": ["frischgepresst", "frischpressenden", "frischgepresster"], "pista": "Acusativo masculino sin artículo → -en." },
+        { "id": "pc6", "partes": null, "pregunta": "«Es una mesa hecha a mano.»", "respuesta": "Das ist ein handgemachter Tisch.", "distractores": ["Das ist ein handgemacht Tisch.", "Das ist ein handmachender Tisch.", "Das ist ein handgemachtes Tisch."], "pista": "ein + masculino nominativo → -er." },
+        { "id": "pc7", "partes": null, "pregunta": "«Me gusta más el pan casero.»", "respuesta": "Ich mag selbstgebackenes Brot lieber.", "distractores": ["Ich mag selbstgebacken Brot lieber.", "Ich mag selbstgebackener Brot lieber.", "Ich mag selbstbackendes Brot lieber."], "pista": "Brot es neutro y va sin artículo → -es." }
+      ]
     }
   ]
 }

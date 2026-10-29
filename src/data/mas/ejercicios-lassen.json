@@ -44,6 +44,21 @@
         { "id": "pe5", "partes": null, "pregunta": "Ich lasse mein Handy zu Hause.", "respuesta": "Ich habe mein Handy zu Hause gelassen.", "distractores": ["Ich habe mein Handy zu Hause lassen.", "Ich bin mein Handy zu Hause gelassen.", "Ich habe mein Handy zu Hause lassen gehabt."], "pista": "Aquí lassen va solo → participio normal: gelassen." },
         { "id": "pe6", "partes": null, "pregunta": "Sie lassen die Alarmanlage einbauen.", "respuesta": "Sie haben die Alarmanlage einbauen lassen.", "distractores": ["Sie haben die Alarmanlage eingebaut lassen.", "Sie haben die Alarmanlage einbauen gelassen.", "Sie sind die Alarmanlage einbauen lassen."], "pista": "ein|bauen se junta en infinitivo: einbauen lassen." }
       ]
+    },
+    {
+      "id": "vamos-a",
+      "titulo": "Lass uns …! y «se puede»",
+      "instruccion": "lassen también sirve para proponer algo y para decir que algo se puede hacer. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 20 · Intensivtrainer S. 10",
+      "ejercicios": [
+        { "id": "va1", "partes": ["", " uns heute Abend ins Kino gehen!"], "respuesta": "Lass", "distractores": ["Lasst uns zu", "Lässt", "Lassen du"], "pista": "A una persona (du) → Lass." },
+        { "id": "va2", "partes": ["", " uns morgen früher anfangen!"], "respuesta": "Lasst", "distractores": ["Lass du", "Lässt", "Lassen ihr"], "pista": "A varias personas (ihr) → Lasst." },
+        { "id": "va3", "partes": ["", " Sie uns über den Preis sprechen."], "respuesta": "Lassen", "distractores": ["Lasst", "Lass", "Lässt"], "pista": "Con Sie → Lassen Sie." },
+        { "id": "va4", "partes": ["Das Fenster ", " sich nicht öffnen."], "respuesta": "lässt", "distractores": ["lasst", "lasse", "lassen"], "pista": "sich lassen + infinitivo = «no se puede abrir»." },
+        { "id": "va5", "partes": ["Der Fehler ", " sich leicht reparieren."], "respuesta": "lässt", "distractores": ["lasst", "lassen", "ist"], "pista": "Sujeto singular der Fehler → lässt." },
+        { "id": "va6", "partes": null, "pregunta": "«Vamos a hacer una pausa» (a un amigo).", "respuesta": "Lass uns eine Pause machen.", "distractores": ["Lasst uns eine Pause zu machen.", "Lassen uns eine Pause machen.", "Lass uns eine Pause zu machen."], "pista": "Sin zu: lassen + infinitivo." },
+        { "id": "va7", "partes": null, "pregunta": "«Esta puerta se puede cerrar sin llave.»", "respuesta": "Diese Tür lässt sich ohne Schlüssel schließen.", "distractores": ["Diese Tür lässt ohne Schlüssel schließen.", "Diese Tür lasst sich ohne Schlüssel schließen.", "Diese Tür lässt sich ohne Schlüssel zu schließen."], "pista": "sich lassen + infinitivo = «se puede»." }
+      ]
     }
   ]
 }

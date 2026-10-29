@@ -57,6 +57,21 @@
         { "id": "ct5", "partes": ["Mit ", " Grüßen"], "respuesta": "freundlichen", "distractores": ["freundliche", "freundlicher"], "pista": "Sin artículo, plural dativo → -en (como den)." },
         { "id": "ct6", "partes": ["Mit den ", " Grüßen"], "respuesta": "besten", "distractores": ["beste", "bester"], "pista": "Con den (dativo plural) → -en." }
       ]
+    },
+    {
+      "id": "plural",
+      "titulo": "En plural, sin artículo",
+      "instruccion": "Sin artículo el adjetivo carga con la marca del caso. Completa la terminación.",
+      "modelo": "Kursbuch S. 106 · Übungsbuch S. 107",
+      "ejercicios": [
+        { "id": "pl1", "partes": ["Wir suchen gut", " Mitarbeiter."], "respuesta": "e", "distractores": ["en", "es", "er"], "pista": "Acusativo plural sin artículo → -e." },
+        { "id": "pl2", "partes": ["Mit frisch", " Zutaten schmeckt es besser."], "respuesta": "en", "distractores": ["e", "er", "es"], "pista": "Dativo plural → -en." },
+        { "id": "pl3", "partes": ["Das ist ein Hotel mit groß", " Zimmern."], "respuesta": "en", "distractores": ["e", "er", "es"], "pista": "mit + dativo plural → -en." },
+        { "id": "pl4", "partes": ["Klein", " Kinder spielen draußen."], "respuesta": "e", "distractores": ["en", "er", "es"], "pista": "Nominativo plural → -e." },
+        { "id": "pl5", "partes": ["Ich trinke gern schwarz", " Tee."], "respuesta": "en", "distractores": ["er", "e", "es"], "pista": "Acusativo masculino singular → -en." },
+        { "id": "pl6", "partes": ["Trotz groß", " Probleme ging alles gut."], "respuesta": "er", "distractores": ["en", "e", "es"], "pista": "Genitivo plural sin artículo → -er." },
+        { "id": "pl7", "partes": null, "pregunta": "«Busco zapatos cómodos.»", "respuesta": "Ich suche bequeme Schuhe.", "distractores": ["Ich suche bequemen Schuhe.", "Ich suche bequemer Schuhe.", "Ich suche bequemes Schuhe."], "pista": "Acusativo plural sin artículo → bequeme." }
+      ]
     }
   ]
 }

@@ -44,6 +44,21 @@
         { "id": "hs5", "partes": ["Wann ", " ihr weitergefahren?"], "respuesta": "seid", "distractores": ["habt", "wart"], "pista": "fahren (movimiento) → sein; para «ihr», seid." },
         { "id": "hs6", "partes": ["Ich ", " noch kurz bei Oma vorbeigekommen."], "respuesta": "bin", "distractores": ["habe", "war"], "pista": "vorbeikommen → sein." }
       ]
+    },
+    {
+      "id": "mismo-prefijo",
+      "titulo": "El mismo prefijo, separable o no",
+      "instruccion": "um-, über- y unter- pueden ir de las dos formas: separable en sentido literal, inseparable en sentido figurado.",
+      "modelo": "Kursbuch S. 98 · Übungsbuch S. 99",
+      "ejercicios": [
+        { "id": "mp1", "partes": ["Partizip II de über|setzen (cruzar en barca): ", ""], "respuesta": "übergesetzt", "distractores": ["übersetzt", "geübersetzt", "übergesetzen"], "pista": "Separable → el ge- va en medio." },
+        { "id": "mp2", "partes": ["Partizip II de übersetzen (traducir): ", ""], "respuesta": "übersetzt", "distractores": ["übergesetzt", "geübersetzt", "übersetzen"], "pista": "Inseparable → sin ge-." },
+        { "id": "mp3", "partes": ["Partizip II de um|ziehen (mudarse): ", ""], "respuesta": "umgezogen", "distractores": ["umzogen", "geumzogen", "umziehen"], "pista": "Separable → um + ge + zogen." },
+        { "id": "mp4", "partes": ["Partizip II de wiederholen (repetir): ", ""], "respuesta": "wiederholt", "distractores": ["wiedergeholt", "gewiederholt", "wiederholen"], "pista": "Aquí wieder- es inseparable → sin ge-." },
+        { "id": "mp5", "partes": ["Er ", " den Text ins Spanische."], "respuesta": "übersetzt", "distractores": ["setzt über", "übergesetzt", "setzt um"], "pista": "Traducir es inseparable: el prefijo NO se separa." },
+        { "id": "mp6", "partes": ["Die Fähre ", " uns ans andere Ufer über."], "respuesta": "setzt", "distractores": ["übersetzt", "setzt über", "übergesetzt"], "pista": "Aquí es literal y separable: el über ya está al final." },
+        { "id": "mp7", "partes": null, "pregunta": "«Hacemos transbordo en Viena.»", "respuesta": "Wir steigen in Wien um.", "distractores": ["Wir umsteigen in Wien.", "Wir umsteigen in Wien um.", "Wir steigen in Wien umge."], "pista": "um|steigen es separable: el prefijo cierra la frase." }
+      ]
     }
   ]
 }

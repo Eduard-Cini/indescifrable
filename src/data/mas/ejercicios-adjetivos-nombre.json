@@ -49,6 +49,21 @@
         { "id": "pe7", "partes": ["Wer eine Ausbildung im Betrieb macht, ist ", "."], "respuesta": "ein Auszubildender", "distractores": ["ein Angestellter", "ein Studierender", "ein Berufstätiger"], "pista": "die Ausbildung → der/die Auszubildende." },
         { "id": "pe8", "partes": ["Name und Telefonnummer ", ", der im Notfall verständigt werden soll:"], "respuesta": "des Angehörigen", "distractores": ["der Angehörige", "den Angehörigen", "dem Angehörigen"], "pista": "Genitivo masculino con der → des …-en." }
       ]
+    },
+    {
+      "id": "etwas-nichts",
+      "titulo": "etwas Neues, nichts Besonderes",
+      "instruccion": "Detrás de etwas, nichts, viel y wenig el adjetivo se sustantiva en neutro y acaba en -es. Detrás de alles, en -e.",
+      "modelo": "Kursbuch S. 130 · Übungsbuch S. 131",
+      "ejercicios": [
+        { "id": "et1", "partes": ["Hast du etwas ", " gehört?"], "respuesta": "Neues", "distractores": ["Neue", "Neuen", "Neu"], "pista": "etwas + adjetivo + -es, en mayúscula." },
+        { "id": "et2", "partes": ["Das war nichts ", "."], "respuesta": "Besonderes", "distractores": ["Besondere", "Besonderen", "Besonder"], "pista": "nichts Besonderes = nada especial." },
+        { "id": "et3", "partes": ["Er hat viel ", " erzählt."], "respuesta": "Interessantes", "distractores": ["Interessante", "Interessanten", "Interessant"], "pista": "viel + -es." },
+        { "id": "et4", "partes": ["Gibt es hier etwas ", "?"], "respuesta": "Günstiges", "distractores": ["Günstige", "Günstigen", "Günstig"], "pista": "Misma regla que con Neues." },
+        { "id": "et5", "partes": ["Ich habe wenig ", " gefunden."], "respuesta": "Gutes", "distractores": ["Gute", "Guten", "Gut"], "pista": "wenig + -es." },
+        { "id": "et6", "partes": ["Alles ", " zum Geburtstag!"], "respuesta": "Gute", "distractores": ["Gutes", "Guten", "Gut"], "pista": "¡Excepción! Detrás de alles la terminación es -e." },
+        { "id": "et7", "partes": null, "pregunta": "«No he oído nada nuevo.»", "respuesta": "Ich habe nichts Neues gehört.", "distractores": ["Ich habe nichts Neue gehört.", "Ich habe nichts neues gehört.", "Ich habe nichts Neuen gehört."], "pista": "-es y con mayúscula, porque es un sustantivo." }
+      ]
     }
   ]
 }

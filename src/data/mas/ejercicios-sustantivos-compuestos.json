@@ -48,6 +48,21 @@
         { "id": "un5", "partes": null, "pregunta": "die Universität + die Bibliothek", "respuesta": "die Universitätsbibliothek", "distractores": ["die Universitätbibliothek", "die Universitätenbibliothek", "die Universitätesbibliothek"], "pista": "Los sustantivos en -tät llevan -s-." },
         { "id": "un6", "partes": null, "pregunta": "das Kind + das Zimmer", "respuesta": "das Kinderzimmer", "distractores": ["das Kindzimmer", "das Kindszimmer", "das Kindeszimmer"], "pista": "Aquí se usa el plural: Kinder + Zimmer." }
       ]
+    },
+    {
+      "id": "que-manda",
+      "titulo": "¿Qué parte manda?",
+      "instruccion": "En un compuesto manda la ÚLTIMA palabra: ella dice qué es la cosa y de dónde sale el artículo. La primera solo matiza.",
+      "modelo": "Kursbuch S. 37 · Übungsbuch S. 38",
+      "ejercicios": [
+        { "id": "qm1", "partes": null, "pregunta": "Ein Sommerurlaub ist …", "respuesta": "ein Urlaub im Sommer.", "distractores": ["ein Sommer im Urlaub.", "ein Sommer mit Urlaub.", "ein Urlaub ohne Sommer."], "pista": "Manda -urlaub: es unas vacaciones." },
+        { "id": "qm2", "partes": null, "pregunta": "Eine Wohnungstür ist …", "respuesta": "eine Tür einer Wohnung.", "distractores": ["eine Wohnung mit einer Tür.", "eine Wohnung hinter einer Tür.", "eine Tür mit einer Wohnung."], "pista": "Manda -tür: es una puerta." },
+        { "id": "qm3", "partes": null, "pregunta": "¿Cuál de las dos palabras es una PUERTA, y con qué artículo?", "respuesta": "die Glastür", "distractores": ["das Türglas", "das Glastür", "der Glastür"], "pista": "-tür manda: es una puerta, y die Tür da el artículo." },
+        { "id": "qm4", "partes": null, "pregunta": "¿Y cuál es un CRISTAL?", "respuesta": "das Türglas", "distractores": ["die Glastür", "die Türglas", "der Türglas"], "pista": "-glas manda: das Glas → das Türglas." },
+        { "id": "qm5", "partes": ["Der Weg für Fahrräder heißt ", "."], "respuesta": "der Fahrradweg", "distractores": ["das Fahrradweg", "der Wegfahrrad", "die Fahrradweg"], "pista": "Acaba en -weg → der Weg." },
+        { "id": "qm6", "partes": ["Die Zeit, die man arbeitet, ist ", "."], "respuesta": "die Arbeitszeit", "distractores": ["der Arbeitszeit", "die Zeitarbeit", "das Arbeitszeit"], "pista": "die Zeit manda; Zeitarbeit es otra cosa (trabajo temporal)." },
+        { "id": "qm7", "partes": ["Wir treffen uns ", " Stadtzentrum."], "respuesta": "im", "distractores": ["in der", "in die", "im dem"], "pista": "das Zentrum → das Stadtzentrum → in dem = im." }
+      ]
     }
   ]
 }

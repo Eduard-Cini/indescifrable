@@ -46,6 +46,21 @@
         { "id": "pp5", "partes": ["Die Läufer kamen ", "einander ins Ziel."], "respuesta": "hinter", "distractores": ["neben", "auf", "in"], "pista": "hintereinander = uno detrás de otro." },
         { "id": "pp6", "partes": ["Die beiden wissen viel ", "einander."], "respuesta": "über", "distractores": ["an", "auf", "aus"], "pista": "über jemanden wissen → übereinander." }
       ]
+    },
+    {
+      "id": "sich-o-einander",
+      "titulo": "uns, euch, sich … o -einander",
+      "instruccion": "El recíproco se dice con el reflexivo o con -einander. Completa con la forma que toca.",
+      "modelo": "Kursbuch S. 134 · Übungsbuch S. 135",
+      "ejercicios": [
+        { "id": "se1", "partes": ["Sie haben ", " lange nicht gesehen."], "respuesta": "sich", "distractores": ["ihnen", "uns", "euch"], "pista": "Tercera persona → sich." },
+        { "id": "se2", "partes": ["Wir kennen ", " seit der Schule."], "respuesta": "uns", "distractores": ["sich", "euch", "ihnen"], "pista": "wir → uns." },
+        { "id": "se3", "partes": ["Kennt ihr ", " schon?"], "respuesta": "euch", "distractores": ["uns", "sich", "ihnen"], "pista": "ihr → euch." },
+        { "id": "se4", "partes": ["Nach dem Streit sprechen sie nicht mehr ", "."], "respuesta": "miteinander", "distractores": ["mitsich", "mit einem", "miteinem"], "pista": "La preposición se pega a -einander." },
+        { "id": "se5", "partes": ["Die Häuser stehen dicht ", "."], "respuesta": "nebeneinander", "distractores": ["nebensich", "nebeneins", "nebenanderen"], "pista": "neben + einander, en una palabra." },
+        { "id": "se6", "partes": ["Sie sitzen ", " am Tisch."], "respuesta": "einander gegenüber", "distractores": ["gegenübereinander", "gegeneinander", "übereinander"], "pista": "gegenüber es de los pocos que van detrás: einander gegenüber." },
+        { "id": "se7", "partes": null, "pregunta": "«Nos conocemos desde hace años.»", "respuesta": "Wir kennen uns seit Jahren.", "distractores": ["Wir kennen sich seit Jahren.", "Wir kennen uns einander seit Jahren.", "Wir kennen einander uns seit Jahren."], "pista": "O uns o einander, pero no los dos a la vez." }
+      ]
     }
   ]
 }

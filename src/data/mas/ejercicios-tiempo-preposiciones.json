@@ -47,6 +47,21 @@
         { "id": "cn5", "partes": null, "pregunta": "«todos los días» (sin preposición)", "respuesta": "jeden Tag", "distractores": ["jedem Tag", "jedes Tages", "an jeden Tag"], "pista": "Duración y frecuencia sin preposición → acusativo." },
         { "id": "cn6", "partes": null, "pregunta": "«durante años»", "respuesta": "jahrelang", "distractores": ["während Jahre", "seit jahrelang", "in Jahren lang"], "pista": "Con -lang se forma un adverbio: jahrelang, stundenlang." }
       ]
+    },
+    {
+      "id": "seit-vor",
+      "titulo": "seit, vor, ab o bis",
+      "instruccion": "La diferencia no es el tiempo verbal, es si la acción sigue o ya terminó. Completa.",
+      "modelo": "Kursbuch S. 35 · Übungsbuch S. 36",
+      "ejercicios": [
+        { "id": "sv1", "partes": ["Ich wohne ", " drei Jahren in Leipzig."], "respuesta": "seit", "distractores": ["vor", "ab", "für"], "pista": "Empezó hace tres años y SIGUE → seit + dativo." },
+        { "id": "sv2", "partes": ["Wir haben uns ", " drei Jahren kennengelernt."], "respuesta": "vor", "distractores": ["seit", "ab", "bis"], "pista": "Un momento puntual ya terminado → vor." },
+        { "id": "sv3", "partes": ["", " Montag gilt der neue Fahrplan."], "respuesta": "Ab", "distractores": ["Seit", "Vor", "Bis"], "pista": "A partir de un momento que aún no ha llegado → ab." },
+        { "id": "sv4", "partes": ["Das Geschäft ist ", " 20 Uhr geöffnet."], "respuesta": "bis", "distractores": ["seit", "ab", "vor"], "pista": "El final de un periodo → bis." },
+        { "id": "sv5", "partes": ["", " einem Monat habe ich die Stelle gewechselt."], "respuesta": "Vor", "distractores": ["Seit", "Ab", "Bis"], "pista": "Acción acabada en un punto del pasado → vor." },
+        { "id": "sv6", "partes": ["Sie arbeitet ", " 2019 in dieser Firma."], "respuesta": "seit", "distractores": ["vor", "ab", "bis"], "pista": "Con un año: seit 2019, sin artículo." },
+        { "id": "sv7", "partes": null, "pregunta": "«Llevo dos semanas esperando la respuesta.»", "respuesta": "Ich warte seit zwei Wochen auf die Antwort.", "distractores": ["Ich warte vor zwei Wochen auf die Antwort.", "Ich warte seit zwei Woche auf die Antwort.", "Ich warte seit zwei Wochen für die Antwort."], "pista": "Sigue pasando → seit + dativo plural, y el alemán lo dice en presente." }
+      ]
     }
   ]
 }

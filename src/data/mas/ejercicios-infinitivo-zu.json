@@ -46,6 +46,21 @@
         { "id": "un5", "partes": null, "pregunta": "Es ist wichtig. + Man bucht rechtzeitig.", "respuesta": "Es ist wichtig, rechtzeitig zu buchen.", "distractores": ["Es ist wichtig, rechtzeitig buchen.", "Es ist wichtig, man bucht rechtzeitig zu.", "Es ist wichtig, rechtzeitig gebucht."], "pista": "wichtig + sein → zu + infinitivo." },
         { "id": "un6", "partes": null, "pregunta": "Ich habe geplant. + Ich packe heute Abend ein.", "respuesta": "Ich habe geplant, heute Abend einzupacken.", "distractores": ["Ich habe geplant, heute Abend einpacken.", "Ich habe geplant, heute Abend zu einpacken.", "Ich habe geplant, heute Abend packe ich ein."], "pista": "ein|packen es separable: einzupacken." }
       ]
+    },
+    {
+      "id": "separables",
+      "titulo": "El zu en los verbos separables",
+      "instruccion": "El verbo es separable: el zu va DENTRO, entre el prefijo y el verbo. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 10 · Übungsbuch S. 11",
+      "ejercicios": [
+        { "id": "sp1", "partes": ["Ich habe vergessen, dich ", "."], "respuesta": "anzurufen", "distractores": ["zu anrufen", "anrufen zu", "zu anzurufen"], "pista": "an|rufen → an + zu + rufen." },
+        { "id": "sp2", "partes": ["Es ist Zeit, mit dem Training ", "."], "respuesta": "anzufangen", "distractores": ["zu anfangen", "anfangen zu", "anfanzugen"], "pista": "an|fangen → anzufangen." },
+        { "id": "sp3", "partes": ["Wir haben vor, am Sonntag früh ", "."], "respuesta": "abzufahren", "distractores": ["zu abfahren", "abfahren zu", "abfahrzuen"], "pista": "ab|fahren → abzufahren." },
+        { "id": "sp4", "partes": ["Hast du daran gedacht, das Licht ", "?"], "respuesta": "auszumachen", "distractores": ["zu ausmachen", "ausmachen zu", "auszugemacht"], "pista": "aus|machen → auszumachen." },
+        { "id": "sp5", "partes": ["Er hat versprochen, uns am Bahnhof ", "."], "respuesta": "abzuholen", "distractores": ["zu abholen", "abholen zu", "abzugeholt"], "pista": "ab|holen → abzuholen." },
+        { "id": "sp6", "partes": ["Mein Plan ist, in Wien ", "."], "respuesta": "umzusteigen", "distractores": ["zu umsteigen", "umsteigen zu", "umzugestiegen"], "pista": "um|steigen → umzusteigen." },
+        { "id": "sp7", "partes": null, "pregunta": "¿Cuál es correcta? El verbo NO es separable.", "respuesta": "Ich habe versucht, das Problem zu verstehen.", "distractores": ["Ich habe versucht, das Problem verzustehen.", "Ich habe versucht, das Problem zu verstehen zu.", "Ich habe versucht, das Problem verstehen zu."], "pista": "ver- es inseparable: el zu va suelto delante." }
+      ]
     }
   ]
 }

@@ -45,6 +45,21 @@
         { "id": "un5", "partes": null, "pregunta": "Die Firma ist groß. + Der Einfluss ist stark.", "respuesta": "Je größer die Firma ist, desto stärker ist der Einfluss.", "distractores": ["Je größer ist die Firma, desto stärker ist der Einfluss.", "Je größer die Firma ist, desto stärker der Einfluss ist.", "Je groß die Firma ist, desto stark ist der Einfluss."], "pista": "groß → größer; stark → stärker, los dos con Umlaut." },
         { "id": "un6", "partes": null, "pregunta": "Du fängst früh an. + Du bist früh fertig.", "respuesta": "Je früher du anfängst, desto früher bist du fertig.", "distractores": ["Je früher fängst du an, desto früher bist du fertig.", "Je früher du anfängst, desto früher du fertig bist.", "Je früher du an fängst, desto früher bist du fertig."], "pista": "an|fangen se junta al final de la subordinada: anfängst." }
       ]
+    },
+    {
+      "id": "comparativo-doble",
+      "titulo": "El comparativo de las dos mitades",
+      "instruccion": "Las dos partes llevan comparativo. Completa la forma que falta.",
+      "modelo": "Kursbuch S. 140 · Übungsbuch S. 141",
+      "ejercicios": [
+        { "id": "cd1", "partes": ["Je ", " Zeit ich habe, desto besser."], "respuesta": "mehr", "distractores": ["viel", "mehrere", "meiste"], "pista": "viel → mehr." },
+        { "id": "cd2", "partes": ["Je ", " das Hotel ist, desto teurer wird es."], "respuesta": "besser", "distractores": ["gut", "am besten", "guter"], "pista": "gut → besser." },
+        { "id": "cd3", "partes": ["Je länger ich warte, desto ", " werde ich."], "respuesta": "nervöser", "distractores": ["nervös", "am nervösesten", "nervöse"], "pista": "Las dos mitades en comparativo." },
+        { "id": "cd4", "partes": ["", " mehr man übt, desto sicherer wird man."], "respuesta": "Je", "distractores": ["Desto", "Umso", "Wie"], "pista": "La primera mitad empieza siempre con je." },
+        { "id": "cd5", "partes": ["Je mehr Leute kommen, desto ", "."], "respuesta": "lauter wird es", "distractores": ["es wird lauter", "wird lauter es", "lauter es wird"], "pista": "Detrás de desto: comparativo, luego el verbo, luego el sujeto." },
+        { "id": "cd6", "partes": null, "pregunta": "«Cuanto más caro es el piso, más pequeño es.»", "respuesta": "Je teurer die Wohnung ist, desto kleiner ist sie.", "distractores": ["Je teurer ist die Wohnung, desto kleiner ist sie.", "Je teurer die Wohnung ist, desto kleiner sie ist.", "Desto teurer die Wohnung ist, je kleiner ist sie."], "pista": "En la mitad del je el verbo va al final; en la del desto, justo detrás del comparativo." },
+        { "id": "cd7", "partes": null, "pregunta": "«Cuanto antes, mejor.»", "respuesta": "Je eher, desto besser.", "distractores": ["Je eher, so besser.", "Desto eher, je besser.", "Je eher, desto gut."], "pista": "La fórmula corta, sin verbo." }
+      ]
     }
   ]
 }

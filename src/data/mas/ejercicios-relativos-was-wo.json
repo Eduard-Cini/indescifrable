@@ -48,6 +48,21 @@
         { "id": "fr5", "partes": null, "pregunta": "«El barrio en el que crecí ha cambiado mucho.»", "respuesta": "Der Stadtteil, wo ich aufgewachsen bin, hat sich sehr verändert.", "distractores": ["Der Stadtteil, was ich aufgewachsen bin, hat sich sehr verändert.", "Der Stadtteil, den ich aufgewachsen bin, hat sich sehr verändert.", "Der Stadtteil, wo bin ich aufgewachsen, hat sich sehr verändert."], "pista": "Lugar → wo (= in dem)." },
         { "id": "fr6", "partes": null, "pregunta": "«Lo que más me gusta es el río.»", "respuesta": "Das, was mir am besten gefällt, ist der Fluss.", "distractores": ["Das, das mir am besten gefällt, ist der Fluss.", "Das, wo mir am besten gefällt, ist der Fluss.", "Was, das mir am besten gefällt, ist der Fluss."], "pista": "das + was: «lo que»." }
       ]
+    },
+    {
+      "id": "lugar",
+      "titulo": "wo, wohin, woher",
+      "instruccion": "¿Estar en un sitio, ir hacia él o venir de él? Completa.",
+      "modelo": "Kursbuch S. 132 · Übungsbuch S. 133",
+      "ejercicios": [
+        { "id": "lg1", "partes": ["Das ist die Stadt, ", " ich geboren bin."], "respuesta": "wo", "distractores": ["wohin", "woher", "was"], "pista": "Estar en un sitio → wo." },
+        { "id": "lg2", "partes": ["Das ist das Dorf, ", " meine Eltern gezogen sind."], "respuesta": "wohin", "distractores": ["wo", "woher", "was"], "pista": "Movimiento hacia allí → wohin." },
+        { "id": "lg3", "partes": ["Das ist das Land, ", " meine Familie kommt."], "respuesta": "woher", "distractores": ["wo", "wohin", "was"], "pista": "Procedencia → woher." },
+        { "id": "lg4", "partes": ["", " gehst du denn so spät?"], "respuesta": "Wohin", "distractores": ["Wo", "Woher", "Was"], "pista": "gehen + dirección → wohin." },
+        { "id": "lg5", "partes": ["", " kommst du gerade?"], "respuesta": "Woher", "distractores": ["Wohin", "Wo", "Was"], "pista": "Vienes DE algún sitio → woher." },
+        { "id": "lg6", "partes": ["Er hat mir geholfen, ", " mich sehr gefreut hat."], "respuesta": "was", "distractores": ["wo", "das", "wofür"], "pista": "Se refiere a TODA la frase anterior → was." },
+        { "id": "lg7", "partes": null, "pregunta": "«El pueblo donde crecí es muy pequeño.»", "respuesta": "Das Dorf, wo ich aufgewachsen bin, ist sehr klein.", "distractores": ["Das Dorf, wohin ich aufgewachsen bin, ist sehr klein.", "Das Dorf, woher ich aufgewachsen bin, ist sehr klein.", "Das Dorf, was ich aufgewachsen bin, ist sehr klein."], "pista": "Crecer EN un sitio → wo." }
+      ]
     }
   ]
 }

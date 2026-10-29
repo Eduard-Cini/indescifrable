@@ -45,6 +45,21 @@
         { "id": "ef5", "partes": ["Wo kommst du eigentlich ", "?"], "respuesta": "her", "distractores": ["hin", "rein", "raus"], "pista": "«¿De dónde vienes?» → woher, separado al hablar." },
         { "id": "ef6", "partes": ["Wo gehst du so spät noch ", "?"], "respuesta": "hin", "distractores": ["her", "rein", "rauf"], "pista": "«¿Adónde vas?» → wohin, separado al hablar." }
       ]
+    },
+    {
+      "id": "woher-wohin",
+      "titulo": "wo, woher, wohin",
+      "instruccion": "La pregunta sigue la misma lógica que her- y hin-. Completa.",
+      "modelo": "Kursbuch S. 144 · Übungsbuch S. 145",
+      "ejercicios": [
+        { "id": "wh1", "partes": ["", " kommst du? — Aus Mexiko."], "respuesta": "Woher", "distractores": ["Wohin", "Wo", "Woran"], "pista": "Procedencia → woher, como her-." },
+        { "id": "wh2", "partes": ["", " fährst du in Urlaub? — Nach Italien."], "respuesta": "Wohin", "distractores": ["Woher", "Wo", "Worauf"], "pista": "Destino → wohin, como hin-." },
+        { "id": "wh3", "partes": ["", " wohnst du? — In Leipzig."], "respuesta": "Wo", "distractores": ["Wohin", "Woher", "Worin"], "pista": "Sin movimiento → wo." },
+        { "id": "wh4", "partes": ["Komm bitte ", "!"], "respuesta": "her", "distractores": ["hin", "hinein", "heraus"], "pista": "Hacia quien habla → her." },
+        { "id": "wh5", "partes": ["Da ist das Problem: Geh mal ", "!"], "respuesta": "hin", "distractores": ["her", "herein", "heraus"], "pista": "Alejándose de quien habla → hin." },
+        { "id": "wh6", "partes": ["Sie läuft den ganzen Tag ", "."], "respuesta": "hin und her", "distractores": ["her und hin", "hin und hin", "her und her"], "pista": "La expresión fija es hin und her, en ese orden." },
+        { "id": "wh7", "partes": null, "pregunta": "«¿De dónde vienes? — De Múnich.»", "respuesta": "Woher kommst du? — Aus München.", "distractores": ["Wohin kommst du? — Aus München.", "Wo kommst du? — Aus München.", "Woher kommst du? — Nach München."], "pista": "woher pide aus/von, no nach." }
+      ]
     }
   ]
 }

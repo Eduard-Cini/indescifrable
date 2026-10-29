@@ -45,6 +45,21 @@
         { "id": "ot5", "partes": ["Hanna und José ", " sich vorgenommen, öfter Sport zu machen."], "respuesta": "haben", "distractores": ["sind", "werden", "hatten"], "pista": "sich vor|nehmen forma el Perfekt con haben." },
         { "id": "ot6", "partes": ["Nächstes Jahr ", " Tom weniger essen und gesünder leben."], "respuesta": "wird", "distractores": ["werden", "werde", "wirst"], "pista": "Tom es 3.ª persona del singular." }
       ]
+    },
+    {
+      "id": "suposicion",
+      "titulo": "Suponer con werden",
+      "instruccion": "El Futur I con wohl o wahrscheinlich no habla del futuro: dice lo que uno SUPONE que pasa ahora. Completa.",
+      "modelo": "Kursbuch S. 68 · Übungsbuch S. 69",
+      "ejercicios": [
+        { "id": "su1", "partes": ["Er ist nicht da. Er ", " wohl krank sein."], "respuesta": "wird", "distractores": ["werde", "wirst", "würde"], "pista": "er → wird; wohl marca la suposición." },
+        { "id": "su2", "partes": ["Meine Eltern ", " wahrscheinlich im Stau stehen."], "respuesta": "werden", "distractores": ["wird", "wirst", "werdet"], "pista": "Sujeto plural → werden." },
+        { "id": "su3", "partes": ["Du ", " sicher müde sein nach der Reise."], "respuesta": "wirst", "distractores": ["wird", "werdet", "werde"], "pista": "du → wirst." },
+        { "id": "su4", "partes": ["Ihr ", " wohl schon im Urlaub sein."], "respuesta": "werdet", "distractores": ["werden", "wird", "werde"], "pista": "ihr → werdet." },
+        { "id": "su5", "partes": ["Keine Sorge, das ", " schon stimmen."], "respuesta": "wird", "distractores": ["werde", "würde", "wurde"], "pista": "«Das wird schon …» = seguro que sí." },
+        { "id": "su6", "partes": null, "pregunta": "«Estará en el tren» (lo supongo, ahora mismo).", "respuesta": "Er wird wohl im Zug sitzen.", "distractores": ["Er wird wohl im Zug zu sitzen.", "Er würde wohl im Zug sitzen.", "Er wird wohl im Zug gesessen."], "pista": "werden + infinitivo; würde sería Konjunktiv II." },
+        { "id": "su7", "partes": null, "pregunta": "¿Cuál NO es una suposición, sino un plan?", "respuesta": "Nächsten Monat ziehe ich um.", "distractores": ["Er wird wohl umziehen.", "Sie werden wahrscheinlich umziehen.", "Das wird schon klappen."], "pista": "Presente + marca de tiempo = plan; Futur I + wohl = suposición." }
+      ]
     }
   ]
 }

@@ -46,6 +46,21 @@
         { "id": "ar5", "partes": null, "pregunta": "«al llegar» (= cuando llegamos)", "respuesta": "beim Ankommen", "distractores": ["bei dem ankommen", "zum Ankommen", "beim ankommen"], "pista": "beim + sustantivo con mayúscula; beim = mientras/al." },
         { "id": "ar6", "partes": null, "pregunta": "«para hacer la maleta» (= um einzupacken)", "respuesta": "zum Einpacken", "distractores": ["beim Einpacken", "zum einpacken", "zu dem einpacken"], "pista": "zum expresa finalidad." }
       ]
+    },
+    {
+      "id": "preposicion",
+      "titulo": "beim, zum, vor dem …",
+      "instruccion": "El infinitivo sustantivado es neutro: detrás de una preposición se contrae con dem. Completa.",
+      "modelo": "Kursbuch S. 15 · Übungsbuch S. 16",
+      "ejercicios": [
+        { "id": "pr1", "partes": ["", " Essen spreche ich nicht gern."], "respuesta": "Beim", "distractores": ["Bei der", "Beim dem", "Zum"], "pista": "bei + dem Essen → beim Essen (mientras como)." },
+        { "id": "pr2", "partes": ["Zum Lesen brauche ich eine Brille, aber ", " Fahren nicht."], "respuesta": "zum", "distractores": ["beim dem", "zu dem der", "bei die"], "pista": "zu + dem → zum, también en la segunda parte." },
+        { "id": "pr3", "partes": ["", " Schlafengehen trinke ich einen Tee."], "respuesta": "Vor dem", "distractores": ["Vor der", "Vorm der", "Bei den"], "pista": "vor + dem; aquí no se suele contraer por escrito." },
+        { "id": "pr4", "partes": ["Wir haben ", " Warten Karten gespielt."], "respuesta": "beim", "distractores": ["bei dem der", "zum dem", "bei die"], "pista": "beim Warten = mientras esperábamos." },
+        { "id": "pr5", "partes": ["Diese Schuhe sind ", " Wandern perfekt."], "respuesta": "zum", "distractores": ["beim", "vor dem", "bei dem"], "pista": "zum + infinitivo = para (finalidad)." },
+        { "id": "pr6", "partes": null, "pregunta": "«Al bajar del tren me di cuenta.»", "respuesta": "Beim Aussteigen habe ich es gemerkt.", "distractores": ["Bei dem aussteigen habe ich es gemerkt.", "Zum Aussteigen habe ich es gemerkt.", "Beim aussteigen habe ich es gemerkt."], "pista": "beim + infinitivo sustantivado, con mayúscula." },
+        { "id": "pr7", "partes": null, "pregunta": "¿Cuál está bien escrita?", "respuesta": "Nach dem Aufstehen dusche ich sofort.", "distractores": ["Nach dem aufstehen dusche ich sofort.", "Nach das Aufstehen dusche ich sofort.", "Nachdem Aufstehen dusche ich sofort."], "pista": "nach + dativo, y el infinitivo sustantivado va en mayúscula." }
+      ]
     }
   ]
 }

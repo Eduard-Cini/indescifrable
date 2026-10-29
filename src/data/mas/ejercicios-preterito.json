@@ -47,6 +47,21 @@
         { "id": "ct5", "partes": null, "pregunta": "Empieza un relato literario: «Era una mañana fría de noviembre.»", "respuesta": "Es war ein kalter Novembermorgen.", "distractores": ["Es ist ein kalter Novembermorgen gewesen.", "Es hat ein kalter Novembermorgen gewesen.", "Es wurde ein kalter Novembermorgen."], "pista": "Texto literario → Präteritum." },
         { "id": "ct6", "partes": null, "pregunta": "Hablando: «Ayer estuve en el médico.»", "respuesta": "Ich war gestern beim Arzt.", "distractores": ["Ich bin gestern beim Arzt gewesen.", "Ich habe gestern beim Arzt gewesen.", "Ich wurde gestern beim Arzt."], "pista": "sein: Präteritum también al hablar (war, no «bin gewesen»)." }
       ]
+    },
+    {
+      "id": "modales",
+      "titulo": "Modales, haben y sein",
+      "instruccion": "Son los que más se usan en Präteritum, incluso al hablar. Completa con la forma correcta.",
+      "modelo": "Kursbuch S. 32 · Übungsbuch S. 33",
+      "ejercicios": [
+        { "id": "mo1", "partes": ["Als Kind ", " ich jeden Tag Klavier üben."], "respuesta": "musste", "distractores": ["musstete", "müsste", "mußte ich"], "pista": "müssen → musste, sin Umlaut." },
+        { "id": "mo2", "partes": ["Wir ", " damals noch kein Auto."], "respuesta": "hatten", "distractores": ["hattet", "hatte", "haben"], "pista": "wir → hatten." },
+        { "id": "mo3", "partes": ["Er ", " gestern nicht im Büro."], "respuesta": "war", "distractores": ["waren", "warst", "wart"], "pista": "er → war." },
+        { "id": "mo4", "partes": ["", " ihr als Kinder viel draußen spielen?"], "respuesta": "Durftet", "distractores": ["Durften", "Durfte", "Dürftet"], "pista": "ihr → durftet; dürfen pierde el Umlaut." },
+        { "id": "mo5", "partes": ["Sie ", " gut Klavier spielen, aber sie hatte keine Zeit."], "respuesta": "konnte", "distractores": ["kannte", "könnte", "konntete"], "pista": "können → konnte. ¡Ojo con kannte, que es de kennen!" },
+        { "id": "mo6", "partes": ["Ich ", " nach Wien ziehen, aber es ging nicht."], "respuesta": "wollte", "distractores": ["will", "wollt", "wolltete"], "pista": "wollen → wollte." },
+        { "id": "mo7", "partes": null, "pregunta": "«De niño no podía dormir solo.»", "respuesta": "Als Kind konnte ich nicht allein schlafen.", "distractores": ["Als Kind könnte ich nicht allein schlafen.", "Als Kind kannte ich nicht allein schlafen.", "Als Kind konnte ich nicht allein geschlafen."], "pista": "Con los modales se prefiere el Präteritum; könnte sería Konjunktiv II." }
+      ]
     }
   ]
 }

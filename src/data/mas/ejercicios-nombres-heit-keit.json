@@ -49,6 +49,21 @@
         { "id": "ar5", "partes": null, "pregunta": "die Schwierigkeit", "respuesta": "schwierig", "distractores": ["schwer", "schwach", "schwarz"], "pista": "dificultad → difícil, complicado." },
         { "id": "ar6", "partes": null, "pregunta": "die Aufmerksamkeit", "respuesta": "aufmerksam", "distractores": ["aufregend", "auffällig", "aufrichtig"], "pista": "atención → atento." }
       ]
+    },
+    {
+      "id": "igkeit",
+      "titulo": "-igkeit, el tercer sufijo",
+      "instruccion": "Algunos adjetivos no hacen -heit ni -keit, sino -igkeit. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 74 · Übungsbuch S. 75",
+      "ejercicios": [
+        { "id": "ik1", "partes": ["arbeitslos → die ", ""], "respuesta": "Arbeitslosigkeit", "distractores": ["Arbeitsloskeit", "Arbeitslosheit", "Arbeitslosung"], "pista": "Los acabados en -los hacen -igkeit." },
+        { "id": "ik2", "partes": ["müde → die ", ""], "respuesta": "Müdigkeit", "distractores": ["Müdekeit", "Müdheit", "Müdung"], "pista": "müde → Müdigkeit." },
+        { "id": "ik3", "partes": ["genau → die ", ""], "respuesta": "Genauigkeit", "distractores": ["Genaukeit", "Genauheit", "Genauung"], "pista": "genau → Genauigkeit." },
+        { "id": "ik4", "partes": ["schwierig → die ", ""], "respuesta": "Schwierigkeit", "distractores": ["Schwierigheit", "Schwierkeit", "Schwierigung"], "pista": "Ya acaba en -ig, así que solo se le añade -keit." },
+        { "id": "ik5", "partes": ["frei → die ", ""], "respuesta": "Freiheit", "distractores": ["Freikeit", "Freiigkeit", "Freiung"], "pista": "Contraste: los cortos de una sílaba hacen -heit." },
+        { "id": "ik6", "partes": ["pünktlich → die ", ""], "respuesta": "Pünktlichkeit", "distractores": ["Pünktlichheit", "Pünktligkeit", "Pünktlichung"], "pista": "-lich → -keit." },
+        { "id": "ik7", "partes": null, "pregunta": "«El paro ha bajado este año.»", "respuesta": "Die Arbeitslosigkeit ist dieses Jahr gesunken.", "distractores": ["Der Arbeitslosigkeit ist dieses Jahr gesunken.", "Das Arbeitslosigkeit ist dieses Jahr gesunken.", "Die Arbeitslosigkeiten ist dieses Jahr gesunken."], "pista": "Todos estos sufijos dan femeninos, y aquí va en singular." }
+      ]
     }
   ]
 }

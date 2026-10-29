@@ -48,6 +48,21 @@
         { "id": "pr7", "partes": ["In meiner Stadt gibt es Sportvereine, ", " sich jeder anmelden kann."], "respuesta": "bei denen", "distractores": ["bei den", "bei der", "bei die"], "pista": "sich anmelden bei + dativo; plural → bei denen." },
         { "id": "pr8", "partes": ["Jedes Jahr gibt es ein großes Stadtfest, ", " sich alle Leute freuen."], "respuesta": "auf das", "distractores": ["auf dem", "auf die", "auf den"], "pista": "sich freuen auf + acusativo; neutro → auf das." }
       ]
+    },
+    {
+      "id": "genitivo",
+      "titulo": "dessen y deren",
+      "instruccion": "El relativo en genitivo dice «cuyo». La forma la manda la palabra de FUERA, no lo que viene detrás.",
+      "modelo": "Kursbuch S. 72 · Übungsbuch S. 73",
+      "ejercicios": [
+        { "id": "rg1", "partes": ["Das ist der Mann, ", " Auto gestohlen wurde."], "respuesta": "dessen", "distractores": ["deren", "dessens", "der"], "pista": "der Mann, masculino → dessen." },
+        { "id": "rg2", "partes": ["Das ist die Frau, ", " Sohn bei uns arbeitet."], "respuesta": "deren", "distractores": ["dessen", "derer", "die"], "pista": "die Frau, femenino → deren." },
+        { "id": "rg3", "partes": ["Das Kind, ", " Eltern im Ausland sind, wohnt bei der Oma."], "respuesta": "dessen", "distractores": ["deren", "derens", "das"], "pista": "das Kind, neutro → dessen (aunque detrás venga un plural)." },
+        { "id": "rg4", "partes": ["Die Nachbarn, ", " Hund immer bellt, sind umgezogen."], "respuesta": "deren", "distractores": ["dessen", "derer", "die"], "pista": "Plural → deren." },
+        { "id": "rg5", "partes": ["Ich kenne einen Kollegen, ", " Frau Ärztin ist."], "respuesta": "dessen", "distractores": ["deren", "der", "den"], "pista": "einen Kollegen es masculino → dessen." },
+        { "id": "rg6", "partes": ["Die Firma, ", " Chef ich kenne, ist ganz klein."], "respuesta": "deren", "distractores": ["dessen", "der", "die"], "pista": "die Firma, femenino → deren." },
+        { "id": "rg7", "partes": null, "pregunta": "«Es la casa cuyo tejado es rojo.»", "respuesta": "Das ist das Haus, dessen Dach rot ist.", "distractores": ["Das ist das Haus, deren Dach rot ist.", "Das ist das Haus, dessen Dach ist rot.", "Das ist das Haus, das Dach rot ist."], "pista": "das Haus → dessen, y el verbo cierra la relativa." }
+      ]
     }
   ]
 }

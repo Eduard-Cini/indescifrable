@@ -45,6 +45,21 @@
         { "id": "ir5", "partes": null, "pregunta": "«Si supiera alemán, tendría más posibilidades.»", "respuesta": "Wenn ich Deutsch könnte, hätte ich mehr Möglichkeiten.", "distractores": ["Wenn ich Deutsch könnte, ich hätte mehr Möglichkeiten.", "Wenn ich könnte Deutsch, hätte ich mehr Möglichkeiten.", "Wenn ich Deutsch kann, hätte ich mehr Möglichkeiten."], "pista": "könnte cierra la subordinada; hätte abre la principal." },
         { "id": "ir6", "partes": null, "pregunta": "«¡Ojalá ya hubiera terminado!» (deseo)", "respuesta": "Wenn ich doch schon fertig wäre!", "distractores": ["Wenn ich doch schon fertig bin!", "Wenn ich wäre doch schon fertig!", "Wenn ich doch schon fertig würde sein!"], "pista": "Un deseo se dice con wenn + Konjunktiv II y doch; el verbo, al final." }
       ]
+    },
+    {
+      "id": "consejos",
+      "titulo": "Dar un consejo",
+      "instruccion": "An deiner Stelle …, Du solltest …, Es wäre besser … Completa con la forma correcta.",
+      "modelo": "Kursbuch S. 45 · Übungsbuch S. 46",
+      "ejercicios": [
+        { "id": "cj1", "partes": ["An deiner Stelle ", " ich mit dem Chef sprechen."], "respuesta": "würde", "distractores": ["werde", "wurde", "wäre"], "pista": "würde + infinitivo al final." },
+        { "id": "cj2", "partes": ["Du ", " wirklich mehr schlafen."], "respuesta": "solltest", "distractores": ["sollst", "solltet", "sollte"], "pista": "du → solltest." },
+        { "id": "cj3", "partes": ["", " ich mehr Zeit, würde ich einen Kurs machen."], "respuesta": "Hätte", "distractores": ["Hatte", "Würde", "Wäre"], "pista": "hätte = Konjunktiv II de haben." },
+        { "id": "cj4", "partes": ["Es ", " besser, früher anzufangen."], "respuesta": "wäre", "distractores": ["war", "würde", "hätte"], "pista": "wäre = Konjunktiv II de sein." },
+        { "id": "cj5", "partes": ["An Ihrer Stelle ", " ich mich sofort bewerben."], "respuesta": "würde", "distractores": ["werde", "wurde", "hätte"], "pista": "Lo mismo, pero de usted." },
+        { "id": "cj6", "partes": null, "pregunta": "«Yo que tú buscaría otro piso.»", "respuesta": "An deiner Stelle würde ich eine andere Wohnung suchen.", "distractores": ["An deiner Stelle ich würde eine andere Wohnung suchen.", "An deiner Stelle würde ich eine andere Wohnung zu suchen.", "An deiner Stelle werde ich eine andere Wohnung suchen."], "pista": "«An deiner Stelle» ocupa la posición 1 → el verbo va justo detrás." },
+        { "id": "cj7", "partes": null, "pregunta": "«Deberías descansar más.»", "respuesta": "Du solltest dich mehr ausruhen.", "distractores": ["Du sollst dich mehr ausruhen.", "Du solltest dich mehr auszuruhen.", "Du würdest dich mehr ausruhen."], "pista": "sollst sería una orden; el consejo suave va con solltest." }
+      ]
     }
   ]
 }

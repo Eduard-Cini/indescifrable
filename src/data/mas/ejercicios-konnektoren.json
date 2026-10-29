@@ -42,6 +42,21 @@
         { "id": "ks4", "partes": null, "pregunta": "«Entweder du kommst mit oder du bleibst hier.»", "respuesta": "O vienes o te quedas aquí.", "distractores": ["Vienes y además te quedas aquí.", "Ni vienes ni te quedas aquí."], "pista": "entweder … oder = una u otra." },
         { "id": "ks5", "partes": null, "pregunta": "«Sowohl meine Schwester als auch ich singen im Chor.»", "respuesta": "Tanto mi hermana como yo cantamos en el coro.", "distractores": ["O mi hermana o yo cantamos en el coro.", "Ni mi hermana ni yo cantamos en el coro."], "pista": "sowohl … als auch = tanto … como." }
       ]
+    },
+    {
+      "id": "orden",
+      "titulo": "El verbo con los conectores dobles",
+      "instruccion": "Fíjate en qué ocupa la posición 1 de cada mitad y dónde queda el verbo.",
+      "modelo": "Kursbuch S. 96 · Übungsbuch S. 97",
+      "ejercicios": [
+        { "id": "od1", "partes": ["Sie spricht nicht nur Deutsch, ", " auch Französisch."], "respuesta": "sondern", "distractores": ["aber", "oder", "und"], "pista": "nicht nur … sondern auch." },
+        { "id": "od2", "partes": ["", " Anna ", " Tarik kommen mit."], "respuesta": "Sowohl … als auch", "distractores": ["Entweder … oder", "Weder … noch", "Nicht nur … sondern"], "pista": "Vienen los dos → sowohl … als auch." },
+        { "id": "od3", "partes": ["Ich habe ", " Zeit ", " Lust."], "respuesta": "weder … noch", "distractores": ["sowohl … als auch", "entweder … oder", "nicht nur … sondern"], "pista": "Ni una cosa ni la otra → weder … noch." },
+        { "id": "od4", "partes": ["", " nehmen wir den Bus, ", " wir gehen zu Fuß."], "respuesta": "Entweder … oder", "distractores": ["Sowohl … als auch", "Weder … noch", "Zwar … aber"], "pista": "Dos opciones → entweder … oder." },
+        { "id": "od5", "partes": ["Das Hotel war ", " teuer, ", " es war sehr gut."], "respuesta": "zwar … aber", "distractores": ["weder … noch", "sowohl … als auch", "entweder … oder"], "pista": "Se admite algo y luego se matiza → zwar … aber." },
+        { "id": "od6", "partes": null, "pregunta": "¿Cuál está bien? (weder … noch)", "respuesta": "Weder habe ich Zeit, noch habe ich Lust.", "distractores": ["Weder ich habe Zeit, noch ich habe Lust.", "Weder habe ich Zeit, noch ich habe Lust.", "Weder ich habe Zeit, noch habe ich Lust."], "pista": "weder y noch ocupan la posición 1 → el verbo va detrás en las DOS mitades." },
+        { "id": "od7", "partes": null, "pregunta": "«No solo es barato, sino también rápido.»", "respuesta": "Es ist nicht nur billig, sondern auch schnell.", "distractores": ["Es ist nicht nur billig, aber auch schnell.", "Es ist nicht nur billig, sondern auch schnell ist.", "Es ist nicht nur billig, sondern ist auch schnell."], "pista": "Detrás de sondern auch solo va el adjetivo: no se repite el verbo." }
+      ]
     }
   ]
 }

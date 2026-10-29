@@ -48,6 +48,21 @@
         { "id": "cl6", "partes": ["Wer sehr viel über ein Thema weiß, ist ", "."], "respuesta": "ein Experte", "distractores": ["ein Tourist", "ein Kunde", "ein Junge"], "pista": "Masculino en -e: der Experte, den Experten." },
         { "id": "cl7", "partes": ["Wer eine Stadt besucht und sie sich ansieht, ist ", "."], "respuesta": "ein Tourist", "distractores": ["ein Bauer", "ein Nachbar", "ein Polizist"], "pista": "Internacionalismo en -ist." }
       ]
+    },
+    {
+      "id": "grupos",
+      "titulo": "Los grupos que la siguen",
+      "instruccion": "Masculinos en -e, extranjeros en -ent/-ant/-ist, y los raros (Herr, Name, Nachbar). Completa.",
+      "modelo": "Kursbuch S. 70 · Übungsbuch S. 71",
+      "ejercicios": [
+        { "id": "gr1", "partes": ["Ich habe gestern mit dem ", " gesprochen."], "respuesta": "Kollegen", "distractores": ["Kollege", "Kolleges", "Kollegern"], "pista": "der Kollege: todo lo que no sea sujeto lleva -n." },
+        { "id": "gr2", "partes": ["Kennst du den ", " aus Brasilien?"], "respuesta": "Studenten", "distractores": ["Student", "Studentens", "Studente"], "pista": "-ent entra en la declinación n." },
+        { "id": "gr3", "partes": ["", " Müller, kommen Sie bitte herein!"], "respuesta": "Herr", "distractores": ["Herrn", "Herren", "Herrs"], "pista": "Aquí es el sujeto del saludo → sin -n." },
+        { "id": "gr4", "partes": ["Ich schreibe Herr", " Müller eine E-Mail."], "respuesta": "n", "distractores": ["en", "ns", "s"], "pista": "Herr es el único con -n en singular y -en en plural." },
+        { "id": "gr5", "partes": ["An den ", " kann ich mich nicht erinnern."], "respuesta": "Namen", "distractores": ["Name", "Namens", "Nams"], "pista": "der Name → den Namen." },
+        { "id": "gr6", "partes": ["Der ", " von oben hat mir geholfen."], "respuesta": "Nachbar", "distractores": ["Nachbarn", "Nachbarns", "Nachbaren"], "pista": "Es el sujeto → la forma del diccionario." },
+        { "id": "gr7", "partes": null, "pregunta": "«He hablado con un vecino.»", "respuesta": "Ich habe mit einem Nachbarn gesprochen.", "distractores": ["Ich habe mit einem Nachbar gesprochen.", "Ich habe mit einen Nachbarn gesprochen.", "Ich habe mit einem Nachbarns gesprochen."], "pista": "mit + dativo, y Nachbar pide su -n fuera del nominativo." }
+      ]
     }
   ]
 }

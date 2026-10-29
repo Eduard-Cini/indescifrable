@@ -47,6 +47,21 @@
         { "id": "pc6", "partes": null, "pregunta": "«Antes del viaje tengo que hablar con ella.»", "respuesta": "Vor der Reise muss ich mit ihr sprechen.", "distractores": ["Bevor der Reise muss ich mit ihr sprechen.", "Bevor die Reise muss ich mit ihr sprechen.", "Bevor ich der Reise muss mit ihr sprechen."], "pista": "bevor solo une frases; con un sustantivo se usa la preposición vor." },
         { "id": "pc7", "partes": null, "pregunta": "«Antes de irme tengo que hablar con ella.»", "respuesta": "Bevor ich gehe, muss ich mit ihr sprechen.", "distractores": ["Vor ich gehe, muss ich mit ihr sprechen.", "Bevor ich gehe, ich muss mit ihr sprechen.", "Bevor gehe ich, muss ich mit ihr sprechen."], "pista": "Con una frase detrás hace falta bevor, no vor." }
       ]
+    },
+    {
+      "id": "als-wenn",
+      "titulo": "als, wenn o wann",
+      "instruccion": "El clásico. Una vez en el pasado, repetido, o una pregunta: cada caso tiene su palabra.",
+      "modelo": "Kursbuch S. 83 · Übungsbuch S. 84",
+      "ejercicios": [
+        { "id": "aw1", "partes": ["", " ich zehn war, zogen wir nach Hamburg."], "respuesta": "Als", "distractores": ["Wenn", "Wann", "Während"], "pista": "Una sola vez en el pasado → als." },
+        { "id": "aw2", "partes": ["", " ich Zeit habe, rufe ich dich an."], "respuesta": "Wenn", "distractores": ["Als", "Wann", "Ob"], "pista": "Presente o futuro → wenn." },
+        { "id": "aw3", "partes": ["Jedes Mal, ", " es regnete, blieben wir zu Hause."], "respuesta": "wenn", "distractores": ["als", "wann", "ob"], "pista": "Repetido en el pasado («cada vez que») → wenn." },
+        { "id": "aw4", "partes": ["", " kommst du nach Hause?"], "respuesta": "Wann", "distractores": ["Wenn", "Als", "Ob"], "pista": "Pregunta directa → wann." },
+        { "id": "aw5", "partes": ["", " ich gestern nach Hause kam, war niemand da."], "respuesta": "Als", "distractores": ["Wenn", "Wann", "Während"], "pista": "Un momento concreto del pasado → als." },
+        { "id": "aw6", "partes": ["Ich weiß nicht, ", " der Zug ankommt."], "respuesta": "wann", "distractores": ["wenn", "als", "ob"], "pista": "Pregunta indirecta → wann." },
+        { "id": "aw7", "partes": null, "pregunta": "«Cuando era estudiante, vivía en Múnich» (una etapa del pasado).", "respuesta": "Als ich Studentin war, wohnte ich in München.", "distractores": ["Wenn ich Studentin war, wohnte ich in München.", "Wann ich Studentin war, wohnte ich in München.", "Als ich war Studentin, wohnte ich in München."], "pista": "Una etapa única del pasado → als, y el verbo al final." }
+      ]
     }
   ]
 }

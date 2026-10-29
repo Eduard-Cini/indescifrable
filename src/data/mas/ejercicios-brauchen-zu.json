@@ -43,6 +43,21 @@
         { "id": "sg4", "partes": null, "pregunta": "«Er braucht kein Fieber zu messen.»", "respuesta": "No hace falta que se tome la temperatura.", "distractores": ["No puede tomarse la temperatura.", "Tiene que tomarse la temperatura."], "pista": "kein + brauchen + zu = no es necesario." },
         { "id": "sg5", "partes": null, "pregunta": "«Danke, aber du brauchst mir nicht zu helfen.»", "respuesta": "Gracias, pero no hace falta que me ayudes.", "distractores": ["Gracias, pero no quiero que me ayudes.", "Gracias, pero tienes que ayudarme."], "pista": "Así se rechaza la ayuda con cortesía." }
       ]
+    },
+    {
+      "id": "matices",
+      "titulo": "nur, erst y lo que NO significa",
+      "instruccion": "brauchen + zu solo aparece con nicht, nur o erst. Y «no hace falta» no es lo mismo que «no puedes».",
+      "modelo": "Kursbuch S. 92 · Übungsbuch S. 93",
+      "ejercicios": [
+        { "id": "mt1", "partes": ["Du ", " heute nicht zu kommen."], "respuesta": "brauchst", "distractores": ["brauchen", "braucht", "brauche"], "pista": "du → brauchst." },
+        { "id": "mt2", "partes": ["Du brauchst nur auf den Knopf ", " drücken."], "respuesta": "zu", "distractores": ["zum", "um zu", "für zu"], "pista": "Con nur también lleva zu." },
+        { "id": "mt3", "partes": ["Er braucht am Wochenende nicht ", "."], "respuesta": "zu arbeiten", "distractores": ["arbeiten", "zu arbeitet", "arbeiten zu"], "pista": "zu + infinitivo, al final." },
+        { "id": "mt4", "partes": ["Ihr ", " euch keine Sorgen zu machen."], "respuesta": "braucht", "distractores": ["brauchen", "brauchst", "brauche"], "pista": "ihr → braucht." },
+        { "id": "mt5", "partes": ["Du brauchst ", " morgen zu kommen, heute nicht."], "respuesta": "erst", "distractores": ["nur erst", "schon", "noch"], "pista": "erst = no antes de ese momento." },
+        { "id": "mt6", "partes": null, "pregunta": "¿Cuál dice «no hace falta que vengas»?", "respuesta": "Du brauchst nicht zu kommen.", "distractores": ["Du darfst nicht kommen.", "Du sollst nicht kommen.", "Du kannst nicht kommen."], "pista": "darfst nicht = te está prohibido; sollst nicht = no debes; kannst nicht = no puedes." },
+        { "id": "mt7", "partes": null, "pregunta": "«Solo tienes que firmar.»", "respuesta": "Du brauchst nur zu unterschreiben.", "distractores": ["Du brauchst nur unterschreiben.", "Du brauchst nur zu unterschreibst.", "Du brauchst nur um zu unterschreiben."], "pista": "nur + zu + infinitivo." }
+      ]
     }
   ]
 }

@@ -46,6 +46,21 @@
         { "id": "mc5", "partes": null, "pregunta": "Di el MOTIVO con da: «La tienda estaba cerrada» + «pedí por internet».", "respuesta": "Da das Geschäft geschlossen war, habe ich online bestellt.", "distractores": ["Da das Geschäft geschlossen war, ich habe online bestellt.", "Das Geschäft war geschlossen, da habe ich online bestellt.", "Da war das Geschäft geschlossen, habe ich online bestellt."], "pista": "da abre la subordinada; war al final; después de la coma, habe." },
         { "id": "mc6", "partes": null, "pregunta": "Di la CONSECUENCIA con daher: «La tienda estaba cerrada» + «pedí por internet».", "respuesta": "Das Geschäft war geschlossen, daher habe ich online bestellt.", "distractores": ["Das Geschäft war geschlossen, daher ich habe online bestellt.", "Daher war das Geschäft geschlossen, habe ich online bestellt.", "Das Geschäft war geschlossen, daher online bestellt ich habe."], "pista": "daher + verbo + sujeto." }
       ]
+    },
+    {
+      "id": "so-dass",
+      "titulo": "so + adjetivo + dass",
+      "instruccion": "La causa lleva un adjetivo o un adverbio. Completa con so … dass o con sodass.",
+      "modelo": "Kursbuch S. 23 · Übungsbuch S. 24",
+      "ejercicios": [
+        { "id": "sd1", "partes": ["Der Koffer war ", " schwer, ", " ich ihn nicht tragen konnte."], "respuesta": "so … dass", "distractores": ["so … sodass", "sodass … dass", "solch … dass"], "pista": "so va delante del adjetivo; dass abre la consecuencia." },
+        { "id": "sd2", "partes": ["Es regnete stark, ", " wir zu Hause blieben."], "respuesta": "sodass", "distractores": ["so dass es", "so", "dass so"], "pista": "Sin adjetivo entre medias → sodass en una palabra." },
+        { "id": "sd3", "partes": ["Das Hotel war ", " laut, dass wir kaum geschlafen haben."], "respuesta": "so", "distractores": ["solch", "sodass", "zu"], "pista": "so + adjetivo + dass." },
+        { "id": "sd4", "partes": ["Die Schlange war so lang, dass wir ", "."], "respuesta": "wieder gegangen sind", "distractores": ["sind wieder gegangen", "wieder sind gegangen", "gegangen wieder sind"], "pista": "Detrás de dass el verbo conjugado va al final." },
+        { "id": "sd5", "partes": ["Sie spricht ", " schnell, dass ich nichts verstehe."], "respuesta": "so", "distractores": ["sodass", "solche", "zu"], "pista": "schnell es adverbio: so schnell, dass …" },
+        { "id": "sd6", "partes": null, "pregunta": "«El café estaba tan caliente que me quemé.»", "respuesta": "Der Kaffee war so heiß, dass ich mich verbrannt habe.", "distractores": ["Der Kaffee war so heiß, dass ich mich habe verbrannt.", "Der Kaffee war sodass heiß, ich mich verbrannt habe.", "Der Kaffee war so heiß, dass habe ich mich verbrannt."], "pista": "habe cierra la subordinada." },
+        { "id": "sd7", "partes": null, "pregunta": "«Perdimos el tren, así que llegamos tarde.»", "respuesta": "Wir haben den Zug verpasst, sodass wir zu spät gekommen sind.", "distractores": ["Wir haben den Zug verpasst, sodass sind wir zu spät gekommen.", "Wir haben den Zug verpasst, so dass wir zu spät gekommen haben.", "Wir haben den Zug verpasst, so wir zu spät gekommen sind."], "pista": "kommen va con sein: … gekommen sind." }
+      ]
     }
   ]
 }

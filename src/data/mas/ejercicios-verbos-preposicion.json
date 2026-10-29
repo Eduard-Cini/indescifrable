@@ -46,6 +46,21 @@
         { "id": "cz5", "partes": null, "pregunta": "Ich bewerbe mich. + Ich arbeite in dieser Branche. (mismo sujeto)", "respuesta": "Ich bewerbe mich darum, in dieser Branche zu arbeiten.", "distractores": ["Ich bewerbe mich darum, dass ich in dieser Branche zu arbeiten.", "Ich bewerbe mich um, in dieser Branche zu arbeiten.", "Ich bewerbe mich, in dieser Branche zu arbeiten."], "pista": "um → darum." },
         { "id": "cz6", "partes": null, "pregunta": "Wir freuen uns. + Sie kommen am Montag vorbei. (sujetos distintos)", "respuesta": "Wir freuen uns darüber, dass Sie am Montag vorbeikommen.", "distractores": ["Wir freuen uns darüber, am Montag vorbeizukommen.", "Wir freuen uns darüber, dass Sie am Montag vorbei kommen zu.", "Wir freuen uns, dass Sie am Montag vorbeikommen."], "pista": "Sujetos distintos → dass; vorbei|kommen se junta al final." }
       ]
+    },
+    {
+      "id": "caso",
+      "titulo": "¿Acusativo o dativo?",
+      "instruccion": "Varias de estas preposiciones pueden llevar los dos casos: aquí lo fija el verbo. Completa.",
+      "modelo": "Kursbuch S. 49 · Übungsbuch S. 50",
+      "ejercicios": [
+        { "id": "ca1", "partes": ["Ich denke oft ", " Urlaub im Süden."], "respuesta": "an den", "distractores": ["an dem", "am", "auf den"], "pista": "denken an + ACUSATIVO." },
+        { "id": "ca2", "partes": ["Sie nimmt ", " Kurs teil."], "respuesta": "am", "distractores": ["an den", "auf den", "an der"], "pista": "teilnehmen an + DATIVO → an dem = am." },
+        { "id": "ca3", "partes": ["Wir warten schon zwanzig Minuten ", " Bus."], "respuesta": "auf den", "distractores": ["auf dem", "am", "an den"], "pista": "warten auf + ACUSATIVO." },
+        { "id": "ca4", "partes": ["Er leidet ", " Allergie."], "respuesta": "an einer", "distractores": ["an eine", "unter eine", "über eine"], "pista": "leiden an + DATIVO (una enfermedad)." },
+        { "id": "ca5", "partes": ["Sie interessiert sich sehr für ", " Film."], "respuesta": "den", "distractores": ["dem", "der", "des"], "pista": "für siempre lleva acusativo → den Film." },
+        { "id": "ca6", "partes": ["Wir sprechen morgen ", " Problem."], "respuesta": "über das", "distractores": ["über dem", "von das", "an das"], "pista": "sprechen über + ACUSATIVO." },
+        { "id": "ca7", "partes": null, "pregunta": "«Eso depende del tiempo que haga.»", "respuesta": "Das hängt vom Wetter ab.", "distractores": ["Das hängt das Wetter ab.", "Das hängt auf das Wetter ab.", "Das hängt vom Wetter an."], "pista": "ab|hängen von + DATIVO: von dem = vom." }
+      ]
     }
   ]
 }

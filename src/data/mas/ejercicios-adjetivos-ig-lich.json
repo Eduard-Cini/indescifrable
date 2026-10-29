@@ -49,6 +49,21 @@
         { "id": "fa7", "partes": null, "pregunta": "¿Qué adjetivo sale de der Tag?", "respuesta": "täglich", "distractores": ["tagig", "taglich", "tägig"], "pista": "der Tag → täglich (a → ä)." },
         { "id": "fa8", "partes": null, "pregunta": "¿Qué adjetivo sale de die Gefahr?", "respuesta": "gefährlich", "distractores": ["gefahrig", "gefahrlich", "gefährig"], "pista": "die Gefahr → gefährlich (a → ä)." }
       ]
+    },
+    {
+      "id": "contrario",
+      "titulo": "El contrario con un-",
+      "instruccion": "El prefijo un- da el contrario. Elige la forma correcta.",
+      "modelo": "Kursbuch S. 85 · Übungsbuch S. 86",
+      "ejercicios": [
+        { "id": "un1", "partes": ["möglich ↔ ", ""], "respuesta": "unmöglich", "distractores": ["nichtmöglich", "ohnmöglich", "möglichlos"], "pista": "un- se pega delante, sin espacio." },
+        { "id": "un2", "partes": ["freundlich ↔ ", ""], "respuesta": "unfreundlich", "distractores": ["nichtfreundlich", "freundlichlos", "misfreundlich"], "pista": "unfreundlich = antipático." },
+        { "id": "un3", "partes": ["geduldig ↔ ", ""], "respuesta": "ungeduldig", "distractores": ["ungeduldlich", "nichtgeduldig", "geduldlos"], "pista": "El sufijo -ig no cambia: un + geduldig." },
+        { "id": "un4", "partes": ["pünktlich ↔ ", ""], "respuesta": "unpünktlich", "distractores": ["nichtpünktlich", "impünktlich", "pünktlichlos"], "pista": "En alemán no existe im- como en español." },
+        { "id": "un5", "partes": ["glücklich ↔ ", ""], "respuesta": "unglücklich", "distractores": ["nichtglücklich", "glücklos", "misglücklich"], "pista": "unglücklich = infeliz, desdichado." },
+        { "id": "un6", "partes": ["Der Zug ist heute wieder ", " angekommen."], "respuesta": "unpünktlich", "distractores": ["unpünktliche", "nichtpünktlich", "pünktlichlos"], "pista": "Detrás del verbo el adjetivo no se declina." },
+        { "id": "un7", "partes": null, "pregunta": "«Es imposible llegar a tiempo.»", "respuesta": "Es ist unmöglich, pünktlich zu kommen.", "distractores": ["Es ist nicht möglich, pünktlich kommen.", "Es ist unmöglich, pünktlich kommen zu.", "Es ist unmöglichkeit, pünktlich zu kommen."], "pista": "unmöglich + infinitivo con zu al final." }
+      ]
     }
   ]
 }

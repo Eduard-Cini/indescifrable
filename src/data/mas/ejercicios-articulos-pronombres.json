@@ -60,6 +60,21 @@
         { "id": "ap5", "partes": ["Ist das ", " Haus?"], "respuesta": "dein", "distractores": ["deins", "deiner", "deine"], "pista": "Con sustantivo → posesivo sin terminación: dein Haus." },
         { "id": "ap6", "partes": ["Ja, das ist ", "."], "respuesta": "meins", "distractores": ["mein", "meiner", "meine"], "pista": "Sin sustantivo, neutro → meins." }
       ]
+    },
+    {
+      "id": "keiner",
+      "titulo": "keiner, keins, keine",
+      "instruccion": "En la respuesta negativa, kein- también se usa solo, como pronombre. Completa.",
+      "modelo": "Kursbuch S. 128 · Übungsbuch S. 129",
+      "ejercicios": [
+        { "id": "ke1", "partes": ["Hast du einen Stift? — Nein, ich habe ", "."], "respuesta": "keinen", "distractores": ["keiner", "keins", "kein"], "pista": "der Stift, acusativo → keinen." },
+        { "id": "ke2", "partes": ["Ist noch Milch da? — Nein, es ist ", " mehr da."], "respuesta": "keine", "distractores": ["keiner", "keins", "kein"], "pista": "die Milch → keine." },
+        { "id": "ke3", "partes": ["Hast du ein Auto? — Nein, ich habe ", "."], "respuesta": "keins", "distractores": ["keinen", "keiner", "kein"], "pista": "das Auto → como pronombre, keins." },
+        { "id": "ke4", "partes": ["", " von meinen Freunden war da."], "respuesta": "Keiner", "distractores": ["Keine", "Keins", "Kein"], "pista": "Nadie (de ellos) → keiner, masculino nominativo." },
+        { "id": "ke5", "partes": ["Ich habe zwei Brüder, aber ", " wohnt hier."], "respuesta": "keiner", "distractores": ["keine", "keins", "kein"], "pista": "der Bruder, sujeto → keiner." },
+        { "id": "ke6", "partes": null, "pregunta": "«¿Tienes una pregunta? — No, no tengo ninguna.»", "respuesta": "Hast du eine Frage? — Nein, ich habe keine.", "distractores": ["Hast du eine Frage? — Nein, ich habe keiner.", "Hast du eine Frage? — Nein, ich habe keins.", "Hast du eine Frage? — Nein, ich habe kein."], "pista": "die Frage → keine, también en acusativo." },
+        { "id": "ke7", "partes": null, "pregunta": "«Ninguno de nosotros lo sabía.»", "respuesta": "Keiner von uns hat es gewusst.", "distractores": ["Keine von uns hat es gewusst.", "Keins von uns hat es gewusst.", "Kein von uns hat es gewusst."], "pista": "«Ninguno» como sujeto → keiner." }
+      ]
     }
   ]
 }

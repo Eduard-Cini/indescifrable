@@ -46,6 +46,21 @@
         { "id": "co5", "partes": ["sinnvoll ↔ ", ""], "respuesta": "sinnlos", "distractores": ["sinnbar", "besinnlich"], "pista": "der Sinn (el sentido): sinnvoll ↔ sinnlos." },
         { "id": "co6", "partes": ["humorvoll ↔ ", ""], "respuesta": "humorlos", "distractores": ["humorbar", "humoristisch"], "pista": "der Humor: humorvoll ↔ humorlos." }
       ]
+    },
+    {
+      "id": "reich-arm",
+      "titulo": "-reich, -arm y -frei",
+      "instruccion": "Mucho, poco o nada de algo. Elige el adjetivo que encaja.",
+      "modelo": "Kursbuch S. 123 · Übungsbuch S. 124",
+      "ejercicios": [
+        { "id": "ra1", "partes": ["Ein Projekt mit viel Erfolg ist ", "."], "respuesta": "erfolgreich", "distractores": ["erfolglos", "erfolgbar", "erfolgarm"], "pista": "-reich = con mucho de algo." },
+        { "id": "ra2", "partes": ["Ein Essen mit wenigen Kalorien ist ", "."], "respuesta": "kalorienarm", "distractores": ["kalorienreich", "kalorienlos", "kalorienbar"], "pista": "-arm = con poco de algo." },
+        { "id": "ra3", "partes": ["Ein Bier ganz ohne Alkohol ist ", "."], "respuesta": "alkoholfrei", "distractores": ["alkohollos", "alkoholarm", "alkoholbar"], "pista": "-frei = sin nada de eso." },
+        { "id": "ra4", "partes": ["Eine Gegend mit viel Wald ist ", "."], "respuesta": "waldreich", "distractores": ["waldarm", "waldlos", "waldbar"], "pista": "Mucho bosque → -reich." },
+        { "id": "ra5", "partes": ["erfolgreich ↔ ", ""], "respuesta": "erfolglos", "distractores": ["erfolgarm", "unerfolgreich", "erfolgbar"], "pista": "El contrario de -reich aquí es -los." },
+        { "id": "ra6", "partes": null, "pregunta": "«Es una comida rica en vitaminas.»", "respuesta": "Das ist ein vitaminreiches Essen.", "distractores": ["Das ist ein vitaminarmes Essen.", "Das ist ein vitaminreich Essen.", "Das ist ein vitaminvolles Essen."], "pista": "vitaminarm sería justo lo contrario." },
+        { "id": "ra7", "partes": null, "pregunta": "«Busco un piso sin barreras arquitectónicas.»", "respuesta": "Ich suche eine barrierefreie Wohnung.", "distractores": ["Ich suche eine barrierelose Wohnung.", "Ich suche eine barrierearme Wohnung.", "Ich suche eine barrierebare Wohnung."], "pista": "Es una palabra fija: barrierefrei." }
+      ]
     }
   ]
 }

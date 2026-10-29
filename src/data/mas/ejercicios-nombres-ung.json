@@ -48,6 +48,21 @@
         { "id": "ef5", "partes": ["Für Ron war die Tour eine sehr interessante ", ". (erfahren)"], "respuesta": "Erfahrung", "distractores": ["Erfahrungen", "Fahrung", "Erfahrheit"], "pista": "eine + singular femenino." },
         { "id": "ef6", "partes": ["Die ", " von Lebensmitteln ist ein großes Problem. (verschwenden)"], "respuesta": "Verschwendung", "distractores": ["Verschwendungen", "Verschwindung", "Schwendung"], "pista": "die Verschwendung, en singular." }
       ]
+    },
+    {
+      "id": "nominal",
+      "titulo": "De la frase con verbo a la frase con sustantivo",
+      "instruccion": "Di lo mismo con el sustantivo en -ung. Recuerda que todos son femeninos.",
+      "modelo": "Kursbuch S. 60 · Übungsbuch S. 61",
+      "ejercicios": [
+        { "id": "nm1", "partes": ["Die Polizei hat die Straße gesperrt. → ", " der Straße"], "respuesta": "die Sperrung", "distractores": ["die Gesperrung", "der Sperrung", "das Sperrung"], "pista": "sperren → die Sperrung, femenino." },
+        { "id": "nm2", "partes": ["Wir haben die Wohnung besichtigt. → die ", " der Wohnung"], "respuesta": "Besichtigung", "distractores": ["Besichtung", "Besichtigkeit", "Besichtige"], "pista": "besichtigen → die Besichtigung." },
+        { "id": "nm3", "partes": ["Sie hat die Rechnung bezahlt. → die ", " der Rechnung"], "respuesta": "Bezahlung", "distractores": ["Bezahltung", "Bezahlheit", "Bezahle"], "pista": "bezahlen → die Bezahlung." },
+        { "id": "nm4", "partes": ["Der Kurs beginnt um neun. → der ", " des Kurses"], "respuesta": "Beginn", "distractores": ["Beginnung", "Begonnung", "Beginnheit"], "pista": "¡Ojo! No todos hacen -ung: beginnen → der Beginn." },
+        { "id": "nm5", "partes": ["Sie haben die Wohnung renoviert. → nach der ", ""], "respuesta": "Renovierung", "distractores": ["Renovierheit", "Renovierkeit", "Renovierschaft"], "pista": "renovieren → die Renovierung." },
+        { "id": "nm6", "partes": null, "pregunta": "«Tras la reforma, el piso es más caro.»", "respuesta": "Nach der Renovierung ist die Wohnung teurer.", "distractores": ["Nach dem Renovierung ist die Wohnung teurer.", "Nach die Renovierung ist die Wohnung teurer.", "Nach der Renovierungen ist die Wohnung teurer."], "pista": "Todos los -ung son femeninos → nach der Renovierung." },
+        { "id": "nm7", "partes": null, "pregunta": "«La decisión fue difícil.»", "respuesta": "Die Entscheidung war schwer.", "distractores": ["Der Entscheidung war schwer.", "Das Entscheidung war schwer.", "Die Entscheidungen war schwer."], "pista": "die Entscheidung, singular y femenino." }
+      ]
     }
   ]
 }
