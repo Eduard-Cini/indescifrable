@@ -23,7 +23,7 @@
     { "id": "anpassen", "tipo": "verbo", "infinitivo": "an|passen", "presente": "passt an", "preterito": "passte an", "participio": "angepasst", "auxiliar": "hat", "preposicion": "an + acusativo", "es": "adaptar (algo a algo)", "nota": "das Licht an die Stimmung anpassen.", "lws": true },
     { "id": "beruehren", "tipo": "verbo", "infinitivo": "berühren", "presente": "berührt", "preterito": "berührte", "participio": "berührt", "auxiliar": "hat", "es": "tocar, rozar", "lws": true },
     { "id": "reinigen", "tipo": "verbo", "infinitivo": "reinigen", "presente": "reinigt", "preterito": "reinigte", "participio": "gereinigt", "auxiliar": "hat", "es": "limpiar", "lws": true },
-    { "id": "aufnehmen", "tipo": "verbo", "infinitivo": "auf|nehmen", "presente": "nimmt auf", "preterito": "nahm auf", "participio": "aufgenommen", "auxiliar": "hat", "es": "grabar; acoger", "lws": true },
+    { "id": "aufnehmen", "tipo": "verbo", "infinitivo": "auf|nehmen", "presente": "nimmt auf", "preterito": "nahm auf", "participio": "aufgenommen", "auxiliar": "hat", "es": "grabar; acoger", "ejemplo": "Für die Wohnung haben wir einen Kredit aufgenommen.", "ejemploEs": "Para la vivienda pedimos un crédito.", "lws": true },
     { "id": "ansprechen", "tipo": "verbo", "infinitivo": "an|sprechen", "presente": "spricht an", "preterito": "sprach an", "participio": "angesprochen", "auxiliar": "hat", "es": "gustar, atraer; dirigirse a alguien", "nota": "Werbung spricht Gefühle an.", "lws": true },
     { "id": "auffallen", "tipo": "verbo", "infinitivo": "auf|fallen", "presente": "fällt auf", "preterito": "fiel auf", "participio": "aufgefallen", "auxiliar": "ist", "es": "llamar la atención", "lws": true },
     { "id": "wirken", "tipo": "verbo", "infinitivo": "wirken", "presente": "wirkt", "preterito": "wirkte", "participio": "gewirkt", "auxiliar": "hat", "preposicion": "auf + acusativo", "es": "causar efecto en; parecer", "nota": "Die Werbung wirkt modern auf mich.", "lws": true },
@@ -44,8 +44,8 @@
     { "id": "beraten", "tipo": "verbo", "infinitivo": "beraten", "presente": "berät", "preterito": "beriet", "participio": "beraten", "auxiliar": "hat", "es": "asesorar, aconsejar" },
     { "id": "ausschalten", "tipo": "verbo", "infinitivo": "aus|schalten", "presente": "schaltet aus", "preterito": "schaltete aus", "participio": "ausgeschaltet", "auxiliar": "hat", "es": "apagar (un aparato)" },
     { "id": "funktionieren", "tipo": "verbo", "infinitivo": "funktionieren", "presente": "funktioniert", "preterito": "funktionierte", "participio": "funktioniert", "auxiliar": "hat", "es": "funcionar" },
-    { "id": "vergleichen", "tipo": "verbo", "infinitivo": "vergleichen", "presente": "vergleicht", "preterito": "verglich", "participio": "verglichen", "auxiliar": "hat", "preposicion": "mit + dativo", "es": "comparar (con algo)" },
-    { "id": "sparen", "tipo": "verbo", "infinitivo": "sparen", "presente": "spart", "preterito": "sparte", "participio": "gespart", "auxiliar": "hat", "preposicion": "für + acusativo", "es": "ahorrar (para algo)" },
+    { "id": "vergleichen", "tipo": "verbo", "infinitivo": "vergleichen", "presente": "vergleicht", "preterito": "verglich", "participio": "verglichen", "auxiliar": "hat", "preposicion": "mit + dativo", "es": "comparar (con algo)", "ejemplo": "Ich habe die Gebühren mit denen anderer Banken verglichen.", "ejemploEs": "Comparé las comisiones con las de otros bancos." },
+    { "id": "sparen", "tipo": "verbo", "infinitivo": "sparen", "presente": "spart", "preterito": "sparte", "participio": "gespart", "auxiliar": "hat", "preposicion": "für + acusativo", "es": "ahorrar (para algo)", "ejemplo": "Wir haben zwei Jahre für die Reise gespart.", "ejemploEs": "Ahorramos dos años para el viaje." },
     { "id": "schuetzen", "tipo": "verbo", "infinitivo": "schützen", "presente": "schützt", "preterito": "schützte", "participio": "geschützt", "auxiliar": "hat", "preposicion": "vor + dativo", "es": "proteger" }
   ]
 }

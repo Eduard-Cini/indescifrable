@@ -12,7 +12,7 @@
     { "id": "pate", "tipo": "sustantivo", "articulo": "der", "palabra": "Pate", "plural": "die Paten", "es": "padrino", "lws": true },
     { "id": "patin", "tipo": "sustantivo", "articulo": "die", "palabra": "Patin", "plural": "die Patinnen", "es": "madrina", "lws": true },
     { "id": "patenschaft", "tipo": "sustantivo", "articulo": "die", "palabra": "Patenschaft", "plural": null, "es": "apadrinamiento", "lws": true },
-    { "id": "not", "tipo": "sustantivo", "articulo": "die", "palabra": "Not", "plural": "die Nöte", "es": "necesidad, apuro (in der Not helfen)", "lws": true },
+    { "id": "not", "tipo": "sustantivo", "articulo": "die", "palabra": "Not", "plural": "die Nöte", "es": "necesidad, apuro (in der Not helfen)", "ejemplo": "In der Not hilft man einander.", "ejemploEs": "En el apuro la gente se ayuda.", "lws": true },
     { "id": "beduerftig", "tipo": "otro", "categoria": "adjetivo", "palabra": "bedürftig", "es": "necesitado", "lws": true },
     { "id": "berufsfeuerwehr", "tipo": "sustantivo", "articulo": "die", "palabra": "Berufsfeuerwehr", "plural": "die Berufsfeuerwehren", "es": "cuerpo de bomberos profesionales", "lws": true },
     { "id": "erste-hilfe", "tipo": "sustantivo", "articulo": "die", "palabra": "Erste Hilfe", "plural": null, "es": "primeros auxilios", "lws": true },

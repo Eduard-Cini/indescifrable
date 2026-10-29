@@ -66,7 +66,7 @@
     { "id": "rede", "tipo": "sustantivo", "articulo": "die", "palabra": "Rede", "plural": "die Reden", "es": "discurso (eine Rede halten)", "lws": true },
     { "id": "erhoehung", "tipo": "sustantivo", "articulo": "die", "palabra": "Erhöhung", "plural": "die Erhöhungen", "es": "subida, aumento", "lws": true },
     { "id": "geheim", "tipo": "otro", "categoria": "adjetivo", "palabra": "geheim", "es": "secreto (geheime Wahl = voto secreto)", "lws": true },
-    { "id": "ausgabe", "tipo": "sustantivo", "articulo": "die", "palabra": "Ausgabe", "plural": "die Ausgaben", "es": "número, edición (de una revista); gasto", "lws": true },
+    { "id": "ausgabe", "tipo": "sustantivo", "articulo": "die", "palabra": "Ausgabe", "plural": "die Ausgaben", "es": "número, edición (de una revista); gasto", "ejemplo": "Die größte Ausgabe im Monat ist die Miete.", "ejemploEs": "El mayor gasto del mes es el alquiler.", "lws": true },
     { "id": "schlagzeile", "tipo": "sustantivo", "articulo": "die", "palabra": "Schlagzeile", "plural": "die Schlagzeilen", "es": "titular", "lws": true },
     { "id": "einzelheit", "tipo": "sustantivo", "articulo": "die", "palabra": "Einzelheit", "plural": "die Einzelheiten", "es": "detalle", "lws": true },
     { "id": "institut", "tipo": "sustantivo", "articulo": "das", "palabra": "Institut", "plural": "die Institute", "es": "instituto", "lws": true },

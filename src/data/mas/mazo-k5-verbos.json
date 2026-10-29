@@ -40,12 +40,12 @@
     { "id": "dienen", "tipo": "verbo", "infinitivo": "dienen", "presente": "dient", "preterito": "diente", "participio": "gedient", "auxiliar": "hat", "es": "servir (als Zeichen für etwas dienen)", "lws": true },
     { "id": "drehen", "tipo": "verbo", "infinitivo": "drehen", "presente": "dreht", "preterito": "drehte", "participio": "gedreht", "auxiliar": "hat", "es": "girar, dar la vuelta a algo", "lws": true },
     { "id": "zaehlen", "tipo": "verbo", "infinitivo": "zählen", "presente": "zählt", "preterito": "zählte", "participio": "gezählt", "auxiliar": "hat", "preposicion": "zu + dativo", "es": "contar; figurar entre", "lws": true },
-    { "id": "sparen", "tipo": "verbo", "infinitivo": "sparen", "presente": "spart", "preterito": "sparte", "participio": "gespart", "auxiliar": "hat", "preposicion": "für + acusativo", "es": "ahorrar (para algo)" },
+    { "id": "sparen", "tipo": "verbo", "infinitivo": "sparen", "presente": "spart", "preterito": "sparte", "participio": "gespart", "auxiliar": "hat", "preposicion": "für + acusativo", "es": "ahorrar (para algo)", "ejemplo": "Wir haben zwei Jahre für die Reise gespart.", "ejemploEs": "Ahorramos dos años para el viaje." },
     { "id": "trennen", "tipo": "verbo", "infinitivo": "trennen", "presente": "trennt", "preterito": "trennte", "participio": "getrennt", "auxiliar": "hat", "es": "separar (den Müll trennen)" },
     { "id": "wegwerfen", "tipo": "verbo", "infinitivo": "weg|werfen", "presente": "wirft weg", "preterito": "warf weg", "participio": "weggeworfen", "auxiliar": "hat", "es": "tirar a la basura" },
     { "id": "recyceln", "tipo": "verbo", "infinitivo": "recyceln", "presente": "recycelt", "preterito": "recycelte", "participio": "recycelt", "auxiliar": "hat", "es": "reciclar" },
     { "id": "loesen", "tipo": "verbo", "infinitivo": "lösen", "presente": "löst", "preterito": "löste", "participio": "gelöst", "auxiliar": "hat", "es": "resolver (un problema); disolver" },
-    { "id": "vergleichen", "tipo": "verbo", "infinitivo": "vergleichen", "presente": "vergleicht", "preterito": "verglich", "participio": "verglichen", "auxiliar": "hat", "preposicion": "mit + dativo", "es": "comparar (con algo)" },
+    { "id": "vergleichen", "tipo": "verbo", "infinitivo": "vergleichen", "presente": "vergleicht", "preterito": "verglich", "participio": "verglichen", "auxiliar": "hat", "preposicion": "mit + dativo", "es": "comparar (con algo)", "ejemplo": "Ich habe die Gebühren mit denen anderer Banken verglichen.", "ejemploEs": "Comparé las comisiones con las de otros bancos." },
     { "id": "bleiben", "tipo": "verbo", "infinitivo": "bleiben", "presente": "bleibt", "preterito": "blieb", "participio": "geblieben", "auxiliar": "ist", "es": "quedarse (fit bleiben = mantenerse en forma)" }
   ]
 }
